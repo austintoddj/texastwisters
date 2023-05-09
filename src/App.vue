@@ -229,12 +229,12 @@ const mobileMenuOpen = ref(false)
 const input = ref(null)
 
 const mailerlite = new MailerLite({
-  api_key: process.env.MAILERLITE_TOKEN
+  api_key: process.env.VITE_MAILERLITE_TOKEN
 })
 
 const params = {
   email: input.value,
-  groups: [process.env.MAILERLITE_GROUP]
+  groups: [process.env.VITE_MAILERLITE_GROUP]
 }
 
 function subscribe() {

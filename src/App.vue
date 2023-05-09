@@ -163,9 +163,13 @@
               />
               <button
                 type="submit"
-                class="flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                :disabled="successfullySubscribed"
+                :class="[
+                  'flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
+                  successfullySubscribed ? 'bg-indigo-500' : 'bg-indigo-600'
+                ]"
               >
-                Subscribe
+                {{ successfullySubscribed ? 'Subscribed!' : 'Subscribe' }}
               </button>
             </div>
             <p class="mt-4 text-sm leading-6 text-gray-900">
@@ -220,17 +224,18 @@ import MailerLite from '@mailerlite/mailerlite-nodejs'
 const navigation = [
   { name: 'Schedule', href: '#' },
   { name: 'Pricing', href: '#' },
-  { name: 'Blog', href: '#' },
   { name: 'About', href: '#' }
 ]
 
 const mobileMenuOpen = ref(false)
 
-const email = ref('')
+const email = ref(null)
 
 const mailerlite = new MailerLite({
   api_key: import.meta.env.VITE_MAILERLITE_TOKEN
 })
+
+const successfullySubscribed = ref(false)
 
 function subscribe() {
   mailerlite.subscribers
@@ -238,11 +243,9 @@ function subscribe() {
       email: email.value,
       groups: [import.meta.env.VITE_MAILERLITE_GROUP]
     })
-    .then(response => {
-      console.log(response.data)
-    })
-    .catch(error => {
-      if (error.response) console.log(error.response.data)
+    .then(() => {
+      email.value = null
+      successfullySubscribed.value = true
     })
 }
 </script>

@@ -153,7 +153,7 @@
               <label for="email-address" class="sr-only">Email address</label>
               <input
                 id="email-address"
-                ref="input"
+                v-model="email"
                 name="email"
                 type="email"
                 autocomplete="email"
@@ -226,20 +226,18 @@ const navigation = [
 
 const mobileMenuOpen = ref(false)
 
-const input = ref(null)
+const email = ref('')
 
 const mailerlite = new MailerLite({
-  api_key: process.env.VITE_MAILERLITE_TOKEN
+  api_key: import.meta.env.VITE_MAILERLITE_TOKEN
 })
-
-const params = {
-  email: input.value,
-  groups: [process.env.VITE_MAILERLITE_GROUP]
-}
 
 function subscribe() {
   mailerlite.subscribers
-    .createOrUpdate(params)
+    .createOrUpdate({
+      email: email.value,
+      groups: [import.meta.env.VITE_MAILERLITE_GROUP]
+    })
     .then(response => {
       console.log(response.data)
     })

@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "texas-twisters",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
     "lint": "eslint --ext .js,.vue --fix src"
   },
   "dependencies": {
+    "@mailerlite/mailerlite-nodejs": "^1.0.1",
     "vue": "^3.2.47"
   },
   "devDependencies": {

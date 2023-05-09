@@ -144,11 +144,16 @@
             for all ages. Want to stay in the loop? Sign up for our newsletter.
           </p>
 
-          <form class="mt-6 max-w-md m-auto w-full col-span-5">
+          <form
+            class="mt-6 max-w-md m-auto w-full col-span-5"
+            method="POST"
+            @submit.prevent="subscribe"
+          >
             <div class="flex gap-x-4">
               <label for="email-address" class="sr-only">Email address</label>
               <input
                 id="email-address"
+                ref="input"
                 name="email"
                 type="email"
                 autocomplete="email"
@@ -210,6 +215,7 @@
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import MailerLite from '@mailerlite/mailerlite-nodejs'
 
 const navigation = [
   { name: 'Schedule', href: '#' },
@@ -219,4 +225,26 @@ const navigation = [
 ]
 
 const mobileMenuOpen = ref(false)
+
+const input = ref(null)
+
+const mailerlite = new MailerLite({
+  api_key: process.env.MAILERLITE_TOKEN
+})
+
+const params = {
+  email: input.value,
+  groups: [process.env.MAILERLITE_GROUP]
+}
+
+function subscribe() {
+  mailerlite.subscribers
+    .createOrUpdate(params)
+    .then(response => {
+      console.log(response.data)
+    })
+    .catch(error => {
+      if (error.response) console.log(error.response.data)
+    })
+}
 </script>

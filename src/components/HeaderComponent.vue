@@ -5,14 +5,15 @@
             aria-label="Global"
         >
             <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
+                <!-- <router-link to="/" class="-m-1.5 p-1.5"></router-link>
+                <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Your Company</span>
                     <img
                         class="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                         alt=""
                     />
-                </a>
+                </a> -->
             </div>
             <div class="flex lg:hidden">
                 <button
@@ -34,11 +35,7 @@
                 >
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
-                    >Log in <span aria-hidden="true">&rarr;</span></a
-                >
+                <!-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
             </div>
         </nav>
         <Dialog
@@ -72,21 +69,21 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                            <a
+                            <router-link
                                 v-for="item in navigation"
                                 :key="item.name"
-                                :href="item.href"
+                                :to="item.href"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >{{ item.name }}</a
+                                >{{ item.name }}</router-link
                             >
                         </div>
-                        <div class="py-6">
+                        <!-- <div class="py-6">
                             <a
                                 href="#"
                                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >Log in</a
                             >
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </DialogPanel>
@@ -100,9 +97,10 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-    { name: 'Schedule', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'About', href: '#' }
+    { name: 'Home', href: '/' },
+    { name: 'Schedule', href: '/schedule' },
+    { name: 'Pricing', href: '/pricing' },
+    { name: 'About', href: '/about' }
 ]
 
 const mobileMenuOpen = ref(false)

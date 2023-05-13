@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-32 lg:px-8">
+    <div class="mx-auto mt-16 max-w-7xl sm:mt-32 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
             <h1 class="text-base font-semibold leading-7 text-indigo-600">
                 About
@@ -20,7 +20,7 @@
 
         <div class="py-24 md:py-32 lg:py-40">
             <div
-                class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3"
+                class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 lg:px-8 xl:grid-cols-3"
             >
                 <div class="mx-auto max-w-2xl lg:mx-0">
                     <h2

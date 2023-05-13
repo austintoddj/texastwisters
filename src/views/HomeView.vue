@@ -18,7 +18,7 @@
                 Coming Soon
             </h1>
             <p class="mt-6 text-lg leading-8 text-gray-600">
-                Serving the greater Georgetown area, Texas Twisters is
+                Serving the greater Georgetown area, Texas Twisters provides
                 gymnastics for all ages. Want to stay in the loop? Sign up for
                 our newsletter.
             </p>
@@ -60,108 +60,300 @@
                 <p class="mt-4 text-sm leading-6 text-gray-900">
                     We care about your data. Read our
                     <a
-                        @click="privacyModalOpen = true"
                         class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
+                        @click="privacyModalOpen = true"
                         >privacy&nbsp;policy</a
                     >.
                 </p>
             </form>
         </div>
     </div>
-    
+
     <TransitionRoot as="template" :show="privacyModalOpen">
-            <Dialog as="div" class="relative z-10" @close="privacyModalOpen = false">
-                <TransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0" enter-to="opacity-100"
-                    leave="ease-in duration-200" leave-from="opacity-100" leave-to="opacity-0">
-                    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-                </TransitionChild>
+        <Dialog
+            as="div"
+            class="relative z-50"
+            @close="privacyModalOpen = false"
+        >
+            <TransitionChild
+                as="template"
+                enter="ease-out duration-300"
+                enter-from="opacity-0"
+                enter-to="opacity-100"
+                leave="ease-in duration-200"
+                leave-from="opacity-100"
+                leave-to="opacity-0"
+            >
+                <div
+                    class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                />
+            </TransitionChild>
 
-                <div class="fixed inset-0 z-10 overflow-y-auto">
-                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                        <TransitionChild as="template" enter="ease-out duration-300"
-                            enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                            enter-to="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200"
-                            leave-from="opacity-100 translate-y-0 sm:scale-100"
-                            leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
-                            <DialogPanel
-                                class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
-                                <div class="sm:flex sm:items-start">
-                                    <div
-                                        class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 sm:mx-0 sm:h-10 sm:w-10">
-                                        <LockClosedIcon class="h-6 w-6 text-gray-600" aria-hidden="true" />
-                                    </div>
-                                    <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                        <DialogTitle as="h3" class="text-base font-semibold leading-6 text-gray-900">Privacy Policy</DialogTitle>
-                                        <div class="mt-2">
-                                            <p class="text-sm text-gray-500">
-                                                Privacy Policy
+            <div class="fixed inset-0 z-10 overflow-y-auto">
+                <div
+                    class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+                >
+                    <TransitionChild
+                        as="template"
+                        enter="ease-out duration-300"
+                        enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        enter-to="opacity-100 translate-y-0 sm:scale-100"
+                        leave="ease-in duration-200"
+                        leave-from="opacity-100 translate-y-0 sm:scale-100"
+                        leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                    >
+                        <DialogPanel
+                            class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+                        >
+                            <div class="sm:flex sm:items-start">
+                                <div
+                                    class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 sm:mx-0 sm:h-10 sm:w-10"
+                                >
+                                    <LockClosedIcon
+                                        class="h-6 w-6 text-gray-600"
+                                        aria-hidden="true"
+                                    />
+                                </div>
+                                <div
+                                    class="mt-3 sm:ml-4 sm:mt-0 sm:text-left px-6 sm:px-0"
+                                >
+                                    <DialogTitle
+                                        as="h3"
+                                        class="text-base font-semibold leading-6 text-gray-900"
+                                        >Privacy Policy</DialogTitle
+                                    >
+                                    <div class="mt-2">
+                                        <p class="text-sm text-gray-500">
+                                            We are committed to protecting your
+                                            privacy. This policy explains how we
+                                            collect, use, and share your
+                                            information.
+                                        </p>
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >What information do we
+                                                collect?</span
+                                            >
 
-                                            We are committed to protecting your privacy. This policy explains how we collect, use, and share your information.
+                                            We collect information from you when
+                                            you visit our website, use our
+                                            services, or interact with our
+                                            marketing and advertising. The
+                                            information we collect may include:
+                                        </p>
 
-                                            1. What information do we collect?
+                                        <ul
+                                            role="list"
+                                            class="mt-3 list-disc text-sm text-gray-500"
+                                        >
+                                            <li>
+                                                Your name, email address, and
+                                                phone number
+                                            </li>
+                                            <li>
+                                                Your billing and payment
+                                                information
+                                            </li>
+                                            <li>Your shipping information</li>
+                                            <li>Your IP address</li>
+                                            <li>Your device information</li>
+                                            <li>Your usage data</li>
+                                            <li>Your search history</li>
+                                            <li>
+                                                Your interactions with our
+                                                marketing and advertising
+                                            </li>
+                                        </ul>
 
-                                            We collect information from you when you visit our website, use our services, or interact with our marketing and advertising. The information we collect may include:
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >How do we use your
+                                                information?</span
+                                            >
 
-                                            Your name, email address, and phone number
-                                            Your billing and payment information
-                                            Your shipping information
-                                            Your IP address
-                                            Your device information
-                                            Your usage data
-                                            Your search history
-                                            Your interactions with our marketing and advertising
-                                            2. How do we use your information?
+                                            We use the information we collect
+                                            for a variety of purposes,
+                                            including:
+                                        </p>
 
-                                            We use the information we collect for a variety of purposes, including:
+                                        <ul
+                                            role="list"
+                                            class="mt-3 list-disc text-sm text-gray-500"
+                                        >
+                                            <li>
+                                                To provide and operate our
+                                                website and services
+                                            </li>
+                                            <li>
+                                                To process your orders and
+                                                payments
+                                            </li>
+                                            <li>To communicate with you</li>
+                                            <li>
+                                                To personalize your experience
+                                            </li>
+                                            <li>
+                                                To improve our website and
+                                                services
+                                            </li>
+                                            <li>
+                                                To target our marketing and
+                                                advertising
+                                            </li>
+                                            <li>
+                                                To comply with our legal
+                                                obligations
+                                            </li>
+                                        </ul>
 
-                                            To provide and operate our website and services
-                                            To process your orders and payments
-                                            To communicate with you
-                                            To personalize your experience
-                                            To improve our website and services
-                                            To target our marketing and advertising
-                                            To comply with our legal obligations
-                                            3. Who do we share your information with?
-
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >Who do we share your
+                                                information with?</span
+                                            >
                                             We may share your information with:
+                                        </p>
 
-                                            Our third-party service providers, who help us operate our website and services, process payments, and provide customer support
-                                            Our marketing partners, who help us target our marketing and advertising
-                                            Law enforcement or other government officials, if required by law
-                                            4. How do we protect your information?
+                                        <ul
+                                            role="list"
+                                            class="mt-3 list-disc text-sm text-gray-500"
+                                        >
+                                            <li>
+                                                Our third-party service
+                                                providers, who help us operate
+                                                our website and services,
+                                                process payments, and provide
+                                                customer support
+                                            </li>
+                                            <li>
+                                                Our marketing partners, who help
+                                                us target our marketing and
+                                                advertising
+                                            </li>
+                                            <li>
+                                                Law enforcement or other
+                                                government officials, if
+                                                required by law
+                                            </li>
+                                        </ul>
 
-                                            We use a variety of security measures to protect your information, including:
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >How do we protect your
+                                                information?</span
+                                            >
+                                            We use a variety of security
+                                            measures to protect your
+                                            information, including:
+                                        </p>
 
-                                            Encryption
-                                            Physical security
-                                            Access controls
-                                            Auditing
-                                            5. How do you exercise your privacy rights?
+                                        <ul
+                                            role="list"
+                                            class="mt-3 list-disc text-sm text-gray-500"
+                                        >
+                                            <li>Encryption</li>
+                                            <li>Physical security</li>
+                                            <li>Access controls</li>
+                                            <li>Auditing</li>
+                                        </ul>
 
-                                            You have a number of rights with respect to your personal information, including:
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >How do you exercise your
+                                                privacy rights?</span
+                                            >
+                                            You have a number of rights with
+                                            respect to your personal
+                                            information, including:
+                                        </p>
 
-                                            The right to access your personal information
-                                            The right to correct or update your personal information
-                                            The right to delete your personal information
-                                            The right to object to the processing of your personal information
-                                            The right to restrict the processing of your personal information
-                                            The right to data portability
-                                            The right to withdraw your consent
-                                            To exercise any of these rights, please contact us at [email address].
+                                        <ul
+                                            role="list"
+                                            class="mt-3 list-disc text-sm text-gray-500"
+                                        >
+                                            <li>
+                                                The right to access your
+                                                personal information
+                                            </li>
+                                            <li>
+                                                The right to correct or update
+                                                your personal information
+                                            </li>
+                                            <li>
+                                                The right to delete your
+                                                personal information
+                                            </li>
+                                            <li>
+                                                The right to object to the
+                                                processing of your personal
+                                                information
+                                            </li>
+                                            <li>
+                                                The right to restrict the
+                                                processing of your personal
+                                                information
+                                            </li>
+                                            <li>
+                                                The right to data portability
+                                            </li>
+                                            <li>
+                                                The right to withdraw your
+                                                consent
+                                            </li>
+                                        </ul>
 
-                                            6. How do we update this Privacy Policy?
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            To exercise any of these rights,
+                                            please contact us at
+                                            <a
+                                                href="mailto:privacy@texastwistersgym.com"
+                                                class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
+                                                >privacy@texastwistersgym.com</a
+                                            >.
+                                        </p>
 
-                                            We may update this Privacy Policy from time to time. If we make any significant changes, we will notify you by email or through a prominent notice on our website.
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >How do we update this Privacy
+                                                Policy?</span
+                                            >
+                                            We may update this Privacy Policy
+                                            from time to time. If we make any
+                                            significant changes, we will notify
+                                            you by email or through a prominent
+                                            notice on our website.
+                                        </p>
 
-                                            7. How can you contact us?
-
-                                            If you have any questions about this Privacy Policy, please contact us at [email address].
-                                            </p>
-                                        </div>
+                                        <p class="mt-3 text-sm text-gray-500">
+                                            <span class="font-bold"
+                                                >How can you contact us?</span
+                                            >
+                                            If you have any questions about this
+                                            Privacy Policy, please contact us at
+                                            <a
+                                                href="mailto:privacy@texastwistersgym.com"
+                                                class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
+                                                >privacy@texastwistersgym.com</a
+                                            >.
+                                        </p>
                                     </div>
                                 </div>
-                            </DialogPanel>
-                        </TransitionChild>
+                            </div>
+
+                            <div
+                                class="px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+                            >
+                                <button
+                                    ref="closeButtonRef"
+                                    type="button"
+                                    class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                                    @click="privacyModalOpen = false"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </DialogPanel>
+                    </TransitionChild>
                 </div>
             </div>
         </Dialog>
@@ -171,7 +363,13 @@
 <script setup>
 import { ref } from 'vue'
 import MailerLite from '@mailerlite/mailerlite-nodejs'
-import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import {
+    Dialog,
+    DialogPanel,
+    DialogTitle,
+    TransitionChild,
+    TransitionRoot
+} from '@headlessui/vue'
 import { LockClosedIcon } from '@heroicons/vue/24/outline'
 
 const privacyModalOpen = ref(false)

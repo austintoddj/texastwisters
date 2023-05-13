@@ -1,10 +1,10 @@
 <template>
     <div
-        class="mx-auto mt-32 max-w-7xl border border-gray-200 bg-white shadow sm:rounded-lg h-[60rem]"
+        class="mx-auto mt-32 max-w-7xl bg-white ring-1 ring-gray-200 rounded-3xl h-[60rem]"
     >
         <div class="flex h-full flex-col">
             <header
-                class="flex flex-none items-center justify-between border-b border-gray-200 px-6 py-4 bg-gray-100 rounded- sm:rounded-t-lg"
+                class="flex flex-none items-center justify-between border-b border-gray-200 px-6 py-4 bg-gray-100 sm:rounded-t-3xl"
             >
                 <h1 class="text-base font-semibold leading-6 text-gray-900">
                     <time datetime="2022-01">January 2022</time>
@@ -239,7 +239,7 @@
             </header>
             <div
                 ref="container"
-                class="isolate flex flex-auto flex-col overflow-auto bg-white sm:rounded-lg"
+                class="isolate flex flex-auto flex-col overflow-auto bg-white sm:rounded-3xl"
             >
                 <div
                     style="width: 165%"

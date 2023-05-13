@@ -60,19 +60,121 @@
                 <p class="mt-4 text-sm leading-6 text-gray-900">
                     We care about your data. Read our
                     <a
-                        href="#"
-                        class="font-semibold text-indigo-600 hover:text-indigo-500"
+                        @click="privacyModalOpen = true"
+                        class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
                         >privacy&nbsp;policy</a
                     >.
                 </p>
             </form>
         </div>
     </div>
+    
+    <TransitionRoot as="template" :show="privacyModalOpen">
+            <Dialog as="div" class="relative z-10" @close="privacyModalOpen = false">
+                <TransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0" enter-to="opacity-100"
+                    leave="ease-in duration-200" leave-from="opacity-100" leave-to="opacity-0">
+                    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+                </TransitionChild>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                        <TransitionChild as="template" enter="ease-out duration-300"
+                            enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            enter-to="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200"
+                            leave-from="opacity-100 translate-y-0 sm:scale-100"
+                            leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                            <DialogPanel
+                                class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+                                <div class="sm:flex sm:items-start">
+                                    <div
+                                        class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 sm:mx-0 sm:h-10 sm:w-10">
+                                        <LockClosedIcon class="h-6 w-6 text-gray-600" aria-hidden="true" />
+                                    </div>
+                                    <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                                        <DialogTitle as="h3" class="text-base font-semibold leading-6 text-gray-900">Privacy Policy</DialogTitle>
+                                        <div class="mt-2">
+                                            <p class="text-sm text-gray-500">
+                                                Privacy Policy
+
+                                            We are committed to protecting your privacy. This policy explains how we collect, use, and share your information.
+
+                                            1. What information do we collect?
+
+                                            We collect information from you when you visit our website, use our services, or interact with our marketing and advertising. The information we collect may include:
+
+                                            Your name, email address, and phone number
+                                            Your billing and payment information
+                                            Your shipping information
+                                            Your IP address
+                                            Your device information
+                                            Your usage data
+                                            Your search history
+                                            Your interactions with our marketing and advertising
+                                            2. How do we use your information?
+
+                                            We use the information we collect for a variety of purposes, including:
+
+                                            To provide and operate our website and services
+                                            To process your orders and payments
+                                            To communicate with you
+                                            To personalize your experience
+                                            To improve our website and services
+                                            To target our marketing and advertising
+                                            To comply with our legal obligations
+                                            3. Who do we share your information with?
+
+                                            We may share your information with:
+
+                                            Our third-party service providers, who help us operate our website and services, process payments, and provide customer support
+                                            Our marketing partners, who help us target our marketing and advertising
+                                            Law enforcement or other government officials, if required by law
+                                            4. How do we protect your information?
+
+                                            We use a variety of security measures to protect your information, including:
+
+                                            Encryption
+                                            Physical security
+                                            Access controls
+                                            Auditing
+                                            5. How do you exercise your privacy rights?
+
+                                            You have a number of rights with respect to your personal information, including:
+
+                                            The right to access your personal information
+                                            The right to correct or update your personal information
+                                            The right to delete your personal information
+                                            The right to object to the processing of your personal information
+                                            The right to restrict the processing of your personal information
+                                            The right to data portability
+                                            The right to withdraw your consent
+                                            To exercise any of these rights, please contact us at [email address].
+
+                                            6. How do we update this Privacy Policy?
+
+                                            We may update this Privacy Policy from time to time. If we make any significant changes, we will notify you by email or through a prominent notice on our website.
+
+                                            7. How can you contact us?
+
+                                            If you have any questions about this Privacy Policy, please contact us at [email address].
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </DialogPanel>
+                        </TransitionChild>
+                </div>
+            </div>
+        </Dialog>
+    </TransitionRoot>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import MailerLite from '@mailerlite/mailerlite-nodejs'
+import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import { LockClosedIcon } from '@heroicons/vue/24/outline'
+
+const privacyModalOpen = ref(false)
 
 const email = ref(null)
 

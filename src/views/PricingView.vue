@@ -111,7 +111,7 @@
         </div>
     </div>
 
-    <div class="mx-auto my-24 max-w-7xl px-6 sm:my-56 lg:px-8">
+    <div class="mx-auto my-24 max-w-7xl px-6 sm:my-28 lg:px-8">
         <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
             <h2
                 class="text-2xl font-bold leading-10 tracking-tight text-gray-900"

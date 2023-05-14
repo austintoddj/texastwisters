@@ -144,21 +144,9 @@
 
                                         <ul
                                             role="list"
-                                            class="mt-3 list-disc text-sm text-gray-500"
+                                            class="mt-3 ml-6 list-disc text-sm text-gray-500"
                                         >
-                                            <li>
-                                                Your name, email address, and
-                                                phone number
-                                            </li>
-                                            <li>
-                                                Your billing and payment
-                                                information
-                                            </li>
-                                            <li>Your shipping information</li>
-                                            <li>Your IP address</li>
-                                            <li>Your device information</li>
-                                            <li>Your usage data</li>
-                                            <li>Your search history</li>
+                                            <li>Your email address</li>
                                             <li>
                                                 Your interactions with our
                                                 marketing and advertising
@@ -178,16 +166,8 @@
 
                                         <ul
                                             role="list"
-                                            class="mt-3 list-disc text-sm text-gray-500"
+                                            class="mt-3 ml-6 list-disc text-sm text-gray-500"
                                         >
-                                            <li>
-                                                To provide and operate our
-                                                website and services
-                                            </li>
-                                            <li>
-                                                To process your orders and
-                                                payments
-                                            </li>
                                             <li>To communicate with you</li>
                                             <li>
                                                 To personalize your experience
@@ -216,15 +196,8 @@
 
                                         <ul
                                             role="list"
-                                            class="mt-3 list-disc text-sm text-gray-500"
+                                            class="mt-3 ml-6 list-disc text-sm text-gray-500"
                                         >
-                                            <li>
-                                                Our third-party service
-                                                providers, who help us operate
-                                                our website and services,
-                                                process payments, and provide
-                                                customer support
-                                            </li>
                                             <li>
                                                 Our marketing partners, who help
                                                 us target our marketing and
@@ -249,10 +222,9 @@
 
                                         <ul
                                             role="list"
-                                            class="mt-3 list-disc text-sm text-gray-500"
+                                            class="mt-3 ml-6 list-disc text-sm text-gray-500"
                                         >
                                             <li>Encryption</li>
-                                            <li>Physical security</li>
                                             <li>Access controls</li>
                                             <li>Auditing</li>
                                         </ul>
@@ -262,40 +234,14 @@
                                                 >How do you exercise your
                                                 privacy rights?</span
                                             >
-                                            You have a number of rights with
-                                            respect to your personal
-                                            information, including:
+                                            You have rights with respect to your
+                                            personal information, including:
                                         </p>
 
                                         <ul
                                             role="list"
-                                            class="mt-3 list-disc text-sm text-gray-500"
+                                            class="mt-3 ml-6 list-disc text-sm text-gray-500"
                                         >
-                                            <li>
-                                                The right to access your
-                                                personal information
-                                            </li>
-                                            <li>
-                                                The right to correct or update
-                                                your personal information
-                                            </li>
-                                            <li>
-                                                The right to delete your
-                                                personal information
-                                            </li>
-                                            <li>
-                                                The right to object to the
-                                                processing of your personal
-                                                information
-                                            </li>
-                                            <li>
-                                                The right to restrict the
-                                                processing of your personal
-                                                information
-                                            </li>
-                                            <li>
-                                                The right to data portability
-                                            </li>
                                             <li>
                                                 The right to withdraw your
                                                 consent
@@ -307,7 +253,7 @@
                                             please contact us at
                                             <a
                                                 href="mailto:privacy@texastwistersgym.com"
-                                                class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
+                                                class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer focus-visible:outline-none"
                                                 >privacy@texastwistersgym.com</a
                                             >.
                                         </p>
@@ -332,7 +278,7 @@
                                             Privacy Policy, please contact us at
                                             <a
                                                 href="mailto:privacy@texastwistersgym.com"
-                                                class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
+                                                class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer focus-visible:outline-none"
                                                 >privacy@texastwistersgym.com</a
                                             >.
                                         </p>

@@ -37,8 +37,15 @@
                                         scope="col"
                                         class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
                                     >
+                                        Gender
+                                    </th>
+                                    <th
+                                        scope="col"
+                                        class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                                    >
                                         Class Type
                                     </th>
+
                                     <th
                                         scope="col"
                                         class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
@@ -53,17 +60,22 @@
                                     :key="service.class"
                                 >
                                     <td
-                                        class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
+                                        class="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pl-0"
                                     >
                                         {{ service.age }}
                                     </td>
                                     <td
-                                        class="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900"
+                                        class="whitespace-nowrap px-4 py-4 text-sm font-medium text-gray-500"
+                                    >
+                                        {{ service.gender }}
+                                    </td>
+                                    <td
+                                        class="whitespace-nowrap px-4 py-4 text-sm font-medium text-gray-900"
                                     >
                                         {{ service.class }}
                                     </td>
                                     <td
-                                        class="whitespace-nowrap px-2 py-2 text-sm text-gray-500"
+                                        class="whitespace-nowrap px-4 py-4 text-sm text-gray-500"
                                     >
                                         {{ service.price }}
                                     </td>
@@ -75,123 +87,64 @@
             </div>
         </div>
     </div>
-
-    <div class="mx-auto my-24 max-w-7xl px-6 sm:my-28 lg:px-8">
-        <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-            <h2
-                class="text-2xl font-bold leading-10 tracking-tight text-gray-900"
-            >
-                Frequently asked questions
-            </h2>
-            <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-                <Disclosure
-                    v-for="faq in faqs"
-                    :key="faq.question"
-                    v-slot="{ open }"
-                    as="div"
-                    class="pt-6"
-                >
-                    <dt>
-                        <DisclosureButton
-                            class="flex w-full items-start justify-between text-left text-gray-900"
-                        >
-                            <span class="text-base font-semibold leading-7">{{
-                                faq.question
-                            }}</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <PlusSmallIcon
-                                    v-if="!open"
-                                    class="h-6 w-6"
-                                    aria-hidden="true"
-                                />
-                                <MinusSmallIcon
-                                    v-else
-                                    class="h-6 w-6"
-                                    aria-hidden="true"
-                                />
-                            </span>
-                        </DisclosureButton>
-                    </dt>
-                    <DisclosurePanel as="dd" class="mt-2 pr-12">
-                        <p class="text-base leading-7 text-gray-600">
-                            {{ faq.answer }}
-                        </p>
-                    </DisclosurePanel>
-                </Disclosure>
-            </dl>
-        </div>
-    </div>
 </template>
 
 <script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
-
-const faqs = [
-    {
-        question: "What's the best thing about Switzerland?",
-        answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-    },
-    {
-        question: "What's the best thing about Switzerland?",
-        answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-    },
-    {
-        question: "What's the best thing about Switzerland?",
-        answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-    },
-    {
-        question: "What's the best thing about Switzerland?",
-        answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-    }
-]
-
 const services = [
     {
         age: '2-5',
         class: 'Preschool',
+        gender: 'All',
         price: '$80/month'
     },
     {
         age: '2-5',
         class: 'Preschool Open Gym',
+        gender: 'All',
         price: '$10/visit'
     },
 
     {
         age: '5-18',
         class: 'Levels 1-4',
+        gender: 'Female',
         price: '$80/month'
     },
     {
         age: '5-18',
         class: 'Team',
+        gender: 'Female',
         price: '$280/month'
     },
 
     {
         age: '5-18',
         class: 'Open Gym',
+        gender: 'All',
         price: '$20/visit'
     },
     {
         age: '18+',
         class: 'Adult Open Gym',
+        gender: 'All',
         price: '$20/visit'
     },
     {
         age: '18+',
         class: 'Adult Conditioning',
+        gender: 'All',
         price: '$15/visit'
     },
     {
         age: 'All',
         class: 'Homeschool PE',
+        gender: 'All',
         price: '$15/visit'
     },
     {
         age: 'All',
         class: 'Birthday Party',
+        gender: 'All',
         price: '$200/day'
     }
 ]

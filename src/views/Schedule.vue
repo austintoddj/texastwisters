@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto mt-16 max-w-7xl sm:mt-32 lg:px-8">
+    <div class="py-24 px-6 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
             <h1 class="text-base font-semibold leading-7 text-indigo-600">
                 Schedule
@@ -21,7 +21,7 @@
 
     <img
         src="/schedule.png"
-        class="mt-8 lg:mt-20 mx-auto w-full md:w-10/12 rounded-2xl border border-gray-100"
+        class="mx-auto w-full md:w-10/12 rounded-2xl border border-gray-100"
     />
 </template>
 

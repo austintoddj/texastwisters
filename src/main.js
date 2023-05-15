@@ -3,33 +3,34 @@ import './style.css'
 import App from './App.vue'
 import { inject } from '@vercel/analytics'
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from './views/HomeView.vue'
-import ScheduleView from './views/ScheduleView.vue'
-import PricingView from './views/PricingView.vue'
-import AboutView from './views/AboutView.vue'
+import Home from './views/Home.vue'
+import Schedule from './views/Schedule.vue'
+import Pricing from './views/Pricing.vue'
+import About from './views/About.vue'
+import NotFound from './views/NotFound.vue'
 
 inject()
 
 const routes = [
     {
         path: '/',
-        component: HomeView
-    },
-    {
-        path: '/schedule',
-        component: ScheduleView
-    },
-    {
-        path: '/pricing',
-        component: PricingView
+        component: Home
     },
     {
         path: '/about',
-        component: AboutView
+        component: About
+    },
+    {
+        path: '/pricing',
+        component: Pricing
+    },
+    {
+        path: '/schedule',
+        component: Schedule
     },
     {
         path: '/:catchAll(.*)',
-        redirect: '/'
+        component: NotFound
     }
 ]
 

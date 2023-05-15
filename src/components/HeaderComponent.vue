@@ -5,7 +5,7 @@
             aria-label="Global"
         >
             <div class="flex lg:flex-1">
-                <!-- <router-link to="/" class="-m-1.5 p-1.5"></router-link>
+                <router-link to="/" class="-m-1.5 p-1.5"></router-link>
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Your Company</span>
                     <img
@@ -13,7 +13,7 @@
                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                         alt=""
                     />
-                </a> -->
+                </a>
             </div>
             <div class="flex lg:hidden">
                 <button
@@ -51,11 +51,11 @@
                 <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Texas Twisters Gymnastics</span>
-                        <!-- <img
+                        <img
                             class="h-8 w-auto"
                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                             alt=""
-                        /> -->
+                        />
                     </a>
                     <button
                         type="button"

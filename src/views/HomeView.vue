@@ -60,6 +60,7 @@
                 <p class="mt-4 text-sm leading-6 text-gray-900">
                     We care about your data. Read our
                     <a
+                        href="#"
                         class="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer"
                         @click="privacyModalOpen = true"
                         >privacy&nbsp;policy</a

@@ -143,7 +143,7 @@
 const people = [
     {
         name: 'Becky Austin',
-        role: 'Manager, Head Coach',
+        role: 'Owner, Head Coach',
         imageUrl: '/becky.jpg',
         bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
         instagramUrl: 'https://instagram.com/gymnastrx',

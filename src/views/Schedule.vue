@@ -21,6 +21,7 @@
 
     <img
         src="/schedule.png"
+        alt="Texas Twisters Gymnastics gym schedule"
         class="mx-auto w-full md:w-10/12 rounded-2xl border border-gray-100"
     />
 </template>

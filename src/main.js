@@ -3,11 +3,12 @@ import './style.css'
 import App from './App.vue'
 import { inject } from '@vercel/analytics'
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from './views/Home.vue'
-import Schedule from './views/Schedule.vue'
-import Pricing from './views/Pricing.vue'
-import About from './views/About.vue'
-import NotFound from './views/NotFound.vue'
+
+const Home = () => import('./views/Home.vue')
+const Schedule = () => import('./views/Schedule.vue')
+const Pricing = () => import('./views/Pricing.vue')
+const About = () => import('./views/About.vue')
+const NotFound = () => import('./views/NotFound.vue')
 
 inject()
 

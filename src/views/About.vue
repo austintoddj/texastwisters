@@ -42,7 +42,7 @@
                         <img
                             class="aspect-[3/3] w-full rounded-2xl object-cover object-top"
                             :src="person.imageUrl"
-                            alt=""
+                            :alt="person.name"
                         />
                         <h3
                             class="mt-6 text-lg font-semibold leading-8 text-gray-900"

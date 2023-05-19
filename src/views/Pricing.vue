@@ -18,7 +18,7 @@
             reach their full potential.
         </p>
 
-        <div class="px-4 mt-6 sm:px-6 lg:px-8">
+        <div class="px-4 mt-6 sm:px-6 lg:px-8 pt-24">
             <div class="mt-8 flow-root">
                 <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div
@@ -107,7 +107,7 @@ const services = [
     {
         age: '5-18',
         class: 'Levels 1-4',
-        gender: 'Female',
+        gender: 'All',
         price: '$80/month'
     },
     {

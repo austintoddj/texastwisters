@@ -10,9 +10,9 @@
                 Flexible class schedule
             </p>
             <p class="mt-6 text-lg leading-8 text-gray-600">
-                Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-                Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-                at. In mi viverra elit nunc.
+                Whether you've got years of experience in the sport or you're
+                simply looking for a new challenge, we're here to support your
+                journey.
             </p>
         </div>
 

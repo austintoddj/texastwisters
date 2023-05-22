@@ -14,9 +14,9 @@
             <p
                 class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
             >
-                Distinctio et nulla eum soluta et neque labore quibusdam. Saepe
-                et quasi iusto modi velit ut non voluptas in. Explicabo id ut
-                laborum.
+                No locked-in contracts, no hidden fees, cancel when you want. We
+                believe affordability and best-in-class quality don't have to be
+                mutually exclusive.
             </p>
             <div
                 class="isolate mx-auto mt-16 max-w-md sm:mt-20 lg:mx-0 lg:max-w-none"

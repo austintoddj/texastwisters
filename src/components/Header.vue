@@ -69,13 +69,13 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                            <router-link
+                            <a
                                 v-for="item in navigation"
                                 :key="item.name"
-                                :to="item.href"
+                                :href="item.href"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 @click="mobileMenuOpen = false"
-                                >{{ item.name }}</router-link
+                                >{{ item.name }}</a
                             >
                         </div>
                         <!-- <div class="py-6">
@@ -98,10 +98,11 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Schedule', href: '/schedule' },
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'About', href: '/about' }
+    { name: 'Schedule', href: '#schedule' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'Our Team', href: '#about' },
+    { name: 'Hiring', href: '#hiring' },
+    { name: 'FAQs', href: '#faqs' }
 ]
 
 const mobileMenuOpen = ref(false)

@@ -13,12 +13,14 @@
             "error",
             {
                 "ignores": [
+                    "Faq",
                     "Footer",
                     "Header",
-                    "About",
-                    "Home",
+                    "Hero",
+                    "Hiring",
                     "Pricing",
-                    "Schedule"
+                    "Schedule",
+                    "Team"
                 ]
             }
         ]

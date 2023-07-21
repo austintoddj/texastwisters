@@ -16,18 +16,18 @@
         "vue": "^3.2.47"
     },
     "devDependencies": {
-        "@headlessui/vue": "^1.7.13",
-        "@heroicons/vue": "^2.0.17",
-        "@tailwindcss/forms": "^0.5.3",
+        "@headlessui/vue": "^1.7.14",
+        "@heroicons/vue": "^2.0.18",
+        "@tailwindcss/forms": "^0.5.4",
         "@tailwindcss/typography": "^0.5.9",
-        "@vitejs/plugin-vue": "^4.1.0",
+        "@vitejs/plugin-vue": "^4.2.3",
         "autoprefixer": "^10.4.14",
-        "eslint": "^8.31",
-        "eslint-config-prettier": "^8.7",
-        "eslint-plugin-vue": "^9.8",
-        "postcss": "^8.4.23",
-        "prettier": "^2.8",
-        "tailwindcss": "^3.3.2",
-        "vite": "^4.3.2"
+        "eslint": "^8.45.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-vue": "^9.15.1",
+        "postcss": "^8.4.27",
+        "prettier": "^3.0.0",
+        "tailwindcss": "^3.3.3",
+        "vite": "^4.4.6"
     }
 }

@@ -37,21 +37,23 @@
                         {{ person.bio }}
                     </p>
                     <ul role="list" class="mt-6 flex gap-x-6">
-                        <li v-if="person.twitterUrl">
+                        <li v-if="person.xUrl">
                             <a
-                                :href="person.twitterUrl"
+                                :href="person.xUrl"
                                 class="text-gray-400 hover:text-gray-500"
                             >
-                                <span class="sr-only">Twitter</span>
+                                <span class="sr-only">X</span>
                                 <svg
-                                    class="h-5 w-5"
-                                    aria-hidden="true"
+                                    viewBox="0 0 24 24"
                                     fill="currentColor"
-                                    viewBox="0 0 20 20"
+                                    aria-hidden="true"
+                                    class="h-5 w-5 r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"
                                 >
-                                    <path
-                                        d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
-                                    />
+                                    <g>
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                        ></path>
+                                    </g>
                                 </svg>
                             </a>
                         </li>
@@ -156,7 +158,7 @@ const people = [
         role: 'Owner',
         imageUrl: '/todd.jpg',
         bio: 'Husband and father of 2 with a decade of experience as an engineer and background in business development. Found a love for the sport in an adult gymnastics program and even managed to learn a thing or two.',
-        twitterUrl: 'https://twitter.com/austintoddj',
+        xUrl: 'https://x.com/austintoddj',
         linkedinUrl: 'https://linkedin.com/in/austintoddj',
         email: 'mailto:todd@texastwistersgym.com'
     }

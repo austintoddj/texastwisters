@@ -102,7 +102,6 @@ const navigation = [
     { name: 'Pricing', href: '#pricing' },
     { name: 'Our Team', href: '#about' },
     { name: 'Hiring', href: '#hiring' },
-    { name: 'FAQs', href: '#faqs' }
 ]
 
 const mobileMenuOpen = ref(false)

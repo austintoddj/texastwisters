@@ -8,7 +8,6 @@
             <Pricing />
             <Team />
             <Hiring />
-            <Faq />
 
             <div class="relative -z-10 mt-32 px-6 lg:px-8">
                 <div
@@ -83,5 +82,4 @@ import Schedule from '@/components/Schedule.vue'
 import Pricing from '@/components/Pricing.vue'
 import Team from '@/components/Team.vue'
 import Hiring from '@/components/Hiring.vue'
-import Faq from '@/components/Faq.vue'
 </script>

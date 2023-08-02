@@ -1,31 +1,30 @@
 {
-    "name": "texas-twisters",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "format": "prettier --write .",
-        "lint": "eslint ."
-    },
-    "dependencies": {
-        "@vercel/analytics": "^1.0.1",
-        "vue": "^3.2.47"
-    },
-    "devDependencies": {
-        "@headlessui/vue": "^1.7.14",
-        "@heroicons/vue": "^2.0.18",
-        "@tailwindcss/typography": "^0.5.9",
-        "@vitejs/plugin-vue": "^4.2.3",
-        "autoprefixer": "^10.4.14",
-        "eslint": "^8.45.0",
-        "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-vue": "^9.15.1",
-        "postcss": "^8.4.27",
-        "prettier": "^3.0.0",
-        "tailwindcss": "^3.3.3",
-        "vite": "^4.4.6"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@tabler/icons-react": "^2.26.0",
+    "clsx": "^1.2.1",
+    "gray-matter": "^4.0.3",
+    "lightgallery": "^2.7.1",
+    "marked": "^5.1.1",
+    "next": "^13.4.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.42.0",
+    "eslint-config-next": "^13.4.5",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.3"
+  }
 }

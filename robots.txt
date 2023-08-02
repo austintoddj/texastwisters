@@ -1,3 +1,0 @@
-Sitemap: https://texastwistersgym.com/sitemap.xml
-User-agent: *
-Disallow:

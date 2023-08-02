@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+
+.h1 {
+  @apply text-5xl font-extrabold leading-snug sm:text-6xl xl:text-7xl sm:leading-tight xl:leading-tighter;
+}
+
+.h2 {
+  @apply text-4xl font-bold leading-tight tracking-tight sm:text-5xl xl:text-6xl sm:leading-tighter;
+}
+
+.h3 {
+  @apply text-3xl font-bold leading-tight tracking-tight sm:text-4xl sm:leading-tighter;
+}
+
+.h4 {
+  @apply text-2xl font-bold leading-tight tracking-tight sm:text-3xl sm:leading-tighter;
+}

@@ -9,7 +9,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@tabler/icons-react": "^2.26.0",
-    "clsx": "^1.2.1",
+    "clsx": "^2.0.0",
     "gray-matter": "^4.0.3",
     "lightgallery": "^2.7.1",
     "marked": "^5.1.1",

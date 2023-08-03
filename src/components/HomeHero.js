@@ -36,12 +36,12 @@ export const HomeHero = () => {
         {/* Hero text content */}
         <div className="flex flex-col items-center justify-center lg:items-start lg:col-span-6">
           <div>
-            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md -rotate-1">
-              Welcome to Bright School
+            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+              Coming January 1st, 2024
             </span>
           </div>
           <h1 className="max-w-xl mt-4 text-center text-purple-900 sm:mt-5 lg:text-left h1 lg:max-w-none">
-            Creating a brighter future for your child
+            Welcome to Texas Twisters Gymnastics
           </h1>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
             At Bright School, we believe every child deserves a brighter future.

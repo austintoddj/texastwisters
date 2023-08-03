@@ -45,7 +45,7 @@ export const ContactHero = () => {
         {/* Hero header */}
         <div className="py-16 lg:py-32">
           <div>
-            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md -rotate-1">
+            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
               Contact us today
             </span>
           </div>

@@ -1,5 +1,5 @@
 ---
-address: 958 McKinley Avenue Littleton, CO 80120
+address: 901 S IH 35 Georgetown, TX 78628
 phone: +1-202-555-0132
-email: hello@bright.com
+email: info@texastwistersgym.com
 ---

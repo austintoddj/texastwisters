@@ -5,22 +5,22 @@ import image from "/public/images/stock/values.jpg";
 
 const values = [
   {
-    value: "Excellence and Innovation",
+    value: "Safety First",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et",
   },
   {
-    value: "Creativity",
+    value: "Skill Progression",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et",
   },
   {
-    value: "Trustworthiness",
+    value: "Positive Coaching",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et",
   },
   {
-    value: "Nurturing Individuality",
+    value: "Inclusivity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et",
   },

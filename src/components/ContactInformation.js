@@ -84,7 +84,7 @@ export const ContactInformation = () => {
       <div className="mt-16 lg:mx-auto lg:mt-24 rounded-3xl lg:max-w-screen-xl">
         <iframe
           className="w-full rounded-3xl"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.1624232420972!2d-76.62270638437457!3d39.329905428938126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c804df8502f88d%3A0x303d58494fa04c66!2sJohns%20Hopkins%20University!5e0!3m2!1sen!2sus!4v1629758627091!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432.1025957004976!2d-97.68832894751051!3d30.635562059136575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d67022629389%3A0xb242efb85f16f83a!2s901%20Interstate%2035%20Frontage%20Rd%2C%20Georgetown%2C%20TX%2078628!5e0!3m2!1sen!2sus!4v1691071247857!5m2!1sen!2sus"
           height={600}
           style={{ border: 0 }}
           allowFullScreen

@@ -1,12 +1,12 @@
 ---
-name: Andrea Lee
-role: Elementary Director & Lead
-image: "/images/stock/staff/staff-02.jpg"
+name: Todd Austin
+role: Owner
+image: "/images/staff/todd.jpg"
 featured: true
-portraitImage: "/images/stock/about-team-02.jpg"
+portraitImage: "/images/staff/todd.jpg"
 social:
   - name: "twitter"
-    href: "#"
-  - name: "facebook"
-    href: "#"
+    href: "https://twitter.com/austintoddj"
+  - name: "linkedin"
+    href: "https://www.linkedin.com/in/austintoddj/"
 ---

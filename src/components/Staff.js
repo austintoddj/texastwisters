@@ -16,7 +16,7 @@ export const Staff = () => {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div className="flex items-center">
               <h3 className="max-w-4xl text-white sm:text-center h2 lg:text-left">
-                Meet the awesome staff behind Bright school
+                Meet the awesome staff behind Texas Twisters
               </h3>
             </div>
             <div className="flex items-center">
@@ -62,6 +62,7 @@ export const Staff = () => {
                   <div className="flex space-x-1.5">
                     {member.data.social.map((socialLink, j) => (
                       <Link
+                          target="_blank"
                         key={`member-${i}-social-link-${j}`}
                         href={socialLink.href}
                       >

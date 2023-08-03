@@ -28,17 +28,18 @@ export const StaffAssurances = () => {
           {/* Text content */}
           <div className="flex flex-col justify-center lg:col-span-1 xl:col-span-6 lg:order-2">
             <div>
-              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md -rotate-1">
-                Your kids are in good hands
+              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+                Who we are
               </span>
             </div>
             <h2 className="mt-4 text-purple-900 sm:mt-5 h2">
-              Meet the teachers behind Bright School
+              Meet the staff behind Texas Twisters
             </h2>
             <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
-              Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut
-              libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus
-              convallis quis ac lectus.
+              {/*Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut*/}
+              {/*libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus*/}
+              {/*convallis quis ac lectus.*/}
+              We believe that every athlete has the potential to achieve great things, and we're dedicated to providing them with the tools and resources they need to succeed.
             </p>
             {/* Teacher qualifications box */}
             <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
@@ -47,8 +48,8 @@ export const StaffAssurances = () => {
               </span>
               <div className="px-4 py-10 mt-2 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  At Bright, we pride ourselves on the quality of our teachers.
-                  You can expect the following from our teachers:
+                  At Texas Twisters, we pride ourselves on the quality of our coaches.
+                  You can expect the following from them:
                 </p>
                 {/* Teacher qualifications list */}
                 <ul className="mt-5 space-y-5 text-lg text-purple-800">

@@ -12,7 +12,7 @@ export const ProgramPricing = ({ data }) => {
           {/* Section content */}
           <div className="flex flex-col justify-center pr-10 xl:pr-0">
             <div>
-              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md -rotate-1">
+              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
                 {data.tagline}
               </span>
             </div>
@@ -62,7 +62,7 @@ export const ProgramPricing = ({ data }) => {
                         {data[`pricing${i + 1}`].price}
                       </h2>
                       <div className="mt-3">
-                        <div className="inline-block h-6 px-3 text-sm font-medium leading-6 text-purple-700 align-top bg-purple-200 -rotate-1 rounded-xl">
+                        <div className="inline-block h-6 px-3 text-sm font-medium leading-6 text-purple-700 align-top bg-purple-200 rounded-xl">
                           {data[`pricing${i + 1}`].interval}
                         </div>
                       </div>

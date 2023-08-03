@@ -21,6 +21,7 @@ function SocialLink({ className, href, icon }) {
         className
       )}
       href={href}
+      target="_blank"
     >
       <Icon icon={icon} className="w-5 h-5 text-white" />
     </Link>
@@ -50,9 +51,8 @@ export const Footer = ({ programs, contact }) => {
           {/* Social links */}
           <div className="w-full mt-5 lg:mt-6">
             <div className="flex justify-start space-x-4">
-              <SocialLink href="#0" icon="instagram" />
+              <SocialLink href="https://instagram.com/texastwistersgym" icon="instagram" />
               <SocialLink href="#0" icon="facebook" />
-              <SocialLink href="#0" icon="twitter" />
             </div>
           </div>
         </div>
@@ -165,22 +165,8 @@ export const Footer = ({ programs, contact }) => {
       <div className="flex flex-col justify-between max-w-md py-8 mx-auto sm:flex-row sm:max-w-none lg:max-w-screen-2xl">
         {/* Copyright note */}
         <span className="text-base text-purple-800/90">
-          © {new Date().getFullYear()} Bright School. All rights reserved.
+          &copy; {new Date().getFullYear()} Texas Twisters Gymnastics, LLC. All rights reserved.
         </span>
-        <p className="mt-0.5 flex items-center text-purple-800/90">
-          Made with
-          <Icon icon="coffee" className="w-5 h-5 mx-1" />
-          <span>
-            by{" "}
-            <Link
-              className="text-purple-700 hover:text-purple-900 hover:underline"
-              href="https://www.tailwindawesome.com/"
-              target="_blank"
-            >
-              Tailwind Awesome
-            </Link>
-          </span>
-        </p>
       </div>
     </footer>
   );

@@ -251,7 +251,7 @@ export function Navbar({ programs }) {
             ))}
           </div>
 
-          {/* Call to action button */}
+          {/* Call-to-action button */}
           <div className="hidden lg:block">
             <Button href="#">Enroll today</Button>
           </div>

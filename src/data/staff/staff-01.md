@@ -1,12 +1,12 @@
 ---
-name: Tecia Torres
-role: Executive Director
-image: "/images/stock/staff/staff-01.jpg"
+name: Becky Austin
+role: Owner, Head Coach
+image: "/images/staff/becky.jpg"
 featured: true
-portraitImage: "/images/stock/about-team-01.jpg"
+portraitImage: "/images/staff/becky.jpg"
 social:
-  - name: "twitter"
-    href: "#"
-  - name: "facebook"
-    href: "#"
+  - name: "instagram"
+    href: "https://instagram.com/gymnastrx"
+  - name: "tiktok"
+    href: "https://www.tiktok.com/@gymnastrx"
 ---

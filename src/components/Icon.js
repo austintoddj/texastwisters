@@ -33,6 +33,7 @@ import {
   IconBrandFacebook,
   IconBrandTwitter,
   IconBrandLinkedin,
+    IconBrandTiktok,
 } from "@tabler/icons-react";
 
 const iconOptions = {
@@ -70,6 +71,7 @@ const iconOptions = {
   facebook: IconBrandFacebook,
   twitter: IconBrandTwitter,
   linkedin: IconBrandLinkedin,
+  tiktok: IconBrandTiktok
 };
 
 export const Icon = ({ icon, className = "", stroke = 1.5 }) => {

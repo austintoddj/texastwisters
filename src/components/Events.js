@@ -67,7 +67,7 @@ export const Events = () => {
                 )}
               >
                 <div>
-                  <div className="inline-flex items-center justify-center px-3.5 py-0.5 text-sm -rotate-1 bg-purple-200 text-purple-700 font-medium leading-6 align-top rounded-xl">
+                  <div className="inline-flex items-center justify-center px-3.5 py-0.5 text-sm bg-purple-200 text-purple-700 font-medium leading-6 align-top rounded-xl">
                     {event.data.dates}
                   </div>
                 </div>

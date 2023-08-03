@@ -2,7 +2,7 @@
 name: Viviane Araujo
 role: Preschool Teacher
 image: "/images/stock/staff/staff-04.jpg"
-featured: true
+featured: false
 portraitImage: "/images/stock/about-team-04.jpg"
 social:
   - name: "twitter"

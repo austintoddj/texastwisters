@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Icon } from "@/components/Icon";
 import { Button } from "@/components/Button";
 import sunrise from "/public/images/illustrations/sunrise.svg";
+import gymnast from "/public/images/illustrations/gymnast.svg";
 import highlight from "/public/images/illustrations/underline-simple-light-purple.svg";
 
 export const CallToAction = () => {
@@ -11,10 +12,11 @@ export const CallToAction = () => {
       {/* Container */}
       <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         {/* Sunrise image */}
-        <Image className="mx-auto w-72" src={sunrise} alt="" />
+        {/* <Image className="mx-auto w-72" src={sunrise} alt="" /> */}
+        <Image className="mx-auto w-72" src={gymnast} alt="" />
         {/* Header */}
         <h2 className="max-w-3xl mx-auto mt-6 text-center text-purple-900 h1">
-          <span className="block">Give your kid a</span>
+          <span className="block">The sport that</span>
           {/* Underlined text */}
           <span className="relative block">
             <span className="relative">
@@ -23,7 +25,7 @@ export const CallToAction = () => {
                 src={highlight}
                 alt=""
               />
-              <span className="relative">brighter future</span>
+              <span className="relative">builds champions</span>
             </span>
           </span>
         </h2>

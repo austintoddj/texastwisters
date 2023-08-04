@@ -10,13 +10,11 @@ import portraitImage2 from "/public/images/stock/home-blocks-03.jpg";
 import squareImage2 from "/public/images/stock/home-blocks-04.jpg";
 
 const features = [
-  "Personalized",
+  "USAG affiliated",
   "Small classes",
-  "Montessori",
-  "STEM focused",
-  "Hands-on approach",
-  "Diverse teachers & students",
-  "Experienced staff",
+  "Private lessons",
+  "State-of-the-art equipment",
+  "Experienced coaches",
 ];
 
 const blocks = [
@@ -47,7 +45,7 @@ export const HomeFeatureBlocks = () => {
         <div className="relative">
           {/* Block title and subtext */}
           <h2 className="max-w-4xl mx-auto text-center text-purple-900 h2">
-            Providing the best possible start to your children's education
+            Dedicated to provide a sense of safety, teamwork, and excellence
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
             Vestibulum ac diam sit amet quam vehicula elementum sed sit amet

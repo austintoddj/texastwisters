@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 
@@ -7,15 +8,12 @@ import checkmark from "/public/images/illustrations/checkmark.svg";
 
 import { getAllItems } from "@/lib/getItems";
 
-const assurances = [
-  "A minimum of 3 years of experience",
-  "An advanced degree",
-  "Amazing recommendations and positive reviews",
-  "A love and passion for teaching and helping children grow and succeed",
-  "A commitment to creating a positive classroom experience for all students, no matter their learning needs",
+const postings = [
+  { title: "Gymnastics coach", applicationUrl: "https://forms.gle/Xagd6meiKKzttkbm8" },
+  { title: "Front desk receptionist", applicationUrl: "https://forms.gle/TpkE2tMEUAvaWhWPA" },
 ];
 
-export const StaffAssurances = () => {
+export const StaffHiring = () => {
   const featuredStaff = getAllItems("staff").filter(
     (member) => member.data.featured
   );
@@ -29,33 +27,30 @@ export const StaffAssurances = () => {
           <div className="flex flex-col justify-center lg:col-span-1 xl:col-span-6 lg:order-2">
             <div>
               <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-                Who we are
+                We're hiring!
               </span>
             </div>
             <h2 className="mt-4 text-purple-900 sm:mt-5 h2">
               Meet the staff behind Texas Twisters
             </h2>
             <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
-              {/*Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut*/}
-              {/*libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus*/}
-              {/*convallis quis ac lectus.*/}
               We believe that every athlete has the potential to achieve great things, and we're dedicated to providing them with the tools and resources they need to succeed.
             </p>
-            {/* Teacher qualifications box */}
+            {/* Current job postings box */}
             <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
               <span className="absolute flex items-center justify-center shadow-md left-6 sm:left-10 -top-7 rounded-2xl w-14 h-14 bg-gradient-to-br from-purple-600 to-purple-600">
                 <Icon icon="certificate" className="w-8 h-8 text-purple-50" />
               </span>
               <div className="px-4 py-10 mt-2 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  At Texas Twisters, we pride ourselves on the quality of our coaches.
-                  You can expect the following from them:
+                  We're always looking for awesome people to join us. Current job openings:
+
                 </p>
-                {/* Teacher qualifications list */}
+                {/* Job postings list */}
                 <ul className="mt-5 space-y-5 text-lg text-purple-800">
-                  {assurances.map((assurance, index) => (
+                  {postings.map((posting, index) => (
                     <li
-                      key={`assurance-${index}`}
+                      key={`posting-${index}`}
                       className="flex items-center"
                     >
                       <Image
@@ -63,9 +58,25 @@ export const StaffAssurances = () => {
                         src={checkmark}
                         alt=""
                       />
-                      <span>{assurance}</span>
-                    </li>
-                  ))}
+                      <span>{posting.title}</span>
+                      <a
+                        href={posting.applicationUrl}
+                        className="ml-3 flex items-center py-0.5 px-0 w-[126px] max-w-full leading-6 text-left text-purple-600 no-underline bg-transparent border-b-2 border-purple-600 border-solid cursor-pointer hover:text-purple-500 transition duration-300 ease-in-out hover:border-purple-400 group"
+                        target="_blank"
+                      >
+                        <span className="text-base font-bold text-left">
+                          Apply today
+                        </span>
+                        <Icon
+                          icon="arrowNarrowRight"
+                          className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                          stroke={2}
+                        />
+                      </a>
+                        </li>
+                      ))}
+
+                      
                 </ul>
                 {/* Link to team section */}
                 <Button
@@ -84,7 +95,7 @@ export const StaffAssurances = () => {
               </div>
             </div>
           </div>
-          {/* Featured teachers section */}
+          {/* Featured coaches section */}
           <div className="grid w-full gap-10 mx-auto sm:gap-8 lg:col-span-1 xl:col-span-5 lg:mt-20 sm:grid-cols-2 lg:gap-4 xl:gap-8 lg:order-1 sm:max-w-none sm:mx-0">
             {featuredStaff.map((member, index) => (
               <div

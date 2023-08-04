@@ -44,9 +44,9 @@ export const HomeHero = () => {
             Welcome to Texas Twisters Gymnastics
           </h1>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
-            At Bright School, we believe every child deserves a brighter future.
-            and strive to give every student a personalized education that will
-            promote their individual strengths and creativity.
+            Located in the heart of Georgetown, our program is designed to challenge
+            and inspire gymnasts of all levels. From beginner to advanced, we'll
+            provide you with a safe, supportive, and fun environment to learn and grow.
           </p>
           {/* Hero buttons */}
           <div className="flex flex-col items-center mt-8 overflow-hidden sm:flex-row">
@@ -71,7 +71,7 @@ export const HomeHero = () => {
             </Button>
           </div>
           {/* Social proof */}
-          <p className="hidden text-sm font-medium tracking-wider text-purple-900 uppercase sm:block lg:hidden xl:block mt-14">
+          {/* <p className="hidden text-sm font-medium tracking-wider text-purple-900 uppercase sm:block lg:hidden xl:block mt-14">
             Rated 5 stars by over{" "}
             <span className="font-semibold text-purple-600">100 parents</span>
           </p>
@@ -100,7 +100,7 @@ export const HomeHero = () => {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         {/* Hero image & video */}
         <div className="flex flex-col justify-center max-w-3xl mx-auto mt-16 lg:mt-0 lg:max-w-none lg:col-span-6">

@@ -8,5 +8,5 @@ social:
   - name: "twitter"
     href: "https://twitter.com/austintoddj"
   - name: "linkedin"
-    href: "https://www.linkedin.com/in/austintoddj/"
+    href: "https://www.linkedin.com/in/austintoddj"
 ---

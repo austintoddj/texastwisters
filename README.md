@@ -8,3 +8,5 @@ Features that have been commented out:
 - Testimonials component in `page.jsx`
 - Events from `parents/page.jsx`
 - Newsletter from `parents/page.jsx`
+
+[no-op]

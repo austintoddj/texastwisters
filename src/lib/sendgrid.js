@@ -1,7 +1,7 @@
-import sendgrid from '@sendgrid/mail';
+import sendgrid from '@sendgrid/mail'
 
 export const sendEmail = async (to, subject, body) => {
-    sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY);
+    sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY)
 
     const message = {
         to: to,
@@ -10,12 +10,12 @@ export const sendEmail = async (to, subject, body) => {
             email: 'admin@texastwistersgym.com'
         },
         subject: subject,
-        html: body,
-    };
+        html: body
+    }
 
     try {
-        await sendgrid.send(message);
+        await sendgrid.send(message)
     } catch (error) {
         throw new Error(error)
     }
-};
+}

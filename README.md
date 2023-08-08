@@ -4,9 +4,9 @@
 
 Features that have been commented out:
 
-- Social proof sections in `HomeHero.js`
-- Testimonials component in `page.jsx`
-- Events from `parents/page.jsx`
-- Newsletter from `parents/page.jsx`
+-   Social proof sections in `HomeHero.js`
+-   Testimonials component in `page.jsx`
+-   Events from `parents/page.jsx`
+-   Newsletter from `parents/page.jsx`
 
 [no-op]

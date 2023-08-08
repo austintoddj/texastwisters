@@ -25,7 +25,7 @@ export default function HomePage() {
       <HomeFeatureBlocks />
       <StaffHiring />
       <FeaturedPrograms />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <Faqs faqs={faqs} />
     </>
   );

@@ -5,6 +5,7 @@ import { Roboto_Flex } from "next/font/google";
 import { Header } from "@/components/Header";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 import { getAllItems, getItemData } from "@/lib/getItems";
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         {children}
         <CallToAction />
         <Footer programs={programs} contact={contact} />
+        <Analytics />
       </body>
     </html>
   );

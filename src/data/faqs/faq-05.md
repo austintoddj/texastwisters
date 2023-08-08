@@ -1,4 +1,5 @@
 ---
-question: Do you welcome parent involvement? Can I stop by unannounced?
-answer: Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada.
+question: Do you offer any private lessons?
+answer:
+  Yes. Private lessons are scheduled directly with the staff once students are enrolled in the program.
 ---

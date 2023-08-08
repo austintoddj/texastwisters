@@ -12,8 +12,8 @@ export default function ParentsPage() {
   return (
     <>
       <ParentsHero />
-      <Events />
-      <Newsletter />
+      {/*<Events />*/}
+      {/*<Newsletter />*/}
     </>
   );
 }

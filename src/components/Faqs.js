@@ -7,6 +7,7 @@ import clsx from "clsx";
 import { Icon } from "@/components/Icon";
 import questionMark from "/public/images/illustrations/question-mark.svg";
 import bulb from "/public/images/illustrations/bulb.svg";
+import Link from "next/link";
 
 export const Faqs = ({ faqs }) => {
   return (
@@ -17,9 +18,7 @@ export const Faqs = ({ faqs }) => {
         <div className="max-w-2xl">
           <h2 className="text-purple-900 h2">Frequently asked questions</h2>
           <p className="max-w-2xl mt-4 text-xl leading-relaxed text-purple-800 lg:text-left">
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-            dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-            sem.
+            Please call our front desk if you have any questions or send us a message <Link href="/contact" className="underline">here</Link> and we'll get back to you as soon as we can.
           </p>
         </div>
         {/* FAQ */}

@@ -1,10 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import clsx from "clsx";
-
 import { Button } from "@/components/Button";
 import dotsLargeGrid from "/public/images/illustrations/dots-large-grid.svg";
 import dotsGrid from "/public/images/illustrations/dots-grid.svg";
 import dotsStrip from "/public/images/illustrations/dots-strip.svg";
+import {useState} from "react";
 
 const fields = [
   {
@@ -26,7 +28,7 @@ const fields = [
     label: "Phone",
     type: "text",
     placeholder: "(123) 456-7890",
-    required: true,
+    required: false,
   },
   {
     name: "message",
@@ -38,6 +40,36 @@ const fields = [
 ];
 
 export const ContactHero = () => {
+    const [isError, setIsError] = useState(null);
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+
+        const data = new FormData(e.target)
+
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(Object.fromEntries(data))
+        }).then((res) => {
+            switch (res.status) {
+                case 200:
+                    setIsError(false)
+                    break;
+                case 500:
+                    setIsError(true)
+                    break;
+                default:
+                    break;
+            }
+
+            e.target.reset()
+        })
+    }
+
   return (
     <section className="px-4 pb-12 overflow-hidden lg:pt-24 sm:px-6 lg:px-8 bg-gradient-to-b from-purple-25 to-purple-50">
       {/* Container */}
@@ -53,8 +85,8 @@ export const ContactHero = () => {
             We'd love to hear from you
           </h1>
           <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
-            Praesent sapien massa, convallis a pellentesque nec, egestas non
-            nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Need to get in touch with us? Either fill out the form or find more
+            ways to connect with us below.
           </p>
         </div>
         {/* Contact form container */}
@@ -83,11 +115,11 @@ export const ContactHero = () => {
                 Send us a message
               </h3>
               <p className="text-purple-800 mt-0.5 text-opacity-90">
-                We'll get back to you within 24 hours.
+                We'll get back to you as soon as we can.
               </p>
             </div>
             {/* Contact form */}
-            <form className="mt-8" action="#">
+            <form className="mt-8" onSubmit={handleSubmit}>
               {fields.map((field, index) => (
                 <div
                   key={`contact-form-field-${index}}`}
@@ -122,6 +154,9 @@ export const ContactHero = () => {
                   )}
                 </div>
               ))}
+
+                {isError === true && (<p className="mt-4 text-red-700 bg-red-50 p-3 rounded-xl"><span className="font-bold text-red-800">Uh oh!</span> Something went wrong. Please try it again.</p>)}
+                {isError === false && (<p className="mt-4 text-green-700 bg-green-50 p-3 rounded-xl"><span className="font-bold text-green-800">We got your message!</span> You should hear from us soon.</p>)}
 
               <div className="flex justify-start mt-6">
                 <Button>Send message</Button>

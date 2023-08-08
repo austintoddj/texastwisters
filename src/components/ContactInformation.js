@@ -17,8 +17,7 @@ export const ContactInformation = () => {
           </div>
           <div className="flex items-center mt-3 sm:mt-4 lg:mt-0">
             <p className="text-lg text-purple-800 sm:text-xl text-opacity-90">
-              Dictum urna sed consectetur neque tristique pellentesque. Blandit
-              amet, sed aenean erat arcu morbi.
+                Send us an email or give us a call. Better yet, stop by in-person. We'd love to give you a tour!
             </p>
           </div>
         </div>

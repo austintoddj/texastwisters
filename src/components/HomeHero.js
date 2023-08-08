@@ -176,40 +176,40 @@ export const HomeHero = () => {
         </Transition>
       </div>
       {/* Visible only on sm screens ( <= 640px ) and lg screens ( >= 1024px	< 1280px ) */}
-      <div className="flex flex-col items-center mt-20 lg:mt-24 sm:hidden lg:flex xl:hidden">
-        {/* Social proof */}
-        <p className="text-sm font-semibold tracking-wider text-purple-900 uppercase">
-          Rated 5 stars by over{" "}
-          <span className="font-semibold text-purple-600">100 parents</span>
-        </p>
-        <div className="flex flex-col mt-8 overflow-hidden divide-y sm:divide-y-0 sm:divide-x sm:flex-row divide-purple-400/20">
-          {ratings.map((rating, index) => (
-            <div
-              key={`secondary-${rating.label}`}
-              className={clsx(
-                index == 0 && "pb-5 sm:pb-0 sm:pr-10",
-                index == 1 && "py-5 sm:py-0 sm:px-10",
-                index == 2 && "pt-5 sm:pt-0 sm:pl-10",
-                "flex flex-col items-center"
-              )}
-            >
-              <div className="flex justify-center w-full space-x-1">
-                {[...Array(rating.stars)].map((e, i) => (
-                  <Icon
-                    icon="starFilled"
-                    className="w-4.5 h-4.5 lg:w-5 lg:h-5 text-yellow-500"
-                    key={`secondary-${rating.label}-star-${i}`}
-                  />
-                ))}
-              </div>
+      {/*<div className="flex flex-col items-center mt-20 lg:mt-24 sm:hidden lg:flex xl:hidden">*/}
+      {/*  /!* Social proof *!/*/}
+      {/*  <p className="text-sm font-semibold tracking-wider text-purple-900 uppercase">*/}
+      {/*    Rated 5 stars by over{" "}*/}
+      {/*    <span className="font-semibold text-purple-600">100 parents</span>*/}
+      {/*  </p>*/}
+      {/*  <div className="flex flex-col mt-8 overflow-hidden divide-y sm:divide-y-0 sm:divide-x sm:flex-row divide-purple-400/20">*/}
+      {/*    {ratings.map((rating, index) => (*/}
+      {/*      <div*/}
+      {/*        key={`secondary-${rating.label}`}*/}
+      {/*        className={clsx(*/}
+      {/*          index == 0 && "pb-5 sm:pb-0 sm:pr-10",*/}
+      {/*          index == 1 && "py-5 sm:py-0 sm:px-10",*/}
+      {/*          index == 2 && "pt-5 sm:pt-0 sm:pl-10",*/}
+      {/*          "flex flex-col items-center"*/}
+      {/*        )}*/}
+      {/*      >*/}
+      {/*        <div className="flex justify-center w-full space-x-1">*/}
+      {/*          {[...Array(rating.stars)].map((e, i) => (*/}
+      {/*            <Icon*/}
+      {/*              icon="starFilled"*/}
+      {/*              className="w-4.5 h-4.5 lg:w-5 lg:h-5 text-yellow-500"*/}
+      {/*              key={`secondary-${rating.label}-star-${i}`}*/}
+      {/*            />*/}
+      {/*          ))}*/}
+      {/*        </div>*/}
 
-              <p className="mt-2.5 text-xs font-bold text-purple-700 uppercase tracking-wide">
-                {rating.label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/*        <p className="mt-2.5 text-xs font-bold text-purple-700 uppercase tracking-wide">*/}
+      {/*          {rating.label}*/}
+      {/*        </p>*/}
+      {/*      </div>*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*</div>*/}
     </section>
   );
 };

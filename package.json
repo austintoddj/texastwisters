@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.15",
+    "@sendgrid/mail": "^7.7.0",
     "@tabler/icons-react": "^2.26.0",
+    "@vercel/analytics": "^1.0.1",
     "clsx": "^2.0.0",
     "gray-matter": "^4.0.3",
     "lightgallery": "^2.7.1",
-    "marked": "^6.0.0",
+    "marked": "^7.0.0",
     "next": "^13.4.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -24,7 +26,9 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.42.0",
     "eslint-config-next": "^13.4.5",
+    "eslint-config-prettier": "^9.0.0",
     "postcss": "^8.4.24",
+    "prettier": "^3.0.1",
     "tailwindcss": "^3.3.3"
   }
 }

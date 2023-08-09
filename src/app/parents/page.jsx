@@ -12,7 +12,7 @@ export default function ParentsPage() {
     return (
         <>
             <ParentsHero />
-            {/*<Events />*/}
+            <Events />
             {/*<Newsletter />*/}
         </>
     )

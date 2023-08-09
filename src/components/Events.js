@@ -29,7 +29,8 @@ export const Events = () => {
                     </p>
                 </div>
                 {/* Events */}
-                <div className="mt-12 lg:grid lg:grid-cols-2 lg:gap-6 xl:gap-8 sm:mt-16">
+                {/*<div className="mt-12 lg:grid lg:grid-cols-2 lg:gap-6 xl:gap-8 sm:mt-16">*/}
+                <div className="mt-12 lg:grid lg:grid-cols-1 lg:gap-6 xl:gap-8 sm:mt-16">
                     {events.map((event, index) => (
                         <div
                             key={`event-${index}`}

@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 export const Faqs = ({ faqs }) => {
     return (
-        <section className="py-20 bg-yellow-100 sm:py-28">
+        <section className="py-20 bg-yellow-100 sm:py-28" id="faq">
             {/* Container */}
             <div className="px-4 mx-auto lg:max-w-screen-lg sm:px-6 lg:px-8">
                 {/* Section header title and subtext  */}

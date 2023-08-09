@@ -15,7 +15,7 @@ const navigation = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Programs' },
-    { label: 'Gallery', href: '/gallery' },
+    // { label: 'Gallery', href: '/gallery' },
     { label: 'Parents', href: '/parents' },
     { label: 'Contact', href: '/contact' }
 ]

@@ -17,33 +17,33 @@ const linkColors = [
 
 const links = [
     {
-        label: 'Community',
+        label: 'Parent Portal',
         href: '#0',
-        description: 'Join the parent-teacher group chat',
-        icon: 'messages'
+        description: 'Make changes to your membership or account',
+        icon: 'user'
     },
     {
-        label: 'Child Care Checklist',
-        href: '#0',
-        description: 'Confidently choose the best program for your child',
-        icon: 'listCheck'
+        label: 'Safety & Response',
+        href: 'https://usagym.org/safety',
+        description: 'Report a concern with USAG or SafeSport',
+        icon: 'lifeBuoy'
     },
     {
-        label: 'Meal Program',
-        href: '#0',
-        description: 'Learn about our healthy food program',
-        icon: 'meat'
+        label: 'FAQs',
+        href: '/#faq',
+        description: 'See our most frequently asked questions',
+        icon: 'help'
     },
     {
-        label: 'Covid Response',
+        label: 'Latest News',
         href: '#0',
-        description: "Learn what we're doing to keep your child safe",
-        icon: 'virus'
+        description: 'Stay informed with the latest gym headlines',
+        icon: 'article'
     },
     {
-        label: 'School Gallery',
-        href: '/gallery',
-        description: 'View our school gallery',
+        label: 'Photo Gallery',
+        href: '#',
+        description: 'Gym photos are coming soon!',
         icon: 'photo'
     }
 ]
@@ -70,7 +70,7 @@ export const ParentsHero = () => {
                 <div className="flex flex-col justify-center lg:col-span-5">
                     <div>
                         <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-                            Now enrolling for preschool
+                            Coming January 1st, 2024
                         </span>
                     </div>
                     <div className="relative">
@@ -85,14 +85,17 @@ export const ParentsHero = () => {
                         />
                     </div>
                     <p className="max-w-2xl mt-3 text-xl leading-loose text-purple-800 sm:mt-4">
-                        Sed porttitor lectus nibh. Cras ultricies ligula sed
-                        magna dictum porta. Praesent sapien massa, convallis a
-                        pellentesque nec, egestas non nisi.
+                        {/*Sed porttitor lectus nibh. Cras ultricies ligula sed*/}
+                        {/*magna dictum porta. Praesent sapien massa, convallis a*/}
+                        {/*pellentesque nec, egestas non nisi.*/}
+                        Check out different resources to keep you up-to-date
+                        with everything going on at Texas Twisters. We know
+                        you're busy, we'll help you keep it simple!
                     </p>
                     {/* Enroll CTA*/}
                     <div className="mt-10 font-semibold lg:mt-12">
                         <p className="text-purple-800">
-                            Not enrolled in our school?
+                            Not enrolled in our gym?
                         </p>
                         <Button href="#0" size="sm" className="mt-2 sm:mt-3">
                             Enroll today

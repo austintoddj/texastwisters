@@ -1,28 +1,6 @@
 {
-    "root": true,
-    "env": {
-        "node": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:vue/vue3-recommended",
-        "prettier"
-    ],
+    "extends": ["next/core-web-vitals", "prettier"],
     "rules": {
-        "vue/multi-word-component-names": [
-            "error",
-            {
-                "ignores": [
-                    "Faq",
-                    "Footer",
-                    "Header",
-                    "Hero",
-                    "Hiring",
-                    "Pricing",
-                    "Schedule",
-                    "Team"
-                ]
-            }
-        ]
+        "react/no-unescaped-entities": "off"
     }
 }

@@ -1,5 +1,0 @@
-{
-    "cleanUrls": true,
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-    "trailingSlash": false
-}

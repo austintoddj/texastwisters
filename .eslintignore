@@ -1,2 +1,4 @@
-dist
 public
+.vercel
+.vscode
+node_modules

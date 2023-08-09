@@ -84,7 +84,7 @@ export const Footer = ({ programs, contact }) => {
                                         'py-2'
                                 )}
                             >
-                                <Link href={`programs/${program.slug}`}>
+                                <Link href={`/programs/${program.slug}`}>
                                     {program.data.name}
                                 </Link>
                             </li>

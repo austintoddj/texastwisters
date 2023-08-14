@@ -4,8 +4,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "format": "prettier . --write"
+        "lint": "next lint --ignore-path .gitignore",
+        "format": "prettier --write --ignore-path .gitignore ."
     },
     "dependencies": {
         "@headlessui/react": "^1.7.15",

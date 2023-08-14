@@ -114,7 +114,7 @@ export const StaffHiring = () => {
                                     index % 2 == 0 && 'lg:-translate-y-20'
                                 )}
                             >
-                                <div className="relative aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 bg-yellow-50 rounded-3xl">
+                                <div className="relative aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4 bg-yellow-50 rounded-3xl">
                                     <Image
                                         className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
                                         fill

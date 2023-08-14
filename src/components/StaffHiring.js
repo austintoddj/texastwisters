@@ -89,19 +89,19 @@ export const StaffHiring = () => {
                                     ))}
                                 </ul>
                                 {/* Link to team section */}
-                                <Button
-                                    href="/about#team"
-                                    variant="accent"
-                                    size="sm"
-                                    className="mt-10"
-                                >
-                                    Meet the rest of the team
-                                    <Icon
-                                        icon="arrowNarrowRight"
-                                        className="w-5 h-5 ml-3 group-hover:animate-horizontal-bounce"
-                                        stroke={2}
-                                    />
-                                </Button>
+                                {/*<Button*/}
+                                {/*    href="/about#team"*/}
+                                {/*    variant="accent"*/}
+                                {/*    size="sm"*/}
+                                {/*    className="mt-10"*/}
+                                {/*>*/}
+                                {/*    Meet the rest of the team*/}
+                                {/*    <Icon*/}
+                                {/*        icon="arrowNarrowRight"*/}
+                                {/*        className="w-5 h-5 ml-3 group-hover:animate-horizontal-bounce"*/}
+                                {/*        stroke={2}*/}
+                                {/*    />*/}
+                                {/*</Button>*/}
                             </div>
                         </div>
                     </div>

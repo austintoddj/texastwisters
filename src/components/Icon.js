@@ -31,12 +31,12 @@ import {
     IconChevronDown,
     IconBrandInstagram,
     IconBrandFacebook,
-    IconBrandTwitter,
     IconBrandLinkedin,
     IconBrandTiktok,
     IconLifebuoy,
     IconHelpCircle,
-    IconArticle
+    IconArticle,
+    IconBrandX
 } from '@tabler/icons-react'
 
 const iconOptions = {
@@ -72,7 +72,7 @@ const iconOptions = {
     chevronDown: IconChevronDown,
     instagram: IconBrandInstagram,
     facebook: IconBrandFacebook,
-    twitter: IconBrandTwitter,
+    x: IconBrandX,
     linkedin: IconBrandLinkedin,
     tiktok: IconBrandTiktok,
     lifeBuoy: IconLifebuoy,

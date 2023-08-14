@@ -7,6 +7,7 @@
 -   Social proof sections in `HomeHero.js`
 -   Testimonials component in `page.jsx`
 -   Newsletter from `parents/page.jsx`
+-   Link to team section in `StaffHiring.js`
 
 ### Gallery
 

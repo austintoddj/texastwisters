@@ -18,7 +18,7 @@ export default function AboutPage() {
             <div className="w-full h-32 sm:h-40 lg:h-44 bg-gradient-to-b from-purple-25 to-white" />
 
             <AlternatingFeatures />
-            <Stats />
+            {/*<Stats />*/}
             <Staff />
             <Values />
         </>

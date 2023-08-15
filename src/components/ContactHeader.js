@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Icon } from '@/components/Icon'
-import logo from '/public/images/bright-logo.png'
+import logo from '/public/images/logo.png'
 
 export function ContactHeader({ contact }) {
     return (

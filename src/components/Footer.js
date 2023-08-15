@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import logo from '/public/images/bright-logo.png'
+import logo from '/public/images/logo.png'
 import { Icon } from '@/components/Icon'
 
 const siteLinks = [

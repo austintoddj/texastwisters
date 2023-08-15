@@ -3,7 +3,7 @@ import { ProgramInformation } from '@/components/ProgramInformation'
 import { ProgramDescription } from '@/components/ProgramDescription'
 import { ProgramPricing } from '@/components/ProgramPricing'
 
-import { getItemData, getAllItems } from '@/lib/getItems'
+import { getAllItems, getItemData } from '@/lib/getItems'
 
 export async function generateMetadata({ params: { slug } }) {
     const program = getItemData(slug, 'programs')
@@ -36,11 +36,9 @@ export default function ProgramPage({ params: { slug } }) {
 export async function generateStaticParams() {
     const programs = getAllItems('programs')
 
-    const paths = programs.map(program => ({
+    return programs.map(program => ({
         slug: program.slug
     }))
-
-    return paths
 }
 
 export const dynamicParams = false

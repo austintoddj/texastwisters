@@ -7,9 +7,9 @@ import lightPurpleBlob from '/public/images/illustrations/blob-light-purple.svg'
 import lightRoseBlob from '/public/images/illustrations/blob-light-rose.svg'
 import dotsStrip from '/public/images/illustrations/dots-large-strip.svg'
 import dots from '/public/images/illustrations/dots.svg'
-import blockImage1 from '/public/images/stock/about-01.jpg'
-import blockImage2 from '/public/images/stock/about-02.jpg'
-import blockImage3 from '/public/images/stock/about-03.jpg'
+import blockImage1 from '/public/images/about-01.jpg'
+import blockImage2 from '/public/images/about-02.jpg'
+import blockImage3 from '/public/images/about-03.jpg'
 
 const bgBlobs = [lightYellowBlob, lightPurpleBlob, lightRoseBlob]
 const blocks = [
@@ -17,19 +17,25 @@ const blocks = [
         tagline: 'Smart. Kind. Global.',
         headline: 'Developing young, caring and responsible individuals',
         text: 'Lorem ipsum dolor, sit amet consectetur elit do eius mod tempor labore sit amet. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Half galão extraction extra luwak luwak at con cappuccino milk that cortado organic est sit.',
-        image: { src: blockImage1, alt: 'Child covered in paint' }
+        image: { src: blockImage1, alt: 'A man and a girl in a gym' }
     },
     {
         tagline: 'Pod environment',
         headline: 'Getting the attention they deserve',
         text: 'Lorem ipsum dolor, sit amet consectetur elit do eius mod tempor labore sit amet. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Half galão extraction extra luwak luwak at con cappuccino milk that cortado organic est sit.',
-        image: { src: blockImage2, alt: 'Child painting' }
+        image: {
+            src: blockImage2,
+            alt: 'A girl holding a bar in a gym with people around her'
+        }
     },
     {
         tagline: 'Personalized learning.',
         headline: 'Every child has their own personalized education program',
         text: 'Lorem ipsum dolor, sit amet consectetur elit do eius mod tempor labore sit amet. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Half galão extraction extra luwak luwak at con cappuccino milk that cortado organic est sit.',
-        image: { src: blockImage3, alt: 'Child working on workbook' }
+        image: {
+            src: blockImage3,
+            alt: 'A girl on a balance beam with a child in the background'
+        }
     }
 ]
 

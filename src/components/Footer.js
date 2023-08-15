@@ -49,9 +49,9 @@ export const Footer = ({ programs, contact }) => {
                     </div>
                     {/* Mission statement */}
                     <div className="mt-6 text-lg text-purple-800">
-                        Dedicated to provide a safe, fun, and challenging
-                        environment where athletes of any age can grow and
-                        develop in the world of gymnastics.
+                        Texas Twisters is dedicated to provide a safe, fun, and
+                        challenging environment where athletes of any age can
+                        grow and develop in the world of gymnastics.
                     </div>
                     {/* Social links */}
                     <div className="w-full mt-5 lg:mt-6">

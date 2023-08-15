@@ -15,9 +15,9 @@ const roboto = Roboto_Flex({
 })
 
 export const metadata = {
-    title: 'Bright School - Creating a brighter future for your child',
+    title: 'Texas Twisters Gymnastics',
     description:
-        'At Bright School, we believe every child deserves a brighter future. and strive to give every student a personalized education that will promote their individual strengths and creativity.'
+        'Texas Twisters is dedicated to provide a safe, fun, and challenging environment where athletes of any age can grow and develop in the world of gymnastics.'
 }
 
 export default function RootLayout({ children }) {

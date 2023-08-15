@@ -37,13 +37,13 @@ const links = [
     {
         label: 'Latest News',
         href: '#0',
-        description: 'Stay informed with the latest gym headlines',
+        description: 'Stay informed with the latest events and activities',
         icon: 'article'
     },
     {
         label: 'Photo Gallery',
         href: '#',
-        description: 'Gym photos are coming soon!',
+        description: 'Gym photos are coming soon, stay tuned!',
         icon: 'photo'
     }
 ]
@@ -85,9 +85,6 @@ export const ParentsHero = () => {
                         />
                     </div>
                     <p className="max-w-2xl mt-3 text-xl leading-loose text-purple-800 sm:mt-4">
-                        {/*Sed porttitor lectus nibh. Cras ultricies ligula sed*/}
-                        {/*magna dictum porta. Praesent sapien massa, convallis a*/}
-                        {/*pellentesque nec, egestas non nisi.*/}
                         Check out different resources to keep you up-to-date
                         with everything going on at Texas Twisters. We know
                         you're busy, we'll help you keep it simple!

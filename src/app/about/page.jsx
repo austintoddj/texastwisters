@@ -5,9 +5,9 @@ import { Staff } from '@/components/Staff'
 import { Values } from '@/components/Values'
 
 export const metadata = {
-    title: 'About us - Bright',
+    title: 'About us - Texas Twisters Gymnastics',
     description:
-        "Learn about Bright Preschool & Elementary's mission, philosophy, and dedicated team. Explore our commitment to nurturing young minds, fostering creativity, and empowering children for a bright future."
+        "Learn about Texas Twister's mission, philosophy, and dedicated team. Explore our commitment to nurturing young minds, fostering creativity, and empowering children for a bright future."
 }
 
 export default function AboutPage() {

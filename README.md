@@ -15,8 +15,8 @@
 -   Gallery link in `Footer.js`
 -   Update the Gallery link card in `ParentsHero.js`
 
-### Events
+## To update
 
--   Update grid columns in `Events.js` when >1 events
+-   Meta tags
 
 [no-op]

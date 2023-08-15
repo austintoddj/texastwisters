@@ -3,7 +3,7 @@ import { Events } from '@/components/Events'
 import { Newsletter } from '@/components/Newsletter'
 
 export const metadata = {
-    title: 'Parent information - Bright',
+    title: 'Parent information - Texas Twisters Gymnastics',
     description:
         'Stay connected with Bright Preschool & Elementary through our Parents Portal - your go-to source for school news, events, and updates.'
 }

@@ -1,18 +1,18 @@
 import Image from 'next/image'
 import { Fragment } from 'react'
 
-import image1 from '/public/images/stock/school-grid-01.jpg'
-import image2 from '/public/images/stock/school-grid-02.jpg'
-import image3 from '/public/images/stock/school-grid-03.jpg'
-import image4 from '/public/images/stock/school-grid-04.jpg'
-import image5 from '/public/images/stock/school-grid-05.jpg'
+import image1 from '/public/images/gym-grid-01.jpg'
+import image2 from '/public/images/gym-grid-02.jpg'
+import image3 from '/public/images/gym-grid-03.jpg'
+import image4 from '/public/images/gym-grid-04.jpg'
+import image5 from '/public/images/gym-grid-05.jpg'
 
 const images = [
-    { src: image1, alt: 'Child laughing with teacher' },
-    { src: image2, alt: 'Teacher portrait' },
-    { src: image3, alt: 'Teacher reading to students' },
-    { src: image4, alt: 'Child writing on board with teacher' },
-    { src: image5, alt: 'Classroom' }
+    { src: image1, alt: 'A group of people sitting on mats' },
+    { src: image2, alt: 'A group of girls sitting on a mat' },
+    { src: image3, alt: 'A person smiling for the camera' },
+    { src: image4, alt: 'A group of girls in a gym' },
+    { src: image5, alt: 'A person and a child playing with toys on a blue mat' }
 ]
 
 export function AboutHero() {
@@ -23,13 +23,12 @@ export function AboutHero() {
                 {/* Page header */}
                 <div className="relative">
                     <h2 className="max-w-3xl mx-auto text-center text-purple-900 h1">
-                        Why Bright
+                        About Us
                     </h2>
                     <p className="max-w-2xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800 sm:mt-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Aenean et tortor at risus viverra
-                        adipiscing at in.
+                        We're dedicated to provide a safe, fun, and challenging
+                        environment where athletes of any age can grow and
+                        develop in the world of gymnastics.
                     </p>
                 </div>
                 {/* School images grid */}

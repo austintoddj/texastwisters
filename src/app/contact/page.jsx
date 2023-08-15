@@ -2,7 +2,7 @@ import { ContactHero } from '@/components/ContactHero'
 import { ContactInformation } from '@/components/ContactInformation'
 
 export const metadata = {
-    title: 'Contact us - Bright',
+    title: 'Contact us - Texas Twisters Gymnastics',
     description:
         "Get in touch with Bright Preschool & Elementary - we're here to help! Find our contact information, location, and hours, or submit an inquiry."
 }

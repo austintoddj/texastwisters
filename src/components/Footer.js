@@ -7,7 +7,7 @@ import { Icon } from '@/components/Icon'
 
 const siteLinks = [
     { label: 'Home', href: '/' },
-    { label: 'About us', href: '/about' },
+    // { label: 'About us', href: '/about' },
     // { label: 'Gallery', href: '/gallery' },
     { label: 'Parents', href: '/parents' },
     { label: 'Contact us', href: '/contact' }

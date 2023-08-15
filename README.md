@@ -15,6 +15,10 @@
 -   Gallery link in `Footer.js`
 -   Update the Gallery link card in `ParentsHero.js`
 
+### About
+-   About page link in `Navbar.js`
+-   About page link in `Footer.js`
+
 ## To update
 
 -   Meta tags

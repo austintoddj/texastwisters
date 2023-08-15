@@ -13,7 +13,7 @@ import { Icon } from '@/components/Icon'
 
 const navigation = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
+    // { label: 'About', href: '/about' },
     { label: 'Programs' },
     // { label: 'Gallery', href: '/gallery' },
     { label: 'Parents', href: '/parents' },

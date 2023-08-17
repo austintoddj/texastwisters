@@ -1,6 +1,14 @@
 {
-    "extends": ["next/core-web-vitals", "prettier"],
-    "rules": {
-        "react/no-unescaped-entities": "off"
-    }
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["unused-imports", "simple-import-sort", "import"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "no-unused-vars": "error",
+    "no-console": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  }
 }

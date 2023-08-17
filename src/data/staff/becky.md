@@ -5,8 +5,8 @@ image: '/images/staff/becky.jpg'
 featured: true
 portraitImage: '/images/staff/becky-portrait.jpg'
 social:
-    - name: 'instagram'
-      href: 'https://instagram.com/gymnastrx'
-    - name: 'tiktok'
-      href: 'https://www.tiktok.com/@gymnastrx'
+  - name: 'instagram'
+    href: 'https://instagram.com/gymnastrx'
+  - name: 'tiktok'
+    href: 'https://www.tiktok.com/@gymnastrx'
 ---

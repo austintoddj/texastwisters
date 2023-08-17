@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import { getAllItems } from '@/lib/getItems'
+import {getAllItems} from '@/lib/getItems'
 
 const eventColors = [
     'bg-yellow-200',

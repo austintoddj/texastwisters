@@ -1,11 +1,11 @@
-import { HomeHero } from '@/components/HomeHero'
-import { HomeFeatureBlocks } from '@/components/HomeFeatureBlocks'
-import { FeaturedPrograms } from '@/components/FeaturedPrograms'
-import { StaffHiring } from '@/components/StaffHiring'
-import { Testimonials } from '@/components/Testimonials'
-import { Faqs } from '@/components/Faqs'
+import {HomeHero} from '@/components/HomeHero'
+import {HomeFeatureBlocks} from '@/components/HomeFeatureBlocks'
+import {FeaturedPrograms} from '@/components/FeaturedPrograms'
+import {StaffHiring} from '@/components/StaffHiring'
+import {Testimonials} from '@/components/Testimonials'
+import {Faqs} from '@/components/Faqs'
 
-import { getAllItems } from '@/lib/getItems'
+import {getAllItems} from '@/lib/getItems'
 
 export const metadata = {
     title: 'Texas Twisters Gymnastics',

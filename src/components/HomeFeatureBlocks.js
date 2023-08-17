@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import portraitImage1 from '/public/images/stock/home-blocks-01.jpg'
 import squareImage1 from '/public/images/stock/home-blocks-02.jpg'
@@ -22,17 +22,17 @@ const blocks = [
         tagline: 'An eclectic approach to education',
         headline: "Our goal is to ensure your little one's success in life",
         text: 'Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
-        action: { label: 'Learn more', href: '/about', icon: true },
-        portraitImage: { src: portraitImage1, alt: 'Kid stacking blocks' },
-        squareImage: { src: squareImage1, alt: 'Children writing on workbook' }
+        action: {label: 'Learn more', href: '/about', icon: true},
+        portraitImage: {src: portraitImage1, alt: 'Kid stacking blocks'},
+        squareImage: {src: squareImage1, alt: 'Children writing on workbook'}
     },
     {
         tagline: 'A second home for your child',
         headline: 'We provide an environment that enables students to thrive',
         text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
-        action: { label: 'Learn more', href: '/about', icon: true },
-        portraitImage: { src: portraitImage2, alt: 'Child covered in paint' },
-        squareImage: { src: squareImage2, alt: 'Children eating' }
+        action: {label: 'Learn more', href: '/about', icon: true},
+        portraitImage: {src: portraitImage2, alt: 'Child covered in paint'},
+        squareImage: {src: squareImage2, alt: 'Children eating'}
     }
 ]
 

@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 import curvedDottedLine from '/public/images/illustrations/curved-dotted-line.svg'
 import loopedDottedLine from '/public/images/illustrations/looped-dotted-line.svg'
-import { getAllItems } from '@/lib/getItems'
+import {getAllItems} from '@/lib/getItems'
 
-const ProgramCard = ({ program, index }) => (
+const ProgramCard = ({program, index}) => (
     <div
         className={clsx(
             index == 1 &&
@@ -21,7 +21,7 @@ const ProgramCard = ({ program, index }) => (
             <Image
                 src={curvedDottedLine}
                 className="absolute top-0 hidden -translate-y-1/2 md:block left-1/2"
-                style={{ width: 'calc(50% + 4rem)' }}
+                style={{width: 'calc(50% + 4rem)'}}
                 alt=""
             />
         )}
@@ -67,7 +67,7 @@ const ProgramCard = ({ program, index }) => (
             <Image
                 src={loopedDottedLine}
                 className="hidden md:block absolute bottom-0 left-1/2 translate-y-[90%]"
-                style={{ width: 'calc(50% + 4rem)' }}
+                style={{width: 'calc(50% + 4rem)'}}
                 alt=""
             />
         )}

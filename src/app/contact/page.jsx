@@ -1,5 +1,5 @@
-import { ContactHero } from '@/components/ContactHero'
-import { ContactInformation } from '@/components/ContactInformation'
+import {ContactHero} from '@/components/ContactHero'
+import {ContactInformation} from '@/components/ContactInformation'
 
 export const metadata = {
     title: 'Contact us - Texas Twisters Gymnastics',

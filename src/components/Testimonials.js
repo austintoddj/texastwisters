@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { getAllItems } from '@/lib/getItems'
+import {Icon} from '@/components/Icon'
+import {getAllItems} from '@/lib/getItems'
 
 const bgColorsClassName = [
     'bg-yellow-200',

@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 
-export const ProgramPricing = ({ data }) => {
+export const ProgramPricing = ({data}) => {
     return (
         <section className="relative w-full px-4 py-16 sm:py-24 sm:px-6 xl:px-8">
             {/* Container */}

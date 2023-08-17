@@ -5,12 +5,12 @@
 }
 
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import {useState, useEffect} from 'react'
 import clsx from 'clsx'
 import LightGallery from 'lightgallery/react'
-import { Icon } from '@/components/Icon'
+import {Icon} from '@/components/Icon'
 
-export const Gallery = ({ gallery, tags }) => {
+export const Gallery = ({gallery, tags}) => {
     const [galleryPhotos, setGalleryPhotos] = useState(gallery)
     const [selectedTag, setSelectedTag] = useState('all')
 

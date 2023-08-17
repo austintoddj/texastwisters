@@ -3,17 +3,17 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 import logo from '/public/images/logo.png'
-import { Icon } from '@/components/Icon'
+import {Icon} from '@/components/Icon'
 
 const siteLinks = [
-    { label: 'Home', href: '/' },
+    {label: 'Home', href: '/'},
     // { label: 'About us', href: '/about' },
     // { label: 'Gallery', href: '/gallery' },
-    { label: 'Parents', href: '/parents' },
-    { label: 'Contact us', href: '/contact' }
+    {label: 'Parents', href: '/parents'},
+    {label: 'Contact us', href: '/contact'}
 ]
 
-function SocialLink({ className, href, icon }) {
+function SocialLink({className, href, icon}) {
     return (
         <Link
             className={clsx(
@@ -28,7 +28,7 @@ function SocialLink({ className, href, icon }) {
     )
 }
 
-export const Footer = ({ programs, contact }) => {
+export const Footer = ({programs, contact}) => {
     return (
         <footer className="px-4 pt-16 space-y-8 bg-yellow-100 divide-y sm:pt-20 sm:px-6 lg:px-8 divide-purple-400/20">
             {/* Top section: blocks */}

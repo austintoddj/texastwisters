@@ -1,6 +1,6 @@
-import { GalleryHero } from '@/components/GalleryHero'
-import { Gallery } from '@/components/Gallery'
-import { getAllItems, getGalleryTags } from '@/lib/getItems'
+import {GalleryHero} from '@/components/GalleryHero'
+import {Gallery} from '@/components/Gallery'
+import {getAllItems, getGalleryTags} from '@/lib/getItems'
 
 import 'lightgallery/css/lightgallery.css'
 

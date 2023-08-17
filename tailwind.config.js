@@ -78,17 +78,17 @@ module.exports = {
 
             rotate: {
                 '-8': '-8deg',
-                4: '4deg',
-                8: '8deg'
+                '4': '4deg',
+                '8': '8deg'
             },
 
             animation: {
-                ping: 'ping 2.5s cubic-bezier(0, 0, 0.3, 1) infinite',
+                'ping': 'ping 2.5s cubic-bezier(0, 0, 0.3, 1) infinite',
                 'horizontal-bounce': 'horizontal-bounce 1s infinite'
             },
 
             keyframes: {
-                ping: {
+                'ping': {
                     '75%, 100%': {
                         transform: 'scale(2)',
                         opacity: 0

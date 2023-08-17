@@ -2,11 +2,11 @@
 
 import Image from 'next/image'
 import clsx from 'clsx'
-import { Button } from '@/components/Button'
+import {Button} from '@/components/Button'
 import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
 import dotsGrid from '/public/images/illustrations/dots-grid.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
-import { useState } from 'react'
+import {useState} from 'react'
 
 const fields = [
     {
@@ -50,7 +50,7 @@ export const ContactHero = () => {
         fetch('/api/contact', {
             method: 'POST',
             headers: {
-                Accept: 'application/json, text/plain, */*',
+                'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(Object.fromEntries(data))

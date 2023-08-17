@@ -1,4 +1,4 @@
-import { Gochi_Hand } from 'next/font/google'
+import {Gochi_Hand} from 'next/font/google'
 import clsx from 'clsx'
 
 const gochiHand = Gochi_Hand({
@@ -8,12 +8,12 @@ const gochiHand = Gochi_Hand({
 })
 
 const stats = [
-    { label: 'Teachers', value: '30+' },
-    { label: 'Average years of teacher experience', value: '6+' },
-    { label: 'Average number of students per class', value: '30+' },
-    { label: 'Student to teacher ratio', value: '9' },
-    { label: 'Number of Sister Schools', value: '4' },
-    { label: 'Student state exam percentile', value: '90%' }
+    {label: 'Teachers', value: '30+'},
+    {label: 'Average years of teacher experience', value: '6+'},
+    {label: 'Average number of students per class', value: '30+'},
+    {label: 'Student to teacher ratio', value: '9'},
+    {label: 'Number of Sister Schools', value: '4'},
+    {label: 'Student state exam percentile', value: '90%'}
 ]
 
 export const Stats = () => {

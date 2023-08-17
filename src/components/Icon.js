@@ -80,7 +80,7 @@ const iconOptions = {
     article: IconArticle
 }
 
-export const Icon = ({ icon, className = '', stroke = 1.5 }) => {
+export const Icon = ({icon, className = '', stroke = 1.5}) => {
     const iconName = icon || Object.keys(iconOptions)[0]
     const IconSVG = iconOptions[iconName]
 

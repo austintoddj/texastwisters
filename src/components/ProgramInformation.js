@@ -1,7 +1,7 @@
 import clsx from 'clsx'
-import { Icon } from '@/components/Icon'
+import {Icon} from '@/components/Icon'
 
-const InfoCard = ({ icon, title, gradientColors, text }) => {
+const InfoCard = ({icon, title, gradientColors, text}) => {
     return (
         <div
             className={clsx(
@@ -32,7 +32,7 @@ const InfoCard = ({ icon, title, gradientColors, text }) => {
     )
 }
 
-export const ProgramInformation = ({ data }) => {
+export const ProgramInformation = ({data}) => {
     return (
         <section className="relative w-full px-4 py-16 sm:py-24 lg:py-32 sm:px-6 lg:px-8">
             {/* Container */}

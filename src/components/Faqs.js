@@ -1,15 +1,15 @@
 'use client'
 
 import Image from 'next/image'
-import { Disclosure, Transition } from '@headlessui/react'
+import {Disclosure, Transition} from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
+import {Icon} from '@/components/Icon'
 import questionMark from '/public/images/illustrations/question-mark.svg'
 import bulb from '/public/images/illustrations/bulb.svg'
 import Link from 'next/link'
 
-export const Faqs = ({ faqs }) => {
+export const Faqs = ({faqs}) => {
     return (
         <section className="py-20 bg-yellow-100 sm:py-28" id="faq">
             {/* Container */}
@@ -49,7 +49,7 @@ export const Faqs = ({ faqs }) => {
                             as="li"
                             className="w-full px-5 py-6 bg-white sm:px-12 sm:py-8 rounded-3xl"
                         >
-                            {({ open }) => (
+                            {({open}) => (
                                 <>
                                     <Disclosure.Button className="flex items-center justify-between w-full text-lg sm:text-xl group">
                                         <span className="font-medium text-left text-purple-900 duration-300 ease-in-out group-hover:text-purple-600">

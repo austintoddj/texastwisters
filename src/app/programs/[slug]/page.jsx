@@ -1,11 +1,11 @@
-import { ProgramHero } from '@/components/ProgramHero'
-import { ProgramInformation } from '@/components/ProgramInformation'
-import { ProgramDescription } from '@/components/ProgramDescription'
-import { ProgramPricing } from '@/components/ProgramPricing'
+import {ProgramHero} from '@/components/ProgramHero'
+import {ProgramInformation} from '@/components/ProgramInformation'
+import {ProgramDescription} from '@/components/ProgramDescription'
+import {ProgramPricing} from '@/components/ProgramPricing'
 
-import { getAllItems, getItemData } from '@/lib/getItems'
+import {getAllItems, getItemData} from '@/lib/getItems'
 
-export async function generateMetadata({ params: { slug } }) {
+export async function generateMetadata({params: {slug}}) {
     const program = getItemData(slug, 'programs')
 
     return {
@@ -14,7 +14,7 @@ export async function generateMetadata({ params: { slug } }) {
     }
 }
 
-export default function ProgramPage({ params: { slug } }) {
+export default function ProgramPage({params: {slug}}) {
     const program = getItemData(slug, 'programs')
 
     return (

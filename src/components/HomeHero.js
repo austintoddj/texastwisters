@@ -1,18 +1,18 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
+import {useState, Fragment} from 'react'
+import {Dialog, Transition} from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 import heroImage from '/public/images/stock/hero-home.png'
 
 const ratings = [
-    { label: 'Great Schools', stars: 5 },
-    { label: 'Private School Review', stars: 5 },
-    { label: 'Google Reviews', stars: 5 }
+    {label: 'Great Schools', stars: 5},
+    {label: 'Private School Review', stars: 5},
+    {label: 'Google Reviews', stars: 5}
 ]
 
 export const HomeHero = () => {

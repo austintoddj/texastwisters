@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 
-export const ProgramHero = ({ hero }) => {
+export const ProgramHero = ({hero}) => {
     return (
         <section className="relative px-4 pt-16 sm:px-6 lg:px-8 bg-gradient-to-b from-purple-25 to-purple-50">
             <div className="max-w-screen-xl mx-auto">

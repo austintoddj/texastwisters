@@ -1,6 +1,6 @@
-import { ParentsHero } from '@/components/ParentsHero'
-import { Events } from '@/components/Events'
-import { Newsletter } from '@/components/Newsletter'
+import {ParentsHero} from '@/components/ParentsHero'
+import {Events} from '@/components/Events'
+import {Newsletter} from '@/components/Newsletter'
 
 export const metadata = {
     title: 'Parent information - Texas Twisters Gymnastics',

@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import { marked } from 'marked'
+import {marked} from 'marked'
 
 import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import dotsPurpleMess from '/public/images/illustrations/dots-purple-mess.svg'
 
-export const ProgramDescription = ({ data }) => {
+export const ProgramDescription = ({data}) => {
     return (
         <section className="relative overflow-hidden">
             {/* Purple background to fill in right gap */}

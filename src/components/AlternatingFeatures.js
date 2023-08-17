@@ -17,7 +17,7 @@ const blocks = [
         tagline: 'Smart. Kind. Global.',
         headline: 'Developing young, caring and responsible individuals',
         text: 'Lorem ipsum dolor, sit amet consectetur elit do eius mod tempor labore sit amet. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Half galão extraction extra luwak luwak at con cappuccino milk that cortado organic est sit.',
-        image: { src: blockImage1, alt: 'A man and a girl in a gym' }
+        image: {src: blockImage1, alt: 'A man and a girl in a gym'}
     },
     {
         tagline: 'Pod environment',

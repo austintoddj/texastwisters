@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import { Icon } from '@/components/Icon'
+import {Icon} from '@/components/Icon'
 import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 import arrow from '/public/images/illustrations/arrow-down.svg'
-import { getAllItems } from '@/lib/getItems'
+import {getAllItems} from '@/lib/getItems'
 
 export const Newsletter = () => {
     const newsletters = getAllItems('newsletters')

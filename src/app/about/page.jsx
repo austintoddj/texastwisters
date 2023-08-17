@@ -1,8 +1,8 @@
-import { AboutHero } from '@/components/AboutHero'
-import { AlternatingFeatures } from '@/components/AlternatingFeatures'
-import { Stats } from '@/components/Stats'
-import { Staff } from '@/components/Staff'
-import { Values } from '@/components/Values'
+import {AboutHero} from '@/components/AboutHero'
+import {AlternatingFeatures} from '@/components/AlternatingFeatures'
+import {Stats} from '@/components/Stats'
+import {Staff} from '@/components/Staff'
+import {Values} from '@/components/Values'
 
 export const metadata = {
     title: 'About us - Texas Twisters Gymnastics',

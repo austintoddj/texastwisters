@@ -2,28 +2,28 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
-import { Fragment } from 'react'
-import { Menu, Transition, Popover } from '@headlessui/react'
+import {usePathname} from 'next/navigation'
+import {Fragment} from 'react'
+import {Menu, Transition, Popover} from '@headlessui/react'
 import clsx from 'clsx'
 
 import logo from '/public/images/logo.png'
-import { Button } from '@/components/Button'
-import { Icon } from '@/components/Icon'
+import {Button} from '@/components/Button'
+import {Icon} from '@/components/Icon'
 
 const navigation = [
-    { label: 'Home', href: '/' },
+    {label: 'Home', href: '/'},
     // { label: 'About', href: '/about' },
-    { label: 'Programs' },
+    {label: 'Programs'},
     // { label: 'Gallery', href: '/gallery' },
-    { label: 'Parents', href: '/parents' },
-    { label: 'Contact', href: '/contact' }
+    {label: 'Parents', href: '/parents'},
+    {label: 'Contact', href: '/contact'}
 ]
 
-export function Navbar({ programs }) {
+export function Navbar({programs}) {
     const pathname = usePathname()
 
-    function MenuIcon({ open }) {
+    function MenuIcon({open}) {
         return (
             <>
                 <span
@@ -70,7 +70,7 @@ export function Navbar({ programs }) {
                         className="relative z-50 w-6 h-5 transition duration-500 ease-in-out transform rotate-0 cursor-pointer group focus:outline-none"
                         aria-label="Toggle Navigation"
                     >
-                        {({ open }) => <MenuIcon open={open} />}
+                        {({open}) => <MenuIcon open={open} />}
                     </Popover.Button>
 
                     <Transition
@@ -152,7 +152,7 @@ export function Navbar({ programs }) {
                             <Fragment key={`desktop-link-${link.label}`}>
                                 {link.label == 'Programs' ? (
                                     <Menu as="div" className="relative">
-                                        {({ open }) => (
+                                        {({open}) => (
                                             <>
                                                 <Menu.Button>
                                                     <div className="relative p-0.5 group">

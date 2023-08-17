@@ -2,8 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 import arrow from '/public/images/illustrations/arrow-right-over.svg'
 

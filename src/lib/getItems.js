@@ -8,7 +8,7 @@ export function getItemData(slug, type) {
         'utf-8'
     )
 
-    const { data } = matter(markdownWithMeta)
+    const {data} = matter(markdownWithMeta)
 
     return data
 }
@@ -22,8 +22,8 @@ export function getAllItems(dir) {
             'utf8'
         )
 
-        const { data: frontmatter } = matter(fileContents)
-        return { slug: filename.replace('.md', ''), data: frontmatter }
+        const {data: frontmatter} = matter(fileContents)
+        return {slug: filename.replace('.md', ''), data: frontmatter}
     })
 
     return itemsData

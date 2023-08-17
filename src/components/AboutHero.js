@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Fragment } from 'react'
+import {Fragment} from 'react'
 
 import image1 from '/public/images/gym-grid-01.jpg'
 import image2 from '/public/images/gym-grid-02.jpg'
@@ -8,11 +8,11 @@ import image4 from '/public/images/gym-grid-04.jpg'
 import image5 from '/public/images/gym-grid-05.jpg'
 
 const images = [
-    { src: image1, alt: 'A group of people sitting on mats' },
-    { src: image2, alt: 'A group of girls sitting on a mat' },
-    { src: image3, alt: 'A person smiling for the camera' },
-    { src: image4, alt: 'A group of girls in a gym' },
-    { src: image5, alt: 'A person and a child playing with toys on a blue mat' }
+    {src: image1, alt: 'A group of people sitting on mats'},
+    {src: image2, alt: 'A group of girls sitting on a mat'},
+    {src: image3, alt: 'A person smiling for the camera'},
+    {src: image4, alt: 'A group of girls in a gym'},
+    {src: image5, alt: 'A person and a child playing with toys on a blue mat'}
 ]
 
 export function AboutHero() {

@@ -2,11 +2,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 import checkmark from '/public/images/illustrations/checkmark.svg'
 
-import { getAllItems } from '@/lib/getItems'
+import {getAllItems} from '@/lib/getItems'
 
 const postings = [
     {

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import { Icon } from '@/components/Icon'
-import { Button } from '@/components/Button'
+import {Icon} from '@/components/Icon'
+import {Button} from '@/components/Button'
 import sunrise from '/public/images/illustrations/sunrise.svg'
 import gymnast from '/public/images/illustrations/gymnast.svg'
 import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'

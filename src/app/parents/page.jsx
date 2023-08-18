@@ -6,7 +6,7 @@ import { ParentsHero } from '@/components/ParentsHero'
 export const metadata = {
   title: 'Parent information - Texas Twisters Gymnastics',
   description:
-    'Stay connected with Bright Preschool & Elementary through our Parents Portal - your go-to source for school news, events, and updates.'
+    'Stay connected with Texas Twisters Gymnastics through our Parents Portal - your go-to source for gym news, events, and updates.'
 }
 
 export default function ParentsPage() {

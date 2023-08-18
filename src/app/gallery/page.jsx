@@ -7,7 +7,7 @@ import { getAllItems, getGalleryTags } from '@/lib/getItems'
 export const metadata = {
   title: 'Gallery - Texas Twisters Gymnastics',
   description:
-    "Step inside Bright Preschool & Elementary's vibrant learning environment with our photo gallery."
+    "Step inside Texas Twisters Gymnastics and get an inside look at gym life with our photo gallery."
 }
 
 export default function GalleryPage() {

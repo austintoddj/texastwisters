@@ -8,7 +8,7 @@ import { Values } from '@/components/Values'
 export const metadata = {
   title: 'About us - Texas Twisters Gymnastics',
   description:
-    "Learn about Texas Twister's mission, philosophy, and dedicated team. Explore our commitment to nurturing young minds, fostering creativity, and empowering children for a bright future."
+    "Learn about the mission behind Texas Twisters Gymnastics, our philosophy, and dedicated team. Explore our commitment to excellence, core values, and empowering athletes for a bright future."
 }
 
 export default function AboutPage() {

@@ -27,7 +27,7 @@ export const GalleryHero = () => {
             </span>
           </div>
           <h2 className="max-w-3xl mx-auto mt-4 text-center text-purple-900 h1">
-            See what the Bright experience looks like
+            See what it's like at Texas Twisters
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800 sm:mt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

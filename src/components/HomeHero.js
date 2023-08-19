@@ -119,7 +119,7 @@ export const HomeHero = ({ enrollment }) => {
               src={heroImage}
               priority
               className="w-full h-auto"
-              alt="Bright Photo Collage"
+              alt="Texas Twisters Photo Collage"
               sizes="(min-width: 1280px) 39rem, (min-width: 1024px) 50vw, (min-width: 768px) 48rem, 100vw"
             />
             {/*<div className="absolute inset-0 flex items-center justify-center">*/}

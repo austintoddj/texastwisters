@@ -263,7 +263,7 @@ export function Navbar({ programs, enrollment }) {
           {/* Logo on smaller screens: < lg */}
           <div className="flex-grow-0 flex-shrink-0 block w-48 lg:hidden sm:w-52">
             <Link href="/">
-              <Image src={logo} alt="Bright" className="h-auto" />
+              <Image src={logo} alt="Texas Twisters Gymnastics" className="h-auto" />
             </Link>
           </div>
 

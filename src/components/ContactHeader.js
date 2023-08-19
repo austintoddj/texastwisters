@@ -13,7 +13,7 @@ export function ContactHeader({ contact }) {
           {/* Site branding */}
           <div className="flex-grow-0 flex-shrink-0 w-60">
             <Link href="/">
-              <Image src={logo} alt="Bright" className="h-auto" />
+              <Image src={logo} alt="Texas Twisters Gymnastics" className="h-auto" />
             </Link>
           </div>
           {/* Contact information */}

@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Fragment } from 'react'
 
-import logo from '/public/images/logo.png'
+import logo from '/public/images/logo.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 
@@ -266,7 +266,7 @@ export function Navbar({ programs, enrollment }) {
               <Image
                 src={logo}
                 alt="Texas Twisters Gymnastics"
-                className="h-auto"
+                className="h-auto w-[175px]"
               />
             </Link>
           </div>

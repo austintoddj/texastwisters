@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import { Fragment } from 'react'
 
-import image1 from '/public/images/gym-grid-01.jpg'
-import image2 from '/public/images/gym-grid-02.jpg'
-import image3 from '/public/images/gym-grid-03.jpg'
-import image4 from '/public/images/gym-grid-04.jpg'
-import image5 from '/public/images/gym-grid-05.jpg'
+import image3 from '/public/images/stock/unsplash/gym-05.jpg'
+import image2 from '/public/images/stock/unsplash/gym-06.jpg'
+import image4 from '/public/images/stock/unsplash/gym-08.jpg'
+import image1 from '/public/images/stock/unsplash/gym-10.jpg'
+import image5 from '/public/images/stock/unsplash/gym-12.jpg'
 
 const images = [
   { src: image1, alt: 'A group of people sitting on mats' },

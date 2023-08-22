@@ -11,6 +11,10 @@
 
 ## Disabled features:
 
+### Home
+
+- Block action buttons "Learn More" in `HomeFeatureBlocks.js`
+
 ### Social
 
 - Social proof sections in `HomeHero.js`

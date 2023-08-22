@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from '/public/images/logo.png'
+import logo from '/public/images/logo.svg'
 import { Icon } from '@/components/Icon'
 
 export function ContactHeader({ contact }) {
@@ -16,7 +16,7 @@ export function ContactHeader({ contact }) {
               <Image
                 src={logo}
                 alt="Texas Twisters Gymnastics"
-                className="h-auto"
+                className="h-auto w-[175px]"
               />
             </Link>
           </div>

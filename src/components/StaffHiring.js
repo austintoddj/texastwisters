@@ -22,16 +22,16 @@ export const StaffHiring = ({ jobs }) => {
           <div className="flex flex-col justify-center lg:col-span-1 xl:col-span-6 lg:order-2">
             <div>
               <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-                We're hiring!
+                Guess what, we're hiring!
               </span>
             </div>
             <h2 className="mt-4 text-purple-900 sm:mt-5 h2">
               Meet the staff behind Texas Twisters
             </h2>
             <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
-              We believe that every athlete has the potential to achieve great
-              things, and we're dedicated to providing them with the tools and
-              resources they need to succeed.
+              We believe that growth and development are essential for both our
+              athletes and our coaches. We are committed to providing the
+              resources and support you need to succeed.
             </p>
             {/* Current job postings box */}
             <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
@@ -40,8 +40,8 @@ export const StaffHiring = ({ jobs }) => {
               </span>
               <div className="px-4 py-10 mt-2 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  We're always looking for awesome people to join us. Current
-                  job openings:
+                  Looking for a new and exciting opportunity? Check out some of
+                  our current job openings:
                 </p>
                 {/* Job postings list */}
                 <ul className="mt-5 space-y-5 text-lg text-purple-800">

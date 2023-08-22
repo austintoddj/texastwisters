@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --ignore-path .gitignore",
-    "format": "prettier . --write --ignore-path .gitignore --log-level silent",
+    "lint-fix": "next lint --ignore-path .gitignore -- --fix",
+    "format": "prettier . --write --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "dependencies": {

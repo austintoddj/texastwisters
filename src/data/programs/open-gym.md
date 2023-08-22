@@ -1,19 +1,19 @@
 ---
-name: Elementary School
+name: Open Gym
 dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
 featured: true
 hero:
   tagline: Where great kids grow
-  headline: Bright's Elementary School Program
+  headline: Bright's Toddler Program
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in.
   action:
     label: Enroll today
     href: '#'
     icon: true
   image:
-    src: '/images/stock/elementary-school.jpg'
+    src: '/images/stock/toddler-program.jpg'
 infoSection:
-  headline: The Elementary School dedicated to your child's success
+  headline: The Toddler Program dedicated to your child's success
   text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
   ages: 4 - 5 years old
   dates: Jan. 13 - Jun. 31
@@ -43,7 +43,7 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Our Elementary School Plans
+  tagline: Our Toddler Program Plans
   headline: A program for every parent and child
   text: We know you care about your child's future. That’s why we offer you the freedom to choose the right program for them.
   pricing1:

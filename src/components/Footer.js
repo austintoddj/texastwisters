@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from '/public/images/logo.png'
+import logo from '/public/images/logo.svg'
 import { Icon } from '@/components/Icon'
 
 const siteLinks = [
@@ -42,16 +42,16 @@ export const Footer = ({ programs, contact }) => {
                 <Image
                   src={logo}
                   alt="Texas Twisters Gymnastics"
-                  className="h-auto"
+                  className="h-auto w-[175px]"
                 />
               </Link>
             </div>
           </div>
           {/* Mission statement */}
           <div className="mt-6 text-lg text-purple-800">
-            Texas Twisters is dedicated to provide a safe, fun, and challenging
-            environment where athletes of any age can grow and develop in the
-            world of gymnastics.
+            Our mission is to provide a safe, fun, and challenging environment
+            where athletes of any age can grow and thrive in the world of
+            gymnastics.
           </div>
           {/* Social links */}
           <div className="w-full mt-5 lg:mt-6">

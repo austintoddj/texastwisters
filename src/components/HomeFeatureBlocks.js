@@ -2,15 +2,15 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 import checkmark from '/public/images/illustrations/checkmark.svg'
-import portraitImage1 from '/public/images/stock/home-blocks-01.jpg'
-import squareImage1 from '/public/images/stock/home-blocks-02.jpg'
-import portraitImage2 from '/public/images/stock/home-blocks-03.jpg'
-import squareImage2 from '/public/images/stock/home-blocks-04.jpg'
+import portraitImage2 from '/public/images/stock/unsplash/gym-01.jpg'
+import squareImage1 from '/public/images/stock/unsplash/gym-02.jpg'
+import squareImage2 from '/public/images/stock/unsplash/gym-04.jpg'
+import portraitImage1 from '/public/images/stock/unsplash/gym-11.jpg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 
 const features = [
-  'USAG affiliated',
+  'Member USAG',
   'Small classes',
   'Private lessons',
   'State-of-the-art equipment',
@@ -19,20 +19,32 @@ const features = [
 
 const blocks = [
   {
-    tagline: 'An eclectic approach to education',
-    headline: "Our goal is to ensure your little one's success in life",
-    text: 'Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
-    action: { label: 'Learn more', href: '/about', icon: true },
-    portraitImage: { src: portraitImage1, alt: 'Kid stacking blocks' },
-    squareImage: { src: squareImage1, alt: 'Children writing on workbook' }
+    tagline: 'Support and a sense of belonging',
+    headline: 'Our goal is to provide a welcoming and supportive environment',
+    text: 'Gymnastics is a great way for children of all ages to develop their physical skills, such as strength, flexibility, and coordination. These skills are important for overall health and well-being, and they can also help children succeed in other sports and activities.',
+    // action: { label: 'Learn more', href: '/about', icon: true },
+    portraitImage: {
+      src: portraitImage1,
+      alt: 'Person with chalk wearing white and blue grips'
+    },
+    squareImage: {
+      src: squareImage1,
+      alt: 'A coach helping a girl on the balance beam'
+    }
   },
   {
-    tagline: 'A second home for your child',
-    headline: 'We provide an environment that enables students to thrive',
-    text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
-    action: { label: 'Learn more', href: '/about', icon: true },
-    portraitImage: { src: portraitImage2, alt: 'Child covered in paint' },
-    squareImage: { src: squareImage2, alt: 'Children eating' }
+    tagline: 'Building skills and confidence',
+    headline: 'We offer a variety of programs that enable athletes to thrive',
+    text: 'When children learn new skills and achieve goals, it can boost their self-confidence and self-esteem. This can carry over into other areas of their lives, such as school and social interactions. Gymnastics is a team sport, which can help children learn the importance of teamwork and friendship.',
+    // action: { label: 'Learn more', href: '/about', icon: true },
+    portraitImage: {
+      src: portraitImage2,
+      alt: 'A trampoline and mats in a gym'
+    },
+    squareImage: {
+      src: squareImage2,
+      alt: 'A child holding their arms in the air on a balance beam'
+    }
   }
 ]
 
@@ -45,12 +57,12 @@ export const HomeFeatureBlocks = () => {
         <div className="relative">
           {/* Block title and subtext */}
           <h2 className="max-w-4xl mx-auto text-center text-purple-900 h2">
-            Dedicated to provide a sense of safety, teamwork, and excellence
+            Building a community and culture of health, safety and excellence
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-            dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-            sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+            We're passionate about gymnastics and we believe that the physical,
+            mental, and emotional skills our athletes develop make a positive
+            difference both inside and outside the gym.
           </p>
           {/* Feature list */}
           <div className="max-w-3xl mx-auto mt-12">
@@ -142,18 +154,20 @@ export const HomeFeatureBlocks = () => {
               <p className="max-w-2xl mt-3 text-lg leading-loose text-purple-800">
                 {block.text}
               </p>
-              <div className="mt-6">
-                <Button href={block.action.href} variant="accent" size="sm">
-                  {block.action.label}
-                  {block.action.icon && (
-                    <Icon
-                      icon="arrowNarrowRight"
-                      className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
-                      stroke={2}
-                    />
-                  )}
-                </Button>
-              </div>
+              {block.action && (
+                <div className="mt-6">
+                  <Button href={block.action.href} variant="accent" size="sm">
+                    {block.action.label}
+                    {block.action.icon && (
+                      <Icon
+                        icon="arrowNarrowRight"
+                        className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                        stroke={2}
+                      />
+                    )}
+                  </Button>
+                </div>
+              )}
             </div>
           </div>
         ))}

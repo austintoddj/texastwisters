@@ -11,16 +11,16 @@ const nextConfig = {
             permanent: false
           }
         : null,
-        {
-            source: '/about',
-            destination: '/',
-            permanent: true,
-        },
-        {
-            source: '/gallery',
-            destination: '/',
-            permanent: true,
-        },
+      {
+        source: '/about',
+        destination: '/',
+        permanent: true
+      },
+      {
+        source: '/gallery',
+        destination: '/',
+        permanent: true
+      }
     ].filter(Boolean)
   }
 }

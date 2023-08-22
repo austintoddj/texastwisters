@@ -19,7 +19,7 @@ const features = [
 
 const blocks = [
   {
-    tagline: 'Support and a sense of belonging',
+    tagline: 'A sense of belonging',
     headline: 'Our goal is to provide a welcoming and supportive environment',
     text: 'Gymnastics is a great way for children of all ages to develop their physical skills, such as strength, flexibility, and coordination. These skills are important for overall health and well-being, and they can also help children succeed in other sports and activities.',
     // action: { label: 'Learn more', href: '/about', icon: true },

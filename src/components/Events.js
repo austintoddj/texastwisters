@@ -21,9 +21,8 @@ export const Events = () => {
         <div>
           <h2 className="text-purple-900 h2 lg:text-center">Upcoming events</h2>
           <p className="max-w-2xl mx-auto mt-3 text-xl leading-relaxed text-purple-800 lg:mt-4 lg:text-center">
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-            dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-            sem.
+              Our families are an important and integral part of our community,
+              so we understand the value of keeping you in the loop on what’s happening here.
           </p>
         </div>
         {/* Events */}

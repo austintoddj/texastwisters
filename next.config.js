@@ -10,7 +10,17 @@ const nextConfig = {
             destination: '/maintenance.html',
             permanent: false
           }
-        : null
+        : null,
+        {
+            source: '/about',
+            destination: '/',
+            permanent: true,
+        },
+        {
+            source: '/gallery',
+            destination: '/',
+            permanent: true,
+        },
     ].filter(Boolean)
   }
 }

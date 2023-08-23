@@ -1,3 +1,4 @@
+/* eslint-disable-next-line */
 import { ProgramDescription } from '@/components/ProgramDescription'
 import { ProgramHero } from '@/components/ProgramHero'
 import { ProgramInformation } from '@/components/ProgramInformation'
@@ -22,9 +23,9 @@ export default function ProgramPage({ params: { slug } }) {
       {program?.infoSection && (
         <ProgramInformation data={program.infoSection} />
       )}
-      {program?.descriptionSection && (
-        <ProgramDescription data={program.descriptionSection} />
-      )}
+      {/*{program?.descriptionSection && (*/}
+      {/*  <ProgramDescription data={program.descriptionSection} />*/}
+      {/*)}*/}
       {program?.pricingSection && (
         <ProgramPricing data={program.pricingSection} />
       )}

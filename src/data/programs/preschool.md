@@ -11,7 +11,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/preschool.jpg'
+    src: '/images/stock/unsplash/gym-05.jpg'
 infoSection:
   headline: The Preschool dedicated to your child's success
   text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.

@@ -11,39 +11,41 @@
 
 ## Disabled features:
 
-### Home
-
-- Block action buttons "Learn More" in `HomeFeatureBlocks.js`
-
-### Social
+### When we have ratings or testimonials
 
 - Social proof sections in `HomeHero.js`
 - Testimonials component in `page.jsx`
 
-### Newsletter
+### When we have a newsletter set up
 
 - Newsletter from `parents/page.jsx`
-- Link to team section in `StaffHiring.js`
 
-### Gallery
+### When programs have more information
+
+- Program description section in `programs/[slug]/page.jsx`
+
+### When we have a gallery of photos
 
 - Gallery link in `Navbar.js`
 - Gallery link in `Footer.js`
 - Update the Gallery link card in `ParentsHero.js`
 
-### Video
+### When we have a video
 
 - Watch Video button in `HomeHero.js`
 - Hero image video button in `HomeHero.js`
 - Video modal in `HomeHero.js`
 
-### About
+### When the About page goes live
 
+- Link to team section in `StaffHiring.js`
+- Block action buttons "Learn More" in `HomeFeatureBlocks.js`
+- Remove the redirect in `next.config.js`
 - About page link in `Navbar.js`
 - About page link in `Footer.js`
 
-## Updates needed
+## Launch prep
 
-- Meta tags
+- Meta tags/images
 
 [no-op]

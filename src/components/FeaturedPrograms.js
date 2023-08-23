@@ -83,12 +83,12 @@ export const FeaturedPrograms = () => {
         <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16">
           <div>
             <h2 className="max-w-4xl text-purple-900 h2">
-              The best early education programs for your child
+              Where your athlete's path to success begins
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-xl leading-relaxed text-purple-800 sm:mt-5 lg:text-left">
-              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-              dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-              sem.
+              Gymnastics, tumbling, open gyms and birthday parties. We're
+              confident that we can find a place for you here, regardless of age
+              or background.
             </p>
           </div>
         </div>

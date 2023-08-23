@@ -13,7 +13,7 @@ export const CallToAction = () => {
     <section className="py-24 bg-white sm:py-32">
       {/* Container */}
       <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-        {/* Sunrise image */}
+        {/* Gymnast image */}
         <Image className="mx-auto w-72" src={gymnast} alt="" />
         {/* Header */}
         <h2 className="max-w-3xl mx-auto mt-6 text-center text-purple-900 h1">

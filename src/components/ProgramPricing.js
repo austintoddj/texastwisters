@@ -28,7 +28,7 @@ export const ProgramPricing = ({ data }) => {
                 Want to learn more about our programs?
               </p>
               <a
-                href="contact.html"
+                href="/contact"
                 className="mt-1.5 flex items-center py-0.5 px-0 w-[126px] max-w-full leading-6 text-left text-purple-600 no-underline bg-transparent border-b-2 border-purple-600 border-solid cursor-pointer hover:text-purple-500 transition duration-300 ease-in-out hover:border-purple-400 group"
               >
                 <span className="text-base font-bold text-left">

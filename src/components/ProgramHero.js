@@ -2,8 +2,11 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { getItemData } from '@/lib/getItems'
 
 export const ProgramHero = ({ hero }) => {
+  const enrollment = getItemData('enrollment', 'global')
+
   return (
     <section className="relative px-4 pt-16 sm:px-6 lg:px-8 bg-gradient-to-b from-purple-25 to-purple-50">
       <div className="max-w-screen-xl mx-auto">
@@ -21,18 +24,20 @@ export const ProgramHero = ({ hero }) => {
             {hero.text}
           </p>
           {/* CTA button */}
-          <div className="flex justify-center mt-8">
-            <Button href={hero.action.href}>
-              {hero.action.label}
-              {hero.action.icon && (
-                <Icon
-                  icon="arrowNarrowRight"
-                  className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
-                  stroke={2}
-                />
-              )}
-            </Button>
-          </div>
+          {enrollment.active && (
+            <div className="flex justify-center mt-8">
+              <Button href={hero.action.href}>
+                {hero.action.label}
+                {hero.action.icon && (
+                  <Icon
+                    icon="arrowNarrowRight"
+                    className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                    stroke={2}
+                  />
+                )}
+              </Button>
+            </div>
+          )}
         </div>
         {/* Hero image */}
         <div className="relative z-10 mt-14 sm:mt-16">

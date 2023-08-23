@@ -1,6 +1,7 @@
 ---
 name: Recreational (Levels 1-4)
 dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
+featured: true
 hero:
   tagline: Where great kids grow
   headline: Bright's Kindergarten Program
@@ -10,7 +11,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/kindergarten.jpg'
+    src: '/images/stock/unsplash/gym-08.jpg'
 infoSection:
   headline: The Kindergarten dedicated to your child's success
   text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.

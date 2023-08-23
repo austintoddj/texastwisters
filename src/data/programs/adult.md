@@ -1,7 +1,7 @@
 ---
 name: Adult Gym
 dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
-featured: true
+featured: false
 hero:
   tagline: Where great kids grow
   headline: Bright's Elementary School Program

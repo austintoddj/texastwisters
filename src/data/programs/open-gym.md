@@ -1,7 +1,7 @@
 ---
 name: Open Gym
 dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
-featured: true
+featured: false
 hero:
   tagline: Where great kids grow
   headline: Bright's Toddler Program
@@ -11,7 +11,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/toddler-program.jpg'
+    src: '/images/stock/unsplash/gym-07.jpg'
 infoSection:
   headline: The Toddler Program dedicated to your child's success
   text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.

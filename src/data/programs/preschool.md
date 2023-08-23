@@ -3,8 +3,8 @@ name: Preschool
 dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
 featured: true
 hero:
-  tagline: Where great kids grow
-  headline: Bright's Preschool Program
+  tagline: Start with the basics
+  headline: Texas Twisters Preschool Program
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in.
   action:
     label: Enroll today
@@ -15,7 +15,7 @@ hero:
 infoSection:
   headline: The Preschool dedicated to your child's success
   text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-  ages: 4 - 5 years old
+  ages: 2 - 5 years old
   dates: Jan. 13 - Jun. 31
   schedule: M-F from 8AM - 5 PM
   classSize: Student to teacher ratio of 10:1
@@ -43,12 +43,12 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Our Preschool Plans
-  headline: A program for every parent and child
-  text: We know you care about your child's future. That’s why we offer you the freedom to choose the right program for them.
+  tagline: Our Preschool Classes
+  headline: Weekly sessions for you and your child
+  text: Learn the fundamentals of gymnastics and other important skills in a fun, fast-paced class.
   pricing1:
-    name: Regular
-    price: $1.2k
+    name: Class
+    price: $80
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
@@ -59,10 +59,10 @@ pricingSection:
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
-    shortDescription: M-F from 8 AM to 5:00 PM
+    name: Open Gym
+    price: $10
+    interval: per day
+    shortDescription: M-F from 10 AM to 11:00 AM
     features:
       - feature: Nulla quis lorem ut libero
       - feature: Lorem ipsum dolor sit

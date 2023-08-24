@@ -8,7 +8,7 @@ import Image from 'next/image'
 /* eslint-disable-next-line */
 import { Fragment, useState } from 'react'
 
-import heroImage from '/public/images/stock/hero-home.png'
+import heroImage from '/public/images/stock/unsplash/hero-home.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 

@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Fragment } from 'react'
 
-import logo from '/public/images/logo.svg'
+import logo from '/public/images/logo.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 

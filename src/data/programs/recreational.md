@@ -1,11 +1,11 @@
 ---
 name: Recreational (Levels 1-4)
-dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
+dropdownDescription: Build on the fundamentals with a focus on form and technique.
 featured: true
 hero:
-  tagline: Where great kids grow
-  headline: Bright's Kindergarten Program
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in.
+  tagline: Beyond the basics
+  headline: Texas Twisters Recreational Program
+  text: Learn basic skills on Vault, Uneven Bars, Beam, and Floor. Improve balance, strength, conditioning and coordination in a fun, safe environment.
   action:
     label: Enroll today
     href: '#'
@@ -13,12 +13,12 @@ hero:
   image:
     src: '/images/stock/unsplash/gym-08.jpg'
 infoSection:
-  headline: The Kindergarten dedicated to your child's success
-  text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-  ages: 4 - 5 years old
+  headline: A program designed to help your child thrive
+  text: Whether this is your child's first experience in the gym or they've been here for years, they'll have tons of fun learning and growing with skills that will serve them for years to come!
+  ages: 5 - 18 years old
   dates: Jan. 13 - Jun. 31
   schedule: M-F from 8AM - 5 PM
-  classSize: Student to teacher ratio of 10:1
+  classSize: Student to coach ratio of 10:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -43,29 +43,29 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Our Kindergarten Plans
-  headline: A program for every parent and child
-  text: We know you care about your child's future. That’s why we offer you the freedom to choose the right program for them.
+  tagline: Our Recreational Programs
+  headline: Sign up today!
+  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Regular
-    price: $1.2k
+    name: Most popular
+    price: $80
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: 60 minute session
+      - feature: Ages 6+
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
+    name: Best value
+    price: $750
+    interval: per year
     shortDescription: M-F from 8 AM to 5:00 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: 2 free birthday parties
+      - feature: 10 free open gym sessions
     action:
       label: Enroll today
       href: '#'

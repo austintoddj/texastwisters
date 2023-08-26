@@ -1,4 +1,4 @@
 ---
 href: /
-active: false
+active: true
 ---

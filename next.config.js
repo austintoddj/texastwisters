@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: false,
   redirects() {
     return [
       process.env.NEXT_MAINTENANCE_MODE === '1'

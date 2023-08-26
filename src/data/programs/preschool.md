@@ -1,11 +1,11 @@
 ---
 name: Preschool
-dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
+dropdownDescription: Learn flexibility, balance, strength and have lots of fun!
 featured: true
 hero:
   tagline: Start with the basics
   headline: Texas Twisters Preschool Program
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in.
+  text: Our Preschool class is the perfect start for your little gymnast to learn flexibility, balance, strength, and have lots of fun!
   action:
     label: Enroll today
     href: '#'
@@ -13,12 +13,12 @@ hero:
   image:
     src: '/images/stock/unsplash/gym-05.jpg'
 infoSection:
-  headline: The Preschool dedicated to your child's success
-  text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
+  headline: A program designed to help your child learn
+  text: This fun, fast-paced class is teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
   ages: 2 - 5 years old
   dates: Jan. 13 - Jun. 31
   schedule: M-F from 8AM - 5 PM
-  classSize: Student to teacher ratio of 10:1
+  classSize: Student to coach ratio of 10:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -43,17 +43,17 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Our Preschool Classes
-  headline: Weekly sessions for you and your child
-  text: Learn the fundamentals of gymnastics and other important skills in a fun, fast-paced class.
+  tagline: Our Preschool Programs
+  headline: Sign up today!
+  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Class
+    name: Weekly Class
     price: $80
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Co-ed class
+      - feature: 55 minute session
     action:
       label: Enroll today
       href: '#'
@@ -64,8 +64,8 @@ pricingSection:
     interval: per day
     shortDescription: M-F from 10 AM to 11:00 AM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Supervised free-play
+      - feature: 60 minute session
     action:
       label: Enroll today
       href: '#'

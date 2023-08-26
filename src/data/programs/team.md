@@ -1,11 +1,11 @@
 ---
 name: Team
-dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
+dropdownDescription: Train and compete in our USA Gymnastics Junior Olympic program.
 featured: true
 hero:
-  tagline: Where great kids grow
-  headline: Bright's Summer Camp Program
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in.
+  tagline: USA Gymnastics Junior Olympic
+  headline: Texas Twisters Team Program
+  text: Tryout for our competitive gymnastics program and and compete in USAG regulated meets in cities all across Texas.
   action:
     label: Enroll today
     href: '#'
@@ -13,12 +13,12 @@ hero:
   image:
     src: '/images/stock/unsplash/gym-13.jpg'
 infoSection:
-  headline: The Summer Camp dedicated to your child's success
-  text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-  ages: 4 - 5 years old
+  headline: A program designed to help your child succeed
+  text: The goal of our team program is to provide gymnasts of varying abilities and commitment levels the opportunity for a rewarding gymnastics experience.
+  ages: 5 - 18 years old
   dates: Jan. 13 - Jun. 31
   schedule: M-F from 8AM - 5 PM
-  classSize: Student to teacher ratio of 10:1
+  classSize: Student to coach ratio of 10:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -43,29 +43,29 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Our Summer Camp Plans
-  headline: A program for every parent and child
-  text: We know you care about your child's future. That’s why we offer you the freedom to choose the right program for them.
+  tagline: Our Team Programs
+  headline: Sign up today!
+  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Regular
-    price: $1.2k
+    name: Most popular
+    price: $280
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Practices 6-10 hrs/wk
+      - feature: Ages 5-18
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
+    name: Best value
+    price: $2.5k
+    interval: per year
     shortDescription: M-F from 8 AM to 5:00 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Practices 6-10 hrs/wk
+      - feature: Ages 5-18
     action:
       label: Enroll today
       href: '#'

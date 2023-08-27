@@ -24,7 +24,7 @@
 
 - Program description section in `programs/[slug]/page.jsx`
 
-### When we have a gallery of photos
+### When we have a gallery of photos (construction?)
 
 - Gallery link in `Navbar.js`
 - Gallery link in `Footer.js`
@@ -46,6 +46,8 @@
 
 ## Launch prep
 
+- Prune `Icon.js`
+- Speed Insights
 - Meta tags/images
 
 [no-op]

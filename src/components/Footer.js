@@ -57,10 +57,13 @@ export const Footer = ({ programs, contact }) => {
           <div className="w-full mt-5 lg:mt-6">
             <div className="flex justify-start space-x-4">
               <SocialLink
-                href="https://instagram.com/texastwistersgym"
+                href="https://www.instagram.com/texastwistersgymnastics"
                 icon="instagram"
               />
-              <SocialLink href="#0" icon="facebook" />
+              <SocialLink
+                href="https://www.facebook.com/profile.php?id=61550029030904"
+                icon="facebook"
+              />
             </div>
           </div>
         </div>

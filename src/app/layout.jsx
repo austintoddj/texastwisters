@@ -19,7 +19,6 @@ export const metadata = {
   'title': 'Texas Twisters Gymnastics',
   'description':
     'Providing a safe, fun, and challenging environment where athletes of any age can grow and thrive in the world of gymnastics.',
-  'og:image': '../public/images/opengraph-image.png'
 }
 
 export default function RootLayout({ children }) {

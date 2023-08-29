@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import curvedDottedLine from '/public/images/illustrations/curved-dotted-line.svg'
 import loopedDottedLine from '/public/images/illustrations/looped-dotted-line.svg'
@@ -83,12 +84,24 @@ export const FeaturedPrograms = () => {
         <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16">
           <div>
             <h2 className="max-w-4xl text-purple-900 h2">
-              Where your athlete's path to success begins
+              Classes for any age or experience level
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-xl leading-relaxed text-purple-800 sm:mt-5 lg:text-left">
-              Gymnastics, tumbling, open gyms and birthday parties. We're
-              confident that we can find a place for you here, regardless of age
-              or background.
+              Explore some of the featured classes we offer at Texas Twisters
+              and find the one that's right for you. Looking for more? Check out
+              our{' '}
+              <Link href="/programs/adult" className="underline">
+                Adult Gymnastics
+              </Link>
+              ,{' '}
+              <Link href="/programs/tumbling" className="underline">
+                Tumbling
+              </Link>
+              , or{' '}
+              <Link href="/programs/birthday" className="underline">
+                Birthday Parties
+              </Link>
+              !
             </p>
           </div>
         </div>

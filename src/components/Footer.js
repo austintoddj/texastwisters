@@ -37,7 +37,7 @@ export const Footer = ({ programs, contact }) => {
         <div className="flex flex-col lg:mx-auto lg:col-span-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-grow-0 flex-shrink-0 w-60">
+            <div className="flex-grow-0 flex-shrink-0 w-80">
               <Link href="/">
                 <Image
                   src={logo}

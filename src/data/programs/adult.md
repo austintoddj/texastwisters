@@ -1,24 +1,24 @@
 ---
-name: Preschool
-dropdownDescription: Learn flexibility, balance, strength and have lots of fun!
-featured: true
+name: Adult Gymnastics
+dropdownDescription: Join the Adult Gymnastics community and see what you've been missing.
+featured: false
 hero:
-  tagline: Start with the basics
-  headline: Texas Twisters Preschool Program
-  text: Our Preschool class is the perfect start for your little gymnast to learn flexibility, balance, strength, and have lots of fun!
+  tagline: Gymnastics at any age
+  headline: Texas Twisters Adult Gymnastics
+  text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
     label: Enroll today
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-05.jpg'
+    src: '/images/stock/unsplash/gym-14.jpg'
 infoSection:
-  headline: A program designed to help your child learn
-  text: This fun, fast-paced class is teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
-  ages: 2 - 5 years old
-  dates: Jan. 13 - Jun. 31
-  schedule: M-F from 8AM - 5 PM
-  classSize: Student to coach ratio of 10:1
+  headline: Designed to help you rediscover your love of gymnastics
+  text: Train every event in all around gymnastics or focus your workout solely on tumbling; the choice is yours! Either way, you’ll soon realize you’re capable of more than you think.
+  ages: 18+ years old
+  dates: Year-round
+  schedule: Tue 7:30PM - 10PM
+  classSize: Student to coach ratio of 20:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -47,25 +47,25 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Weekly Class
-    price: $80
+    name: Regular
+    price: $1.2k
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
-      - feature: Co-ed class
-      - feature: 55 minute session
+      - feature: Nulla quis lorem ut libero
+      - feature: Lorem ipsum dolor sit
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Open Gym
-    price: $10
-    interval: per day
-    shortDescription: M-F from 10 AM to 11:00 AM
+    name: Extended
+    price: $1.5k
+    interval: per month
+    shortDescription: M-F from 8 AM to 5:00 PM
     features:
-      - feature: Supervised free-play
-      - feature: 60 minute session
+      - feature: Nulla quis lorem ut libero
+      - feature: Lorem ipsum dolor sit
     action:
       label: Enroll today
       href: '#'

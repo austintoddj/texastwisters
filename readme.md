@@ -47,7 +47,9 @@
 ## Launch prep
 
 - Prune `Icon.js`
-- Speed Insights
-- Meta tags/images
+- [CRITICAL] Speed Insights
+- [CRITICAL] Meta tags/images
+- [CRITICAL] Phone Number in `contact.md`
+- [CRITICAL] Finalize Pricing sections with Beck
 
 [no-op]

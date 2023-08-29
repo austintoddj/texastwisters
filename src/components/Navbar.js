@@ -261,7 +261,7 @@ export function Navbar({ programs, enrollment }) {
           )}
 
           {/* Logo on smaller screens: < lg */}
-          <div className="flex-grow-0 flex-shrink-0 block w-48 lg:hidden sm:w-52">
+          <div className="flex-grow-0 flex-shrink-0 block w-60 lg:hidden sm:w-60">
             <Link href="/">
               <Image
                 src={logo}

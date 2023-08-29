@@ -1,11 +1,11 @@
 ---
-name: Recreational (Levels 1-4)
+name: Recreational
 dropdownDescription: Build on the fundamentals with a focus on form and technique.
 featured: true
 hero:
   tagline: Beyond the basics
   headline: Texas Twisters Recreational Program
-  text: Learn basic skills on Vault, Uneven Bars, Beam, and Floor. Improve balance, strength, conditioning and coordination in a fun, safe environment.
+  text: Levels 1-4 emphasize basic skills on Vault, Uneven Bars, Beam, and Floor. Improve balance, strength, conditioning and coordination in a fun, safe environment.
   action:
     label: Enroll today
     href: '#'
@@ -13,7 +13,7 @@ hero:
   image:
     src: '/images/stock/unsplash/gym-08.jpg'
 infoSection:
-  headline: A program designed to help your child thrive
+  headline: A program designed to help your child have fun
   text: Whether this is your child's first experience in the gym or they've been here for years, they'll have tons of fun learning and growing with skills that will serve them for years to come!
   ages: 5 - 18 years old
   dates: Jan. 13 - Jun. 31
@@ -43,7 +43,7 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Our Recreational Programs
+  tagline: Membership & Pricing
   headline: Sign up today!
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:

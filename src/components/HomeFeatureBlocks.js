@@ -10,11 +10,12 @@ import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 
 const features = [
-  'Member USAG',
-  'Small classes',
+  'USAG Member Club',
+  'No annual registration fee',
   'Private lessons',
   'State-of-the-art equipment',
-  'Experienced coaches'
+  'Convenient location',
+  'Family owned'
 ]
 
 const blocks = [

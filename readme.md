@@ -51,5 +51,6 @@
 - [CRITICAL] Meta tags/images
 - [CRITICAL] Phone Number in `contact.md`
 - [CRITICAL] Finalize Pricing sections with Beck
+- [CRITICAL] Finalize FAQs
 
 [no-op]

@@ -12,7 +12,8 @@ import { Icon } from '@/components/Icon'
 const features = [
   'USAG Member Club',
   'No annual registration fee',
-  'State-of-the-art equipment',
+  'Military discount',
+  'Multi-class discount',
   'Convenient location',
   'Family owned'
 ]

@@ -48,7 +48,7 @@ export const HomeHero = ({ enrollment }) => {
             </span>
           </div>
           <h1 className="max-w-xl mt-4 text-center text-purple-900 sm:mt-5 lg:text-left h1 lg:max-w-none">
-              Grand Opening in January 2024
+            Grand Opening in January 2024
           </h1>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
             Located in the heart of Georgetown, our programs are designed to

@@ -47,13 +47,13 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Weekly Class
+    name: Regular Class
     price: $80
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
       - feature: Co-ed class
-      - feature: 55 minute session
+      - feature: 45 minute session
     action:
       label: Enroll today
       href: '#'

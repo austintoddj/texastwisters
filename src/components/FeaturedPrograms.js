@@ -97,6 +97,10 @@ export const FeaturedPrograms = () => {
               <Link href="/programs/tumbling" className="underline">
                 Tumbling
               </Link>
+              ,{' '}
+              <Link href="/programs/open-gym" className="underline">
+                Open Gym
+              </Link>
               , or{' '}
               <Link href="/programs/birthday" className="underline">
                 Birthday Parties

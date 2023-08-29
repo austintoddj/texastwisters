@@ -1,24 +1,24 @@
 ---
-name: Birthday Parties
-dropdownDescription: Bring your friends and family to celebrate your big day.
+name: Open Gym
+dropdownDescription: Join the Adult Gymnastics community and see what you've been missing.
 featured: false
 hero:
-  tagline: Simple, fun & stress free
-  headline: Texas Twisters Birthday Parties
-  text: We want to help give you and your child the best birthday ever! They'll enjoy a variety of supervised open gym time, games, an obstacle course, and more. Don't wait, grab your spot today!
+  tagline: Gymnastics at any age
+  headline: Texas Twisters Adult Gymnastics
+  text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
     label: Enroll today
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-15.jpg'
+    src: '/images/stock/unsplash/gym-14.jpg'
 infoSection:
-  headline: The ideal kids birthday party venue for any age
-  text: A Texas Twisters party takes the stress out birthday planning. Our coaches take care of all the details and make sure your child and all their friends have an amazing time.
-  ages: 4 - 5 years old
-  dates: Jan. 13 - Jun. 31
-  schedule: M-F from 8AM - 5 PM
-  classSize: Student to teacher ratio of 10:1
+  headline: Designed to help you rediscover your love of gymnastics
+  text: Train every event in all around gymnastics or focus your workout solely on tumbling; the choice is yours! Either way, you’ll soon realize you’re capable of more than you think.
+  ages: 18+ years old
+  dates: Year-round
+  schedule: Tue 7:30PM - 10PM
+  classSize: Student to coach ratio of 20:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -43,9 +43,9 @@ descriptionSection:
   squareImage1: '/images/stock/program-description-02.jpg'
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-  tagline: Packages & Pricing
-  headline: Let's get the party started!
-  text: Don't wait to start planning an epic birthday for your child. Choose the package that's right for you and reserve your spot today!
+  tagline: Membership & Pricing
+  headline: Sign up today!
+  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
     name: Regular
     price: $1.2k

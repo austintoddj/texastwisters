@@ -61,9 +61,9 @@ export const HomeFeatureBlocks = () => {
             Building a community and culture of health, safety and excellence
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
-            We're passionate about gymnastics and we believe that the physical,
-            mental, and emotional skills our athletes develop make a positive
-            difference both inside and outside the gym.
+            Texas Twisters hosts a variety of camps and clinics during school
+            breaks, as well as participate in local events like Red Poppy
+            Festival and the Christmas Stroll.
           </p>
           {/* Feature list */}
           <div className="max-w-3xl mx-auto mt-12">

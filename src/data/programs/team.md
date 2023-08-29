@@ -1,10 +1,10 @@
 ---
 name: Team
-dropdownDescription: Train and compete in our USA Gymnastics Junior Olympic program.
+dropdownDescription: Train and compete in our USA Gymnastics Development Program.
 featured: true
 hero:
-  tagline: USA Gymnastics Junior Olympic
-  headline: Texas Twisters Team Program
+  tagline: USA Gymnastics Development Program
+  headline: Texas Twisters Team
   text: Tryout for our competitive gymnastics program and and compete in USAG regulated meets in cities all across Texas.
   action:
     label: Enroll today

@@ -44,14 +44,14 @@ export const HomeHero = ({ enrollment }) => {
         <div className="flex flex-col items-center justify-center lg:items-start lg:col-span-6">
           <div>
             <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-              Opening January 2024
+              Coming soon!
             </span>
           </div>
           <h1 className="max-w-xl mt-4 text-center text-purple-900 sm:mt-5 lg:text-left h1 lg:max-w-none">
-            Welcome to Texas Twisters Gymnastics
+              Grand Opening in January 2024
           </h1>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
-            Located in the heart of Georgetown, our program is designed to
+            Located in the heart of Georgetown, our programs are designed to
             challenge and inspire gymnasts of all levels. From beginner to
             advanced, we'll provide you with a safe, supportive, and fun
             environment to learn and grow.

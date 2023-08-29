@@ -12,7 +12,6 @@ import { Icon } from '@/components/Icon'
 const features = [
   'USAG Member Club',
   'No annual registration fee',
-  'Private lessons',
   'State-of-the-art equipment',
   'Convenient location',
   'Family owned'

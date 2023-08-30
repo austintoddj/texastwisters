@@ -156,21 +156,21 @@ export const Footer = ({ programs, contact }) => {
               </div>
             </li>
             {/* Phone number */}
-            <li className="flex flex-shrink-0">
-              <div>
-                <span className="flex items-center justify-center rounded-2xl w-11 h-11 bg-rose-200">
-                  <Icon icon="phone" className="w-6 h-6 text-purple-700" />
-                </span>
-              </div>
-              <div className="flex-1 ml-3 xl:ml-4">
-                <h5 className="flex items-center text-base font-semibold text-purple-900">
-                  Phone
-                </h5>
-                <p className="mt-0.5 text-sm text-purple-800 leading-relaxed text-opacity-90">
-                  {contact.phone}
-                </p>
-              </div>
-            </li>
+            {/*<li className="flex flex-shrink-0">*/}
+            {/*  <div>*/}
+            {/*    <span className="flex items-center justify-center rounded-2xl w-11 h-11 bg-rose-200">*/}
+            {/*      <Icon icon="phone" className="w-6 h-6 text-purple-700" />*/}
+            {/*    </span>*/}
+            {/*  </div>*/}
+            {/*  <div className="flex-1 ml-3 xl:ml-4">*/}
+            {/*    <h5 className="flex items-center text-base font-semibold text-purple-900">*/}
+            {/*      Phone*/}
+            {/*    </h5>*/}
+            {/*    <p className="mt-0.5 text-sm text-purple-800 leading-relaxed text-opacity-90">*/}
+            {/*      {contact.phone}*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*</li>*/}
           </ul>
         </div>
       </div>

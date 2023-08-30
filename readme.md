@@ -44,6 +44,15 @@
 - About page link in `Navbar.js`
 - About page link in `Footer.js`
 
+### When we have a phone number
+
+- Phone number in:
+  - `ContactHeader.js`
+  - `Footer.js`
+  - `ContactInformation.js`
+    - Phone number card
+    - "Give us a call details"
+
 ## Launch prep
 
 - Prune `Icon.js`

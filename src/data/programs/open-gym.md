@@ -1,20 +1,20 @@
 ---
 name: Open Gym
-dropdownDescription: Join the Adult Gymnastics community and see what you've been missing.
+dropdownDescription: Drop in for some supervised play time and practice skills at your own pace.
 featured: false
 hero:
-  tagline: Gymnastics at any age
-  headline: Texas Twisters Adult Gymnastics
-  text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
+  tagline: Practice, play, repeat
+  headline: Texas Twisters Open Gym
+  text: Come play in a facility equipped with beams, bars, bouncy floors, a Tumbl Trak, and more! It's gymnastics, your way. Go have fun!
   action:
     label: Enroll today
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-14.jpg'
+    src: '/images/stock/unsplash/gym-09.jpg'
 infoSection:
-  headline: Designed to help you rediscover your love of gymnastics
-  text: Train every event in all around gymnastics or focus your workout solely on tumbling; the choice is yours! Either way, you’ll soon realize you’re capable of more than you think.
+  headline: Designed to give your child the freedom to explore
+  text: Whether you want to jump, run, or play, open gym is for you! Our experienced coaching staff is right there to keep you safe and maybe even play a game or two. It's your time to shine!
   ages: 18+ years old
   dates: Year-round
   schedule: Tue 7:30PM - 10PM

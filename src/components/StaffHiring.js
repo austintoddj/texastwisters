@@ -96,7 +96,7 @@ export const StaffHiring = ({ jobs }) => {
                   The Austin Family
                 </p>
                 <p className="text-base font-medium text-purple-600">
-                  Todd, Becky, Arie & Anastasia
+                  Todd, Becky & Family
                 </p>
               </div>
             </div>

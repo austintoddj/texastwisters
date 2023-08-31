@@ -3,7 +3,6 @@ name: Birthday Parties
 dropdownDescription: Bring your friends and family to celebrate your big day.
 featured: false
 hero:
-  tagline: Simple, fun & stress free
   headline: Texas Twisters Birthday Parties
   text: We want to help give you and your child the best birthday ever! They'll enjoy a variety of supervised open gym time, games, an obstacle course, and more. Don't wait, grab your spot today!
   action:
@@ -45,26 +44,26 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Don't wait to start planning an epic birthday for your child. Choose the package that's right for you and reserve your spot today!
+  text: Add participants to the base package for $10 per additional guest, up to 40 guests. Increase gym time by $50 per 30 minutes, up to a total of 3 hours.
   pricing1:
-    name: Regular
-    price: $1.2k
-    interval: per month
-    shortDescription: M-F from 8 AM to 3:00 PM
+    name: Silver package
+    price: $250
+    interval: 90 minutes
+    shortDescription: Saturdays & Sundays
     features:
-      - feature: Nulla quis lorem ut libero
+      - feature: Invite 15 friends
       - feature: Lorem ipsum dolor sit
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
-    shortDescription: M-F from 8 AM to 5:00 PM
+    name: Gold package
+    price: $300
+    interval: 120 minutes
+    shortDescription: Saturdays & Sundays
     features:
-      - feature: Nulla quis lorem ut libero
+      - feature: Invite 20 friends
       - feature: Lorem ipsum dolor sit
     action:
       label: Enroll today

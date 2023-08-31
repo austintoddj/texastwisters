@@ -13,11 +13,6 @@ const nextConfig = {
           }
         : null,
       {
-        source: '/about',
-        destination: '/',
-        permanent: true
-      },
-      {
         source: '/gallery',
         destination: '/',
         permanent: true

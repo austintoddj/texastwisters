@@ -3,7 +3,6 @@ name: Tumbling
 dropdownDescription: Learn basic tumbling skills and refine coordination and technique.
 featured: false
 hero:
-  tagline: Where kids can play
   headline: Texas Twisters Tumbling Program
   text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer in a safe and fun environment.
   action:
@@ -48,7 +47,7 @@ pricingSection:
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
     name: Regular
-    price: $1.2k
+    price: $90
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:

@@ -3,7 +3,6 @@ name: Adult Gymnastics
 dropdownDescription: Join the Adult Gymnastics community and see what you've been missing.
 featured: false
 hero:
-  tagline: Gymnastics at any age
   headline: Texas Twisters Adult Gymnastics
   text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
@@ -47,9 +46,9 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Regular
-    price: $1.2k
-    interval: per month
+    name: Open Gym
+    price: $20
+    interval: per drop-in
     shortDescription: M-F from 8 AM to 3:00 PM
     features:
       - feature: Nulla quis lorem ut libero
@@ -59,9 +58,9 @@ pricingSection:
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
+    name: Conditioning
+    price: $15
+    interval: per drop-in
     shortDescription: M-F from 8 AM to 5:00 PM
     features:
       - feature: Nulla quis lorem ut libero

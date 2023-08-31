@@ -36,14 +36,6 @@
 - Hero image video button in `HomeHero.js`
 - Video modal in `HomeHero.js`
 
-### When the About page goes live
-
-- Link to team section in `StaffHiring.js`
-- Block action buttons "Learn More" in `HomeFeatureBlocks.js`
-- Remove the redirect in `next.config.js`
-- About page link in `Navbar.js`
-- About page link in `Footer.js`
-
 ### When we have a phone number
 
 - Phone number in:

@@ -12,11 +12,6 @@ export const ProgramHero = ({ hero }) => {
       <div className="max-w-screen-xl mx-auto">
         {/* Header */}
         <div className="relative">
-          <div className="flex justify-center">
-            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-              {hero.tagline}
-            </span>
-          </div>
           <h2 className="max-w-3xl mx-auto mt-4 text-center text-purple-900 h1">
             {hero.headline}
           </h2>

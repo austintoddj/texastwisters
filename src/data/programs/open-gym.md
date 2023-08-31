@@ -3,7 +3,6 @@ name: Open Gym
 dropdownDescription: Drop in for some supervised play time and practice skills at your own pace.
 featured: false
 hero:
-  tagline: Practice, play, repeat
   headline: Texas Twisters Open Gym
   text: Come play in a facility equipped with beams, bars, bouncy floors, a Tumbl Trak, and more! It's gymnastics, your way. Go have fun!
   action:
@@ -48,24 +47,24 @@ pricingSection:
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
     name: Regular
-    price: $1.2k
-    interval: per month
-    shortDescription: M-F from 8 AM to 3:00 PM
+    price: $20
+    interval: per drop-in
+    shortDescription: Tue & Thurs at 7:30 PM
     features:
-      - feature: Nulla quis lorem ut libero
+      - feature: Ages 5+
       - feature: Lorem ipsum dolor sit
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
-    shortDescription: M-F from 8 AM to 5:00 PM
+    name: Preschool
+    price: $10
+    interval: per drop-in
+    shortDescription: Mon-Fri at 10 AM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Ages 2-5
+      - feature: Parent must attend
     action:
       label: Enroll today
       href: '#'

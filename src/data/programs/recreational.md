@@ -3,7 +3,6 @@ name: Recreational
 dropdownDescription: Build on the fundamentals with a focus on form and technique.
 featured: true
 hero:
-  tagline: Beyond the basics
   headline: Texas Twisters Recreational Program
   text: Levels 1-4 emphasize basic skills on Vault, Uneven Bars, Beam, and Floor. Improve balance, strength, conditioning and coordination in a fun, safe environment.
   action:
@@ -47,8 +46,8 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Most popular
-    price: $80
+    name: Most Popular
+    price: $90
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:

@@ -19,8 +19,8 @@ export const ContactInformation = () => {
             <p className="text-lg text-purple-800 sm:text-xl text-opacity-90">
               {/*Send us an email or give us a call. Better yet, stop by in-person.*/}
               {/*We'd love to give you a tour!*/}
-                Send us an email or find us on Instagram and Facebook. Better yet, stop by in-person.
-                We'd love to give you a tour!
+              Send us an email or find us on Instagram and Facebook. Better yet,
+              stop by in-person. We'd love to give you a tour!
             </p>
           </div>
         </div>

@@ -3,7 +3,6 @@ name: Team
 dropdownDescription: Train and compete in our USA Gymnastics Development Program.
 featured: true
 hero:
-  tagline: USA Gymnastics Development Program
   headline: Texas Twisters Team
   text: Tryout for our competitive gymnastics program and and compete in USAG regulated meets in cities all across Texas.
   action:
@@ -47,8 +46,8 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
   pricing1:
-    name: Most popular
-    price: $280
+    name: Level 3
+    price: $275
     interval: per month
     shortDescription: M-F from 8 AM to 3:00 PM
     features:

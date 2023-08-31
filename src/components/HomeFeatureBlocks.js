@@ -23,7 +23,7 @@ const blocks = [
     tagline: 'A sense of belonging',
     headline: 'Our goal is to provide a welcoming and supportive environment',
     text: 'Gymnastics is a great way for children of all ages to develop their physical skills, such as strength, flexibility, and coordination. These skills are important for overall health and well-being, and they can also help children succeed in other sports and activities.',
-    // action: { label: 'Learn more', href: '/about', icon: true },
+    action: { label: 'Learn more', href: '/about', icon: true },
     portraitImage: {
       src: portraitImage1,
       alt: 'Person with chalk wearing white and blue grips'
@@ -37,7 +37,7 @@ const blocks = [
     tagline: 'Building skills and confidence',
     headline: 'We offer a variety of programs that enable athletes to thrive',
     text: 'When children learn new skills and achieve goals, it can boost their self-confidence and self-esteem. This can carry over into other areas of their lives, such as school and social interactions. Gymnastics is a team sport, which can help children learn the importance of teamwork and friendship.',
-    // action: { label: 'Learn more', href: '/about', icon: true },
+    action: { label: 'Learn more', href: '/about', icon: true },
     portraitImage: {
       src: portraitImage2,
       alt: 'A trampoline and mats in a gym'

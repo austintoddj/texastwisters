@@ -3,7 +3,6 @@ name: Preschool
 dropdownDescription: Learn flexibility, balance, strength and have lots of fun!
 featured: true
 hero:
-  tagline: Start with the basics
   headline: Texas Twisters Preschool Program
   text: Our Preschool class is the perfect start for your little gymnast to learn flexibility, balance, strength, and have lots of fun!
   action:

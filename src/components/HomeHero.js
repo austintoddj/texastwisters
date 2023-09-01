@@ -48,13 +48,13 @@ export const HomeHero = ({ enrollment }) => {
             </span>
           </div>
           <h1 className="max-w-xl mt-4 text-center text-purple-900 sm:mt-5 lg:text-left h1 lg:max-w-none">
-            Grand Opening January 2024
+            Grand Opening January 2024!
           </h1>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
-            Located in the heart of Georgetown, our programs are designed to
-            challenge and inspire gymnasts of all levels. From beginner to
-            advanced, we'll provide you with a safe, supportive, and fun
-            environment to learn and grow.
+            Located in the heart of Georgetown, Texas, our programs are designed
+            to challenge and inspire athletes of all ages. From beginner to
+            advanced, we're excited to provide you a safe, fun, and supportive
+            environment throughout your gymnastics journey.
           </p>
           {/* Hero buttons */}
           <div className="flex flex-col items-center mt-8 overflow-hidden sm:flex-row">

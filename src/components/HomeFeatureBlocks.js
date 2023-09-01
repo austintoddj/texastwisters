@@ -1,11 +1,8 @@
-import clsx from 'clsx'
 import Image from 'next/image'
 
 import checkmark from '/public/images/illustrations/checkmark.svg'
-import portraitImage2 from '/public/images/stock/unsplash/gym-01.jpg'
-import squareImage1 from '/public/images/stock/unsplash/gym-02.jpg'
-import squareImage2 from '/public/images/stock/unsplash/gym-04.jpg'
-import portraitImage1 from '/public/images/stock/unsplash/gym-11.jpg'
+import squareImage from '/public/images/stock/unsplash/gym-02.jpg'
+import portraitImage from '/public/images/stock/unsplash/gym-04.jpg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 
@@ -18,37 +15,6 @@ const features = [
   'Family owned'
 ]
 
-const blocks = [
-  {
-    tagline: 'A sense of belonging',
-    headline: 'Our goal is to provide a welcoming and supportive environment',
-    text: 'Gymnastics is a great way for children of all ages to develop their physical skills, such as strength, flexibility, and coordination. These skills are important for overall health and well-being, and they can also help children succeed in other sports and activities.',
-    action: { label: 'Learn more', href: '/about', icon: true },
-    portraitImage: {
-      src: portraitImage1,
-      alt: 'Person with chalk wearing white and blue grips'
-    },
-    squareImage: {
-      src: squareImage1,
-      alt: 'A coach helping a girl on the balance beam'
-    }
-  },
-  {
-    tagline: 'Building skills and confidence',
-    headline: 'We offer a variety of programs that enable athletes to thrive',
-    text: 'When children learn new skills and achieve goals, it can boost their self-confidence and self-esteem. This can carry over into other areas of their lives, such as school and social interactions. Gymnastics is a team sport, which can help children learn the importance of teamwork and friendship.',
-    action: { label: 'Learn more', href: '/about', icon: true },
-    portraitImage: {
-      src: portraitImage2,
-      alt: 'A trampoline and mats in a gym'
-    },
-    squareImage: {
-      src: squareImage2,
-      alt: 'A child holding their arms in the air on a balance beam'
-    }
-  }
-]
-
 export const HomeFeatureBlocks = () => {
   return (
     <section className="px-4 pb-16 overflow-hidden bg-yellow-100 sm:pb-24 sm:px-6 lg:px-8">
@@ -58,13 +24,11 @@ export const HomeFeatureBlocks = () => {
         <div className="relative">
           {/* Block title and subtext */}
           <h2 className="max-w-4xl mx-auto text-center text-purple-900 h2">
-            Building a community and culture of health, safety and excellence
+            {/*Building a culture of excellence in our community*/}
+            {/*Building a culture and striving for excellence in our community*/}
+            {/*  Developing a culture of athletic excellence in our community*/}
+              Developing potential and striving to elevate our community
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
-            Texas Twisters hosts a variety of camps and clinics during school
-            breaks, as well as participate in local events like Red Poppy
-            Festival and the Christmas Stroll.
-          </p>
           {/* Feature list */}
           <div className="max-w-3xl mx-auto mt-12">
             <ul className="flex flex-wrap items-center justify-center -mx-3 -my-2 text-lg text-purple-800">
@@ -85,93 +49,63 @@ export const HomeFeatureBlocks = () => {
           </div>
         </div>
 
-        {blocks.map((block, index) => (
-          <div
-            key={`home-block-${index}`}
-            className={clsx(
-              'max-w-xl mx-auto mt-16 lg:max-w-none lg:grid lg:grid-cols-12 lg:gap-x-14 xl:gap-x-20 2xl:gap-x-24',
-              index % 2 == 0
-                ? 'sm:mt-20 lg:mt-24'
-                : 'sm:mt-44 lg:mt-56 xl:mt-60 2xl:mt-64'
-            )}
-          >
-            {/* Block images*/}
-            <div
-              className={clsx(
-                'relative lg:col-span-6',
-                index % 2 == 1 && 'lg:order-2'
-              )}
-            >
-              <div
-                className={clsx(
-                  'relative',
-                  index % 2 == 0
-                    ? 'sm:pl-36 lg:pl-20 xl:pl-32'
-                    : 'sm:pr-36 lg:pr-20 xl:pr-32'
-                )}
-              >
-                <div className="relative aspect-w-3 aspect-h-4 rounded-2xl">
-                  <Image
-                    className="absolute inset-0 object-cover rounded-2xl"
-                    src={block.portraitImage.src}
-                    fill
-                    alt={block.portraitImage.alt}
-                    sizes="(min-width: 1280px) 29.5rem, (min-width: 1024px) calc(50vw - 8.75rem), (min-width: 640px) 27rem, calc(100vw - 2rem)"
-                  />
-                </div>
-                <div
-                  className={clsx(
-                    'absolute hidden sm:block sm:w-72 sm:h-72 lg:w-64 lg:h-64 xl:w-72 xl:h-72 2xl:w-80 2xl:h-80 rounded-3xl',
-                    index % 2 == 0
-                      ? 'left-0 bottom-0 sm:translate-y-1/3'
-                      : 'right-0 top-0 sm:-translate-y-1/3'
-                  )}
-                >
-                  <Image
-                    className="absolute inset-0 object-cover w-full h-full rounded-3xl"
-                    src={block.squareImage.src}
-                    fill
-                    alt={block.squareImage.alt}
-                    sizes="(min-width: 1536px) 20rem, (min-width: 1280px) 18rem, (min-width: 1024px) 16rem, (min-width: 640px) 18rem"
-                  />
-                </div>
+        <div className="max-w-xl mx-auto my-16 lg:max-w-none lg:grid lg:grid-cols-12 lg:gap-x-14 xl:gap-x-20 2xl:gap-x-24 sm:my-20 lg:my-24">
+          {/* Block images*/}
+          <div className="relative lg:col-span-6 lg:order-2">
+            <div className="relative sm:pl-36 lg:pl-20 xl:pl-32">
+              <div className="relative aspect-w-3 aspect-h-4 rounded-2xl">
+                <Image
+                  className="absolute inset-0 object-cover rounded-2xl"
+                  src={portraitImage}
+                  fill
+                  alt="A coach helping a girl on the balance beam"
+                  sizes="(min-width: 1280px) 29.5rem, (min-width: 1024px) calc(50vw - 8.75rem), (min-width: 640px) 27rem, calc(100vw - 2rem)"
+                />
               </div>
-            </div>
-            {/* Block text content*/}
-            <div
-              className={clsx(
-                'flex flex-col justify-center mt-16 lg:mt-0 lg:col-span-6',
-                index % 2 == 0 ? 'sm:mt-44' : 'sm:mt-20 lg:order-1'
-              )}
-            >
-              <div>
-                <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-                  {block.tagline}
-                </span>
+              <div className="absolute hidden sm:block sm:w-72 sm:h-72 lg:w-64 lg:h-64 xl:w-72 xl:h-72 2xl:w-80 2xl:h-80 rounded-3xl left-0 bottom-0 sm:translate-y-1/3">
+                <Image
+                  className="absolute inset-0 object-cover w-full h-full rounded-3xl"
+                  src={squareImage}
+                  fill
+                  alt="A child holding their arms in the air on a balance beam"
+                  sizes="(min-width: 1536px) 20rem, (min-width: 1280px) 18rem, (min-width: 1024px) 16rem, (min-width: 640px) 18rem"
+                />
               </div>
-              <h3 className="mt-4 text-purple-900 sm:mt-5 h3">
-                {block.headline}
-              </h3>
-              <p className="max-w-2xl mt-3 text-lg leading-loose text-purple-800">
-                {block.text}
-              </p>
-              {block.action && (
-                <div className="mt-6">
-                  <Button href={block.action.href} variant="accent" size="sm">
-                    {block.action.label}
-                    {block.action.icon && (
-                      <Icon
-                        icon="arrowNarrowRight"
-                        className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
-                        stroke={2}
-                      />
-                    )}
-                  </Button>
-                </div>
-              )}
             </div>
           </div>
-        ))}
+          {/* Block text content*/}
+          <div className="flex flex-col justify-center mt-16 lg:mt-0 lg:col-span-6 sm:mt-44">
+            <div>
+              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+                A sense of belonging
+              </span>
+            </div>
+            <h3 className="mt-4 text-purple-900 sm:mt-5 h3">
+              {/*We provide a welcoming and supportive environment*/}
+                A place where people feel connected, supported, and inspired
+            </h3>
+            <p className="max-w-2xl mt-3 text-lg leading-loose text-purple-800">
+              Our team will help develop an athletes physical skills, such as
+              strength, flexibility, and coordination, all while building
+              confidence, overcome obstacles, and developing personal
+              discipline. When children learn new skills and achieve goals, it
+              can boost their self-confidence and self-esteem. This can carry
+              over into other areas of their lives, such as school and social
+              interactions. Gymnastics is a team sport, which can help children
+              learn the importance of teamwork and friendship.
+            </p>
+            <div className="mt-6">
+              <Button href="/about" variant="accent" size="sm">
+                Learn More
+                <Icon
+                  icon="arrowNarrowRight"
+                  className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                  stroke={2}
+                />
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

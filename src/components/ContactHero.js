@@ -86,8 +86,8 @@ export const ContactHero = () => {
             We'd love to hear from you
           </h1>
           <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
-            Need to get in touch with us? Either fill out the form or find more
-            ways to connect with us below.
+            Need to get in touch with us? Fill out the form or find more ways to
+            connect with us below.
           </p>
         </div>
         {/* Contact form container */}

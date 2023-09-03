@@ -24,11 +24,14 @@ export const HomeFeatureBlocks = () => {
         <div className="relative">
           {/* Block title and subtext */}
           <h2 className="max-w-4xl mx-auto text-center text-purple-900 h2">
-            {/*Building a culture of excellence in our community*/}
-            {/*Building a culture and striving for excellence in our community*/}
-            {/*  Developing a culture of athletic excellence in our community*/}
-              Developing potential and striving to elevate our community
+            Building a culture of excellence in our community
           </h2>
+          <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
+            We're committed to developing a gymnasts' physical skills, such as
+            strength, flexibility, and coordination. We believe learning new
+            skills, achieving goals, and overcoming obstacles boosts
+            self-confidence while building personal discipline.
+          </p>
           {/* Feature list */}
           <div className="max-w-3xl mx-auto mt-12">
             <ul className="flex flex-wrap items-center justify-center -mx-3 -my-2 text-lg text-purple-800">
@@ -81,18 +84,13 @@ export const HomeFeatureBlocks = () => {
               </span>
             </div>
             <h3 className="mt-4 text-purple-900 sm:mt-5 h3">
-              {/*We provide a welcoming and supportive environment*/}
-                A place where people feel connected, supported, and inspired
+              {/*We provide a welcoming and supportive environment*/}A place
+              where athetes feel connected, supported, and inspired
             </h3>
             <p className="max-w-2xl mt-3 text-lg leading-loose text-purple-800">
-              Our team will help develop an athletes physical skills, such as
-              strength, flexibility, and coordination, all while building
-              confidence, overcome obstacles, and developing personal
-              discipline. When children learn new skills and achieve goals, it
-              can boost their self-confidence and self-esteem. This can carry
-              over into other areas of their lives, such as school and social
-              interactions. Gymnastics is a team sport, which can help children
-              learn the importance of teamwork and friendship.
+              Our programs teach children the importance of teamwork and
+              friendship, which are essential skills for success in school and
+              beyond.
             </p>
             <div className="mt-6">
               <Button href="/about" variant="accent" size="sm">

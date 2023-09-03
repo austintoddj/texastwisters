@@ -18,9 +18,9 @@ export const ContactInformation = () => {
           <div className="flex items-center mt-3 sm:mt-4 lg:mt-0">
             <p className="text-lg text-purple-800 sm:text-xl text-opacity-90">
               {/*Send us an email or give us a call. Better yet, stop by in-person.*/}
-              {/*We'd love to give you a tour!*/}
+              {/*We'd love to meet you and show you around!*/}
               Send us an email or find us on Instagram and Facebook. Better yet,
-              stop by in-person. We'd love to give you a tour!
+              stop by in-person. We'd love to meet you and show you around!
             </p>
           </div>
         </div>

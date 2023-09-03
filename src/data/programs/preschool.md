@@ -1,10 +1,10 @@
 ---
 name: Preschool
-dropdownDescription: Learn flexibility, balance, strength and have lots of fun!
+dropdownDescription: Learn foundational gymnastics skills with an emphasis on fun!
 featured: true
 hero:
   headline: Texas Twisters Preschool Program
-  text: Our Preschool class is the perfect start for your little gymnast to learn flexibility, balance, strength, and have lots of fun!
+  text: Our preschool class is the perfect start for your little gymnast to learn foundational gymnastics skills with an emphasis on fun!
   action:
     label: Enroll today
     href: '#'

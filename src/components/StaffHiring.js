@@ -21,9 +21,9 @@ export const StaffHiring = ({ jobs }) => {
               Meet the owners of Texas Twisters
             </h2>
             <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
-              We believe that growth and development are essential for both our
-              athletes and our coaches. We are committed to providing the
-              resources and support you need to succeed.
+              Our family has been involved in the gymnastics community for
+              decades, and we're thrilled to share our passion of the sport with
+              the community of Georgetown!
             </p>
             {/* Current job postings box */}
             <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
@@ -93,10 +93,7 @@ export const StaffHiring = ({ jobs }) => {
               </div>
               <div className="pl-2 sm:pl-0 mt-3.5 text-lg sm:text-center">
                 <p className="font-semibold tracking-wide text-purple-800">
-                  The Austin Family
-                </p>
-                <p className="text-base font-medium text-purple-600">
-                  Todd, Becky & Family
+                  Becky & Todd
                 </p>
               </div>
             </div>

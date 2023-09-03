@@ -21,10 +21,9 @@ export const Staff = () => {
             </div>
             <div className="flex items-center">
               <p className="mt-5 text-xl leading-relaxed sm:text-center lg:mt-0 text-purple-50 lg:text-left">
-                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-                sem. Quisque velit nisi, pretium ut lacinia in, elementum id
-                enim.
+                With decades of gymnastics experience among us, we're looking
+                forward to sharing our love of the sport with all of you in
+                Georgetown, Texas!
               </p>
             </div>
           </div>

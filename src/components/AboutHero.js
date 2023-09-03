@@ -59,23 +59,30 @@ export function AboutHero() {
         {/* About school */}
         <div className="mx-auto prose prose-lg mt-14 sm:mt-16 lg:mt-24 sm:prose-xl">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
-            pretium fusce id velit ut. Id porta nibh venenatis cras sed felis
-            eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus
-            vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu
-            volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque
-            fermentum. Viverra mauris in aliquam sem fringilla.
+            I was introduced to gymnastics at four years old, and it has led to
+            a lifelong relationship. What started in preschool, grew to
+            recreational classes, transitioned to competitive team, and finally
+            settled into adult gymnastics. I have coached at six different gyms
+            across the country, and been influenced by many incredible coaches
+            and athletes along the way.
           </p>
           <p>
-            Elementum nisi quis eleifend quam adipiscing vitae proin sagittis
-            nisl. Viverra vitae congue eu consequat ac felis donec et odio.
-            Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus
-            sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac
-            felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis
-            tellus in metus vulputate. Ultrices dui sapien eget mi proin sed
-            libero enim. Id velit ut tortor pretium viverra suspendisse.
+            While coaching at a gym that offered adult gymnastics, Todd was
+            introduced to the sport for the first time. Watching his talent and
+            excitement grow inspired my passion to involve more adults in
+            gymnastics.{' '}
           </p>
+          <p>
+            Our daughter is now a competitive gymnast, and currently holds state
+            titles on bars and vault. Our son loves baseball and is currently
+            playing his fifth season with GYBA.
+          </p>
+          <p>
+            We moved to Georgetown from Minneapolis in 2018, and have been
+            Georgetown's biggest fans since day one. We love this town, and we
+            can't wait to bring this business to you!
+          </p>
+          <p>Becky</p>
         </div>
       </div>
     </section>

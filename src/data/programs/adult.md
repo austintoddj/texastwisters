@@ -1,6 +1,6 @@
 ---
 name: Adult Gymnastics
-dropdownDescription: Join the Adult Gymnastics community and see what you've been missing.
+dropdownDescription: Join the adult gymnastics community, and see what you've been missing!
 featured: false
 hero:
   headline: Texas Twisters Adult Gymnastics

@@ -1,6 +1,6 @@
 ---
 name: Open Gym
-dropdownDescription: Drop in for some supervised play time and practice skills at your own pace.
+dropdownDescription: Drop in for supervised play, and practice skills at your own pace.
 featured: false
 hero:
   headline: Texas Twisters Open Gym

@@ -1,4 +1,4 @@
 ---
 question: Do you offer any private lessons?
-answer: Yes! Private lessons are scheduled directly with the staff once students are enrolled in the program. Prices vary by coach.
+answer: Yes! Private lessons are scheduled directly with the staff. Prices vary by coach.
 ---

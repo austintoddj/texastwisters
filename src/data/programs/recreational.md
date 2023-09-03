@@ -1,10 +1,10 @@
 ---
 name: Recreational
-dropdownDescription: Build on the fundamentals with a focus on form and technique.
+dropdownDescription: Build on the fundamentals with more advanced gymnastics skills.
 featured: true
 hero:
   headline: Texas Twisters Recreational Program
-  text: Levels 1-4 emphasize basic skills on Vault, Uneven Bars, Beam, and Floor. Improve balance, strength, conditioning and coordination in a fun, safe environment.
+  text: Beginner through advanced classes emphasize basic skills on vault, uneven bars, beam, and floor. Improve coordination, strength, and mobility in a fun, safe environment.
   action:
     label: Enroll today
     href: '#'

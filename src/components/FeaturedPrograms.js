@@ -87,9 +87,8 @@ export const FeaturedPrograms = () => {
               Classes for any age or experience level
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-xl leading-relaxed text-purple-800 sm:mt-5 lg:text-left">
-              Explore some of the featured classes we offer at Texas Twisters
-              and find the one that's right for you. Looking for more? Check out
-              our{' '}
+              Explore some of the featured classes we offer at Texas Twisters.
+              Looking for something else? Check out our{' '}
               <Link href="/programs/adult" className="underline">
                 Adult Gymnastics
               </Link>

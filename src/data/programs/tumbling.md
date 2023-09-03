@@ -1,6 +1,6 @@
 ---
 name: Tumbling
-dropdownDescription: Refine coordination and technique in various tumbling skills.
+dropdownDescription: Refine coordination and technique from beginner to advanced tumbling skills.
 featured: false
 hero:
   headline: Texas Twisters Tumbling Program

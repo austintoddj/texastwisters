@@ -13,11 +13,11 @@ hero:
     src: '/images/stock/unsplash/gym-05.jpg'
 infoSection:
   headline: A program designed to help your child learn
-  text: This fun, fast-paced class is teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
-  ages: 2 - 5 years old
-  dates: Jan. 13 - Jun. 31
-  schedule: M-F from 8AM - 5 PM
-  classSize: Student to coach ratio of 10:1
+  text: This fun, fast-paced class teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
+  ages: 18 mo - 5 years old
+  dates: Year-round
+  schedule: Varies by class
+  classSize: Gymnast to coach ratio of 6:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -44,15 +44,17 @@ descriptionSection:
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
+  text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing1:
     name: Regular Class
     price: $80
     interval: per month
-    shortDescription: M-F from 8 AM to 3:00 PM
+    shortDescription: Mon - Sat
     features:
-      - feature: Co-ed class
       - feature: 45 minute session
+      - feature: Co-ed classes
+      - feature: Morning classes
+      - feature: Evening classes
     action:
       label: Enroll today
       href: '#'
@@ -60,13 +62,14 @@ pricingSection:
   pricing2:
     name: Open Gym
     price: $10
-    interval: per day
-    shortDescription: M-F from 10 AM to 11:00 AM
+    interval: per drop-in
+    shortDescription: M-F from 8:30 AM to 10:00 AM
     features:
+      - feature: 1 - 5 years old
       - feature: Supervised free-play
-      - feature: 60 minute session
+      - feature: Parents must attend
     action:
-      label: Enroll today
+      label: Reserve today
       href: '#'
       icon: true
 ---

@@ -4,20 +4,20 @@ dropdownDescription: Bring your friends and family to celebrate your big day.
 featured: false
 hero:
   headline: Texas Twisters Birthday Parties
-  text: We want to help give you and your child the best birthday ever! They'll enjoy a variety of supervised open gym time, games, an obstacle course, and more. Don't wait, grab your spot today!
+  text: We want to help give you and your child the best birthday! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
   action:
-    label: Enroll today
+    label: Reserve your spot
     href: '#'
     icon: true
   image:
     src: '/images/stock/unsplash/gym-15.jpg'
 infoSection:
-  headline: The ideal kids birthday party venue for any age
-  text: A Texas Twisters party takes the stress out birthday planning. Our coaches take care of all the details and make sure your child and all their friends have an amazing time.
-  ages: 4 - 5 years old
-  dates: Jan. 13 - Jun. 31
-  schedule: M-F from 8AM - 5 PM
-  classSize: Student to teacher ratio of 10:1
+  headline: The ideal birthday party venue for any age
+  text: A Texas Twisters party takes the stress out birthday planning. Our coaches take care of all the details, and make sure your child and all their friends have an amazing time.
+  ages: All ages!
+  dates: Weekends
+  schedule: 60 minutes of gymnastics + time for cake and gifts
+  classSize: Up to 40 participants
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -44,7 +44,7 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Add participants to the base package for $10 per additional guest, up to 40 guests. Increase gym time by $50 per 30 minutes, up to a total of 3 hours.
+  text: Add participants to the Silver package for $10 per additional guest, up to 40 guests. Increase gym time by $50 per 30 minutes, up to a total of 3 hours. Or upgrade to the Gold package!
   pricing1:
     name: Silver package
     price: $250
@@ -52,21 +52,22 @@ pricingSection:
     shortDescription: Saturdays & Sundays
     features:
       - feature: Invite 15 friends
-      - feature: Lorem ipsum dolor sit
+      - feature: 60 minutes of gym time
     action:
-      label: Enroll today
+      label: Reserve today!
       href: '#'
       icon: true
   pricing2:
     name: Gold package
-    price: $300
+    price: $325
     interval: 120 minutes
     shortDescription: Saturdays & Sundays
     features:
       - feature: Invite 20 friends
-      - feature: Lorem ipsum dolor sit
+      - feature: 90 minutes of gym time
+      - feature: Free birthday gift!
     action:
-      label: Enroll today
+      label: Reserve today!
       href: '#'
       icon: true
 ---

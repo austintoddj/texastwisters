@@ -13,10 +13,10 @@ hero:
     src: '/images/stock/unsplash/gym-14.jpg'
 infoSection:
   headline: Designed to help you rediscover your love of gymnastics
-  text: Train every event in all around gymnastics or focus your workout solely on tumbling; the choice is yours! Either way, you’ll soon realize you’re capable of more than you think.
+  text: Train all four gymnastics events or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.
   ages: 18+ years old
   dates: Year-round
-  schedule: Tue 7:30PM - 10PM
+  schedule: Varies by class
   classSize: Student to coach ratio of 20:1
 descriptionSection:
   text: >
@@ -44,15 +44,15 @@ descriptionSection:
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
+  text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
   pricing1:
     name: Open Gym
     price: $20
     interval: per drop-in
-    shortDescription: M-F from 8 AM to 3:00 PM
+    shortDescription: Tue/Thurs from 8:30 - 10:30 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Punch card available
+      - feature: Memberships coming soon!
     action:
       label: Enroll today
       href: '#'
@@ -61,10 +61,10 @@ pricingSection:
     name: Conditioning
     price: $15
     interval: per drop-in
-    shortDescription: M-F from 8 AM to 5:00 PM
+    shortDescription: M/W/F from 12-1 PM
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: HIIT style workouts
+      - feature: Memberships coming soon!
     action:
       label: Enroll today
       href: '#'

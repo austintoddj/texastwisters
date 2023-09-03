@@ -4,20 +4,20 @@ dropdownDescription: Drop in for supervised play, and practice skills at your ow
 featured: false
 hero:
   headline: Texas Twisters Open Gym
-  text: Come play in a facility equipped with beams, bars, bouncy floors, a Tumbl Trak, and more! It's gymnastics, your way. Go have fun!
+  text: Work out in a facility equipped with beams, bars, spring floors, a Tumbl Trak, and more! It's gymnastics, your way, on your schedule.
   action:
-    label: Enroll today
+    label: Reserve today
     href: '#'
     icon: true
   image:
     src: '/images/stock/unsplash/gym-09.jpg'
 infoSection:
-  headline: Designed to give your child the freedom to explore
-  text: Whether you want to jump, run, or play, open gym is for you! Our experienced coaching staff is right there to keep you safe and maybe even play a game or two. It's your time to shine!
-  ages: 18+ years old
+  headline: Designed to give you the freedom to explore
+  text: Whether you are an experienced gymnast, or you're exploring the sport for the first time, we want you to feel welcome here! Our coaching staff is right there to guide you and keep you safe. Open gym classes vary by age group. See details below!
+  ages: Preschool / 5-17 years / Adult
   dates: Year-round
-  schedule: Tue 7:30PM - 10PM
-  classSize: Student to coach ratio of 20:1
+  schedule: Varies by age group
+  classSize: Athlete to coach ratio of 20:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -44,29 +44,29 @@ descriptionSection:
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
+  text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to having you join us!
   pricing1:
     name: Regular
     price: $20
     interval: per drop-in
-    shortDescription: Tue & Thurs at 7:30 PM
+    shortDescription: Fri & Sat at 6 - 8 PM
     features:
-      - feature: Ages 5+
-      - feature: Lorem ipsum dolor sit
+      - feature: Ages 5-17
+      - feature: Parent drop-off
     action:
-      label: Enroll today
+      label: Reserve today
       href: '#'
       icon: true
   pricing2:
     name: Preschool
     price: $10
     interval: per drop-in
-    shortDescription: Mon-Fri at 10 AM
+    shortDescription: Mon-Fri at 8:30 - 10 AM
     features:
-      - feature: Ages 2-5
+      - feature: 1 - 5 years old
       - feature: Parent must attend
     action:
-      label: Enroll today
+      label: Reserve today
       href: '#'
       icon: true
 ---

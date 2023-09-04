@@ -58,19 +58,20 @@ export function AboutHero() {
         </div>
         {/* About school */}
         <div className="mx-auto prose prose-lg mt-14 sm:mt-16 lg:mt-24 sm:prose-xl">
+          <p className="text-2xl">From the owner:</p>
           <p>
             I was introduced to gymnastics at four years old, and it has led to
-            a lifelong relationship. What started in preschool, grew to
-            recreational classes, transitioned to competitive team, and finally
-            settled into adult gymnastics. I have coached at six different gyms
-            across the country, and been influenced by many incredible coaches
-            and athletes along the way.
+            a lifelong passion. What started in preschool, grew to recreational
+            classes, transitioned to competitive team, and finally settled into
+            adult gymnastics. I have coached at six different gyms across the
+            country, and have been influenced by many incredible coaches and
+            athletes along the way.
           </p>
           <p>
-            While coaching at a gym that offered adult gymnastics, Todd was
-            introduced to the sport for the first time. Watching his talent and
-            excitement grow inspired my passion to involve more adults in
-            gymnastics.{' '}
+            While coaching at a gym that offered adult gymnastics, my husband
+            Todd was introduced to the sport for the first time. Watching his
+            talent and excitement grow inspired my passion to involve more
+            adults in gymnastics.
           </p>
           <p>
             Our daughter is now a competitive gymnast, and currently holds state
@@ -78,11 +79,11 @@ export function AboutHero() {
             playing his fifth season with GYBA.
           </p>
           <p>
-            We moved to Georgetown from Minneapolis in 2018, and have been
-            Georgetown's biggest fans since day one. We love this town, and we
-            can't wait to bring this business to you!
+            We moved from Minneapolis to Georgetown in 2018, and are proud to
+            call it our home. We love Georgetown and can't wait to bring this
+            business to you!
           </p>
-          <p>Becky</p>
+          <p className="italic">Becky</p>
         </div>
       </div>
     </section>

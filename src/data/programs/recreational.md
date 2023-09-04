@@ -16,7 +16,7 @@ infoSection:
   text: Whether this is your child's first experience in the gym, or they've been here for years, we have a place for you. Contact us today to schedule an evaluation!
   ages: 5 - 18 years old
   dates: Year-round
-  schedule: Varies by class
+  schedule: 60 minutes/week
   classSize: Student to coach ratio of 8:1
 descriptionSection:
   text: >
@@ -49,11 +49,11 @@ pricingSection:
     name: Tuition
     price: $90
     interval: per month
-    shortDescription: Monday - Saturday
+    shortDescription: Beginner - Advanced
     features:
       - feature: Evening classes
       - feature: Saturday morning classes
-      - feature: 60 minute session
+      - feature: 60 minutes
       - feature: Ages 5+
     action:
       label: Enroll today

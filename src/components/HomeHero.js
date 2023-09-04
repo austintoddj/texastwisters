@@ -51,8 +51,8 @@ export const HomeHero = ({ enrollment }) => {
             Grand Opening January 2024!
           </h1>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
-            Located in the heart of Georgetown, Texas, our programs are designed
-            to challenge and inspire athletes of all ages. From beginner to
+            Located in the heart of Georgetown, our programs are designed to
+            challenge and inspire athletes of all ages. From beginner to
             advanced, we're excited to provide you a safe, fun, and supportive
             environment throughout your gymnastics journey.
           </p>

@@ -16,7 +16,7 @@ infoSection:
   text: Learn foundational skills like rolls, cartwheels, and handstands. Then advance your technique with back handsprings, standing back tucks, and more! Perfect for dancers and cheerleaders looking to take their tumbling skills to the next level.
   ages: 5 - 18 years old
   dates: Year-round
-  schedule: Advanced Wed 7 - 8 PM Beginner Tues 3:30 - 4:30 PM
+  schedule: 1 hour/week
   classSize: Student to teacher ratio of 10:1
 descriptionSection:
   text: >

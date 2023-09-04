@@ -16,7 +16,7 @@ infoSection:
   text: This fun, fast-paced class teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
   ages: 18 mo - 5 years old
   dates: Year-round
-  schedule: Varies by class
+  schedule: 45 minutes/week
   classSize: Gymnast to coach ratio of 6:1
 descriptionSection:
   text: >
@@ -46,12 +46,12 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing1:
-    name: Regular Class
+    name: Weekly Class
     price: $80
     interval: per month
     shortDescription: Monday - Saturday
     features:
-      - feature: 45 minute session
+      - feature: 45 minutes
       - feature: Co-ed classes
       - feature: Morning classes
       - feature: Evening classes

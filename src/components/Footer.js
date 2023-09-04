@@ -50,8 +50,7 @@ export const Footer = ({ programs, contact }) => {
           {/* Mission statement */}
           <div className="mt-6 text-lg text-purple-800">
             Our mission is to provide quality gymnastics training in a safe and
-            fun environment where athletes of any age can grow and thrive in the
-            world of gymnastics.
+            fun environment where athletes of all ages can thrive.
           </div>
           {/* Social links */}
           <div className="w-full mt-5 lg:mt-6">

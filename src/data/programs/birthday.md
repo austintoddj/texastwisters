@@ -4,7 +4,7 @@ dropdownDescription: Bring your friends and family to celebrate your big day.
 featured: false
 hero:
   headline: Texas Twisters Birthday Parties
-  text: We want to help give you and your child the best birthday! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
+  text: We want to help you give your child the best birthday! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
   action:
     label: Reserve your spot
     href: '#'
@@ -15,8 +15,8 @@ infoSection:
   headline: The ideal birthday party venue for any age
   text: A Texas Twisters party takes the stress out birthday planning. Our coaches take care of all the details, and make sure your child and all their friends have an amazing time.
   ages: All ages!
-  dates: Saturday & Sunday
-  schedule: 60 minutes of gymnastics + time for cake and gifts
+  dates: Saturday & Sunday availability
+  schedule: 60 minutes of gymnastics + 30 minutes for cake
   classSize: Up to 40 participants
 descriptionSection:
   text: >
@@ -53,6 +53,7 @@ pricingSection:
     features:
       - feature: Invite 15 friends
       - feature: 60 minutes of gym time
+      - feature: 30 minutes in party area
     action:
       label: Reserve today!
       href: '#'
@@ -65,6 +66,7 @@ pricingSection:
     features:
       - feature: Invite 20 friends
       - feature: 90 minutes of gym time
+      - feature: 30 minutes in party area
       - feature: Free birthday gift!
     action:
       label: Reserve today!

@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 
 const owners = {
-  name: 'Todd & Becky Austin',
+  name: 'The Austin Family',
   portraitImage: '/images/staff/family.jpg'
 }
 
@@ -26,9 +26,9 @@ export const StaffHiring = ({ jobs }) => {
               Meet the owners of Texas Twisters
             </h2>
             <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
-              Our family has been involved in the gymnastics community for
-              decades, and we're thrilled to share our passion of the sport with
-              the community of Georgetown!
+              After decades of involvement in the gymnastics community, our
+              family is excited to share our passion for the sport with the
+              community of Georgetown.
             </p>
 
             {/* Owners portrait section (Small screens) */}

@@ -1,10 +1,10 @@
 ---
 name: Camps
-dropdownDescription: Available during school breaks and summer vacation.
+dropdownDescription: Available during school breaks and select holidays.
 featured: false
 hero:
   headline: Texas Twisters Camps
-  text: Camps are seasonal, and offered during school breaks. Your children will enjoy gymnastics training, group games, and plenty of supervised open gym time.
+  text: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   action:
     label: View camps
     href: '#'
@@ -53,7 +53,7 @@ pricingSection:
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
-      - feature: Sibling discount offered
+      - feature: 10% sibling discount
     action:
       label: Register today
       href: '#'
@@ -65,9 +65,9 @@ pricingSection:
     shortDescription: Coming March 2024
     features:
       - feature: 9 AM - 2 PM
-      - feature: Weekly discount available
       - feature: Please pack a lunch!
-      - feature: Sibling discount offered
+      - feature: 10% sibling discount
+      - feature: 15% weekly discount
     action:
       label: Register today
       href: '#'

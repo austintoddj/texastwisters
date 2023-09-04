@@ -9,10 +9,10 @@ import { Icon } from '@/components/Icon'
 const features = [
   'USAG Member Club',
   'No annual registration fee',
-  'Military discount',
-  'Multi-class discount',
+  'Family owned',
   'Convenient location',
-  'Family owned'
+  '10% Military discount',
+  'Multi-class discount'
 ]
 
 export const HomeFeatureBlocks = () => {
@@ -27,10 +27,14 @@ export const HomeFeatureBlocks = () => {
             Building a culture of excellence in our community
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
-            We're committed to developing a gymnasts' physical skills, such as
-            strength, flexibility, and coordination. We believe learning new
-            skills, achieving goals, and overcoming obstacles boosts
-            self-confidence while building personal discipline.
+            {/*We're committed to developing a gymnasts' physical skills, such as*/}
+            {/*strength, flexibility, and coordination. We believe learning new*/}
+            {/*skills, achieving goals, and overcoming obstacles boosts*/}
+            {/*self-confidence while building personal discipline.*/}
+            We are passionate about helping athletes reach their full potential,
+            and believe that gymnastics is a great way to develop physical
+            skills and self-confidence. We are committed to helping gymnasts
+            learn new skills, achieve their goals, and overcome challenges.
           </p>
           {/* Feature list */}
           <div className="max-w-3xl mx-auto mt-12">
@@ -84,13 +88,11 @@ export const HomeFeatureBlocks = () => {
               </span>
             </div>
             <h3 className="mt-4 text-purple-900 sm:mt-5 h3">
-              {/*We provide a welcoming and supportive environment*/}A place
-              where athetes feel connected, supported, and inspired
+              A place where athletes feel connected, supported, and inspired
             </h3>
             <p className="max-w-2xl mt-3 text-lg leading-loose text-purple-800">
-              Our programs teach children the importance of teamwork and
-              friendship, which are essential skills for success in school and
-              beyond.
+              We believe that teamwork and friendship are essential for success,
+              and we are committed to helping children develop these skills.
             </p>
             <div className="mt-6">
               <Button href="/about" variant="accent" size="sm">

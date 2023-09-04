@@ -4,6 +4,11 @@ import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 
+const owners = {
+  name: 'Todd & Becky Austin',
+  portraitImage: '/images/staff/family.jpg'
+}
+
 export const StaffHiring = ({ jobs }) => {
   return (
     <section className="relative w-full px-4 py-16 sm:py-24 sm:px-6 xl:px-8">
@@ -25,6 +30,25 @@ export const StaffHiring = ({ jobs }) => {
               decades, and we're thrilled to share our passion of the sport with
               the community of Georgetown!
             </p>
+
+            {/* Owners portrait section (Small screens) */}
+            <div className="lg:hidden relative max-w-4xl mt-16 sm:mt-14">
+              <div className="relative aspect-w-3 aspect-h-4 sm:aspect-w-3 sm:aspect-h-4 bg-yellow-50 rounded-3xl">
+                <Image
+                  className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
+                  fill
+                  src={owners.portraitImage}
+                  sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
+                  alt=""
+                />
+              </div>
+              <div className="pl-2 sm:pl-0 mt-3.5 text-lg sm:text-center">
+                <p className="font-semibold tracking-wide text-purple-800">
+                  {owners.name}
+                </p>
+              </div>
+            </div>
+
             {/* Current job postings box */}
             <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
               <span className="absolute flex items-center justify-center shadow-md left-6 sm:left-10 -top-7 rounded-2xl w-14 h-14 bg-gradient-to-br from-purple-600 to-purple-600">
@@ -51,7 +75,7 @@ export const StaffHiring = ({ jobs }) => {
                         target="_blank"
                       >
                         <span className="text-base font-bold text-left">
-                          Apply today
+                          Apply now
                         </span>
                         <Icon
                           icon="arrowNarrowRight"
@@ -79,21 +103,21 @@ export const StaffHiring = ({ jobs }) => {
               </div>
             </div>
           </div>
-          {/* Featured coaches section */}
-          <div className="grid w-full gap-10 mx-auto sm:gap-8 lg:col-span-1 xl:col-span-5 lg:mt-20 lg:gap-4 xl:gap-8 lg:order-1 sm:max-w-none sm:mx-0">
+          {/* Owners portrait section (Large screens) */}
+          <div className="hidden lg:grid w-full gap-10 mx-auto sm:gap-8 lg:col-span-1 xl:col-span-5 lg:mt-20 lg:gap-4 xl:gap-8 lg:order-1 sm:max-w-none sm:mx-0">
             <div>
               <div className="relative aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4 bg-yellow-50 rounded-3xl">
                 <Image
                   className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
                   fill
-                  src="/images/staff/family.jpg"
+                  src={owners.portraitImage}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
                   alt=""
                 />
               </div>
               <div className="pl-2 sm:pl-0 mt-3.5 text-lg sm:text-center">
                 <p className="font-semibold tracking-wide text-purple-800">
-                  The Austin Family
+                  {owners.name}
                 </p>
               </div>
             </div>

@@ -49,7 +49,7 @@ pricingSection:
     name: Regular Class
     price: $80
     interval: per month
-    shortDescription: Mon - Sat
+    shortDescription: Monday - Saturday
     features:
       - feature: 45 minute session
       - feature: Co-ed classes
@@ -63,8 +63,9 @@ pricingSection:
     name: Open Gym
     price: $10
     interval: per drop-in
-    shortDescription: M-F from 8:30 AM to 10:00 AM
+    shortDescription: Monday - Friday
     features:
+      - feature: 8:30 AM - 10:00 AM
       - feature: 1 - 5 years old
       - feature: Supervised free-play
       - feature: Parents must attend

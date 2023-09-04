@@ -4,7 +4,7 @@ dropdownDescription: Build on the fundamentals with more advanced gymnastics ski
 featured: true
 hero:
   headline: Texas Twisters Recreational Program
-  text: Beginner through advanced classes emphasize basic skills on vault, uneven bars, beam, and floor. Improve coordination, strength, and mobility in a fun, safe environment.
+  text: Our classes for beginners to advanced gymnasts focus on developing fundamental skills on the vault, uneven bars, beam, and floor. Gymnasts will enjoy learning new skills, making new friends, and discovering the importance of teamwork.
   action:
     label: Enroll today
     href: '#'
@@ -12,12 +12,12 @@ hero:
   image:
     src: '/images/stock/unsplash/gym-08.jpg'
 infoSection:
-  headline: A program designed to help your child have fun
-  text: Whether this is your child's first experience in the gym or they've been here for years, they'll have tons of fun learning and growing with skills that will serve them for years to come!
+  headline: A non-competitive program designed to challenge all athletes
+  text: Whether this is your child's first experience in the gym, or they've been here for years, we have a place for you. Contact us today to schedule an evaluation!
   ages: 5 - 18 years old
-  dates: Jan. 13 - Jun. 31
-  schedule: M-F from 8AM - 5 PM
-  classSize: Student to coach ratio of 10:1
+  dates: Year-round
+  schedule: Varies by class
+  classSize: Student to coach ratio of 8:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -44,27 +44,31 @@ descriptionSection:
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
+  text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
   pricing1:
-    name: Most Popular
+    name: Tuition
     price: $90
     interval: per month
-    shortDescription: M-F from 8 AM to 3:00 PM
+    shortDescription: Monday - Saturday
     features:
+      - feature: Evening classes
+      - feature: Saturday morning classes
       - feature: 60 minute session
-      - feature: Ages 6+
+      - feature: Ages 5+
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Best value
-    price: $750
-    interval: per year
-    shortDescription: M-F from 8 AM to 5:00 PM
+    name: Open Gym
+    price: $20
+    interval: per drop-in
+    shortDescription: Friday & Saturday
     features:
-      - feature: 2 free birthday parties
-      - feature: 10 free open gym sessions
+      - feature: Ages 5-18
+      - feature: 6:00 PM - 8:00 PM
+      - feature: Parent drop-off
+      - feature: Supervised free time
     action:
       label: Enroll today
       href: '#'

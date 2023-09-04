@@ -1,23 +1,23 @@
 ---
-name: Adult Gymnastics
-dropdownDescription: Join the adult gymnastics community, and see what you've been missing!
+name: Camps
+dropdownDescription: Available during school breaks and summer vacation.
 featured: false
 hero:
-  headline: Texas Twisters Adult Gymnastics
-  text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
+  headline: Texas Twisters Camps
+  text: Camps are seasonal, and offered during school breaks. Your children will enjoy gymnastics training, group games, and plenty of supervised open gym time.
   action:
-    label: Enroll today
+    label: View camps
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-14.jpg'
+    src: '/images/stock/unsplash/gym-02.jpg'
 infoSection:
-  headline: Designed to help you rediscover your love of gymnastics
-  text: Train all four gymnastics events or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.
-  ages: 18+ years old
-  dates: Year-round
-  schedule: Varies by class
-  classSize: Student to coach ratio of 20:1
+  headline: Have fun, stay active, and build new friendships!
+  text: Campers arrive in the morning, and start the day playing group games. They are then divided by age and skill level to run through gymnastics rotations. After a break for lunch, we will introduce more games and free time. Your kids won't want to miss this!
+  ages: Potty trained - 12 years old
+  dates: School breaks and holidays
+  schedule: 9 AM - 2 PM
+  classSize: Student to coach ratio of 15:1
 descriptionSection:
   text: >
     ## Our unique approach to education
@@ -43,32 +43,33 @@ descriptionSection:
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
-  headline: Sign up today!
-  text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
+  headline: Upcoming camps
+  text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: Open Gym
-    price: $20
-    interval: per drop-in
-    shortDescription: Tuesday & Thursday
+    name: Christmas Break Camp
+    price: $40
+    interval: per day
+    shortDescription: Coming December 2023
     features:
-      - feature: 8:30 PM - 10:30 PM
-      - feature: Punch card available
-      - feature: Memberships coming soon!
+      - feature: 9 AM - 2 PM
+      - feature: Please pack a lunch!
+      - feature: Sibling discount offered
     action:
-      label: Enroll today
+      label: Register today
       href: '#'
       icon: true
   pricing2:
-    name: Conditioning
-    price: $15
-    interval: per drop-in
-    shortDescription: Monday/Wednesday/Friday
+    name: Spring Break Camp
+    price: $40
+    interval: per day
+    shortDescription: Coming March 2024
     features:
-      - feature: 12:00 PM - 1:00 PM
-      - feature: HIIT style workouts
-      - feature: Memberships coming soon!
+      - feature: 9 AM - 2 PM
+      - feature: Weekly discount available
+      - feature: Please pack a lunch!
+      - feature: Sibling discount offered
     action:
-      label: Enroll today
+      label: Register today
       href: '#'
       icon: true
 ---

@@ -93,7 +93,7 @@ export const StaffHiring = ({ jobs }) => {
               </div>
               <div className="pl-2 sm:pl-0 mt-3.5 text-lg sm:text-center">
                 <p className="font-semibold tracking-wide text-purple-800">
-                  Becky & Todd
+                  The Austin Family
                 </p>
               </div>
             </div>

@@ -4,7 +4,7 @@ dropdownDescription: Refine coordination and technique from beginner to advanced
 featured: false
 hero:
   headline: Texas Twisters Tumbling Program
-  text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer in a safe and fun environment.
+  text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer.
   action:
     label: Enroll today
     href: '#'
@@ -13,10 +13,10 @@ hero:
     src: '/images/stock/unsplash/gym-01.jpg'
 infoSection:
   headline: Designed to promote age-appropriate skill development
-  text: Learn foundational skills like front rolls, cartwheels, and handstands. Then advance your technique with roundoff back handsprings, standing back tucks, and more!
-  ages: 4 - 5 years old
-  dates: Jan. 13 - Jun. 31
-  schedule: M-F from 8AM - 5 PM
+  text: Learn foundational skills like rolls, cartwheels, and handstands. Then advance your technique with back handsprings, standing back tucks, and more! Perfect for dancers and cheerleaders looking to take their tumbling skills to the next level.
+  ages: 5 - 18 years old
+  dates: Year-round
+  schedule: Advanced Wed 7 - 8 PM Beginner Tues 3:30 - 4:30 PM
   classSize: Student to teacher ratio of 10:1
 descriptionSection:
   text: >
@@ -44,27 +44,29 @@ descriptionSection:
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year and reserve your spot in the class. Our curriculum makes learning fun and safe.
+  text: Enroll at any time during the year to reserve your spot in the class. Advanced class is invite only and requires an evaluation.
   pricing1:
     name: Regular
     price: $90
     interval: per month
-    shortDescription: M-F from 8 AM to 3:00 PM
+    shortDescription: Beginner - Advanced
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Placement upon evaluation
+      - feature: Year-round training
     action:
       label: Enroll today
       href: '#'
       icon: true
   pricing2:
-    name: Extended
-    price: $1.5k
-    interval: per month
-    shortDescription: M-F from 8 AM to 5:00 PM
+    name: Tumbling clinic
+    price: $50
+    interval: per event
+    shortDescription: Offered quarterly
     features:
-      - feature: Nulla quis lorem ut libero
-      - feature: Lorem ipsum dolor sit
+      - feature: Coming soon!
+      - feature: 2 hour class time
+      - feature: Multiple skill levels
+      - feature: Ages 5-18
     action:
       label: Enroll today
       href: '#'

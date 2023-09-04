@@ -49,8 +49,9 @@ pricingSection:
     name: Regular
     price: $20
     interval: per drop-in
-    shortDescription: Fri & Sat at 6 - 8 PM
+    shortDescription: Friday & Saturday
     features:
+      - feature: 6:00 PM - 8:00 PM
       - feature: Ages 5-17
       - feature: Parent drop-off
     action:
@@ -61,8 +62,9 @@ pricingSection:
     name: Preschool
     price: $10
     interval: per drop-in
-    shortDescription: Mon-Fri at 8:30 - 10 AM
+    shortDescription: Monday - Friday
     features:
+      - feature: 8:30 AM - 10:00 AM
       - feature: 1 - 5 years old
       - feature: Parent must attend
     action:

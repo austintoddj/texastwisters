@@ -45,12 +45,4 @@
     - Phone number card
     - "Give us a call details"
 
-## Launch prep
-
-- Prune `Icon.js`
-- [CRITICAL] Meta tags/images
-- [CRITICAL] Phone Number in `contact.md`
-- [CRITICAL] Finalize Pricing sections with Beck
-- [CRITICAL] Finalize FAQs
-
 [no-op]

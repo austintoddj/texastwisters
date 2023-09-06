@@ -64,6 +64,9 @@ export const Staff = () => {
                         target="_blank"
                         key={`member-${i}-social-link-${j}`}
                         href={socialLink.href}
+                        aria-label={
+                          socialLink.name + ' icon - opens in new tab'
+                        }
                       >
                         <Icon
                           icon={socialLink.name}

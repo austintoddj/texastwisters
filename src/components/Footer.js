@@ -21,6 +21,7 @@ function SocialLink({ className, href, icon }) {
         className
       )}
       href={href}
+      aria-label={icon + ' icon - opens in new tab'}
       target="_blank"
     >
       <Icon icon={icon} className="w-5 h-5 text-white" />

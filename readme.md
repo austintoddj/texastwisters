@@ -36,13 +36,4 @@
 - Hero image video button in `HomeHero.js`
 - Video modal in `HomeHero.js`
 
-### When we have a phone number
-
-- Phone number in:
-  - `ContactHeader.js`
-  - `Footer.js`
-  - `ContactInformation.js`
-    - Phone number card
-    - "Give us a call details"
-
 [no-op]

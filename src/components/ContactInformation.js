@@ -17,10 +17,8 @@ export const ContactInformation = () => {
           </div>
           <div className="flex items-center mt-3 sm:mt-4 lg:mt-0">
             <p className="text-lg text-purple-800 sm:text-xl text-opacity-90">
-              {/*Send us an email or give us a call. Better yet, stop by in-person.*/}
-              {/*We'd love to meet you and show you around!*/}
-              Send us an email or find us on Instagram and Facebook. Better yet,
-              stop by in-person. We'd love to meet you and show you around!
+              Send us an email or give us a call. Better yet, stop by in-person.
+              We'd love to meet you and show you around!
             </p>
           </div>
         </div>
@@ -63,23 +61,23 @@ export const ContactInformation = () => {
             </div>
           </div>
           {/* Phone number card */}
-          {/*<div className="px-4 py-8 sm:col-start-2 sm:col-span-2 lg:col-start-3 lg:col-span-1 sm:p-8 sm:py-10 rounded-3xl bg-rose-50">*/}
-          {/*  <div className="flex sm:flex-col lg:flex-row">*/}
-          {/*    <div>*/}
-          {/*      <span className="flex items-center justify-center rounded-2xl w-14 h-14 bg-rose-200">*/}
-          {/*        <Icon icon="phone" className="w-8 h-8 text-purple-700" />*/}
-          {/*      </span>*/}
-          {/*    </div>*/}
-          {/*    <div className="flex-1 ml-6 sm:mt-3 lg:mt-0 sm:ml-0 lg:ml-6">*/}
-          {/*      <h5 className="flex items-center text-xl font-semibold text-purple-900">*/}
-          {/*        Call us*/}
-          {/*      </h5>*/}
-          {/*      <p className="mt-1.5 text-base text-purple-800 leading-relaxed">*/}
-          {/*        {contact.phone}*/}
-          {/*      </p>*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+          <div className="px-4 py-8 sm:col-start-2 sm:col-span-2 lg:col-start-3 lg:col-span-1 sm:p-8 sm:py-10 rounded-3xl bg-rose-50">
+            <div className="flex sm:flex-col lg:flex-row">
+              <div>
+                <span className="flex items-center justify-center rounded-2xl w-14 h-14 bg-rose-200">
+                  <Icon icon="phone" className="w-8 h-8 text-purple-700" />
+                </span>
+              </div>
+              <div className="flex-1 ml-6 sm:mt-3 lg:mt-0 sm:ml-0 lg:ml-6">
+                <h5 className="flex items-center text-xl font-semibold text-purple-900">
+                  Call us
+                </h5>
+                <p className="mt-1.5 text-base text-purple-800 leading-relaxed">
+                  {contact.phone}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* Google map widget */}

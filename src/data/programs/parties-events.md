@@ -1,5 +1,5 @@
 ---
-name: Birthday Parties
+name: Parties & Events
 dropdownDescription: Bring your friends and family to celebrate your big day.
 featured: false
 hero:

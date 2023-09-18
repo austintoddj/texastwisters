@@ -73,6 +73,7 @@ export const StaffHiring = ({ jobs }) => {
                         href={job.data.href}
                         className="group ml-3 flex w-[126px] max-w-full cursor-pointer items-center border-b-2 border-solid border-purple-600 bg-transparent px-0 py-0.5 text-left leading-6 text-purple-600 no-underline transition duration-300 ease-in-out hover:border-purple-400 hover:text-purple-500"
                         target="_blank"
+                        rel="noopener noreferrer"
                         aria-label={
                           job.data.title + ' application - opens in new tab'
                         }

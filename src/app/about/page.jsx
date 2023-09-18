@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <AboutHero />
       {/* Gradient background transition */}
-      <div className="w-full h-32 sm:h-40 lg:h-44 bg-gradient-to-b from-purple-25 to-white" />
+      <div className="h-32 w-full bg-gradient-to-b from-purple-25 to-white sm:h-40 lg:h-44" />
 
       {/*<AlternatingFeatures />*/}
       {/*<Stats />*/}

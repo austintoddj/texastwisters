@@ -10,17 +10,17 @@ export const Staff = () => {
   return (
     <section id="team">
       {/* Top purple background section */}
-      <div className="px-4 py-16 bg-purple-600 sm:py-24 sm:px-6 lg:px-8">
+      <div className="bg-purple-600 px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         {/* Section header text */}
-        <div className="max-w-2xl mx-auto lg:max-w-screen-xl">
+        <div className="mx-auto max-w-2xl lg:max-w-screen-xl">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div className="flex items-center">
-              <h3 className="max-w-4xl text-white sm:text-center h2 lg:text-left">
+              <h3 className="h2 max-w-4xl text-white sm:text-center lg:text-left">
                 Meet the people behind Texas Twisters
               </h3>
             </div>
             <div className="flex items-center">
-              <p className="mt-5 text-xl leading-relaxed sm:text-center lg:mt-0 text-purple-50 lg:text-left">
+              <p className="mt-5 text-xl leading-relaxed text-purple-50 sm:text-center lg:mt-0 lg:text-left">
                 With decades of gymnastics experience among us, we're looking
                 forward to sharing our love of the sport with all of you in
                 Georgetown, Texas!
@@ -30,18 +30,18 @@ export const Staff = () => {
         </div>
       </div>
       {/* background to create overlay effect */}
-      <div className="w-full h-32 bg-purple-600" />
+      <div className="h-32 w-full bg-purple-600" />
       {/* Team section */}
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto -translate-y-32 lg:max-w-screen-xl">
+        <div className="mx-auto max-w-3xl -translate-y-32 lg:max-w-screen-xl">
           <div className="grid gap-y-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8">
             {staff.map((member, i) => (
               <div key={`member-${i}`}>
                 {/* Staff member image */}
-                <div className="aspect-w-3 aspect-h-2">
+                <div className="aspect-h-2 aspect-w-3">
                   <Image
                     src={member.data.image}
-                    className="object-cover rounded-2xl"
+                    className="rounded-2xl object-cover"
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     alt={member.data.name}
@@ -70,7 +70,7 @@ export const Staff = () => {
                       >
                         <Icon
                           icon={socialLink.name}
-                          className="w-[22px] h-[22px] text-purple-600 transition ease-in-out hover:text-purple-500 durarion-300"
+                          className="durarion-300 h-[22px] w-[22px] text-purple-600 transition ease-in-out hover:text-purple-500"
                         />
                       </Link>
                     ))}

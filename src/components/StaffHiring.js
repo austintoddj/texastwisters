@@ -11,38 +11,38 @@ const owners = {
 
 export const StaffHiring = ({ jobs }) => {
   return (
-    <section className="relative w-full px-4 py-16 sm:py-24 sm:px-6 xl:px-8">
+    <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
-      <div className="max-w-xl mx-auto lg:max-w-screen-xl">
-        <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-11 lg:gap-12 xl:gap-24">
+      <div className="mx-auto max-w-xl lg:max-w-screen-xl">
+        <div className="grid gap-16 lg:grid-cols-2 lg:gap-12 xl:grid-cols-11 xl:gap-24">
           {/* Text content */}
-          <div className="flex flex-col justify-center lg:col-span-1 xl:col-span-6 lg:order-2">
+          <div className="flex flex-col justify-center lg:order-2 lg:col-span-1 xl:col-span-6">
             <div>
-              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+              <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
                 Guess what, we're hiring!
               </span>
             </div>
-            <h2 className="mt-4 text-purple-900 sm:mt-5 h2">
+            <h2 className="h2 mt-4 text-purple-900 sm:mt-5">
               Meet the owners of Texas Twisters
             </h2>
-            <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
+            <p className="mt-4 max-w-xl text-xl leading-relaxed text-purple-800 md:mt-5">
               After decades of involvement in the gymnastics community, our
               family is excited to share our passion for the sport with the
               community of Georgetown.
             </p>
 
             {/* Owners portrait section (Small screens) */}
-            <div className="lg:hidden relative max-w-4xl mt-16 sm:mt-14">
-              <div className="relative aspect-w-3 aspect-h-4 sm:aspect-w-3 sm:aspect-h-4 bg-yellow-50 rounded-3xl">
+            <div className="relative mt-16 max-w-4xl sm:mt-14 lg:hidden">
+              <div className="aspect-h-4 aspect-w-3 relative rounded-3xl bg-yellow-50 sm:aspect-h-4 sm:aspect-w-3">
                 <Image
-                  className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
+                  className="absolute inset-0 h-full w-full rounded-3xl object-cover shadow-md"
                   fill
                   src={owners.portraitImage}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
                   alt=""
                 />
               </div>
-              <div className="pl-2 sm:pl-0 mt-3.5 text-lg sm:text-center">
+              <div className="mt-3.5 pl-2 text-lg sm:pl-0 sm:text-center">
                 <p className="font-semibold tracking-wide text-purple-800">
                   {owners.name}
                 </p>
@@ -50,11 +50,11 @@ export const StaffHiring = ({ jobs }) => {
             </div>
 
             {/* Current job postings box */}
-            <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
-              <span className="absolute flex items-center justify-center shadow-md left-6 sm:left-10 -top-7 rounded-2xl w-14 h-14 bg-gradient-to-br from-purple-600 to-purple-600">
-                <Icon icon="certificate" className="w-8 h-8 text-purple-50" />
+            <div className="relative mt-16 max-w-4xl rounded-xl bg-yellow-100 sm:mt-14">
+              <span className="absolute -top-7 left-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-600 to-purple-600 shadow-md sm:left-10">
+                <Icon icon="certificate" className="h-8 w-8 text-purple-50" />
               </span>
-              <div className="px-4 py-10 mt-2 sm:px-10 sm:py-12">
+              <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
                   Looking for a new and exciting opportunity? Check out some of
                   our current job openings:
@@ -64,25 +64,25 @@ export const StaffHiring = ({ jobs }) => {
                   {jobs.map((job, index) => (
                     <li key={`job-${index}`} className="flex items-center">
                       <Image
-                        className="flex-shrink-0 mr-3 w-7 h-7"
+                        className="mr-3 h-7 w-7 flex-shrink-0"
                         src={checkmark}
                         alt=""
                       />
                       <span>{job.data.title}</span>
                       <a
                         href={job.data.href}
-                        className="ml-3 flex items-center py-0.5 px-0 w-[126px] max-w-full leading-6 text-left text-purple-600 no-underline bg-transparent border-b-2 border-purple-600 border-solid cursor-pointer hover:text-purple-500 transition duration-300 ease-in-out hover:border-purple-400 group"
+                        className="group ml-3 flex w-[126px] max-w-full cursor-pointer items-center border-b-2 border-solid border-purple-600 bg-transparent px-0 py-0.5 text-left leading-6 text-purple-600 no-underline transition duration-300 ease-in-out hover:border-purple-400 hover:text-purple-500"
                         target="_blank"
                         aria-label={
                           job.data.title + ' application - opens in new tab'
                         }
                       >
-                        <span className="text-base font-bold text-left">
+                        <span className="text-left text-base font-bold">
                           Apply now
                         </span>
                         <Icon
                           icon="arrowNarrowRight"
-                          className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                          className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
                           stroke={2}
                         />
                       </a>
@@ -99,7 +99,7 @@ export const StaffHiring = ({ jobs }) => {
                   Meet the rest of the team
                   <Icon
                     icon="arrowNarrowRight"
-                    className="w-5 h-5 ml-3 group-hover:animate-horizontal-bounce"
+                    className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
                     stroke={2}
                   />
                 </Button>
@@ -107,18 +107,18 @@ export const StaffHiring = ({ jobs }) => {
             </div>
           </div>
           {/* Owners portrait section (Large screens) */}
-          <div className="hidden lg:grid w-full gap-10 mx-auto sm:gap-8 lg:col-span-1 xl:col-span-5 lg:mt-20 lg:gap-4 xl:gap-8 lg:order-1 sm:max-w-none sm:mx-0">
+          <div className="mx-auto hidden w-full gap-10 sm:mx-0 sm:max-w-none sm:gap-8 lg:order-1 lg:col-span-1 lg:mt-20 lg:grid lg:gap-4 xl:col-span-5 xl:gap-8">
             <div>
-              <div className="relative aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4 bg-yellow-50 rounded-3xl">
+              <div className="aspect-h-3 aspect-w-3 relative rounded-3xl bg-yellow-50 sm:aspect-h-4 sm:aspect-w-3">
                 <Image
-                  className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
+                  className="absolute inset-0 h-full w-full rounded-3xl object-cover shadow-md"
                   fill
                   src={owners.portraitImage}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
                   alt=""
                 />
               </div>
-              <div className="pl-2 sm:pl-0 mt-3.5 text-lg sm:text-center">
+              <div className="mt-3.5 pl-2 text-lg sm:pl-0 sm:text-center">
                 <p className="font-semibold tracking-wide text-purple-800">
                   {owners.name}
                 </p>

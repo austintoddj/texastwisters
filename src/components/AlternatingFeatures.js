@@ -41,18 +41,18 @@ const blocks = [
 
 export const AlternatingFeatures = () => {
   return (
-    <section className="px-4 overflow-hidden bg-white pb-28 sm:pb-36 sm:px-6 lg:px-8">
+    <section className="overflow-hidden bg-white px-4 pb-28 sm:px-6 sm:pb-36 lg:px-8">
       {/* Container */}
-      <div className="max-w-screen-xl mx-auto">
+      <div className="mx-auto max-w-screen-xl">
         {/* Section header */}
         <div className="px-4 text-center sm:px-6 lg:px-8">
-          <h3 className="text-purple-900 h2">
+          <h3 className="h2 text-purple-900">
             <span className="block">A place for every child to</span>
             {/* Underlined text */}
             <span className="relative block">
               <span className="relative">
                 <Image
-                  className="absolute inset-0 transform translate-y-9 sm:translate-y-10 xl:translate-y-12"
+                  className="absolute inset-0 translate-y-9 transform sm:translate-y-10 xl:translate-y-12"
                   src={highlight}
                   alt=""
                 />
@@ -65,25 +65,25 @@ export const AlternatingFeatures = () => {
         {blocks.map((block, index) => (
           <div
             key={`about-features-${index}`}
-            className="grid max-w-xl mx-auto mt-20 lg:max-w-none sm:mt-24 lg:mt-44 lg:grid-cols-12 gap-14 sm:gap-16 lg:gap-8"
+            className="mx-auto mt-20 grid max-w-xl gap-14 sm:mt-24 sm:gap-16 lg:mt-44 lg:max-w-none lg:grid-cols-12 lg:gap-8"
           >
             {/* Block text content */}
             <div
               className={clsx(
-                'relative z-10 flex flex-col justify-center order-2 lg:col-span-6 lg:text-left',
+                'relative z-10 order-2 flex flex-col justify-center lg:col-span-6 lg:text-left',
                 index % 2 == 0 && 'lg:order-1'
               )}
             >
               <div>
-                <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+                <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
                   {block.tagline}
                 </span>
               </div>
               <div>
-                <h1 className="mt-3.5 font-bold text-purple-900 h3">
+                <h1 className="h3 mt-3.5 font-bold text-purple-900">
                   {block.headline}
                 </h1>
-                <p className="max-w-xl mt-3 text-lg text-purple-800 sm:leading-relaxed sm:text-xl">
+                <p className="mt-3 max-w-xl text-lg text-purple-800 sm:text-xl sm:leading-relaxed">
                   {block.text}
                 </p>
               </div>
@@ -91,7 +91,7 @@ export const AlternatingFeatures = () => {
             {/* Block graphics */}
             <div
               className={clsx(
-                'relative order-1 w-full max-w-xl mx-auto lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center',
+                'relative order-1 mx-auto w-full max-w-xl lg:col-span-6 lg:mx-0 lg:flex lg:max-w-none lg:items-center',
                 index % 2 == 0 && 'lg:order-2'
               )}
             >
@@ -99,27 +99,27 @@ export const AlternatingFeatures = () => {
               <div className="hidden lg:block">
                 <Image
                   src={bgBlobs[index % 3]}
-                  className="absolute inset-0 w-full h-full transform lg:scale-135"
+                  className="absolute inset-0 h-full w-full transform lg:scale-135"
                   alt=""
                 />
               </div>
               {/* Grid background decoration on small screens */}
               <Image
                 src={dotsStrip}
-                className="absolute top-0 origin-top transform -translate-x-1/2 -translate-y-8 left-1/2 lg:hidden sm:scale-100 scale-80"
+                className="absolute left-1/2 top-0 origin-top -translate-x-1/2 -translate-y-8 scale-80 transform sm:scale-100 lg:hidden"
                 alt=""
               />
               <div
                 className={clsx(
-                  'relative w-full mx-auto shadow-lg rounded-3xl lg:max-w-lg',
-                  index % 2 == 0 ? 'lg:mr-0 lg:ml-auto' : 'lg:mx-0'
+                  'relative mx-auto w-full rounded-3xl shadow-lg lg:max-w-lg',
+                  index % 2 == 0 ? 'lg:ml-auto lg:mr-0' : 'lg:mx-0'
                 )}
               >
                 <div className="relative block w-full">
                   {/* Corner dots decoration */}
                   <Image
                     className={clsx(
-                      'absolute z-10 hidden w-40 transform lg:block -top-20 xl:w-48 xl:-top-20',
+                      'absolute -top-20 z-10 hidden w-40 transform lg:block xl:-top-20 xl:w-48',
                       index % 2 == 0 ? '-left-20' : '-right-20'
                     )}
                     src={dots}
@@ -129,7 +129,7 @@ export const AlternatingFeatures = () => {
                   <figure className="relative aspect-[12/10] md:order-1">
                     <Image
                       src={block.image.src}
-                      className="absolute inset-0 object-cover object-center w-full h-full shadow-xl rounded-3xl"
+                      className="absolute inset-0 h-full w-full rounded-3xl object-cover object-center shadow-xl"
                       fill
                       sizes="(min-width: 1024px) 32rem, (min-width: 576px) 36rem, 100vw"
                       alt={block.image.alt}

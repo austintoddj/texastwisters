@@ -14,20 +14,20 @@ export const Events = () => {
   const events = getAllItems('events')
 
   return (
-    <section className="relative w-full px-4 py-16 sm:py-24 sm:px-6 lg:px-8">
+    <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       {/* Container */}
-      <div className="max-w-2xl mx-auto lg:max-w-screen-xl">
+      <div className="mx-auto max-w-2xl lg:max-w-screen-xl">
         {/* Section header title and subtext  */}
         <div>
-          <h2 className="text-purple-900 h2 lg:text-center">Upcoming events</h2>
-          <p className="max-w-2xl mx-auto mt-3 text-xl leading-relaxed text-purple-800 lg:mt-4 lg:text-center">
+          <h2 className="h2 text-purple-900 lg:text-center">Upcoming events</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-xl leading-relaxed text-purple-800 lg:mt-4 lg:text-center">
             Our families are an important and integral part of our community, so
             we understand the value of keeping you in the loop on what’s
             happening here.
           </p>
         </div>
         {/* Events */}
-        <div className="mt-12 lg:grid lg:grid-cols-2 lg:gap-6 xl:gap-8 sm:mt-16">
+        <div className="mt-12 sm:mt-16 lg:grid lg:grid-cols-2 lg:gap-6 xl:gap-8">
           {events.map((event, index) => (
             <div
               key={`event-${index}`}
@@ -40,19 +40,19 @@ export const Events = () => {
               {/* Event image */}
               <div
                 className={clsx(
-                  'relative h-48 rounded-t-2xl sm:h-full sm:col-span-4',
+                  'relative h-48 rounded-t-2xl sm:col-span-4 sm:h-full',
                   index % 2 == 0
-                    ? 'sm:rounded-tr-none sm:rounded-l-2xl'
-                    : 'sm:rounded-tl-none sm:rounded-r-2xl sm:order-2'
+                    ? 'sm:rounded-l-2xl sm:rounded-tr-none'
+                    : 'sm:order-2 sm:rounded-r-2xl sm:rounded-tl-none'
                 )}
               >
                 <Image
                   src={event.data.image}
                   className={clsx(
-                    'absolute inset-0 object-cover object-center w-full h-full rounded-t-2xl',
+                    'absolute inset-0 h-full w-full rounded-t-2xl object-cover object-center',
                     index % 2 == 0
-                      ? 'sm:rounded-tr-none sm:rounded-l-2xl'
-                      : 'sm:rounded-tl-none sm:rounded-r-2xl'
+                      ? 'sm:rounded-l-2xl sm:rounded-tr-none'
+                      : 'sm:rounded-r-2xl sm:rounded-tl-none'
                   )}
                   fill
                   alt={event.data.name}
@@ -62,16 +62,16 @@ export const Events = () => {
               {/* Event info */}
               <div
                 className={clsx(
-                  'flex flex-col justify-center h-full px-6 py-8 sm:col-span-8 sm:py-10 sm:px-8 lg:px-6 xl:px-8',
+                  'flex h-full flex-col justify-center px-6 py-8 sm:col-span-8 sm:px-8 sm:py-10 lg:px-6 xl:px-8',
                   index % 2 == 1 && 'order-2 sm:order-1'
                 )}
               >
                 <div>
-                  <div className="inline-flex items-center justify-center px-3.5 py-0.5 text-sm bg-purple-200 text-purple-700 font-medium leading-6 align-top rounded-xl">
+                  <div className="inline-flex items-center justify-center rounded-xl bg-purple-200 px-3.5 py-0.5 align-top text-sm font-medium leading-6 text-purple-700">
                     {event.data.dates}
                   </div>
                 </div>
-                <h4 className="mt-4 text-2xl font-bold text-purple-900 xl:text-3xl lg:text-2xl sm:text-3xl lg:leading-tight xl:leading-tight">
+                <h4 className="mt-4 text-2xl font-bold text-purple-900 sm:text-3xl lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight">
                   {event.data.name}
                 </h4>
                 <p className="mt-1 text-purple-800 lg:mt-2">

@@ -17,27 +17,27 @@ const images = [
 
 export function AboutHero() {
   return (
-    <section className="px-4 pt-16 sm:px-6 lg:px-8 bg-purple-25">
+    <section className="bg-purple-25 px-4 pt-16 sm:px-6 lg:px-8">
       {/* Container */}
-      <div className="max-w-screen-xl mx-auto">
+      <div className="mx-auto max-w-screen-xl">
         {/* Page header */}
         <div className="relative">
-          <h2 className="max-w-3xl mx-auto text-center text-purple-900 h1">
+          <h2 className="h1 mx-auto max-w-3xl text-center text-purple-900">
             About Us
           </h2>
-          <p className="max-w-2xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800 sm:mt-5">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
             We're dedicated to provide a safe, fun, and challenging environment
             where athletes of any age can grow and develop in the world of
             gymnastics.
           </p>
         </div>
         {/* School images grid */}
-        <div className="grid grid-flow-row-dense grid-cols-2 gap-2 sm:grid-cols-3 mt-14 sm:mt-16 lg:mt-24 sm:gap-3 md:gap-4 lg:gap-6">
+        <div className="mt-14 grid grid-flow-row-dense grid-cols-2 gap-2 sm:mt-16 sm:grid-cols-3 sm:gap-3 md:gap-4 lg:mt-24 lg:gap-6">
           {images.map((image, index) => (
             <Fragment key={`gallery-image-${index}`}>
               {index % 5 == 1 && (
                 <Image
-                  className="object-cover object-top w-full col-span-2 rounded-2xl lg:h-80 h-30vw"
+                  className="col-span-2 h-30vw w-full rounded-2xl object-cover object-top lg:h-80"
                   priority={true}
                   alt={image.alt}
                   src={image.src}
@@ -47,7 +47,7 @@ export function AboutHero() {
 
               {index % 5 != 1 && (
                 <Image
-                  className="object-cover w-full rounded-2xl lg:h-80 h-30vw"
+                  className="h-30vw w-full rounded-2xl object-cover lg:h-80"
                   alt={image.alt}
                   src={image.src}
                   sizes="(min-width: 1280px) 25.75rem, (min-width: 640px) 33vw, 50vw"
@@ -57,7 +57,7 @@ export function AboutHero() {
           ))}
         </div>
         {/* About school */}
-        <div className="mx-auto prose prose-lg mt-14 sm:mt-16 lg:mt-24 sm:prose-xl">
+        <div className="prose prose-lg mx-auto mt-14 sm:prose-xl sm:mt-16 lg:mt-24">
           <p className="text-2xl">From the owner:</p>
           <p>
             I was introduced to gymnastics at four years old, and it has led to

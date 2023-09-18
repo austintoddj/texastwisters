@@ -11,13 +11,13 @@ import { Icon } from '@/components/Icon'
 
 export const Faqs = ({ faqs }) => {
   return (
-    <section className="py-20 bg-yellow-100 sm:py-28" id="faq">
+    <section className="bg-yellow-100 py-20 sm:py-28" id="faq">
       {/* Container */}
-      <div className="px-4 mx-auto lg:max-w-screen-lg sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:max-w-screen-lg lg:px-8">
         {/* Section header title and subtext  */}
         <div className="max-w-2xl">
-          <h2 className="text-purple-900 h2">Frequently asked questions</h2>
-          <p className="max-w-2xl mt-4 text-xl leading-relaxed text-purple-800 lg:text-left">
+          <h2 className="h2 text-purple-900">Frequently asked questions</h2>
+          <p className="mt-4 max-w-2xl text-xl leading-relaxed text-purple-800 lg:text-left">
             Please call our front desk if you have any questions or send us a
             message{' '}
             <Link href="/contact" className="underline">
@@ -31,12 +31,12 @@ export const Faqs = ({ faqs }) => {
           {/* Decorator images*/}
           <div>
             <Image
-              className="absolute hidden h-auto w-28 -left-60 top-10 2xl:block"
+              className="absolute -left-60 top-10 hidden h-auto w-28 2xl:block"
               src={questionMark}
               alt=""
             />
             <Image
-              className="absolute hidden h-auto w-28 -right-60 bottom-10 2xl:block"
+              className="absolute -right-60 bottom-10 hidden h-auto w-28 2xl:block"
               src={bulb}
               alt=""
             />
@@ -45,19 +45,19 @@ export const Faqs = ({ faqs }) => {
             <Disclosure
               key={index}
               as="li"
-              className="w-full px-5 py-6 bg-white sm:px-12 sm:py-8 rounded-3xl"
+              className="w-full rounded-3xl bg-white px-5 py-6 sm:px-12 sm:py-8"
             >
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full text-lg sm:text-xl group">
-                    <span className="font-medium text-left text-purple-900 duration-300 ease-in-out group-hover:text-purple-600">
+                  <Disclosure.Button className="group flex w-full items-center justify-between text-lg sm:text-xl">
+                    <span className="text-left font-medium text-purple-900 duration-300 ease-in-out group-hover:text-purple-600">
                       {faq.data.question}
                     </span>
                     <Icon
                       icon="chevronDown"
                       className={clsx(
                         open && 'rotate-180',
-                        'flex-shrink-0 w-6 h-6 ml-3 text-purple-700 duration-300 ease-in-out sm:ml-6 group-hover:text-purple-600'
+                        'ml-3 h-6 w-6 flex-shrink-0 text-purple-700 duration-300 ease-in-out group-hover:text-purple-600 sm:ml-6'
                       )}
                       stroke={2}
                     />

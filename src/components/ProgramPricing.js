@@ -8,21 +8,21 @@ export const ProgramPricing = ({ data }) => {
   const enrollment = getItemData('enrollment', 'global')
 
   return (
-    <section className="relative w-full px-4 py-16 sm:py-24 sm:px-6 xl:px-8">
+    <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
-      <div className="max-w-xl mx-auto lg:max-w-screen-xl">
-        <div className="lg:grid lg:grid-cols-2 md:gap-16 lg:gap-0">
+      <div className="mx-auto max-w-xl lg:max-w-screen-xl">
+        <div className="md:gap-16 lg:grid lg:grid-cols-2 lg:gap-0">
           {/* Section content */}
           <div className="flex flex-col justify-center pr-10 xl:pr-0">
             <div>
-              <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+              <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
                 {data.tagline}
               </span>
             </div>
-            <h2 className="mt-3.5 sm:mt-4 h2 max-w-xl text-purple-900">
+            <h2 className="h2 mt-3.5 max-w-xl text-purple-900 sm:mt-4">
               {data.headline}
             </h2>
-            <p className="max-w-lg mt-3 text-lg leading-relaxed text-purple-800">
+            <p className="mt-3 max-w-lg text-lg leading-relaxed text-purple-800">
               {data.text}
             </p>
             {/* Contact link */}
@@ -32,27 +32,27 @@ export const ProgramPricing = ({ data }) => {
               </p>
               <a
                 href="/contact"
-                className="mt-1.5 flex items-center py-0.5 px-0 w-[126px] max-w-full leading-6 text-left text-purple-600 no-underline bg-transparent border-b-2 border-purple-600 border-solid cursor-pointer hover:text-purple-500 transition duration-300 ease-in-out hover:border-purple-400 group"
+                className="group mt-1.5 flex w-[126px] max-w-full cursor-pointer items-center border-b-2 border-solid border-purple-600 bg-transparent px-0 py-0.5 text-left leading-6 text-purple-600 no-underline transition duration-300 ease-in-out hover:border-purple-400 hover:text-purple-500"
               >
-                <span className="text-base font-bold text-left">
+                <span className="text-left text-base font-bold">
                   Get in touch
                 </span>
                 <Icon
                   icon="arrowNarrowRight"
-                  className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                  className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
                   stroke={2}
                 />
               </a>
             </div>
           </div>
           {/* Pricing cards */}
-          <div className="grid gap-8 mt-14 lg:mt-20 md:grid-cols-2 lg:gap-4 xl:gap-8">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:mt-20 lg:gap-4 xl:gap-8">
             {[...Array(2)].map((e, i) => (
               <div
                 key={`pricing-card-${i}`}
                 className={clsx(
                   i == 0 ? 'bg-purple-25' : 'bg-yellow-200 lg:-translate-y-20',
-                  'w-full px-6 py-10 rounded-xl lg:px-5 xl:px-10'
+                  'w-full rounded-xl px-6 py-10 lg:px-5 xl:px-10'
                 )}
               >
                 <div className="relative">
@@ -61,15 +61,15 @@ export const ProgramPricing = ({ data }) => {
                       {data[`pricing${i + 1}`].name}
                     </h3>
                     <div className="mt-2">
-                      <h2 className="text-purple-900 h1">
+                      <h2 className="h1 text-purple-900">
                         {data[`pricing${i + 1}`].price}
                       </h2>
                       <div className="mt-3">
-                        <div className="inline-block h-6 px-3 text-sm font-medium leading-6 text-purple-700 align-top bg-purple-200 rounded-xl">
+                        <div className="inline-block h-6 rounded-xl bg-purple-200 px-3 align-top text-sm font-medium leading-6 text-purple-700">
                           {data[`pricing${i + 1}`].interval}
                         </div>
                       </div>
-                      <p className="block w-full mt-6 font-medium text-purple-900">
+                      <p className="mt-6 block w-full font-medium text-purple-900">
                         {data[`pricing${i + 1}`].shortDescription}
                       </p>
                     </div>
@@ -82,7 +82,7 @@ export const ProgramPricing = ({ data }) => {
                         >
                           <Icon
                             icon="check"
-                            className="w-5 h-5 text-purple-600"
+                            className="h-5 w-5 text-purple-600"
                             stroke={2}
                           />
 
@@ -104,7 +104,7 @@ export const ProgramPricing = ({ data }) => {
                         {data[`pricing${i + 1}`].action.icon && (
                           <Icon
                             icon="arrowNarrowRight"
-                            className="w-5 h-5 ml-3 group-hover:animate-horizontal-bounce"
+                            className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
                             stroke={2}
                           />
                         )}

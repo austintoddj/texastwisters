@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       <HomeHero enrollment={enrollment} />
       {/* Gradient background transition */}
-      <div className="w-full h-40 sm:h-48 xl:h-52 bg-gradient-to-b from-purple-50 to-yellow-100" />
+      <div className="h-40 w-full bg-gradient-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
 
       <HomeFeatureBlocks />
       <StaffHiring jobs={jobs} />

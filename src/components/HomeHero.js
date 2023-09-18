@@ -34,36 +34,36 @@ export const HomeHero = ({ enrollment }) => {
   }
 
   return (
-    <section className="px-4 pt-16 sm:px-6 lg:px-8 bg-gradient-to-b from-purple-25 to-purple-50">
+    <section className="bg-gradient-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
       {/* Hero container */}
       <div
-        className="max-w-screen-xl mx-auto lg:grid lg:grid-cols-12 lg:gap-8"
+        className="mx-auto max-w-screen-xl lg:grid lg:grid-cols-12 lg:gap-8"
         x-data="{ modalOpen: false }"
       >
         {/* Hero text content */}
-        <div className="flex flex-col items-center justify-center lg:items-start lg:col-span-6">
+        <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           <div>
-            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
+            <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
               Coming soon!
             </span>
           </div>
-          <h1 className="max-w-xl mt-4 text-center text-purple-900 sm:mt-5 lg:text-left h1 lg:max-w-none">
+          <h1 className="h1 mt-4 max-w-xl text-center text-purple-900 sm:mt-5 lg:max-w-none lg:text-left">
             Grand Opening January 2024!
           </h1>
-          <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
+          <p className="mt-3 max-w-2xl text-center text-xl leading-loose text-purple-800 lg:text-left">
             Located in the heart of Georgetown, our programs are designed to
             challenge and inspire athletes of all ages. From beginner to
             advanced, we're excited to provide you a safe, fun, and supportive
             environment throughout your gymnastics journey.
           </p>
           {/* Hero buttons */}
-          <div className="flex flex-col items-center mt-8 overflow-hidden sm:flex-row">
+          <div className="mt-8 flex flex-col items-center overflow-hidden sm:flex-row">
             {enrollment.active && (
               <Button href={enrollment.href}>
                 Enroll today
                 <Icon
                   icon="arrowNarrowRight"
-                  className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
+                  className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
                   stroke={2}
                 />
               </Button>
@@ -113,12 +113,12 @@ export const HomeHero = ({ enrollment }) => {
           </div> */}
         </div>
         {/* Hero image & video */}
-        <div className="flex flex-col justify-center max-w-3xl mx-auto mt-16 lg:mt-0 lg:max-w-none lg:col-span-6">
+        <div className="mx-auto mt-16 flex max-w-3xl flex-col justify-center lg:col-span-6 lg:mt-0 lg:max-w-none">
           <div className="relative">
             <Image
               src={heroImage}
               priority
-              className="w-full h-auto"
+              className="h-auto w-full"
               alt="Texas Twisters Photo Collage"
               sizes="(min-width: 1280px) 39rem, (min-width: 1024px) 50vw, (min-width: 768px) 48rem, 100vw"
             />

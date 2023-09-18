@@ -17,28 +17,28 @@ function SocialLink({ className, href, icon }) {
   return (
     <Link
       className={clsx(
-        'flex items-center justify-center w-10 h-10 duration-300 ease-in-out bg-purple-500 rounded-full hover:bg-purple-600',
+        'flex h-10 w-10 items-center justify-center rounded-full bg-purple-500 duration-300 ease-in-out hover:bg-purple-600',
         className
       )}
       href={href}
       aria-label={icon + ' icon - opens in new tab'}
       target="_blank"
     >
-      <Icon icon={icon} className="w-5 h-5 text-white" />
+      <Icon icon={icon} className="h-5 w-5 text-white" />
     </Link>
   )
 }
 
 export const Footer = ({ programs, contact }) => {
   return (
-    <footer className="px-4 pt-16 space-y-8 bg-yellow-100 divide-y sm:pt-20 sm:px-6 lg:px-8 divide-purple-400/20">
+    <footer className="space-y-8 divide-y divide-purple-400/20 bg-yellow-100 px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
       {/* Top section: blocks */}
-      <div className="grid max-w-md mx-auto gap-y-8 sm:gap-y-12 sm:gap-x-8 md:gap-x-12 sm:max-w-none lg:max-w-screen-2xl sm:grid-cols-2 lg:grid-cols-11 lg:gap-8 xl:gap-12">
+      <div className="mx-auto grid max-w-md gap-y-8 sm:max-w-none sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 md:gap-x-12 lg:max-w-screen-2xl lg:grid-cols-11 lg:gap-8 xl:gap-12">
         {/* Block 1 */}
-        <div className="flex flex-col lg:mx-auto lg:col-span-4">
+        <div className="flex flex-col lg:col-span-4 lg:mx-auto">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-grow-0 flex-shrink-0 w-80">
+            <div className="w-80 flex-shrink-0 flex-grow-0">
               <Link href="/">
                 <Image
                   src={logo}
@@ -54,7 +54,7 @@ export const Footer = ({ programs, contact }) => {
             fun environment where athletes of all ages can thrive.
           </div>
           {/* Social links */}
-          <div className="w-full mt-5 lg:mt-6">
+          <div className="mt-5 w-full lg:mt-6">
             <div className="flex justify-start space-x-4">
               <SocialLink
                 href="https://www.instagram.com/texastwistersgymnastics"
@@ -71,10 +71,10 @@ export const Footer = ({ programs, contact }) => {
         <div className="flex-shrink sm:order-3 lg:order-none lg:col-span-2">
           <h6 className="relative text-xl font-bold tracking-wide text-purple-900">
             <span className="relative z-20">Programs</span>
-            <span className="absolute left-0 z-10 w-12 h-1 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500 -bottom-1" />
+            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500" />
           </h6>
           {/* Program links */}
-          <ul className="mt-6 text-lg divide-y divide-purple-400/20">
+          <ul className="mt-6 divide-y divide-purple-400/20 text-lg">
             {programs.map((program, index) => (
               <li
                 key={`footer-program-link-${program.data.name}`}
@@ -96,10 +96,10 @@ export const Footer = ({ programs, contact }) => {
         <div className="flex-shrink sm:order-4 lg:order-none lg:col-span-2">
           <h6 className="relative text-xl font-bold tracking-wide text-purple-900">
             <span className="relative z-20">Site Links</span>
-            <span className="absolute left-0 z-10 w-12 h-1 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500 -bottom-1" />
+            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500" />
           </h6>
           {/* Site links */}
-          <ul className="mt-6 text-lg divide-y divide-purple-400/20">
+          <ul className="mt-6 divide-y divide-purple-400/20 text-lg">
             {siteLinks.map((link, index) => (
               <li
                 key={`footer-site-link-${link.label}`}
@@ -119,22 +119,22 @@ export const Footer = ({ programs, contact }) => {
         <div className="sm:order-2 lg:order-none lg:col-span-3 lg:mx-auto ">
           <h6 className="relative text-xl font-bold tracking-wide text-purple-900">
             <span className="relative z-20">Contact us</span>
-            <span className="absolute left-0 z-10 w-12 h-1 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500 -bottom-1" />
+            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500" />
           </h6>
           {/* Contact information */}
-          <ul className="flex flex-col mt-6 space-y-5">
+          <ul className="mt-6 flex flex-col space-y-5">
             {/* Address */}
-            <li className="flex flex-shrink max-w-xs">
+            <li className="flex max-w-xs flex-shrink">
               <div>
-                <span className="flex items-center justify-center bg-yellow-400 rounded-2xl w-11 h-11">
-                  <Icon icon="mapPin" className="w-6 h-6 text-purple-700" />
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-yellow-400">
+                  <Icon icon="mapPin" className="h-6 w-6 text-purple-700" />
                 </span>
               </div>
-              <div className="flex-1 mt-0 ml-3 xl:ml-4">
+              <div className="ml-3 mt-0 flex-1 xl:ml-4">
                 <h5 className="flex items-center text-base font-semibold text-purple-900">
                   Address
                 </h5>
-                <p className="mt-0.5 text-sm text-purple-800 leading-relaxed text-opacity-90">
+                <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
                   {contact.address}
                 </p>
               </div>
@@ -142,15 +142,15 @@ export const Footer = ({ programs, contact }) => {
             {/* Email */}
             <li className="flex flex-shrink-0">
               <div>
-                <span className="flex items-center justify-center bg-purple-200 rounded-2xl w-11 h-11">
-                  <Icon icon="mail" className="w-6 h-6 text-purple-700" />
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-purple-200">
+                  <Icon icon="mail" className="h-6 w-6 text-purple-700" />
                 </span>
               </div>
-              <div className="flex-1 ml-3 xl:ml-4">
+              <div className="ml-3 flex-1 xl:ml-4">
                 <h5 className="flex items-center text-base font-semibold text-purple-900">
                   Email
                 </h5>
-                <p className="mt-0.5 text-sm text-purple-800 leading-relaxed text-opacity-90">
+                <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
                   {contact.email}
                 </p>
               </div>
@@ -158,15 +158,15 @@ export const Footer = ({ programs, contact }) => {
             {/* Phone number */}
             <li className="flex flex-shrink-0">
               <div>
-                <span className="flex items-center justify-center rounded-2xl w-11 h-11 bg-rose-200">
-                  <Icon icon="phone" className="w-6 h-6 text-purple-700" />
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-200">
+                  <Icon icon="phone" className="h-6 w-6 text-purple-700" />
                 </span>
               </div>
-              <div className="flex-1 ml-3 xl:ml-4">
+              <div className="ml-3 flex-1 xl:ml-4">
                 <h5 className="flex items-center text-base font-semibold text-purple-900">
                   Phone
                 </h5>
-                <p className="mt-0.5 text-sm text-purple-800 leading-relaxed text-opacity-90">
+                <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
                   {contact.phone}
                 </p>
               </div>
@@ -175,7 +175,7 @@ export const Footer = ({ programs, contact }) => {
         </div>
       </div>
       {/* Bottom section */}
-      <div className="flex flex-col justify-between max-w-md py-8 mx-auto sm:flex-row sm:max-w-none lg:max-w-screen-2xl">
+      <div className="mx-auto flex max-w-md flex-col justify-between py-8 sm:max-w-none sm:flex-row lg:max-w-screen-2xl">
         {/* Copyright note */}
         <span className="text-base text-purple-800/90">
           &copy; {new Date().getFullYear()} Texas Twisters Gymnastics, LLC. All

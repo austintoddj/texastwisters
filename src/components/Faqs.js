@@ -18,10 +18,9 @@ export const Faqs = ({ faqs }) => {
         <div className="max-w-2xl">
           <h2 className="h2 text-purple-900">Frequently asked questions</h2>
           <p className="mt-4 max-w-2xl text-xl leading-relaxed text-purple-800 lg:text-left">
-            Please call our front desk if you have any questions or send us a
-            message{' '}
+            Please call our front desk if you have any questions or{' '}
             <Link href="/contact" className="underline">
-              here
+              send us a message
             </Link>{' '}
             and we'll get back to you as soon as we can.
           </p>

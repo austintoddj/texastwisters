@@ -27,10 +27,6 @@ export const HomeFeatureBlocks = () => {
             Building a culture of excellence in our community
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-xl leading-relaxed text-purple-800">
-            {/*We're committed to developing a gymnasts' physical skills, such as*/}
-            {/*strength, flexibility, and coordination. We believe learning new*/}
-            {/*skills, achieving goals, and overcoming obstacles boosts*/}
-            {/*self-confidence while building personal discipline.*/}
             We are passionate about helping athletes reach their full potential,
             and believe that gymnastics is a great way to develop physical
             skills and self-confidence. We are committed to helping gymnasts
@@ -96,7 +92,7 @@ export const HomeFeatureBlocks = () => {
             </p>
             <div className="mt-6">
               <Button href="/about" variant="accent" size="sm">
-                Learn More
+                About Us
                 <Icon
                   icon="arrowNarrowRight"
                   className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"

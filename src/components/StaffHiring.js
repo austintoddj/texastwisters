@@ -75,7 +75,7 @@ export const StaffHiring = ({ jobs }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={
-                          job.data.title + ' application - opens in new tab'
+                          'Apply now for ' + job.data.title + ' - opens in new tab'
                         }
                       >
                         <span className="text-left text-base font-bold">

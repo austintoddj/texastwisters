@@ -5,13 +5,6 @@ const nextConfig = {
   trailingSlash: false,
   redirects() {
     return [
-      process.env.NEXT_MAINTENANCE_MODE === '1'
-        ? {
-            source: '/((?!maintenance|_next).*)',
-            destination: '/maintenance.html',
-            permanent: false
-          }
-        : null,
       {
         source: '/gallery',
         destination: '/',

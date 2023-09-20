@@ -1,7 +1,7 @@
+import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import Image from 'next/image'
-import checkmark from '/public/images/illustrations/checkmark.svg'
 
 const owners = {
   name: 'The Austin Family',

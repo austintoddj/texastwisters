@@ -1,8 +1,8 @@
+import arrow from '/public/images/illustrations/arrow-down.svg'
+import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 import { Icon } from '@/components/Icon'
 import { getAllItems } from '@/lib/getItems'
 import Image from 'next/image'
-import arrow from '/public/images/illustrations/arrow-down.svg'
-import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 
 export const Newsletter = () => {
   const newsletters = getAllItems('newsletters')

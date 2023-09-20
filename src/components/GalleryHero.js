@@ -1,13 +1,13 @@
 'use client'
 
-import LightGallery from 'lightgallery/react'
-import Image from 'next/image'
 import heroImage1 from '/public/images/stock/gallery/gallery-hero-01.jpg'
 import heroImage2 from '/public/images/stock/gallery/gallery-hero-02.jpg'
 import heroImage3 from '/public/images/stock/gallery/gallery-hero-03.jpg'
 import heroImage4 from '/public/images/stock/gallery/gallery-hero-04.jpg'
 import heroImage5 from '/public/images/stock/gallery/gallery-hero-05.jpg'
 import heroImage6 from '/public/images/stock/gallery/gallery-hero-06.jpg'
+import LightGallery from 'lightgallery/react'
+import Image from 'next/image'
 
 {
   /* This component uses Lightgallery, a customizable, modular, responsive, lightbox gallery plugin.  https://github.com/sachinchoolur/lightGallery */

@@ -1,11 +1,11 @@
+import curvedDottedLine from '/public/images/illustrations/curved-dotted-line.svg'
+import loopedDottedLine from '/public/images/illustrations/looped-dotted-line.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import { getAllItems } from '@/lib/getItems'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
-import curvedDottedLine from '/public/images/illustrations/curved-dotted-line.svg'
-import loopedDottedLine from '/public/images/illustrations/looped-dotted-line.svg'
 
 const ProgramCard = ({ program, index }) => (
   <div

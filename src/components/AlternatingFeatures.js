@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-import Image from 'next/image'
 import lightPurpleBlob from '/public/images/illustrations/blob-light-purple.svg'
 import lightRoseBlob from '/public/images/illustrations/blob-light-rose.svg'
 import lightYellowBlob from '/public/images/illustrations/blob-light-yellow.svg'
@@ -9,6 +7,8 @@ import highlight from '/public/images/illustrations/underline-simple-light-purpl
 import blockImage1 from '/public/images/stock/unsplash/gym-02.jpg'
 import blockImage2 from '/public/images/stock/unsplash/gym-03.jpg'
 import blockImage3 from '/public/images/stock/unsplash/gym-04.jpg'
+import clsx from 'clsx'
+import Image from 'next/image'
 
 const bgBlobs = [lightYellowBlob, lightPurpleBlob, lightRoseBlob]
 const blocks = [

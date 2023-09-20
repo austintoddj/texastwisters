@@ -12,5 +12,4 @@ arrowParens: 'avoid'
 endOfLine: 'lf'
 plugins:
   ['prettier-plugin-tailwindcss', '@trivago/prettier-plugin-sort-imports']
-importOrder: ['^[./]']
 importOrderSortSpecifiers: true

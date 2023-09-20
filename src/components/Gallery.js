@@ -1,11 +1,10 @@
 'use client'
 
+import { Icon } from '@/components/Icon'
 import clsx from 'clsx'
 import LightGallery from 'lightgallery/react'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-
-import { Icon } from '@/components/Icon'
 
 {
   /* This component uses Lightgallery, a customizable, modular, responsive, lightbox gallery plugin.  https://github.com/sachinchoolur/lightGallery */

@@ -1,10 +1,9 @@
-import Image from 'next/image'
-
-import gymnast from '/public/images/illustrations/gymnast.svg'
-import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import { getItemData } from '@/lib/getItems'
+import Image from 'next/image'
+import gymnast from '/public/images/illustrations/gymnast.svg'
+import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'
 
 export const CallToAction = () => {
   const enrollment = getItemData('enrollment', 'global')

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Fragment } from 'react'
-
 import image3 from '/public/images/stock/unsplash/gym-05.jpg'
 import image2 from '/public/images/stock/unsplash/gym-06.jpg'
 import image4 from '/public/images/stock/unsplash/gym-08.jpg'

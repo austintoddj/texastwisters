@@ -1,5 +1,4 @@
 import Image from 'next/image'
-
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import image from '/public/images/stock/values.jpg'
 

@@ -1,13 +1,12 @@
 'use client'
 
+import { Button } from '@/components/Button'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { useState } from 'react'
-
 import dotsGrid from '/public/images/illustrations/dots-grid.svg'
 import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
-import { Button } from '@/components/Button'
 
 const fields = [
   {

@@ -2,7 +2,6 @@
 
 import LightGallery from 'lightgallery/react'
 import Image from 'next/image'
-
 import heroImage1 from '/public/images/stock/gallery/gallery-hero-01.jpg'
 import heroImage2 from '/public/images/stock/gallery/gallery-hero-02.jpg'
 import heroImage3 from '/public/images/stock/gallery/gallery-hero-03.jpg'

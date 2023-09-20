@@ -1,8 +1,7 @@
-import Image from 'next/image'
-
-import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import Image from 'next/image'
+import checkmark from '/public/images/illustrations/checkmark.svg'
 
 const owners = {
   name: 'The Austin Family',
@@ -75,7 +74,9 @@ export const StaffHiring = ({ jobs }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={
-                          'Apply now for ' + job.data.title + ' - opens in new tab'
+                          'Apply now for ' +
+                          job.data.title +
+                          ' - opens in new tab'
                         }
                       >
                         <span className="text-left text-base font-bold">

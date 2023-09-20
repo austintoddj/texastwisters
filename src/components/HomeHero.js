@@ -1,16 +1,18 @@
 'use client'
 
+import { Button } from '@/components/Button'
+import { Icon } from '@/components/Icon'
+
 /* eslint-disable-next-line */
 import { Dialog, Transition } from '@headlessui/react'
+
 /* eslint-disable-next-line */
 import clsx from 'clsx'
 import Image from 'next/image'
+
 /* eslint-disable-next-line */
 import { Fragment, useState } from 'react'
-
 import heroImage from '/public/images/stock/unsplash/hero-home.png'
-import { Button } from '@/components/Button'
-import { Icon } from '@/components/Icon'
 
 /* eslint-disable-next-line */
 const ratings = [

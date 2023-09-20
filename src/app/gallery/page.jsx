@@ -1,8 +1,7 @@
-import 'lightgallery/css/lightgallery.css'
-
 import { Gallery } from '@/components/Gallery'
 import { GalleryHero } from '@/components/GalleryHero'
 import { getAllItems, getGalleryTags } from '@/lib/getItems'
+import 'lightgallery/css/lightgallery.css'
 
 export const metadata = {
   title: 'Gallery - Texas Twisters Gymnastics',

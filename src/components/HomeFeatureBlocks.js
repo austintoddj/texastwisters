@@ -1,10 +1,9 @@
+import { Button } from '@/components/Button'
+import { Icon } from '@/components/Icon'
 import Image from 'next/image'
-
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import squareImage from '/public/images/stock/unsplash/gym-02.jpg'
 import portraitImage from '/public/images/stock/unsplash/gym-04.jpg'
-import { Button } from '@/components/Button'
-import { Icon } from '@/components/Icon'
 
 const features = [
   'USAG Member Club',

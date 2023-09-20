@@ -1,8 +1,7 @@
-import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import { getItemData } from '@/lib/getItems'
+import Image from 'next/image'
 
 export const ProgramHero = ({ hero }) => {
   const enrollment = getItemData('enrollment', 'global')

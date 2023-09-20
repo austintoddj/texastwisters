@@ -1,13 +1,12 @@
-import clsx from 'clsx'
-import Image from 'next/image'
-import Link from 'next/link'
-
-import arrow from '/public/images/illustrations/arrow-right-over.svg'
-import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 /* eslint-disable-next-line */
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import { getItemData } from '@/lib/getItems'
+import clsx from 'clsx'
+import Image from 'next/image'
+import Link from 'next/link'
+import arrow from '/public/images/illustrations/arrow-right-over.svg'
+import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 
 const linkColors = [
   'bg-purple-50',

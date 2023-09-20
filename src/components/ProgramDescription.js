@@ -1,6 +1,5 @@
 import { marked } from 'marked'
 import Image from 'next/image'
-
 import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 import dotsPurpleMess from '/public/images/illustrations/dots-purple-mess.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'

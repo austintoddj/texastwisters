@@ -1,13 +1,12 @@
 'use client'
 
+import { Icon } from '@/components/Icon'
 import { Disclosure, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
-
 import bulb from '/public/images/illustrations/bulb.svg'
 import questionMark from '/public/images/illustrations/question-mark.svg'
-import { Icon } from '@/components/Icon'
 
 export const Faqs = ({ faqs }) => {
   return (

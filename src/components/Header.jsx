@@ -1,10 +1,9 @@
 'use client'
 
-import clsx from 'clsx'
-import { usePathname } from 'next/navigation'
-
 import { ContactHeader } from '@/components/ContactHeader'
 import { Navbar } from '@/components/Navbar'
+import clsx from 'clsx'
+import { usePathname } from 'next/navigation'
 
 export function Header({ programs, contact, enrollment }) {
   const pathname = usePathname()

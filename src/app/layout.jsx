@@ -1,13 +1,11 @@
-import '@/styles/tailwind.css'
-
-import { Analytics } from '@vercel/analytics/react'
-import clsx from 'clsx'
-import { Roboto_Flex } from 'next/font/google'
-
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems, getItemData } from '@/lib/getItems'
+import '@/styles/tailwind.css'
+import { Analytics } from '@vercel/analytics/react'
+import clsx from 'clsx'
+import { Roboto_Flex } from 'next/font/google'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],

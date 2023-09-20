@@ -3,6 +3,7 @@ import { FeaturedPrograms } from '@/components/FeaturedPrograms'
 import { HomeFeatureBlocks } from '@/components/HomeFeatureBlocks'
 import { HomeHero } from '@/components/HomeHero'
 import { StaffHiring } from '@/components/StaffHiring'
+
 /* eslint-disable-next-line */
 import { Testimonials } from '@/components/Testimonials'
 import { getAllItems, getItemData } from '@/lib/getItems'

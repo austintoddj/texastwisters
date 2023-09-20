@@ -1,8 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
-
 import { Icon } from '@/components/Icon'
 import { getAllItems } from '@/lib/getItems'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export const Staff = () => {
   const staff = getAllItems('staff')

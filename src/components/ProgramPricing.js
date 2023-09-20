@@ -1,8 +1,7 @@
-import clsx from 'clsx'
-
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import { getItemData } from '@/lib/getItems'
+import clsx from 'clsx'
 
 export const ProgramPricing = ({ data }) => {
   const enrollment = getItemData('enrollment', 'global')

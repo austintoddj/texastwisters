@@ -2,10 +2,8 @@ version: 2
 updates:
   - package-ecosystem: 'npm'
     directory: '/'
-    # TODO: Remove the target-branch
-    target-branch: 'develop'
     schedule:
-      interval: 'daily'
+      interval: 'weekly'
     reviewers:
       - 'austintoddj'
     labels:

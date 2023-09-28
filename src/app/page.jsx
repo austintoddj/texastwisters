@@ -11,7 +11,10 @@ import { getAllItems, getItemData } from '@/lib/getItems'
 export const metadata = {
   title: 'Texas Twisters Gymnastics',
   description:
-    'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.'
+    'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.',
+  alternates: {
+    canonical: './'
+  }
 }
 
 export default function HomePage() {

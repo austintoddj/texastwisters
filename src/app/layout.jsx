@@ -14,6 +14,7 @@ const roboto = Roboto_Flex({
 
 /* Default metadata when not defined elsewhere */
 export const metadata = {
+  metadataBase: new URL(process.env.VERCEL_URL),
   title: 'Texas Twisters Gymnastics',
   description:
     'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.'

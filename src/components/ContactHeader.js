@@ -16,6 +16,7 @@ export function ContactHeader({ contact }) {
                 src={logo}
                 alt="Texas Twisters Gymnastics"
                 className="h-auto"
+                priority
               />
             </Link>
           </div>

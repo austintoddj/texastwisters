@@ -10,7 +10,10 @@ export async function generateMetadata({ params: { slug } }) {
 
   return {
     title: `${program.name} - Texas Twisters Gymnastics`,
-    description: program.hero.description
+    description: program.hero.description,
+    alternates: {
+      canonical: './'
+    }
   }
 }
 

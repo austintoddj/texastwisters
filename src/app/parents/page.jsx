@@ -7,7 +7,10 @@ import { ParentsHero } from '@/components/ParentsHero'
 export const metadata = {
   title: 'Parent information - Texas Twisters Gymnastics',
   description:
-    'Stay connected with Texas Twisters Gymnastics through our Parents Portal - your go-to source for gym news, events, and updates.'
+    'Stay connected with Texas Twisters Gymnastics through our Parents Portal - your go-to source for gym news, events, and updates.',
+  alternates: {
+    canonical: './'
+  }
 }
 
 export default function ParentsPage() {

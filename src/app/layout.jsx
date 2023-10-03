@@ -17,7 +17,21 @@ export const metadata = {
   metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
   title: 'Texas Twisters Gymnastics',
   description:
-    'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.'
+    'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.',
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      url: '/images/favicon/icon-light.png',
+      media: '(prefers-color-scheme: light)'
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      url: '/images/favicon/icon-dark.png',
+      media: '(prefers-color-scheme: dark)'
+    }
+  ]
 }
 
 export default function RootLayout({ children }) {

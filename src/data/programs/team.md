@@ -10,7 +10,7 @@ hero:
     href: '/contact'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-13.jpg'
+    src: '/images/unsplash/gym-13.jpg'
 infoSection:
   headline: Tryouts currently open for level 3 gymnasts
   text: The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills on national platform.

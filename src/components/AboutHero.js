@@ -1,17 +1,17 @@
-import image3 from '/public/images/stock/unsplash/gym-05.jpg'
-import image2 from '/public/images/stock/unsplash/gym-06.jpg'
-import image4 from '/public/images/stock/unsplash/gym-08.jpg'
-import image1 from '/public/images/stock/unsplash/gym-10.jpg'
-import image5 from '/public/images/stock/unsplash/gym-12.jpg'
+import image1 from '/public/images/about/about-01.jpg'
+import image2 from '/public/images/about/about-02.jpg'
+import image3 from '/public/images/about/about-03.jpg'
+import image4 from '/public/images/about/about-04.jpg'
+import image5 from '/public/images/about/about-05.jpg'
 import Image from 'next/image'
 import { Fragment } from 'react'
 
 const images = [
-  { src: image1, alt: 'A group of people sitting on mats' },
-  { src: image2, alt: 'A group of girls sitting on a mat' },
-  { src: image3, alt: 'A person smiling for the camera' },
-  { src: image4, alt: 'A group of girls in a gym' },
-  { src: image5, alt: 'A person and a child playing with toys on a blue mat' }
+  { src: image1, alt: 'An adult and child doing gymnastics on the beach' },
+  { src: image2, alt: 'A child smiling on a green mat' },
+  { src: image3, alt: 'A child and a man at a baseball field' },
+  { src: image4, alt: 'A boy surfing at the beach' },
+  { src: image5, alt: 'A man and woman smiling on bicycles' }
 ]
 
 export function AboutHero() {
@@ -25,9 +25,9 @@ export function AboutHero() {
             About Us
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
-            Our family is dedicated to provide a safe, fun, and challenging environment
-            where athletes of any age can grow and develop in the world of
-            gymnastics.
+            Our family is dedicated to provide a safe, fun, and challenging
+            environment where athletes of any age can grow and develop in the
+            world of gymnastics.
           </p>
         </div>
         {/* School images grid */}

@@ -10,7 +10,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-09.jpg'
+    src: '/images/unsplash/gym-09.jpg'
 infoSection:
   headline: Designed to give you the freedom to explore
   text: Whether you are an experienced gymnast, or you're exploring the sport for the first time, we want you to feel welcome here! Our coaching staff is right there to guide you and keep you safe. Open gym classes vary by age group. See details below!

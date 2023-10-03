@@ -10,7 +10,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-14.jpg'
+    src: '/images/unsplash/gym-14.jpg'
 infoSection:
   headline: Designed to help you rediscover your love of gymnastics
   text: Train all four gymnastics events or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.

@@ -10,7 +10,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-08.jpg'
+    src: '/images/unsplash/gym-08.jpg'
 infoSection:
   headline: A non-competitive program designed to challenge all athletes
   text: Whether this is your child's first experience in the gym, or they've been a gymnast for years, we have a place for you. Contact us today to schedule an evaluation!

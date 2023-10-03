@@ -10,7 +10,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-05.jpg'
+    src: '/images/unsplash/gym-05.jpg'
 infoSection:
   headline: A program designed to help your child learn
   text: This fun, fast-paced class teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.

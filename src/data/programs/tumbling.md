@@ -10,7 +10,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-01.jpg'
+    src: '/images/unsplash/gym-01.jpg'
 infoSection:
   headline: Designed to promote age-appropriate skill development
   text: Learn foundational skills like rolls, cartwheels, and handstands. Then advance your technique with back handsprings, standing back tucks, and more! Perfect for dancers and cheerleaders looking to take their tumbling skills to the next level.

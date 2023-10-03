@@ -10,7 +10,7 @@ hero:
     href: '#'
     icon: true
   image:
-    src: '/images/stock/unsplash/gym-15.jpg'
+    src: '/images/unsplash/gym-15.jpg'
 infoSection:
   headline: The ideal birthday party venue for any age
   text: A Texas Twisters party takes the stress out birthday planning. Our coaches take care of all the details, and make sure your child and all their friends have an amazing time.

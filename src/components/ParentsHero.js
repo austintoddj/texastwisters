@@ -19,7 +19,7 @@ const linkColors = [
 const links = [
   {
     label: 'Parent Portal',
-    href: '#0',
+    href: 'https://app.iclasspro.com/portal/texastwisters/account',
     description: 'Make changes to your membership or account',
     icon: 'user'
   },
@@ -37,7 +37,7 @@ const links = [
   },
   {
     label: 'Latest News',
-    href: '#0',
+    href: 'https://app.iclasspro.com/portal/texastwisters/news',
     description: 'Stay informed with the latest events and activities',
     icon: 'article'
   },

@@ -73,7 +73,7 @@ export const ParentsHero = () => {
         <div className="flex flex-col justify-center lg:col-span-5">
           <div>
             <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-              Enrollment coming soon!
+              Now enrolling for classes
             </span>
           </div>
           <div className="relative">

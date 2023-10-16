@@ -30,7 +30,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-roboto)', 'sans-serif'],
-        written: ['var(--font-gochi-hand)', 'cursive']
+        written: ['var(--font-gochi-hand)', 'cursive'],
+        signature: ['var(--font-caveat)', 'cursive']
       },
 
       colors: {

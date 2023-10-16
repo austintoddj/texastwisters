@@ -58,7 +58,7 @@ export function AboutHero() {
         {/* About school */}
         <div className="prose prose-lg mx-auto mt-14 sm:prose-xl sm:mt-16 lg:mt-24">
           <p className="text-3xl font-serif">From the owner:</p>
-          <p>
+          <p className="font-serif">
             I was introduced to gymnastics at four years old, and it has led to
             a lifelong passion. What started in preschool, grew to recreational
             classes, transitioned to competitive team, and finally settled into
@@ -66,18 +66,18 @@ export function AboutHero() {
             country, and have been influenced by many incredible coaches and
             athletes along the way.
           </p>
-            <p className="font-serif">
+          <p className="font-serif">
             While coaching at a gym that offered adult gymnastics, my husband
             Todd was introduced to the sport for the first time. Watching his
             talent and excitement grow inspired my passion to involve more
             adults in gymnastics.
           </p>
-            <p className="font-serif">
+          <p className="font-serif">
             Our daughter is now a competitive gymnast, and currently holds state
             titles on bars and vault. Our son loves baseball and is currently
             playing his fifth season with GYBA.
           </p>
-            <p className="font-serif">
+          <p className="font-serif">
             We moved from Minneapolis to Georgetown in 2018, and are proud to
             call it our home. We love Georgetown and can't wait to bring this
             business to you!

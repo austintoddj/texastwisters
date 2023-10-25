@@ -16,7 +16,7 @@
         "gray-matter": "^4.0.3",
         "lightgallery": "^2.7.1",
         "marked": "^7.0.0",
-        "next": "^13.4.10",
+        "next": "^13.5.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },

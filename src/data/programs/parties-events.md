@@ -6,8 +6,8 @@ hero:
   headline: Texas Twisters Birthday Parties
   text: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
   action:
-    label: Reserve your spot
-    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+    label: Contact Us
+    href: '/contact'
     icon: true
   image:
     src: '/images/unsplash/gym-15.jpg'
@@ -55,8 +55,8 @@ pricingSection:
       - feature: 60 minutes of gym time
       - feature: 30 minutes in party area
     action:
-      label: Reserve today!
-      href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+      label: Contact us
+      href: '/contact'
       icon: true
   pricing2:
     name: Gold package
@@ -68,7 +68,7 @@ pricingSection:
       - feature: 60 minutes of gym time
       - feature: 30 minutes in party area
     action:
-      label: Reserve today!
-      href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+      label: Contact us
+      href: '/contact'
       icon: true
 ---

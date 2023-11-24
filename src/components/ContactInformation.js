@@ -70,7 +70,7 @@ export const ContactInformation = () => {
               </div>
               <div className="ml-6 flex-1 sm:ml-0 sm:mt-3 lg:ml-6 lg:mt-0">
                 <h5 className="flex items-center text-xl font-semibold text-purple-900">
-                  Call us
+                  Call or Text
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
                   {contact.phone}

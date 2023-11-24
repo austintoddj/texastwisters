@@ -4,10 +4,10 @@ dropdownDescription: Bring your friends and family to celebrate your big day.
 featured: false
 hero:
   headline: Texas Twisters Birthday Parties
-  text: We want to help you give your child the best birthday! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
+  text: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
   action:
     label: Reserve your spot
-    href: '#'
+    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
     icon: true
   image:
     src: '/images/unsplash/gym-15.jpg'
@@ -44,32 +44,31 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Add participants to the Silver package for $10 per additional guest, up to 40 guests. Increase gym time by $50 per 30 minutes, up to a total of 3 hours. Or upgrade to the Gold package!
+  text: Add participants to the Silver package for $10 per additional guest, up to 40 guests. Increase gym time by 30 minutes for $50, up to a total of 3 hours.
   pricing1:
     name: Silver package
     price: $250
     interval: 90 minutes
     shortDescription: Saturday & Sunday
     features:
-      - feature: Invite 15 friends
+      - feature: Includes 15 friends
       - feature: 60 minutes of gym time
       - feature: 30 minutes in party area
     action:
       label: Reserve today!
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
       icon: true
   pricing2:
     name: Gold package
     price: $325
-    interval: 120 minutes
+    interval: 90 minutes
     shortDescription: Saturday & Sunday
     features:
-      - feature: Invite 20 friends
-      - feature: 90 minutes of gym time
+      - feature: Includes 25 friends
+      - feature: 60 minutes of gym time
       - feature: 30 minutes in party area
-      - feature: Free birthday gift!
     action:
       label: Reserve today!
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
       icon: true
 ---

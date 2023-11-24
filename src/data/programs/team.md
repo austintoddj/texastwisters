@@ -4,7 +4,7 @@ dropdownDescription: Train and compete in our USA Gymnastics Development Program
 featured: true
 hero:
   headline: Texas Twisters Team
-  text: Tryout for our competitive gymnastics program and compete in USAG regulated meets in cities all across Texas.
+  text: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
   action:
     label: Contact us
     href: '/contact'
@@ -13,7 +13,7 @@ hero:
     src: '/images/unsplash/gym-13.jpg'
 infoSection:
   headline: Tryouts currently open for level 3 gymnasts
-  text: The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills on national platform.
+  text: The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills on a national platform.
   ages: 5 - 18 years old
   dates: Level 3 tryouts now open
   schedule: 2-5 hrs/wk
@@ -43,9 +43,22 @@ descriptionSection:
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
-  headline: Get in touch today!
-  text: All team classes are by invitation only. Contact us to schedule a free evaluation!
+  headline: Tryouts currently open!
+  text: All team classes are by invitation only. Level 4 coming in 2025. Contact us to schedule a tryout!
   pricing1:
+    name: Level 2
+    price: $150
+    interval: per month
+    shortDescription: Team prep
+    features:
+      - feature: Invitation only
+      - feature: Practice 2 hrs/wk
+      - feature: Ages 4-7
+    action:
+      label: Contact us
+      href: '/contact'
+      icon: true
+  pricing2:
     name: Level 3
     price: $275
     interval: per month
@@ -55,19 +68,6 @@ pricingSection:
       - feature: Practice 5 hrs/wk
       - feature: Ages 6-18
       - feature: Additional fees apply
-    action:
-      label: Contact us
-      href: '/contact'
-      icon: true
-  pricing2:
-    name: Pre-team
-    price: $150
-    interval: per month
-    shortDescription: Team prep
-    features:
-      - feature: Invitation only
-      - feature: Practice 2 hrs/wk
-      - feature: Ages 5-18
     action:
       label: Contact us
       href: '/contact'

@@ -7,7 +7,7 @@ hero:
   text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer.
   action:
     label: Enroll today
-    href: '#'
+    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
     icon: true
   image:
     src: '/images/unsplash/gym-01.jpg'
@@ -44,7 +44,7 @@ descriptionSection:
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year to reserve your spot in the class. Advanced class is invite only and requires an evaluation.
+  text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing1:
     name: Regular
     price: $90
@@ -59,7 +59,7 @@ pricingSection:
       icon: true
   pricing2:
     name: Tumbling clinic
-    price: $50
+    price: $40
     interval: per event
     shortDescription: Offered quarterly
     features:

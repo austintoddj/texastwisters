@@ -7,7 +7,7 @@ hero:
   text: Our classes for beginners to advanced gymnasts focus on developing fundamental skills on the vault, uneven bars, beam, and floor. Gymnasts will enjoy learning new skills, making new friends, and discovering the importance of teamwork.
   action:
     label: Enroll today
-    href: '#'
+    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=16'
     icon: true
   image:
     src: '/images/unsplash/gym-08.jpg'
@@ -57,7 +57,7 @@ pricingSection:
       - feature: Ages 5+
     action:
       label: Enroll today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=16'
       icon: true
   pricing2:
     name: Open Gym
@@ -71,6 +71,6 @@ pricingSection:
       - feature: Supervised free time
     action:
       label: Enroll today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'
       icon: true
 ---

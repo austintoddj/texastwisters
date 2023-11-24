@@ -103,7 +103,9 @@ export function Navbar({ programs, enrollment }) {
                   ))}
 
                   {enrollment.active && (
-                    <Button href={enrollment.href}>Enroll today</Button>
+                    <Link href={enrollment.href} target="_blank">
+                      <Button>Enroll today</Button>
+                    </Link>
                   )}
                 </div>
 
@@ -255,7 +257,9 @@ export function Navbar({ programs, enrollment }) {
           {/* Call-to-action button */}
           {enrollment.active && (
             <div className="hidden lg:block">
-              <Button href={enrollment.href}>Enroll today</Button>
+              <Link href={enrollment.href} target="_blank">
+                <Button>Enroll today</Button>
+              </Link>
             </div>
           )}
 

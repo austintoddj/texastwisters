@@ -1,4 +1,4 @@
 ---
 question: What age can my child start gymnastics?
-answer: Our youngest class in the preschool program starts at 18 months.
+answer: Our Preschool program currently begins with 2-year-olds. Stay tuned for upcoming Parent & Tot classes for our littlest gymnasts!
 ---

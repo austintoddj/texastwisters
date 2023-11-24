@@ -7,13 +7,13 @@ hero:
   text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
     label: Enroll today
-    href: '#'
+    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
     icon: true
   image:
     src: '/images/unsplash/gym-14.jpg'
 infoSection:
   headline: Designed to help you rediscover your love of gymnastics
-  text: Train all four gymnastics events or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.
+  text: Train every event or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.
   ages: 18+ years old
   dates: Year-round
   schedule: Varies by class
@@ -46,29 +46,28 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
   pricing1:
-    name: Open Gym
+    name: Adult Open Gym
     price: $20
     interval: per drop-in
-    shortDescription: Tuesday & Thursday
+    shortDescription: Thursday
     features:
       - feature: 8:30 PM - 10:30 PM
       - feature: Punch card available
-      - feature: Memberships coming soon!
     action:
       label: Enroll today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/2'
       icon: true
   pricing2:
-    name: Conditioning
+    name: Adult Conditioning
     price: $15
     interval: per drop-in
-    shortDescription: Monday/Wednesday/Friday
+    shortDescription: Tuesday & Thursday
     features:
       - feature: 12:00 PM - 1:00 PM
       - feature: HIIT style workouts
       - feature: Memberships coming soon!
     action:
       label: Enroll today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/4'
       icon: true
 ---

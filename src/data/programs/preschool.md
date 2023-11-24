@@ -1,73 +1,76 @@
 ---
 name: Preschool
-dropdownDescription: Curabitur non nulla sit amet nisl tempu convallis quis ac lectus.
+dropdownDescription: Learn foundational gymnastics skills with an emphasis on fun!
 featured: true
 hero:
-    tagline: Where great kids grow
-    headline: Bright's Preschool Program
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in.
-    action:
-        label: Enroll today
-        href: '#'
-        icon: true
-    image:
-        src: '/images/stock/preschool.jpg'
+  headline: Texas Twisters Preschool Program
+  text: Our preschool class is the perfect start for your little gymnast to learn foundational gymnastics skills with an emphasis on fun!
+  action:
+    label: Enroll today
+    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+    icon: true
+  image:
+    src: '/images/unsplash/gym-05.jpg'
 infoSection:
-    headline: The Preschool dedicated to your child's success
-    text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-    ages: 4 - 5 years old
-    dates: Jan. 13 - Jun. 31
-    schedule: M-F from 8AM - 5 PM
-    classSize: Student to teacher ratio of 10:1
+  headline: A program designed to help your child learn
+  text: This fun, fast-paced class teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
+  ages: 18 mo - 5 years old
+  dates: Year-round
+  schedule: 45 minutes/week
+  classSize: Gymnast to coach ratio of 6:1
 descriptionSection:
-    text: >
-        ## Our unique approach to education
-                
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla. 
+  text: >
+    ## Our unique approach to education
             
-        ### What they will learn
-              
-        * Vivamus suscipit tortor eget felis porttitor volutpat.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla. 
+        
+    ### What they will learn
+          
+    * Vivamus suscipit tortor eget felis porttitor volutpat.
 
-        * Nulla porttitor accumsan tincidunt.
+    * Nulla porttitor accumsan tincidunt.
 
-        * Vivamus magna justo, lacinia eget consectetur sed.
+    * Vivamus magna justo, lacinia eget consectetur sed.
 
-        * Lorem ipsum dolor sit amet
+    * Lorem ipsum dolor sit amet
 
-        * Ut enim ad minim veniam
+    * Ut enim ad minim veniam
 
 
-        Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
-    portraitImage: '/images/stock/program-description-01.jpg'
-    squareImage1: '/images/stock/program-description-02.jpg'
-    squareImage2: '/images/stock/program-description-03.jpg'
+    Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
+  portraitImage: '/images/stock/program-description-01.jpg'
+  squareImage1: '/images/stock/program-description-02.jpg'
+  squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
-    tagline: Our Preschool Plans
-    headline: A program for every parent and child
-    text: We know you care about your child's future. That’s why we offer you the freedom to choose the right program for them.
-    pricing1:
-        name: Regular
-        price: $1.2k
-        interval: per month
-        shortDescription: M-F from 8 AM to 3:00 PM
-        features:
-            - feature: Nulla quis lorem ut libero
-            - feature: Lorem ipsum dolor sit
-        action:
-            label: Enroll today
-            href: '#'
-            icon: true
-    pricing2:
-        name: Extended
-        price: $1.5k
-        interval: per month
-        shortDescription: M-F from 8 AM to 5:00 PM
-        features:
-            - feature: Nulla quis lorem ut libero
-            - feature: Lorem ipsum dolor sit
-        action:
-            label: Enroll today
-            href: '#'
-            icon: true
+  tagline: Membership & Pricing
+  headline: Sign up today!
+  text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
+  pricing1:
+    name: Weekly Class
+    price: $80
+    interval: per month
+    shortDescription: Monday - Saturday
+    features:
+      - feature: 45 minutes
+      - feature: Co-ed classes
+      - feature: Morning classes
+      - feature: Evening classes
+    action:
+      label: Enroll today
+      href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=17'
+      icon: true
+  pricing2:
+    name: Open Gym
+    price: $10
+    interval: per drop-in
+    shortDescription: Monday - Friday
+    features:
+      - feature: 8:30 AM - 10:00 AM
+      - feature: 1 - 5 years old
+      - feature: Supervised free-play
+      - feature: Parents must attend
+    action:
+      label: Reserve today
+      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/6?typeId=3&filters=%7B%7D'
+      icon: true
 ---

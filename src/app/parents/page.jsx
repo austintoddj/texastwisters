@@ -1,19 +1,24 @@
-import { ParentsHero } from '@/components/ParentsHero'
 import { Events } from '@/components/Events'
+
+/* eslint-disable-next-line */
 import { Newsletter } from '@/components/Newsletter'
+import { ParentsHero } from '@/components/ParentsHero'
 
 export const metadata = {
-    title: 'Parent information - Bright',
-    description:
-        'Stay connected with Bright Preschool & Elementary through our Parents Portal - your go-to source for school news, events, and updates.'
+  title: 'Parent information - Texas Twisters Gymnastics',
+  description:
+    'Stay connected with Texas Twisters Gymnastics through our Parents Portal - your go-to source for gym news, events, and updates.',
+  alternates: {
+    canonical: './'
+  }
 }
 
 export default function ParentsPage() {
-    return (
-        <>
-            <ParentsHero />
-            <Events />
-            {/*<Newsletter />*/}
-        </>
-    )
+  return (
+    <>
+      <ParentsHero />
+      <Events />
+      {/*<Newsletter />*/}
+    </>
+  )
 }

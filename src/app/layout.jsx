@@ -1,38 +1,53 @@
+import { CallToAction } from '@/components/CallToAction'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
+import { getAllItems, getItemData } from '@/lib/getItems'
 import '@/styles/tailwind.css'
+import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
 
-import { Header } from '@/components/Header'
-import { CallToAction } from '@/components/CallToAction'
-import { Footer } from '@/components/Footer'
-import { Analytics } from '@vercel/analytics/react'
-
-import { getAllItems, getItemData } from '@/lib/getItems'
-
 const roboto = Roboto_Flex({
-    subsets: ['latin'],
-    variable: '--font-roboto'
+  subsets: ['latin'],
+  variable: '--font-roboto'
 })
 
+/* Default metadata when not defined elsewhere */
 export const metadata = {
-    title: 'Bright School - Creating a brighter future for your child',
-    description:
-        'At Bright School, we believe every child deserves a brighter future. and strive to give every student a personalized education that will promote their individual strengths and creativity.'
+  metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
+  title: 'Texas Twisters Gymnastics',
+  description:
+    'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.',
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      url: '/images/favicon/icon-light.png',
+      media: '(prefers-color-scheme: light)'
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      url: '/images/favicon/icon-dark.png',
+      media: '(prefers-color-scheme: dark)'
+    }
+  ]
 }
 
 export default function RootLayout({ children }) {
-    const programs = getAllItems('programs')
-    const contact = getItemData('contact', 'global')
+  const programs = getAllItems('programs')
+  const contact = getItemData('contact', 'global')
+  const enrollment = getItemData('enrollment', 'global')
 
-    return (
-        <html lang="en">
-            <body className={clsx('font-sans', roboto.variable)}>
-                <Header programs={programs} contact={contact} />
-                {children}
-                <CallToAction />
-                <Footer programs={programs} contact={contact} />
-                <Analytics />
-            </body>
-        </html>
-    )
+  return (
+    <html lang="en">
+      <body className={clsx('font-sans', roboto.variable)}>
+        <Header programs={programs} contact={contact} enrollment={enrollment} />
+        {children}
+        <CallToAction />
+        <Footer programs={programs} contact={contact} />
+        <Analytics />
+      </body>
+    </html>
+  )
 }

@@ -1,46 +1,49 @@
-import { ProgramHero } from '@/components/ProgramHero'
-import { ProgramInformation } from '@/components/ProgramInformation'
+/* eslint-disable-next-line */
 import { ProgramDescription } from '@/components/ProgramDescription'
-import { ProgramPricing } from '@/components/ProgramPricing'
+import { ProgramHero } from '@/components/ProgramHero'
 
-import { getItemData, getAllItems } from '@/lib/getItems'
+/* eslint-disable-next-line */
+import { ProgramInformation } from '@/components/ProgramInformation'
+import { ProgramPricing } from '@/components/ProgramPricing'
+import { getAllItems, getItemData } from '@/lib/getItems'
 
 export async function generateMetadata({ params: { slug } }) {
-    const program = getItemData(slug, 'programs')
+  const program = getItemData(slug, 'programs')
 
-    return {
-        title: `${program.name} - Bright School`,
-        description: program.hero.description
+  return {
+    title: `${program.name} - Texas Twisters Gymnastics`,
+    description: program.hero.description,
+    alternates: {
+      canonical: './'
     }
+  }
 }
 
 export default function ProgramPage({ params: { slug } }) {
-    const program = getItemData(slug, 'programs')
+  const program = getItemData(slug, 'programs')
 
-    return (
-        <>
-            {program?.hero && <ProgramHero hero={program.hero} />}
-            {program?.infoSection && (
-                <ProgramInformation data={program.infoSection} />
-            )}
-            {program?.descriptionSection && (
-                <ProgramDescription data={program.descriptionSection} />
-            )}
-            {program?.pricingSection && (
-                <ProgramPricing data={program.pricingSection} />
-            )}
-        </>
-    )
+  return (
+    <>
+      {program?.hero && <ProgramHero hero={program.hero} />}
+      {/*{program?.infoSection && (*/}
+      {/*  <ProgramInformation data={program.infoSection} />*/}
+      {/*)}*/}
+      {/*{program?.descriptionSection && (*/}
+      {/*  <ProgramDescription data={program.descriptionSection} />*/}
+      {/*)}*/}
+      {program?.pricingSection && (
+        <ProgramPricing data={program.pricingSection} />
+      )}
+    </>
+  )
 }
 
 export async function generateStaticParams() {
-    const programs = getAllItems('programs')
+  const programs = getAllItems('programs')
 
-    const paths = programs.map(program => ({
-        slug: program.slug
-    }))
-
-    return paths
+  return programs.map(program => ({
+    slug: program.slug
+  }))
 }
 
 export const dynamicParams = false

@@ -100,7 +100,7 @@ export const FeaturedPrograms = () => {
                 Open Gym
               </Link>
               , or{' '}
-              <Link href="/programs/birthday" className="underline">
+              <Link href="/programs/parties-events" className="underline">
                 Birthday Parties
               </Link>
               !

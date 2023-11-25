@@ -7,7 +7,8 @@ import Image from 'next/image'
 
 const features = [
   'USAG Member Club',
-  'No annual registration fee',
+  // 'No annual registration fee',
+  'Registration fees waived in 2024',
   'Family owned',
   'Convenient location',
   '10% Military discount',

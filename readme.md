@@ -6,7 +6,7 @@ The texastwistersgym.com site is a [Next.js](https://nextjs.org) scaffolded proj
 
 ## System Requirements
 
-- Node >= 16.18
+- Node >= 18.17
 - NPM >= 9.6
 
 ## Developing

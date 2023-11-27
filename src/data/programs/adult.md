@@ -68,6 +68,6 @@ pricingSection:
       - feature: Memberships coming soon!
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/4'
+      href: 'https://app.iclasspro.com/portal/texastwisters/class-details/45?filters=%7B%7D'
       icon: true
 ---

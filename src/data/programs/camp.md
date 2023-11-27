@@ -49,27 +49,26 @@ pricingSection:
     name: Christmas Break Camp
     price: $40
     interval: per day
-    shortDescription: Coming December 2023
+    shortDescription: December 26 - 29
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
-      - feature: 10% sibling discount
+      - feature: Games, crafts, open gym and more!
     action:
       label: Register today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
       icon: true
   pricing2:
     name: Spring Break Camp
     price: $40
     interval: per day
-    shortDescription: Coming March 2024
+    shortDescription: March 2024
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
-      - feature: 10% sibling discount
-      - feature: 15% weekly discount
+      - feature: Games, crafts, open gym and more!
     action:
-      label: Register today
+      label: Coming soon
       href: '#'
       icon: true
 ---

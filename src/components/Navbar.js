@@ -16,6 +16,7 @@ const navigation = [
   { label: 'Programs' },
   // { label: 'Gallery', href: '/gallery' },
   { label: 'Parents', href: '/parents' },
+  { label: 'Hiring', href: '/#hiring' },
   { label: 'Contact', href: '/contact' }
 ]
 

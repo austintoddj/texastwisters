@@ -1,5 +1,5 @@
 ---
-src: '/images/stock/gallery/gallery-03.jpg'
-alt: 'Gallery image 03'
-tag: Classroom
+src: '/images/gallery/construction-03.jpg'
+alt: 'Finishing touches on lobby benches'
+tag: Construction
 ---

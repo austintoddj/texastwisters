@@ -12,7 +12,7 @@ export const StaffHiring = ({ jobs }) => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-xl lg:max-w-screen-xl">
+      <div className="mx-auto max-w-xl lg:max-w-screen-xl" id="hiring">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-12 xl:grid-cols-11 xl:gap-24">
           {/* Text content */}
           <div className="flex flex-col justify-center lg:order-2 lg:col-span-1 xl:col-span-6">

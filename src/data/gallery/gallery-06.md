@@ -1,5 +1,5 @@
 ---
-src: '/images/stock/gallery/gallery-06.jpg'
-alt: 'Gallery image 06'
-tag: School Events
+src: '/images/gallery/construction-06.jpg'
+alt: 'Assembling equipment takes all the hands'
+tag: Construction
 ---

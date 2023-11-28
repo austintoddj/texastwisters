@@ -1,5 +1,5 @@
 ---
-src: '/images/stock/gallery/gallery-02.jpg'
-alt: 'Gallery image 02'
-tag: Arts and Crafts
+src: '/images/gallery/construction-02.jpg'
+alt: 'Power tools in hand'
+tag: Construction
 ---

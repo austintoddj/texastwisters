@@ -1,11 +1,11 @@
 'use client'
 
-import heroImage1 from '/public/images/stock/gallery/gallery-hero-01.jpg'
-import heroImage2 from '/public/images/stock/gallery/gallery-hero-02.jpg'
-import heroImage3 from '/public/images/stock/gallery/gallery-hero-03.jpg'
-import heroImage4 from '/public/images/stock/gallery/gallery-hero-04.jpg'
-import heroImage5 from '/public/images/stock/gallery/gallery-hero-05.jpg'
-import heroImage6 from '/public/images/stock/gallery/gallery-hero-06.jpg'
+import heroImage1 from '/public/images/unsplash/gym-01.jpg'
+import heroImage2 from '/public/images/unsplash/gym-02.jpg'
+import heroImage3 from '/public/images/unsplash/gym-03.jpg'
+import heroImage4 from '/public/images/unsplash/gym-04.jpg'
+import heroImage5 from '/public/images/unsplash/gym-05.jpg'
+import heroImage6 from '/public/images/unsplash/gym-06.jpg'
 import LightGallery from 'lightgallery/react'
 import Image from 'next/image'
 
@@ -20,11 +20,6 @@ export const GalleryHero = () => {
       <div className="mx-auto max-w-screen-xl">
         {/* Hero header text */}
         <div className="relative">
-          <div className="flex justify-center">
-            <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-              Creating memories for life
-            </span>
-          </div>
           <h2 className="h1 mx-auto mt-4 max-w-3xl text-center text-purple-900">
             See what it's like at Texas Twisters
           </h2>

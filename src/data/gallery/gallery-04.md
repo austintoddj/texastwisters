@@ -1,5 +1,5 @@
 ---
-src: '/images/stock/gallery/gallery-04.jpg'
-alt: 'Gallery image 04'
-tag: Classroom
+src: '/images/gallery/construction-04.jpg'
+alt: 'Owner and Head Coach Becky'
+tag: Construction
 ---

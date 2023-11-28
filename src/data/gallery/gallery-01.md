@@ -1,5 +1,5 @@
 ---
-src: '/images/stock/gallery/gallery-01.jpg'
-alt: 'Gallery image 01'
-tag: Arts and Crafts
+src: '/images/gallery/construction-01.jpg'
+alt: 'Interior painting and construction is underway'
+tag: Construction
 ---

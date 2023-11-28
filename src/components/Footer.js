@@ -9,6 +9,7 @@ const siteLinks = [
   { label: 'About us', href: '/about' },
   // { label: 'Gallery', href: '/gallery' },
   { label: 'Parents', href: '/parents' },
+  { label: 'Hiring', href: '/#hiring' },
   { label: 'Contact us', href: '/contact' }
 ]
 

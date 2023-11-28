@@ -1,5 +1,5 @@
 ---
-src: '/images/stock/gallery/gallery-05.jpg'
-alt: 'Gallery image 05'
-tag: Playground
+src: '/images/gallery/construction-05.jpg'
+alt: 'Lobby and gym area'
+tag: Construction
 ---

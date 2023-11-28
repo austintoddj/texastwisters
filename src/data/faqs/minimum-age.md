@@ -1,4 +1,4 @@
 ---
 question: What age can my child start gymnastics?
-answer: Our Preschool program currently begins with 2-year-olds. Stay tuned for upcoming Parent & Tot classes for our littlest gymnasts!
+answer: Our Tumble Tots program is a co-ed class, designed for our 1-3 year old gymnasts. Preschool open gym is available for any children under six years old and requires parental participation.
 ---

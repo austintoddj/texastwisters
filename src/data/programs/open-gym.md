@@ -7,7 +7,7 @@ hero:
   text: Work out in a facility equipped with beams, bars, spring floors, a Tumbl Trak, and more! It's gymnastics, your way, on your schedule.
   action:
     label: Reserve today
-    href: '#'
+    href: 'https://app.iclasspro.com/portal/texastwisters/booking'
     icon: true
   image:
     src: '/images/unsplash/gym-09.jpg'
@@ -49,14 +49,14 @@ pricingSection:
     name: Regular
     price: $20
     interval: per drop-in
-    shortDescription: Friday & Saturday
+    shortDescription: Fridays
     features:
-      - feature: 6:00 PM - 8:00 PM
-      - feature: Ages 5-17
+      - feature: 6:00 PM - 8:30 PM
+      - feature: Ages 4 - 17
       - feature: Parent drop-off
     action:
       label: Reserve today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'
       icon: true
   pricing2:
     name: Preschool
@@ -64,11 +64,11 @@ pricingSection:
     interval: per drop-in
     shortDescription: Monday - Friday
     features:
-      - feature: 8:30 AM - 10:00 AM
+      - feature: 9:00 AM - 10:30 AM
       - feature: 1 - 5 years old
-      - feature: Parent must attend
+      - feature: Parent participation required
     action:
       label: Reserve today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/3'
       icon: true
 ---

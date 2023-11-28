@@ -65,8 +65,8 @@ pricingSection:
     interval: per drop-in
     shortDescription: Friday & Saturday
     features:
-      - feature: Ages 5-18
-      - feature: 6:00 PM - 8:00 PM
+      - feature: Ages 4-17
+      - feature: 6:00 PM - 8:30 PM
       - feature: Parent drop-off
       - feature: Supervised free time
     action:

@@ -7,7 +7,7 @@ hero:
   text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=57'
     icon: true
   image:
     src: '/images/unsplash/gym-14.jpg'

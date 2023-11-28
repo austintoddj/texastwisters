@@ -7,7 +7,7 @@ hero:
   text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer.
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=60'
     icon: true
   image:
     src: '/images/unsplash/gym-01.jpg'
@@ -51,24 +51,24 @@ pricingSection:
     interval: per month
     shortDescription: Beginner - Advanced
     features:
-      - feature: Placement upon evaluation
-      - feature: Year-round training
+      - feature: Focus on floor work
+      - feature: Ideal for dancers and cheerleaders
+      - feature: Co-ed class
     action:
       label: Enroll today
-      href: '#'
+      href: 'https://app.iclasspro.com/portal/texastwisters/class-details/24?filters=%7B%22programs%22:%2260%22%7D'
       icon: true
   pricing2:
     name: Tumbling clinic
-    price: $40
+    price: $35
     interval: per event
-    shortDescription: Offered quarterly
+    shortDescription: Coming soon!
     features:
-      - feature: Coming soon!
       - feature: 2 hour class time
-      - feature: Multiple skill levels
+      - feature: All skill levels
       - feature: Ages 5-18
     action:
-      label: Enroll today
+      label: Coming soon
       href: '#'
       icon: true
 ---

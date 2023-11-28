@@ -7,7 +7,7 @@ hero:
   text: Our preschool class is the perfect start for your little gymnast to learn foundational gymnastics skills with an emphasis on fun!
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/dashboard'
+    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=17'
     icon: true
   image:
     src: '/images/unsplash/gym-05.jpg'
@@ -65,12 +65,11 @@ pricingSection:
     interval: per drop-in
     shortDescription: Monday - Friday
     features:
-      - feature: 8:30 AM - 10:00 AM
+      - feature: 9:00 AM - 10:30 AM
       - feature: 1 - 5 years old
-      - feature: Supervised free-play
-      - feature: Parents must attend
+      - feature: Parent participation required
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/6?typeId=3&filters=%7B%7D'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/3'
       icon: true
 ---

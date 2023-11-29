@@ -63,7 +63,7 @@ export const AlternatingFeatures = () => {
         {/* Block 1 */}
         {blocks.map((block, index) => (
           <div
-            key={`about-features-${index}`}
+            key={`staff-features-${index}`}
             className="mx-auto mt-20 grid max-w-xl gap-14 sm:mt-24 sm:gap-16 lg:mt-44 lg:max-w-none lg:grid-cols-12 lg:gap-8"
           >
             {/* Block text content */}

@@ -93,7 +93,7 @@ export const StaffHiring = ({ jobs }) => {
                 </ul>
                 {/* Link to team section */}
                 <Button
-                  href="/about#team"
+                  href="/staff#team"
                   variant="accent"
                   size="sm"
                   className="mt-10"

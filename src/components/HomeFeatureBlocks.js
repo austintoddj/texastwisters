@@ -91,7 +91,7 @@ export const HomeFeatureBlocks = () => {
               and we are committed to helping children develop these skills.
             </p>
             <div className="mt-6">
-              <Button href="/about" variant="accent" size="sm">
+              <Button href="/staff" variant="accent" size="sm">
                 About Us
                 <Icon
                   icon="arrowNarrowRight"

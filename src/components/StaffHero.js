@@ -14,7 +14,7 @@ const images = [
   { src: image5, alt: 'A man and woman smiling on bicycles' }
 ]
 
-export function AboutHero() {
+export function StaffHero() {
   return (
     <section className="bg-purple-25 px-4 pt-16 sm:px-6 lg:px-8">
       {/* Container */}
@@ -22,12 +22,12 @@ export function AboutHero() {
         {/* Page header */}
         <div className="relative">
           <h2 className="h1 mx-auto max-w-3xl text-center text-purple-900">
-            About Us
+            Texas Twisters Staff
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
-            Our family is dedicated to provide a safe, fun, and challenging
-            environment where athletes of any age can grow and develop in the
-            world of gymnastics.
+            We are dedicated to provide a safe, fun, and challenging environment
+            where athletes of any age can grow and develop in the world of
+            gymnastics.
           </p>
         </div>
         {/* School images grid */}

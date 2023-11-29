@@ -6,11 +6,12 @@ import Link from 'next/link'
 
 const siteLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About us', href: '/about' },
-  // { label: 'Gallery', href: '/gallery' },
   { label: 'Parents', href: '/parents' },
+  // { label: 'Gallery', href: '/gallery' },
+  { label: 'Staff', href: '/staff' },
   { label: 'Hiring', href: '/#hiring' },
-  { label: 'Contact us', href: '/contact' }
+  { label: 'Contact us', href: '/contact' },
+  { label: 'FAQs', href: '/#faq' }
 ]
 
 function SocialLink({ className, href, icon }) {

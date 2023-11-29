@@ -12,12 +12,13 @@ import { Fragment } from 'react'
 
 const navigation = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
   { label: 'Programs' },
-  // { label: 'Gallery', href: '/gallery' },
   { label: 'Parents', href: '/parents' },
+  // { label: 'Gallery', href: '/gallery' },
+  { label: 'Staff', href: '/staff' },
+  { label: 'FAQs', href: '/#faq' },
   { label: 'Hiring', href: '/#hiring' },
-  { label: 'Contact', href: '/contact' }
+  { label: 'Contact us', href: '/contact' }
 ]
 
 export function Navbar({ programs, enrollment }) {

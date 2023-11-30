@@ -21,7 +21,7 @@ const navigation = [
   { label: 'Contact us', href: '/contact' }
 ]
 
-export function Navbar({ programs, enrollment }) {
+export function Navbar({ programs }) {
   const pathname = usePathname()
 
   function MenuIcon({ open }) {
@@ -104,11 +104,12 @@ export function Navbar({ programs, enrollment }) {
                     </Fragment>
                   ))}
 
-                  {enrollment.active && (
-                    <Link href={enrollment.href} target="_blank">
-                      <Button>Enroll today</Button>
-                    </Link>
-                  )}
+                  <Link
+                    href="https://app.iclasspro.com/portal/texastwisters/dashboard"
+                    target="_blank"
+                  >
+                    <Button>Log in</Button>
+                  </Link>
                 </div>
 
                 <hr className="my-8 w-full border-purple-200 border-opacity-30 sm:my-10" />
@@ -257,13 +258,14 @@ export function Navbar({ programs, enrollment }) {
           </div>
 
           {/* Call-to-action button */}
-          {enrollment.active && (
-            <div className="hidden lg:block">
-              <Link href={enrollment.href} target="_blank">
-                <Button>Enroll today</Button>
-              </Link>
-            </div>
-          )}
+          <div className="hidden lg:block">
+            <Link
+              href="https://app.iclasspro.com/portal/texastwisters/dashboard"
+              target="_blank"
+            >
+              <Button>Log in</Button>
+            </Link>
+          </div>
 
           {/* Logo on smaller screens: < lg */}
           <div className="block w-60 flex-shrink-0 flex-grow-0 sm:w-60 lg:hidden">

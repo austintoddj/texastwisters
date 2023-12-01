@@ -4,7 +4,7 @@ dropdownDescription: Drop in for supervised play, and practice skills at your ow
 featured: false
 hero:
   headline: Texas Twisters Open Gym
-  text: Work out in a facility equipped with beams, bars, spring floors, a Tumbl Trak, and more! It's gymnastics, your way, on your schedule.
+  text: Enjoy open play on our beams, bars, spring floors, vault, and trampolines! It's gymnastics, your way, on your schedule.
   action:
     label: Reserve today
     href: 'https://app.iclasspro.com/portal/texastwisters/booking'
@@ -46,7 +46,7 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to having you join us!
   pricing1:
-    name: Regular
+    name: Student
     price: $20
     interval: per drop-in
     shortDescription: Fridays

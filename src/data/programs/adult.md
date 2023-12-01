@@ -52,7 +52,7 @@ pricingSection:
     shortDescription: Thursday
     features:
       - feature: 8:30 PM - 10:30 PM
-      - feature: Punch card available
+      - feature: Memberships available!
     action:
       label: Enroll today
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/2'
@@ -65,7 +65,7 @@ pricingSection:
     features:
       - feature: 12:00 PM - 1:00 PM
       - feature: HIIT style workouts
-      - feature: Memberships coming soon!
+      - feature: Memberships available!
     action:
       label: Enroll today
       href: 'https://app.iclasspro.com/portal/texastwisters/class-details/45?filters=%7B%7D'

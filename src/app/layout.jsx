@@ -17,7 +17,7 @@ export const metadata = {
   metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
   title: 'Texas Twisters Gymnastics',
   description:
-      'Georgetown TX :: Recreational Gymnastics, Competitive Team, Adult Gymnastics, Preschool, Tumbling, Open Gyms, Birthday Parties, Camps.',
+    'Georgetown TX :: Recreational Gymnastics, Competitive Team, Adult Gymnastics, Preschool, Tumbling, Open Gyms, Birthday Parties, Camps.',
   icons: [
     {
       rel: 'icon',

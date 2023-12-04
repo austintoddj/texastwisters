@@ -108,7 +108,7 @@ export function Navbar({ programs }) {
                     href="https://app.iclasspro.com/portal/texastwisters/dashboard"
                     target="_blank"
                   >
-                    <Button>Log in</Button>
+                    <Button>Customer Portal</Button>
                   </Link>
                 </div>
 
@@ -263,7 +263,7 @@ export function Navbar({ programs }) {
               href="https://app.iclasspro.com/portal/texastwisters/dashboard"
               target="_blank"
             >
-              <Button>Log in</Button>
+              <Button>Customer Portal</Button>
             </Link>
           </div>
 

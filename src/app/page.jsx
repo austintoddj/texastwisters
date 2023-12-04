@@ -14,7 +14,7 @@ export const metadata = {
     'Georgetown TX :: Recreational Gymnastics, Competitive Team, Adult Gymnastics, Preschool, Tumbling, Open Gyms, Birthday Parties, Camps.',
   alternates: {
     canonical: './'
-  },
+  }
 }
 
 export default function HomePage() {

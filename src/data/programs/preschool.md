@@ -4,6 +4,7 @@ dropdownDescription: Learn foundational gymnastics skills with an emphasis on fu
 featured: true
 hero:
   headline: Texas Twisters Preschool Program
+  description: Preschool classes for our 3-5 year old gymnasts. These classes are co-ed and will include a variety of games, obstacle courses, and skill building on size-appropriate equipment.
   text: Our preschool class is the perfect start for your little gymnast to learn foundational gymnastics skills with an emphasis on fun!
   action:
     label: Enroll today

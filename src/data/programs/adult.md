@@ -4,6 +4,7 @@ dropdownDescription: Join the adult gymnastics community, and see what you've be
 featured: false
 hero:
   headline: Texas Twisters Adult Gymnastics
+  description: Our coached adult gymnastics class is open to adults of all skill levels. Class will include a warmup, specific event work, and a conditioning workout.
   text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
     label: Enroll today

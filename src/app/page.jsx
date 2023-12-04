@@ -11,10 +11,10 @@ import { getAllItems, getItemData } from '@/lib/getItems'
 export const metadata = {
   title: 'Texas Twisters Gymnastics',
   description:
-    'Providing quality gymnastics training in a safe and fun environment where athletes of all ages can thrive.',
+    'Georgetown TX :: Recreational Gymnastics, Competitive Team, Adult Gymnastics, Preschool, Tumbling, Open Gyms, Birthday Parties, Camps.',
   alternates: {
     canonical: './'
-  }
+  },
 }
 
 export default function HomePage() {

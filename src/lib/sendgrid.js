@@ -22,9 +22,10 @@ export const sendEmail = async (
     from: from,
     template_id: templateID,
     dynamic_template_data: {
-      subject: subject,
-      name: name,
-      email: email,
+      SUBJECT: subject,
+      NAME: name,
+      EMAIL: email,
+      PHONE: phone,
       Sender_Name: 'Texas Twisters Gymnastics, LLC',
       Sender_Address: '901 S I-35 Frontage Rd Suite 103',
       Sender_City: 'Georgetown',

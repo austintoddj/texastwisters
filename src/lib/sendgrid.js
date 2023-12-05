@@ -20,8 +20,8 @@ export const sendEmail = async (
   const message = {
     to: to,
     from: from,
-    templateID: templateID,
-    dynamicTemplateData: {
+    template_id: templateID,
+    dynamic_template_data: {
       subject: subject,
       name: name,
       email: email,

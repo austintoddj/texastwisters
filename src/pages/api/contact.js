@@ -4,8 +4,12 @@ export default async function Contact(req, res) {
   try {
     await sendEmail(
       'info@texastwistersgym.com',
-      '[INQUIRY] You have a new contact from texastwistersgym.com',
-      `${req.body.name} <br /> ${req.body.email} <br /> ${req.body.phone} <br /><br /> ${req.body.message}`
+      'noreply@texastwistersgym.com',
+      '1161d74f-423f-413d-8ae0-2d88a06fd959',
+      req.body.name,
+      req.body.message,
+      req.body.phone,
+      req.body.email
     ).then(() => {
       res.status(200).json({ message: 'Success' })
     })

@@ -1,6 +1,14 @@
 import sendgrid from '@sendgrid/mail'
 
-export const sendEmail = async (to, subject, body) => {
+export const sendEmail = async (
+  to,
+  from,
+  templateID,
+  name,
+  subject,
+  phone,
+  email
+) => {
   sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY)
 
   /**
@@ -11,12 +19,18 @@ export const sendEmail = async (to, subject, body) => {
    */
   const message = {
     to: to,
-    from: {
-      name: 'Texas Twisters Gymnastics',
-      email: 'admin@texastwistersgym.com'
-    },
-    subject: subject,
-    html: body
+    from: from,
+    templateID: templateID,
+    dynamicTemplateData: {
+      subject: subject,
+      name: name,
+      email: email,
+      Sender_Name: 'Texas Twisters Gymnastics, LLC',
+      Sender_Address: '901 S I-35 Frontage Rd Suite 103',
+      Sender_City: 'Georgetown',
+      Sender_State: 'TX',
+      Sender_Zip: 78626
+    }
   }
 
   try {

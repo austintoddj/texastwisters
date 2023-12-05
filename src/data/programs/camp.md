@@ -4,6 +4,7 @@ dropdownDescription: Available during school breaks and select holidays.
 featured: false
 hero:
   headline: Texas Twisters Camps
+  description: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   text: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   action:
     label: View camps

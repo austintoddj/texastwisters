@@ -4,6 +4,7 @@ dropdownDescription: Refine coordination and technique from beginner to advanced
 featured: false
 hero:
   headline: Texas Twisters Tumbling Program
+  description: Designed for athletes that wish to focus solely on floor work. This co-ed class is open to all skill levels and is ideal for cheerleaders or dancers looking to develop their tumbling skills.
   text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer.
   action:
     label: Enroll today

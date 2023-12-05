@@ -4,6 +4,7 @@ dropdownDescription: Drop in for supervised play, and practice skills at your ow
 featured: false
 hero:
   headline: Texas Twisters Open Gym
+  description: A supervised open gym for students age 4-17. Enjoy open play on our beams, bars, spring floors, vault, and trampolines!
   text: Enjoy open play on our beams, bars, spring floors, vault, and trampolines! It's gymnastics, your way, on your schedule.
   action:
     label: Reserve today

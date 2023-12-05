@@ -4,6 +4,7 @@ dropdownDescription: Train and compete in our USA Gymnastics Development Program
 featured: true
 hero:
   headline: Texas Twisters Team
+  description: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
   text: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
   action:
     label: Contact us

@@ -5,7 +5,7 @@ export default async function Contact(req, res) {
     await sendEmail(
       'info@texastwistersgym.com',
       'noreply@texastwistersgym.com',
-      '1161d74f-423f-413d-8ae0-2d88a06fd959',
+      'd-93318328a69d4504998360ec450629e1',
       req.body.name,
       req.body.message,
       req.body.phone,

@@ -64,10 +64,10 @@ pricingSection:
     name: Open Gym
     price: $20
     interval: per drop-in
-    shortDescription: Friday & Saturday
+    shortDescription: Fridays
     features:
       - feature: Ages 4-17
-      - feature: 6:00 PM - 8:30 PM
+      - feature: 6:00 PM - 8:00 PM
       - feature: Parent drop-off
       - feature: Supervised free time
     action:

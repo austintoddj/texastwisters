@@ -11,7 +11,7 @@ hero:
     href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=57'
     icon: true
   image:
-    src: '/images/unsplash/gym-14.jpg'
+      src: '/images/programs/adult/hero.jpg'
 infoSection:
   headline: Designed to help you rediscover your love of gymnastics
   text: Train every event or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.

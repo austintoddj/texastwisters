@@ -52,9 +52,10 @@ pricingSection:
     interval: per drop-in
     shortDescription: Fridays
     features:
-      - feature: 6:00 PM - 8:30 PM
+      - feature: 6:00 PM - 8:00 PM
       - feature: Ages 4 - 17
       - feature: Parent drop-off
+      - feature: Supervised free time
     action:
       label: Reserve today
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'

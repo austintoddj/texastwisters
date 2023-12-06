@@ -1,6 +1,6 @@
 'use client'
 
-import heroImage from '/public/images/unsplash/hero-home.png'
+import heroImage from '/public/images/home/hero.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 

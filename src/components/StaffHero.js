@@ -1,8 +1,8 @@
 import image1 from '/public/images/staff/grid/bridge.jpg'
+import image5 from '/public/images/staff/grid/cancun.jpg'
 import image2 from '/public/images/staff/grid/poppyfest.jpg'
 import image3 from '/public/images/staff/grid/sluggers.jpg'
 import image4 from '/public/images/staff/grid/surf-camp.jpg'
-import image5 from '/public/images/staff/grid/cancun.jpg'
 import Image from 'next/image'
 import { Fragment } from 'react'
 

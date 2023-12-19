@@ -5,13 +5,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const siteLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Parents', href: '/parents' },
-  // { label: 'Gallery', href: '/gallery' },
-  { label: 'Staff', href: '/staff' },
-  { label: 'Hiring', href: '/#hiring' },
-  { label: 'Contact us', href: '/contact' },
-  { label: 'FAQs', href: '/#faq' }
+  { label: 'Home', href: '/', isExternal: false },
+  { label: 'Parents', href: '/parents', isExternal: false },
+  // { label: 'Gallery', href: '/gallery', isExternal: false },
+  { label: 'Staff', href: '/staff', isExternal: false },
+  { label: 'FAQs', href: '/#faq', isExternal: false },
+  { label: 'Hiring', href: '/#hiring', isExternal: false },
+  { label: 'Contact us', href: '/contact', isExternal: false },
+  {
+    label: 'Waiver',
+    href: 'https://forms.gle/BudgbR39sK1yTgvBA',
+    isExternal: true
+  }
 ]
 
 function SocialLink({ className, href, icon }) {
@@ -111,7 +116,16 @@ export const Footer = ({ programs, contact }) => {
                   index > 0 && index < siteLinks.length && 'py-2'
                 )}
               >
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href}>
+                  {link.label}
+                  {link.isExternal && (
+                    <Icon
+                      icon="externalLink"
+                      className="h-5 w-5 ml-3 inline"
+                      stroke={2}
+                    />
+                  )}
+                </Link>
               </li>
             ))}
           </ul>

@@ -2,8 +2,6 @@
 name: Becky Austin
 role: Owner, Head Coach
 image: '/images/staff/becky.jpg'
-featured: true
-portraitImage: '/images/staff/becky-portrait.jpg'
 social:
   - name: 'instagram'
     href: 'https://instagram.com/gymnastrx'

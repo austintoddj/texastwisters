@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const owners = {
   name: 'The Austin Family',
-  portraitImage: '/images/staff/family.jpg'
+  image: '/images/staff/family.jpg'
 }
 
 export const StaffHiring = ({ jobs }) => {
@@ -36,7 +36,7 @@ export const StaffHiring = ({ jobs }) => {
                 <Image
                   className="absolute inset-0 h-full w-full rounded-3xl object-cover shadow-md"
                   fill
-                  src={owners.portraitImage}
+                  src={owners.image}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
                   alt=""
                 />
@@ -115,7 +115,7 @@ export const StaffHiring = ({ jobs }) => {
                 <Image
                   className="absolute inset-0 h-full w-full rounded-3xl object-cover shadow-md"
                   fill
-                  src={owners.portraitImage}
+                  src={owners.image}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
                   alt=""
                 />

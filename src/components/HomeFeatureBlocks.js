@@ -61,7 +61,7 @@ export const HomeFeatureBlocks = () => {
                   className="absolute inset-0 rounded-2xl object-cover"
                   src={portraitImage}
                   fill
-                  alt="A coach helping a girl on the balance beam"
+                  alt="A boy holding himself up with rings on a gymnastics bar"
                   sizes="(min-width: 1280px) 29.5rem, (min-width: 1024px) calc(50vw - 8.75rem), (min-width: 640px) 27rem, calc(100vw - 2rem)"
                 />
               </div>
@@ -70,7 +70,7 @@ export const HomeFeatureBlocks = () => {
                   className="absolute inset-0 h-full w-full rounded-3xl object-cover"
                   src={squareImage}
                   fill
-                  alt="A child holding their arms in the air on a balance beam"
+                  alt="Two children holding their arms in the air while practicing gymnastics"
                   sizes="(min-width: 1536px) 20rem, (min-width: 1280px) 18rem, (min-width: 1024px) 16rem, (min-width: 640px) 18rem"
                 />
               </div>

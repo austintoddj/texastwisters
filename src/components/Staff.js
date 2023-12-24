@@ -57,25 +57,25 @@ export const Staff = () => {
                     </p>
                   </div>
                   {/* Social links */}
-                    {member.data.social && (
-                        <div className="flex space-x-1.5">
-                            {member.data.social.map((socialLink, j) => (
-                                <Link
-                                    target="_blank"
-                                    key={`member-${i}-social-link-${j}`}
-                                    href={socialLink.href}
-                                    aria-label={
-                                        socialLink.name + ' icon - opens in new tab'
-                                    }
-                                >
-                                    <Icon
-                                        icon={socialLink.name}
-                                        className="durarion-300 h-[22px] w-[22px] text-purple-600 transition ease-in-out hover:text-purple-500"
-                                    />
-                                </Link>
-                            ))}
-                        </div>
-                    )}
+                  {member.data.social && (
+                    <div className="flex space-x-1.5">
+                      {member.data.social.map((socialLink, j) => (
+                        <Link
+                          target="_blank"
+                          key={`member-${i}-social-link-${j}`}
+                          href={socialLink.href}
+                          aria-label={
+                            socialLink.name + ' icon - opens in new tab'
+                          }
+                        >
+                          <Icon
+                            icon={socialLink.name}
+                            className="durarion-300 h-[22px] w-[22px] text-purple-600 transition ease-in-out hover:text-purple-500"
+                          />
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

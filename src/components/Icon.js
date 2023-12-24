@@ -22,12 +22,12 @@ import {
   IconMapPin,
   IconMoodKid,
   IconPhone,
+  IconPhoto,
   IconPlayerPlayFilled,
   IconPlus,
   IconStarFilled,
   IconUser,
-  IconUsers,
-    IconPhoto
+  IconUsers
 } from '@tabler/icons-react'
 
 const iconOptions = {
@@ -59,7 +59,7 @@ const iconOptions = {
   lifeBuoy: IconLifebuoy,
   help: IconHelpCircle,
   article: IconArticle,
-    photo: IconPhoto
+  photo: IconPhoto
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

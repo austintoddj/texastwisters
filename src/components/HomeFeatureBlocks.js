@@ -1,6 +1,6 @@
-import checkmark from '/public/images/illustrations/checkmark.svg'
-import squareImage from '/public/images/home/about-square.jpg'
 import portraitImage from '/public/images/home/about-portrait.jpg'
+import squareImage from '/public/images/home/about-square.jpg'
+import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import Image from 'next/image'

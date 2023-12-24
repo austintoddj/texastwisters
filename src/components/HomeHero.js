@@ -46,11 +46,11 @@ export const HomeHero = ({ enrollment }) => {
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           <div>
             <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-              Coming soon!
+              Grand Opening January 1st!
             </span>
           </div>
           <h1 className="h1 mt-4 max-w-xl text-center text-purple-900 sm:mt-5 lg:max-w-none lg:text-left">
-            Grand Opening January 2024!
+            Register today for Holiday Camps!
           </h1>
           <p className="mt-3 max-w-2xl text-center text-xl leading-loose text-purple-800 lg:text-left">
             Located in the heart of Georgetown, our programs are designed to
@@ -61,7 +61,7 @@ export const HomeHero = ({ enrollment }) => {
           {/* Hero buttons */}
           <div className="mt-8 flex flex-col items-center overflow-hidden sm:flex-row">
             {enrollment.active && (
-              <Button href={enrollment.href}>
+              <Button href="https://app.iclasspro.com/portal/texastwisters/booking">
                 Enroll today
                 <Icon
                   icon="arrowNarrowRight"

@@ -11,7 +11,7 @@ hero:
     href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=60'
     icon: true
   image:
-    src: '/images/unsplash/gym-01.jpg'
+    src: '/images/programs/tumbling/hero.jpg'
 infoSection:
   headline: Designed to promote age-appropriate skill development
   text: Learn foundational skills like rolls, cartwheels, and handstands. Then advance your technique with back handsprings, standing back tucks, and more! Perfect for dancers and cheerleaders looking to take their tumbling skills to the next level.

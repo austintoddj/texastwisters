@@ -53,7 +53,7 @@ export const HomeHero = ({ enrollment }) => {
             Register today for Holiday Camps!
           </h1>
           <p className="mt-3 max-w-2xl text-center text-xl leading-loose text-purple-800 lg:text-left">
-            Located in the heart of Georgetown TX, our programs are designed to
+            Located in the heart of Georgetown, TX, our programs are designed to
             challenge and inspire athletes of all ages. From beginner to
             advanced, we're excited to provide you a safe, fun, and supportive
             environment throughout your gymnastics journey.

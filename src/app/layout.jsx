@@ -4,7 +4,6 @@ import { Header } from '@/components/Header'
 import { getAllItems, getItemData } from '@/lib/getItems'
 import '@/styles/tailwind.css'
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
 
@@ -48,7 +47,6 @@ export default function RootLayout({ children }) {
         <CallToAction />
         <Footer programs={programs} contact={contact} />
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   )

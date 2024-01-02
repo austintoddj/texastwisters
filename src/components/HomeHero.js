@@ -46,11 +46,11 @@ export const HomeHero = ({ enrollment }) => {
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           <div>
             <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-              Grand Opening January 1st!
+              Registration is now open!
             </span>
           </div>
           <h1 className="h1 mt-4 max-w-xl text-center text-purple-900 sm:mt-5 lg:max-w-none lg:text-left">
-            Register today for Holiday Camps!
+              Welcome to Texas Twisters Gymnastics!
           </h1>
           <p className="mt-3 max-w-2xl text-center text-xl leading-loose text-purple-800 lg:text-left">
             Located in the heart of Georgetown, TX, our programs are designed to

@@ -50,7 +50,7 @@ export const HomeHero = ({ enrollment }) => {
             </span>
           </div>
           <h1 className="h1 mt-4 max-w-xl text-center text-purple-900 sm:mt-5 lg:max-w-none lg:text-left">
-              Welcome to Texas Twisters Gymnastics!
+            Welcome to Texas Twisters Gymnastics!
           </h1>
           <p className="mt-3 max-w-2xl text-center text-xl leading-loose text-purple-800 lg:text-left">
             Located in the heart of Georgetown, TX, our programs are designed to

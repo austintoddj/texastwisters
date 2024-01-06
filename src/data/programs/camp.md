@@ -11,7 +11,7 @@ hero:
     href: 'https://app.iclasspro.com/portal/texastwisters/booking'
     icon: true
   image:
-    src: '/images/unsplash/gym-02.jpg'
+    src: '/images/programs/camp/hero.jpg'
 infoSection:
   headline: Have fun, stay active, and build new friendships!
   text: Campers arrive in the morning, and start the day playing group games. They are then divided by age and skill level to run through gymnastics rotations. After a break for lunch, we will introduce more games and free time. Your kids won't want to miss this!

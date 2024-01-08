@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems, getItemData } from '@/lib/getItems'
 import '@/styles/tailwind.css'
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
         <CallToAction />
         <Footer programs={programs} contact={contact} />
         <Analytics />
+        <GoogleTagManager gtmId="G-SZ5N7Z2MPK" />
       </body>
     </html>
   )

@@ -45,7 +45,7 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Add participants to your package for $10 per additional guest, up to 30 guests. Increase gym time by 30 minutes for $50, up to a total of 3 hours.
+  text: Add participants to either package for $10 per additional guest, up to 30 guests.
   pricing1:
     name: Silver package
     price: $250

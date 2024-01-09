@@ -5,7 +5,7 @@ featured: false
 hero:
   headline: Texas Twisters Birthday Parties
   description: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy 60 minutes of obstacle courses, organized games, and supervised open gym time. After playing, you'll have 30 minutes in our party area for food and gifts. Don't wait, grab your spot today!
-  text: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy supervised open gym time, organized games, obstacle courses, and more. Don't wait, grab your spot today!
+  text: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy 60 minutes of obstacle courses, organized games, and supervised open gym time. After playing, you'll have 30 minutes in our party area for food and gifts. Don't wait, grab your spot today!
   action:
     label: Reserve today
     href: 'https://app.iclasspro.com/portal/texastwisters/party-booking-01-date'

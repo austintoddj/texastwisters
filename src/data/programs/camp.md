@@ -7,9 +7,9 @@ hero:
   description: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   text: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   action:
-    label: Coming soon!
-    href: '#'
-    icon: false
+    label: Sign up today
+    href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
+    icon: true
   image:
     src: '/images/programs/camp/hero.jpg'
 infoSection:
@@ -47,23 +47,23 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: Spring Break Camp
+    name: MLK Day Camp
     price: $40
     interval: per day
-    shortDescription: March 2024
+    shortDescription: January 15
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
       - feature: Games, crafts, open gym and more!
     action:
-      label: Coming soon!
-      href: '#'
-      icon: false
+      label: Sign up today!
+      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/99?typeId=5&filters=%7B%7D'
+      icon: true
   pricing2:
-    name: Summer Break Camp
+    name: Spring Break Camp
     price: $40
     interval: per day
-    shortDescription: Summer 2024
+    shortDescription: March 2024
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!

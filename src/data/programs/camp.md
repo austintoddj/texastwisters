@@ -47,18 +47,18 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-      name: Spring Break Camp
-      price: $40
-      interval: per day
-      shortDescription: March 2024
-      features:
-          - feature: 9 AM - 2 PM
-          - feature: Please pack a lunch!
-          - feature: Games, crafts, open gym and more!
-      action:
-          label: Coming soon!
-          href: '#'
-          icon: false
+    name: Spring Break Camp
+    price: $40
+    interval: per day
+    shortDescription: March 2024
+    features:
+      - feature: 9 AM - 2 PM
+      - feature: Please pack a lunch!
+      - feature: Games, crafts, open gym and more!
+    action:
+      label: Coming soon!
+      href: '#'
+      icon: false
   pricing2:
     name: Summer Break Camp
     price: $40

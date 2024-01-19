@@ -52,7 +52,7 @@ pricingSection:
     interval: per drop-in
     shortDescription: Thursday
     features:
-      - feature: 8:30 PM - 10:30 PM
+      - feature: 8:00 PM - 10:30 PM
       - feature: Memberships available!
     action:
       label: Enroll today

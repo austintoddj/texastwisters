@@ -67,7 +67,7 @@ export const Footer = ({ programs, contact }) => {
                 icon="instagram"
               />
               <SocialLink
-                href="https://www.facebook.com/profile.php?id=61550029030904"
+                href="https://www.facebook.com/texastwistersgymnastics"
                 icon="facebook"
               />
             </div>

@@ -61,16 +61,16 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'
       icon: true
   pricing2:
-    name: Preschool
-    price: $10
+    name: Homeschool
+    price: $15
     interval: per drop-in
-    shortDescription: Monday - Friday
+    shortDescription: Every Wednesday
     features:
-      - feature: 9:00 AM - 10:30 AM
-      - feature: 1 - 5 years old
-      - feature: Parent participation required
+      - feature: 10:30 AM - 12:00 PM
+      - feature: Ages 1+
+      - feature: $15/child + $10/sibling
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/3'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/6'
       icon: true
 ---

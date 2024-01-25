@@ -47,7 +47,7 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: President's Day Camp
+    name: Presidents' Day Camp
     price: $40
     interval: per day
     shortDescription: Feb 19 & 20

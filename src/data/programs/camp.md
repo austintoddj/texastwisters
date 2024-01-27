@@ -7,9 +7,9 @@ hero:
   description: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   text: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   action:
-    label: Enroll today
+    label: See available camps
     href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
-    icon: false
+    icon: true
   image:
     src: '/images/programs/camp/hero.jpg'
 infoSection:

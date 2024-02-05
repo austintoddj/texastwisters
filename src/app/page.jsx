@@ -31,7 +31,7 @@ export default function HomePage() {
       <HomeFeatureBlocks />
       <StaffHiring jobs={jobs} />
       <FeaturedPrograms />
-      {/*<Testimonials />*/}
+      <Testimonials />
       <Faqs faqs={faqs} />
     </>
   )

@@ -1,6 +1,8 @@
 import { Icon } from '@/components/Icon'
 import { getAllItems } from '@/lib/getItems'
 import clsx from 'clsx'
+
+/* eslint-disable-next-line */
 import Image from 'next/image'
 
 const bgColorsClassName = [
@@ -23,9 +25,8 @@ export const Testimonials = () => {
             See what parents are saying about us
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-xl leading-relaxed text-purple-50">
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-            dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-            sem.
+            We care about your experience at Texas Twisters. Whether you're a
+            gymnast or a parent of one, you deserve the best we can offer.
           </p>
         </div>
 
@@ -39,13 +40,13 @@ export const Testimonials = () => {
                 'rounded-3xl px-8 py-8 transition duration-300 ease-in-out sm:px-6 md:px-8 lg:px-5 2xl:px-8'
               )}
             >
-              <Image
-                src={item.data.image}
-                width={80}
-                height={80}
-                className="h-20 w-20 rounded-full border-2 border-yellow-300 object-cover drop-shadow-2xl filter"
-                alt={item.data.name}
-              />
+              {/*<Image*/}
+              {/*  src={item.data.image}*/}
+              {/*  width={80}*/}
+              {/*  height={80}*/}
+              {/*  className="h-20 w-20 rounded-full border-2 border-yellow-300 object-cover drop-shadow-2xl filter"*/}
+              {/*  alt={item.data.name}*/}
+              {/*/>*/}
               <p className="mt-3 text-lg font-bold text-purple-900">
                 {item.data.name}
               </p>

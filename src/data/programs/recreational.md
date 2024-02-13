@@ -47,7 +47,7 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
   pricing1:
-    name: Tuition
+    name: Gymnastics Class
     price: $90
     interval: per month
     shortDescription: Beginner - Advanced
@@ -61,7 +61,7 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=16'
       icon: true
   pricing2:
-    name: Open Gym
+    name: Student Open Gym
     price: $20
     interval: per drop-in
     shortDescription: Fridays

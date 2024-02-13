@@ -47,7 +47,7 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to having you join us!
   pricing1:
-    name: Student
+    name: Student Open Gym
     price: $20
     interval: per drop-in
     shortDescription: Fridays
@@ -61,7 +61,7 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'
       icon: true
   pricing2:
-    name: Homeschool
+    name: Homeschool Open Gym
     price: $15
     interval: per drop-in
     shortDescription: Every Wednesday

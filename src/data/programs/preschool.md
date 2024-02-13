@@ -61,7 +61,7 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=17'
       icon: true
   pricing2:
-    name: Open Gym
+    name: Preschool Open Gym
     price: $10
     interval: per drop-in
     shortDescription: Monday - Friday

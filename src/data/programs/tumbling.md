@@ -47,7 +47,7 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing1:
-    name: Regular
+    name: Tumbling Class
     price: $90
     interval: per month
     shortDescription: Beginner - Advanced
@@ -60,7 +60,7 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/class-details/24?filters=%7B%22programs%22:%2260%22%7D'
       icon: true
   pricing2:
-    name: Tumbling clinic
+    name: Tumbling Clinic
     price: $35
     interval: per event
     shortDescription: Coming soon!

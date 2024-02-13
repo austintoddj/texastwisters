@@ -47,6 +47,19 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
   pricing1:
+    name: Adult Gymnastics
+    price: $90
+    interval: per month
+    shortDescription: Monday
+    features:
+      - feature: 8:15 PM - 9:15 PM
+      - feature: 60 minutes
+      - feature: Ages 18+
+    action:
+      label: Enroll today
+      href: 'https://app.iclasspro.com/portal/texastwisters/class-details/51'
+      icon: true
+  pricing2:
     name: Adult Open Gym
     price: $20
     interval: per drop-in
@@ -57,18 +70,5 @@ pricingSection:
     action:
       label: Enroll today
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/2'
-      icon: true
-  pricing2:
-    name: Adult Conditioning
-    price: $15
-    interval: per drop-in
-    shortDescription: Tuesday & Thursday
-    features:
-      - feature: 12:00 PM - 1:00 PM
-      - feature: HIIT style workouts
-      - feature: Memberships available!
-    action:
-      label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/class-details/45?filters=%7B%7D'
       icon: true
 ---

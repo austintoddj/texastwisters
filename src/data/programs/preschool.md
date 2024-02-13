@@ -47,7 +47,7 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing1:
-    name: Weekly Class
+    name: Preschool Gymnastics
     price: $80
     interval: per month
     shortDescription: Monday - Saturday

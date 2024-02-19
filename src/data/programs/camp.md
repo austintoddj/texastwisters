@@ -63,13 +63,13 @@ pricingSection:
     name: Spring Break Camp
     price: $40
     interval: per day
-    shortDescription: May 2024
+    shortDescription: March 11 - 15
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
       - feature: Games, crafts, open gym and more!
     action:
-      label: Coming soon!
-      href: '#'
-      icon: false
+      label: Enroll today
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
+      icon: true
 ---

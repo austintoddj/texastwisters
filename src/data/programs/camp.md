@@ -47,10 +47,10 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: Presidents' Day Camp
+    name: Spring Break Camp
     price: $40
     interval: per day
-    shortDescription: Feb 19 & 20
+    shortDescription: March 11 - 15
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
@@ -60,10 +60,10 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
       icon: true
   pricing2:
-    name: Spring Break Camp
+    name: Summer Day Camp
     price: $40
     interval: per day
-    shortDescription: March 11 - 15
+    shortDescription: May 27 - 31
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!

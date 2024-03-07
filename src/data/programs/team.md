@@ -61,7 +61,7 @@ pricingSection:
       icon: true
   pricing2:
     name: Level 3
-    price: $275
+    price: $240
     interval: per month
     shortDescription: Coming January 2024
     features:

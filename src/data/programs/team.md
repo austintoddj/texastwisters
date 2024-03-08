@@ -54,7 +54,7 @@ pricingSection:
     features:
       - feature: Invitation only
       - feature: Practice 2 hrs/wk
-      - feature: Ages 4-7
+      - feature: Ages 6+
     action:
       label: Contact us
       href: '/contact'
@@ -67,7 +67,7 @@ pricingSection:
     features:
       - feature: Invitation only
       - feature: Practice 5 hrs/wk
-      - feature: Ages 6-18
+      - feature: Ages 6+
       - feature: Additional fees apply
     action:
       label: Contact us

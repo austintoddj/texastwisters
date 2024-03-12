@@ -14,6 +14,8 @@ const bgColorsClassName = [
 
 export const Testimonials = () => {
   const testimonials = getAllItems('testimonials')
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 4)
 
   return (
     <section className="bg-purple-600 py-20 sm:py-28 md:-mt-48 lg:py-32">

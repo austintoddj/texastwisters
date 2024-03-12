@@ -27,6 +27,23 @@ export function getAllItems(dir) {
   })
 }
 
+export function getRandomItems(dir, num) {
+  const files = fs.readdirSync(path.join(`src/data/${dir}`))
+
+  return files
+    .sort(() => Math.random() - 0.5)
+    .slice(0, num)
+    .map(filename => {
+      const fileContents = fs.readFileSync(
+        path.join(`src/data/${dir}`, filename),
+        'utf8'
+      )
+
+      const { data: frontmatter } = matter(fileContents)
+      return { slug: filename.replace('.md', ''), data: frontmatter }
+    })
+}
+
 export function getGalleryTags() {
   const galleryImages = getAllItems('gallery')
   return [...new Set(galleryImages.map(image => image.data.tag))]

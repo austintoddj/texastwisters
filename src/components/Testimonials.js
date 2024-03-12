@@ -1,5 +1,5 @@
 import { Icon } from '@/components/Icon'
-import { getAllItems } from '@/lib/getItems'
+import { getRandomItems } from '@/lib/getItems'
 import clsx from 'clsx'
 
 /* eslint-disable-next-line */
@@ -13,9 +13,7 @@ const bgColorsClassName = [
 ]
 
 export const Testimonials = () => {
-  const testimonials = getAllItems('testimonials')
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 4)
+  const testimonials = getRandomItems('testimonials', 4)
 
   return (
     <section className="bg-purple-600 py-20 sm:py-28 md:-mt-48 lg:py-32">

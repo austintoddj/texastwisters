@@ -33,7 +33,7 @@ export const Staff = () => {
       {/* Team section */}
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl -translate-y-32 lg:max-w-screen-xl">
-          <div className="grid gap-y-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8">
+          <div className="grid gap-y-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
             {staff.map((member, i) => (
               <div key={`member-${i}`}>
                 {/* Staff member image */}

@@ -13,6 +13,9 @@ const bgColorsClassName = [
 ]
 
 export const Testimonials = () => {
+  // TODO: This currently pulls 4 random items at build time. Find a way to
+  //  dynamically call these and get properly randomized results with every
+  //  page refresh.
   const testimonials = getRandomItems('testimonials', 4)
 
   return (

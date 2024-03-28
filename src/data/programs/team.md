@@ -44,7 +44,7 @@ descriptionSection:
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
-  headline: Tryouts currently open!
+  headline: Tryouts now available!
   text: All team classes are by invitation only. Level 4 coming in 2025. Contact us to schedule a tryout!
   pricing1:
     name: Level 2
@@ -63,7 +63,7 @@ pricingSection:
     name: Level 3
     price: $240
     interval: per month
-    shortDescription: Coming January 2024
+    shortDescription: Tryouts now available!
     features:
       - feature: Invitation only
       - feature: Practice 5 hrs/wk

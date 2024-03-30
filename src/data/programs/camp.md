@@ -57,7 +57,7 @@ pricingSection:
       - feature: Games, crafts, open gym and more!
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/334'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
       icon: true
   pricing2:
     name: Summer Camp
@@ -70,6 +70,6 @@ pricingSection:
       - feature: Games, crafts, open gym and more!
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/332'
+      href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
       icon: true
 ---

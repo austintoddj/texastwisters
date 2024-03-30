@@ -59,17 +59,17 @@ pricingSection:
       label: Enroll today
       href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/334'
       icon: true
-    pricing2:
-      name: Summer Camp
-      price: $40
-      interval: per day
-      shortDescription: May - July
-      features:
-        - feature: 9 AM - 2 PM
-        - feature: Please pack a lunch!
-        - feature: Games, crafts, open gym and more!
-      action:
-        label: Enroll today
-        href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/332'
-        icon: true
+  pricing2:
+    name: Summer Camp
+    price: $40
+    interval: per day
+    shortDescription: May - July
+    features:
+      - feature: 9 AM - 2 PM
+      - feature: Please pack a lunch!
+      - feature: Games, crafts, open gym and more!
+    action:
+      label: Enroll today
+      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/332'
+      icon: true
 ---

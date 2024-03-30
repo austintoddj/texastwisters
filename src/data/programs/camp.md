@@ -47,23 +47,10 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: Good Friday Camp
-    price: $40
-    interval: per day
-    shortDescription: March 29th
-    features:
-      - feature: 9 AM - 2 PM
-      - feature: Please pack a lunch!
-      - feature: Games, crafts, open gym and more!
-    action:
-      label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/332'
-      icon: true
-  pricing2:
     name: Easter Break Camp
     price: $40
     interval: per day
-    shortDescription: April 1st
+    shortDescription: April 1 - April 3
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
@@ -72,4 +59,17 @@ pricingSection:
       label: Enroll today
       href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/334'
       icon: true
+    pricing2:
+      name: Summer Camp
+      price: $40
+      interval: per day
+      shortDescription: May - July
+      features:
+        - feature: 9 AM - 2 PM
+        - feature: Please pack a lunch!
+        - feature: Games, crafts, open gym and more!
+      action:
+        label: Enroll today
+        href: 'https://app.iclasspro.com/portal/texastwisters/camp-details/332'
+        icon: true
 ---

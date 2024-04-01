@@ -7,3 +7,4 @@ npm-debug.log*
 .env*.local
 sitemap*.xml
 robots.txt
+.vercel

@@ -42,10 +42,10 @@ const links = [
     icon: 'article'
   },
   {
-    label: 'Photo Gallery',
-    href: '#',
-    description: 'Gym photos are coming soon, stay tuned!',
-    icon: 'photo'
+    label: 'Liability Waiver',
+    href: 'https://forms.gle/BudgbR39sK1yTgvBA',
+    description: 'Sign our online Release and Waiver of Liability',
+    icon: 'signature'
   }
 ]
 

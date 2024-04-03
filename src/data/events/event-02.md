@@ -1,6 +1,6 @@
 ---
-name: Red Poppy Festival
-description: Join us in the annual Poppy Festival parade as we represent Texas Twisters Gymnastics!
-dates: April 2024
+name: Red Poppy Parade
+description: Walk, flip, or dance with us in the 2024 Red Poppy Parade as we represent Texas Twisters Gymnastics!
+dates: April 27, 2024
 image: '/images/events/event-02.jpg'
 ---

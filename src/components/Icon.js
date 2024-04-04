@@ -25,7 +25,7 @@ import {
   IconPhoto,
   IconPlayerPlayFilled,
   IconPlus,
-    IconSignature,
+  IconSignature,
   IconStarFilled,
   IconUser,
   IconUsers
@@ -61,7 +61,7 @@ const iconOptions = {
   help: IconHelpCircle,
   article: IconArticle,
   photo: IconPhoto,
-    signature: IconSignature,
+  signature: IconSignature
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

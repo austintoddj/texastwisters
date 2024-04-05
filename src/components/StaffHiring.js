@@ -55,8 +55,8 @@ export const StaffHiring = ({ jobs }) => {
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  Looking for a new and exciting opportunity? Check out some of
-                  our current job openings:
+                  Our team is growing! If you're looking for a new and exciting
+                  opportunity, check out our current job openings:
                 </p>
                 {/* Job postings list */}
                 <ul className="mt-5 space-y-5 text-lg text-purple-800">

@@ -11,7 +11,12 @@ const siteLinks = [
   { label: 'Staff', href: '/staff', isExternal: false },
   { label: 'FAQs', href: '/#faq', isExternal: false },
   { label: 'Hiring', href: '/#hiring', isExternal: false },
-  { label: 'Contact us', href: '/contact', isExternal: false }
+  { label: 'Contact us', href: '/contact', isExternal: false },
+  {
+    label: 'Waiver',
+    href: 'https://forms.gle/BudgbR39sK1yTgvBA',
+    isExternal: true
+  }
 ]
 
 function SocialLink({ className, href, icon }) {

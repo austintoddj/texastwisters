@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --ignore-path .gitignore -- --fix",
+    "lint": "next lint",
     "format": "prettier --write .",
     "prepare": "husky install",
     "postbuild": "next-sitemap"
@@ -39,5 +39,43 @@
     "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.5.4",
     "tailwindcss": "^3.3.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "react/no-unescaped-entities": "off",
+      "no-unused-vars": "error",
+      "no-console": "error"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "jsxSingleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "avoid",
+    "endOfLine": "lf",
+    "plugins": [
+      "prettier-plugin-tailwindcss",
+      "@trivago/prettier-plugin-sort-imports"
+    ],
+    "importOrderSortSpecifiers": true
   }
 }

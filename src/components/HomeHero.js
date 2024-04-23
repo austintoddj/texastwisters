@@ -10,15 +10,28 @@ import { Dialog, Transition } from '@headlessui/react'
 /* eslint-disable-next-line */
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 
 /* eslint-disable-next-line */
 import { Fragment, useState } from 'react'
 
 /* eslint-disable-next-line */
 const ratings = [
-  { label: 'Great Schools', stars: 5 },
-  { label: 'Private School Review', stars: 5 },
-  { label: 'Google Reviews', stars: 5 }
+  {
+    label: 'Google',
+    stars: 5,
+    href: 'https://g.page/r/Cd0A4r3iAWaTEB0/review'
+  },
+  {
+    label: 'Facebook',
+    stars: 5,
+    href: 'https://www.facebook.com/texastwistersgymnastics/reviews'
+  },
+  {
+    label: 'Yelp',
+    stars: 5,
+    href: 'https://www.yelp.com/biz/texas-twisters-gymnastics-georgetown'
+  }
 ]
 
 export const HomeHero = ({ enrollment }) => {
@@ -44,7 +57,7 @@ export const HomeHero = ({ enrollment }) => {
       >
         {/* Hero text content */}
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
-          <div>
+          <div className="block">
             <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
               Registration fees waived through 2024!
             </span>
@@ -83,36 +96,45 @@ export const HomeHero = ({ enrollment }) => {
             {/*</Button>*/}
           </div>
           {/* Social proof */}
-          {/* <p className="hidden text-sm font-medium tracking-wider text-purple-900 uppercase sm:block lg:hidden xl:block mt-14">
-            Rated 5 stars by over{" "}
-            <span className="font-semibold text-purple-600">100 parents</span>
+          <p className="hidden text-sm font-medium tracking-wider text-purple-900 uppercase sm:block lg:hidden xl:block mt-14">
+            Rated 5 stars by{' '}
+            <span className="font-semibold text-purple-600">
+              parents like you
+            </span>
           </p>
           <div className="flex-col hidden mt-8 overflow-hidden divide-y sm:flex sm:mt-5 sm:flex-row sm:divide-x sm:divide-y-0 lg:hidden xl:flex divide-purple-400/20">
             {ratings.map((rating, index) => (
-              <div
-                key={`primary-${rating.label}`}
-                className={clsx(
-                  index == 0 && "pb-5 sm:pb-0 sm:pr-10",
-                  index == 1 && "py-5 sm:py-0 sm:px-10",
-                  index == 2 && "pt-5 sm:pt-0 sm:pl-10",
-                  "flex flex-col items-center"
-                )}
+              <Link
+                key={index}
+                href={rating.href}
+                aria-label={rating.label + ' icon - opens in new tab'}
+                target="_blank"
               >
-                <div className="flex justify-center w-full space-x-1">
-                  {[...Array(rating.stars)].map((e, i) => (
-                    <Icon
-                      icon="starFilled"
-                      className="w-4 h-4 text-yellow-500"
-                      key={`primary-${rating.label}-star-${i}`}
-                    />
-                  ))}
+                <div
+                  key={`primary-${rating.label}`}
+                  className={clsx(
+                    index == 0 && 'pb-5 sm:pb-0 sm:pr-10',
+                    index == 1 && 'py-5 sm:py-0 sm:px-10',
+                    index == 2 && 'pt-5 sm:pt-0 sm:pl-10',
+                    'flex flex-col items-center'
+                  )}
+                >
+                  <div className="flex justify-center w-full space-x-1">
+                    {[...Array(rating.stars)].map((e, i) => (
+                      <Icon
+                        icon="starFilled"
+                        className="w-4 h-4 text-yellow-500"
+                        key={`primary-${rating.label}-star-${i}`}
+                      />
+                    ))}
+                  </div>
+                  <p className="mt-2.5 text-xs font-bold text-purple-700 uppercase tracking-wide">
+                    {rating.label}
+                  </p>
                 </div>
-                <p className="mt-2.5 text-xs font-bold text-purple-700 uppercase tracking-wide">
-                  {rating.label}
-                </p>
-              </div>
+              </Link>
             ))}
-          </div> */}
+          </div>
         </div>
         {/* Hero image & video */}
         <div className="mx-auto mt-16 flex max-w-3xl flex-col justify-center lg:col-span-6 lg:mt-0 lg:max-w-none">
@@ -187,41 +209,48 @@ export const HomeHero = ({ enrollment }) => {
         {/*    </Dialog>*/}
         {/*</Transition>*/}
       </div>
-      {/* Visible only on sm screens ( <= 640px ) and lg screens ( >= 1024px	< 1280px ) */}
-      {/*<div className="flex flex-col items-center mt-20 lg:mt-24 sm:hidden lg:flex xl:hidden">*/}
-      {/*  /!* Social proof *!/*/}
-      {/*  <p className="text-sm font-semibold tracking-wider text-purple-900 uppercase">*/}
-      {/*    Rated 5 stars by over{" "}*/}
-      {/*    <span className="font-semibold text-purple-600">100 parents</span>*/}
-      {/*  </p>*/}
-      {/*  <div className="flex flex-col mt-8 overflow-hidden divide-y sm:divide-y-0 sm:divide-x sm:flex-row divide-purple-400/20">*/}
-      {/*    {ratings.map((rating, index) => (*/}
-      {/*      <div*/}
-      {/*        key={`secondary-${rating.label}`}*/}
-      {/*        className={clsx(*/}
-      {/*          index == 0 && "pb-5 sm:pb-0 sm:pr-10",*/}
-      {/*          index == 1 && "py-5 sm:py-0 sm:px-10",*/}
-      {/*          index == 2 && "pt-5 sm:pt-0 sm:pl-10",*/}
-      {/*          "flex flex-col items-center"*/}
-      {/*        )}*/}
-      {/*      >*/}
-      {/*        <div className="flex justify-center w-full space-x-1">*/}
-      {/*          {[...Array(rating.stars)].map((e, i) => (*/}
-      {/*            <Icon*/}
-      {/*              icon="starFilled"*/}
-      {/*              className="w-4.5 h-4.5 lg:w-5 lg:h-5 text-yellow-500"*/}
-      {/*              key={`secondary-${rating.label}-star-${i}`}*/}
-      {/*            />*/}
-      {/*          ))}*/}
-      {/*        </div>*/}
+      {/*Visible only on sm screens ( <= 640px ) and lg screens ( >= 1024px	< 1280px ) */}
+      <div className="flex flex-col items-center mt-20 lg:mt-24 sm:hidden lg:flex xl:hidden">
+        {/* Social proof */}
+        <p className="text-sm font-semibold tracking-wider text-purple-900 uppercase">
+          Rated 5 stars by over{' '}
+          <span className="font-semibold text-purple-600">100 parents</span>
+        </p>
+        <div className="flex flex-col mt-8 overflow-hidden divide-y sm:divide-y-0 sm:divide-x sm:flex-row divide-purple-400/20">
+          {ratings.map((rating, index) => (
+            <Link
+              key={index}
+              href={rating.href}
+              aria-label={rating.label + ' icon - opens in new tab'}
+              target="_blank"
+            >
+              <div
+                key={`secondary-${rating.label}`}
+                className={clsx(
+                  index == 0 && 'pb-5 sm:pb-0 sm:pr-10',
+                  index == 1 && 'py-5 sm:py-0 sm:px-10',
+                  index == 2 && 'pt-5 sm:pt-0 sm:pl-10',
+                  'flex flex-col items-center'
+                )}
+              >
+                <div className="flex justify-center w-full space-x-1">
+                  {[...Array(rating.stars)].map((e, i) => (
+                    <Icon
+                      icon="starFilled"
+                      className="w-4.5 h-4.5 lg:w-5 lg:h-5 text-yellow-500"
+                      key={`secondary-${rating.label}-star-${i}`}
+                    />
+                  ))}
+                </div>
 
-      {/*        <p className="mt-2.5 text-xs font-bold text-purple-700 uppercase tracking-wide">*/}
-      {/*          {rating.label}*/}
-      {/*        </p>*/}
-      {/*      </div>*/}
-      {/*    ))}*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+                <p className="mt-2.5 text-xs font-bold text-purple-700 uppercase tracking-wide">
+                  {rating.label}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }

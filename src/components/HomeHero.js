@@ -213,8 +213,10 @@ export const HomeHero = ({ enrollment }) => {
       <div className="flex flex-col items-center mt-20 lg:mt-24 sm:hidden lg:flex xl:hidden">
         {/* Social proof */}
         <p className="text-sm font-semibold tracking-wider text-purple-900 uppercase">
-          Rated 5 stars by over{' '}
-          <span className="font-semibold text-purple-600">100 parents</span>
+          Highly rated by{' '}
+          <span className="font-semibold text-purple-600">
+            parents like you
+          </span>
         </p>
         <div className="flex flex-col mt-8 overflow-hidden divide-y sm:divide-y-0 sm:divide-x sm:flex-row divide-purple-400/20">
           {ratings.map((rating, index) => (

@@ -97,7 +97,7 @@ export const HomeHero = ({ enrollment }) => {
           </div>
           {/* Social proof */}
           <p className="hidden text-sm font-medium tracking-wider text-purple-900 uppercase sm:block lg:hidden xl:block mt-14">
-            Rated 5 stars by{' '}
+            Highly rated by{' '}
             <span className="font-semibold text-purple-600">
               parents like you
             </span>

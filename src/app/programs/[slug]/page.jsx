@@ -15,6 +15,9 @@ export async function generateMetadata({ params: { slug } }) {
     description: program.hero.description,
     alternates: {
       canonical: './'
+    },
+    openGraph: {
+      images: program.hero.image.src
     }
   }
 }

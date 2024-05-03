@@ -70,6 +70,10 @@ export const Footer = ({ programs, contact }) => {
                 href="https://www.facebook.com/texastwistersgymnastics"
                 icon="facebook"
               />
+              <SocialLink
+                href="https://www.linkedin.com/company/texastwistersgymnastics"
+                icon="linkedin"
+              />
             </div>
           </div>
         </div>

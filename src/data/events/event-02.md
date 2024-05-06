@@ -1,6 +1,6 @@
 ---
-name: Spring Show
-description: Watch and cheer on your gymnast as they show off the skills they've learned so far at Texas Twisters!
-dates: May 11, 2024
-image: '/images/events/event-01.jpg'
+name: Summer Camps
+description: It's time for CAMP, the perfect way for your children to stay active and have fun during summer break!
+dates: May 27 - August 14
+image: '/images/events/event-02.jpg'
 ---

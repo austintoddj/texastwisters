@@ -43,13 +43,15 @@ export const Testimonials = () => {
                 'rounded-3xl px-8 py-8 transition duration-300 ease-in-out sm:px-6 md:px-8 lg:px-5 2xl:px-8'
               )}
             >
-              {/*<Image*/}
-              {/*  src={item.data.image}*/}
-              {/*  width={80}*/}
-              {/*  height={80}*/}
-              {/*  className="h-20 w-20 rounded-full border-2 border-yellow-300 object-cover drop-shadow-2xl filter"*/}
-              {/*  alt={item.data.name}*/}
-              {/*/>*/}
+              {item.data.image && (
+                <Image
+                  src={item.data.image}
+                  width={80}
+                  height={80}
+                  className="h-20 w-20 rounded-full border-2 border-yellow-300 object-cover drop-shadow-2xl filter"
+                  alt={item.data.name}
+                />
+              )}
               <p className="mt-3 text-lg font-bold text-purple-900">
                 {item.data.name}
               </p>

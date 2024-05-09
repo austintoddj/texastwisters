@@ -27,7 +27,7 @@ import {
   IconPlus,
   IconSignature,
   IconStarFilled,
-    IconStarHalfFilled,
+  IconStarHalfFilled,
   IconUser,
   IconUsers
 } from '@tabler/icons-react'
@@ -49,7 +49,7 @@ const iconOptions = {
   users: IconUsers,
   playFilled: IconPlayerPlayFilled,
   starFilled: IconStarFilled,
-    starHalfFilled: IconStarHalfFilled,
+  starHalfFilled: IconStarHalfFilled,
   check: IconCheck,
   certificate: IconCertificate,
   plus: IconPlus,

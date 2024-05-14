@@ -119,6 +119,8 @@ export const HomeHero = ({ enrollment }) => {
                     'flex flex-col items-center'
                   )}
                 >
+                  {/*TODO: Dynamically fill the stars below with star-half-filled icon */}
+
                   <div className="flex justify-center w-full space-x-1">
                     {[...Array(rating.stars)].map((e, i) => (
                       <Icon
@@ -143,7 +145,7 @@ export const HomeHero = ({ enrollment }) => {
               src={heroImage}
               priority
               className="h-auto w-full"
-              alt="Texas Twisters Photo Collage"
+              alt="A picture collage of children doing gymnastics at Texas Twisters Gymnastics"
               sizes="(min-width: 1280px) 39rem, (min-width: 1024px) 50vw, (min-width: 768px) 48rem, 100vw"
             />
             {/*<div className="absolute inset-0 flex items-center justify-center">*/}

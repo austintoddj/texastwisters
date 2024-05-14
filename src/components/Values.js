@@ -1,27 +1,27 @@
 import checkmark from '/public/images/illustrations/checkmark.svg'
-import image from '/public/images/stock/values.jpg'
+import image from '/public/images/staff/values.jpg'
 import Image from 'next/image'
 
 const values = [
   {
     value: 'Safety First',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et'
+      'Your safety is our top priority! We know how much fun gymnastics can be, and we want you to enjoy it without worry.'
   },
   {
-    value: 'Skill Progression',
+    value: 'Fun and Enjoyment',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et'
+      'Fun for all! Gymnastics should be a blast, no matter your age or skill level.'
   },
   {
-    value: 'Positive Coaching',
+    value: 'Progression and Development',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et'
+      'Learn at your own pace, but keep pushing yourself! We will help you grow without feeling rushed.'
   },
   {
-    value: 'Inclusivity',
+    value: 'Respect and Teamwork',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod tempor incididunt ut labore et'
+      'Gymnastics builds character! It teaches kids discipline, perseverance, and respect for others, all while having fun!'
   }
 ]
 

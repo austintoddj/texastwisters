@@ -38,7 +38,7 @@ export const StaffHiring = ({ jobs }) => {
                   fill
                   src={owners.image}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
-                  alt=""
+                  alt="The owners of Texas Twisters Gymanstics"
                 />
               </div>
               <div className="mt-3.5 pl-2 text-lg sm:pl-0 sm:text-center">
@@ -117,7 +117,7 @@ export const StaffHiring = ({ jobs }) => {
                   fill
                   src={owners.image}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
-                  alt=""
+                  alt="The owners of Texas Twisters Gymnastics"
                 />
               </div>
               <div className="mt-3.5 pl-2 text-lg sm:pl-0 sm:text-center">

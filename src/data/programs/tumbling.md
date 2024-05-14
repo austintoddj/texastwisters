@@ -69,7 +69,7 @@ pricingSection:
       - feature: All skill levels
       - feature: Ages 5-18
     action:
-      label: Coming soon
+      label: Coming soon!
       href: '#'
-      icon: true
+      icon: false
 ---

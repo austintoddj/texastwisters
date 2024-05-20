@@ -6,12 +6,12 @@ const values = [
   {
     value: 'Safety First',
     description:
-      'Your safety is our top priority! We know how much fun gymnastics can be, and we want you to enjoy it without worry.'
+      'Your safety is our top priority! We promote a safe and worry-free environment for our athletes and our community.'
   },
   {
     value: 'Fun and Enjoyment',
     description:
-      'Fun for all! Gymnastics should be a blast, no matter your age or skill level.'
+      'Gymnastics should be an exciting and positive experience. We value longevity in the sport by focusing on quality over quantity.'
   },
   {
     value: 'Progression and Development',

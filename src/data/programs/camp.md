@@ -47,11 +47,12 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: Summer Camp
+    name: Day Camps
     price: $40
     interval: per day
-    shortDescription: May - July
+    shortDescription: May - August
     features:
+      - feature: Available during GISD school breaks
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
       - feature: Games, crafts, open gym and more!
@@ -60,7 +61,7 @@ pricingSection:
       href: 'https://app.iclasspro.com/portal/texastwisters/camps/5'
       icon: true
   pricing2:
-    name: Coming Soon!
+    name: Holiday Camps
     price: $40
     interval: per day
     shortDescription: To be determined

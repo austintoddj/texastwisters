@@ -52,7 +52,7 @@ pricingSection:
     interval: per month
     shortDescription: Monday
     features:
-      - feature: 8:15 PM - 9:15 PM
+      - feature: 8:00 PM - 9:00 PM
       - feature: 60 minutes
       - feature: Ages 18+
     action:

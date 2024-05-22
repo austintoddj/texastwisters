@@ -64,7 +64,7 @@ pricingSection:
     name: Homeschool Open Gym
     price: $15
     interval: per drop-in
-    shortDescription: Every Wednesday
+    shortDescription: Wednesdays during GISD school year
     features:
       - feature: 10:30 AM - 12:00 PM
       - feature: Ages 1+

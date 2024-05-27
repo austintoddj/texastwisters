@@ -28,12 +28,12 @@ export default function ProgramPage({ params: { slug } }) {
   return (
     <>
       {program?.hero && <ProgramHero hero={program.hero} />}
-      {/*{program?.infoSection && (*/}
-      {/*  <ProgramInformation data={program.infoSection} />*/}
-      {/*)}*/}
-      {/*{program?.descriptionSection && (*/}
-      {/*  <ProgramDescription data={program.descriptionSection} />*/}
-      {/*)}*/}
+      {program?.infoSection && (
+        <ProgramInformation data={program.infoSection} />
+      )}
+      {program?.descriptionSection && (
+        <ProgramDescription data={program.descriptionSection} />
+      )}
       {program?.pricingSection && (
         <ProgramPricing data={program.pricingSection} />
       )}

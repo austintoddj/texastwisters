@@ -63,27 +63,27 @@ export const ProgramInformation = ({ data }) => {
           />
 
           <InfoCard
-            icon="calendar"
-            title="Dates"
+            icon="stars"
+            title="Skill levels"
             gradientColors={{
               bgColor: 'bg-purple-50',
               iconBgColor: 'bg-purple-200',
               startColor: 'from-purple-200',
               endColor: 'to-purple-300'
             }}
-            text={data.dates}
+            text={data.levels}
           />
 
           <InfoCard
             icon="clock"
-            title="Schedule"
+            title="Class length"
             gradientColors={{
               bgColor: 'bg-rose-50',
               iconBgColor: 'bg-rose-200',
               startColor: 'from-rose-100',
               endColor: 'to-rose-300'
             }}
-            text={data.schedule}
+            text={data.duration}
           />
 
           <InfoCard

@@ -28,7 +28,7 @@ export default function StaffPage() {
       {/*<AlternatingFeatures />*/}
       {/*<Stats />*/}
       <Staff />
-      {/*<Values />*/}
+      <Values />
     </>
   )
 }

@@ -19,3 +19,5 @@ npm run dev # dev server at http://localhost:3000
 ## License
 
 This project is not licensed under an open-source license and is the intellectual property of Texas Twisters Gymnastics, LLC. The source is available only as an educational resource and to accept fixes for minor mistakes.
+
+[NO-OP]

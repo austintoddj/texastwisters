@@ -14,8 +14,8 @@ export const Banner = () => {
   return (
     <>
       <div className="pointer-events-none fixed inset-x-0 bottom-0 sm:px-6 sm:pb-5 lg:px-8 z-40">
-        <div className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
-          <p className="text-sm leading-6 text-white">
+        <div className="pointer-events-auto flex items-center justify-between gap-x-6 bg-purple-200 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
+          <p className="font-medium leading-6 text-purple-700">
             <Link
               href="https://app.iclasspro.com/portal/texastwisters/news/2"
               target="_blank"
@@ -28,8 +28,8 @@ export const Banner = () => {
               >
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              Texas Twisters will be closed from July 1 – 6. Classes, camps, and
-              open gym will resume on July 7&nbsp;&nbsp;
+              Texas Twisters Gymnastics will be closed from July 1 through July
+              6. Read more &nbsp;&nbsp;
               <span aria-hidden="true">&rarr;</span>
             </Link>
           </p>
@@ -41,7 +41,7 @@ export const Banner = () => {
             <span className="sr-only">Dismiss</span>
             <Icon
               icon="close"
-              className="h-6 w-6 text-white"
+              className="h-6 w-6 text-purple-700"
               aria-hidden="true"
             />
           </button>

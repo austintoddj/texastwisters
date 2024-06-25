@@ -1,3 +1,4 @@
+import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -7,7 +8,6 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
-import {Banner} from '@/components/Banner'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],

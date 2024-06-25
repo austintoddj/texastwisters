@@ -1,8 +1,8 @@
+import { getAllItems } from '@/lib/getItems'
 import { marked } from 'marked'
-import {getAllItems} from '@/lib/getItems'
 
 export const PoliciesHero = () => {
-    const policies = getAllItems('policies')
+  const policies = getAllItems('policies')
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-purple-25 via-purple-25 to-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -13,8 +13,8 @@ export const PoliciesHero = () => {
             Rules & Policies
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
-            We want to ensure that the gym has a positive and healthy culture, and
-            this policy is designed with that in mind.
+            We want to ensure that the gym has a positive and healthy culture,
+            and this policy is designed with that in mind.
           </p>
         </div>
         {policies.map((policy, i) => (

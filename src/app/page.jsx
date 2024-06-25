@@ -33,6 +33,7 @@ export default function HomePage() {
       <FeaturedPrograms />
       <Testimonials />
       <Faqs faqs={faqs} />
+
     </>
   )
 }

@@ -28,9 +28,10 @@ import {
   IconSignature,
   IconStarFilled,
   IconStarHalfFilled,
+  IconStars,
   IconUser,
   IconUsers,
-    IconStars
+    IconX
 } from '@tabler/icons-react'
 
 const iconOptions = {
@@ -65,7 +66,8 @@ const iconOptions = {
   article: IconArticle,
   photo: IconPhoto,
   signature: IconSignature,
-    stars: IconStars
+  stars: IconStars,
+    close: IconX
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

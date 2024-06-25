@@ -7,6 +7,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
+import {Banner} from '@/components/Banner'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
         {children}
         <CallToAction />
         <Footer programs={programs} contact={contact} />
+        <Banner />
         <Analytics />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
       </body>

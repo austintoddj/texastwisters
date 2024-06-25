@@ -9,7 +9,7 @@ import { Fragment } from 'react'
 const images = [
   { src: image1, alt: 'An adult and child doing gymnastics on the beach' },
   { src: image2, alt: 'A child smiling on a green mat' },
-  { src: image3, alt: 'A child and a man at a baseball field' },
+  { src: image3, alt: 'A father and son at a baseball field' },
   { src: image4, alt: 'A boy surfing at the beach' },
   { src: image5, alt: 'A man and woman smiling on bicycles' }
 ]
@@ -30,7 +30,7 @@ export function StaffHero() {
             gymnastics.
           </p>
         </div>
-        {/* School images grid */}
+        {/* Family images grid */}
         <div className="mt-14 grid grid-flow-row-dense grid-cols-2 gap-2 sm:mt-16 sm:grid-cols-3 sm:gap-3 md:gap-4 lg:mt-24 lg:gap-6">
           {images.map((image, index) => (
             <Fragment key={`gallery-image-${index}`}>
@@ -55,9 +55,9 @@ export function StaffHero() {
             </Fragment>
           ))}
         </div>
-        {/* About school */}
+        {/* About us */}
         <div className="prose prose-lg mx-auto mt-14 sm:prose-xl sm:mt-16 lg:mt-24">
-          <p className="text-3xl">A note from the owner:</p>
+          <h2>A little about us..</h2>
           <p>
             I was introduced to gymnastics at four years old, and it has led to
             a lifelong passion. What started in preschool, grew to recreational

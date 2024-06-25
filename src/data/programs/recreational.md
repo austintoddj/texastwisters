@@ -5,7 +5,7 @@ featured: true
 hero:
   headline: Texas Twisters Recreational Program
   description: Recreational classes, from beginner to advanced, for students age 5+ with a focus on developing and refining fundamental gymnastics skills on bars, beam, floor, vault, and trampolines.
-#  text: Our classes for beginners to advanced gymnasts focus on developing fundamental skills on the vault, uneven bars, beam, and floor. Gymnasts will enjoy learning new skills, making new friends, and discovering the importance of teamwork.
+  #  text: Our classes for beginners to advanced gymnasts focus on developing fundamental skills on the vault, uneven bars, beam, and floor. Gymnasts will enjoy learning new skills, making new friends, and discovering the importance of teamwork.
   text: Our recreational program focuses on the progressive development of gymnastics skills from the ground up, all while gaining confidence, coordination, flexibility, and strength.
   action:
     label: Enroll today
@@ -18,7 +18,7 @@ infoSection:
   text: We offer recreational, progressive gymnastics classes for all experience levels. Contact us today to schedule an evaluation and find the perfect fit!
   ages: 5 - 18 years old
   levels: >
-      Beginner, Intermediate, Advanced
+    Beginner, Intermediate, Advanced
   duration: 1 hour
   classSize: 8 kids per class
 descriptionSection:

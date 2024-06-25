@@ -11,6 +11,7 @@ const siteLinks = [
   { label: 'Staff', href: '/staff', isExternal: false },
   { label: 'FAQs', href: '/#faq', isExternal: false },
   { label: 'Hiring', href: '/#hiring', isExternal: false },
+  { label: 'Policies', href: '/policies', isExternal: false },
   { label: 'Contact us', href: '/contact', isExternal: false },
   {
     label: 'Waiver',

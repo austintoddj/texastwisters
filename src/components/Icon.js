@@ -1,4 +1,5 @@
 import {
+  IconAlertCircleFilled,
   IconArrowNarrowRight,
   IconArticle,
   IconBrandFacebook,
@@ -35,6 +36,7 @@ import {
 } from '@tabler/icons-react'
 
 const iconOptions = {
+  alertCircleFilled: IconAlertCircleFilled,
   calendar: IconCalendar,
   externalLink: IconExternalLink,
   user: IconUser,

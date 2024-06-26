@@ -4,24 +4,24 @@ import Image from 'next/image'
 
 const values = [
   {
-    value: 'Safety First',
+    value: 'Safety',
     description:
-      'Your safety is our top priority! We promote a safe and worry-free environment for our athletes and our community.'
+      'We hold the physical, psychological, and emotional safety of each of our students as our highest priority.'
   },
   {
-    value: 'Fun and Enjoyment',
+    value: 'Integrity',
     description:
-      'Gymnastics should be an exciting and positive experience. We value longevity in the sport by focusing on quality over quantity.'
+      'We believe in building trust with you, one honest conversation and action at a time.'
   },
   {
-    value: 'Progression and Development',
+    value: 'Accountability',
     description:
-      'Learn at your own pace, but keep pushing yourself! We will help you grow without feeling rushed.'
+      'We hold ourselves responsible for our actions and strive to be honest, fair, and trustworthy.'
   },
   {
-    value: 'Respect and Teamwork',
+    value: 'Transparency',
     description:
-      'Gymnastics builds character! It teaches kids discipline, perseverance, and respect for others, all while having fun!'
+      'We believe in clear and honest communication. We will always be upfront with you and your family.'
   }
 ]
 
@@ -37,9 +37,10 @@ export const Values = () => {
               Our core values and principles
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-purple-800 sm:text-center md:mt-5 lg:mx-0 lg:text-left">
-              Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut
-              libero malesuada feugiat. Donec rutrum congue leo eget malesuada.
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              At Texas Twisters, we believe in serving our community with
+              respect, integrity, and transparency. Our core values are more
+              than just aspirations, they shape and define who we are and how we
+              operate.
             </p>
             {/* Values */}
             <div className="mt-10 grid max-w-4xl gap-6 sm:mx-auto sm:grid-cols-2 lg:mx-0 lg:max-w-md lg:grid-cols-1">

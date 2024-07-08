@@ -1,4 +1,3 @@
-import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -48,7 +47,6 @@ export default function RootLayout({ children }) {
         {children}
         <CallToAction />
         <Footer programs={programs} contact={contact} />
-        /* <Banner /> */
         <Analytics />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
       </body>

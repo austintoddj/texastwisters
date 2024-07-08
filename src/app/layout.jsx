@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
         {children}
         <CallToAction />
         <Footer programs={programs} contact={contact} />
-        <Banner />
+        /* <Banner /> */
         <Analytics />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
       </body>

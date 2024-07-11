@@ -1,6 +1,6 @@
 ---
-name: Gym Closed
-description: Heads up! The gym will be closed for 4th of July week. Classes and camps will resume on the following Monday.
-dates: July 1 - July 6
+name: Evaluations
+description: Semi-annual evaluations are coming up - coaches will send progress reports home with your child. Let's see how much you've improved!
+dates: Fall 2024
 image: '/images/events/event-02.jpg'
 ---

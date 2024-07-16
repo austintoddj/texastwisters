@@ -77,6 +77,9 @@ export const Staff = () => {
                     </div>
                   )}
                 </div>
+                {member.data.bio && (
+                  <p className="prose prose-slate">{member.data.bio}</p>
+                )}
               </div>
             ))}
           </div>

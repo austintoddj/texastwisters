@@ -14,7 +14,7 @@ export const PoliciesHero = () => {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
             We want to ensure that the gym has a positive and healthy culture,
-            and this policy is designed with that in mind.
+            our rules and policies are designed with that in mind.
           </p>
         </div>
         {policies.map((policy, i) => (

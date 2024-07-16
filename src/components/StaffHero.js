@@ -82,7 +82,7 @@ export function StaffHero() {
             call it our home. We love Georgetown and can't wait to bring this
             business to you!
           </p>
-          <p>- Becky</p>
+          <p>~ Becky</p>
         </div>
       </div>
     </section>

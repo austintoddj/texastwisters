@@ -3,12 +3,20 @@ import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import Image from 'next/image'
 
+const qualifications = [
+    'Gymnastics coaching experience',
+    '9-5 availability Monday-Friday',
+    'Amazing recommendations and positive reviews',
+    'A love and passion for teaching and helping children grow and succeed',
+    'A commitment to creating a positive classroom experience for all students, no matter their learning needs',
+]
+
 const owners = {
   name: 'The Austin Family',
   image: '/images/staff/family.jpg'
 }
 
-export const StaffHiring = ({ jobs }) => {
+export const StaffHiring = () => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
@@ -55,50 +63,32 @@ export const StaffHiring = ({ jobs }) => {
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  Our team is growing! If you're looking for a new and exciting
-                  opportunity, check out our current job openings:
+                  Our team is growing! We're looking for an enthusiastic and experienced gymnastics coach. If this sounds like you, we'd love to chat!
                 </p>
-                {/* Job postings list */}
+                {/* Job qualifications list */}
                 <ul className="mt-5 space-y-5 text-lg text-purple-800">
-                  {jobs.map((job, index) => (
-                    <li key={`job-${index}`} className="flex items-center">
-                      <Image
-                        className="mr-3 h-7 w-7 flex-shrink-0"
-                        src={checkmark}
-                        alt=""
-                      />
-                      <span>{job.data.title}</span>
-                      <a
-                        href={job.data.href}
-                        className="group ml-3 flex w-[126px] max-w-full cursor-pointer items-center border-b-2 border-solid border-purple-600 bg-transparent px-0 py-0.5 text-left leading-6 text-purple-600 no-underline transition duration-300 ease-in-out hover:border-purple-400 hover:text-purple-500"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={
-                          'Apply now for ' +
-                          job.data.title +
-                          ' - opens in new tab'
-                        }
-                      >
-                        <span className="text-left text-base font-bold">
-                          Apply now
-                        </span>
-                        <Icon
-                          icon="arrowNarrowRight"
-                          className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
-                          stroke={2}
-                        />
-                      </a>
-                    </li>
-                  ))}
+                    {qualifications.map((qualification, index) => (
+                        <li
+                            key={`assurance-${index}`}
+                            className="flex items-center"
+                        >
+                            <Image
+                                className="mr-3 h-7 w-7 flex-shrink-0"
+                                src={checkmark}
+                                alt=""
+                            />
+                            <span>{qualification}</span>
+                        </li>
+                    ))}
                 </ul>
                 {/* Link to team section */}
                 <Button
-                  href="/staff#team"
+                  href="https://forms.gle/Xagd6meiKKzttkbm8"
                   variant="accent"
                   size="sm"
                   className="mt-10"
                 >
-                  Meet the rest of the team
+                  Apply now
                   <Icon
                     icon="arrowNarrowRight"
                     className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"

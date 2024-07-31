@@ -56,7 +56,7 @@ export function StaffHero() {
           ))}
         </div>
         {/* About us */}
-        <div className="prose prose-lg mx-auto mt-14 sm:prose-xl sm:mt-16 lg:mt-24">
+        <div className="prose prose-lg mx-auto mt-14 sm:prose-xl sm:mt-16 lg:mt-24" id="about">
           <h2>A little about us..</h2>
           <p>
             I was introduced to gymnastics at four years old, and it has led to

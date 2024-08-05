@@ -19,6 +19,7 @@ import {
   IconExternalLink,
   IconHelpCircle,
   IconLifebuoy,
+  IconLinkOff,
   IconMail,
   IconMapPin,
   IconMoodKid,
@@ -69,7 +70,8 @@ const iconOptions = {
   photo: IconPhoto,
   signature: IconSignature,
   stars: IconStars,
-  close: IconX
+  close: IconX,
+  linkOff: IconLinkOff
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

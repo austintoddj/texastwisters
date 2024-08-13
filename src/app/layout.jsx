@@ -1,4 +1,3 @@
-import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -50,12 +49,6 @@ export default function RootLayout({ children }) {
         <Footer programs={programs} contact={contact} />
         <Analytics />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          icon="linkOff"
-          content="Heads up! The Customer Portal is experiencing connectivity issues, we apologize for the inconvenience"
-          href="https://status.iclasspro.com"
-          color="rose"
-        />
       </body>
     </html>
   )

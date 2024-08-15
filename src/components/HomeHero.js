@@ -20,7 +20,7 @@ const ratings = [
   {
     label: 'Google',
     stars: 5,
-    href: 'https://g.page/r/Cd0A4r3iAWaTEB0/review'
+    href: 'https://maps.app.goo.gl/LQZ6ZdNHYrAze4kX6'
   },
   {
     label: 'Facebook',

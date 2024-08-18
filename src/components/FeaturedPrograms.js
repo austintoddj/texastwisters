@@ -49,7 +49,7 @@ const ProgramCard = ({ program, index }) => (
         </div>
         <div className="mt-8">
           <Button href={`/programs/${program.slug}`} variant="accent" size="sm">
-            Our {program.data.name} program
+            Our <span className="lowercase">{program.data.name}</span> program
             <Icon
               icon="arrowNarrowRight"
               className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"

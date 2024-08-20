@@ -4,8 +4,8 @@ dropdownDescription: Bring your friends and family to celebrate your big day.
 featured: false
 hero:
   headline: Texas Twisters Birthday Parties
-  description: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy 60 minutes of obstacle courses, organized games, and supervised open gym time. After playing, you'll have 30 minutes in our party area for food and gifts. Don't wait, grab your spot today!
-  text: We want to help you give your child the best birthday party! With the gym to themselves, they'll enjoy 60 minutes of obstacle courses, organized games, and supervised open gym time. After playing, you'll have 30 minutes in our party area for food and gifts. Don't wait, grab your spot today!
+  description: Give your child the ultimate birthday bash! They'll have an hour of non-stop fun with obstacle courses, games, and free play in our gym. Then, enjoy 30 minutes for cake and presents in our party area. Book now!
+  text: Give your child the ultimate birthday bash! They'll have an hour of non-stop fun with obstacle courses, games, and free play in our gym. Then, enjoy 30 minutes for cake and presents in our party area. Book now!
   action:
     label: Reserve today
     href: 'https://app.iclasspro.com/portal/texastwisters/party-booking-01-date'
@@ -45,7 +45,7 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Add participants to either package for $10 per additional guest, up to 30 guests.
+  text: Add participants to either package for $10 per additional guest, up to 25 guests.
   pricing1:
     name: Silver package
     price: $250

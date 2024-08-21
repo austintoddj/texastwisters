@@ -13,8 +13,12 @@ export function getItemData(slug, type) {
   return data
 }
 
-export function getAllItems(dir) {
+export function getAllItems(dir, shuffle = false) {
   const files = fs.readdirSync(path.join(`src/data/${dir}`))
+
+  if (shuffle) {
+    files.sort(() => Math.random() - 0.5)
+  }
 
   return files.map(filename => {
     const fileContents = fs.readFileSync(

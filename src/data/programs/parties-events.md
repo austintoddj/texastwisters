@@ -8,7 +8,7 @@ hero:
   text: Give your child the ultimate birthday bash! They'll have an hour of non-stop fun with obstacle courses, games, and free play in our gym. Then, enjoy 30 minutes for cake and presents in our party area. Book now!
   action:
     label: Reserve today
-    href: 'https://app.iclasspro.com/portal/texastwisters/party-booking-01-date'
+    href: 'https://portal.iclasspro.com/texastwisters/party-booking-01-date'
     icon: true
   image:
     src: '/images/programs/parties-events/hero.jpg'
@@ -57,7 +57,7 @@ pricingSection:
       - feature: 30 minutes in party area
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/party-booking-01-date'
+      href: 'https://portal.iclasspro.com/texastwisters/party-booking-01-date'
       icon: true
   pricing2:
     name: Gold package
@@ -70,6 +70,6 @@ pricingSection:
       - feature: 30 minutes in party area
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/party-booking-01-date'
+      href: 'https://portal.iclasspro.com/texastwisters/party-booking-01-date'
       icon: true
 ---

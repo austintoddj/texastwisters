@@ -8,7 +8,7 @@ hero:
   text: Build an athletic foundation for all sports through the strength, flexibility, and coordination that our tumbling classes offer.
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=60'
+    href: 'https://portal.iclasspro.com/texastwisters/classes?programs=60'
     icon: true
   image:
     src: '/images/programs/tumbling/hero.jpg'
@@ -57,7 +57,7 @@ pricingSection:
       - feature: Co-ed class
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/class-details/24?filters=%7B%22programs%22:%2260%22%7D'
+      href: 'https://portal.iclasspro.com/texastwisters/class-details/24?filters=%7B%22programs%22:%2260%22%7D'
       icon: true
   pricing2:
     name: Tumbling Clinic

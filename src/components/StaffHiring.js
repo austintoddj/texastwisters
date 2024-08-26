@@ -8,7 +8,15 @@ const owners = {
   image: '/images/staff/family.jpg'
 }
 
-export const StaffHiring = ({ jobs }) => {
+const requirements = [
+    'Patient, kind and enthusiastic!',
+    'Gymnastics experience preferred',
+    'Weekday availability between 9am - 5pm',
+    'Excellent communication skills',
+    'USAG background checks and SafeSport training',
+]
+
+export const StaffHiring = () => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
@@ -25,9 +33,7 @@ export const StaffHiring = ({ jobs }) => {
               Meet the owners of Texas Twisters
             </h2>
             <p className="mt-4 max-w-xl text-xl leading-relaxed text-purple-800 md:mt-5">
-              After decades of involvement in the gymnastics community, our
-              family is excited to share our passion for the sport with the
-              community of Georgetown.
+              After decades of involvement in the gymnastics community, our family is excited to share our passion for the sport with the community of Georgetown.
             </p>
 
             {/* Owners portrait section (Small screens) */}
@@ -55,56 +61,40 @@ export const StaffHiring = ({ jobs }) => {
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  Our team is growing! If you're looking for a new and exciting
-                  opportunity, check out our current job openings:
+                  Our team is growing! We're looking for a positive, reliable, and self-motivated gymnastics coach who has a genuine heart for the sport and the kids they teach.
                 </p>
-                {/* Job postings list */}
-                <ul className="mt-5 space-y-5 text-lg text-purple-800">
-                  {jobs.map((job, index) => (
-                    <li key={`job-${index}`} className="flex items-center">
-                      <Image
-                        className="mr-3 h-7 w-7 flex-shrink-0"
-                        src={checkmark}
-                        alt=""
-                      />
-                      <span>{job.data.title}</span>
-                      <a
-                        href={job.data.href}
-                        className="group ml-3 flex w-[126px] max-w-full cursor-pointer items-center border-b-2 border-solid border-purple-600 bg-transparent px-0 py-0.5 text-left leading-6 text-purple-600 no-underline transition duration-300 ease-in-out hover:border-purple-400 hover:text-purple-500"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={
-                          'Apply now for ' +
-                          job.data.title +
-                          ' - opens in new tab'
-                        }
-                      >
-                        <span className="text-left text-base font-bold">
-                          Apply now
-                        </span>
-                        <Icon
+
+                  {/* Coach qualifications list */}
+                  <ul className="mt-5 space-y-5 text-lg text-purple-800">
+                      {requirements.map((requirement, index) => (
+                          <li
+                              key={`assurance-${index}`}
+                              className="flex items-center"
+                          >
+                              <Image
+                                  className="mr-3 h-7 w-7 flex-shrink-0"
+                                  src={checkmark}
+                                  alt=""
+                              />
+                              <span>{requirement}</span>
+                          </li>
+                      ))}
+                  </ul>
+                  {/* Link to job application */}
+                  <Button
+                      href="https://forms.gle/Xagd6meiKKzttkbm8"
+                      target="_blank"
+                      variant="accent"
+                      size="sm"
+                      className="mt-10"
+                  >
+                      Apply now
+                      <Icon
                           icon="arrowNarrowRight"
-                          className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+                          className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
                           stroke={2}
-                        />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-                {/* Link to team section */}
-                <Button
-                  href="/staff#team"
-                  variant="accent"
-                  size="sm"
-                  className="mt-10"
-                >
-                  Meet the rest of the team
-                  <Icon
-                    icon="arrowNarrowRight"
-                    className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
-                    stroke={2}
-                  />
-                </Button>
+                      />
+                  </Button>
               </div>
             </div>
           </div>

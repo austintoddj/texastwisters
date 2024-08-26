@@ -3,8 +3,6 @@ import { FeaturedPrograms } from '@/components/FeaturedPrograms'
 import { HomeFeatureBlocks } from '@/components/HomeFeatureBlocks'
 import { HomeHero } from '@/components/HomeHero'
 import { StaffHiring } from '@/components/StaffHiring'
-
-/* eslint-disable-next-line */
 import { Testimonials } from '@/components/Testimonials'
 import { getAllItems, getItemData } from '@/lib/getItems'
 
@@ -19,7 +17,6 @@ export const metadata = {
 
 export default function HomePage() {
   const faqs = getAllItems('faqs')
-  const jobs = getAllItems('jobs')
   const enrollment = getItemData('enrollment', 'global')
 
   return (
@@ -29,7 +26,7 @@ export default function HomePage() {
       <div className="h-40 w-full bg-gradient-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
 
       <HomeFeatureBlocks />
-      <StaffHiring jobs={jobs} />
+      <StaffHiring />
       <FeaturedPrograms />
       <Testimonials />
       <Faqs faqs={faqs} />

@@ -1,6 +1,6 @@
 ---
-name: Evaluations
-description: Semi-annual evaluations are coming up - coaches will send progress reports home with your child. Let's see how much you've improved!
-dates: Fall 2024
+name: In-House Meet
+description: Join us at 4pm for our annual in-house meet! This gives our Level 3 team a chance to experience a meet in a familiar setting.
+dates: September 14
 image: '/images/events/event-02.jpg'
 ---

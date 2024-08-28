@@ -1,7 +1,7 @@
 import { getAllItems } from '@/lib/getItems'
 import { marked } from 'marked'
 
-export const PoliciesHero = () => {
+export const PolicyInformation = () => {
   const policies = getAllItems('policies')
 
   return (

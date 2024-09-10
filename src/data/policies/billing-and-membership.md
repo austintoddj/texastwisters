@@ -1,5 +1,17 @@
 ---
 description: >
+  ### Important Dates
+
+  * **May 27, 2024:** Closed for Memorial Day
+
+  * **July 1 - 6, 2024:** Closed for the 4th of July
+
+  * **September 2, 2024:** Closed for Labor Day
+
+  * **November 28 - 30, 2024:** Closed for Thanksgiving
+
+  * **December 24, 2024 - January 1, 2025:** Closed for Christmas and New Years
+
   ### Billing & Membership
 
   * **Payment Methods:** We accept debit/credit cards and eChecks for membership fees.
@@ -11,8 +23,6 @@ description: >
   * **Drop Requests:** To avoid future charges, submit drop requests through the Customer Portal by the 15th of the month prior to the desired cancellation date.
 
   ### Discounts
-
-  * **Military Discount:** We offer a 10% discount to Veterans and their families. Please contact us for verification and application.
 
   * **Multi-Class Discount:** Students enrolled in multiple classes automatically receive a 10% discount.
 

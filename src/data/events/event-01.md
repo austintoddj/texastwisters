@@ -1,6 +1,6 @@
 ---
-name: Labor Day
-description: Heads up! The gym will be closed for Labor Day on Monday, September 2nd. Classes will resume on the following day.
-dates: September 2
-image: '/images/events/event-01.jpg'
+name: In-House Meet
+description: Join us at 4pm for our annual in-house meet! This gives our Level 3 team a chance to experience a meet in a familiar setting.
+dates: September 14
+image: '/images/events/medals.jpg'
 ---

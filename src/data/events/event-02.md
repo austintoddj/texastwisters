@@ -1,6 +1,6 @@
 ---
-name: In-House Meet
-description: Join us at 4pm for our annual in-house meet! This gives our Level 3 team a chance to experience a meet in a familiar setting.
-dates: September 14
-image: '/images/events/event-02.jpg'
+name: District 7 Qualifier
+description: Our Level 3 team competes in the opening meet of the season in San Antonio this weekend. Good luck, gymnasts!
+dates: September 20
+image: '/images/events/usag.jpg'
 ---

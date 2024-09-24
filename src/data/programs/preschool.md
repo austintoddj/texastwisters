@@ -8,7 +8,7 @@ hero:
   text: Our preschool class is the perfect start for your little gymnast to learn foundational gymnastics skills with an emphasis on fun!
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=17'
+    href: 'https://portal.iclasspro.com/texastwisters/classes?programs=17'
     icon: true
   image:
     src: '/images/programs/preschool/hero.jpg'
@@ -58,7 +58,7 @@ pricingSection:
       - feature: Evening classes
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=17'
+      href: 'https://portal.iclasspro.com/texastwisters/classes?programs=17'
       icon: true
   pricing2:
     name: Preschool Open Gym
@@ -71,6 +71,6 @@ pricingSection:
       - feature: Parent participation required
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/3'
+      href: 'https://portal.iclasspro.com/texastwisters/camps/3'
       icon: true
 ---

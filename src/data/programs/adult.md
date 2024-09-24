@@ -8,7 +8,7 @@ hero:
   text: Are you coming back to the world of gymnastics after a long hiatus? Or maybe you're giving it a chance for the first time. We've got a place for you!
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=57'
+    href: 'https://portal.iclasspro.com/texastwisters/classes?programs=57'
     icon: true
   image:
     src: '/images/programs/adult/hero.jpg'
@@ -57,7 +57,7 @@ pricingSection:
       - feature: Ages 18+
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/class-details/51'
+      href: 'https://portal.iclasspro.com/texastwisters/class-details/51'
       icon: true
   pricing2:
     name: Adult Open Gym
@@ -69,6 +69,6 @@ pricingSection:
       - feature: Memberships available!
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/2'
+      href: 'https://portal.iclasspro.com/texastwisters/camps/2'
       icon: true
 ---

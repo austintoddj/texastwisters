@@ -74,7 +74,7 @@ export const HomeHero = ({ enrollment }) => {
           {/* Hero buttons */}
           <div className="mt-8 flex flex-col items-center overflow-hidden sm:flex-row">
             {enrollment.active && (
-              <Button href="https://app.iclasspro.com/portal/texastwisters/booking">
+              <Button href="https://portal.iclasspro.com/texastwisters/booking">
                 Enroll today
                 <Icon
                   icon="arrowNarrowRight"

@@ -1,4 +1,4 @@
-import { PoliciesHero } from '@/components/PoliciesHero'
+import { PolicyInformation } from '@/components/PolicyInformation'
 
 export const metadata = {
   title: 'Rules & Policies - Texas Twisters Gymnastics',
@@ -12,7 +12,7 @@ export const metadata = {
 export default function PoliciesPage() {
   return (
     <>
-      <PoliciesHero />
+      <PolicyInformation />
     </>
   )
 }

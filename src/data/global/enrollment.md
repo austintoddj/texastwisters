@@ -1,4 +1,4 @@
 ---
 active: true
-href: https://app.iclasspro.com/portal/texastwisters/dashboard
+href: https://portal.iclasspro.com/texastwisters/dashboard
 ---

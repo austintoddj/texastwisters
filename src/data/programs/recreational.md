@@ -9,7 +9,7 @@ hero:
   text: Our recreational program focuses on the progressive development of gymnastics skills from the ground up, all while gaining confidence, coordination, flexibility, and strength.
   action:
     label: Enroll today
-    href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=16'
+    href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
     icon: true
   image:
     src: '/images/programs/recreational/hero.jpg'
@@ -60,7 +60,7 @@ pricingSection:
       - feature: Ages 5+
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/classes?programs=16'
+      href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
       icon: true
   pricing2:
     name: Student Open Gym
@@ -74,6 +74,6 @@ pricingSection:
       - feature: Supervised free play
     action:
       label: Enroll today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'
+      href: 'https://portal.iclasspro.com/texastwisters/camps/1'
       icon: true
 ---

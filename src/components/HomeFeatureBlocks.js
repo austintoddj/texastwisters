@@ -13,7 +13,6 @@ const features = [
   'Registration fees waived in 2024',
   'Family owned',
   'Convenient location',
-  '10% Military discount',
   'Multi-class discount'
 ]
 

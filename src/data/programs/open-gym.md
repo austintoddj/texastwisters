@@ -8,7 +8,7 @@ hero:
   text: Enjoy open play on our beams, bars, spring floors, vault, and trampolines! It's gymnastics, your way, on your schedule.
   action:
     label: Reserve today
-    href: 'https://app.iclasspro.com/portal/texastwisters/booking'
+    href: 'https://portal.iclasspro.com/texastwisters/booking'
     icon: true
   image:
     src: '/images/programs/open-gym/hero.jpg'
@@ -58,7 +58,7 @@ pricingSection:
       - feature: Supervised free time
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/1'
+      href: 'https://portal.iclasspro.com/texastwisters/camps/1'
       icon: true
   pricing2:
     name: Homeschool Open Gym
@@ -71,6 +71,6 @@ pricingSection:
       - feature: $15/child + $10/sibling
     action:
       label: Reserve today
-      href: 'https://app.iclasspro.com/portal/texastwisters/camps/6'
+      href: 'https://portal.iclasspro.com/texastwisters/camps/6'
       icon: true
 ---

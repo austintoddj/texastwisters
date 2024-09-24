@@ -105,7 +105,7 @@ export function Navbar({ programs }) {
                   ))}
 
                   <Link
-                    href="https://app.iclasspro.com/portal/texastwisters/dashboard"
+                    href="https://portal.iclasspro.com/texastwisters/dashboard"
                     target="_blank"
                   >
                     <Button>Customer Portal</Button>
@@ -260,7 +260,7 @@ export function Navbar({ programs }) {
           {/* Call-to-action button */}
           <div className="hidden lg:block">
             <Link
-              href="https://app.iclasspro.com/portal/texastwisters/dashboard"
+              href="https://portal.iclasspro.com/texastwisters/dashboard"
               target="_blank"
             >
               <Button>Customer Portal</Button>

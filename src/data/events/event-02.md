@@ -1,6 +1,6 @@
 ---
-name: District 7 Championships
-description: Levels 3 will compete in the District 7 Championships in Corpus Christi this weekend. Let's bring home the gold!
-dates: October 18
+name: Level 3 State
+description: The annual state competition for Level 3 gymnasts will be held in Corpus Christi on Friday November 15th.
+dates: November 15
 image: '/images/events/usag.jpg'
 ---

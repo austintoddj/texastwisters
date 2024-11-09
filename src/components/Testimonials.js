@@ -42,7 +42,7 @@ export const Testimonials = () => {
                     src={item.data.image}
                     width={80}
                     height={80}
-                    className="h-20 w-20 object-cover drop-shadow-2xl filter"
+                    className="h-20 w-20 object-cover filter"
                     alt={item.data.name}
                   />
                   <p className="mt-3 text-lg font-bold text-purple-900">
@@ -82,7 +82,7 @@ export const Testimonials = () => {
                     src={item.data.image}
                     width={80}
                     height={80}
-                    className="h-20 w-20 object-cover drop-shadow-2xl filter"
+                    className="h-20 w-20 object-cover filter"
                     alt={item.data.name}
                   />
                   <p className="mt-3 text-lg font-bold text-purple-900">

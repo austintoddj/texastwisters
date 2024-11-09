@@ -44,6 +44,7 @@ export const Testimonials = () => {
                     height={80}
                     className="h-20 w-20 object-cover filter"
                     alt={item.data.name}
+                    priority
                   />
                   <p className="mt-3 text-lg font-bold text-purple-900">
                     {item.data.name}
@@ -84,6 +85,7 @@ export const Testimonials = () => {
                     height={80}
                     className="h-20 w-20 object-cover filter"
                     alt={item.data.name}
+                    priority
                   />
                   <p className="mt-3 text-lg font-bold text-purple-900">
                     {item.data.name}

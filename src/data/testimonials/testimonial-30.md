@@ -1,5 +1,5 @@
 ---
 name: Abhay K.
-testimonial: Courtney M.
+testimonial: We love Texas Twisters Gymnastics!
 stars: 5
 ---

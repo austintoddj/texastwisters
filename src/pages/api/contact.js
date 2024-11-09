@@ -14,6 +14,6 @@ export default async function Contact(req, res) {
       res.status(200).json({ message: 'Success' })
     })
   } catch (error) {
-    res.status(500).json({ message: 'Error' })
+    res.status(500).json({ message: `Error: ${error}` })
   }
 }

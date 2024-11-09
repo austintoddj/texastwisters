@@ -7,7 +7,8 @@ import { ProgramInformation } from '@/components/ProgramInformation'
 import { ProgramPricing } from '@/components/ProgramPricing'
 import { getAllItems, getItemData } from '@/lib/getItems'
 
-export async function generateMetadata({ params: { slug } }) {
+export async function generateMetadata({ params }) {
+  const { slug } = await params
   const program = getItemData(slug, 'programs')
 
   return {
@@ -22,7 +23,8 @@ export async function generateMetadata({ params: { slug } }) {
   }
 }
 
-export default function ProgramPage({ params: { slug } }) {
+export default async function ProgramPage({ params }) {
+  const { slug } = await params
   const program = getItemData(slug, 'programs')
 
   return (

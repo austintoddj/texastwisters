@@ -1,6 +1,6 @@
 ---
-name: District 7 Qualifier
-description: Our Level 3 team competes in the opening meet of the season in San Antonio this weekend. Good luck, gymnasts!
-dates: September 20
+name: District 7 State Championships
+description: Our Level 3 girls will compete in the District 7 State meet in Corpus Christi this weekend. Let's bring home the gold!
+dates: October 18
 image: '/images/events/usag.jpg'
 ---

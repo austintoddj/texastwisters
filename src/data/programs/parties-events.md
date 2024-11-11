@@ -16,7 +16,7 @@ infoSection:
   headline: The ideal birthday party venue for any age
   text: A Texas Twisters party takes the stress out birthday planning. Our coaches take care of all the details, and make sure your child and all their friends have an amazing time.
   ages: All ages!
-  dates: Saturday & Sunday availability
+  dates: Saturday availability
   schedule: 60 minutes of gymnastics + 30 minutes for cake
   classSize: Up to 40 participants
 descriptionSection:
@@ -45,15 +45,15 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Add participants to either package for $10 per additional guest, up to 25 guests.
+  text: Planning something a little bigger? Add more friends for $15 per guest, up to 25 participants. Extend the fun for an additional 30 minutes for $65!
   pricing1:
     name: Silver package
     price: $250
-    interval: 90 minutes
-    shortDescription: Saturday & Sunday
+    interval: Most popular
+    shortDescription: Saturday availability
     features:
-      - feature: Includes 15 friends
-      - feature: 60 minutes of gym time
+      - feature: Starts at 12 participants
+      - feature: Includes 1 hour of gym time
       - feature: 30 minutes in party area
     action:
       label: Reserve today
@@ -62,11 +62,11 @@ pricingSection:
   pricing2:
     name: Gold package
     price: $325
-    interval: 90 minutes
-    shortDescription: Saturday & Sunday
+    interval: Best value
+    shortDescription: Saturday availability
     features:
-      - feature: Includes 25 friends
-      - feature: 60 minutes of gym time
+      - feature: Starts at 20 participants
+      - feature: Includes 1 hour of gym time
       - feature: 30 minutes in party area
     action:
       label: Reserve today

@@ -6,9 +6,8 @@ import Link from 'next/link'
 
 const siteLinks = [
   { label: 'Home', href: '/', isExternal: false },
+  { label: 'About', href: '/about', isExternal: false },
   { label: 'Parents', href: '/parents', isExternal: false },
-  // { label: 'Gallery', href: '/gallery', isExternal: false },
-  { label: 'Staff', href: '/staff', isExternal: false },
   { label: 'FAQs', href: '/#faq', isExternal: false },
   { label: 'Hiring', href: '/#hiring', isExternal: false },
   { label: 'Policies', href: '/policies', isExternal: false },
@@ -36,7 +35,7 @@ function SocialLink({ className, href, icon }) {
   )
 }
 
-export const Footer = ({ programs, contact }) => {
+export const Footer = ({ programs }) => {
   return (
     <footer className="space-y-8 divide-y divide-purple-400/20 bg-yellow-100 px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
       {/* Top section: blocks */}
@@ -155,7 +154,7 @@ export const Footer = ({ programs, contact }) => {
                   Address
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {contact.address}
+                    {process.env.NEXT_PUBLIC_GYM_ADDRESS} {process.env.NEXT_PUBLIC_GYM_CITY}, {process.env.NEXT_PUBLIC_GYM_STATE} {process.env.NEXT_PUBLIC_GYM_ZIP}
                 </p>
               </div>
             </li>
@@ -171,7 +170,7 @@ export const Footer = ({ programs, contact }) => {
                   Email
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {contact.email}
+                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
                 </p>
               </div>
             </li>
@@ -187,7 +186,7 @@ export const Footer = ({ programs, contact }) => {
                   Phone
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {contact.phone}
+                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
                 </p>
               </div>
             </li>
@@ -198,8 +197,8 @@ export const Footer = ({ programs, contact }) => {
       <div className="mx-auto flex max-w-md flex-col justify-between py-8 sm:max-w-none sm:flex-row lg:max-w-screen-2xl">
         {/* Copyright note */}
         <span className="text-base text-purple-800/90">
-          &copy; {new Date().getFullYear()} Texas Twisters Gymnastics, LLC. All
-          rights reserved.
+          &copy; {new Date().getFullYear()} {process.env.NEXT_PUBLIC_GYM_NAME}.
+          All rights reserved.
         </span>
       </div>
     </footer>

@@ -1,8 +1,8 @@
-import image1 from '/public/images/staff/grid/bridge.jpg'
-import image5 from '/public/images/staff/grid/cancun.jpg'
-import image2 from '/public/images/staff/grid/poppyfest.jpg'
-import image3 from '/public/images/staff/grid/sluggers.jpg'
-import image4 from '/public/images/staff/grid/surf-camp.jpg'
+import image1 from '/public/images/about/grid/bridge.jpg'
+import image5 from '/public/images/about/grid/cancun.jpg'
+import image2 from '/public/images/about/grid/poppyfest.jpg'
+import image3 from '/public/images/about/grid/sluggers.jpg'
+import image4 from '/public/images/about/grid/surf-camp.jpg'
 import Image from 'next/image'
 import { Fragment } from 'react'
 
@@ -14,7 +14,7 @@ const images = [
   { src: image5, alt: 'A man and woman smiling on bicycles' }
 ]
 
-export function StaffHero() {
+export function AboutHero() {
   return (
     <section className="bg-purple-25 px-4 pt-16 sm:px-6 lg:px-8">
       {/* Container */}
@@ -22,7 +22,7 @@ export function StaffHero() {
         {/* Page header */}
         <div className="relative">
           <h2 className="h1 mx-auto max-w-3xl text-center text-purple-900">
-            Texas Twisters Staff
+            About Texas Twisters Gymnastics
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
             We are dedicated to provide a safe, fun, and challenging environment
@@ -33,7 +33,7 @@ export function StaffHero() {
         {/* Family images grid */}
         <div className="mt-14 grid grid-flow-row-dense grid-cols-2 gap-2 sm:mt-16 sm:grid-cols-3 sm:gap-3 md:gap-4 lg:mt-24 lg:gap-6">
           {images.map((image, index) => (
-            <Fragment key={`gallery-image-${index}`}>
+            <Fragment key={`about-image-${index}`}>
               {index % 5 == 1 && (
                 <Image
                   className="col-span-2 h-30vw w-full rounded-2xl object-cover object-top lg:h-80"

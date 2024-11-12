@@ -1,5 +1,5 @@
 ---
-name: Lindsey Johnson
+name: Coach Lindsey
 role: Gymnastics Coach
-image: '/images/staff/lindsey.jpg'
+image: '/images/stock/testimonials/testimonial-01.jpg'
 ---

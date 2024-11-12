@@ -1,5 +1,5 @@
 ---
-name: Bailey Cunningham
+name: Coach Bailey
 role: Gymnastics Coach
-image: '/images/staff/bailey.jpg'
+image: '/images/about/bailey2.jpg'
 ---

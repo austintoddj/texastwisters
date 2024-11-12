@@ -5,7 +5,7 @@ import { Navbar } from '@/components/Navbar'
 import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
 
-export function Header({ programs, contact, enrollment }) {
+export function Header({ programs, contact }) {
   const pathname = usePathname()
 
   return (
@@ -13,7 +13,7 @@ export function Header({ programs, contact, enrollment }) {
       className={clsx(pathname === '/parents' ? 'bg-white' : 'bg-purple-25')}
     >
       <ContactHeader contact={contact} />
-      <Navbar programs={programs} enrollment={enrollment} />
+      <Navbar programs={programs} />
     </header>
   )
 }

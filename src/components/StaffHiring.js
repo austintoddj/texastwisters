@@ -5,15 +5,15 @@ import Image from 'next/image'
 
 const owners = {
   name: 'The Austin Family',
-  image: '/images/staff/family.jpg'
+  image: '/images/about/family.jpg'
 }
 
 const requirements = [
-    'Patient, kind and enthusiastic!',
-    'Gymnastics experience preferred',
-    'Weekday availability between 9am - 5pm',
-    'Excellent communication skills',
-    'USAG background checks and SafeSport training',
+  'Patient, kind and enthusiastic!',
+  'Gymnastics experience preferred',
+  'Weekday availability between 9am - 5pm',
+  'Excellent communication skills',
+  'USAG background checks and SafeSport training'
 ]
 
 export const StaffHiring = () => {
@@ -33,7 +33,9 @@ export const StaffHiring = () => {
               Meet the owners of Texas Twisters
             </h2>
             <p className="mt-4 max-w-xl text-xl leading-relaxed text-purple-800 md:mt-5">
-              After decades of involvement in the gymnastics community, our family is excited to share our passion for the sport with the community of Georgetown.
+              After decades of involvement in the gymnastics community, our
+              family is excited to share our passion for the sport with the
+              community of Georgetown.
             </p>
 
             {/* Owners portrait section (Small screens) */}
@@ -61,40 +63,42 @@ export const StaffHiring = () => {
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  Our team is growing! We're looking for a positive, reliable, and self-motivated gymnastics coach who has a genuine heart for the sport and the kids they teach.
+                  Our team is growing! We're looking for a positive, reliable,
+                  and self-motivated gymnastics coach who has a genuine heart
+                  for the sport and the kids they teach.
                 </p>
 
-                  {/* Coach qualifications list */}
-                  <ul className="mt-5 space-y-5 text-lg text-purple-800">
-                      {requirements.map((requirement, index) => (
-                          <li
-                              key={`assurance-${index}`}
-                              className="flex items-center"
-                          >
-                              <Image
-                                  className="mr-3 h-7 w-7 flex-shrink-0"
-                                  src={checkmark}
-                                  alt=""
-                              />
-                              <span>{requirement}</span>
-                          </li>
-                      ))}
-                  </ul>
-                  {/* Link to job application */}
-                  <Button
-                      href="https://forms.gle/Xagd6meiKKzttkbm8"
-                      target="_blank"
-                      variant="accent"
-                      size="sm"
-                      className="mt-10"
-                  >
-                      Apply now
-                      <Icon
-                          icon="arrowNarrowRight"
-                          className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
-                          stroke={2}
+                {/* Coach qualifications list */}
+                <ul className="mt-5 space-y-5 text-lg text-purple-800">
+                  {requirements.map((requirement, index) => (
+                    <li
+                      key={`assurance-${index}`}
+                      className="flex items-center"
+                    >
+                      <Image
+                        className="mr-3 h-7 w-7 flex-shrink-0"
+                        src={checkmark}
+                        alt=""
                       />
-                  </Button>
+                      <span>{requirement}</span>
+                    </li>
+                  ))}
+                </ul>
+                {/* Link to job application */}
+                <Button
+                  href="https://forms.gle/Xagd6meiKKzttkbm8"
+                  target="_blank"
+                  variant="accent"
+                  size="sm"
+                  className="mt-10"
+                >
+                  Apply now
+                  <Icon
+                    icon="arrowNarrowRight"
+                    className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
+                    stroke={2}
+                  />
+                </Button>
               </div>
             </div>
           </div>

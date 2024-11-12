@@ -2,13 +2,10 @@ import gymnast from '/public/images/illustrations/gymnast.svg'
 import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
-import { getItemData } from '@/lib/getItems'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export const CallToAction = () => {
-  const enrollment = getItemData('enrollment', 'global')
-
   return (
     <section className="bg-white py-24 sm:py-32">
       {/* Container */}
@@ -31,20 +28,18 @@ export const CallToAction = () => {
           </span>
         </h2>
         {/* CTA button */}
-        {enrollment.active && (
-          <div className="mt-12 flex justify-center xl:mt-14">
-            <Link href={enrollment.href} target="_blank">
-              <Button>
-                Enroll today
-                <Icon
-                  icon="arrowNarrowRight"
-                  className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
-                  stroke={2}
-                />
-              </Button>
-            </Link>
-          </div>
-        )}
+        <div className="mt-12 flex justify-center xl:mt-14">
+          <Link href={process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL} target="_blank">
+            <Button>
+              Enroll today
+              <Icon
+                icon="arrowNarrowRight"
+                className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+                stroke={2}
+              />
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   )

@@ -3,7 +3,7 @@ import { Icon } from '@/components/Icon'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function ContactHeader({ contact }) {
+export function ContactHeader() {
   return (
     <div className="hidden px-4 sm:px-6 lg:block">
       {/* Container */}
@@ -34,7 +34,7 @@ export function ContactHeader({ contact }) {
                   Address
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {contact.address}
+                  {process.env.NEXT_PUBLIC_GYM_ADDRESS} {process.env.NEXT_PUBLIC_GYM_CITY}, {process.env.NEXT_PUBLIC_GYM_STATE} {process.env.NEXT_PUBLIC_GYM_ZIP}
                 </p>
               </div>
             </li>
@@ -51,7 +51,7 @@ export function ContactHeader({ contact }) {
                   Email
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {contact.email}
+                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
                 </p>
               </div>
             </li>
@@ -68,7 +68,7 @@ export function ContactHeader({ contact }) {
                   Phone
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {contact.phone}
+                  {process.env.NEXT_PUBLIC_GYM_PHONE}
                 </p>
               </div>
             </li>

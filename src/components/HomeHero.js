@@ -6,8 +6,6 @@ import { Icon } from '@/components/Icon'
 
 /* eslint-disable-next-line */
 import { Dialog, Transition } from '@headlessui/react'
-
-/* eslint-disable-next-line */
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -34,7 +32,7 @@ const ratings = [
   }
 ]
 
-export const HomeHero = ({ enrollment }) => {
+export const HomeHero = () => {
   /* eslint-disable-next-line */
   let [isOpen, setIsOpen] = useState(false)
 
@@ -73,16 +71,14 @@ export const HomeHero = ({ enrollment }) => {
           </p>
           {/* Hero buttons */}
           <div className="mt-8 flex flex-col items-center overflow-hidden sm:flex-row">
-            {enrollment.active && (
-              <Button href="https://portal.iclasspro.com/texastwisters/booking">
-                Enroll today
-                <Icon
-                  icon="arrowNarrowRight"
-                  className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
-                  stroke={2}
-                />
-              </Button>
-            )}
+            <Button href={process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL}>
+              Enroll today
+              <Icon
+                icon="arrowNarrowRight"
+                className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+                stroke={2}
+              />
+            </Button>
             {/*<Button*/}
             {/*    variant="secondary"*/}
             {/*    className="mt-6 sm:mt-0 sm:ml-6"*/}

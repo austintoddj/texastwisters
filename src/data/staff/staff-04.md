@@ -1,5 +1,5 @@
 ---
-name: Avery Berger
+name: Coach Avery
 role: Gymnastics Coach
-image: '/images/staff/avery.jpg'
+image: '/images/stock/testimonials/testimonial-01.jpg'
 ---

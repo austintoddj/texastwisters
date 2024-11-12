@@ -1,9 +1,7 @@
-/* eslint-disable-next-line */
 import arrow from '/public/images/illustrations/arrow-right-over.svg'
 import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
-import { getItemData } from '@/lib/getItems'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -50,8 +48,6 @@ const links = [
 ]
 
 export const ParentsHero = () => {
-  const enrollment = getItemData('enrollment', 'global')
-
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-purple-25 to-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       {/* Background decorations */}
@@ -93,18 +89,20 @@ export const ParentsHero = () => {
             it simple!
           </p>
           {/* Enroll CTA*/}
-          {enrollment.active && (
-            <div className="mt-10 font-semibold lg:mt-12">
-              <p className="text-purple-800">Not enrolled in our gym?</p>
-              <Button href={enrollment.href} size="sm" className="mt-2 sm:mt-3">
-                Enroll today
-                <Icon
-                  icon="arrowNarrowRight"
-                  className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
-                />
-              </Button>
-            </div>
-          )}
+          <div className="mt-10 font-semibold lg:mt-12">
+            <p className="text-purple-800">Not enrolled in our gym?</p>
+            <Button
+              href={process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL}
+              size="sm"
+              className="mt-2 sm:mt-3"
+            >
+              Enroll today
+              <Icon
+                icon="arrowNarrowRight"
+                className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+              />
+            </Button>
+          </div>
         </div>
         {/* Important parent links container */}
         <div className="relative mt-12 sm:mt-16 lg:col-span-7 lg:mt-0 xl:pl-12">

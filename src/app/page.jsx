@@ -4,7 +4,7 @@ import { HomeFeatureBlocks } from '@/components/HomeFeatureBlocks'
 import { HomeHero } from '@/components/HomeHero'
 import { StaffHiring } from '@/components/StaffHiring'
 import { Testimonials } from '@/components/Testimonials'
-import { getAllItems, getItemData } from '@/lib/getItems'
+import { getAllItems } from '@/lib/getItems'
 
 export const metadata = {
   title: 'Texas Twisters Gymnastics',
@@ -17,11 +17,10 @@ export const metadata = {
 
 export default function HomePage() {
   const faqs = getAllItems('faqs')
-  const enrollment = getItemData('enrollment', 'global')
 
   return (
     <>
-      <HomeHero enrollment={enrollment} />
+      <HomeHero />
       {/* Gradient background transition */}
       <div className="h-40 w-full bg-gradient-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
 

@@ -1,5 +1,5 @@
 ---
-name: Janet Gabourel
+name: Coach Janet
 role: Gymnastics Coach
-image: '/images/staff/janet.jpg'
+image: '/images/stock/testimonials/testimonial-01.jpg'
 ---

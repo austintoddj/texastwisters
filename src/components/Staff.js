@@ -7,7 +7,7 @@ export const Staff = () => {
   const staff = getAllItems('staff')
 
   return (
-    <section id="team">
+    <section id="staff">
       {/* Top purple background section */}
       <div className="bg-purple-600 px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         {/* Section header text */}
@@ -33,11 +33,11 @@ export const Staff = () => {
       {/* Team section */}
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl -translate-y-32 lg:max-w-screen-xl">
-          <div className="grid gap-y-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+          <div className="grid gap-y-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8">
             {staff.map((member, i) => (
               <div key={`member-${i}`}>
-                {/* Staff member image */}
-                <div className="aspect-h-3 aspect-w-2">
+                {/* About member image */}
+                <div className="aspect-h-2 aspect-w-3">
                   <Image
                     src={member.data.image}
                     className="rounded-2xl object-cover"
@@ -46,7 +46,7 @@ export const Staff = () => {
                     alt={member.data.name}
                   />
                 </div>
-                {/* Staff member info */}
+                {/* About member info */}
                 <div className="flex items-center justify-between">
                   <div className="mt-3 text-xl font-medium">
                     <p className="font-semibold tracking-wide text-purple-900">

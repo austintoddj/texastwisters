@@ -1,11 +1,8 @@
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
-import { getItemData } from '@/lib/getItems'
 import clsx from 'clsx'
 
 export const ProgramPricing = ({ data }) => {
-  const enrollment = getItemData('enrollment', 'global')
-
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
@@ -92,23 +89,21 @@ export const ProgramPricing = ({ data }) => {
                       ))}
                     </ul>
                     {/* CTA button */}
-                    {enrollment.active && (
-                      <Button
-                        href={data[`pricing${i + 1}`].action.href}
-                        className="mt-6"
-                        variant="accent"
-                        size="sm"
-                      >
-                        {data[`pricing${i + 1}`].action.label}
-                        {data[`pricing${i + 1}`].action.icon && (
-                          <Icon
-                            icon="arrowNarrowRight"
-                            className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
-                            stroke={2}
-                          />
-                        )}
-                      </Button>
-                    )}
+                    <Button
+                      href={data[`pricing${i + 1}`].action.href}
+                      className="mt-6"
+                      variant="accent"
+                      size="sm"
+                    >
+                      {data[`pricing${i + 1}`].action.label}
+                      {data[`pricing${i + 1}`].action.icon && (
+                        <Icon
+                          icon="arrowNarrowRight"
+                          className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
+                          stroke={2}
+                        />
+                      )}
+                    </Button>
                   </div>
                 </div>
               </div>

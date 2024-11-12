@@ -1,5 +1,5 @@
 ---
-name: Mariah Wallace
+name: Coach Mariah
 role: Gymnastics Coach
-image: '/images/staff/mariah.jpg'
+image: '/images/stock/testimonials/testimonial-01.jpg'
 ---

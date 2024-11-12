@@ -1,12 +1,9 @@
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
-import { getItemData } from '@/lib/getItems'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export const ProgramHero = ({ hero }) => {
-  const enrollment = getItemData('enrollment', 'global')
-
   return (
     <section className="relative bg-gradient-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-screen-xl">
@@ -19,22 +16,20 @@ export const ProgramHero = ({ hero }) => {
             {hero.text}
           </p>
           {/* CTA button */}
-          {enrollment.active && (
-            <div className="mt-8 flex justify-center">
-              <Link href={hero.action.href} target="_blank">
-                <Button>
-                  {hero.action.label}
-                  {hero.action.icon && (
-                    <Icon
-                      icon="arrowNarrowRight"
-                      className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
-                      stroke={2}
-                    />
-                  )}
-                </Button>
-              </Link>
-            </div>
-          )}
+          <div className="mt-8 flex justify-center">
+            <Link href={hero.action.href} target="_blank">
+              <Button>
+                {hero.action.label}
+                {hero.action.icon && (
+                  <Icon
+                    icon="arrowNarrowRight"
+                    className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+                    stroke={2}
+                  />
+                )}
+              </Button>
+            </Link>
+          </div>
         </div>
         {/* Hero image */}
         <div className="relative z-10 mt-14 sm:mt-16">

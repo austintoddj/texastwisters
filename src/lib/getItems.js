@@ -47,8 +47,3 @@ export function getRandomItems(dir, num) {
       return { slug: filename.replace('.md', ''), data: frontmatter }
     })
 }
-
-export function getGalleryTags() {
-  const galleryImages = getAllItems('gallery')
-  return [...new Set(galleryImages.map(image => image.data.tag))]
-}

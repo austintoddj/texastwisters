@@ -1,9 +1,6 @@
 import { Icon } from '@/components/Icon'
-import { getItemData } from '@/lib/getItems'
 
 export const ContactInformation = () => {
-  const contact = getItemData('contact', 'global')
-
   return (
     <section className="relative -mb-52 w-full -translate-y-52 bg-white px-4 pt-56 sm:px-6 sm:pt-64 lg:px-8 lg:pt-72">
       {/* Contact information container */}
@@ -37,7 +34,10 @@ export const ContactInformation = () => {
                   Address
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
-                  {contact.address}
+                  {process.env.NEXT_PUBLIC_GYM_ADDRESS}{' '}
+                  {process.env.NEXT_PUBLIC_GYM_CITY},{' '}
+                  {process.env.NEXT_PUBLIC_GYM_STATE}{' '}
+                  {process.env.NEXT_PUBLIC_GYM_ZIP}
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export const ContactInformation = () => {
                   Email us
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
-                  {contact.email}
+                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
                 </p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export const ContactInformation = () => {
                   Call or Text
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
-                  {contact.phone}
+                  {process.env.NEXT_PUBLIC_GYM_PHONE}
                 </p>
               </div>
             </div>

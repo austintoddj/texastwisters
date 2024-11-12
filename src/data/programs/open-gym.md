@@ -14,7 +14,7 @@ hero:
     src: '/images/programs/open-gym/hero.jpg'
 infoSection:
   headline: Designed to give you the freedom to explore
-  text: Whether you are an experienced gymnast, or you're exploring the sport for the first time, we want you to feel welcome here! Our coaching staff is right there to guide you and keep you safe. Open gym classes vary by age group. See details below!
+  text: Whether you are an experienced gymnast, or you're exploring the sport for the first time, we want you to feel welcome here! Our coaching about is right there to guide you and keep you safe. Open gym classes vary by age group. See details below!
   ages: Preschool / 5-17 years / Adult
   dates: Year-round
   schedule: Varies by age group

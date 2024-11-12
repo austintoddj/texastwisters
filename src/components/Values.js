@@ -34,7 +34,7 @@ export const Values = () => {
           {/* Section content */}
           <div className="flex flex-col justify-center">
             <h2 className="h2 text-purple-900 sm:text-center lg:text-left">
-              Our core values and principles
+              Our core mission and values
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-purple-800 sm:text-center md:mt-5 lg:mx-0 lg:text-left">
               At Texas Twisters, we believe in serving our community with
@@ -69,7 +69,7 @@ export const Values = () => {
                 fill
                 src={image}
                 sizes="(min-width: 1280px) 38rem, (min-width: 1024px) 50vw, (min-width: 576px) 36rem, 100vw"
-                alt="Parent carrying child"
+                alt="Five girls smiling together in a gymnastics class"
               />
             </div>
           </div>

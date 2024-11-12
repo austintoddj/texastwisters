@@ -34,7 +34,10 @@ export function ContactHeader() {
                   Address
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_ADDRESS} {process.env.NEXT_PUBLIC_GYM_CITY}, {process.env.NEXT_PUBLIC_GYM_STATE} {process.env.NEXT_PUBLIC_GYM_ZIP}
+                  {process.env.NEXT_PUBLIC_GYM_ADDRESS}{' '}
+                  {process.env.NEXT_PUBLIC_GYM_CITY},{' '}
+                  {process.env.NEXT_PUBLIC_GYM_STATE}{' '}
+                  {process.env.NEXT_PUBLIC_GYM_ZIP}
                 </p>
               </div>
             </li>

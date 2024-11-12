@@ -9,7 +9,7 @@ export const sendEmail = async (
   phone,
   email
 ) => {
-  sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
+  sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY)
 
   /**
    * "From" email address must coincide with Verified Single Sender.

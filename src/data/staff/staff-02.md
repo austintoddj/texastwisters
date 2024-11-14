@@ -1,7 +1,7 @@
 ---
 name: Todd Austin
 role: Owner
-image: '/images/stock/testimonials/testimonial-01.jpg'
+image: '/images/about/todd.jpg'
 social:
   - name: 'x'
     href: 'https://x.com/austintoddj'

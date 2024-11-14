@@ -42,7 +42,7 @@ export const Testimonials = () => {
                     src={item.data.image}
                     width={80}
                     height={80}
-                    className="h-16 w-16 object-fit"
+                    className="h-14 w-14 object-fit"
                     alt={item.data.name}
                     priority
                   />
@@ -83,7 +83,7 @@ export const Testimonials = () => {
                     src={item.data.image}
                     width={80}
                     height={80}
-                    className="h-16 w-16 object-fit"
+                    className="h-14 w-14 object-fit"
                     alt={item.data.name}
                     priority
                   />

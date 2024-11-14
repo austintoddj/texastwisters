@@ -18,8 +18,12 @@ const roboto = Roboto_Flex({
 export const metadata = {
   metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
   title: 'Texas Twisters Gymnastics',
-  site_name: 'Texas Twisters Gymnastics',
-  url: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
+  openGraph: {
+    siteName: 'Texas Twisters Gymnastics',
+    url: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
+    locale: 'en_US',
+    type: 'website'
+  },
   description:
     'Georgetown TX :: Recreational Gymnastics, Competitive Team, Adult Gymnastics, Preschool, Tumbling, Open Gyms, Birthday Parties, Camps.',
   icons: [

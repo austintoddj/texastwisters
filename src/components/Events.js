@@ -1,6 +1,7 @@
 import { getAllItems } from '@/lib/getItems'
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const eventColors = [
   'bg-yellow-200',
@@ -75,6 +76,13 @@ export const Events = () => {
                 </h4>
                 <p className="mt-1 text-purple-800 lg:mt-2">
                   {event.data.description}
+                    {event.data.href && (
+                        <Link
+                            className="ml-2 underline"
+                            href={event.data.href}
+                            target="_blank"
+                        >See details</Link>
+                    )}
                 </p>
               </div>
             </div>

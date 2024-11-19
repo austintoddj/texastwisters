@@ -1,7 +1,6 @@
 ---
-name: Texas Luau Invitational
-description: Come cheer on our Level 3 Team as they compete in the first meet of 2025 hosted at the Kalahari Waterpark Resort in Round Rock, TX.
-dates: January 3 - 5
-image: '/images/events/usag.jpg'
-href: "https://luauinvite.com/texas-invite"
+name: Gym Closure
+description: Merry Christmas! The gym will be closed from December 24th through January 1st. Classes will resume on the following day.
+dates: December 24 - January 1
+image: '/images/events/christmas.jpg'
 ---

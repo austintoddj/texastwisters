@@ -1,6 +1,6 @@
 ---
-name: District 7 State Championships
-description: Our Level 3 girls will compete in the District 7 State meet in Corpus Christi this weekend. Let's bring home the gold!
-dates: October 18
-image: '/images/events/usag.jpg'
+name: Thanksgiving Break Camps
+description: It's time for CAMP, the perfect way for your kids to stay active and have fun during their school break! Limited spots available, sign up today!
+dates: October 25 - 27
+image: '/images/events/camp.jpg'
 ---

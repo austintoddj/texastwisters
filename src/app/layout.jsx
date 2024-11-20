@@ -42,17 +42,6 @@ export const metadata = {
   ]
 }
 
-// const contact = {
-//     address: `${process.env.NEXT_PUBLIC_GYM_ADDRESS} ${process.env.NEXT_PUBLIC_GYM_CITY}, ${process.env.NEXT_PUBLIC_GYM_STATE} ${process.env.NEXT_PUBLIC_GYM_ZIP}`,
-//     email: process.env.NEXT_PUBLIC_GYM_EMAIL,
-//     name: process.env.NEXT_PUBLIC_GYM_NAME,
-//     phone: process.env.NEXT_PUBLIC_GYM_PHONE
-// }
-//
-// const portal = {
-//     dashboard: process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL
-// }
-
 export default function RootLayout({ children }) {
   const programs = getAllItems('programs')
 

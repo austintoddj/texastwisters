@@ -1,16 +1,22 @@
 ---
 description: >
-  ### Important Dates
+  ### 2024 - 2025 Holiday Closures
 
-  * **May 27, 2024:** Closed for Memorial Day
+  * **Thanksgiving:** November 28 - 30, 2024
 
-  * **July 1 - 6, 2024:** Closed for the 4th of July
+  * **Christmas & New Years:** December 24 - January 1, 2025
 
-  * **September 2, 2024:** Closed for Labor Day
+  * **Spring Break:** March 17 - 22, 2025
 
-  * **November 28 - 30, 2024:** Closed for Thanksgiving
+  * **Memorial Day:** May 25, 2025
 
-  * **December 24, 2024 - January 1, 2025:** Closed for Christmas and New Years
+  * **4th of July:** July 4 - 5, 2025
+    
+  * **Labor Day:** September 1, 2025
+    
+  * **Thanksgiving:** November 27 - 29, 2025
+    
+  * **Christmas & New Years:** December 24 - January 1, 2025
 
   ### Billing & Membership
 

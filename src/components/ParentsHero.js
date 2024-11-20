@@ -42,10 +42,10 @@ const links = [
     icon: 'article'
   },
   {
-    label: 'Liability Waiver',
-    href: 'https://forms.gle/BudgbR39sK1yTgvBA',
-    description: 'Sign our online Release and Waiver of Liability',
-    icon: 'signature'
+    label: 'Rules & Policies',
+    href: '/policies',
+    description: 'Check out our rules and policies for the gym',
+    icon: 'certificate'
   }
 ]
 

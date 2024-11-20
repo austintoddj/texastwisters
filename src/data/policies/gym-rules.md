@@ -20,7 +20,7 @@ description: >
 
   ## Behavior
 
-  The safety and well-being of all our gymnasts is our top priority. To ensure a focused and productive learning environment, we expect all participants to follow safety guidelines and respect coaches' instructions.
+  The safety and well-being of all our gymnasts is our top priority. To ensure a focused and productive learning environment, we expect all participants to follow safety guidelines and respect coaches' instructions. Failure to adhere to these expectations will result in corrective actions outlined below.
 
   ### Our Three-Strike System:
 

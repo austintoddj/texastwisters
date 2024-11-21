@@ -1,5 +1,5 @@
 ---
-name: Coach Anna
-role: Gymnastics Coach
+name: Emily
+role: Staff
 image: '/images/about/default.png'
 ---

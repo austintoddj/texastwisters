@@ -34,10 +34,7 @@ export const ContactInformation = () => {
                   Address
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
-                  {process.env.NEXT_PUBLIC_GYM_ADDRESS}{' '}
-                  {process.env.NEXT_PUBLIC_GYM_CITY},{' '}
-                  {process.env.NEXT_PUBLIC_GYM_STATE}{' '}
-                  {process.env.NEXT_PUBLIC_GYM_ZIP}
+                  901 S I-35 Frontage Rd Suite 103 Georgetown, TX 78626
                 </p>
               </div>
             </div>
@@ -55,7 +52,7 @@ export const ContactInformation = () => {
                   Email us
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
-                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
+                  info@texastwistersgym.com
                 </p>
               </div>
             </div>
@@ -73,7 +70,7 @@ export const ContactInformation = () => {
                   Call or Text
                 </h5>
                 <p className="mt-1.5 text-base leading-relaxed text-purple-800">
-                  {process.env.NEXT_PUBLIC_GYM_PHONE}
+                  (512) 884-2702
                 </p>
               </div>
             </div>

@@ -76,13 +76,15 @@ export const Events = () => {
                 </h4>
                 <p className="mt-1 text-purple-800 lg:mt-2">
                   {event.data.description}
-                    {event.data.href && (
-                        <Link
-                            className="ml-2 underline"
-                            href={event.data.href}
-                            target="_blank"
-                        >See details</Link>
-                    )}
+                  {event.data.href && (
+                    <Link
+                      className="ml-2 underline"
+                      href={event.data.href}
+                      target="_blank"
+                    >
+                      See details
+                    </Link>
+                  )}
                 </p>
               </div>
             </div>

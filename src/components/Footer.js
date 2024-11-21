@@ -154,10 +154,7 @@ export const Footer = ({ programs }) => {
                   Address
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_ADDRESS}{' '}
-                  {process.env.NEXT_PUBLIC_GYM_CITY},{' '}
-                  {process.env.NEXT_PUBLIC_GYM_STATE}{' '}
-                  {process.env.NEXT_PUBLIC_GYM_ZIP}
+                  901 S I-35 Frontage Rd Suite 103 Georgetown, TX 78626
                 </p>
               </div>
             </li>
@@ -173,7 +170,7 @@ export const Footer = ({ programs }) => {
                   Email
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
+                  info@texastwistersgym.com
                 </p>
               </div>
             </li>
@@ -189,7 +186,7 @@ export const Footer = ({ programs }) => {
                   Phone
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
+                  (512) 884-2702
                 </p>
               </div>
             </li>
@@ -200,8 +197,8 @@ export const Footer = ({ programs }) => {
       <div className="mx-auto flex max-w-md flex-col justify-between py-8 sm:max-w-none sm:flex-row lg:max-w-screen-2xl">
         {/* Copyright note */}
         <span className="text-base text-purple-800/90">
-          &copy; {new Date().getFullYear()} {process.env.NEXT_PUBLIC_GYM_NAME}.
-          All rights reserved.
+          &copy; {new Date().getFullYear()} Texas Twisters Gymnastics, LLC. All
+          rights reserved.
         </span>
       </div>
     </footer>

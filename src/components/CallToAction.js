@@ -29,7 +29,10 @@ export const CallToAction = () => {
         </h2>
         {/* CTA button */}
         <div className="mt-12 flex justify-center xl:mt-14">
-          <Link href={process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL} target="_blank">
+          <Link
+            href="https://portal.iclasspro.com/texastwisters/dashboard"
+            target="_blank"
+          >
             <Button>
               Enroll today
               <Icon

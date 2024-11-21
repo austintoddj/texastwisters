@@ -3,8 +3,8 @@ import { sendEmail } from '@/lib/sendgrid'
 export default async function Contact(req, res) {
   try {
     await sendEmail(
-      process.env.NEXT_PUBLIC_GYM_EMAIL,
-      process.env.NEXT_PUBLIC_GYM_EMAIL_NOREPLY,
+      'info@texastwistersgym.com',
+      'noreply@texastwistersgym.com',
       'd-93318328a69d4504998360ec450629e1',
       req.body.name,
       req.body.message,

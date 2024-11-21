@@ -71,7 +71,7 @@ export const HomeHero = () => {
           </p>
           {/* Hero buttons */}
           <div className="mt-8 flex flex-col items-center overflow-hidden sm:flex-row">
-            <Button href={process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL}>
+            <Button href="https://portal.iclasspro.com/texastwisters/dashboard">
               Enroll today
               <Icon
                 icon="arrowNarrowRight"

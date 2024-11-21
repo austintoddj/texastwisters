@@ -92,7 +92,7 @@ export const ParentsHero = () => {
           <div className="mt-10 font-semibold lg:mt-12">
             <p className="text-purple-800">Not enrolled in our gym?</p>
             <Button
-              href={process.env.NEXT_PUBLIC_ICLASSPRO_PORTAL}
+              href="https://portal.iclasspro.com/texastwisters/dashboard"
               size="sm"
               className="mt-2 sm:mt-3"
             >

@@ -34,10 +34,7 @@ export function ContactHeader() {
                   Address
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_ADDRESS}{' '}
-                  {process.env.NEXT_PUBLIC_GYM_CITY},{' '}
-                  {process.env.NEXT_PUBLIC_GYM_STATE}{' '}
-                  {process.env.NEXT_PUBLIC_GYM_ZIP}
+                  901 S I-35 Frontage Rd Suite 103 Georgetown, TX 78626
                 </p>
               </div>
             </li>
@@ -54,7 +51,7 @@ export function ContactHeader() {
                   Email
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_EMAIL}
+                  info@texastwistersgym.com
                 </p>
               </div>
             </li>
@@ -71,7 +68,7 @@ export function ContactHeader() {
                   Phone
                 </h5>
                 <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
-                  {process.env.NEXT_PUBLIC_GYM_PHONE}
+                  (512) 884-2702
                 </p>
               </div>
             </li>

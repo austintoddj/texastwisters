@@ -26,11 +26,11 @@ export const sendEmail = async (
       NAME: name,
       EMAIL: email,
       PHONE: phone,
-      Sender_Name: process.env.NEXT_PUBLIC_GYM_NAME,
-      Sender_Address: process.env.NEXT_PUBLIC_GYM_ADDRESS,
-      Sender_City: process.env.NEXT_PUBLIC_GYM_CITY,
-      Sender_State: process.env.NEXT_PUBLIC_GYM_STATE,
-      Sender_Zip: process.env.NEXT_PUBLIC_GYM_ZIP
+      Sender_Name: 'Texas Twisters Gymnastics, LLC',
+      Sender_Address: '901 S I-35 Frontage Rd Suite 103',
+      Sender_City: 'Georgetown',
+      Sender_State: 'TX',
+      Sender_Zip: '78626'
     }
   }
 

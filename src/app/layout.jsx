@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
+import {Banner} from '@/components/Banner'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],
@@ -51,6 +52,12 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
+        <Banner
+            icon="calendar"
+            content="Happy Thanksgiving! We will be closed From November 28 - 30, classes will resume the following Monday."
+            href="https://portal.iclasspro.com/texastwisters/news/2"
+            color="purple"
+        />
       </body>
     </html>
   )

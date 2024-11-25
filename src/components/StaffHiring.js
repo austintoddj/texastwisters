@@ -9,10 +9,10 @@ const owners = {
 }
 
 const requirements = [
-  'Patient, kind and enthusiastic!',
-  'Gymnastics experience preferred',
-  'Weekday availability between 9am - 5pm',
-  'Excellent communication skills',
+  'Excellent communication skills, especially with kids, parents, as well as other coaches and staff',
+  'Previous experience in gymnastics (Recommended, but not required. We will train the right person!)',
+  'Availability to work weekdays from 9 AM to 5 PM, or a variable schedule based on class times',
+  'Competitive pay based on experience',
   'USAG background checks and SafeSport training'
 ]
 
@@ -63,9 +63,7 @@ export const StaffHiring = () => {
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                  Our team is growing! We're looking for a positive, reliable,
-                  and self-motivated gymnastics coach who has a genuine heart
-                  for the sport and the kids they teach.
+                    Our team is growing! We’re looking for reliable, motivated gymnastics coaches that have:
                 </p>
 
                 {/* Coach qualifications list */}

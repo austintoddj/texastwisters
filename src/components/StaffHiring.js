@@ -9,11 +9,11 @@ const owners = {
 }
 
 const requirements = [
-  'Excellent communication skills, especially with kids, parents, as well as other coaches and staff',
   'Previous experience in gymnastics (Recommended, but not required. We will train the right person!)',
   'Availability to work weekdays from 9 AM to 5 PM, or a variable schedule based on class times',
-  'Competitive pay based on experience',
-  'USAG background checks and SafeSport training'
+  'Ability to engage and lead young children using age-appropriate language and positive reinforcement',
+  'A positive attitude, can-do mentality, exceptional patience, and a genuine passion for working with kids',
+  'Outstanding customer service skills. We treat our members like family and expect the same from our staff'
 ]
 
 export const StaffHiring = () => {

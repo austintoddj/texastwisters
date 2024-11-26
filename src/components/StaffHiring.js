@@ -63,7 +63,8 @@ export const StaffHiring = () => {
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
-                    Our team is growing! We’re looking for reliable, motivated gymnastics coaches that have:
+                  Our team is growing! We’re looking for reliable, motivated
+                  gymnastics coaches that have:
                 </p>
 
                 {/* Coach qualifications list */}

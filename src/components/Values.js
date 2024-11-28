@@ -6,22 +6,22 @@ const values = [
   {
     value: 'Safety',
     description:
-      'We hold the physical, psychological, and emotional safety of each of our students as our highest priority.'
+      'We hold the physical, psychological, and emotional safety of our students as the highest priority.'
   },
   {
-    value: 'Integrity',
+    value: 'Excellence',
     description:
-      'We believe in building trust with you, one honest conversation and action at a time.'
+      'We set high standards for ourselves and work hard to be our best in everything we do.'
   },
   {
-    value: 'Accountability',
+    value: 'Respect',
     description:
-      'We hold ourselves responsible for our actions and strive to be honest, fair, and trustworthy.'
+      'We believe in treating everyone with kindness and making sure people feel valued and welcomed.'
   },
   {
-    value: 'Transparency',
+    value: 'Fun',
     description:
-      'We believe in clear and honest communication. We will always be upfront with you and your family.'
+      'Gymnastics should be fun! We strive to create a positive and enjoyable experience for everyone.'
   }
 ]
 
@@ -38,9 +38,8 @@ export const Values = () => {
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-purple-800 sm:text-center md:mt-5 lg:mx-0 lg:text-left">
               At Texas Twisters, we believe in serving our community with
-              respect, integrity, and transparency. Our core values are more
-              than just aspirations, they shape and define who we are and how we
-              operate.
+              integrity. Our core values are more than just aspirations, they
+              shape and define who we are and how we operate.
             </p>
             {/* Values */}
             <div className="mt-10 grid max-w-4xl gap-6 sm:mx-auto sm:grid-cols-2 lg:mx-0 lg:max-w-md lg:grid-cols-1">

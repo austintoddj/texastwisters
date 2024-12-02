@@ -1,6 +1,6 @@
 ---
 name: Gym Closure
-description: Heads up! The gym will be closed for the Thanksgiving weekend. Classes will resume on the following Monday.
-dates: November 28 - 30
-image: '/images/events/thanksgiving.jpg'
+description: Merry Christmas! The gym will be closed from December 24th through January 1st. Classes will resume on the following day.
+dates: December 24 - January 1
+image: '/images/events/christmas.jpg'
 ---

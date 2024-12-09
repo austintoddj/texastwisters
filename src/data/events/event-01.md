@@ -1,7 +1,6 @@
 ---
-name: 2024 Candy Cane Classic
-description: Our Level 3 Team will represent Texas Twisters Gymnastics at the Candy Cane Classic in San Antonio, TX on December 6th.
-dates: December 6
-image: '/images/events/usag.jpg'
-href: 'https://alamoheightsgymnasticsacademy.com/events/candy-cane-classic-2024'
+name: Gym Closure
+description: Merry Christmas! The gym will be closed from December 24th through January 1st. Classes will resume on the following day.
+dates: December 24 - January 1
+image: '/images/events/christmas.jpg'
 ---

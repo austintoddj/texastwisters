@@ -15,6 +15,7 @@ import {
   IconChevronDown,
   IconChevronRight,
   IconChevronsRight,
+  IconChristmasTree,
   IconClock,
   IconExternalLink,
   IconFileCertificate,
@@ -73,7 +74,8 @@ const iconOptions = {
   signature: IconSignature,
   stars: IconStars,
   close: IconX,
-  linkOff: IconLinkOff
+  linkOff: IconLinkOff,
+  tree: IconChristmasTree
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

@@ -1,6 +1,7 @@
 ---
-name: Gym Closure
-description: Merry Christmas! The gym will be closed from December 24th through January 1st. Classes will resume on the following day.
-dates: December 24 - January 1
-image: '/images/events/christmas.jpg'
+name: Christmas Break Camps
+description: Camps are back! Keep your kids active and having a blast during their winter break! Limited spots available, sign up today!
+dates: December - January
+image: '/images/events/camp.jpg'
+href: 'https://portal.iclasspro.com/texastwisters/camps/5'
 ---

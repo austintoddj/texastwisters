@@ -1,13 +1,10 @@
 /* eslint-disable-next-line */
 import { AboutHero } from '@/components/AboutHero'
-
 /* eslint-disable-next-line */
 import { AlternatingFeatures } from '@/components/AlternatingFeatures'
 import { Staff } from '@/components/Staff'
-
 /* eslint-disable-next-line */
 import { Stats } from '@/components/Stats'
-
 /* eslint-disable-next-line */
 import { Values } from '@/components/Values'
 

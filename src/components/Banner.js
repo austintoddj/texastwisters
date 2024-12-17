@@ -17,7 +17,7 @@ export const Banner = ({ icon, content, href = null, color = 'purple' }) => {
         <div
           className={`bg-${color}-200 pointer-events-auto flex items-center justify-between gap-x-6 px-6 py-2.5 sm:rounded-full sm:py-3 sm:pl-4 sm:pr-3.5`}
         >
-          <p className={`text-${color}-700`}>
+          <p className={`text-${color}-700 text-sm md:text-base`}>
             <Icon
               icon={icon}
               className={`text-${color}-700 h-6 w-6 mr-4 inline`}

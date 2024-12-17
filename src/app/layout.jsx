@@ -57,10 +57,10 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          icon="tree"
-          content="Camps are back! Give your kids the gift of play this Christmas season — spots are limited, sign up today!"
-          href="https://portal.iclasspro.com/texastwisters/news/3"
-          color="blue"
+          icon="calendar"
+          content="Happy Holidays! We will be closed From December 24 - January 1, classes will resume the following day."
+          href="https://portal.iclasspro.com/texastwisters/news/2"
+          color="purple"
         />
       </body>
     </html>

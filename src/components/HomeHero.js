@@ -3,13 +3,11 @@
 import heroImage from '/public/images/home/hero.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
-
 /* eslint-disable-next-line */
 import { Dialog, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
-
 /* eslint-disable-next-line */
 import { Fragment, useState } from 'react'
 

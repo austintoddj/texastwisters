@@ -1,7 +1,6 @@
 /* eslint-disable-next-line */
 import { ProgramDescription } from '@/components/ProgramDescription'
 import { ProgramHero } from '@/components/ProgramHero'
-
 /* eslint-disable-next-line */
 import { ProgramInformation } from '@/components/ProgramInformation'
 import { ProgramPricing } from '@/components/ProgramPricing'

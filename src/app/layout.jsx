@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
           icon="calendar"
-          content="Happy Holidays! We will be closed From December 24 - January 1, classes will resume the following day."
+          content="Happy Holidays! We will be closed from December 24 - January 1, classes will resume on January 2."
           href="https://portal.iclasspro.com/texastwisters/news/2"
           color="purple"
         />

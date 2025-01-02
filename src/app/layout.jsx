@@ -1,4 +1,3 @@
-import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -56,12 +55,6 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          icon="calendar"
-          content="Happy Holidays! We will be closed from December 24 - January 1, classes will resume on January 2."
-          href="https://portal.iclasspro.com/texastwisters/news/2"
-          color="purple"
-        />
       </body>
     </html>
   )

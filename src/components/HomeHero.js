@@ -55,7 +55,7 @@ export const HomeHero = () => {
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           <div className="block">
             <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-              Registration fees waived through 2024!
+              Registration fees waived through 2025!
             </span>
           </div>
           <h1 className="h1 mt-4 max-w-xl text-center text-purple-900 sm:mt-5 lg:max-w-none lg:text-left">

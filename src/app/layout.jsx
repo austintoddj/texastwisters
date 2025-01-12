@@ -1,3 +1,4 @@
+import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -55,6 +56,12 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
+        <Banner
+          icon="calendar"
+          content="Join us for fun and games at our Martin Luther King Jr. day camp — spots are limited, sign up today!"
+          href="https://portal.iclasspro.com/texastwisters/camps/5"
+          color="blue"
+        />
       </body>
     </html>
   )

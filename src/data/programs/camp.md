@@ -47,17 +47,17 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: Christmas Break Camp
+    name: MLKJ Day Camp
     price: $40
     interval: per day
-    shortDescription: December - January
+    shortDescription: January 20
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
       - feature: Games, crafts, open gym and more!
     action:
       label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/camps/5'
+      href: 'https://portal.iclasspro.com/texastwisters/camp-details/995'
       icon: true
   pricing2:
     name: Spring Break Camps

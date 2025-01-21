@@ -57,9 +57,9 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          icon="calendar"
-          content="Join us for fun and games at our Martin Luther King Jr. day camp — spots are limited, sign up today!"
-          href="https://portal.iclasspro.com/texastwisters/camps/5"
+          icon="bell"
+          content="New Mighty Men classes are now available on Wed, Thurs, Fri — spots are limited, sign up today!"
+          href="https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16"
           color="blue"
         />
       </body>

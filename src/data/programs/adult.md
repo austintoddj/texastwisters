@@ -15,33 +15,32 @@ hero:
 infoSection:
   headline: Designed to help you rediscover your love of gymnastics
   text: Train every event or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re still capable of more than you think.
-  ages: 18+ years old
-  dates: Year-round
-  schedule: Varies by class
-  classSize: Student to coach ratio of 20:1
+  ages: 18 years and older
+  levels: >
+    Beginner, Advanced
+  duration: 60 minute weekly class
+  classSize: Student to coach ratio of 10:1
 descriptionSection:
   text: >
-    ## Our unique approach to education
+    ## Making adult gymnastics accessible and fun
             
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla. 
         
-    ### What they will learn
+    ### What you will learn
           
-    * Vivamus suscipit tortor eget felis porttitor volutpat.
+    * Foundational skills like a handstand, cartwheel, and roundoff
 
-    * Nulla porttitor accumsan tincidunt.
+    * Dynamic movements like a back handspring and front tuck
 
-    * Vivamus magna justo, lacinia eget consectetur sed.
+    * Advanced technical skills like a back layout and twisting elements
 
-    * Lorem ipsum dolor sit amet
-
-    * Ut enim ad minim veniam
+    * A variety of conditioning exercises to improve strength and flexibility
 
 
     Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
-  portraitImage: '/images/stock/program-description-01.jpg'
-  squareImage1: '/images/stock/program-description-02.jpg'
-  squareImage2: '/images/stock/program-description-03.jpg'
+  portraitImage: '/images/programs/adult/program-description-01.jpg'
+  squareImage1: '/images/programs/adult/program-description-02.jpg'
+  squareImage2: '/images/programs/adult/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
@@ -50,14 +49,14 @@ pricingSection:
     name: Adult Gymnastics
     price: $90
     interval: per month
-    shortDescription: Monday
+    shortDescription: Mon, Tue, Thu
     features:
-      - feature: 8:00 PM - 9:00 PM
+      - feature: Includes 1 class per week
       - feature: 60 minutes
       - feature: Ages 18+
     action:
       label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/class-details/51'
+      href: 'https://portal.iclasspro.com/texastwisters/classes?programs=57'
       icon: true
   pricing2:
     name: Adult Open Gym

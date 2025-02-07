@@ -57,10 +57,10 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          icon="bell"
-          content="New Mighty Men classes are now available on Wed, Thurs, Fri — spots are limited, sign up today!"
-          href="https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16"
-          color="blue"
+          icon="star"
+          content="Brand new Preschool classes are now available on Mon, Fri, Sat — spots are limited, sign up today!"
+          href="https://portal.iclasspro.com/texastwisters/classes?programs=17"
+          color="purple"
         />
       </body>
     </html>

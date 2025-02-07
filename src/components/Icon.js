@@ -10,6 +10,7 @@ import {
   IconBrandX,
   IconBulb,
   IconCalendar,
+  IconCarambola,
   IconCertificate,
   IconChartPie,
   IconCheck,
@@ -75,6 +76,7 @@ const iconOptions = {
   photo: IconPhoto,
   signature: IconSignature,
   stars: IconStars,
+  star: IconCarambola,
   close: IconX,
   linkOff: IconLinkOff,
   tree: IconChristmasTree

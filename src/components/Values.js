@@ -29,7 +29,7 @@ export const Values = () => {
   return (
     <section className="-mt-8 bg-white px-4 sm:mt-0 sm:px-6 sm:py-4 lg:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-3xl lg:max-w-screen-xl">
+      <div className="mx-auto max-w-3xl lg:max-w-(--breakpoint-xl)">
         <div className="lg:grid lg:grid-cols-2 lg:gap-10 xl:gap-16">
           {/* Section content */}
           <div className="flex flex-col justify-center">

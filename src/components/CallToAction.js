@@ -9,7 +9,7 @@ export const CallToAction = () => {
   return (
     <section className="bg-white py-24 sm:py-32">
       {/* Container */}
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-(--breakpoint-xl) px-4 sm:px-6 lg:px-8">
         {/* Gymnast image */}
         <Image className="mx-auto w-72" src={gymnast} alt="" />
         {/* Header */}

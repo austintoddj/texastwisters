@@ -67,7 +67,7 @@ export function Navbar({ programs }) {
       <div className="block lg:hidden">
         <Popover>
           <Popover.Button
-            className="group relative z-50 h-5 w-6 rotate-0 transform cursor-pointer transition duration-500 ease-in-out focus:outline-none"
+            className="group relative z-50 h-5 w-6 rotate-0 transform cursor-pointer transition duration-500 ease-in-out focus:outline-hidden"
             aria-label="Toggle Navigation"
           >
             {({ open }) => <MenuIcon open={open} />}
@@ -84,7 +84,7 @@ export function Navbar({ programs }) {
           >
             <Popover.Panel
               as="div"
-              className="absolute inset-x-0 top-0 z-40 w-screen overflow-y-scroll bg-gradient-to-tr from-purple-600 to-purple-600 px-4 py-16 sm:px-8"
+              className="absolute inset-x-0 top-0 z-40 w-screen overflow-y-scroll bg-linear-to-tr from-purple-600 to-purple-600 px-4 py-16 sm:px-8"
             >
               <div className="flex h-full w-full flex-col items-center justify-center">
                 <div className="mx-auto flex w-full flex-col items-center justify-evenly space-y-6">
@@ -146,7 +146,7 @@ export function Navbar({ programs }) {
 
   return (
     <div className="px-4 sm:px-6">
-      <nav className="mx-auto flex max-w-screen-xl items-center pt-5">
+      <nav className="mx-auto flex max-w-(--breakpoint-xl) items-center pt-5">
         <div className="flex w-full items-center justify-between">
           {/* Main navigation menu for large screens */}
           <div className="hidden items-center justify-between md:space-x-6 lg:flex lg:space-x-10">
@@ -267,7 +267,7 @@ export function Navbar({ programs }) {
           </div>
 
           {/* Logo on smaller screens: < lg */}
-          <div className="block w-60 flex-shrink-0 flex-grow-0 sm:w-60 lg:hidden">
+          <div className="block w-60 shrink-0 grow-0 sm:w-60 lg:hidden">
             <Link href="/">
               <Image
                 src={logo}

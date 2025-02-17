@@ -80,7 +80,7 @@ export const FeaturedPrograms = () => {
   return (
     <section className="overflow-hidden px-4 pb-24 pt-16 sm:px-6 sm:pb-28 sm:pt-24 md:pb-0 lg:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-xl md:max-w-screen-xl">
+      <div className="mx-auto max-w-xl md:max-w-(--breakpoint-xl)">
         {/* Section header title and subtext  */}
         <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16">
           <div>

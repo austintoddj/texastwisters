@@ -71,9 +71,9 @@ export const ContactHero = () => {
   }
 
   return (
-    <section className="overflow-hidden bg-gradient-to-b from-purple-25 to-purple-50 px-4 pb-12 sm:px-6 lg:px-8 lg:pt-24">
+    <section className="overflow-hidden bg-linear-to-b from-purple-25 to-purple-50 px-4 pb-12 sm:px-6 lg:px-8 lg:pt-24">
       {/* Container */}
-      <div className="mx-auto max-w-xl lg:grid lg:max-w-screen-xl lg:grid-cols-2 lg:gap-10 xl:gap-32 ">
+      <div className="mx-auto max-w-xl lg:grid lg:max-w-(--breakpoint-xl) lg:grid-cols-2 lg:gap-10 xl:gap-32 ">
         {/* Hero header */}
         <div className="py-16 lg:py-32">
           <div>
@@ -137,7 +137,7 @@ export const ContactHero = () => {
                       name={field.name}
                       placeholder={field.placeholder}
                       rows={5}
-                      className="mt-2 w-full rounded-2xl border-2 border-purple-50 p-4 text-[16px] text-sm font-medium text-purple-700 placeholder-purple-700 placeholder-opacity-70 outline-none duration-300 ease-in-out focus:border-purple-200 focus:outline-none focus:ring-purple-200"
+                      className="mt-2 w-full rounded-2xl border-2 border-purple-50 p-4 text-[16px] text-sm font-medium text-purple-700 placeholder-purple-700 placeholder-opacity-70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
                       required={field.required}
                     />
                   )}
@@ -148,7 +148,7 @@ export const ContactHero = () => {
                       type={field.type}
                       name={field.name}
                       placeholder={field.placeholder}
-                      className="mt-2 h-14 w-full rounded-2xl border-2 border-purple-50 p-4 text-[16px] text-sm font-medium text-purple-700 placeholder-purple-700 placeholder-opacity-70 outline-none duration-300 ease-in-out focus:border-purple-200 focus:outline-none focus:ring-purple-200"
+                      className="mt-2 h-14 w-full rounded-2xl border-2 border-purple-50 p-4 text-[16px] text-sm font-medium text-purple-700 placeholder-purple-700 placeholder-opacity-70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
                       required={field.required}
                     />
                   )}

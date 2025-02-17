@@ -16,7 +16,7 @@ export const Newsletter = () => {
         alt=""
       />
       {/* Content container */}
-      <div className="relative mx-auto grid gap-12 px-4 sm:px-6 lg:max-w-screen-xl lg:grid-cols-12 lg:px-8">
+      <div className="relative mx-auto grid gap-12 px-4 sm:px-6 lg:max-w-(--breakpoint-xl) lg:grid-cols-12 lg:px-8">
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center lg:col-span-5 lg:mx-0 lg:items-start">
           <h2 className="h2 text-center text-white lg:text-left">
             Latest from the newsletter
@@ -45,14 +45,14 @@ export const Newsletter = () => {
                 </div>
                 <input
                   type="email"
-                  className="h-14 w-full rounded-full border-0 border-transparent bg-purple-25 py-3.5 pl-12 pr-24 leading-5 text-purple-700 placeholder-purple-700 duration-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="h-14 w-full rounded-full border-0 border-transparent bg-purple-25 py-3.5 pl-12 pr-24 leading-5 text-purple-700 placeholder-purple-700 duration-300 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-purple-500"
                   required
                   placeholder="Signup to our newsletter"
                   autoComplete="email"
                 />
                 <button
                   type="submit"
-                  className="absolute right-1.5 top-1.5 inline-flex h-11 items-center rounded-full bg-yellow-400 px-4 py-2 text-sm text-purple-900 outline-none duration-300 ease-in-out hover:bg-yellow-600 focus:outline-none sm:font-medium md:px-6"
+                  className="absolute right-1.5 top-1.5 inline-flex h-11 items-center rounded-full bg-yellow-400 px-4 py-2 text-sm text-purple-900 outline-hidden duration-300 ease-in-out hover:bg-yellow-600 focus:outline-hidden sm:font-medium md:px-6"
                 >
                   Subscribe
                 </button>

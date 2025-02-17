@@ -7,10 +7,10 @@ export function ContactHeader() {
   return (
     <div className="hidden px-4 sm:px-6 lg:block">
       {/* Container */}
-      <div className="relative mx-auto max-w-screen-xl border-b border-purple-200/30 py-5">
+      <div className="relative mx-auto max-w-(--breakpoint-xl) border-b border-purple-200/30 py-5">
         <div className="flex items-center justify-between">
           {/* Site branding */}
-          <div className="w-80 flex-shrink-0 flex-grow-0">
+          <div className="w-80 shrink-0 grow-0">
             <Link href="/">
               <Image
                 src={logo}
@@ -23,7 +23,7 @@ export function ContactHeader() {
           {/* Contact information */}
           <ul className="ml-8 flex lg:space-x-6 xl:space-x-16">
             {/* Address */}
-            <li className="flex max-w-xs flex-shrink">
+            <li className="flex max-w-xs shrink">
               <div>
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-yellow-400">
                   <Icon icon="mapPin" className="h-6 w-6 text-purple-700" />
@@ -40,7 +40,7 @@ export function ContactHeader() {
             </li>
 
             {/* Email */}
-            <li className="flex flex-shrink-0">
+            <li className="flex shrink-0">
               <div>
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-purple-200">
                   <Icon icon="mail" className="h-6 w-6 text-purple-700" />
@@ -57,7 +57,7 @@ export function ContactHeader() {
             </li>
 
             {/* Phone number */}
-            <li className="flex flex-shrink-0">
+            <li className="flex shrink-0">
               <div>
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-200">
                   <Icon icon="phone" className="h-6 w-6 text-purple-700" />

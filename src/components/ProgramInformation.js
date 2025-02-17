@@ -22,7 +22,7 @@ const InfoCard = ({ icon, title, gradientColors, text }) => {
       </h4>
       <div
         className={clsx(
-          'my-2 h-1.5 w-8 rounded-2xl bg-gradient-to-r',
+          'my-2 h-1.5 w-8 rounded-2xl bg-linear-to-r',
           gradientColors.startColor,
           gradientColors.endColor
         )}
@@ -36,7 +36,7 @@ export const ProgramInformation = ({ data }) => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
       {/* Container */}
-      <div className="mx-auto max-w-xl lg:max-w-screen-xl">
+      <div className="mx-auto max-w-xl lg:max-w-(--breakpoint-xl)">
         {/* Section header text */}
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-32">
           <div className="flex items-center">

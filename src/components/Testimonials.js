@@ -35,7 +35,7 @@ export const Testimonials = () => {
                   key={`testimonial-${index}`}
                   className={clsx(
                     bgColorsClassName[index % 4],
-                    'w-96 flex-grow rounded-3xl px-8 py-8 transition duration-300 ease-in-out sm:px-6 md:px-8 lg:px-5 2xl:px-8'
+                    'w-96 grow rounded-3xl px-8 py-8 transition duration-300 ease-in-out sm:px-6 md:px-8 lg:px-5 2xl:px-8'
                   )}
                 >
                   <Image
@@ -76,7 +76,7 @@ export const Testimonials = () => {
                   key={`testimonial-${index}`}
                   className={clsx(
                     bgColorsClassName[index % 4],
-                    'w-96 flex-grow rounded-3xl px-8 py-8 transition duration-300 ease-in-out sm:px-6 md:px-8 lg:px-5 2xl:px-8'
+                    'w-96 grow rounded-3xl px-8 py-8 transition duration-300 ease-in-out sm:px-6 md:px-8 lg:px-5 2xl:px-8'
                   )}
                 >
                   <Image

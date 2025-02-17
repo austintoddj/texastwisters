@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       <HomeHero />
       {/* Gradient background transition */}
-      <div className="h-40 w-full bg-gradient-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
+      <div className="h-40 w-full bg-linear-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
 
       <HomeFeatureBlocks />
       <StaffHiring />

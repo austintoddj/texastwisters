@@ -45,10 +45,10 @@ export const HomeHero = () => {
   }
 
   return (
-    <section className="bg-gradient-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
+    <section className="bg-linear-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
       {/* Hero container */}
       <div
-        className="mx-auto max-w-screen-xl lg:grid lg:grid-cols-12 lg:gap-8"
+        className="mx-auto max-w-(--breakpoint-xl) lg:grid lg:grid-cols-12 lg:gap-8"
         x-data="{ modalOpen: false }"
       >
         {/* Hero text content */}
@@ -146,7 +146,7 @@ export const HomeHero = () => {
             {/*    <span className="absolute inline-flex w-20 h-20 bg-purple-400 rounded-full opacity-60 animate-ping" />*/}
             {/*    /!* Video modal button *!/*/}
             {/*    <button*/}
-            {/*        className="relative z-10 flex items-center justify-center w-20 h-20 duration-300 ease-in-out rounded-full outline-none bg-purple-600/90 group hover:bg-purple-600/95"*/}
+            {/*        className="relative z-10 flex items-center justify-center w-20 h-20 duration-300 ease-in-out rounded-full outline-hidden bg-purple-600/90 group hover:bg-purple-600/95"*/}
             {/*        onClick={() => openModal()}*/}
             {/*    >*/}
             {/*        <Icon*/}

@@ -12,7 +12,7 @@ export const Faqs = ({ faqs }) => {
   return (
     <section className="bg-yellow-100 py-20 sm:py-28" id="faq">
       {/* Container */}
-      <div className="mx-auto px-4 sm:px-6 lg:max-w-screen-lg lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:max-w-(--breakpoint-lg) lg:px-8">
         {/* Section header title and subtext  */}
         <div className="max-w-2xl">
           <h2 className="h2 text-purple-900">Frequently asked questions</h2>
@@ -55,7 +55,7 @@ export const Faqs = ({ faqs }) => {
                       icon="chevronDown"
                       className={clsx(
                         open && 'rotate-180',
-                        'ml-3 h-6 w-6 flex-shrink-0 text-purple-700 duration-300 ease-in-out group-hover:text-purple-600 sm:ml-6'
+                        'ml-3 h-6 w-6 shrink-0 text-purple-700 duration-300 ease-in-out group-hover:text-purple-600 sm:ml-6'
                       )}
                       stroke={2}
                     />

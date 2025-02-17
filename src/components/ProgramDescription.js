@@ -8,7 +8,7 @@ export const ProgramDescription = ({ data }) => {
   return (
     <section className="relative overflow-hidden">
       {/* Purple background to fill in right gap */}
-      <div className="absolute inset-y-0 right-0 ml-auto w-full max-w-screen-xl rounded-l-5xl bg-purple-600" />
+      <div className="absolute inset-y-0 right-0 ml-auto w-full max-w-(--breakpoint-xl) rounded-l-5xl bg-purple-600" />
       {/* Background dots decorations */}
       <Image
         src={dotsChaos}
@@ -21,7 +21,7 @@ export const ProgramDescription = ({ data }) => {
         alt=""
       />
       {/* Main Section */}
-      <div className="relative w-full bg-purple-600 px-4 py-16 sm:px-6 sm:py-24 lg:py-0 lg:pr-0 2xl:mx-auto 2xl:max-w-screen-xl 2xl:rounded-l-5xl">
+      <div className="relative w-full bg-purple-600 px-4 py-16 sm:px-6 sm:py-24 lg:py-0 lg:pr-0 2xl:mx-auto 2xl:max-w-(--breakpoint-xl) 2xl:rounded-l-5xl">
         <div className="relative grid gap-12 lg:grid-cols-2 lg:pr-10 2xl:gap-4 2xl:pr-0">
           <div className="relative order-2 mx-auto grid w-full max-w-2xl grid-cols-2 gap-3 sm:gap-6 lg:order-1 lg:max-w-none lg:py-32">
             <Image

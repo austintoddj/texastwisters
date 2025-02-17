@@ -49,7 +49,7 @@ const links = [
 
 export const ParentsHero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-purple-25 to-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-purple-25 to-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       {/* Background decorations */}
       <Image
         src={dotsGrid}
@@ -64,7 +64,7 @@ export const ParentsHero = () => {
         priority
       />
       {/* Container */}
-      <div className="mx-auto max-w-xl lg:grid lg:max-w-screen-xl lg:grid-cols-12 lg:gap-8">
+      <div className="mx-auto max-w-xl lg:grid lg:max-w-(--breakpoint-xl) lg:grid-cols-12 lg:gap-8">
         {/* Section header text */}
         <div className="flex flex-col justify-center lg:col-span-5">
           <div>

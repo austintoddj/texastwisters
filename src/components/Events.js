@@ -16,7 +16,7 @@ export const Events = () => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-2xl lg:max-w-screen-xl">
+      <div className="mx-auto max-w-2xl lg:max-w-(--breakpoint-xl)">
         {/* Section header title and subtext  */}
         <div>
           <h2 className="h2 text-purple-900 lg:text-center">Upcoming events</h2>

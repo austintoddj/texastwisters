@@ -20,7 +20,7 @@ export const StaffHiring = () => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-xl lg:max-w-screen-xl" id="hiring">
+      <div className="mx-auto max-w-xl lg:max-w-(--breakpoint-xl)" id="hiring">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-12 xl:grid-cols-11 xl:gap-24">
           {/* Text content */}
           <div className="flex flex-col justify-center lg:order-2 lg:col-span-1 xl:col-span-6">
@@ -58,7 +58,7 @@ export const StaffHiring = () => {
 
             {/* Current job postings box */}
             <div className="relative mt-16 max-w-4xl rounded-xl bg-yellow-100 sm:mt-14">
-              <span className="absolute -top-7 left-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-600 to-purple-600 shadow-md sm:left-10">
+              <span className="absolute -top-7 left-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-purple-600 to-purple-600 shadow-md sm:left-10">
                 <Icon icon="certificate" className="h-8 w-8 text-purple-50" />
               </span>
               <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
@@ -75,7 +75,7 @@ export const StaffHiring = () => {
                       className="flex items-center"
                     >
                       <Image
-                        className="mr-3 h-7 w-7 flex-shrink-0"
+                        className="mr-3 h-7 w-7 shrink-0"
                         src={checkmark}
                         alt=""
                       />

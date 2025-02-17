@@ -52,7 +52,7 @@ export const HomeFeatureBlocks = () => {
   return (
     <section className="overflow-hidden bg-yellow-100 px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Centered content with feature list */}
         <div className="relative">
           {/* Block title and subtext */}
@@ -74,7 +74,7 @@ export const HomeFeatureBlocks = () => {
                   className="mx-3 my-2 flex items-center"
                 >
                   <Image
-                    className="mr-3 h-7 w-7 flex-shrink-0"
+                    className="mr-3 h-7 w-7 shrink-0"
                     src={checkmark}
                     alt=""
                   />

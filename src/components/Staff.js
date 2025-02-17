@@ -11,7 +11,7 @@ export const Staff = () => {
       {/* Top purple background section */}
       <div className="bg-purple-600 px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         {/* Section header text */}
-        <div className="mx-auto max-w-2xl lg:max-w-screen-xl">
+        <div className="mx-auto max-w-2xl lg:max-w-(--breakpoint-xl)">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div className="flex items-center">
               <h3 className="h2 max-w-4xl text-white sm:text-center lg:text-left">
@@ -32,7 +32,7 @@ export const Staff = () => {
       <div className="h-32 w-full bg-purple-600" />
       {/* Team section */}
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl -translate-y-32 lg:max-w-screen-xl">
+        <div className="mx-auto max-w-3xl -translate-y-32 lg:max-w-(--breakpoint-xl)">
           <div className="grid gap-y-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
             {staff.map((member, i) => (
               <div key={`member-${i}`}>

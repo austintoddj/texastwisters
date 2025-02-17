@@ -25,7 +25,7 @@ export const Stats = () => {
       )}
     >
       {/* Container */}
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Section header text */}
         <div>
           <h2 className="h2 mx-auto max-w-4xl text-center text-white">

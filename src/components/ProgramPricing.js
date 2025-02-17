@@ -6,7 +6,7 @@ export const ProgramPricing = ({ data }) => {
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 xl:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-xl lg:max-w-screen-xl">
+      <div className="mx-auto max-w-xl lg:max-w-(--breakpoint-xl)">
         <div className="md:gap-16 lg:grid lg:grid-cols-2 lg:gap-0">
           {/* Section content */}
           <div className="flex flex-col justify-center pr-10 xl:pr-0">

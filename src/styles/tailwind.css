@@ -1,21 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@config '../../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 /* Typography */
 
 .h1 {
-  @apply text-5xl font-extrabold leading-snug sm:text-6xl sm:leading-tight xl:text-7xl xl:leading-tighter;
+  @apply xl:leading-tighter text-5xl leading-snug font-extrabold sm:text-6xl sm:leading-tight xl:text-7xl;
 }
 
 .h2 {
-  @apply text-4xl font-bold leading-tight tracking-tight sm:text-5xl sm:leading-tighter xl:text-6xl;
+  @apply sm:leading-tighter text-4xl leading-tight font-bold tracking-tight sm:text-5xl xl:text-6xl;
 }
 
 .h3 {
-  @apply text-3xl font-bold leading-tight tracking-tight sm:text-4xl sm:leading-tighter;
+  @apply sm:leading-tighter text-3xl leading-tight font-bold tracking-tight sm:text-4xl;
 }
 
 .h4 {
-  @apply text-2xl font-bold leading-tight tracking-tight sm:text-3xl sm:leading-tighter;
+  @apply sm:leading-tighter text-2xl leading-tight font-bold tracking-tight sm:text-3xl;
 }

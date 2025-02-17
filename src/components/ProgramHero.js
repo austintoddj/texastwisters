@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 export const ProgramHero = ({ hero }) => {
   return (
-    <section className="relative bg-gradient-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-screen-xl">
+    <section className="relative bg-linear-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Header */}
         <div className="relative">
           <h2 className="h1 mx-auto mt-4 max-w-3xl text-center text-purple-900">

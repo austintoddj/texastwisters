@@ -18,7 +18,7 @@ export function AboutHero() {
   return (
     <section className="bg-purple-25 px-4 pt-16 sm:px-6 lg:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Page header */}
         <div className="relative">
           <h2 className="h1 mx-auto max-w-3xl text-center text-purple-900">

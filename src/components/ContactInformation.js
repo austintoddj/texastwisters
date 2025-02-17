@@ -4,7 +4,7 @@ export const ContactInformation = () => {
   return (
     <section className="relative -mb-52 w-full -translate-y-52 bg-white px-4 pt-56 sm:px-6 sm:pt-64 lg:px-8 lg:pt-72">
       {/* Contact information container */}
-      <div className="mx-auto max-w-xl lg:max-w-screen-xl">
+      <div className="mx-auto max-w-xl lg:max-w-(--breakpoint-xl)">
         {/* Section header */}
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-32">
           <div className="flex items-center">
@@ -78,7 +78,7 @@ export const ContactInformation = () => {
         </div>
       </div>
       {/* Google map widget */}
-      <div className="mt-16 rounded-3xl lg:mx-auto lg:mt-24 lg:max-w-screen-xl">
+      <div className="mt-16 rounded-3xl lg:mx-auto lg:mt-24 lg:max-w-(--breakpoint-xl)">
         <iframe
           className="w-full rounded-3xl"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952.274380923258!2d-97.68862074863884!3d30.63533556040567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d756d380f0e9%3A0x936601e2bde200dd!2sTexas%20Twisters%20Gymnastics!5e0!3m2!1sen!2sus!4v1700596277399!5m2!1sen!2sus"

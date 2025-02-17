@@ -39,12 +39,12 @@ export const Footer = ({ programs }) => {
   return (
     <footer className="space-y-8 divide-y divide-purple-400/20 bg-yellow-100 px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
       {/* Top section: blocks */}
-      <div className="mx-auto grid max-w-md gap-y-8 sm:max-w-none sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 md:gap-x-12 lg:max-w-screen-2xl lg:grid-cols-11 lg:gap-8 xl:gap-12">
+      <div className="mx-auto grid max-w-md gap-y-8 sm:max-w-none sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 md:gap-x-12 lg:max-w-(--breakpoint-2xl) lg:grid-cols-11 lg:gap-8 xl:gap-12">
         {/* Block 1 */}
         <div className="flex flex-col lg:col-span-4 lg:mx-auto">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-80 flex-shrink-0 flex-grow-0">
+            <div className="w-80 shrink-0 grow-0">
               <Link href="/">
                 <Image
                   src={logo}
@@ -78,10 +78,10 @@ export const Footer = ({ programs }) => {
           </div>
         </div>
         {/* Block 2 */}
-        <div className="flex-shrink sm:order-3 lg:order-none lg:col-span-2">
+        <div className="shrink sm:order-3 lg:order-none lg:col-span-2">
           <h6 className="relative text-xl font-bold tracking-wide text-purple-900">
             <span className="relative z-20">Programs</span>
-            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500" />
+            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-linear-to-r from-yellow-400 to-yellow-500" />
           </h6>
           {/* Program links */}
           <ul className="mt-6 divide-y divide-purple-400/20 text-lg">
@@ -103,10 +103,10 @@ export const Footer = ({ programs }) => {
           </ul>
         </div>
         {/* Block 3 */}
-        <div className="flex-shrink sm:order-4 lg:order-none lg:col-span-2">
+        <div className="shrink sm:order-4 lg:order-none lg:col-span-2">
           <h6 className="relative text-xl font-bold tracking-wide text-purple-900">
             <span className="relative z-20">Site Links</span>
-            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500" />
+            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-linear-to-r from-yellow-400 to-yellow-500" />
           </h6>
           {/* Site links */}
           <ul className="mt-6 divide-y divide-purple-400/20 text-lg">
@@ -138,12 +138,12 @@ export const Footer = ({ programs }) => {
         <div className="sm:order-2 lg:order-none lg:col-span-3 lg:mx-auto ">
           <h6 className="relative text-xl font-bold tracking-wide text-purple-900">
             <span className="relative z-20">Contact us</span>
-            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500" />
+            <span className="absolute -bottom-1 left-0 z-10 h-1 w-12 rounded-lg bg-linear-to-r from-yellow-400 to-yellow-500" />
           </h6>
           {/* Contact information */}
           <ul className="mt-6 flex flex-col space-y-5">
             {/* Address */}
-            <li className="flex max-w-xs flex-shrink">
+            <li className="flex max-w-xs shrink">
               <div>
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-yellow-400">
                   <Icon icon="mapPin" className="h-6 w-6 text-purple-700" />
@@ -159,7 +159,7 @@ export const Footer = ({ programs }) => {
               </div>
             </li>
             {/* Email */}
-            <li className="flex flex-shrink-0">
+            <li className="flex shrink-0">
               <div>
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-purple-200">
                   <Icon icon="mail" className="h-6 w-6 text-purple-700" />
@@ -175,7 +175,7 @@ export const Footer = ({ programs }) => {
               </div>
             </li>
             {/* Phone number */}
-            <li className="flex flex-shrink-0">
+            <li className="flex shrink-0">
               <div>
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-200">
                   <Icon icon="phone" className="h-6 w-6 text-purple-700" />
@@ -194,7 +194,7 @@ export const Footer = ({ programs }) => {
         </div>
       </div>
       {/* Bottom section */}
-      <div className="mx-auto flex max-w-md flex-col justify-between py-8 sm:max-w-none sm:flex-row lg:max-w-screen-2xl">
+      <div className="mx-auto flex max-w-md flex-col justify-between py-8 sm:max-w-none sm:flex-row lg:max-w-(--breakpoint-2xl)">
         {/* Copyright note */}
         <span className="text-base text-purple-800/90">
           &copy; {new Date().getFullYear()} Texas Twisters Gymnastics, LLC. All

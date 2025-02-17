@@ -42,7 +42,7 @@ export const AlternatingFeatures = () => {
   return (
     <section className="overflow-hidden bg-white px-4 pb-28 sm:px-6 sm:pb-36 lg:px-8">
       {/* Container */}
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Section header */}
         <div className="px-4 text-center sm:px-6 lg:px-8">
           <h3 className="h2 text-purple-900">
@@ -125,7 +125,7 @@ export const AlternatingFeatures = () => {
                     alt=""
                   />
                   {/* Block image */}
-                  <figure className="relative aspect-[12/10] md:order-1">
+                  <figure className="relative aspect-12/10 md:order-1">
                     <Image
                       src={block.image.src}
                       className="absolute inset-0 h-full w-full rounded-3xl object-cover object-center shadow-xl"

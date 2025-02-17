@@ -22,7 +22,7 @@ export default function AboutPage() {
     <>
       <AboutHero />
       {/* Gradient background transition */}
-      <div className="h-32 w-full bg-gradient-to-b from-purple-25 to-white sm:h-40 lg:h-44" />
+      <div className="h-32 w-full bg-linear-to-b from-purple-25 to-white sm:h-40 lg:h-44" />
 
       {/*<AlternatingFeatures />*/}
       {/*<Stats />*/}

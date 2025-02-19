@@ -1,6 +1,9 @@
+'use client'
+
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { track } from '@vercel/analytics'
 import Image from 'next/image'
 
 const owners = {
@@ -85,6 +88,11 @@ export const StaffHiring = () => {
                 </ul>
                 {/* Link to job application */}
                 <Button
+                  onClick={() => {
+                    track('Apply now', {
+                      job: 'Coach'
+                    })
+                  }}
                   href="https://forms.gle/Xagd6meiKKzttkbm8"
                   target="_blank"
                   variant="accent"

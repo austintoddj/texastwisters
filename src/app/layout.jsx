@@ -1,4 +1,4 @@
-// import { Banner } from '@/components/Banner'
+import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -56,12 +56,12 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        {/*<Banner*/}
-        {/*  icon="star"*/}
-        {/*  content="Brand new Preschool classes are now available on Mon, Fri, Sat — spots are limited, sign up today!"*/}
-        {/*  href="https://portal.iclasspro.com/texastwisters/classes?programs=17"*/}
-        {/*  color="purple"*/}
-        {/*/>*/}
+        <Banner
+          icon="run"
+          content="Discover our brand new Day Camps during school breaks! 9am-2pm, featuring games, crafts, and more. Ages 4+."
+          href="https://portal.iclasspro.com/texastwisters/camps/5"
+          color="blue"
+        />
       </body>
     </html>
   )

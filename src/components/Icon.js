@@ -31,6 +31,7 @@ import {
   IconPhoto,
   IconPlayerPlayFilled,
   IconPlus,
+  IconRun,
   IconSignature,
   IconStarFilled,
   IconStarHalfFilled,
@@ -79,7 +80,8 @@ const iconOptions = {
   star: IconCarambola,
   close: IconX,
   linkOff: IconLinkOff,
-  tree: IconChristmasTree
+  tree: IconChristmasTree,
+  run: IconRun
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

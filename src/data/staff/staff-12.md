@@ -1,5 +1,5 @@
 ---
 name: Coach Kannyn
-role: Gymnastics Coach
+role: Preschool Coach
 image: '/images/about/kannyn.jpg'
 ---

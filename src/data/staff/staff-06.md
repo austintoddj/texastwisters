@@ -1,5 +1,5 @@
 ---
 name: Coach Bailey
-role: Gymnastics Coach
+role: Level 2 Team Coach
 image: '/images/about/bailey.jpg'
 ---

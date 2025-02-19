@@ -47,29 +47,29 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing1:
-    name: MLKJ Day Camp
+    name: 4/18 Day Camp
     price: $40
     interval: per day
-    shortDescription: January 20
+    shortDescription: April 18
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
       - feature: Games, crafts, open gym and more!
     action:
       label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/camp-details/995'
+      href: 'https://portal.iclasspro.com/texastwisters/camp-details/1037'
       icon: true
   pricing2:
-    name: Spring Break Camps
+    name: 4/21 Day Camp
     price: $40
     interval: per day
-    shortDescription: To be determined
+    shortDescription: April 21
     features:
       - feature: 9 AM - 2 PM
       - feature: Please pack a lunch!
       - feature: Games, crafts, open gym and more!
     action:
-      label: Coming soon!
-      href: '#'
-      icon: false
+      label: Enroll today
+      href: 'https://portal.iclasspro.com/texastwisters/camp-details/1038'
+      icon: true
 ---

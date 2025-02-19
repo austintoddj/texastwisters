@@ -1,7 +1,7 @@
 ---
-name: 2025 Biles Invitational
-description: Level 3 Team will compete at the 2025 Biles Invitational in Houston, TX for their final meet of the season. Let's finish strong!
-dates: January 30 - February 2
-image: '/images/events/usag.jpg'
-href: 'https://bilesinvitational.com'
+name: 2025 Spring Show
+description: Join us for our Second Annual Spring Show at Texas Twisters Gymnastics to see your gymnasts shine!
+dates: April 12 - April 13
+image: '/images/events/show.jpg'
+href: 'https://portal.iclasspro.com/texastwisters/news/4'
 ---

@@ -86,7 +86,7 @@ module.exports = {
       animation: {
         'ping': 'ping 2.5s cubic-bezier(0, 0, 0.3, 1) infinite',
         'horizontal-bounce': 'horizontal-bounce 1s infinite',
-        'infinite-scroll': 'infinite-scroll 125s linear infinite'
+        'infinite-scroll': 'infinite-scroll 300s linear infinite'
       },
 
       keyframes: {

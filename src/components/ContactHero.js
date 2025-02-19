@@ -137,7 +137,7 @@ export const ContactHero = () => {
                       name={field.name}
                       placeholder={field.placeholder}
                       rows={5}
-                      className="mt-2 w-full rounded-2xl border-2 border-purple-50 p-4 text-[16px] text-sm font-medium text-purple-700 placeholder-purple-700 placeholder-opacity-70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
+                      className="mt-2 w-full rounded-2xl border-2 border-purple-50 p-4 text-[14px] text-sm font-medium text-purple-700 placeholder-purple-700/70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
                       required={field.required}
                     />
                   )}
@@ -148,7 +148,7 @@ export const ContactHero = () => {
                       type={field.type}
                       name={field.name}
                       placeholder={field.placeholder}
-                      className="mt-2 h-14 w-full rounded-2xl border-2 border-purple-50 p-4 text-[16px] text-sm font-medium text-purple-700 placeholder-purple-700 placeholder-opacity-70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
+                      className="mt-2 h-14 w-full rounded-2xl border-2 border-purple-50 p-4 text-[14px] text-sm font-medium text-purple-700 placeholder-purple-700/70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
                       required={field.required}
                     />
                   )}

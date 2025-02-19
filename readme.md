@@ -6,8 +6,8 @@ The texastwistersgym.com site is a [Next.js](https://nextjs.org) scaffolded proj
 
 ## System Requirements
 
-- Node >= 18.17
-- NPM >= 9.6
+- Node >= 22.14
+- NPM >= 11.1
 
 ## Developing
 
@@ -19,3 +19,7 @@ npm run dev # dev server at http://localhost:3000
 ## License
 
 This project is not licensed under an open-source license and is the intellectual property of Texas Twisters Gymnastics, LLC. The source is available only as an educational resource and to accept fixes for minor mistakes.
+
+TODO: Fix the divider & spacing on the mobile menu
+TODO: Fix the divider & spacing on the footer
+TODO: Staff pictures

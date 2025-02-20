@@ -33,7 +33,7 @@ export function ContactHeader() {
                 <h5 className="flex items-center text-base font-semibold text-purple-900">
                   Address
                 </h5>
-                <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
+                <p className="mt-0.5 text-sm leading-relaxed text-purple-800/90">
                   901 S I-35 Frontage Rd Suite 103 Georgetown, TX 78626
                 </p>
               </div>
@@ -50,7 +50,7 @@ export function ContactHeader() {
                 <h5 className="flex items-center text-base font-semibold text-purple-900">
                   Email
                 </h5>
-                <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
+                <p className="mt-0.5 text-sm leading-relaxed text-purple-800/90">
                   info@texastwistersgym.com
                 </p>
               </div>
@@ -67,7 +67,7 @@ export function ContactHeader() {
                 <h5 className="flex items-center text-base font-semibold text-purple-900">
                   Phone
                 </h5>
-                <p className="mt-0.5 text-sm leading-relaxed text-purple-800 text-opacity-90">
+                <p className="mt-0.5 text-sm leading-relaxed text-purple-800/90">
                   (512) 884-2702
                 </p>
               </div>

@@ -114,7 +114,7 @@ export const ContactHero = () => {
               <h3 className="text-2xl font-bold text-purple-900">
                 Send us a message
               </h3>
-              <p className="mt-0.5 text-purple-800 text-opacity-90">
+              <p className="mt-0.5 text-purple-800/90">
                 We'll get back to you as soon as we can.
               </p>
             </div>

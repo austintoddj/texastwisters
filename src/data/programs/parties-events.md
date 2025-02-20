@@ -45,7 +45,7 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Planning something a little bigger? Add more friends for $15 per guest, up to 25 participants. Extend the fun for an additional 30 minutes for $65!
+  text: Planning something a little bigger? Add more friends for $15 per guest, up to 25 participants. Extend the fun for an additional 30 minutes for $75!
   pricing1:
     name: Silver package
     price: $250

@@ -13,7 +13,7 @@ export const ContactInformation = () => {
             </h2>
           </div>
           <div className="mt-3 flex items-center sm:mt-4 lg:mt-0">
-            <p className="text-lg text-purple-800 text-opacity-90 sm:text-xl">
+            <p className="text-lg text-purple-800/90 sm:text-xl">
               Send us an email or give us a call. Better yet, stop by in-person.
               We'd love to meet you and show you around!
             </p>

@@ -143,7 +143,7 @@ export const HomeHero = () => {
               sizes="(min-width: 1280px) 39rem, (min-width: 1024px) 50vw, (min-width: 768px) 48rem, 100vw"
             />
             {/*<div className="absolute inset-0 flex items-center justify-center">*/}
-            {/*    <span className="absolute inline-flex w-20 h-20 bg-purple-400 rounded-full opacity-60 animate-ping" />*/}
+            {/*    <span className="absolute inline-flex w-20 h-20 bg-purple-400/60 rounded-fu animate-ping" />*/}
             {/*    /!* Video modal button *!/*/}
             {/*    <button*/}
             {/*        className="relative z-10 flex items-center justify-center w-20 h-20 duration-300 ease-in-out rounded-full outline-hidden bg-purple-600/90 group hover:bg-purple-600/95"*/}

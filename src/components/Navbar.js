@@ -111,7 +111,7 @@ export function Navbar({ programs }) {
                   </Link>
                 </div>
 
-                <hr className="my-8 w-full border-purple-200 border-opacity-30 sm:my-10" />
+                <hr className="my-8 w-full border-purple-200/30 sm:my-10" />
 
                 <div className="mx-auto w-full max-w-md">
                   <p className="text-center text-lg font-semibold uppercase tracking-wider text-purple-200 sm:text-left">
@@ -210,7 +210,7 @@ export function Navbar({ programs }) {
                                       <h5 className="text-lg font-semibold text-purple-600">
                                         {program.data.name}
                                       </h5>
-                                      <p className="mt-1 text-sm text-purple-800 opacity-90">
+                                      <p className="mt-1 text-sm text-purple-800/90">
                                         {program.data.dropdownDescription}
                                       </p>
                                     </Link>

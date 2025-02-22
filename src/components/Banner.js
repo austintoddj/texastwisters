@@ -1,10 +1,25 @@
 'use client'
 
 import { Icon } from '@/components/Icon'
+import { track } from '@vercel/analytics'
 import Link from 'next/link'
 import { useState } from 'react'
 
-export const Banner = ({ icon, content, href = null, color = 'purple' }) => {
+/**
+ * @param {Object} props
+ * @param {string} props.icon - Icon name from the Icon component
+ * @param {string} props.content - Banner content
+ * @param {string} [props.href] - Optional URL for the 'Read more' link
+ * @param {string} [props.color] - Optional color for the banner (default: 'purple')
+ * @param {string} [props.event] - Optional event name for tracking
+ */
+export const Banner = ({
+  icon,
+  content,
+  href = null,
+  color = 'purple',
+  event = null
+}) => {
   const [isOpen, setIsOpen] = useState(true)
 
   if (!isOpen) {
@@ -24,7 +39,18 @@ export const Banner = ({ icon, content, href = null, color = 'purple' }) => {
             />
             {content}
             {href && (
-              <Link className="ml-2 underline" href={href} target="_blank">
+              <Link
+                onClick={() => {
+                  event &&
+                    track('link_click', {
+                      id: event,
+                      path: window.location.pathname
+                    })
+                }}
+                className="ml-2 underline"
+                href={href}
+                target="_blank"
+              >
                 Read more
               </Link>
             )}

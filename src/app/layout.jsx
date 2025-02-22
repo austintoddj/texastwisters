@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
           content="Discover our brand new Day Camps during school breaks! 9am-2pm, featuring games, crafts, and more. Ages 4+."
           href="https://portal.iclasspro.com/texastwisters/camps/5"
           color="blue"
+          event="camp-banner-cta"
         />
       </body>
     </html>

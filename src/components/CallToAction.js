@@ -1,7 +1,10 @@
+'use client'
+
 import gymnast from '/public/images/illustrations/gymnast.svg'
 import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { track } from '@vercel/analytics'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -30,6 +33,12 @@ export const CallToAction = () => {
         {/* CTA button */}
         <div className="mt-12 flex justify-center xl:mt-14">
           <Link
+            onClick={() => {
+              track('link_click', {
+                id: 'enroll-today',
+                path: window.location.pathname
+              })
+            }}
             href="https://portal.iclasspro.com/texastwisters/dashboard"
             target="_blank"
           >

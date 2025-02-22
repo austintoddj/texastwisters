@@ -4,6 +4,7 @@ import logo from '/public/images/logo.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
 import { Menu, Popover, Transition } from '@headlessui/react'
+import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -104,6 +105,12 @@ export function Navbar({ programs }) {
                   ))}
 
                   <Link
+                    onClick={() => {
+                      track('link_click', {
+                        id: 'customer-portal',
+                        path: window.location.pathname
+                      })
+                    }}
                     href="https://portal.iclasspro.com/texastwisters/dashboard"
                     target="_blank"
                   >
@@ -259,6 +266,12 @@ export function Navbar({ programs }) {
           {/* Call-to-action button */}
           <div className="hidden lg:block">
             <Link
+              onClick={() => {
+                track('link_click', {
+                  id: 'customer-portal',
+                  path: window.location.pathname
+                })
+              }}
               href="https://portal.iclasspro.com/texastwisters/dashboard"
               target="_blank"
             >

@@ -89,8 +89,9 @@ export const StaffHiring = () => {
                 {/* Link to job application */}
                 <Button
                   onClick={() => {
-                    track('Apply now', {
-                      job: 'Coach'
+                    track('button_click', {
+                      id: 'apply-now',
+                      path: window.location.pathname
                     })
                   }}
                   href="https://forms.gle/Xagd6meiKKzttkbm8"

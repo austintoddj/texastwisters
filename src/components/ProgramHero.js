@@ -1,5 +1,9 @@
+'use client'
+
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
+import { track } from '@vercel/analytics'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -17,7 +21,16 @@ export const ProgramHero = ({ hero }) => {
           </p>
           {/* CTA button */}
           <div className="mt-8 flex justify-center">
-            <Link href={hero.action.href} target="_blank">
+            <Link
+              onClick={() => {
+                track(EVENT_NAMES.LINK_CLICK, {
+                  id: EVENT_IDS.PROGRAM_CTA,
+                  path: window.location.pathname
+                })
+              }}
+              href={hero.action.href}
+              target="_blank"
+            >
               <Button>
                 {hero.action.label}
                 {hero.action.icon && (

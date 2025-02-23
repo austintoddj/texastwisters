@@ -3,6 +3,7 @@
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Image from 'next/image'
 
@@ -89,8 +90,8 @@ export const StaffHiring = () => {
                 {/* Link to job application */}
                 <Button
                   onClick={() => {
-                    track('button_click', {
-                      id: 'apply-now',
+                    track(EVENT_NAMES.BUTTON_CLICK, {
+                      id: EVENT_IDS.HIRING_CTA,
                       path: window.location.pathname
                     })
                   }}

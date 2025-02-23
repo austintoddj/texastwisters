@@ -1,7 +1,11 @@
+'use client'
+
 import arrow from '/public/images/illustrations/arrow-right-over.svg'
 import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
+import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,31 +23,36 @@ const links = [
     label: 'Parent Portal',
     href: 'https://portal.iclasspro.com/texastwisters/account',
     description: 'Make changes to your membership or account',
-    icon: 'user'
+    icon: 'user',
+    event: EVENT_IDS.CUSTOMER_PORTAL
   },
   {
     label: 'Safety & Response',
     href: 'https://usagym.org/safety',
     description: 'Report a concern with USAG or SafeSport',
-    icon: 'lifeBuoy'
+    icon: 'lifeBuoy',
+    event: EVENT_IDS.SAFETY_RESPONSE
   },
   {
     label: 'FAQs',
     href: '/#faq',
     description: 'See our most frequently asked questions',
-    icon: 'help'
+    icon: 'help',
+    event: EVENT_IDS.FAQ
   },
   {
     label: 'Latest News',
     href: 'https://portal.iclasspro.com/texastwisters/news',
     description: 'Stay informed with the latest events and activities',
-    icon: 'article'
+    icon: 'article',
+    event: EVENT_IDS.NEWS
   },
   {
     label: 'Rules & Policies',
     href: '/policies',
     description: 'Check out our rules and policies for the gym',
-    icon: 'certificate'
+    icon: 'certificate',
+    event: EVENT_IDS.RULES_POLICIES
   }
 ]
 
@@ -92,6 +101,12 @@ export const ParentsHero = () => {
           <div className="mt-10 font-semibold lg:mt-12">
             <p className="text-purple-800">Not enrolled in our gym?</p>
             <Button
+              onClick={() => {
+                track(EVENT_NAMES.BUTTON_CLICK, {
+                  id: EVENT_IDS.HEADER_CTA,
+                  path: window.location.pathname
+                })
+              }}
               href="https://portal.iclasspro.com/texastwisters/dashboard"
               size="sm"
               className="mt-2 sm:mt-3"
@@ -110,6 +125,12 @@ export const ParentsHero = () => {
           <div className="relative mx-auto w-full auto-rows-fr sm:grid sm:grid-cols-4 sm:gap-6 md:max-w-3xl lg:max-w-lg lg:grid-cols-2 lg:gap-5">
             {links.slice(0, 5).map((link, index) => (
               <Link
+                onClick={() => {
+                  track(EVENT_NAMES.LINK_CLICK, {
+                    id: link.event,
+                    path: window.location.pathname
+                  })
+                }}
                 href={link.href}
                 key={`parent-link-${index}`}
                 className={clsx(

@@ -4,6 +4,7 @@ import dotsGrid from '/public/images/illustrations/dots-grid.svg'
 import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import { Button } from '@/components/Button'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -46,8 +47,8 @@ export const ContactHero = () => {
   async function handleSubmit(e) {
     e.preventDefault()
 
-    track('form_submit', {
-      id: 'contact-us',
+    track(EVENT_NAMES.FORM_SUBMIT, {
+      id: EVENT_IDS.CONTACT_US,
       path: window.location.pathname
     })
 

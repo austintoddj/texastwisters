@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
+import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -61,7 +62,7 @@ export default function RootLayout({ children }) {
           content="Discover our brand new Day Camps during school breaks! 9am-2pm, featuring games, crafts, and more. Ages 4+."
           href="https://portal.iclasspro.com/texastwisters/camps/5"
           color="blue"
-          event="camp-banner-cta"
+          event={EVENT_IDS.BANNER_CTA_CAMP}
         />
       </body>
     </html>

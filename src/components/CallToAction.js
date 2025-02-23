@@ -4,6 +4,7 @@ import gymnast from '/public/images/illustrations/gymnast.svg'
 import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -34,8 +35,8 @@ export const CallToAction = () => {
         <div className="mt-12 flex justify-center xl:mt-14">
           <Link
             onClick={() => {
-              track('link_click', {
-                id: 'enroll-today',
+              track(EVENT_NAMES.LINK_CLICK, {
+                id: EVENT_IDS.FOOTER_CTA,
                 path: window.location.pathname
               })
             }}

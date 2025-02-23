@@ -3,6 +3,7 @@
 import logo from '/public/images/logo.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { Menu, Popover, Transition } from '@headlessui/react'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
@@ -106,8 +107,8 @@ export function Navbar({ programs }) {
 
                   <Link
                     onClick={() => {
-                      track('link_click', {
-                        id: 'customer-portal',
+                      track(EVENT_NAMES.LINK_CLICK, {
+                        id: EVENT_IDS.CUSTOMER_PORTAL,
                         path: window.location.pathname
                       })
                     }}
@@ -267,8 +268,8 @@ export function Navbar({ programs }) {
           <div className="hidden lg:block">
             <Link
               onClick={() => {
-                track('link_click', {
-                  id: 'customer-portal',
+                track(EVENT_NAMES.LINK_CLICK, {
+                  id: EVENT_IDS.CUSTOMER_PORTAL,
                   path: window.location.pathname
                 })
               }}

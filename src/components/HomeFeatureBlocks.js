@@ -1,3 +1,5 @@
+'use client'
+
 import portraitImage1 from '/public/images/home/home-blocks-01.jpg'
 import squareImage1 from '/public/images/home/home-blocks-02.jpg'
 import portraitImage2 from '/public/images/home/home-blocks-03.jpg'
@@ -5,6 +7,8 @@ import squareImage2 from '/public/images/home/home-blocks-04.jpg'
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
+import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
 
@@ -23,6 +27,7 @@ const blocks = [
       'A place where athletes to feel connected, supported, and inspired',
     text: 'We believe that teamwork and friendship are essential for success, and we are committed to helping children develop these skills.',
     action: { label: 'About us', href: '/about', icon: true },
+    event: EVENT_IDS.ABOUT_US,
     portraitImage: {
       src: portraitImage1,
       alt: 'Girl doing a handstand on a balance beam'
@@ -37,6 +42,7 @@ const blocks = [
     headline: 'Watch your child improve their skills and build confidence',
     text: 'Beyond physical development and progression, our classes teach essential social skills that help children learn to take turns, share, and interact with their peers.',
     action: { label: 'Meet our staff', href: '/about#staff', icon: true },
+    event: EVENT_IDS.STAFF,
     portraitImage: {
       src: portraitImage2,
       alt: 'Coach supporting a small girl in a preschool class'
@@ -156,7 +162,17 @@ export const HomeFeatureBlocks = () => {
                 {block.text}
               </p>
               <div className="mt-6">
-                <Button href={block.action.href} variant="accent" size="sm">
+                <Button
+                  onClick={() => {
+                    track(EVENT_NAMES.BUTTON_CLICK, {
+                      id: block.event,
+                      path: window.location.pathname
+                    })
+                  }}
+                  href={block.action.href}
+                  variant="accent"
+                  size="sm"
+                >
                   {block.action.label}
                   {block.action.icon && (
                     <Icon

@@ -1,6 +1,7 @@
 'use client'
 
 import { Icon } from '@/components/Icon'
+import { EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -42,7 +43,7 @@ export const Banner = ({
               <Link
                 onClick={() => {
                   event &&
-                    track('link_click', {
+                    track(EVENT_NAMES.LINK_CLICK, {
                       id: event,
                       path: window.location.pathname
                     })

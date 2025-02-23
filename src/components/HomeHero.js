@@ -3,8 +3,10 @@
 import heroImage from '/public/images/home/hero.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 /* eslint-disable-next-line */
 import { Dialog, Transition } from '@headlessui/react'
+import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -69,7 +71,15 @@ export const HomeHero = () => {
           </p>
           {/* Hero buttons */}
           <div className="mt-8 flex flex-col items-center overflow-hidden sm:flex-row">
-            <Button href="https://portal.iclasspro.com/texastwisters/dashboard">
+            <Button
+              onClick={() => {
+                track(EVENT_NAMES.BUTTON_CLICK, {
+                  id: EVENT_IDS.HEADER_CTA,
+                  path: window.location.pathname
+                })
+              }}
+              href="https://portal.iclasspro.com/texastwisters/dashboard"
+            >
               Enroll today
               <Icon
                 icon="arrowNarrowRight"

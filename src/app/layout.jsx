@@ -58,11 +58,11 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          icon="run"
-          content="Discover our brand new Day Camps during school breaks! 9am-2pm, featuring games, crafts, and more. Ages 4+."
-          href="https://portal.iclasspro.com/texastwisters/camps/5"
+          icon="olympics"
+          content="Save the date! Our 2nd Annual Spring Show is happening on April 12 & April 13 — you won't want to miss it!"
+          href="https://portal.iclasspro.com/texastwisters/news/4"
           color="blue"
-          event={EVENT_IDS.BANNER_CTA_CAMP}
+          event={EVENT_IDS.BANNER_CTA_SPRING_SHOW}
         />
       </body>
     </html>

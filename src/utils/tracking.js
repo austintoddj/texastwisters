@@ -8,6 +8,7 @@ export const EVENT_IDS = {
   HEADER_CTA: 'header-cta',
   FOOTER_CTA: 'footer-cta',
   BANNER_CTA_CAMP: 'banner-cta-camp',
+  BANNER_CTA_SPRING_SHOW: 'banner-cta-spring-show',
   PROGRAM_CTA: 'program-cta',
   HIRING_CTA: 'hiring-cta',
   CONTACT_US: 'contact-us',

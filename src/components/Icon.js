@@ -27,6 +27,7 @@ import {
   IconMail,
   IconMapPin,
   IconMoodKid,
+  IconOlympics,
   IconPhone,
   IconPhoto,
   IconPlayerPlayFilled,
@@ -81,7 +82,8 @@ const iconOptions = {
   close: IconX,
   linkOff: IconLinkOff,
   tree: IconChristmasTree,
-  run: IconRun
+  run: IconRun,
+  olympics: IconOlympics
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

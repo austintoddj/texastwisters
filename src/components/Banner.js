@@ -58,7 +58,7 @@ export const Banner = ({
           </p>
           <button
             type="button"
-            className="-m-3 flex-none p-3 focus-visible:outline-offset-[-4px]"
+            className="-m-3 cursor-pointer flex-none p-3 focus-visible:outline-offset-[-4px]"
             onClick={() => setIsOpen(false)}
           >
             <span className="sr-only">Dismiss</span>

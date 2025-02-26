@@ -165,7 +165,7 @@ export function Navbar({ programs }) {
                     {({ open }) => (
                       <>
                         <Menu.Button>
-                          <div className="group relative p-0.5">
+                          <div className="group cursor-pointer relative p-0.5">
                             <span
                               className={clsx(
                                 'relative z-10 flex items-center text-lg font-medium duration-300 ease-in-out group-hover:text-purple-600',

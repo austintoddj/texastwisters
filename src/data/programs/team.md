@@ -1,11 +1,11 @@
 ---
 name: Team
-dropdownDescription: Train and compete in our USA Gymnastics Development Program.
+dropdownDescription: Train, compete, and excel in our USA Gymnastics Development Program.
 featured: true
 hero:
   headline: Texas Twisters Team
   description: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
-  text: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
+  text: Our team includes Levels 1 - 4 of the Development program and is designed to provide high caliber gymnasts the opportunity to train and compete at USAG regulated meets statewide.
   action:
     label: Contact us
     href: '/contact'
@@ -44,8 +44,8 @@ descriptionSection:
   squareImage2: '/images/stock/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
-  headline: Tryouts now available!
-  text: All team classes are by invitation only. Level 4 coming in 2025. Contact us to schedule a tryout!
+  headline: Call us today!
+  text: All levels are by invitation only. Contact us to schedule a tryout, or to learn more about our team program.
   pricing1:
     name: Level 2
     price: $150

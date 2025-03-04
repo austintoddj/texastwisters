@@ -15,7 +15,7 @@ hero:
 infoSection:
   headline: A program designed to help your child learn
   text: This fun, fast-paced class teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
-  ages: 12 months - 5 years
+  ages: 18 months - 5 years
   levels: Preschool
   duration: 45 minutes
   classSize: 6:1 student to coach ratio
@@ -49,9 +49,9 @@ pricingSection:
     name: Tumble Tots
     price: $80
     interval: per month
-    shortDescription: Mon - Sat availability
+    shortDescription: Limited spots available!
     features:
-      - feature: Ages 1 - 3 years
+      - feature: Ages 18 months - 3.5 years
       - feature: Parent participation
       - feature: 45 minute classes
     action:
@@ -62,9 +62,9 @@ pricingSection:
     name: Preschool Gymnastics
     price: $80
     interval: per month
-    shortDescription: Mon - Sat availability
+    shortDescription: Limited spots available!
     features:
-      - feature: Ages 3 - 5 years
+      - feature: Ages 3.5 years - 5 years
       - feature: No parent participation
       - feature: 45 minute classes
     action:

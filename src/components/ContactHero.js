@@ -28,7 +28,7 @@ const fields = [
   {
     name: 'phone',
     label: 'Phone',
-    type: 'text',
+    type: 'tel',
     placeholder: '(123) 456-7890',
     required: false
   },
@@ -149,7 +149,7 @@ export const ContactHero = () => {
                     />
                   )}
 
-                  {['text', 'email'].includes(field.type) && (
+                  {['email', 'tel', 'text'].includes(field.type) && (
                     <input
                       id={field.name}
                       type={field.type}

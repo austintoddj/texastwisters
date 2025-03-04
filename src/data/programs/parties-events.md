@@ -45,7 +45,7 @@ descriptionSection:
 pricingSection:
   tagline: Packages & Pricing
   headline: Let's get the party started!
-  text: Planning something a little bigger? Add more friends for $15 per guest, up to 25 participants. Extend the fun for an additional 30 minutes for $75!
+  text: Planning something a little bigger? Add more friends for $20 per guest, up to 25 participants. Extend the fun for an additional 30 minutes for $75!
   pricing1:
     name: Silver package
     price: $250
@@ -61,11 +61,11 @@ pricingSection:
       icon: true
   pricing2:
     name: Gold package
-    price: $325
+    price: $350
     interval: Best value
     shortDescription: Saturday availability
     features:
-      - feature: Starts at 20 participants
+      - feature: Starts at 18 participants
       - feature: Includes 1 hour of gym time
       - feature: 30 minutes in party area
     action:

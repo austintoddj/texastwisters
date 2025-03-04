@@ -39,7 +39,7 @@ export const Footer = ({ programs }) => {
   return (
     <footer className="space-y-8 divide-y divide-purple-400/20 bg-yellow-100 px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
       {/* Top section: blocks */}
-      <div className="mx-auto grid max-w-md gap-y-8 sm:max-w-none sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 md:gap-x-12 lg:max-w-(--breakpoint-2xl) lg:grid-cols-11 lg:gap-8 xl:gap-12">
+      <div className="mx-auto grid max-w-md gap-y-8 pb-16 sm:max-w-none sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 md:gap-x-12 lg:max-w-(--breakpoint-2xl) lg:grid-cols-11 lg:gap-8 xl:gap-12">
         {/* Block 1 */}
         <div className="flex flex-col lg:col-span-4 lg:mx-auto">
           {/* Logo */}
@@ -194,7 +194,7 @@ export const Footer = ({ programs }) => {
         </div>
       </div>
       {/* Bottom section */}
-      <div className="mx-auto flex max-w-md flex-col justify-between py-8 sm:max-w-none sm:flex-row lg:max-w-(--breakpoint-2xl)">
+      <div className="mx-auto flex max-w-md flex-col justify-between pb-8 sm:max-w-none sm:flex-row lg:max-w-(--breakpoint-2xl)">
         {/* Copyright note */}
         <span className="text-base text-purple-800/90">
           &copy; {new Date().getFullYear()} Texas Twisters Gymnastics, LLC. All

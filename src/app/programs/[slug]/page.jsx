@@ -1,7 +1,5 @@
-/* eslint-disable-next-line */
 import { ProgramDescription } from '@/components/ProgramDescription'
 import { ProgramHero } from '@/components/ProgramHero'
-/* eslint-disable-next-line */
 import { ProgramInformation } from '@/components/ProgramInformation'
 import { ProgramPricing } from '@/components/ProgramPricing'
 import { getAllItems, getItemData } from '@/lib/getItems'
@@ -29,12 +27,12 @@ export default async function ProgramPage({ params }) {
   return (
     <>
       {program?.hero && <ProgramHero hero={program.hero} />}
-      {/*{program?.infoSection && (*/}
-      {/*  <ProgramInformation data={program.infoSection} />*/}
-      {/*)}*/}
-      {/*{program?.descriptionSection && (*/}
-      {/*  <ProgramDescription data={program.descriptionSection} />*/}
-      {/*)}*/}
+      {program?.infoSection && (
+        <ProgramInformation data={program.infoSection} />
+      )}
+      {program?.descriptionSection && (
+        <ProgramDescription data={program.descriptionSection} />
+      )}
       {program?.pricingSection && (
         <ProgramPricing data={program.pricingSection} />
       )}

@@ -4,7 +4,7 @@ dropdownDescription: Learn foundational gymnastics skills with an emphasis on fu
 featured: true
 hero:
   headline: Texas Twisters Preschool Program
-  description: Preschool classes for our 3-5 year old gymnasts. These classes are co-ed and will include a variety of games, obstacle courses, and skill building on size-appropriate equipment.
+  description: Our Preschool program is designed for our children 18 months - 5 years. These classes are co-ed and will include a variety of games, obstacle courses, and skill building on size-appropriate equipment.
   text: Our preschool class is the perfect start for your little gymnast to learn foundational gymnastics skills with an emphasis on fun!
   action:
     label: Enroll today
@@ -23,8 +23,7 @@ descriptionSection:
   text: >
     ## An introduction to gymnastics
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla. 
-        
+      We believe that involving children in gymnastics at a young age is a great way to help them develop their motor skills, coordination, balance, flexibility, and overall confidence. Our preschool program is designed to introduce children to the sport in a fun and engaging way. We focus on building a strong foundation of skills that will help them succeed both in the gym and in other physical activities as they grow older.
     ### What they will learn
           
     * Forward and backward rolling
@@ -36,8 +35,9 @@ descriptionSection:
     * Stretching and flexibility
 
     * Listening and following directions
+     
+     Our facility features age-appropriate equipment thoughtfully designed for young children, ensuring they can explore gymnastics in a secure and comfortable setting. Safety is our number one priority, giving you peace of mind as your child embarks on this exciting journey.
 
-     Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
   portraitImage: '/images/programs/preschool/program-description-01.jpg'
   squareImage1: '/images/programs/preschool/program-description-02.jpg'
   squareImage2: '/images/programs/preschool/program-description-03.jpg'

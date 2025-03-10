@@ -9,6 +9,7 @@ export const EVENT_IDS = {
   FOOTER_CTA: 'footer-cta',
   BANNER_CTA_CAMP: 'banner-cta-camp',
   BANNER_CTA_SPRING_SHOW: 'banner-cta-spring-show',
+  BANNER_CTA_GYM_CLOSURE: 'banner-cta-gym-closure',
   PROGRAM_CTA: 'program-cta',
   HIRING_CTA: 'hiring-cta',
   CONTACT_US: 'contact-us',

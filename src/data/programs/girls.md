@@ -1,11 +1,10 @@
 ---
-name: Recreational
+name: Girls Recreational
 dropdownDescription: Build on the fundamentals with more advanced gymnastics skills.
 featured: true
 hero:
-  headline: Texas Twisters Recreational Program
+  headline: Texas Twisters Girls Recreational Program
   description: Recreational classes, from beginner to advanced, for students age 5+ with a focus on developing and refining fundamental gymnastics skills on bars, beam, floor, vault, and trampolines.
-  #  text: Our classes for beginners to advanced gymnasts focus on developing fundamental skills on the vault, uneven bars, beam, and floor. Gymnasts will enjoy learning new skills, making new friends, and discovering the importance of teamwork.
   text: Our recreational program focuses on the progressive development of gymnastics skills from the ground up, all while gaining confidence, coordination, flexibility, and strength.
   action:
     label: Enroll today

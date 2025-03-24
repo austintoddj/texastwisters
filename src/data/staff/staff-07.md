@@ -1,5 +1,5 @@
 ---
-name: Coach Lindsey
+name: Coach Mariah
 role: Gymnastics Coach
-image: '/images/about/lindsey.jpg'
+image: '/images/about/mariah.jpg'
 ---

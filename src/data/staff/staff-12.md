@@ -1,5 +1,5 @@
 ---
-name: Coach Kannyn
-role: Preschool Coach
-image: '/images/about/kannyn.jpg'
+name: Emily
+role: Staff
+image: '/images/about/default.png'
 ---

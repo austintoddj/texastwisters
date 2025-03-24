@@ -1,5 +1,5 @@
 ---
-name: Coach Presley
-role: Gymnastics Coach
+name: Gabriela
+role: Front Desk
 image: '/images/about/default.png'
 ---

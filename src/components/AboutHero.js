@@ -7,11 +7,11 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 
 const images = [
-  { src: image1, alt: 'An adult and child doing gymnastics on the beach' },
-  { src: image2, alt: 'A child smiling on a green mat' },
-  { src: image3, alt: 'A father and son at a baseball field' },
-  { src: image4, alt: 'A boy surfing at the beach' },
-  { src: image5, alt: 'A man and woman smiling on bicycles' }
+  { src: image1, alt: 'An adult hugging a child at a gymnastics competition' },
+  { src: image2, alt: 'A child performing a handstand on the beach' },
+  { src: image3, alt: 'A child smiling with a dolphin' },
+  { src: image4, alt: 'A boy pitching in a baseball game' },
+  { src: image5, alt: 'A family smiling together' }
 ]
 
 export function AboutHero() {
@@ -73,7 +73,7 @@ export function AboutHero() {
             adults in gymnastics.
           </p>
           <p>
-            Our daughter is now a competitive gymnast, and currently holds state
+            Our daughter is a competitive gymnast that has held state
             titles on bars and vault. Our son loves baseball and is currently
             playing his fifth season with GYBA.
           </p>

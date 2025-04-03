@@ -1,5 +1,5 @@
 ---
 name: Coach Bo
-role: Gymnastics Coach
+role: Director, Boy's Program
 image: '/images/about/bo.jpg'
 ---

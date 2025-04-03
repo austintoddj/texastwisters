@@ -1,5 +1,5 @@
 ---
-name: Gabriela
-role: Front Desk
-image: '/images/about/default.png'
+name: Coach Isabelle
+role: Gymnastics Coach
+image: '/images/about/isabelle.jpg'
 ---

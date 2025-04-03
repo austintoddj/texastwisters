@@ -1,5 +1,5 @@
 ---
-name: Coach Solana
-role: Gymnastics Coach
-image: '/images/about/solana.jpg'
+name: Coach Kannyn
+role: Preschool Coach
+image: '/images/about/kannyn.jpg'
 ---

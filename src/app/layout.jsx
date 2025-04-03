@@ -58,11 +58,11 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          icon="calendar"
-          content="Heads up! We will be closed for Spring Break from March 17 - March 22, classes will resume the following Monday."
-          href="https://portal.iclasspro.com/texastwisters/news/2"
+          icon="olympics"
+          content="Registration now open! Our 2nd Annual Spring Show is happening on April 12 & April 13 — you won't want to miss it!"
+          href="https://portal.iclasspro.com/texastwisters/camps/11"
           color="blue"
-          event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
+          event={EVENT_IDS.BANNER_CTA_SPRING_SHOW}
         />
       </body>
     </html>

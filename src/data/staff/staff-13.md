@@ -1,5 +1,5 @@
 ---
-name: Emily
-role: Staff
-image: '/images/about/default.png'
+name: Coach Avery
+role: Gymnastics Coach
+image: '/images/about/avery-bl.jpg'
 ---

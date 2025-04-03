@@ -1,5 +1,5 @@
 ---
-name: Coach Anna
+name: Coach Solana
 role: Gymnastics Coach
-image: '/images/about/default.png'
+image: '/images/about/solana.jpg'
 ---

@@ -1,5 +1,5 @@
 ---
 name: Coach Bo
-role: Director, Boy's Program
+role: Boy's Program Director
 image: '/images/about/bo.jpg'
 ---

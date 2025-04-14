@@ -37,6 +37,7 @@ import {
   IconStarFilled,
   IconStarHalfFilled,
   IconStars,
+  IconTent,
   IconUser,
   IconUsers,
   IconX
@@ -83,7 +84,8 @@ const iconOptions = {
   linkOff: IconLinkOff,
   tree: IconChristmasTree,
   run: IconRun,
-  olympics: IconOlympics
+  olympics: IconOlympics,
+  tent: IconTent
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

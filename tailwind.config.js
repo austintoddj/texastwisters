@@ -9,7 +9,8 @@ const purple = {
   200: '#D2C6FA',
   100: '#e0d7fc',
   50: '#f0ebfe',
-  25: '#F4F0FC'
+  25: '#F4F0FC',
+  10: '#F7F5FD'
 }
 const yellow = {
   900: '#FAAF19',

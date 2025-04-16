@@ -4,6 +4,7 @@ import dotsGrid from '/public/images/illustrations/dots-grid.svg'
 import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import { Button } from '@/components/Button'
+import { Eyebrow } from '@/components/Eyebrow'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
@@ -78,20 +79,17 @@ export const ContactHero = () => {
   }
 
   return (
-    <section className="overflow-hidden bg-linear-to-b from-purple-25 to-purple-50 px-4 pb-12 sm:px-6 lg:px-8 lg:pt-24">
+    <section className="px-4 pb-12 overflow-hidden bg-linear-to-b from-purple-25 to-purple-50 sm:px-6 lg:px-8 lg:pt-24">
       {/* Container */}
       <div className="mx-auto max-w-xl lg:grid lg:max-w-(--breakpoint-xl) lg:grid-cols-2 lg:gap-10 xl:gap-32 ">
         {/* Hero header */}
         <div className="py-16 lg:py-32">
-          <div>
-            <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-              Contact us today
-            </span>
-          </div>
-          <h1 className="h1 mt-4 max-w-md text-purple-900">
+          <Eyebrow text="Contact us today" />
+
+          <h1 className="max-w-md mt-4 text-purple-900 h1">
             We'd love to hear from you
           </h1>
-          <p className="mt-3 max-w-lg text-xl leading-relaxed text-purple-800">
+          <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
             Need to get in touch with us? Fill out the form or find more ways to
             connect with us below.
           </p>
@@ -107,16 +105,16 @@ export const ContactHero = () => {
           />
           <Image
             src={dotsGrid}
-            className="absolute -right-16 -top-16 hidden w-40 opacity-75 lg:-top-16 lg:left-14 lg:block lg:w-36"
+            className="absolute hidden w-40 opacity-75 -right-16 -top-16 lg:-top-16 lg:left-14 lg:block lg:w-36"
             alt=""
           />
           <Image
             src={dotsStrip}
-            className="absolute -right-16 top-1/2 hidden w-20 rotate-90 opacity-75 lg:block"
+            className="absolute hidden w-20 rotate-90 opacity-75 -right-16 top-1/2 lg:block"
             alt=""
           />
           {/* Contact form card */}
-          <div className="relative z-10 mx-auto w-full rounded-3xl bg-white px-4 py-10 shadow-xl sm:p-16 lg:ml-auto lg:mr-0 lg:p-12 xl:p-14">
+          <div className="relative z-10 w-full px-4 py-10 mx-auto bg-white shadow-xl rounded-3xl sm:p-16 lg:ml-auto lg:mr-0 lg:p-12 xl:p-14">
             <div>
               <h3 className="text-2xl font-bold text-purple-900">
                 Send us a message
@@ -163,13 +161,13 @@ export const ContactHero = () => {
               ))}
 
               {isError === true && (
-                <p className="mt-4 rounded-xl bg-red-50 p-3 text-red-700">
+                <p className="p-3 mt-4 text-red-700 rounded-xl bg-red-50">
                   <span className="font-bold text-red-800">Uh oh!</span>{' '}
                   Something went wrong. Please try it again.
                 </p>
               )}
               {isError === false && (
-                <p className="mt-4 rounded-xl bg-green-50 p-3 text-green-700">
+                <p className="p-3 mt-4 text-green-700 rounded-xl bg-green-50">
                   <span className="font-bold text-green-800">
                     We got your message!
                   </span>{' '}
@@ -177,7 +175,7 @@ export const ContactHero = () => {
                 </p>
               )}
 
-              <div className="mt-6 flex justify-start">
+              <div className="flex justify-start mt-6">
                 <Button>Send message</Button>
               </div>
             </form>

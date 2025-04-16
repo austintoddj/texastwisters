@@ -2,6 +2,7 @@
 
 import heroImage from '/public/images/home/hero.png'
 import { Button } from '@/components/Button'
+import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 /* eslint-disable-next-line */
@@ -56,9 +57,7 @@ export const HomeHero = () => {
         {/* Hero text content */}
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           <div className="block">
-            <span className="inline-block px-4 py-2 font-medium text-purple-700 bg-purple-200 rounded-full shadow-md">
-              Registration fees waived through 2025!
-            </span>
+            <Eyebrow text="Registration fees waived through 2025!" />
           </div>
           <h1 className="max-w-xl mt-4 text-center text-purple-900 h1 sm:mt-5 lg:max-w-none lg:text-left">
             Welcome to Texas Twisters Gymnastics!

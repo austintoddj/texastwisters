@@ -48,32 +48,31 @@ pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
-  pricing1:
-    name: Gymnastics Class
-    price: $90
-    interval: per month
-    shortDescription: Monday - Saturday
-    features:
-      - feature: Co-ed available
-      - feature: Vault, Beam, Bars, Floor
-      - feature: Semi-annual evaluations
-      - feature: Ages 5+
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
-      icon: true
-  pricing2:
-    name: Student Open Gym
-    price: $20
-    interval: per drop-in
-    shortDescription: Friday nights
-    features:
-      - feature: Ages 4-17
-      - feature: 6:00 PM - 8:00 PM
-      - feature: Parent drop-off
-      - feature: Supervised free play
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/camps/1'
-      icon: true
+  pricing:
+    - name: Gymnastics Class
+      price: $90
+      interval: per month
+      shortDescription: Monday - Saturday
+      features:
+        - feature: Co-ed available
+        - feature: Vault, Beam, Bars, Floor
+        - feature: Semi-annual evaluations
+        - feature: Ages 5+
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
+        icon: true
+    - name: Student Open Gym
+      price: $20
+      interval: per drop-in
+      shortDescription: Friday nights
+      features:
+        - feature: Ages 4-17
+        - feature: 6:00 PM - 8:00 PM
+        - feature: Parent drop-off
+        - feature: Supervised free play
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/1'
+        icon: true
 ---

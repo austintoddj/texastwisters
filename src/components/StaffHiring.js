@@ -2,6 +2,7 @@
 
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
+import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
@@ -28,25 +29,21 @@ export const StaffHiring = () => {
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-12 xl:grid-cols-11 xl:gap-24">
           {/* Text content */}
           <div className="flex flex-col justify-center lg:order-2 lg:col-span-1 xl:col-span-6">
-            <div>
-              <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-                Guess what, we're hiring!
-              </span>
-            </div>
-            <h2 className="h2 mt-4 text-purple-900 sm:mt-5">
+            <Eyebrow text="Guess what, we're hiring!" />
+            <h2 className="mt-4 text-purple-900 h2 sm:mt-5">
               Meet the owners of Texas Twisters
             </h2>
-            <p className="mt-4 max-w-xl text-xl leading-relaxed text-purple-800 md:mt-5">
+            <p className="max-w-xl mt-4 text-xl leading-relaxed text-purple-800 md:mt-5">
               After decades of involvement in the gymnastics community, our
               family is excited to share our passion for the sport with the
               community of Georgetown.
             </p>
 
             {/* Owners portrait section (Small screens) */}
-            <div className="relative mt-16 max-w-4xl sm:mt-14 lg:hidden">
-              <div className="aspect-h-4 aspect-w-3 relative rounded-3xl bg-yellow-50 sm:aspect-h-4 sm:aspect-w-3">
+            <div className="relative max-w-4xl mt-16 sm:mt-14 lg:hidden">
+              <div className="relative aspect-h-4 aspect-w-3 rounded-3xl bg-yellow-50 sm:aspect-h-4 sm:aspect-w-3">
                 <Image
-                  className="absolute inset-0 h-full w-full rounded-3xl object-cover shadow-md"
+                  className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
                   fill
                   src={owners.image}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"
@@ -61,11 +58,11 @@ export const StaffHiring = () => {
             </div>
 
             {/* Current job postings box */}
-            <div className="relative mt-16 max-w-4xl rounded-xl bg-yellow-100 sm:mt-14">
-              <span className="absolute -top-7 left-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-purple-600 to-purple-600 shadow-md sm:left-10">
-                <Icon icon="certificate" className="h-8 w-8 text-purple-50" />
+            <div className="relative max-w-4xl mt-16 bg-yellow-100 rounded-xl sm:mt-14">
+              <span className="absolute flex items-center justify-center shadow-md -top-7 left-6 h-14 w-14 rounded-2xl bg-linear-to-br from-purple-600 to-purple-600 sm:left-10">
+                <Icon icon="certificate" className="w-8 h-8 text-purple-50" />
               </span>
-              <div className="mt-2 px-4 py-10 sm:px-10 sm:py-12">
+              <div className="px-4 py-10 mt-2 sm:px-10 sm:py-12">
                 <p className="text-lg font-semibold text-purple-900 sm:text-xl">
                   Our team is growing! We’re looking for reliable, motivated
                   gymnastics coaches that have:
@@ -104,7 +101,7 @@ export const StaffHiring = () => {
                   Apply now
                   <Icon
                     icon="arrowNarrowRight"
-                    className="ml-3 h-5 w-5 group-hover:animate-horizontal-bounce"
+                    className="w-5 h-5 ml-3 group-hover:animate-horizontal-bounce"
                     stroke={2}
                   />
                 </Button>
@@ -112,11 +109,11 @@ export const StaffHiring = () => {
             </div>
           </div>
           {/* Owners portrait section (Large screens) */}
-          <div className="mx-auto hidden w-full gap-10 sm:mx-0 sm:max-w-none sm:gap-8 lg:order-1 lg:col-span-1 lg:mt-20 lg:grid lg:gap-4 xl:col-span-5 xl:gap-8">
+          <div className="hidden w-full gap-10 mx-auto sm:mx-0 sm:max-w-none sm:gap-8 lg:order-1 lg:col-span-1 lg:mt-20 lg:grid lg:gap-4 xl:col-span-5 xl:gap-8">
             <div>
-              <div className="aspect-h-3 aspect-w-3 relative rounded-3xl bg-yellow-50 sm:aspect-h-4 sm:aspect-w-3">
+              <div className="relative aspect-h-3 aspect-w-3 rounded-3xl bg-yellow-50 sm:aspect-h-4 sm:aspect-w-3">
                 <Image
-                  className="absolute inset-0 h-full w-full rounded-3xl object-cover shadow-md"
+                  className="absolute inset-0 object-cover w-full h-full shadow-md rounded-3xl"
                   fill
                   src={owners.image}
                   sizes="(min-width: 1280px) 15.6rem, (min-width: 1024px) 20.8vw, (min-width: 640px) 17rem, 100vw"

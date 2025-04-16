@@ -14,11 +14,11 @@ const gradients = [
   'from-indigo-100/50 to-indigo-50/40'
 ]
 
-function PopularBadge() {
+function PopularBadge({ badgeText }) {
   return (
     <div>
       <span className="absolute z-10 right-8 top-0 -translate-y-1/2 inline-block px-2.5 py-1 text-[13px]/[16px] font-medium text-purple-700 bg-linear-to-b from-purple-200 to-purple-50 rounded-full -rotate-1 before:absolute before:inset-0 before:rounded-full before:border before:border-purple-900/10 shadow-[0_1px_theme(colors.white/0.25)_inset,0_1px_2px_theme(colors.purple.900/0.25)] text-shadow-2xs">
-        Popular
+        {badgeText}
       </span>
     </div>
   )
@@ -34,7 +34,7 @@ export const PricingPlan = ({ pricingPlan, index, className }) => {
         className
       )}
     >
-      {pricingPlan.popular && <PopularBadge />}
+      {pricingPlan.badge && <PopularBadge badgeText={pricingPlan.badge} />}
       <div className="relative z-10">
         <div className="inline-block w-full text-left ">
           <div className="border-b pb-7 border-purple-900/5">

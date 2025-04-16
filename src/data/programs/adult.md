@@ -47,7 +47,7 @@ pricingSection:
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
   pricing:
     - name: Adult Gymnastics
-      popular: true
+      badge: 'Popular'
       price: $90
       interval: per month
       shortDescription: Mon, Tue, Thu

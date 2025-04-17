@@ -45,30 +45,29 @@ pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
-  pricing1:
-    name: Tumble Tots
-    price: $80
-    interval: per month
-    shortDescription: Limited spots available!
-    features:
-      - feature: Ages 18 months - 3.5 years
-      - feature: Parent participation
-      - feature: 45 minute classes
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/classes?ages=1&programs=17'
-      icon: true
-  pricing2:
-    name: Preschool Gymnastics
-    price: $80
-    interval: per month
-    shortDescription: Limited spots available!
-    features:
-      - feature: Ages 3.5 years - 5 years
-      - feature: No parent participation
-      - feature: 45 minute classes
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/classes?ages=4&programs=17'
-      icon: true
+  pricing:
+    - name: Tumble Tots
+      price: $80
+      interval: per month
+      shortDescription: Limited spots available!
+      features:
+        - feature: Ages 18 months - 3.5 years
+        - feature: Parent participation
+        - feature: 45 minute classes
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?ages=1&programs=17'
+        icon: true
+    - name: Preschool Gymnastics
+      price: $80
+      interval: per month
+      shortDescription: Limited spots available!
+      features:
+        - feature: Ages 3.5 years - 5 years
+        - feature: No parent participation
+        - feature: 45 minute classes
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?ages=4&programs=17'
+        icon: true
 ---

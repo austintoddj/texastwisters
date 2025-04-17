@@ -6,6 +6,7 @@ import portraitImage2 from '/public/images/home/home-blocks-03.jpg'
 import squareImage2 from '/public/images/home/home-blocks-04.jpg'
 import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
+import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
@@ -56,28 +57,28 @@ const blocks = [
 
 export const HomeFeatureBlocks = () => {
   return (
-    <section className="overflow-hidden bg-yellow-100 px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
+    <section className="px-4 pb-16 overflow-hidden bg-yellow-100 sm:px-6 sm:pb-24 lg:px-8">
       {/* Container */}
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Centered content with feature list */}
         <div className="relative">
           {/* Block title and subtext */}
-          <h2 className="h2 mx-auto max-w-4xl text-center text-purple-900">
+          <h2 className="max-w-4xl mx-auto text-center text-purple-900 h2">
             Building a culture of excellence in our community
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-xl leading-relaxed text-purple-800">
+          <p className="max-w-3xl mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800">
             We are passionate about helping athletes reach their full potential,
             and believe that gymnastics is a great way to develop physical
             skills and self-confidence. We are committed to helping gymnasts
             learn new skills, achieve their goals, and overcome challenges.
           </p>
           {/* Feature list */}
-          <div className="mx-auto mt-12 max-w-3xl">
-            <ul className="-mx-3 -my-2 flex flex-wrap items-center justify-center text-lg text-purple-800">
+          <div className="max-w-3xl mx-auto mt-12">
+            <ul className="flex flex-wrap items-center justify-center -mx-3 -my-2 text-lg text-purple-800">
               {features.map((feature, index) => (
                 <li
                   key={`home-feature-${index}`}
-                  className="mx-3 my-2 flex items-center"
+                  className="flex items-center mx-3 my-2"
                 >
                   <Image
                     className="mr-3 h-7 w-7 shrink-0"
@@ -116,9 +117,9 @@ export const HomeFeatureBlocks = () => {
                     : 'sm:pr-36 lg:pr-20 xl:pr-32'
                 )}
               >
-                <div className="aspect-h-4 aspect-w-3 relative rounded-2xl">
+                <div className="relative aspect-h-4 aspect-w-3 rounded-2xl">
                   <Image
-                    className="absolute inset-0 rounded-2xl object-cover"
+                    className="absolute inset-0 object-cover rounded-2xl"
                     src={block.portraitImage.src}
                     fill
                     alt={block.portraitImage.alt}
@@ -134,7 +135,7 @@ export const HomeFeatureBlocks = () => {
                   )}
                 >
                   <Image
-                    className="absolute inset-0 h-full w-full rounded-3xl object-cover"
+                    className="absolute inset-0 object-cover w-full h-full rounded-3xl"
                     src={block.squareImage.src}
                     fill
                     alt={block.squareImage.alt}
@@ -151,14 +152,12 @@ export const HomeFeatureBlocks = () => {
               )}
             >
               <div>
-                <span className="inline-block rounded-full bg-purple-200 px-4 py-2 font-medium text-purple-700 shadow-md">
-                  {block.tagline}
-                </span>
+                <Eyebrow text={block.tagline} />
               </div>
-              <h3 className="h3 mt-4 text-purple-900 sm:mt-5">
+              <h3 className="mt-4 text-purple-900 h3 sm:mt-5">
                 {block.headline}
               </h3>
-              <p className="mt-3 max-w-2xl text-lg leading-loose text-purple-800">
+              <p className="max-w-2xl mt-3 text-lg leading-loose text-purple-800">
                 {block.text}
               </p>
               <div className="mt-6">
@@ -177,7 +176,7 @@ export const HomeFeatureBlocks = () => {
                   {block.action.icon && (
                     <Icon
                       icon="arrowNarrowRight"
-                      className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+                      className="w-6 h-6 ml-3 group-hover:animate-horizontal-bounce"
                       stroke={2}
                     />
                   )}

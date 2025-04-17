@@ -45,29 +45,30 @@ pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
-  pricing1:
-    name: Adult Gymnastics
-    price: $90
-    interval: per month
-    shortDescription: Mon, Tue, Thu
-    features:
-      - feature: Includes 1 class per week
-      - feature: 60 minutes
-      - feature: Ages 18+
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/classes?programs=57'
-      icon: true
-  pricing2:
-    name: Adult Open Gym
-    price: $20
-    interval: per drop-in
-    shortDescription: Monday
-    features:
-      - feature: 8:00 PM - 10:00 PM
-      - feature: Memberships available!
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/camps/2'
-      icon: true
+  pricing:
+    - name: Adult Gymnastics
+      badge: 'Popular'
+      price: $90
+      interval: per month
+      shortDescription: Mon, Tue, Thu
+      features:
+        - feature: Includes 1 class per week
+        - feature: 60 minutes
+        - feature: Ages 18+
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?programs=57'
+        icon: true
+    - name: Adult Open Gym
+      price: $20
+      interval: per drop-in
+      shortDescription: Monday
+      features:
+        - feature: 8:00 PM - 10:00 PM
+        - feature: Ages 18+
+        - feature: Memberships available!
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/2'
+        icon: true
 ---

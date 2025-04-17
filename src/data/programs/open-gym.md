@@ -46,31 +46,30 @@ pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to having you join us!
-  pricing1:
-    name: Student Open Gym
-    price: $20
-    interval: per drop-in
-    shortDescription: Fridays
-    features:
-      - feature: 6:00 PM - 8:00 PM
-      - feature: Ages 4 - 17
-      - feature: Parent drop-off
-      - feature: Supervised free time
-    action:
-      label: Reserve today
-      href: 'https://portal.iclasspro.com/texastwisters/camps/1'
-      icon: true
-  pricing2:
-    name: Homeschool Open Gym
-    price: $15
-    interval: per drop-in
-    shortDescription: Wednesdays during GISD school year
-    features:
-      - feature: 10:30 AM - 12:00 PM
-      - feature: Ages 1+
-      - feature: $15/child + $10/sibling
-    action:
-      label: Reserve today
-      href: 'https://portal.iclasspro.com/texastwisters/camps/6'
-      icon: true
+  pricing:
+    - name: Student Open Gym
+      price: $20
+      interval: per drop-in
+      shortDescription: Fridays
+      features:
+        - feature: 6:00 PM - 8:00 PM
+        - feature: Ages 4 - 17
+        - feature: Parent drop-off
+        - feature: Supervised free time
+      action:
+        label: Reserve today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/1'
+        icon: true
+    - name: Homeschool Open Gym
+      price: $15
+      interval: per drop-in
+      shortDescription: Wednesdays during GISD school year
+      features:
+        - feature: 10:30 AM - 12:00 PM
+        - feature: Ages 1+
+        - feature: $15/child + $10/sibling
+      action:
+        label: Reserve today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/6'
+        icon: true
 ---

@@ -46,30 +46,29 @@ pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
-  pricing1:
-    name: Tumbling Class
-    price: $90
-    interval: per month
-    shortDescription: Beginner - Advanced
-    features:
-      - feature: Focus on floor work
-      - feature: Ideal for dancers and cheerleaders
-      - feature: Co-ed class
-    action:
-      label: Enroll today
-      href: 'https://portal.iclasspro.com/texastwisters/class-details/24?filters=%7B%22programs%22:%2260%22%7D'
-      icon: true
-  pricing2:
-    name: Tumbling Clinic
-    price: $35
-    interval: per event
-    shortDescription: Coming soon!
-    features:
-      - feature: 2 hour class time
-      - feature: All skill levels
-      - feature: Ages 5-18
-    action:
-      label: Coming soon!
-      href: '#'
-      icon: false
+  pricing:
+    - name: Tumbling Class
+      price: $90
+      interval: per month
+      shortDescription: Beginner - Advanced
+      features:
+        - feature: Focus on floor work
+        - feature: Ideal for dancers and cheerleaders
+        - feature: Co-ed class
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/class-details/24?filters=%7B%22programs%22:%2260%22%7D'
+        icon: true
+    - name: Tumbling Clinic
+      price: $35
+      interval: per event
+      shortDescription: Coming soon!
+      features:
+        - feature: 2 hour class time
+        - feature: All skill levels
+        - feature: Ages 5-18
+      action:
+        label: Coming soon!
+        href: '#'
+        icon: false
 ---

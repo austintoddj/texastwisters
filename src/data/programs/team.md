@@ -46,31 +46,30 @@ pricingSection:
   tagline: Membership & Pricing
   headline: Call us today!
   text: All levels are by invitation only. Contact us to schedule a tryout, or to learn more about our team program.
-  pricing1:
-    name: Level 2
-    price: $150
-    interval: per month
-    shortDescription: Team prep
-    features:
-      - feature: Invitation only
-      - feature: Practice 2 hrs/wk
-      - feature: Ages 6+
-    action:
-      label: Contact us
-      href: '/contact'
-      icon: true
-  pricing2:
-    name: Level 3
-    price: $240
-    interval: per month
-    shortDescription: Tryouts now available!
-    features:
-      - feature: Invitation only
-      - feature: Practice 5 hrs/wk
-      - feature: Ages 6+
-      - feature: Additional fees apply
-    action:
-      label: Contact us
-      href: '/contact'
-      icon: true
+  pricing:
+    - name: Level 2
+      price: $150
+      interval: per month
+      shortDescription: Team prep
+      features:
+        - feature: Invitation only
+        - feature: Practice 2 hrs/wk
+        - feature: Ages 6+
+      action:
+        label: Contact us
+        href: '/contact'
+        icon: true
+    - name: Level 3
+      price: $240
+      interval: per month
+      shortDescription: Tryouts now available!
+      features:
+        - feature: Invitation only
+        - feature: Practice 5 hrs/wk
+        - feature: Ages 6+
+        - feature: Additional fees apply
+      action:
+        label: Contact us
+        href: '/contact'
+        icon: true
 ---

@@ -47,7 +47,21 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to having you join us!
   pricing:
+    - name: Preschool Open Gym
+      price: $10
+      interval: per drop-in
+      shortDescription: Monday - Friday
+      features:
+        - feature: 9:00 AM - 10:30 AM
+        - feature: Ages 1 - 5
+        - feature: Parent-supervised free time
+        - feature: Pre-registration required
+      action:
+        label: Reserve today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/3'
+        icon: true
     - name: Student Open Gym
+      badge: 'Most popular'
       price: $20
       interval: per drop-in
       shortDescription: Fridays
@@ -55,7 +69,7 @@ pricingSection:
         - feature: 6:00 PM - 8:00 PM
         - feature: Ages 4 - 17
         - feature: Parent drop-off
-        - feature: Supervised free time
+        - feature: Pre-registration required
       action:
         label: Reserve today
         href: 'https://portal.iclasspro.com/texastwisters/camps/1'
@@ -66,8 +80,21 @@ pricingSection:
       shortDescription: Wednesdays during GISD school year
       features:
         - feature: 10:30 AM - 12:00 PM
-        - feature: Ages 1+
+        - feature: Ages 1 - 17
         - feature: $15/child + $10/sibling
+        - feature: Pre-registration required
+      action:
+        label: Reserve today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/6'
+        icon: true
+    - name: Adult Open Gym
+      price: $20
+      interval: per drop-in
+      shortDescription: Thursdays
+      features:
+        - feature: 8:30 PM - 10:00 PM
+        - feature: Ages 18 and up
+        - feature: Pre-registration required
       action:
         label: Reserve today
         href: 'https://portal.iclasspro.com/texastwisters/camps/6'

@@ -1,7 +1,6 @@
 ---
-name: Spring Break
-description: The gym will be closed from March 17 - March 22. Classes will resume the following Monday.
-dates: March 17 - March 22
-image: '/images/events/beach.jpg'
-href: 'https://portal.iclasspro.com/texastwisters/news/2'
+name: Gym Closure
+description: The gym will be closed on Monday, March 26 for Memorial Day. Classes will resume the following day.
+dates: May 26
+image: '/images/events/flag.jpg'
 ---

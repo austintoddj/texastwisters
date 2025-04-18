@@ -49,30 +49,40 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
   pricing:
-    - name: Gymnastics Class
+    - name: Girls Gymnastics Class
       price: $90
       interval: per month
       shortDescription: Monday - Saturday
       features:
-        - feature: Co-ed available
-        - feature: Vault, Beam, Bars, Floor
-        - feature: Semi-annual evaluations
-        - feature: Ages 5+
+        - feature: Beginner to Advanced
+        - feature: All-girls class
+        - feature: Ages 5 - 18 (9+ classes available)
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=0&programs=16'
         icon: true
-    - name: Student Open Gym
-      price: $20
-      interval: per drop-in
-      shortDescription: Friday nights
+    - name: Mighty Men
+      price: $90
+      interval: per month
+      shortDescription: Monday - Saturday
       features:
-        - feature: Ages 4-17
-        - feature: 6:00 PM - 8:00 PM
-        - feature: Parent drop-off
-        - feature: Supervised free play
+        - feature: No experience required
+        - feature: All-boys class
+        - feature: Ages 5 - 17
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/camps/1'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16'
+        icon: true
+    - name: Boys Gymnastics Class
+      price: $90
+      interval: per month
+      shortDescription: Monday - Saturday
+      features:
+        - feature: Intermediate & Advanced
+        - feature: Some experience required
+        - feature: Ages 5 - 17
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&levels=3,7&programs=16'
         icon: true
 ---

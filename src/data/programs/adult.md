@@ -46,27 +46,51 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
   pricing:
-    - name: Adult Gymnastics
-      badge: 'Popular'
+    - name: Adult Beginner
+      badge: 'Most popular'
       price: $90
       interval: per month
-      shortDescription: Mon, Tue, Thu
+      shortDescription: Monday & Tuesday at 8 PM
       features:
-        - feature: Includes 1 class per week
-        - feature: 60 minutes
-        - feature: Ages 18+
+        - feature: No experience required!
+        - feature: Co-ed classes
+        - feature: Ages 18 and up
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?programs=57'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=4&programs=57'
+        icon: true
+    - name: Adult Intermediate
+      price: $90
+      interval: per month
+      shortDescription: Tuesday at 8 PM
+      features:
+        - feature: Some experience required
+        - feature: Co-ed classes
+        - feature: Ages 18 and up
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=57'
+        icon: true
+    - name: Adult Advanced
+      price: $90
+      interval: per month
+      shortDescription: Thursday at 8 PM
+      features:
+        - feature: Experience required
+        - feature: Co-ed classes
+        - feature: Ages 18 and up
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=3&programs=57'
         icon: true
     - name: Adult Open Gym
       price: $20
       interval: per drop-in
-      shortDescription: Monday
+      shortDescription: Thursday at 8 PM
       features:
-        - feature: 8:00 PM - 10:00 PM
-        - feature: Ages 18+
-        - feature: Memberships available!
+        - feature: 2 hour open gym
+        - feature: Supervised free time
+        - feature: Discount memberships available
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/camps/2'

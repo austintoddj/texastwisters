@@ -23,17 +23,17 @@
 /* Typography */
 
 .h1 {
-  @apply text-5xl font-bold leading-snug xl:leading-tighter sm:text-6xl sm:leading-tight xl:text-7xl;
+  @apply xl:leading-tighter text-5xl leading-snug font-bold sm:text-6xl sm:leading-tight xl:text-7xl;
 }
 
 .h2 {
-  @apply text-4xl font-semibold leading-tight tracking-tight sm:leading-tighter sm:text-5xl xl:text-6xl;
+  @apply sm:leading-tighter text-4xl leading-tight font-semibold tracking-tight sm:text-5xl xl:text-6xl;
 }
 
 .h3 {
-  @apply text-3xl font-semibold leading-tight tracking-tight sm:leading-tighter sm:text-4xl;
+  @apply sm:leading-tighter text-3xl leading-tight font-semibold tracking-tight sm:text-4xl;
 }
 
 .h4 {
-  @apply text-2xl font-semibold leading-tight tracking-tight sm:leading-tighter sm:text-3xl;
+  @apply sm:leading-tighter text-2xl leading-tight font-semibold tracking-tight sm:text-3xl;
 }

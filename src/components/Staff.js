@@ -4,7 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const Staff = () => {
-  const staff = getAllItems('staff')
+  // Sort staff by priority in ascending order (1, 2, 3, 4)
+  const staff = getAllItems('staff').sort(
+    (a, b) => (a.data.priority || Infinity) - (b.data.priority || Infinity)
+  )
 
   return (
     <section id="staff">

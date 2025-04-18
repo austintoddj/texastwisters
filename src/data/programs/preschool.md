@@ -49,10 +49,10 @@ pricingSection:
     - name: Tumble Tots
       price: $80
       interval: per month
-      shortDescription: Limited spots available!
+      shortDescription: Monday - Saturday
       features:
         - feature: Ages 18 months - 3.5 years
-        - feature: Parent participation
+        - feature: Parent participation required
         - feature: 45 minute classes
       action:
         label: Enroll today
@@ -61,13 +61,37 @@ pricingSection:
     - name: Preschool Gymnastics
       price: $80
       interval: per month
-      shortDescription: Limited spots available!
+      shortDescription: Monday - Saturday
       features:
         - feature: Ages 3.5 years - 5 years
-        - feature: No parent participation
-        - feature: 45 minute classes
+        - feature: Co-ed classes
+        - feature: Learn the fundamentals
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?ages=4&programs=17'
+        icon: true
+    - name: Mini-Men
+      price: $80
+      interval: per month
+      shortDescription: Monday & Tuesday
+      features:
+        - feature: Ages 4 - 5
+        - feature: Boys only classes
+        - feature: Strength, conditioning and skills
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=17'
+        icon: true
+    - name: Preschool Open Gym
+      price: $10
+      interval: per drop-in
+      shortDescription: Monday - Friday
+      features:
+        - feature: 9:00 AM - 10:30 AM
+        - feature: Ages 1 - 5
+        - feature: Pre-registration required
+      action:
+        label: Reserve today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/3'
         icon: true
 ---

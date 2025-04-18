@@ -50,11 +50,11 @@ pricingSection:
     - name: Level 2
       price: $150
       interval: per month
-      shortDescription: Team prep
+      shortDescription: Tuesday & Saturday
       features:
-        - feature: Invitation only
-        - feature: Practice 2 hrs/wk
-        - feature: Ages 6+
+        - feature: USAG Membership required
+        - feature: Annual membership fee
+        - feature: 2 meets per season
       action:
         label: Contact us
         href: '/contact'
@@ -62,12 +62,38 @@ pricingSection:
     - name: Level 3
       price: $240
       interval: per month
-      shortDescription: Tryouts now available!
+      shortDescription: Tuesday & Thursday
       features:
-        - feature: Invitation only
-        - feature: Practice 5 hrs/wk
-        - feature: Ages 6+
-        - feature: Additional fees apply
+        - feature: USAG Membership required
+        - feature: Annual membership fee
+        - feature: 4 meets per season
+        - feature: Custom Team apparel
+      action:
+        label: Contact us
+        href: '/contact'
+        icon: true
+    - name: Level 4
+      price: $275
+      interval: per month
+      shortDescription: Tuesday & Thursday
+      features:
+        - feature: Includes all fees and memberships as previous levels
+        - feature: 6 meets per season
+        - feature: Custom Team apparel
+        - feature: Optional additional practice day
+      action:
+        label: Contact us
+        href: '/contact'
+        icon: true
+    - name: Training Team
+      price: $110
+      interval: per month
+      shortDescription: Thursday
+      features:
+        - feature: Prep for Level 2 Team
+        - feature: Practice 1.25 hrs/wk
+        - feature: Ages 4 - 7
+        - feature: By invitation only
       action:
         label: Contact us
         href: '/contact'

@@ -1,7 +1,7 @@
 ---
-name: 2025 Spring Show
-description: Join us for our Second Annual Spring Show at Texas Twisters Gymnastics to see your gymnasts shine!
-dates: April 12 - April 13
-image: '/images/events/show.jpg'
-href: 'https://portal.iclasspro.com/texastwisters/camps/11'
+name: Summer Camps
+description: Ready for Summer? Join us Monday through Friday for our awesome day camps! Spots are limited, so reserve your spot today!
+dates: May 27 - August 13
+image: '/images/events/camp.jpg'
+href: 'https://portal.iclasspro.com/texastwisters/camps/5'
 ---

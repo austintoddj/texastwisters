@@ -48,25 +48,26 @@ pricingSection:
   text: Planning something a little bigger? Add more friends for $20 per guest, up to 25 participants. Extend the fun for an additional 30 minutes for $75!
   pricing:
     - name: Silver package
+      badge: 'Most popular'
       price: $250
-      interval: Most popular
-      shortDescription: Saturday availability
+      interval: per party
+      shortDescription: Saturday at 2 PM & 4 PM
       features:
-        - feature: Starts at 12 participants
-        - feature: Includes 1 hour of gym time
-        - feature: 30 minutes in party area
+        - feature: Includes 12 participants
+        - feature: 60 minutes of games and open gym
+        - feature: 30 minutes for food and gifts
       action:
         label: Reserve today
         href: 'https://portal.iclasspro.com/texastwisters/party-booking-01-date'
         icon: true
     - name: Gold package
       price: $350
-      interval: Best value
-      shortDescription: Saturday availability
+      interval: per party
+      shortDescription: Saturday at 2 PM & 4 PM
       features:
-        - feature: Starts at 18 participants
-        - feature: Includes 1 hour of gym time
-        - feature: 30 minutes in party area
+        - feature: Includes 18 participants
+        - feature: 60 minutes of games and open gym
+        - feature: 30 minutes for food and gifts
       action:
         label: Reserve today
         href: 'https://portal.iclasspro.com/texastwisters/party-booking-01-date'

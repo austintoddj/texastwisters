@@ -1,6 +1,6 @@
 ---
 name: Camps
-dropdownDescription: Available during school breaks and select holidays.
+dropdownDescription: Available during school breaks, summer, and select holidays.
 featured: false
 hero:
   headline: Texas Twisters Camps

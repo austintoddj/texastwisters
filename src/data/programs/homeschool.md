@@ -1,17 +1,17 @@
 ---
-name: Recreational
-dropdownDescription: Build on the fundamentals with more advanced gymnastics skills.
-featured: true
+name: Homeschool
+dropdownDescription: Gymnastics classes at a convenient time for homeschool students.
+featured: false
 hero:
-  headline: Texas Twisters Recreational Program
-  description: Recreational classes, from beginner to advanced, for students age 5+ with a focus on developing and refining fundamental gymnastics skills on bars, beam, floor, vault, and trampolines.
-  text: Our recreational program focuses on the progressive development of gymnastics skills from the ground up, all while gaining confidence, coordination, flexibility, and strength.
+  headline: Texas Twisters Homeschool Program
+  description: Co-ed gymnastics classes for homeschooled kids ages 5+. Develop fundamental skills on bars, beam, floor, vault, and trampoline! Weekly homeschool open gym also available.
+  text: Co-ed gymnastics classes for homeschooled kids ages 5+. Develop fundamental skills on bars, beam, floor, vault, and trampoline! Weekly homeschool open gym also available.
   action:
     label: Enroll today
-    href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
+    href: 'https://portal.iclasspro.com/texastwisters/classes?programs=71'
     icon: true
   image:
-    src: '/images/programs/recreational/hero.jpg'
+    src: '/images/programs/homeschool/hero.jpg'
 #infoSection:
 #  headline: A program focused on developing fundamental gymnastics skills
 #  text: We offer recreational, progressive gymnastics classes for all experience levels. Contact us today to schedule an evaluation and find the perfect fit!
@@ -48,40 +48,29 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
   pricing:
-    - name: Girls Gymnastics Class
+    - name: Recreational Gymnastics Class
       price: $90
       interval: per month
-      shortDescription: Monday - Saturday
+      shortDescription: Monday & Thursday
       features:
         - feature: Beginner to Advanced
-        - feature: All-girls class
-        - feature: Ages 5 - 17 (9+ classes available)
-      action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=0&programs=16'
-        icon: true
-    - name: Mighty Men
-      price: $90
-      interval: per month
-      shortDescription: Monday - Saturday
-      features:
-        - feature: No experience required
-        - feature: All-boys class
+        - feature: Co-ed class
         - feature: Ages 5 - 17
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?programs=71'
         icon: true
-    - name: Boys Gymnastics Class
-      price: $90
-      interval: per month
-      shortDescription: Monday - Saturday
+    - name: Homeschool Open Gym
+      price: $15
+      interval: per drop-in
+      shortDescription: Wednesdays during GISD school year
       features:
-        - feature: Intermediate & Advanced
-        - feature: Some experience required
-        - feature: Ages 5 - 17
+          - feature: 10:30 AM - 12:00 PM
+          - feature: Ages 1 - 17
+          - feature: $15/child + $10/sibling
+          - feature: Pre-registration required
       action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&levels=3,7&programs=16'
-        icon: true
+          label: Reserve today
+          href: 'https://portal.iclasspro.com/texastwisters/camps/6'
+          icon: true
 ---

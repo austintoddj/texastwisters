@@ -1,9 +1,11 @@
+/* eslint-disable-next-line */
 import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
+/* eslint-disable-next-line */
 import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
@@ -57,13 +59,13 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          icon="tent"
-          content="Enjoy a long Easter weekend! Enroll your kids in our fun-filled camp on Friday, April 18, and Monday, April 21!"
-          href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
-          color="blue"
-          event={EVENT_IDS.BANNER_CTA_CAMP}
-        />
+        {/*<Banner*/}
+        {/*  icon="tent"*/}
+        {/*  content="Enjoy a long Easter weekend! Enroll your kids in our fun-filled camp on Friday, April 18, and Monday, April 21!"*/}
+        {/*  href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"*/}
+        {/*  color="blue"*/}
+        {/*  event={EVENT_IDS.BANNER_CTA_CAMP}*/}
+        {/*/>*/}
       </body>
     </html>
   )

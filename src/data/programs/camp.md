@@ -47,26 +47,15 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing:
-    - name: April 21 Day Camp
-      price: $45
-      interval: per day
-      shortDescription: April 21, 2025
-      features:
-        - feature: 9 AM - 2 PM
-        - feature: Please pack a lunch!
-        - feature: Games, crafts, open gym and more!
-      action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1038'
-        icon: true
     - name: Summer Camps
       price: $45
       interval: per day
       shortDescription: May 27 - August 13
       features:
         - feature: 9 AM - 2 PM
-        - feature: Please pack a lunch!
-        - feature: Games, crafts, open gym and more!
+        - feature: Lunch and snack breaks
+        - feature: Arts and crafts
+        - feature: Games, obstacle courses and more!
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/camps/5'

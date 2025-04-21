@@ -65,12 +65,12 @@ pricingSection:
       interval: per drop-in
       shortDescription: Wednesdays during GISD school year
       features:
-          - feature: 10:30 AM - 12:00 PM
-          - feature: Ages 1 - 17
-          - feature: $15/child + $10/sibling
-          - feature: Pre-registration required
+        - feature: 10:30 AM - 12:00 PM
+        - feature: Ages 1 - 17
+        - feature: $15/child + $10/sibling
+        - feature: Pre-registration required
       action:
-          label: Reserve today
-          href: 'https://portal.iclasspro.com/texastwisters/camps/6'
-          icon: true
+        label: Reserve today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/6'
+        icon: true
 ---

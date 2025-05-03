@@ -1,3 +1,4 @@
+import { ComingSoon } from '@/components/ComingSoon'
 import { ProgramDescription } from '@/components/ProgramDescription'
 import { ProgramHero } from '@/components/ProgramHero'
 import { ProgramInformation } from '@/components/ProgramInformation'
@@ -7,22 +8,27 @@ import { getAllItems, getItemData } from '@/lib/getItems'
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const program = getItemData(slug, 'programs')
+  const description = program.hero?.description ?? program.comingSoon?.text
+  const ogImage = program.hero?.image?.src ?? program.comingSoon?.image?.src
 
   return {
     title: `${program.name} - Texas Twisters Gymnastics`,
-    description: program.hero.description,
+    description: description,
     alternates: {
       canonical: './'
     },
-    openGraph: {
-      images: program.hero.image.src
-    }
+    openGraph: { images: ogImage }
   }
 }
 
 export default async function ProgramPage({ params }) {
   const { slug } = await params
   const program = getItemData(slug, 'programs')
+  const isComingSoon = Boolean(program?.comingSoon)
+
+  if (isComingSoon) {
+    return <ComingSoon data={program.comingSoon} />
+  }
 
   return (
     <>
@@ -36,6 +42,7 @@ export default async function ProgramPage({ params }) {
       {program?.pricingSection && (
         <ProgramPricing data={program.pricingSection} />
       )}
+      {program?.comingSoon && <ComingSoon data={program.comingSoon} />}
     </>
   )
 }

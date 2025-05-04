@@ -2,6 +2,7 @@
 import { AboutHero } from '@/components/AboutHero'
 /* eslint-disable-next-line */
 import { AlternatingFeatures } from '@/components/AlternatingFeatures'
+import { CallToAction } from '@/components/CallToAction'
 import { Staff } from '@/components/Staff'
 /* eslint-disable-next-line */
 import { Stats } from '@/components/Stats'
@@ -22,12 +23,13 @@ export default function AboutPage() {
     <>
       <AboutHero />
       {/* Gradient background transition */}
-      <div className="h-32 w-full bg-linear-to-b from-purple-25 to-white sm:h-40 lg:h-44" />
+      <div className="w-full h-32 bg-linear-to-b from-purple-25 to-white sm:h-40 lg:h-44" />
 
       {/*<AlternatingFeatures />*/}
       {/*<Stats />*/}
       <Staff />
       <Values />
+      <CallToAction />
     </>
   )
 }

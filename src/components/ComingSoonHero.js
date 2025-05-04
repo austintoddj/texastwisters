@@ -1,9 +1,14 @@
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
+import { Icon } from '@/components/Icon'
+import Link from 'next/link'
 
 export const ComingSoonHero = ({ data }) => {
+  const hasSecondary = !!data.secondaryCta.href && !!data.secondaryCta.label
+  const hasPreText = hasSecondary && !!data.secondaryCta.preText
+
   return (
-    <section className="relative] px-4 py-16 bg-linear-to-b from-purple-25 via-yellow-200 to-white sm:px-6 lg:px-8 sm:py-24 lg:py-32">
+    <section className="relative] px-4 py-16 bg-linear-to-b from-purple-25 via-yellow-200 to-white sm:px-6 lg:px-8 sm:py-24 lg:pt-32">
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Header */}
         <div className="relative flex flex-col items-center">
@@ -14,33 +19,41 @@ export const ComingSoonHero = ({ data }) => {
           <p className="max-w-lg mx-auto mt-4 text-xl leading-relaxed text-center text-purple-800 sm:mt-5">
             {data.text}
           </p>
-          {/* Email form */}
-          <form
-            className="flex w-full max-w-lg mx-auto mt-10 gap-x-3"
-            action={data.formUrl}
-          >
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              required
-              placeholder={data.formInputPlaceholder}
-              autoComplete="email"
-              className="min-w-0 flex-auto relative z-10 h-13 rounded-full border border-purple-900/10 py-4 px-5 text-[14px] text-sm font-medium text-purple-700 placeholder-purple-700/70 outline-hidden duration-300 ease-in-out focus:border-purple-600/20 focus:outline-hidden focus:ring-purple-600/20 bg-white/60 backdrop-blur-sm hover:bg-white/90 focus:bg-white/90"
-            />
 
-            <Button
-              type="submit"
-              variant="accent"
-              size="sm"
-              className="flex-none"
-            >
-              {data.buttonLabel}
+          {/* CTA block */}
+          <div className="flex flex-col items-center gap-4 mt-8 sm:flex-row">
+            {/* Primary button */}
+            <Button variant="accent" href={data.primaryCta.href}>
+              {data.primaryCta.label}
             </Button>
-          </form>
+
+            {/* Inline secondary button (only if no pre‑text) */}
+            {hasSecondary && !hasPreText && (
+              <Button variant="secondary" href={data.secondaryCta.href}>
+                {data.secondaryCta.label}
+              </Button>
+            )}
+          </div>
+
+          {/* Pre‑text + linked label variant */}
+          {hasSecondary && hasPreText && (
+            <div className="flex items-center mt-6 space-x-4">
+              <p className="text-base text-purple-800/90">
+                {data.secondaryCta.preText}
+              </p>
+              <Link
+                href={data.secondaryCta.href}
+                className="flex items-center font-semibold text-purple-600 transition group hover:text-purple-500"
+              >
+                {data.secondaryCta.label}
+                <Icon
+                  icon="arrowNarrowRight"
+                  stroke={2}
+                  className="w-5 h-5 ml-2 group-hover:animate-horizontal-bounce"
+                />
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </section>

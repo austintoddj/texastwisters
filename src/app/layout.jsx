@@ -1,6 +1,5 @@
 /* eslint-disable-next-line */
 import { Banner } from '@/components/Banner'
-import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
@@ -54,7 +53,6 @@ export default function RootLayout({ children }) {
       <body className={clsx('font-sans', roboto.variable)}>
         <Header programs={programs} />
         {children}
-        <CallToAction />
         <Footer programs={programs} />
         <Analytics />
         <SpeedInsights />

@@ -1,3 +1,4 @@
+import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { FeaturedPrograms } from '@/components/FeaturedPrograms'
 import { HomeFeatureBlocks } from '@/components/HomeFeatureBlocks'
@@ -22,13 +23,14 @@ export default function HomePage() {
     <>
       <HomeHero />
       {/* Gradient background transition */}
-      <div className="h-40 w-full bg-linear-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
+      <div className="w-full h-40 bg-linear-to-b from-purple-50 to-yellow-100 sm:h-48 xl:h-52" />
 
       <HomeFeatureBlocks />
       <StaffHiring />
       <FeaturedPrograms />
       <Testimonials />
       <Faqs faqs={faqs} />
+      <CallToAction />
     </>
   )
 }

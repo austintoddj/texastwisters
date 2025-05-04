@@ -1,3 +1,4 @@
+import { CallToAction } from '@/components/CallToAction'
 import { Events } from '@/components/Events'
 /* eslint-disable-next-line */
 import { Newsletter } from '@/components/Newsletter'
@@ -18,6 +19,7 @@ export default function ParentsPage() {
       <ParentsHero />
       <Events />
       {/*<Newsletter />*/}
+      <CallToAction />
     </>
   )
 }

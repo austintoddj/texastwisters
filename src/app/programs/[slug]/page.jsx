@@ -1,4 +1,5 @@
-import { ComingSoon } from '@/components/ComingSoon'
+import { CallToAction } from '@/components/CallToAction'
+import { ComingSoonHero } from '@/components/ComingSoonHero'
 import { ProgramDescription } from '@/components/ProgramDescription'
 import { ProgramHero } from '@/components/ProgramHero'
 import { ProgramInformation } from '@/components/ProgramInformation'
@@ -8,31 +9,36 @@ import { getAllItems, getItemData } from '@/lib/getItems'
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const program = getItemData(slug, 'programs')
-  const description = program.hero?.description ?? program.comingSoon?.text
-  const ogImage = program.hero?.image?.src ?? program.comingSoon?.image?.src
+  const description = program.hero?.description ?? program.comingSoonHero?.text
+  const ogImage = program.hero ? program.hero.image?.src : undefined
 
-  return {
+  const metadata = {
     title: `${program.name} - Texas Twisters Gymnastics`,
     description: description,
     alternates: {
       canonical: './'
-    },
-    openGraph: { images: ogImage }
+    }
   }
+
+  if (ogImage) {
+    metadata.openGraph = { images: ogImage }
+  }
+
+  return metadata
 }
 
 export default async function ProgramPage({ params }) {
   const { slug } = await params
   const program = getItemData(slug, 'programs')
-  const isComingSoon = Boolean(program?.comingSoon)
-
-  if (isComingSoon) {
-    return <ComingSoon data={program.comingSoon} />
-  }
+  const isComingSoon = Boolean(program?.comingSoonHero)
 
   return (
     <>
-      {program?.hero && <ProgramHero hero={program.hero} />}
+      {isComingSoon ? (
+        <ComingSoonHero data={program.comingSoonHero} />
+      ) : (
+        program?.hero && <ProgramHero hero={program.hero} />
+      )}
       {program?.infoSection && (
         <ProgramInformation data={program.infoSection} />
       )}
@@ -42,7 +48,7 @@ export default async function ProgramPage({ params }) {
       {program?.pricingSection && (
         <ProgramPricing data={program.pricingSection} />
       )}
-      {program?.comingSoon && <ComingSoon data={program.comingSoon} />}
+      {!isComingSoon && <CallToAction />}
     </>
   )
 }

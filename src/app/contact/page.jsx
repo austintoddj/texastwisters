@@ -1,3 +1,4 @@
+import { CallToAction } from '@/components/CallToAction'
 import { ContactHero } from '@/components/ContactHero'
 import { ContactInformation } from '@/components/ContactInformation'
 
@@ -15,6 +16,7 @@ export default function ContactPage() {
     <>
       <ContactHero />
       <ContactInformation />
+      <CallToAction />
     </>
   )
 }

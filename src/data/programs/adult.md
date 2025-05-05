@@ -95,4 +95,16 @@ pricingSection:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/camps/2'
         icon: true
+# comingSoonHero:
+#   eyebrow: Coming Soon!
+#   headline: Texas Twisters Adult Gymnastics
+#   text: Create a free Customer Portal login so you'll be
+#     first in line when enrollment opens.
+#   primaryCta:
+#     href: '#'
+#     label: 'Get Enrollment Access'
+#   secondaryCta:
+#     preText: 'Already have an account?'
+#     href: '#'
+#     label: 'Login to portal'
 ---

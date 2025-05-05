@@ -1,3 +1,4 @@
+import { CallToAction } from '@/components/CallToAction'
 import { PolicyInformation } from '@/components/PolicyInformation'
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function PoliciesPage() {
   return (
     <>
       <PolicyInformation />
+      <CallToAction />
     </>
   )
 }

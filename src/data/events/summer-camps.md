@@ -4,4 +4,5 @@ description: Ready for Summer? Join us Monday through Friday for our awesome day
 dates: May 27 - August 13
 image: '/images/events/camp.jpg'
 href: 'https://portal.iclasspro.com/texastwisters/camps/5'
+order: 3
 ---

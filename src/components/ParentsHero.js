@@ -28,11 +28,11 @@ const links = [
     event: EVENT_IDS.CUSTOMER_PORTAL
   },
   {
-    label: 'Safety & Response',
-    href: 'https://usagym.org/safety',
-    description: 'Report a concern with USAG or SafeSport',
-    icon: 'lifeBuoy',
-    event: EVENT_IDS.SAFETY_RESPONSE
+    label: 'Rules & Policies',
+    href: '/policies',
+    description: 'Check out our rules and policies for the gym',
+    icon: 'certificate',
+    event: EVENT_IDS.RULES_POLICIES
   },
   {
     label: 'FAQs',
@@ -49,11 +49,11 @@ const links = [
     event: EVENT_IDS.NEWS
   },
   {
-    label: 'Rules & Policies',
-    href: '/policies',
-    description: 'Check out our rules and policies for the gym',
-    icon: 'certificate',
-    event: EVENT_IDS.RULES_POLICIES
+    label: 'Safety & Response',
+    href: 'https://usagym.org/safety',
+    description: 'Report a concern with USAG or SafeSport',
+    icon: 'lifeBuoy',
+    event: EVENT_IDS.SAFETY_RESPONSE
   }
 ]
 

@@ -1,4 +1,5 @@
 ---
+order: 4
 description: >
   ## Drop-off & Pick-up
 
@@ -10,13 +11,13 @@ description: >
 
   ## Late Pick-up Fee
 
-  If a parent is late to pick up their child, a late fee will be charged. This fee is due at the time of pick-up. If a child is not picked up within 30 minutes of the class ending, we will call the emergency contacts listed on your account. If we are unable to reach anyone, we will contact the local authorities. The fee is as follows:
+  If a parent is late to pick up their child, a late fee will be charged. This fee applies to all programs and is due at the time of pick-up. If a child is not picked up within 30 minutes of the class ending, we will call the emergency contacts listed on your account. If we are unable to reach anyone, we will contact the local authorities. Late fees are assessed **per student**:
 
-    * 1-5 minutes late: $5/per student
+    * **1-5 minutes:** $5
 
-    * 6-10 minutes late: $20/per student
+    * **6-10 minutes:** $20
 
-    * 11-15 minutes late: $30/per student
+    * **11-15 minutes:** $30
 
   ## Missed Classes & Makeups
 

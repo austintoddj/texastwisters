@@ -8,6 +8,16 @@ description: >
 
   We strive to be open for business as usual. However, unforeseen events like severe weather, natural disasters, or building emergencies may occasionally cause closures. During these times, we recommend calling the gym to confirm our status. Please check our Facebook & Instagram pages as well as your email for weather updates and closure information.
 
+  ## Late Pick-up Fee
+
+  If a parent is late to pick up their child, a late fee will be charged. This fee is due at the time of pick-up. If a child is not picked up within 30 minutes of the class ending, we will call the emergency contacts listed on your account. If we are unable to reach anyone, we will contact the local authorities. The fee is as follows:
+
+    * 1-5 minutes late: $5/per student
+
+    * 6-10 minutes late: $20/per student
+
+    * 11-15 minutes late: $30/per student
+
   ## Missed Classes & Makeups
 
   * **Makeup Classes:** We do not offer individual makeup classes for missed sessions. However, we offer [open gym](/programs/open-gym) tokens as an alternative. Attending open gym is entirely optional. We understand that scheduling conflicts can arise.

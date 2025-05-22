@@ -7,9 +7,11 @@ description: >
 
   * **Billing Schedule:** Dues are billed monthly, with equal payments spread across the year to account for months with varying class frequencies.
 
-  * **Enrollment:** Our rolling enrollment allows you to join any class with available spots. Your spot is secured until you submit a drop request.
+  * **Enrollment:** Our rolling enrollment allows you to join any class with available spots. Once a payment is made, your spot is secured until you submit a drop request.
 
-  * **Drop Requests:** To avoid future charges, submit drop requests through the Customer Portal by the 15th of the month prior to the desired cancellation date.
+  * **Cancellations:** To cancel your enrollment, submit drop requests through the Customer Portal by the 15th of the month prior to the desired cancellation date.
+
+  * **Refunds:** Monthly enrollments, Camps, Open Gym sessions, and Birthday Party registration fees are non-refundable.
 
   ### Discounts
 
@@ -24,10 +26,4 @@ description: >
   * **Returned eCheck Fee:** A $15 processing fee will be added for returned eChecks.
 
   * **Delinquent Accounts:** We will attempt to contact you about past-due payments. Enrollments will be dropped if payment is not received by the 10th of the month.
-
-  ### Withdrawal & Refunds
-
-  * **Withdrawal:** Please submit a withdrawal request through the Customer Portal by the 15th of the month prior to your desired end date. No fees apply to withdrawals.
-
-  * **Refunds:** Monthly enrollments, Camps, Open Gym sessions, and Birthday Party registration fees are non-refundable.
 ---

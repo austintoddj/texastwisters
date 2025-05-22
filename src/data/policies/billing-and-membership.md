@@ -19,7 +19,7 @@ description: >
 
   ### Late Fees & Payment Policies
 
-  To ensure your child's spot in a class, tuition is due by the 1st of each month.  We appreciate your prompt payment! To avoid late fees, please settle any outstanding balances by the 7th.  If a balance remains after the 7th, your child will not be able to attend class until the payment is received.  To avoid losing your child's spot entirely, please ensure all balances are paid by the 10th of the month.  Unpaid accounts after this date will result in the enrollment being dropped.  Please note that tuition fees are due regardless of your child's attendance.
+  To ensure your child's spot in a class, tuition is due by the 1st of each month.  We appreciate your prompt payment! To avoid late fees, please settle any outstanding balances by the 7th.  If a balance remains by the 7th, your child will not be able to attend class until the payment is received.  To avoid losing your child's spot entirely, please ensure all balances are paid by the 10th of the month.  Unpaid accounts after this date will result in the enrollment being dropped.  Please note that tuition fees are due regardless of your child's attendance.
 
   * **Late Payment Fee:** A $15 late fee applies to accounts where automatic payment fails after 7 days.
 

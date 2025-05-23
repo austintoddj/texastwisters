@@ -1,6 +1,6 @@
 ---
 name: Coach Bj
-role: Gymnastics
+role: Gymnastics Coach
 image: '/images/about/bj.jpg'
-priority: 2
+priority: 3
 ---

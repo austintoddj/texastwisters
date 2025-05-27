@@ -18,15 +18,15 @@ hero:
 #  ages: 5 - 18 years old
 #  levels: >
 #    Beginner, Intermediate, Advanced
-#  duration: 1 hour
-#  classSize: 8 kids per class
+#  duration: 60 minutes
+#  classSize: 8:1 student to coach ratio
 #descriptionSection:
 #  text: >
 #    ## Our approach at Texas Twisters Gymnastics
 #
 #    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla.
 #
-#    ### What does a class look like?
+#    ### What they will learn
 #
 #    * Warmup and stretch for the first 10 minutes
 #

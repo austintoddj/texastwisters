@@ -12,35 +12,35 @@ hero:
     icon: true
   image:
     src: '/images/programs/adult/hero.jpg'
-infoSection:
-  headline: Designed to help you rediscover your love of gymnastics
-  text: Train every event or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re capable of more than you think.
-  ages: 18 years and up
-  levels: >
-    Beginner - Advanced
-  duration: 60 minute weekly class
-  classSize: Student to coach ratio of 10:1
-descriptionSection:
-  text: >
-    ## Making adult gymnastics accessible and fun
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla.
-
-    ### What you will learn
-
-    * Foundational skills like a handstand, cartwheel, and roundoff
-
-    * Dynamic movements like a back handspring and front tuck
-
-    * Advanced technical skills like a back layout and twisting elements
-
-    * A variety of conditioning exercises to improve strength and flexibility
-
-
-    Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
-  portraitImage: '/images/programs/adult/program-description-01.jpg'
-  squareImage1: '/images/programs/adult/program-description-02.jpg'
-  squareImage2: '/images/programs/adult/program-description-03.jpg'
+#infoSection:
+#  headline: Designed to help you rediscover your love of gymnastics
+#  text: Train every event or drop in for a great conditioning workout; the choice is yours! Either way, you’ll realize you’re capable of more than you think.
+#  ages: 18 years and up
+#  levels: >
+#    Beginner - Advanced
+#  duration: 60 minute weekly class
+#  classSize: Student to coach ratio of 10:1
+#descriptionSection:
+#  text: >
+#    ## Making adult gymnastics accessible and fun
+#
+#    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla.
+#
+#    ### What you will learn
+#
+#    * Foundational skills like a handstand, cartwheel, and roundoff
+#
+#    * Dynamic movements like a back handspring and front tuck
+#
+#    * Advanced technical skills like a back layout and twisting elements
+#
+#    * A variety of conditioning exercises to improve strength and flexibility
+#
+#
+#    Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
+#  portraitImage: '/images/programs/adult/program-description-01.jpg'
+#  squareImage1: '/images/programs/adult/program-description-02.jpg'
+#  squareImage2: '/images/programs/adult/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!

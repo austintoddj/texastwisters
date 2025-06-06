@@ -25,7 +25,7 @@ const navigation = [
   { label: 'About', href: '/about' },
   { label: 'Programs' },
   { label: 'Parents', href: '/parents' },
-  { label: 'FAQs', href: '/#faq' },
+  { label: 'Policies', href: '/policies' },
   { label: 'Hiring', href: '/#hiring' },
   { label: 'Contact us', href: '/contact' }
 ]

@@ -1,6 +1,6 @@
 ---
 name: Coach Isabelle
 role: Gymnastics Coach
-image: '/images/about/isabelle.jpg'
+image: '/images/staff/isabelle.jpg'
 priority: 3
 ---

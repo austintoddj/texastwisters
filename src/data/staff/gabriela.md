@@ -1,6 +1,6 @@
 ---
 name: Gabbi
 role: Receptionist
-image: '/images/about/gabbi.jpg'
+image: '/images/staff/gabbi.jpg'
 priority: 4
 ---

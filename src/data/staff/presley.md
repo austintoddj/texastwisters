@@ -1,6 +1,6 @@
 ---
 name: Coach Presley
 role: Gymnastics Coach
-image: '/images/about/presley.jpg'
+image: '/images/staff/presley.jpg'
 priority: 3
 ---

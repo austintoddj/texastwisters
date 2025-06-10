@@ -1,6 +1,6 @@
 ---
 name: Coach Ashley
 role: Gymnastics Coach
-image: '/images/about/ashley.jpg'
+image: '/images/staff/ashley.jpg'
 priority: 3
 ---

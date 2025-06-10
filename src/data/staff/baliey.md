@@ -1,6 +1,6 @@
 ---
 name: Coach Bailey
 role: Team Coach
-image: '/images/about/bailey.jpg'
+image: '/images/staff/bailey.jpg'
 priority: 2
 ---

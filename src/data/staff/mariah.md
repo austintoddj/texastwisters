@@ -1,6 +1,6 @@
 ---
 name: Coach Mariah
 role: Gymnastics Coach
-image: '/images/about/mariah.jpg'
+image: '/images/staff/mariah.jpg'
 priority: 3
 ---

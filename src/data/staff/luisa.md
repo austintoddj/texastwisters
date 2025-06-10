@@ -1,6 +1,6 @@
 ---
 name: Coach Luisa
 role: Gymnastics Coach
-image: '/images/about/luisa.jpg'
+image: '/images/staff/luisa.jpg'
 priority: 3
 ---

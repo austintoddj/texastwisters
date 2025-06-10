@@ -1,7 +1,7 @@
 ---
 name: Becky Austin
 role: Owner, Head Coach
-image: '/images/about/becky.jpg'
+image: '/images/staff/becky.jpg'
 priority: 1
 social:
   - name: 'instagram'

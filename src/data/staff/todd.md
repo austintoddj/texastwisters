@@ -1,7 +1,7 @@
 ---
 name: Todd Austin
 role: Owner
-image: '/images/about/todd.jpg'
+image: '/images/staff/todd.jpg'
 priority: 1
 social:
   - name: 'x'

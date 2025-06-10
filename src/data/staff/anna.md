@@ -1,6 +1,6 @@
 ---
 name: Coach Anna
 role: Gymnastics Coach
-image: '/images/about/anna.jpg'
+image: '/images/staff/anna.jpg'
 priority: 3
 ---

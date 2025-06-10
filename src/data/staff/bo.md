@@ -1,6 +1,6 @@
 ---
 name: Coach Bo
 role: Boy's Program Director
-image: '/images/about/bo.jpg'
+image: '/images/staff/bo.jpg'
 priority: 2
 ---

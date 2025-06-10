@@ -1,6 +1,6 @@
 ---
 name: Coach Solana
 role: Gymnastics Coach
-image: '/images/about/solana.jpg'
+image: '/images/staff/solana.jpg'
 priority: 3
 ---

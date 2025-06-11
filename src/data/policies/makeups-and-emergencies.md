@@ -23,7 +23,7 @@ description: >
 
   * **Makeup Classes:** We do not offer individual makeup classes for missed sessions. However, we offer [open gym](/programs/open-gym) tokens as an alternative. Attending open gym is entirely optional. We understand that scheduling conflicts can arise.
 
-  * **Open Gym Tokens:** If your child misses a class, an open gym token is applied automatically to their account. You can receive up to two tokens per month which expire one year from the date it was issued. These tokens cannot be redeemed for anything other than an open gym.
+  * **Open Gym Tokens:** If your child misses a class, an open gym token is automatically applied to their account. You can receive up to two tokens per month, which expire one year from issuance. These tokens are exclusively for open gym sessions and are non-transferable. Once a makeup token is redeemed, it cannot be reused after the event ends, as it secures a spot that another child could have taken. However, if you provide at least 24 hours' notice before the open gym, the makeup token can be re-added to your account. A paid open gym spot can be transferred for a $10 fee with 24 hours' notice prior to the event.
 
   * **Closures:** Tuition is not prorated for gym closures or holidays.
 ---

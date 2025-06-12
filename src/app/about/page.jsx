@@ -12,7 +12,7 @@ import { Values } from '@/components/Values'
 export const metadata = {
   title: 'About - Texas Twisters Gymnastics',
   description:
-    'Learn about the mission behind Texas Twisters Gymnastics and meet our dedicated coaching about. Explore our commitment to excellence, core values, and empowering athletes for a bright future.',
+    'Learn about the mission behind Texas Twisters Gymnastics and meet our dedicated coaching staff. Explore our commitment to excellence, core values, and empowering athletes for a bright future.',
   alternates: {
     canonical: './'
   }

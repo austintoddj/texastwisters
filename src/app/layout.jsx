@@ -56,11 +56,10 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          icon="sunHigh"
-          content="Flip into Summer Fun! Join our Day Camps for gymnastics, games, crafts, and more! Spots are filling fast—grab yours today!"
-          href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
+          icon="star"
+          content="Happy 4th of July! We will be closed From July 4 - 5, classes will resume the following Monday."
           color="blue"
-          event={EVENT_IDS.BANNER_CTA_CAMP}
+          event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
         />
       </body>
     </html>

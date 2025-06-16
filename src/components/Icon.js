@@ -21,6 +21,7 @@ import {
   IconClock,
   IconExternalLink,
   IconFileCertificate,
+  IconFlag,
   IconHelpCircle,
   IconLifebuoy,
   IconLinkOff,
@@ -34,6 +35,7 @@ import {
   IconPlus,
   IconRun,
   IconSignature,
+  IconSparkles,
   IconStarFilled,
   IconStarHalfFilled,
   IconStars,
@@ -87,7 +89,9 @@ const iconOptions = {
   run: IconRun,
   olympics: IconOlympics,
   tent: IconTent,
-  sunHigh: IconSunHigh
+  sunHigh: IconSunHigh,
+  flag: IconFlag,
+  sparkles: IconSparkles
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

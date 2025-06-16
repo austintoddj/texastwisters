@@ -71,6 +71,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?ages=4&programs=17'
         icon: true
     - name: Mini-Men
+      badge: 'New classes available'
       price: $80
       interval: per month
       shortDescription: Monday & Tuesday

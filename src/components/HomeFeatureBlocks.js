@@ -14,9 +14,9 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 const features = [
-  'USAG Member Club',
-  'Registration fees waived in 2024',
-  'Family owned',
+  'Month-to-month enrollment',
+  'No annual fees',
+  'Family-owned and operated',
   'Convenient location',
   'Multi-class discount'
 ]

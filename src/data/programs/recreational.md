@@ -12,43 +12,45 @@ hero:
     icon: true
   image:
     src: '/images/programs/recreational/hero.jpg'
-#infoSection:
-#  headline: A program focused on developing fundamental gymnastics skills
-#  text: We offer recreational, progressive gymnastics classes for all experience levels. Contact us today to schedule an evaluation and find the perfect fit!
-#  ages: 5 - 18 years old
-#  levels: >
-#    Beginner, Intermediate, Advanced
-#  duration: 60 minutes
-#  classSize: 8:1 student to coach ratio
-#descriptionSection:
-#  text: >
-#    ## Our approach at Texas Twisters Gymnastics
-#
-#    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Id porta nibh venenatis cras sed felis eget velit. Ut morbi tincidunt augue interdum velit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Viverra orci sagittis eu volutpat odio facilisis mauris. Diam quis enim lobortis scelerisque fermentum. Viverra mauris in aliquam sem fringilla.
-#
-#    ### What they will learn
-#
-#    * Warmup and stretch for the first 10 minutes
-#
-#    * Nulla porttitor accumsan tincidunt.
-#
-#    * Vivamus magna justo, lacinia eget consectetur sed.
-#
-#    * Lorem ipsum dolor sit amet
-#
-#    * Ut enim ad minim veniam
-#
-#
-#    Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra vitae congue eu consequat ac felis donec et odio. Euismod nisi porta lorem mollis aliquam ut porttitor. Sed nisi lacus sed viverra tellus. Augue lacus viverra vitae congue eu consequat ac felis donec. Elementum pulvinar etiam non quam lacus. Ut venenatis tellus in metus vulputate. Ultrices dui sapien eget mi proin sed libero enim. Id velit ut tortor pretium viverra suspendisse.
-#  portraitImage: '/images/programs/recreational/program-description-01.jpg'
-#  squareImage1: '/images/programs/recreational/program-description-02.jpg'
-#  squareImage2: '/images/programs/recreational/program-description-03.jpg'
+infoSection:
+  headline: A program focused on developing fundamental gymnastics skills
+  text: We offer recreational, progressive gymnastics classes for all experience levels. Contact us today to schedule an evaluation and find the perfect fit!
+  ages: 5 - 18 years old
+  levels: >
+    Beginner, Intermediate, Advanced
+  duration: 60 minutes
+  classSize: 8:1 student to coach ratio
+descriptionSection:
+  text: >
+    ## Our approach at Texas Twisters Gymnastics
+
+    Our multi-level program fosters a safe, uplifting environment where kids progress at their own pace. With low student to coach ratios, we can ensure an optimal amount of hands-on coaching for each student and a wide variety of events and drills every week.
+
+    ### What they will learn
+
+    * Master rolls, cartwheels, and handstands
+
+    * Learn skills on bars, beam, floor, vault, and trampoline
+
+    * Build focus and discipline through repetition
+
+    * Develop a positive self-image and confidence in their abilities
+
+    * Establish strong friendships and a sense of community
+
+
+    At the heart of our program lies a commitment to creating a space where children can explore the remarkable capabilities of their bodies. Through highly-skilled coaching with an emphasis on safety, we aim to inspire a sense of accomplishment, intent on helping each child grow not only as an athlete but as a confident, disciplined individual. Longevity in the sport is our goal, and we strive to instill a deep appreciation for gymnastics and a foundation for a healthy, active life.
+
+  portraitImage: '/images/programs/recreational/program-description-01.jpg'
+  squareImage1: '/images/programs/recreational/program-description-02.jpg'
+  squareImage2: '/images/programs/recreational/program-description-03.jpg'
 pricingSection:
   tagline: Membership & Pricing
   headline: Sign up today!
-  text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
+  text: Enroll at any time during the year to reserve your spot in the class. Looking to practice than once a week? Ask us about our multi-class discounts!
   pricing:
     - name: Girls Gymnastics Class
+      badge: 'Most popular'
       price: $90
       interval: per month
       shortDescription: Monday - Saturday

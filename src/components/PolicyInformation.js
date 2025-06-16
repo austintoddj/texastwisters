@@ -13,7 +13,8 @@ export const PolicyInformation = () => {
             Rules & Policies
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
-            We strive to ensure that our gym maintains an equitable, positive, and healthy culture. These policies are designed with that in mind.
+            We strive to ensure that our gym maintains an equitable, positive,
+            and healthy culture. These policies are designed with that in mind.
           </p>
         </div>
         {policies.map((policy, i) => (

@@ -64,7 +64,7 @@ pricingSection:
       badge: 'Most popular'
       price: $20
       interval: per drop-in
-      shortDescription: Fridays
+      shortDescription: Friday evenings
       features:
         - feature: 6:00 PM - 8:00 PM
         - feature: Ages 4 - 17
@@ -90,13 +90,13 @@ pricingSection:
     - name: Adult Open Gym
       price: $20
       interval: per drop-in
-      shortDescription: Thursdays
+      shortDescription: Thursday evenings
       features:
         - feature: 8:30 PM - 10:00 PM
         - feature: Ages 18 and up
         - feature: Pre-registration required
       action:
         label: Reserve today
-        href: 'https://portal.iclasspro.com/texastwisters/camps/6'
+        href: 'https://portal.iclasspro.com/texastwisters/camps/2'
         icon: true
 ---

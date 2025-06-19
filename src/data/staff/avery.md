@@ -1,6 +1,6 @@
 ---
 name: Coach Avery
 role: Gymnastics Coach
-image: '/images/staff/avery-bl.jpg'
+image: '/images/staff/avery.jpg'
 priority: 3
 ---

@@ -5,7 +5,7 @@ featured: true
 hero:
   headline: Texas Twisters Recreational Program
   description: Recreational classes, from beginner to advanced, for students age 5+ with a focus on developing and refining fundamental gymnastics skills on bars, beam, floor, vault, and trampolines.
-  text: Our recreational program focuses on the progressive development of gymnastics skills from the ground up, all while gaining confidence, coordination, flexibility, and strength.
+  text: Our recreational program focuses on the progressive development of gymnastics skills from the ground up, with an emphasis on fun and safety in an encouraging environment.
   action:
     label: Enroll today
     href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'
@@ -14,8 +14,8 @@ hero:
     src: '/images/programs/recreational/hero.jpg'
 infoSection:
   headline: A program focused on developing fundamental gymnastics skills
-  text: We offer recreational, progressive gymnastics classes for all experience levels. Contact us today to schedule an evaluation and find the perfect fit!
-  ages: 5 - 18 years old
+  text: Gymnastics is a fun, social, and incredibly rewarding sport that builds core movement skills and a healthy level of self-confidence, courage and discipline.
+  ages: 5 - 17 years old
   levels: >
     Beginner, Intermediate, Advanced
   duration: 60 minutes
@@ -26,20 +26,18 @@ descriptionSection:
 
     Our multi-level program fosters a safe, uplifting environment where kids progress at their own pace. With low student to coach ratios, we can ensure an optimal amount of hands-on coaching for each student and a wide variety of events and drills every week.
 
-    ### What they will learn
+    ### Skill progression and development
 
-    * Master rolls, cartwheels, and handstands
+    * Beginner Level
+        * Learn the basics, including forward and backward rolls, cartwheels, and handstands. Develop strength and flexibility through exercises like straight-arm bridge holds. Get introduced to vaulting with squat-ons and dive rolls, and begin bar work with pike glide swings and pullovers. Build balance on the beam with relevè walks and straight jumps.
 
-    * Learn skills on bars, beam, floor, vault, and trampoline
+    * Intermediate Level
+        * Work on more complex skills like back hip circles on bars, tuck jumps on beam, and handstand flatbacks on vault. Introduce backbends, handstand forward rolls, and round-off rebounds to floor tumbling. Continue to build strength, flexibility, and confidence.
 
-    * Build focus and discipline through repetition
+    * Advanced Level
+        * Refine advanced techniques like front handsprings over the vault, round-off back handsprings on floor, and front hip circles on bars. Challenge balance and precision on the beam with split jumps, full turns, and cartwheels. Prepare for higher-level gymnastics with a focus on technique and performance.
 
-    * Develop a positive self-image and confidence in their abilities
-
-    * Establish strong friendships and a sense of community
-
-
-    At the heart of our program lies a commitment to creating a space where children can explore the remarkable capabilities of their bodies. Through highly-skilled coaching with an emphasis on safety, we aim to inspire a sense of accomplishment, intent on helping each child grow not only as an athlete but as a confident, disciplined individual. Longevity in the sport is our goal, and we strive to instill a deep appreciation for gymnastics and a foundation for a healthy, active life.
+    At the heart of our program lies a commitment to creating a space where children can explore the remarkable potential of their talent. Through highly-skilled coaching with an emphasis on safety, we aim to inspire a sense of accomplishment, intent on helping each child grow not only as an athlete but as a confident, disciplined individual.
 
   portraitImage: '/images/programs/recreational/program-description-01.jpg'
   squareImage1: '/images/programs/recreational/program-description-02.jpg'
@@ -53,7 +51,7 @@ pricingSection:
       badge: 'Most popular'
       price: $90
       interval: per month
-      shortDescription: Monday - Saturday
+      shortDescription: Classes offered Mon - Sat
       features:
         - feature: Beginner to Advanced
         - feature: All-girls class
@@ -65,7 +63,7 @@ pricingSection:
     - name: Mighty Men
       price: $90
       interval: per month
-      shortDescription: Monday - Saturday
+      shortDescription: Classes offered Mon - Sat
       features:
         - feature: No experience required
         - feature: All-boys class
@@ -77,7 +75,7 @@ pricingSection:
     - name: Boys Gymnastics Class
       price: $90
       interval: per month
-      shortDescription: Monday - Saturday
+      shortDescription: Classes offered Mon - Sat
       features:
         - feature: Intermediate & Advanced
         - feature: Some experience required

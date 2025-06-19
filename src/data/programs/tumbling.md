@@ -50,7 +50,7 @@ pricingSection:
     - name: Beginner Tumbling
       price: $90
       interval: per month
-      shortDescription: Monday & Thursday
+      shortDescription: Classes offered Mon & Thur
       features:
         - feature: No experience required
         - feature: Ages 6 - 17
@@ -62,7 +62,7 @@ pricingSection:
     - name: Intermediate Tumbling
       price: $90
       interval: per month
-      shortDescription: Monday & Thursday
+      shortDescription: Classes offered Mon & Thur
       features:
         - feature: Some experience required
         - feature: Ages 6 - 17

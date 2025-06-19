@@ -49,7 +49,7 @@ pricingSection:
     - name: Tumble Tots
       price: $80
       interval: per month
-      shortDescription: Monday - Saturday
+      shortDescription: Classes offered Mon - Sat
       features:
         - feature: Ages 18 months - 3.5 years
         - feature: Parent participation required
@@ -61,7 +61,7 @@ pricingSection:
     - name: Preschool Gymnastics
       price: $80
       interval: per month
-      shortDescription: Monday - Saturday
+      shortDescription: Classes offered Mon - Sat
       features:
         - feature: Ages 3.5 years - 5 years
         - feature: Co-ed classes
@@ -74,7 +74,7 @@ pricingSection:
       badge: 'New classes available'
       price: $80
       interval: per month
-      shortDescription: Monday & Tuesday
+      shortDescription: Classes offered Mon & Tue
       features:
         - feature: Ages 4 - 5
         - feature: Boys only classes
@@ -86,7 +86,7 @@ pricingSection:
     - name: Preschool Open Gym
       price: $10
       interval: per drop-in
-      shortDescription: Monday - Friday
+      shortDescription: Mon - Fri
       features:
         - feature: 9:00 AM - 10:30 AM
         - feature: Ages 1 - 5

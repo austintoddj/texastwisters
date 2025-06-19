@@ -71,4 +71,16 @@ pricingSection:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=60'
         icon: true
+    - name: Advanced Tumbling
+      price: $90
+      interval: per month
+      shortDescription: Classes offered Wed & Thur
+      features:
+        - feature: Some experience required
+        - feature: Ages 6 - 17
+        - feature: Co-ed class
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=3&programs=60'
+        icon: true
 ---

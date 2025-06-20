@@ -5,7 +5,7 @@ featured: true
 hero:
   headline: Texas Twisters Recreational Program
   description: Recreational classes, from beginner to advanced, for students age 5+ with a focus on developing and refining fundamental gymnastics skills on bars, beam, floor, vault, and trampolines.
-  text: Gymnastics at Texas Twisters is a fun, social, and incredibly rewarding sport that builds core movement skills and a healthy level of self-confidence, courage and discipline.
+  text: Our recreational program offers a fun, social, and incredibly rewarding sport that builds core movement skills and a healthy level of self-confidence, courage and discipline.
   action:
     label: Enroll today
     href: 'https://portal.iclasspro.com/texastwisters/classes?programs=16'

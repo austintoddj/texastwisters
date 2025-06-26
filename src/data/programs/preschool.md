@@ -56,7 +56,7 @@ pricingSection:
         - feature: 45 minute classes
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?ages=1&programs=17'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?ages=2&programs=17'
         icon: true
     - name: Preschool Gymnastics
       price: $80

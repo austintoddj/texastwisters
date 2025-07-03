@@ -28,14 +28,11 @@ descriptionSection:
 
     ### Skill progression and development
 
-    * Beginner Level
-        * Learn the basics like rolls, cartwheels, and handstands, build strength and flexibility with exercises like straight-arm bridge holds, start vaulting with squat-ons and dive rolls, practice bar work with pike glide swings and pullovers, and develop coordination on the beam with relevè walks and straight jumps.
+    * **Beginner Level:** Learn the basics like rolls, cartwheels, and handstands, build strength and flexibility with exercises like straight-arm bridge holds, start vaulting with squat-ons and dive rolls, practice bar work with pike glide swings and pullovers, and develop coordination on the beam with relevè walks and straight jumps.
 
-    * Intermediate Level
-        * Intermediate students work on more dynamic skills like back hip circles on bars, tuck jumps on beam, and handstand flatbacks on vault. Classes will begin to incorporate backbends, handstand forward rolls, and round-off rebounds into floor tumbling, while continuing to enhance strength, flexibility, and confidence.
+    * **Intermediate Level:** Intermediate students work on more dynamic skills like back hip circles on bars, tuck jumps on beam, and handstand flatbacks on vault. Classes will begin to incorporate backbends, handstand forward rolls, and round-off rebounds into floor tumbling, while continuing to enhance strength, flexibility, and confidence.
 
-    * Advanced Level
-        * Prepare for higher-level gymnastics with a focus on technique and performance. This level introduces skills like front handsprings over the vault, round-off back handsprings on floor, front hip circles on bars, beam skills like split jumps, full turns, cartwheels, and more!
+    * **Advanced Level:** Prepare for higher-level gymnastics with a focus on technique and performance. This level introduces skills like front handsprings over the vault, round-off back handsprings on floor, front hip circles on bars, beam skills like split jumps, full turns, cartwheels, and more! 
 
     At the heart of our program is a commitment to creating a space where children can learn, grow, and explore their potential. Through highly-skilled coaching with an emphasis on safety, we aim to inspire a sense of accomplishment, intent on helping each child grow not only as an athlete but as a confident, disciplined individual.
 

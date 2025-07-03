@@ -47,7 +47,7 @@ pricingSection:
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing:
     - name: Tumble Tots
-      price: $80
+      price: $85
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
@@ -59,7 +59,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?ages=2&programs=17'
         icon: true
     - name: Preschool Gymnastics
-      price: $80
+      price: $85
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
@@ -72,7 +72,7 @@ pricingSection:
         icon: true
     - name: Mini-Men
       badge: 'New classes available'
-      price: $80
+      price: $85
       interval: per month
       shortDescription: Classes offered Mon & Tue
       features:

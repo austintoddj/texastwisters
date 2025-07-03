@@ -18,7 +18,8 @@ const features = [
   'No annual fees',
   'Family-owned and operated',
   'Convenient location',
-  'Multi-class discount'
+  'Multi-class discount',
+  'Sibling discount'
 ]
 
 const blocks = [

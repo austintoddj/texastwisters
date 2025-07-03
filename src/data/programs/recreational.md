@@ -49,7 +49,7 @@ pricingSection:
   pricing:
     - name: Girls Gymnastics Class
       badge: 'Most popular'
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
@@ -61,7 +61,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?genders=0&programs=16'
         icon: true
     - name: Mighty Men
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
@@ -73,7 +73,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16'
         icon: true
     - name: Boys Gymnastics Class
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:

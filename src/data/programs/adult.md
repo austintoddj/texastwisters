@@ -48,7 +48,7 @@ pricingSection:
   pricing:
     - name: Adult Beginner
       badge: 'Most popular'
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Monday & Tuesday at 8 PM
       features:
@@ -60,7 +60,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=4&programs=57'
         icon: true
     - name: Adult Intermediate
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Tuesday at 8 PM
       features:
@@ -72,7 +72,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=57'
         icon: true
     - name: Adult Advanced
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Thursday at 8 PM
       features:

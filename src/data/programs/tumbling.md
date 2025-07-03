@@ -48,7 +48,7 @@ pricingSection:
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing:
     - name: Beginner Tumbling
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Classes offered Mon & Thur
       features:
@@ -60,7 +60,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=4&programs=60'
         icon: true
     - name: Intermediate Tumbling
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Classes offered Mon & Thur
       features:
@@ -72,7 +72,7 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=60'
         icon: true
     - name: Advanced Tumbling
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Classes offered Wed & Thur
       features:

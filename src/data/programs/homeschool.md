@@ -49,7 +49,7 @@ pricingSection:
   text: Enroll at any time during the year to reserve your spot in the class. Advanced classes will require an evaluation. Please contact us to schedule. We look forward to having you join us!
   pricing:
     - name: Recreational Gymnastics Class
-      price: $90
+      price: $100
       interval: per month
       shortDescription: Monday & Thursday
       features:

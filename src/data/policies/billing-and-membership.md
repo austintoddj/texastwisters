@@ -16,7 +16,7 @@ description: >
   ### Discounts
 
   * **Multi-Class Discount:** Students enrolled in multiple classes automatically receive a 10% discount on subsequent classes.
-  
+
   * **Sibling Discount:** Families with more than one student enrolled automatically receive a 10% discount on subsequent classes.
 
   ### Late Fees & Payment Policies

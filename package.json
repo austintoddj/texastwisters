@@ -22,7 +22,7 @@
     "next": "^15.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "sharp": "^0.34.1"
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

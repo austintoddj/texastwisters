@@ -64,7 +64,7 @@ pricingSection:
       features:
         - feature: No experience required
         - feature: All-boys class
-        - feature: Ages 5 - 17
+        - feature: Ages 6 - 17
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16'

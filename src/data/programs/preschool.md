@@ -76,7 +76,7 @@ pricingSection:
       interval: per month
       shortDescription: Classes offered Mon & Tue
       features:
-        - feature: Ages 4 - 6
+        - feature: Ages 4 - 5
         - feature: Boys only classes
         - feature: Strength, conditioning and skills
       action:

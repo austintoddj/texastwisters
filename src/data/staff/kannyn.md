@@ -2,5 +2,5 @@
 name: Coach Kannyn
 role: Gymnastics Coach
 image: '/images/staff/kannyn.jpg'
-priority: 3
+priority: 4
 ---

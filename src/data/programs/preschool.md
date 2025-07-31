@@ -86,7 +86,7 @@ pricingSection:
     - name: Preschool Open Gym
       price: $10
       interval: per drop-in
-      shortDescription: Mon - Fri
+      shortDescription: Monday, Wednesday & Friday
       features:
         - feature: 9:00 AM - 10:30 AM
         - feature: Ages 1 - 5

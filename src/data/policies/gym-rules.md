@@ -30,4 +30,6 @@ description: >
   * **Strike Two:** If a student receives a second strike due to continued disruptive behavior, the coach will implement a short time-out period.
 
   * **Strike Three:** For a third strike or a serious safety violation, the coach will return the student to the lobby where they will be reunited with their parent/guardian.
+
+    _If a student receives a third strike in multiple classes, the enrollment will be dropped and the student will not be allowed to return to class._
 ---

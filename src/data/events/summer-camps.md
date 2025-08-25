@@ -1,8 +1,7 @@
 ---
-name: Summer Camps
-description: Ready for Summer? Join us Monday through Friday for our awesome day camps! Spots are limited, so reserve your spot today!
-dates: May 27 - August 13
-image: '/images/events/camp.jpg'
-href: 'https://portal.iclasspro.com/texastwisters/camps/5'
+name: District Qualifier
+description: Come cheer on our Level 4 as they represent Texas Twisters in their first District Qualifier of 2025 - let's go!
+dates: September 5
+image: '/images/events/usag.jpg'
 order: 2
 ---

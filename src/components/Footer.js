@@ -74,6 +74,11 @@ export const Footer = ({ programs }) => {
                 href="https://www.linkedin.com/company/texastwistersgymnastics"
                 icon="linkedin"
               />
+              <SocialLink href="https://x.com/txtwistersgym" icon="x" />
+              <SocialLink
+                href="https://www.youtube.com/@texastwistersgymnastics"
+                icon="youtube"
+              />
             </div>
           </div>
         </div>

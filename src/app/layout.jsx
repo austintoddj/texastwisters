@@ -1,14 +1,14 @@
+import { Banner } from '@/components/Banner'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
+import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
-import { Banner } from '@/components/Banner'
-import { EVENT_IDS } from '@/utils/tracking'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-         <Banner
+        <Banner
           icon="calendar"
           content="Happy Labor Day! We will be closed on Monday, September 1st. Classes will resume the following day."
           color="blue"

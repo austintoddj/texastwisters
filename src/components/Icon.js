@@ -8,6 +8,7 @@ import {
   IconBrandLinkedin,
   IconBrandTiktok,
   IconBrandX,
+  IconBrandYoutube,
   IconBulb,
   IconCalendar,
   IconCarambola,
@@ -91,7 +92,8 @@ const iconOptions = {
   tent: IconTent,
   sunHigh: IconSunHigh,
   flag: IconFlag,
-  sparkles: IconSparkles
+  sparkles: IconSparkles,
+  youtube: IconBrandYoutube
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

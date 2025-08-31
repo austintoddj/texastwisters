@@ -10,7 +10,7 @@ import { Stats } from '@/components/Stats'
 import { Values } from '@/components/Values'
 
 export const metadata = {
-  title: 'About - Texas Twisters Gymnastics',
+  title: 'About | Texas Twisters Gymnastics | Georgetown, TX',
   description:
     'Learn about the mission behind Texas Twisters Gymnastics and meet our dedicated coaching staff. Explore our commitment to excellence, core values, and empowering athletes for a bright future.',
   alternates: {

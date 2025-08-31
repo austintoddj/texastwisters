@@ -18,7 +18,7 @@ const roboto = Roboto_Flex({
 /* Default metadata when not defined elsewhere */
 export const metadata = {
   metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),
-  title: 'Texas Twisters Gymnastics',
+  title: 'Texas Twisters Gymnastics | Georgetown, TX',
   openGraph: {
     siteName: 'Texas Twisters Gymnastics',
     url: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN_URL}`),

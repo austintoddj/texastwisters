@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const ogImage = program.hero ? program.hero.image?.src : undefined
 
   const metadata = {
-    title: `${program.name} - Texas Twisters Gymnastics`,
+    title: `${program.name} | Texas Twisters Gymnastics | Georgetown, TX`,
     description: description,
     alternates: {
       canonical: './'

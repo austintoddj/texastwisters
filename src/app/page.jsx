@@ -8,7 +8,7 @@ import { Testimonials } from '@/components/Testimonials'
 import { getAllItems } from '@/lib/getItems'
 
 export const metadata = {
-  title: 'Texas Twisters Gymnastics',
+  title: 'Texas Twisters Gymnastics | Georgetown, TX',
   description:
     'Georgetown TX :: Recreational Gymnastics, Competitive Team, Adult Gymnastics, Preschool, Tumbling, Open Gyms, Birthday Parties, Camps.',
   alternates: {

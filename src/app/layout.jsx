@@ -1,9 +1,7 @@
-import { Banner } from '@/components/Banner'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
-import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -55,13 +53,6 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          icon="calendar"
-          content="Happy Labor Day! We will be closed on Monday, September 1st. Classes will resume the following day."
-          color="blue"
-          href="https://portal.iclasspro.com/texastwisters/news/2"
-          event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
-        />
       </body>
     </html>
   )

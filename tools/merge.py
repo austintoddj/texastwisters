@@ -7,8 +7,6 @@ from datetime import datetime
 """
 Merges two CSV files from the CLA-18 iClassPro report, combining student enrollment data by student name across months.
 
-This script takes two CSV files as command-line arguments, each with a 'Student' column and month columns (e.g., 'Jun/24') indicating enrollment ('Y' or 'N'). It standardizes student names, merges enrollment data using an OR operation (if either file marks a student as enrolled for a month, they are marked as enrolled), and outputs a new CSV with unique students, their enrollment patterns, and total months enrolled. It also calculates and prints the average retention across all students and logs any duplicate student records.
-
 Usage:
     python merge.py first.csv second.csv
 

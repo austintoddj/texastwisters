@@ -5,7 +5,7 @@ featured: true
 hero:
   headline: Texas Twisters Team
   description: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
-  text: Our team includes Levels 1 - 4 of the Development program and is designed to provide high caliber gymnasts the opportunity to train and compete at USAG regulated meets statewide.
+  text: Our team includes Levels 1 - 5 of the Development program and is designed to provide high caliber gymnasts the opportunity to train and compete at USAG regulated meets statewide.
   action:
     label: Contact us
     href: '/contact'
@@ -72,7 +72,7 @@ pricingSection:
         label: Contact us
         href: '/contact'
         icon: true
-    - name: Level 4
+    - name: Level 4 & 5
       price: $275
       interval: per month
       shortDescription: Tuesday & Thursday
@@ -86,12 +86,12 @@ pricingSection:
         href: '/contact'
         icon: true
     - name: Training Team
-      price: $110
+      price: $100
       interval: per month
-      shortDescription: Thursday
+      shortDescription: Monday
       features:
         - feature: Prep for Level 2 Team
-        - feature: Practice 1.25 hrs/wk
+        - feature: Practice 1 hr/wk
         - feature: Ages 4 - 7
         - feature: By invitation only
       action:

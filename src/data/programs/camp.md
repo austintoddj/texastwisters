@@ -50,7 +50,7 @@ pricingSection:
     - name: Homeschool Camps
       price: $30
       interval: per day
-      shortDescription: Every Friday
+      shortDescription: Friday
       features:
         - feature: 10:30 AM - 2:30 PM
         - feature: Lunch and snack breaks

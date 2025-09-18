@@ -4,8 +4,8 @@ dropdownDescription: Gymnastics classes at a convenient time for homeschool stud
 featured: false
 hero:
   headline: Texas Twisters Homeschool Program
-  description: Co-ed gymnastics classes for homeschooled kids ages 5+. Develop fundamental skills on bars, beam, floor, vault, and trampoline! Weekly homeschool open gym also available.
-  text: Co-ed gymnastics classes for homeschooled kids ages 5+. Develop fundamental skills on bars, beam, floor, vault, and trampoline! Weekly homeschool open gym also available.
+  description: To accommodate the flexible schedules of homeschooling families, we offer a variety of programs during the weekdays for homeschooled students!
+  text: To accommodate the flexible schedules of homeschooling families, we offer a variety of programs during the weekdays for homeschooled students!
   action:
     label: Enroll today
     href: 'https://portal.iclasspro.com/texastwisters/classes?programs=71'
@@ -76,7 +76,7 @@ pricingSection:
     - name: Homeschool Camps
       price: $30
       interval: per day
-      shortDescription: Every Friday
+      shortDescription: Friday
       features:
         - feature: 10:30 AM - 2:30 PM
         - feature: Lunch and snack breaks

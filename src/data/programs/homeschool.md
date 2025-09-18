@@ -73,4 +73,17 @@ pricingSection:
         label: Reserve today
         href: 'https://portal.iclasspro.com/texastwisters/camps/6'
         icon: true
+    - name: Homeschool Camps
+      price: $30
+      interval: per day
+      shortDescription: Every Friday
+      features:
+        - feature: 10:30 AM - 2:30 PM
+        - feature: Lunch and snack breaks
+        - feature: Arts and crafts
+        - feature: Games, obstacle courses and more!
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/camps/16'
+        icon: true
 ---

@@ -23,6 +23,7 @@ import {
   IconExternalLink,
   IconFileCertificate,
   IconFlag,
+  IconGymnastics,
   IconHelpCircle,
   IconLifebuoy,
   IconLinkOff,
@@ -93,7 +94,8 @@ const iconOptions = {
   sunHigh: IconSunHigh,
   flag: IconFlag,
   sparkles: IconSparkles,
-  youtube: IconBrandYoutube
+  youtube: IconBrandYoutube,
+  gymnastics: IconGymnastics
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

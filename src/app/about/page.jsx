@@ -26,7 +26,7 @@ export default function AboutPage() {
       <div className="w-full h-32 bg-linear-to-b from-purple-25 to-white sm:h-40 lg:h-44" />
 
       {/*<AlternatingFeatures />*/}
-      {/*<Stats />*/}
+      {/* <Stats /> */}
       <Staff />
       <Values />
       <CallToAction />

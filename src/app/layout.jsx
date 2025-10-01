@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
           icon="gymnastics"
-          content="Join our Homeschool Camps every Friday, 10:30am–2:30pm! Spots are filling fast—register now!"
+          content="Join our Homeschool Camps every Friday, 10:30am–2:30pm! Only $30 for fun, games, and more—register now!"
           color="blue"
           href="https://portal.iclasspro.com/texastwisters/camps/16"
           event={EVENT_IDS.BANNER_CTA_HOMESCHOOL_COOP}

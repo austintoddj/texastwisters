@@ -15,7 +15,7 @@ const owners = {
 
 const requirements = [
   'Previous experience in gymnastics (Recommended, but not required. We will train the right person!)',
-  'Availability to work weekdays from 9 AM to 5 PM, or a variable schedule based on class times',
+  'Availability to work weeknights from 3 PM to 8 PM and occasional events on weekends',
   'Ability to engage and lead young children using age-appropriate language and positive reinforcement',
   'A positive attitude, can-do mentality, exceptional patience, and a genuine passion for working with kids',
   'Outstanding customer service skills. We treat our members like family and expect the same from our staff'

@@ -11,6 +11,7 @@ export const EVENT_IDS = {
   BANNER_CTA_SPRING_SHOW: 'banner-cta-spring-show',
   BANNER_CTA_GYM_CLOSURE: 'banner-cta-gym-closure',
   BANNER_CTA_HOMESCHOOL_CAMP: 'banner-cta-homeschool-camp',
+  BANNER_CTA_RECREATIONAL_CLASSES: 'banner-cta-recreational-classes',
   PROGRAM_CTA: 'program-cta',
   HIRING_CTA: 'hiring-cta',
   CONTACT_US: 'contact-us',

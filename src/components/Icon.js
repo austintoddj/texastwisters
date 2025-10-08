@@ -45,7 +45,8 @@ import {
   IconTent,
   IconUser,
   IconUsers,
-  IconX
+  IconX,
+  IconInfoCircleFilled
 } from '@tabler/icons-react'
 
 const iconOptions = {
@@ -95,7 +96,8 @@ const iconOptions = {
   flag: IconFlag,
   sparkles: IconSparkles,
   youtube: IconBrandYoutube,
-  gymnastics: IconGymnastics
+  gymnastics: IconGymnastics,
+  info: IconInfoCircleFilled
 }
 
 export const Icon = ({ icon, className = '', stroke = 1.5 }) => {

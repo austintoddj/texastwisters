@@ -25,6 +25,7 @@ import {
   IconFlag,
   IconGymnastics,
   IconHelpCircle,
+  IconInfoCircleFilled,
   IconLifebuoy,
   IconLinkOff,
   IconMail,
@@ -45,8 +46,7 @@ import {
   IconTent,
   IconUser,
   IconUsers,
-  IconX,
-  IconInfoCircleFilled
+  IconX
 } from '@tabler/icons-react'
 
 const iconOptions = {

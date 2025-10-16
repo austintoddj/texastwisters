@@ -1,5 +1,14 @@
 import sendgrid from '@sendgrid/mail'
 
+/**
+ * Utility for sending transactional emails using SendGrid.
+ *
+ * sendEmail(to, from, templateID, name, subject, phone, email):
+ *   Sends an email using a dynamic template and provided data.
+ *
+ * Usage: Used for contact forms and notifications.
+ */
+
 export const sendEmail = async (
   to,
   from,

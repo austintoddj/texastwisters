@@ -1,3 +1,9 @@
+/**
+ * Event and element ID constants for site analytics and tracking.
+ *
+ * Usage: Used to standardize event names and IDs for analytics throughout the site.
+ */
+
 export const EVENT_NAMES = {
   BUTTON_CLICK: 'button_click',
   FORM_SUBMIT: 'form_submit',

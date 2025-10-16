@@ -1,3 +1,11 @@
+/**
+ * Utility functions for loading and parsing Markdown data files from src/data.
+ *
+ * getItemData(slug, type): Loads frontmatter metadata for a single item.
+ * getAllItems(dir, shuffle): Loads all items in a directory, optionally shuffling or sorting by 'order'.
+ *
+ * Usage: Used throughout the site to fetch structured content for events, faqs, programs, etc.
+ */
 import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'

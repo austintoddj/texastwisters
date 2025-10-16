@@ -90,9 +90,9 @@ pricingSection:
     - name: Adult Open Gym
       price: $20
       interval: per drop-in
-      shortDescription: Thursday evenings
+      shortDescription: Monday at 8 PM
       features:
-        - feature: 8:30 PM - 10:00 PM
+        - feature: 8:00 PM - 10:00 PM
         - feature: Ages 18 and up
         - feature: Pre-registration required
       action:

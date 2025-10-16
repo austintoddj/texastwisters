@@ -6,7 +6,6 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "prepare": "husky",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
@@ -33,7 +32,6 @@
     "eslint": "^9.34.0",
     "eslint-config-next": "^15.5.3",
     "eslint-config-prettier": "^10.0.1",
-    "husky": "^9.1.6",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",

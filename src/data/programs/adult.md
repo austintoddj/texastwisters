@@ -71,18 +71,6 @@ pricingSection:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=57'
         icon: true
-    - name: Adult Advanced
-      price: $100
-      interval: per month
-      shortDescription: Thursday at 8 PM
-      features:
-        - feature: Experience required
-        - feature: Co-ed classes
-        - feature: Ages 18 and up
-      action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=3&programs=57'
-        icon: true
     - name: Adult Open Gym
       price: $20
       interval: per drop-in

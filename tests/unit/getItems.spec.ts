@@ -65,7 +65,4 @@ describe('getItems utility', () => {
     randomSpy.mockRestore()
   })
 
-  afterEach(() => {
-    vi.clearAllMocks()
-  })
 })

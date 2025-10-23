@@ -1,4 +1,6 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { sendEmail } from '@/lib/sendgrid'
+import sendgridModule from '@sendgrid/mail'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Mock @sendgrid/mail - return module with default export containing mocked functions
 vi.mock('@sendgrid/mail', () => {
@@ -9,9 +11,6 @@ vi.mock('@sendgrid/mail', () => {
     }
   }
 })
-
-import sendgridModule from '@sendgrid/mail'
-import { sendEmail } from '@/lib/sendgrid'
 
 // Helper to normalize mocked module shape (CJS/ESM differences)
 function getSendgrid(obj: any) {
@@ -28,7 +27,15 @@ describe('sendgrid helper', () => {
   it('calls sendgrid.setApiKey and send with expected message', async () => {
     ;(sg.send as any).mockResolvedValueOnce([{}])
 
-    await sendEmail('to@test.com', 'from@test.com', 'template-1', 'Name', 'Subject', '123', 'email@test.com')
+    await sendEmail(
+      'to@test.com',
+      'from@test.com',
+      'template-1',
+      'Name',
+      'Subject',
+      '123',
+      'email@test.com'
+    )
 
     expect(sg.setApiKey).toHaveBeenCalled()
     expect(sg.send).toHaveBeenCalled()

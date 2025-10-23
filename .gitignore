@@ -10,3 +10,4 @@ npm-debug.log*
 sitemap*.xml
 robots.txt
 .vercel
+.env.sentry-build-plugin

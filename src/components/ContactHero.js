@@ -1,5 +1,6 @@
 'use client'
 
+import * as Sentry from '@sentry/nextjs'
 import dotsGrid from '/public/images/illustrations/dots-grid.svg'
 import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
@@ -66,12 +67,26 @@ export const ContactHero = () => {
       })
 
       if (!res || !res.ok) {
+        // Capture a non-2xx response in Sentry for debugging. Do NOT include PII.
+        const respError = new Error(`Contact API returned status ${res ? res.status : 'no-response'}`)
+        Sentry.captureException(respError, {
+          tags: { component: 'ContactHero' },
+          extra: { path: typeof window !== 'undefined' ? window.location.pathname : undefined },
+        })
         setIsError(true)
       } else {
         setIsError(false)
       }
     } catch (err) {
-      // Network or unexpected error
+      // Network or unexpected error: capture for diagnostics (no PII)
+      try {
+        Sentry.captureException(err, {
+          tags: { component: 'ContactHero' },
+          extra: { path: typeof window !== 'undefined' ? window.location.pathname : undefined },
+        })
+      } catch (reportErr) {
+        // best-effort; don't block user flow
+      }
       setIsError(true)
     } finally {
       // Reset form after state updates

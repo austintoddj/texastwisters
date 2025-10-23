@@ -1,9 +1,7 @@
-import { Banner } from '@/components/Banner'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
-import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -55,13 +53,6 @@ export default function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          icon="info"
-          content="New gymnastics classes are now available Monday through Saturday — spots are limited, sign up today!"
-          color="blue"
-          href="https://portal.iclasspro.com/texastwisters/classes?genders=0&programs=16&openings=1"
-          event={EVENT_IDS.BANNER_CTA_RECREATIONAL_CLASSES}
-        />
       </body>
     </html>
   )

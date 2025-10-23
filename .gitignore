@@ -2,6 +2,8 @@
 /.next
 /.idea
 /.vercel
+/playright-report
+/test-results
 .DS_Store
 npm-debug.log*
 .env*.local

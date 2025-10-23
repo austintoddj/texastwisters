@@ -55,27 +55,32 @@ export const ContactHero = () => {
 
     const data = new FormData(e.target)
 
-    fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(Object.fromEntries(data))
-    }).then(res => {
-      switch (res.status) {
-        case 200:
-          setIsError(false)
-          break
-        case 500:
-          setIsError(true)
-          break
-        default:
-          break
-      }
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(data))
+      })
 
-      e.target.reset()
-    })
+      if (!res || !res.ok) {
+        setIsError(true)
+      } else {
+        setIsError(false)
+      }
+    } catch (err) {
+      // Network or unexpected error
+      setIsError(true)
+    } finally {
+      // Reset form after state updates
+      try {
+        e.target.reset()
+      } catch (e) {
+        // ignore
+      }
+    }
   }
 
   return (
@@ -176,7 +181,7 @@ export const ContactHero = () => {
               )}
 
               <div className="flex justify-start mt-6">
-                <Button>Send message</Button>
+                <Button type="submit">Send message</Button>
               </div>
             </form>
           </div>

@@ -1,12 +1,12 @@
 'use client'
 
-import * as Sentry from '@sentry/nextjs'
 import dotsGrid from '/public/images/illustrations/dots-grid.svg'
 import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
 import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
+import * as Sentry from '@sentry/nextjs'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -60,7 +60,7 @@ export const ContactHero = () => {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
-          Accept: 'application/json, text/plain, */*',
+          'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(Object.fromEntries(data))
@@ -68,10 +68,17 @@ export const ContactHero = () => {
 
       if (!res || !res.ok) {
         // Capture a non-2xx response in Sentry for debugging. Do NOT include PII.
-        const respError = new Error(`Contact API returned status ${res ? res.status : 'no-response'}`)
+        const respError = new Error(
+          `Contact API returned status ${res ? res.status : 'no-response'}`
+        )
         Sentry.captureException(respError, {
           tags: { component: 'ContactHero' },
-          extra: { path: typeof window !== 'undefined' ? window.location.pathname : undefined },
+          extra: {
+            path:
+              typeof window !== 'undefined'
+                ? window.location.pathname
+                : undefined
+          }
         })
         setIsError(true)
       } else {
@@ -82,9 +89,14 @@ export const ContactHero = () => {
       try {
         Sentry.captureException(err, {
           tags: { component: 'ContactHero' },
-          extra: { path: typeof window !== 'undefined' ? window.location.pathname : undefined },
+          extra: {
+            path:
+              typeof window !== 'undefined'
+                ? window.location.pathname
+                : undefined
+          }
         })
-      } catch (reportErr) {
+      } catch {
         // best-effort; don't block user flow
       }
       setIsError(true)
@@ -92,7 +104,7 @@ export const ContactHero = () => {
       // Reset form after state updates
       try {
         e.target.reset()
-      } catch (e) {
+      } catch {
         // ignore
       }
     }

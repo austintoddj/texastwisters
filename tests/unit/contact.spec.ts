@@ -1,5 +1,7 @@
-import { vi, describe, it, expect, beforeEach } from 'vitest'
+import { sendEmail } from '@/lib/sendgrid'
+import * as Sentry from '@sentry/nextjs'
 import { createRequest, createResponse } from 'node-mocks-http'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Mock sendEmail and Sentry
 vi.mock('@/lib/sendgrid', () => ({
@@ -9,9 +11,6 @@ vi.mock('@/lib/sendgrid', () => ({
 vi.mock('@sentry/nextjs', () => ({
   captureException: vi.fn()
 }))
-
-import { sendEmail } from '@/lib/sendgrid'
-import * as Sentry from '@sentry/nextjs'
 
 describe('API /api/contact', () => {
   beforeEach(() => {
@@ -27,7 +26,7 @@ describe('API /api/contact', () => {
     })
     const res = createResponse()
 
-  const handler = (await import('../../../src/pages/api/contact.js')).default
+    const handler = (await import('@/pages/api/contact')).default
     await handler(req, res)
 
     expect(res._getStatusCode()).toBe(200)
@@ -45,7 +44,7 @@ describe('API /api/contact', () => {
     })
     const res = createResponse()
 
-  const handler = (await import('../../../src/pages/api/contact.js')).default
+    const handler = (await import('@/pages/api/contact')).default
     await handler(req, res)
 
     expect(res._getStatusCode()).toBe(500)

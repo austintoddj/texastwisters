@@ -26,12 +26,19 @@ export default async function Contact(req, res) {
           hasName: Boolean(req.body?.name),
           hasEmail: Boolean(req.body?.email),
           hasPhone: Boolean(req.body?.phone),
-          messageLength: typeof req.body?.message === 'string' ? req.body.message.length : undefined,
-        },
+          messageLength:
+            typeof req.body?.message === 'string'
+              ? req.body.message.length
+              : undefined
+        }
       })
     } catch (captureErr) {
       // best-effort: do not cause a secondary failure
-      console.error('Sentry capture failed', captureErr)
+      try {
+        process.stderr.write(`Sentry capture failed: ${captureErr}\n`)
+      } catch {
+        // swallow
+      }
     }
 
     res.status(500).json({ message: 'Error' })

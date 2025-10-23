@@ -34,8 +34,45 @@ jobs:
       - name: Build
         run: npm run build
 
+  pr-smoke-e2e:
+    # Lightweight smoke E2E run for pull requests only. Runs the smoke.spec.ts tests against a dev server.
+    # NOTE: removed `needs: build` to make PRs faster (this job now runs independently on PRs).
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install Playwright browsers (if cache miss)
+        run: npx playwright install --with-deps
+
+      - name: Run smoke E2E tests (PR)
+        # Start Next dev server and run only the smoke spec to keep PR runs fast
+        run: |
+          npx start-server-and-test 'npm run dev' http://localhost:3000 "npx playwright test tests/e2e/smoke.spec.ts --project=chromium --reporter=list"
+        env:
+          CI: true
+
   e2e:
-    # Run E2E after a successful build. Keep this off for PRs by default if desired.
+    # Run full E2E after a successful build (on push to main/develop). This runs against a production start.
     needs: build
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
@@ -52,7 +89,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install Playwright browsers (if cache miss)
         run: npx playwright install --with-deps
 
       - name: Build

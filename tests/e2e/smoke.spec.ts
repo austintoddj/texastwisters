@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 // Static top-level routes
 const routes = ['/', '/about', '/parents', '/policies', '/contact']

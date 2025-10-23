@@ -1,11 +1,13 @@
-import { test, expect } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 test.describe('Contact form', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/contact')
   })
 
-  test('shows validation error when required fields missing', async ({ page }) => {
+  test('shows validation error when required fields missing', async ({
+    page
+  }) => {
     // Submit empty form
     await page.click('text=Send message')
 
@@ -22,7 +24,11 @@ test.describe('Contact form', () => {
 
     // Intercept the /api/contact POST to simulate a 200 response without sending email
     await page.route('**/api/contact', route =>
-      route.fulfill({ status: 200, contentType: 'application/json', body: '{"message":"Success"}' })
+      route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: '{"message":"Success"}'
+      })
     )
 
     await page.click('text=Send message')
@@ -37,11 +43,17 @@ test.describe('Contact form', () => {
 
     // Simulate 500 response
     await page.route('**/api/contact', route =>
-      route.fulfill({ status: 500, contentType: 'application/json', body: '{"message":"Error"}' })
+      route.fulfill({
+        status: 500,
+        contentType: 'application/json',
+        body: '{"message":"Error"}'
+      })
     )
 
     await page.click('text=Send message')
 
-    await expect(page.locator('text=Something went wrong')).toBeVisible({ timeout: 10000 })
+    await expect(page.locator('text=Something went wrong')).toBeVisible({
+      timeout: 10000
+    })
   })
 })

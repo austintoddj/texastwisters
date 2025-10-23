@@ -6,6 +6,7 @@ import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
+import * as Sentry from '@sentry/nextjs'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -59,25 +60,51 @@ export const ContactHero = () => {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
-          Accept: 'application/json, text/plain, */*',
+          'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(Object.fromEntries(data))
       })
 
       if (!res || !res.ok) {
+        // Capture a non-2xx response in Sentry for debugging. Do NOT include PII.
+        const respError = new Error(
+          `Contact API returned status ${res ? res.status : 'no-response'}`
+        )
+        Sentry.captureException(respError, {
+          tags: { component: 'ContactHero' },
+          extra: {
+            path:
+              typeof window !== 'undefined'
+                ? window.location.pathname
+                : undefined
+          }
+        })
         setIsError(true)
       } else {
         setIsError(false)
       }
     } catch (err) {
-      // Network or unexpected error
+      // Network or unexpected error: capture for diagnostics (no PII)
+      try {
+        Sentry.captureException(err, {
+          tags: { component: 'ContactHero' },
+          extra: {
+            path:
+              typeof window !== 'undefined'
+                ? window.location.pathname
+                : undefined
+          }
+        })
+      } catch {
+        // best-effort; don't block user flow
+      }
       setIsError(true)
     } finally {
       // Reset form after state updates
       try {
         e.target.reset()
-      } catch (e) {
+      } catch {
         // ignore
       }
     }

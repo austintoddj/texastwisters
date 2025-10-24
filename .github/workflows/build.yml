@@ -1,13 +1,18 @@
-name: CI
+name: Build & Tests
 
 on:
-  push:
-    branches: [main, develop]
   pull_request:
     branches: [main, develop]
+  push:
+    branches: [develop]
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
+    name: Lint, Unit Tests, Build
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -31,12 +36,13 @@ jobs:
       - name: Run unit tests
         run: npm run test:unit --if-present
 
-      - name: Build
+      - name: Build (for verification)
         run: npm run build
+        env:
+          SENTRY_RELEASE: ${{ github.sha }}
 
   pr-smoke-e2e:
-    # Lightweight smoke E2E run for pull requests only. Runs the smoke.spec.ts tests against a dev server.
-    # NOTE: removed `needs: build` to make PRs faster (this job now runs independently on PRs).
+    name: PR Smoke E2E (fast)
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:
@@ -65,17 +71,16 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run smoke E2E tests (PR)
-        # Start Next dev server and run only the smoke spec to keep PR runs fast
         run: |
           npx start-server-and-test 'npm run dev' http://localhost:3000 "npx playwright test tests/e2e/smoke.spec.ts --project=chromium --reporter=list"
         env:
           CI: true
 
-  e2e:
-    # Run full E2E after a successful build (on push to main/develop). This runs against a production start.
+  premerge-e2e:
+    name: Premerge Full E2E (PR -> main)
     needs: build
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -101,13 +106,16 @@ jobs:
       - name: Install Playwright browsers (if cache miss)
         run: npx playwright install --with-deps
 
-      - name: Build
+      - name: Build production (premerge)
         run: npm run build
+        env:
+          SENTRY_RELEASE: ${{ github.sha }}
 
-      - name: Run production server and E2E tests
-        # Use start-server-and-test to run `npm run start` (serves the already-built app)
-        # and then run Playwright tests when the server is reachable at http://localhost:3000
+      # Sentry sourcemaps are uploaded by the Next.js Sentry webpack plugin (withSentryConfig) when
+      # the appropriate SENTRY_* secrets are set. Remove manual sentry-cli steps to avoid duplicate uploads.
+
+      - name: Run full Playwright E2E (premerge)
         run: |
-          npx start-server-and-test 'npm run start' http://localhost:3000 'npx playwright test --reporter=list --reporter=html'
+          npx start-server-and-test 'npm run start' http://localhost:3000 'npx playwright test --reporter=list'
         env:
           CI: true

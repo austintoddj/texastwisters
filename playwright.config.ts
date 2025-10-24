@@ -12,11 +12,16 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure'
   },
+  // In CI, retry flaky tests and limit workers to 1 to reduce contention/flakiness
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
   webServer: {
     command: 'npm run dev',
     url: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:3000',
     timeout: 120_000,
     reuseExistingServer: true
   },
-  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }]
+  projects: [
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] } }
+  ]
 })

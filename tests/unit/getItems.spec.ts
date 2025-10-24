@@ -60,13 +60,14 @@ describe('getItems utility', () => {
     })
 
     const randomSpy = vi.spyOn(Math, 'random').mockReturnValue(0.42)
+    try {
+      const items = getAllItems('dir', true)
 
-    const items = getAllItems('dir', true)
-
-    expect(items).toHaveLength(3)
-    // Ensure the shuffle branch executed by checking Math.random was called
-    expect(randomSpy).toHaveBeenCalled()
-
-    randomSpy.mockRestore()
+      expect(items).toHaveLength(3)
+      // Ensure the shuffle branch executed by checking Math.random was called
+      expect(randomSpy).toHaveBeenCalled()
+    } finally {
+      randomSpy.mockRestore()
+    }
   })
 })

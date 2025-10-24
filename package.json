@@ -30,7 +30,7 @@
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "start-server-and-test": "^1.14.0",
+    "start-server-and-test": "^2.1.2",
     "tailwindcss": "^4.1.5",
     "vitest": "^1.0.0",
     "node-mocks-http": "^1.11.0"

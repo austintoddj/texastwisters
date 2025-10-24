@@ -1,10 +1,12 @@
-/node_modules
-/.next
-/.idea
-/.vercel
+node_modules/
+.next/
+.idea/
 .DS_Store
+.vercel/
+playwright-report/
+test-results/
 npm-debug.log*
 .env*.local
+.env.sentry-build-plugin
 sitemap*.xml
 robots.txt
-.vercel

@@ -58,7 +58,7 @@ pricingSection:
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/class-details/302'
-        icon: true      
+        icon: true
     - name: Tumble Tots
       price: $85
       interval: per month

@@ -10,3 +10,4 @@ npm-debug.log*
 .env.sentry-build-plugin
 sitemap*.xml
 robots.txt
+ci-artifacts/

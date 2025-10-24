@@ -1,0 +1,41 @@
+name: CI — Lint, Unit, Build
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: ci/lint
+    uses: ./.github/workflows/setup-runner.yml
+    with:
+      node-version: 18
+      install-playwright: false
+      run-command: npm run lint
+
+  unit:
+    name: ci/unit
+    needs: lint
+    uses: ./.github/workflows/setup-runner.yml
+    with:
+      node-version: 18
+      install-playwright: false
+      run-command: npm run test:unit
+
+  build:
+    name: ci/build
+    needs: [lint, unit]
+    uses: ./.github/workflows/setup-runner.yml
+    with:
+      node-version: 18
+      install-playwright: false
+      run-command: npm run build
+      upload-artifact-path: .next
+      upload-artifact-name: next-build

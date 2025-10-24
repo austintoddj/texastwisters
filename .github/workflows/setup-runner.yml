@@ -1,0 +1,84 @@
+name: Setup runner and run command
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        description: 'Node.js version to use'
+        required: false
+        type: string
+        default: '18'
+      install-playwright:
+        description: 'Whether to install Playwright browsers'
+        required: false
+        type: boolean
+        default: false
+      run-command:
+        description: 'Command to run after setup (e.g. "npm run lint")'
+        required: true
+        type: string
+      upload-artifact-path:
+        description: 'Path to upload as artifact after the command completes (optional)'
+        required: false
+        type: string
+      upload-artifact-name:
+        description: 'Artifact name when uploading (optional)'
+        required: false
+        type: string
+      base-url:
+        description: 'Optional base URL to expose as BASE_URL env variable'
+        required: false
+        type: string
+    secrets:
+      E2E_BASE_URL:
+        required: false
+
+jobs:
+  run:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        shell: bash
+
+      - name: Cache Playwright browsers
+        if: ${{ inputs.install-playwright == true }}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
+      - name: Install Playwright browsers
+        if: ${{ inputs.install-playwright == true }}
+        run: npx playwright install --with-deps
+        shell: bash
+
+      - name: Run requested command
+        run: ${{ inputs.run-command }}
+        shell: bash
+        env:
+          BASE_URL: ${{ inputs.base-url || secrets.E2E_BASE_URL }}
+
+      - name: Upload artifact (if provided)
+        if: ${{ inputs.upload-artifact-path != '' && inputs.upload-artifact-path != null }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.upload-artifact-name || 'artifact' }}
+          path: ${{ inputs.upload-artifact-path }}

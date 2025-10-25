@@ -6,4 +6,6 @@ import initSentry from './sentry.config'
 // Initialize Sentry with server-side settings
 ;(async () => {
   await initSentry({ isClient: false })
-})()
+})().catch((err) => {
+  console.error('Failed to initialize Sentry on the server:', err);
+});

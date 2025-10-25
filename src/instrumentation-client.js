@@ -9,6 +9,7 @@ import * as Sentry from '@sentry/nextjs'
 // in the build target. Any errors are swallowed to avoid breaking page load.
 initSentry({ isClient: true }).catch((err) => {
   // Log Sentry initialization errors to aid debugging, but do not break page load
+  // eslint-disable-next-line no-console
   console.error('Sentry client initialization failed:', err);
   // best-effort initialization
 })

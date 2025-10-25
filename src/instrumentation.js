@@ -6,6 +6,7 @@ import * as Sentry from '@sentry/nextjs'
 // top-level await in this module. Any initialization errors should not crash the build.
 initSentry({ isClient: false }).catch((err) => {
   // best-effort initialization; log errors to stderr to aid debugging, but do not break the app build
+  // eslint-disable-next-line no-console
   console.error('Sentry initialization failed:', err);
 })
 

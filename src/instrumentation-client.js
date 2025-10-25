@@ -7,7 +7,9 @@ import * as Sentry from '@sentry/nextjs'
 // Initialize using the shared config but mark as client so NEXT_PUBLIC_* env vars are used.
 // Call the async initializer without top-level await to avoid requiring top-level await support
 // in the build target. Any errors are swallowed to avoid breaking page load.
-initSentry({ isClient: true }).catch(() => {
+initSentry({ isClient: true }).catch((err) => {
+  // Log Sentry initialization errors to aid debugging, but do not break page load
+  console.error('Sentry client initialization failed:', err);
   // best-effort initialization
 })
 

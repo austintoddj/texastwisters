@@ -29,14 +29,10 @@ export default async function initSentry({ isClient = false } = {}) {
     ),
 
     // Logs and PII
-    enableLogs: Boolean(
-      isClient ? bool('NEXT_PUBLIC_SENTRY_ENABLE_LOGS') : bool('SENTRY_ENABLE_LOGS')
-    ),
-    sendDefaultPii: Boolean(
-      isClient
-        ? bool('NEXT_PUBLIC_SENTRY_SEND_DEFAULT_PII')
-        : bool('SENTRY_SEND_DEFAULT_PII')
-    ),
+    enableLogs: isClient ? bool('NEXT_PUBLIC_SENTRY_ENABLE_LOGS') : bool('SENTRY_ENABLE_LOGS'),
+    sendDefaultPii: isClient
+      ? bool('NEXT_PUBLIC_SENTRY_SEND_DEFAULT_PII')
+      : bool('SENTRY_SEND_DEFAULT_PII'),
 
     // Release & environment
     release: get('SENTRY_RELEASE') ?? get('VERCEL_GIT_COMMIT_SHA'),

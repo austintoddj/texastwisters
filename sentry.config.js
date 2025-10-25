@@ -17,23 +17,8 @@ export default async function initSentry({ isClient = false } = {}) {
       process.env.SENTRY_ENABLE_REPLAY === '1'
 
     if (enableReplay) {
-      try {
-        // Dynamically import the replay package to avoid referencing a symbol that
-        // may not be exported from @sentry/nextjs (and to keep server bundles small).
-        const replayModule = await import('@sentry/replay')
-        const Replay =
-          replayModule.Replay || replayModule.default || replayModule
-        // Create an instance of the Replay integration with default options.
-        integrations.push(new Replay())
-      } catch (err) {
-        // If the import fails, log to stderr but continue silently — replay is optional.
-        try {
-          // eslint-disable-next-line no-console
-          console.warn('Sentry Replay integration not available:', err)
-        } catch {
-          // swallow
-        }
-      }
+      // Use the built-in Replay integration from @sentry/nextjs v8.x+
+      integrations.push(Sentry.replayIntegration())
     }
   }
 

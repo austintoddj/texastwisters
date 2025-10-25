@@ -41,7 +41,10 @@ export const sendEmail = async (
     }
   }
 
-  sendgrid.setApiKey(apiKey || '')
+  // Only set the API key if it is defined (in test mode, apiKey may be undefined)
+  if (apiKey) {
+    sendgrid.setApiKey(apiKey)
+  }
 
   /**
    * "From" email address must coincide with Verified Single Sender.

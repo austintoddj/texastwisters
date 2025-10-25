@@ -41,7 +41,7 @@ export const sendEmail = async (
     }
   }
 
-  sendgrid.setApiKey(apiKey)
+  sendgrid.setApiKey(apiKey || '')
 
   /**
    * "From" email address must coincide with Verified Single Sender.

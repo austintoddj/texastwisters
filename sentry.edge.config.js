@@ -5,4 +5,4 @@
 import initSentry from './sentry.config'
 
 // Initialize Sentry for edge runtime (same centralized config)
-initSentry({ isClient: false })
+await initSentry({ isClient: false })

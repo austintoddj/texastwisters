@@ -4,4 +4,6 @@
 import initSentry from './sentry.config'
 
 // Initialize Sentry with server-side settings
-initSentry({ isClient: false })
+(async () => {
+    await initSentry({ isClient: false });
+})();

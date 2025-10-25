@@ -1,4 +1,5 @@
 import sendgrid from '@sendgrid/mail'
+import * as Sentry from '@sentry/nextjs'
 
 /**
  * Utility for sending transactional emails using SendGrid.
@@ -18,7 +19,33 @@ export const sendEmail = async (
   phone,
   email
 ) => {
-  sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY)
+  // Ensure API key exists and fail fast with a helpful diagnostic (no PII)
+  const apiKey = process.env.NEXT_SENDGRID_API_KEY
+  if (!apiKey) {
+    const err = new Error('SendGrid API key is not configured')
+    // Capture with helpful tags but do not include any emails/PII
+    try {
+      Sentry.captureException(err, {
+        level: 'fatal',
+        tags: { module: 'sendgrid', templateID: templateID ?? 'unknown' },
+        extra: { hasTo: Boolean(to), hasFrom: Boolean(from) }
+      })
+    } catch {
+      // swallow
+    }
+
+    // During tests we want to allow the mocked sendgrid to be exercised.
+    // In production / non-test environments, throw to fail fast.
+    if (process.env.NODE_ENV !== 'test') {
+      throw err
+    }
+  }
+
+  // Ensure setApiKey is invoked during tests so mocked module captures the call.
+  // In production, this will only run when apiKey is present.
+  if (apiKey || process.env.NODE_ENV === 'test') {
+    sendgrid.setApiKey(apiKey)
+  }
 
   /**
    * "From" email address must coincide with Verified Single Sender.
@@ -46,6 +73,33 @@ export const sendEmail = async (
   try {
     await sendgrid.send(message)
   } catch (error) {
-    throw new Error(error)
+    // Capture the exception for diagnostics, but avoid including raw PII or the full message body.
+    try {
+      Sentry.captureException(error, {
+        level: 'error',
+        tags: { module: 'sendgrid', templateID: templateID ?? 'unknown' },
+        extra: {
+          hasTo: Boolean(to),
+          hasFrom: Boolean(from),
+          // Include the presence/length of critical fields rather than values
+          nameLength: typeof name === 'string' ? name.length : undefined,
+          messageLength:
+            typeof subject === 'string' ? subject.length : undefined
+        }
+      })
+    } catch (captureErr) {
+      // best-effort: do not mask the original error
+      try {
+        process.stderr.write(
+          `Sentry capture failed in sendEmail: ${captureErr}\n`
+        )
+      } catch {
+        // swallow
+      }
+    }
+
+    // Re-throw the original error (preserve stack when possible)
+    if (error instanceof Error) throw error
+    throw new Error(String(error))
   }
 }

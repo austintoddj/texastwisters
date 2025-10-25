@@ -2,11 +2,12 @@
 // The config you add here will be used whenever one of the edge features is loaded.
 // Note that this config is unrelated to the Vercel Edge Runtime and is also required when running locally.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
-import * as Sentry from '@sentry/nextjs'
+import initSentry from './sentry.config'
 
-Sentry.init({
-  dsn: process.env.SENTRY_DSN || undefined,
-  tracesSampleRate: Number(process.env.SENTRY_TRACES_SAMPLE_RATE ?? 0.05),
-  enableLogs: process.env.SENTRY_ENABLE_LOGS === '1' || false,
-  sendDefaultPii: process.env.SENTRY_SEND_DEFAULT_PII === '1' || false
+// Initialize Sentry for edge runtime (same centralized config)
+;(async () => {
+  await initSentry({ isClient: false })
+})().catch(e => {
+  // eslint-disable-next-line no-console
+  console.error('Error initializing Sentry in edge config:', e)
 })

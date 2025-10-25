@@ -3,72 +3,45 @@
 import * as Sentry from '@sentry/nextjs'
 
 export default async function initSentry({ isClient = false } = {}) {
-  // For client builds prefer NEXT_PUBLIC_* env vars so values are available in the browser.
+  // Small helpers to read env vars with clearer intent
+  const get = (name, fallback = undefined) =>
+    typeof process !== 'undefined' ? process.env[name] ?? fallback : fallback
+  const bool = name => get(name) === '1'
+  const num = (name, fallback = 0) => Number(get(name, String(fallback)))
+
+  // Choose appropriate DSN for client vs server (favor NEXT_PUBLIC_* on client)
   const dsn = isClient
-    ? (process.env.NEXT_PUBLIC_SENTRY_DSN ?? process.env.SENTRY_DSN)
-    : process.env.SENTRY_DSN
+    ? get('NEXT_PUBLIC_SENTRY_DSN', get('SENTRY_DSN'))
+    : get('SENTRY_DSN')
 
-  // Build integrations array — we will dynamically import Replay only when needed
+  // NOTE: Replay is intentionally removed. This function will not attempt to
+  // configure or import any Replay integrations. Keep the integrations array
+  // available for future non-replay integrations.
   const integrations = []
-
-  if (isClient) {
-    const enableReplay =
-      process.env.NEXT_PUBLIC_SENTRY_ENABLE_REPLAY === '1' ||
-      process.env.SENTRY_ENABLE_REPLAY === '1'
-
-    if (enableReplay) {
-      // Use the built-in Replay integration from @sentry/nextjs v8.x+
-      integrations.push(Sentry.replayIntegration())
-    }
-  }
 
   Sentry.init({
     dsn: dsn || undefined,
 
-    // Sampling
-    tracesSampleRate: Number(
-      (isClient
-        ? process.env.NEXT_PUBLIC_SENTRY_TRACES_SAMPLE_RATE
-        : process.env.SENTRY_TRACES_SAMPLE_RATE) ?? (isClient ? 0.1 : 0.05)
+    // Tracing sample rate (defaults)
+    tracesSampleRate: num(
+      isClient ? 'NEXT_PUBLIC_SENTRY_TRACES_SAMPLE_RATE' : 'SENTRY_TRACES_SAMPLE_RATE',
+      isClient ? 0.1 : 0.05
     ),
 
     // Logs and PII
-    enableLogs:
-      (isClient
-        ? process.env.NEXT_PUBLIC_SENTRY_ENABLE_LOGS
-        : process.env.SENTRY_ENABLE_LOGS) === '1' || false,
-    sendDefaultPii:
-      (isClient
-        ? process.env.NEXT_PUBLIC_SENTRY_SEND_DEFAULT_PII
-        : process.env.SENTRY_SEND_DEFAULT_PII) === '1' || false,
+    enableLogs: isClient ? bool('NEXT_PUBLIC_SENTRY_ENABLE_LOGS') : bool('SENTRY_ENABLE_LOGS'),
+    sendDefaultPii: isClient
+      ? bool('NEXT_PUBLIC_SENTRY_SEND_DEFAULT_PII')
+      : bool('SENTRY_SEND_DEFAULT_PII'),
 
-    // Release and environment
-    release: process.env.SENTRY_RELEASE ?? process.env.VERCEL_GIT_COMMIT_SHA,
-    environment:
-      process.env.SENTRY_ENVIRONMENT ??
-      process.env.VERCEL_ENV ??
-      process.env.VERCEL_ENVIRONMENT,
+    // Release & environment
+    release: get('SENTRY_RELEASE') ?? get('VERCEL_GIT_COMMIT_SHA'),
+    environment: get('SENTRY_ENVIRONMENT') ?? get('VERCEL_ENV') ?? get('VERCEL_ENVIRONMENT'),
 
-    // Debug when explicitly enabled
-    debug: process.env.SENTRY_DEBUG === '1' || false,
+    // Debug
+    debug: bool('SENTRY_DEBUG'),
 
-    // Only set integrations if we have any
-    ...(integrations.length ? { integrations } : {}),
-
-    // Client-only replay sampling settings (kept separately)
-    ...(isClient
-      ? {
-          replaysSessionSampleRate: Number(
-            process.env.NEXT_PUBLIC_SENTRY_REPLAYS_SESSION_SAMPLE_RATE ??
-              process.env.SENTRY_REPLAYS_SESSION_SAMPLE_RATE ??
-              0.0
-          ),
-          replaysOnErrorSampleRate: Number(
-            process.env.NEXT_PUBLIC_SENTRY_REPLAYS_ON_ERROR_SAMPLE_RATE ??
-              process.env.SENTRY_REPLAYS_ON_ERROR_SAMPLE_RATE ??
-              0.5
-          )
-        }
-      : {})
+    // Integrations (kept for future use)
+    ...(integrations.length ? { integrations } : {})
   })
 }

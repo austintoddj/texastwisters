@@ -72,6 +72,19 @@ export const sendEmail = async (
 
   try {
     await sendgrid.send(message)
+    // Record a lightweight breadcrumb for successful sends (no PII).
+    // Use breadcrumbs instead of creating a Sentry event so we don't pollute error
+    // inboxes with successful operations.
+    try {
+      Sentry.addBreadcrumb({
+        category: 'sendgrid',
+        message: 'SendGrid email sent',
+        level: 'info',
+        data: { templateID: templateID ?? 'unknown', hasTo: Boolean(to) }
+      })
+    } catch {
+      // best-effort; don't let logging fail the request
+    }
   } catch (error) {
     // Capture the exception for diagnostics, but avoid including raw PII or the full message body.
     try {

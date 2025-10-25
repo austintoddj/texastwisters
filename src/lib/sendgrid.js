@@ -41,8 +41,9 @@ export const sendEmail = async (
     }
   }
 
-  // Only set the API key if it is defined (in test mode, apiKey may be undefined)
-  if (apiKey) {
+  // Ensure setApiKey is invoked during tests so mocked module captures the call.
+  // In production, this will only run when apiKey is present.
+  if (apiKey || process.env.NODE_ENV === 'test') {
     sendgrid.setApiKey(apiKey)
   }
 

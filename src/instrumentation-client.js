@@ -8,15 +8,15 @@ import * as Sentry from '@sentry/nextjs'
 function handleSentryInitError(err, context) {
   // Log Sentry initialization errors to aid debugging, but do not break page load
   // eslint-disable-next-line no-console
-  console.error(`Sentry ${context} initialization failed:`, err);
+  console.error(`Sentry ${context} initialization failed:`, err)
   // best-effort initialization
 }
 
 // Initialize using the shared config but mark as client so NEXT_PUBLIC_* env vars are used.
 // Call the async initializer without top-level await to avoid requiring top-level await support
 // in the build target. Any errors are swallowed to avoid breaking page load.
-initSentry({ isClient: true }).catch((err) => {
-  handleSentryInitError(err, 'client');
+initSentry({ isClient: true }).catch(err => {
+  handleSentryInitError(err, 'client')
 })
 
 // Export hooks used by Sentry/Next.js runtime. Disable the unused-var warning

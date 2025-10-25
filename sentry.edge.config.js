@@ -5,4 +5,6 @@
 import initSentry from './sentry.config'
 
 // Initialize Sentry for edge runtime (same centralized config)
-await initSentry({ isClient: false })
+(async () => {
+  await initSentry({ isClient: false })
+})()

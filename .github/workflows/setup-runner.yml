@@ -77,7 +77,10 @@ jobs:
           BASE_URL: ${{ inputs.base-url || secrets.E2E_BASE_URL }}
 
       - name: Upload artifact (if provided)
-        if: ${{ inputs.upload-artifact-path != '' && inputs.upload-artifact-path != null }}
+        # Ensure artifacts are uploaded even when earlier steps fail (e.g. tests fail).
+        # `always()` makes this step run regardless of previous step outcome, while
+        # still checking that an artifact path was provided.
+        if: ${{ always() && inputs.upload-artifact-path != '' && inputs.upload-artifact-path != null }}
         uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.upload-artifact-name || 'artifact' }}

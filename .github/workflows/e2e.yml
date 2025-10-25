@@ -8,7 +8,7 @@ on:
         required: false
         default: ''
   push:
-    branches: [ main ]
+    branches: [main]
 
 concurrency:
   group: e2e-full-${{ github.ref }}
@@ -30,4 +30,3 @@ jobs:
       base-url: ${{ github.event.inputs.base_url }}
     secrets:
       E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
-

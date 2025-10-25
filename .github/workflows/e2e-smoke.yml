@@ -23,4 +23,3 @@ jobs:
       upload-artifact-name: e2e-smoke-report
     secrets:
       E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
-

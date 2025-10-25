@@ -5,7 +5,11 @@ import initSentry from '../sentry.config'
 import * as Sentry from '@sentry/nextjs'
 
 // Initialize using the shared config but mark as client so NEXT_PUBLIC_* env vars are used.
-await initSentry({ isClient: true })
+// Call the async initializer without top-level await to avoid requiring top-level await support
+// in the build target. Any errors are swallowed to avoid breaking page load.
+initSentry({ isClient: true }).catch(() => {
+  // best-effort initialization
+})
 
 // Export hooks used by Sentry/Next.js runtime. Disable the unused-var warning
 // as Sentry references this symbol by name.

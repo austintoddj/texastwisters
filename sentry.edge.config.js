@@ -7,4 +7,6 @@ import initSentry from './sentry.config'
 // Initialize Sentry for edge runtime (same centralized config)
 (async () => {
   await initSentry({ isClient: false })
-})()
+})().catch((e) => {
+  console.error('Error initializing Sentry in edge config:', e);
+});

@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  trailingSlash: false
+  trailingSlash: false,
+  productionBrowserSourceMaps: true
 }
 
 module.exports = nextConfig
@@ -15,8 +16,8 @@ module.exports = withSentryConfig(module.exports, {
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
   // Read org/project from env vars so this repo can be reused across projects/environments.
-  org: process.env.SENTRY_ORG || 'texastwisters',
-  project: process.env.SENTRY_PROJECT || 'texastwisters',
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
@@ -41,4 +42,11 @@ module.exports = withSentryConfig(module.exports, {
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true
-})
+},
+{
+    // Upload options
+    uploadSourceMaps: true, // Ensure source maps are uploaded
+    // Optionally, include specific paths for source maps
+    include: ['.next/static/chunks'],
+    ignore: ['node_modules'], // Ignore unnecessary files
+  })

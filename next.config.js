@@ -1,52 +1,49 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  trailingSlash: false,
-  productionBrowserSourceMaps: true
-}
+  reactStrictMode: true, // Keep your setting
+  trailingSlash: false, // Keep your setting
+  productionBrowserSourceMaps: true, // Keep for Sentry source maps
 
-module.exports = nextConfig
+  // Custom Webpack config to ensure source maps for all client-side files
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.devtool = 'source-map'; // Generate full source maps
+    }
+    return config;
+  },
+};
 
-// Injected content via Sentry wizard below
+// Wrap with Sentry configuration
+const { withSentryConfig } = require('@sentry/nextjs');
 
-const { withSentryConfig } = require('@sentry/nextjs')
-
-module.exports = withSentryConfig(module.exports, {
-  // For all available options, see:
-  // https://www.npmjs.com/package/@sentry/webpack-plugin#options
-
-  // Read org/project from env vars so this repo can be reused across projects/environments.
+module.exports = withSentryConfig(nextConfig, {
+  // Sentry options from your original config
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
+  silent: !process.env.CI, // Only print logs in CI
+  widenClientFileUpload: true, // Keep for prettier stack traces
+  tunnelRoute: '/monitoring', // Keep to circumvent ad-blockers
+  disableLogger: true, // Keep to reduce bundle size
+  automaticVercelMonitors: true, // Keep for Vercel Cron Monitors
+  authToken: process.env.SENTRY_AUTH_TOKEN, // Required for source map upload
 
-  // Only print logs for uploading source maps in CI
-  silent: !process.env.CI,
-
-  // For all available options, see:
-  // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
-
-  // Upload a larger set of source maps for prettier stack traces (increases build time)
-  widenClientFileUpload: true,
-
-  // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
-  // This can increase your server load as well as your hosting bill.
-  // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-  // side errors will fail.
-  tunnelRoute: '/monitoring',
-
-  // Automatically tree-shake Sentry logger statements to reduce bundle size
-  disableLogger: true,
-
-  // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
-  // See the following for more information:
-  // https://docs.sentry.io/product/crons/
-  // https://vercel.com/docs/cron-jobs
-  automaticVercelMonitors: true
-},
-{
-    // Upload options
-    uploadSourceMaps: true, // Ensure source maps are uploaded
-    // Optionally, include specific paths for source maps
-    include: ['.next/static/chunks'],
-    ignore: ['node_modules'], // Ignore unnecessary files
-  })
+  // Add release commits for better source map association
+  setCommits: {
+    auto: true, // Automatically associate commits with releases
+  },
+}, {
+  // Upload options
+  uploadSourceMaps: true, // Ensure source maps are uploaded
+  include: [
+    '.next/static/chunks', // Cover JavaScript chunks
+    '.next/static/chunks/app', // Explicitly include App Router chunks
+    '.next/static/css', // Include CSS if applicable
+  ],
+  ignore: [
+    'node_modules', // Ignore unnecessary files
+    // Optionally ignore internal manifests (uncomment if needed)
+    // 'page_client-reference-manifest.js',
+  ],
+  urlPrefix: '~/_next/', // Match Vercel's output structure
+  hideSourceMaps: true, // Let Sentry manage source maps
+});

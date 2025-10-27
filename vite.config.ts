@@ -1,6 +1,7 @@
 import { sentryVitePlugin } from '@sentry/vite-plugin'
 import path from 'path'
 import { defineConfig } from 'vite'
+import { sentryVitePlugin } from "@sentry/vite-plugin"
 
 export default defineConfig({
   resolve: {

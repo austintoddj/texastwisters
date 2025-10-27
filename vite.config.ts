@@ -10,5 +10,8 @@ export default defineConfig({
   test: {
     environment: 'node',
     include: ['tests/unit/**/*.spec.ts']
+  },
+  build: {
+    sourcemap: true,
   }
 })

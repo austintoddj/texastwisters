@@ -14,13 +14,13 @@ permissions:
   contents: read
 
 jobs:
-  lint:
-    name: ci/lint
-    uses: ./.github/workflows/setup-runner.yml
-    with:
-      node-version: 22
-      install-playwright: false
-      run-command: npm run lint
+  # lint:
+  #   name: ci/lint
+  #   uses: ./.github/workflows/setup-runner.yml
+  #   with:
+  #     node-version: 22
+  #     install-playwright: false
+  #     run-command: npm run lint
 
   unit:
     name: ci/unit

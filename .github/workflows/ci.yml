@@ -32,7 +32,8 @@ jobs:
 
   build:
     name: ci/build
-    needs: [lint, unit]
+    #needs: [lint, unit]
+    needs: [unit]
     uses: ./.github/workflows/setup-runner.yml
     with:
       node-version: 22

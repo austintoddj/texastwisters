@@ -1,6 +1,6 @@
-import arrow from '/public/images/illustrations/arrow-down.svg'
-import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 import { Icon } from '@/components/Icon'
+import arrow from '@/images/illustrations/arrow-down.svg'
+import dotsChaos from '@/images/illustrations/dots-chaos.svg'
 import { getAllItems } from '@/lib/getItems'
 import Image from 'next/image'
 

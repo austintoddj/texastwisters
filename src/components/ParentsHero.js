@@ -1,10 +1,10 @@
 'use client'
 
-import arrow from '/public/images/illustrations/arrow-right-over.svg'
-import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
+import arrow from '@/images/illustrations/arrow-right-over.svg'
+import dotsGrid from '@/images/illustrations/dots-large-grid.svg'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'

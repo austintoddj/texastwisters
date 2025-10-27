@@ -8,6 +8,5 @@ import initSentry from './sentry.config'
 ;(async () => {
   await initSentry({ isClient: false })
 })().catch(err => {
-  // eslint-disable-next-line no-console
   console.error('Failed to initialize Sentry on the server:', err)
 })

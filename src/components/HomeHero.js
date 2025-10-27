@@ -1,9 +1,9 @@
 'use client'
 
-import heroImage from '/public/images/home/hero.png'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
+import heroImage from '@/images/home/hero.png'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 /* eslint-disable-next-line */
 import { Dialog, Transition } from '@headlessui/react'

@@ -1,5 +1,5 @@
-import logo from '/public/images/logo.png'
 import { Icon } from '@/components/Icon'
+import logo from '@/images/logo.png'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'

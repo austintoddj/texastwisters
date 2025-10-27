@@ -1,8 +1,18 @@
 {
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:e2e": "playwright test",
+    "test:e2e:ci": "start-server-and-test \"npm run dev\" http://localhost:3000 \"npm run test:e2e\"",
+    "format": "prettier --write .",
+    "postbuild": "next-sitemap",
+    "test:unit": "vitest --run"
+  },
   "dependencies": {
     "@headlessui/react": "^2.2.1",
-    "@next/third-parties": "^15.5.3",
+    "@next/third-parties": "^16.0.0",
     "@sendgrid/mail": "^8.1.4",
     "@sentry/nextjs": "^10.22.0",
     "@tabler/icons-react": "^3.21.0",
@@ -11,7 +21,7 @@
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "marked": "^16.4.1",
-    "next": "^15.5.6",
+    "next": "^16.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "sharp": "^0.34.1"
@@ -23,66 +33,13 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/typography": "^0.5.15",
     "@trivago/prettier-plugin-sort-imports": "^5.2.0",
-    "eslint": "^9.38.0",
-    "eslint-config-next": "^15.5.6",
-    "eslint-config-prettier": "^10.0.1",
     "next-sitemap": "^4.2.3",
     "node-mocks-http": "^1.11.0",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "start-server-and-test": "^1.14.0",
+    "start-server-and-test": "^2.1.2",
     "tailwindcss": "^4.1.5",
-    "vitest": "^1.0.0"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test:e2e": "playwright test",
-    "test:e2e:headed": "playwright test --headed",
-    "test:e2e:ci": "start-server-and-test 'npm run dev' http://localhost:3000 'playwright test'",
-    "format": "prettier --write .",
-    "postbuild": "next-sitemap",
-    "test:unit": "vitest"
-  },
-  "eslintConfig": {
-    "extends": [
-      "next/core-web-vitals",
-      "prettier"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 8,
-      "sourceType": "module"
-    },
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "rules": {
-      "react/no-unescaped-entities": "off",
-      "no-unused-vars": "error",
-      "no-console": "error"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": false,
-    "singleQuote": true,
-    "quoteProps": "consistent",
-    "jsxSingleQuote": false,
-    "trailingComma": "none",
-    "bracketSpacing": true,
-    "bracketSameLine": false,
-    "arrowParens": "avoid",
-    "endOfLine": "lf",
-    "plugins": [
-      "prettier-plugin-tailwindcss",
-      "@trivago/prettier-plugin-sort-imports"
-    ],
-    "importOrderSortSpecifiers": true
+    "vitest": "^4.0.4"
   }
 }

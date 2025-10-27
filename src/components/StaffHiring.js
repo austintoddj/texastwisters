@@ -1,16 +1,16 @@
 'use client'
 
-import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
+import checkmark from '@/images/illustrations/checkmark.svg'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Image from 'next/image'
 
 const owners = {
   name: 'The Austin Family',
-  image: '/images/home/family.jpg'
+  image: '@/images/home/family.jpg'
 }
 
 const requirements = [

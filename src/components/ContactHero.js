@@ -1,10 +1,10 @@
 'use client'
 
-import dotsGrid from '/public/images/illustrations/dots-grid.svg'
-import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
-import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
+import dotsGrid from '@/images/illustrations/dots-grid.svg'
+import dotsLargeGrid from '@/images/illustrations/dots-large-grid.svg'
+import dotsStrip from '@/images/illustrations/dots-strip.svg'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import * as Sentry from '@sentry/nextjs'
 import { track } from '@vercel/analytics'

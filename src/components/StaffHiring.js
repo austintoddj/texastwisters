@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const owners = {
   name: 'The Austin Family',
-  image: '@/images/home/family.jpg'
+  image: '/images/home/family.jpg'
 }
 
 const requirements = [

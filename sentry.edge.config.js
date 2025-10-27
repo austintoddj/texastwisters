@@ -5,9 +5,9 @@
 import initSentry from './sentry.config'
 
 // Initialize Sentry for edge runtime (same centralized config)
+
 ;(async () => {
   await initSentry({ isClient: false })
 })().catch(e => {
-  // eslint-disable-next-line no-console
   console.error('Error initializing Sentry in edge config:', e)
 })

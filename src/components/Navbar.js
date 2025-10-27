@@ -1,8 +1,8 @@
 'use client'
 
-import logo from '/public/images/logo.png'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import logo from '@/images/logo.png'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import {
   Menu,

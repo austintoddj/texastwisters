@@ -1,8 +1,8 @@
 'use client'
 
-import bulb from '/public/images/illustrations/bulb.svg'
-import questionMark from '/public/images/illustrations/question-mark.svg'
 import { Icon } from '@/components/Icon'
+import bulb from '@/images/illustrations/bulb.svg'
+import questionMark from '@/images/illustrations/question-mark.svg'
 import {
   Disclosure,
   DisclosureButton,

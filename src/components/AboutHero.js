@@ -1,8 +1,8 @@
-import image2 from '/public/images/about/grid/dolphin.jpg'
-import image4 from '/public/images/about/grid/family.jpg'
-import image3 from '/public/images/about/grid/guardians.jpg'
-import image5 from '/public/images/about/grid/handstand.jpg'
-import image1 from '/public/images/about/grid/twister.jpg'
+import image2 from '@/images/about/grid/dolphin.jpg'
+import image4 from '@/images/about/grid/family.jpg'
+import image3 from '@/images/about/grid/guardians.jpg'
+import image5 from '@/images/about/grid/handstand.jpg'
+import image1 from '@/images/about/grid/twister.jpg'
 import Image from 'next/image'
 import { Fragment } from 'react'
 

@@ -2,15 +2,7 @@
 const nextConfig = {
   reactStrictMode: true, // Keep your setting
   trailingSlash: false, // Keep your setting
-  productionBrowserSourceMaps: true, // Keep for Sentry source maps
-
-  // Custom Webpack config to ensure source maps for all client-side files
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.devtool = 'source-map'; // Generate full source maps
-    }
-    return config;
-  },
+  productionBrowserSourceMaps: true, // Required for Sentry source maps in production
 };
 
 // Wrap with Sentry configuration
@@ -20,30 +12,24 @@ module.exports = withSentryConfig(nextConfig, {
   // Sentry options from your original config
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
-  silent: false, // Enable verbose logs to diagnose issues
+  silent: !process.env.CI, // Only print logs in CI (e.g., Vercel builds)
   widenClientFileUpload: true, // Keep for prettier stack traces
   tunnelRoute: '/monitoring', // Keep to circumvent ad-blockers
   disableLogger: true, // Keep to reduce bundle size
   automaticVercelMonitors: true, // Keep for Vercel Cron Monitors
   authToken: process.env.SENTRY_AUTH_TOKEN, // Required for source map upload
+  telemetry: false, // Disable Sentry telemetry
 
-  // Add release commits for better source map association
-  setCommits: {
-    auto: true, // Automatically associate commits with releases
-  },
+  // Disable source map uploads in preview environments
+  uploadSourceMaps: !!process.env.SENTRY_RELEASE, // Only upload in production (when SENTRY_RELEASE is set)
 }, {
-  // Upload options
-  uploadSourceMaps: true, // Ensure source maps are uploaded
+  // Upload options (only applied when uploadSourceMaps is true)
   include: [
     '.next/static/chunks', // Cover JavaScript chunks
-    '.next/static/chunks/app', // Explicitly include App Router chunks
+    '.next/static/chunks/app', // Include App Router chunks
     '.next/static/css', // Include CSS if applicable
   ],
-  ignore: [
-    'node_modules', // Ignore unnecessary files
-    // Optionally ignore internal manifests (uncomment if needed)
-    // 'page_client-reference-manifest.js',
-  ],
+  ignore: ['node_modules'], // Minimal ignore list
   urlPrefix: '~/_next/', // Match Vercel's output structure
   hideSourceMaps: true, // Let Sentry manage source maps
 });

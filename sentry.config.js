@@ -10,6 +10,9 @@ export default async function initSentry({ isClient = false } = {}) {
   Sentry.init({
     dsn: dsn || undefined,
     enableLogs: true,
-    release: release || undefined
+    release: release || undefined,
+    integrations: [
+      Sentry.consoleLoggingIntegration({ levels: ['log', 'warn', 'error'] })
+    ]
   })
 }

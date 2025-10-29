@@ -17,13 +17,52 @@ concurrency:
 jobs:
   build:
     name: Build
-    uses: ./.github/workflows/setup-runner.yml
-    with:
-      node-version: '22'
-      install-playwright: false
-      run-command: npm run build
-      upload-artifact-path: .next
-      upload-artifact-name: next-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (production)
+        run: npm run build
+        env:
+          CI: true
+
+      - name: Archive .next (if it exists)
+        run: |
+          ART_NAME=next-build
+          if [ -d .next ]; then
+            echo "Archiving .next -> ./artifact-$ART_NAME.tar.gz"
+            tar -czf ./artifact-$ART_NAME.tar.gz .next
+            ls -la ./artifact-$ART_NAME.tar.gz || true
+          else
+            echo ".next directory not found; nothing to archive"
+          fi
+
+      - name: Diagnose .next contents
+        run: |
+          if [ -d .next ]; then
+            echo ".next exists - listing (up to 200 files)"
+            find .next -type f | head -n 200 || true
+          else
+            echo ".next does not exist"
+          fi
+
+      - name: Upload next-build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-build
+          path: |
+            ./artifact-next-build.tar.gz
+            .next/**
 
   sentry:
     name: Create Sentry release
@@ -47,14 +86,48 @@ jobs:
 
       - name: Restore .next to workspace
         run: |
-          if [ -d ./artifact/.next ]; then
+          set -euo pipefail
+          ART_DIR=./artifact
+
+          # If the artifact unpacked a .next directory directly
+          if [ -d "$ART_DIR/.next" ]; then
+            echo "Found $ART_DIR/.next, restoring"
             rm -rf .next || true
-            mv ./artifact/.next .
-          elif [ -d ./artifact ]; then
-            find ./artifact -maxdepth 2 -type d -name .next -exec bash -c 'rm -rf .next || true; mv "$0" .next' {} \;
-          else
-            echo "No .next artifact found"
+            mv "$ART_DIR/.next" .
+            exit 0
           fi
+
+          # If an archive was uploaded (artifact-next-build.tar.gz), extract it
+          TAR_GLOB=$(ls "$ART_DIR"/*.tar.gz 2>/dev/null || true)
+          if [ -n "$TAR_GLOB" ]; then
+            echo "Found tarball(s) in $ART_DIR:"
+            ls -la "$ART_DIR"/*.tar.gz || true
+            for tarfile in $ART_DIR/*.tar.gz; do
+              echo "Extracting $tarfile"
+              tar -xzf "$tarfile" -C ./
+            done
+            # If extraction produced a .next inside ./artifact or ./, try to normalize
+            if [ -d "./.next" ]; then
+              echo "Restored .next in project root"
+            elif [ -d "./artifact/.next" ]; then
+              mv ./artifact/.next . || true
+            fi
+            exit 0
+          fi
+
+          # Fallback: search for any .next under artifact and move it
+          FOUND=$(find "$ART_DIR" -maxdepth 3 -type d -name .next | head -n 1 || true)
+          if [ -n "$FOUND" ]; then
+            echo "Found .next at $FOUND, restoring"
+            rm -rf .next || true
+            mv "$FOUND" .
+            exit 0
+          fi
+
+          echo "No .next found in artifact directory: $ART_DIR"
+          ls -la "$ART_DIR" || true
+          exit 0
+        shell: bash
 
       - name: Create Sentry release and upload sourcemaps (simple action)
         if: ${{ env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != '' && env.SENTRY_PROJECT != '' }}

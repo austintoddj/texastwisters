@@ -47,7 +47,14 @@ jobs:
         run: npm run build
         env:
           CI: true
-          TURBO_FORCE: false
+          TURBO_FORCE: webpack
+
+      - name: Verify .next directory
+        run: |
+          if [ ! -d .next ]; then
+            echo "ERROR: .next directory not found after build."
+            exit 1
+          fi
 
       - name: Upload next-build artifact
         uses: actions/upload-artifact@v4

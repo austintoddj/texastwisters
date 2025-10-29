@@ -48,33 +48,11 @@ jobs:
         env:
           CI: true
 
-      - name: Archive .next (if it exists)
-        run: |
-          ART_NAME=next-build
-          if [ -d .next ]; then
-            echo "Archiving .next -> ./artifact-$ART_NAME.tar.gz"
-            tar -czf ./artifact-$ART_NAME.tar.gz .next
-            ls -la ./artifact-$ART_NAME.tar.gz || true
-          else
-            echo ".next directory not found; nothing to archive"
-          fi
-
-      - name: Diagnose .next contents
-        run: |
-          if [ -d .next ]; then
-            echo ".next exists - listing (up to 200 files)"
-            find .next -type f | head -n 200 || true
-          else
-            echo ".next does not exist"
-          fi
-
       - name: Upload next-build artifact
         uses: actions/upload-artifact@v4
         with:
           name: next-build
-          path: |
-            ./artifact-next-build.tar.gz
-            .next/**
+          path: .next/**
 
   smoke-e2e:
     name: e2e/smoke
@@ -109,24 +87,6 @@ jobs:
             echo "Found $ART_DIR/.next, restoring"
             rm -rf .next || true
             mv "$ART_DIR/.next" .
-            exit 0
-          fi
-
-          # If an archive was uploaded (artifact-next-build.tar.gz), extract it
-          TAR_GLOB=$(ls "$ART_DIR"/*.tar.gz 2>/dev/null || true)
-          if [ -n "$TAR_GLOB" ]; then
-            echo "Found tarball(s) in $ART_DIR:"
-            ls -la "$ART_DIR"/*.tar.gz || true
-            for tarfile in $ART_DIR/*.tar.gz; do
-              echo "Extracting $tarfile"
-              tar -xzf "$tarfile" -C ./
-            done
-            # If extraction produced a .next inside ./artifact or ./, try to normalize
-            if [ -d "./.next" ]; then
-              echo "Restored .next in project root"
-            elif [ -d "./artifact/.next" ]; then
-              mv ./artifact/.next . || true
-            fi
             exit 0
           fi
 

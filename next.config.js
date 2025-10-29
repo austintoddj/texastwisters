@@ -8,7 +8,7 @@ const { withSentryConfig } = require('@sentry/nextjs')
 const moduleExports = {
   // Your existing module.exports
   reactStrictMode: true,
-  trailingSlash: false
+  trailingSlash: false,
 }
 
 // Make sure adding Sentry options is the last code to run before exporting, to

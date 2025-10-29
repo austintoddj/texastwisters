@@ -76,6 +76,34 @@ jobs:
         env:
           BASE_URL: ${{ inputs.base-url || secrets.E2E_BASE_URL }}
 
+      - name: Diagnose build output (if uploading artifact)
+        if: ${{ inputs.upload-artifact-path != '' && inputs.upload-artifact-path != null }}
+        run: |
+          echo "Checking for files at: '${{ inputs.upload-artifact-path }}'"
+          if [ -e "${{ inputs.upload-artifact-path }}" ]; then
+            echo "Found path:'${{ inputs.upload-artifact-path }}'"
+            ls -la "${{ inputs.upload-artifact-path }}" || true
+            echo "Listing up to 200 files under path"
+            find "${{ inputs.upload-artifact-path }}" -type f | head -n 200 || true
+          else
+            echo "Path not found: '${{ inputs.upload-artifact-path }}'"
+          fi
+        shell: bash
+
+      - name: Archive artifact directory (if it's a directory)
+        if: ${{ inputs.upload-artifact-path != '' && inputs.upload-artifact-path != null }}
+        run: |
+          UPATH="${{ inputs.upload-artifact-path }}"
+          ART_NAME="${{ inputs.upload-artifact-name || 'artifact' }}"
+          if [ -d "$UPATH" ]; then
+            echo "$UPATH is a directory; creating archive at ./artifact-$ART_NAME.tar.gz"
+            tar -czf "./artifact-$ART_NAME.tar.gz" -C "$(dirname "$UPATH")" "$(basename "$UPATH")"
+            echo "Archive created: ./artifact-$ART_NAME.tar.gz"
+          else
+            echo "$UPATH is not a directory; skipping archive step"
+          fi
+        shell: bash
+
       - name: Upload artifact (if provided)
         # Ensure artifacts are uploaded even when earlier steps fail (e.g. tests fail).
         # `always()` makes this step run regardless of previous step outcome, while
@@ -84,4 +112,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.upload-artifact-name || 'artifact' }}
-          path: ${{ inputs.upload-artifact-path }}
+          # if archive exists upload that, otherwise upload the path recursively
+          path: |
+            ./artifact-${{ inputs.upload-artifact-name || 'artifact' }}.tar.gz
+            ${{ inputs.upload-artifact-path }}/**

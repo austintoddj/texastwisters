@@ -139,4 +139,4 @@ jobs:
         with:
           environment: production
           sourcemaps: '.next'
-          version: ${{ github.sha }}
+          release: ${{ github.sha }}

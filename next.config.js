@@ -1,35 +1,42 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true, // Keep your setting
-  trailingSlash: false, // Keep your setting
-  productionBrowserSourceMaps: true, // Required for Sentry source maps in production
-};
+// This file sets a custom webpack configuration to use your Next.js app
+// with Sentry.
+// https://nextjs.org/docs/app/api-reference/config/next-config-js
+// https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-// Wrap with Sentry configuration
-const { withSentryConfig } = require('@sentry/nextjs');
+const { withSentryConfig } = require('@sentry/nextjs')
 
-module.exports = withSentryConfig(nextConfig, {
-  // Sentry options from your original config
+const moduleExports = {
+  // Your existing module.exports
+  reactStrictMode: true,
+  trailingSlash: false,
+
+  sentry: {
+    // Use `hidden-source-map` rather than `source-map` as the Webpack `devtool`
+    // for client-side builds. (This will be the default starting in
+    // `@sentry/nextjs` version 8.0.0.) See
+    // https://webpack.js.org/configuration/devtool/ and
+    // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/#use-hidden-source-map
+    // for more information.
+    hideSourceMaps: true
+  }
+}
+
+// Make sure adding Sentry options is the last code to run before exporting, to
+// ensure that your source maps include changes from all other Webpack plugins
+module.exports = withSentryConfig(moduleExports, {
+  // Additional config options for the Sentry Webpack plugin. Keep in mind that
+  // the following options are set automatically, and overriding them is not
+  // recommended:
+  //   release, url, org, project, authToken, configFile, stripPrefix,
+  //   urlPrefix, include, ignore
+  // For all available options, see:
+  // https://github.com/getsentry/sentry-webpack-plugin#options.
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
-  silent: !process.env.CI, // Only print logs in CI (e.g., Vercel builds)
-  widenClientFileUpload: true, // Keep for prettier stack traces
-  tunnelRoute: '/monitoring', // Keep to circumvent ad-blockers
-  disableLogger: true, // Keep to reduce bundle size
-  automaticVercelMonitors: true, // Keep for Vercel Cron Monitors
-  authToken: process.env.SENTRY_AUTH_TOKEN, // Required for source map upload
-  telemetry: false, // Disable Sentry telemetry
-
-  // Disable source map uploads in preview environments
-  uploadSourceMaps: !!process.env.SENTRY_RELEASE, // Only upload in production (when SENTRY_RELEASE is set)
-}, {
-  // Upload options (only applied when uploadSourceMaps is true)
-  include: [
-    '.next/static/chunks', // Cover JavaScript chunks
-    '.next/static/chunks/app', // Include App Router chunks
-    '.next/static/css', // Include CSS if applicable
-  ],
-  ignore: ['node_modules'], // Minimal ignore list
-  urlPrefix: '~/_next/', // Match Vercel's output structure
-  hideSourceMaps: true, // Let Sentry manage source maps
-});
+  authToken: process.env.SENTRY_AUTH_TOKEN,
+  widenClientFileUpload: true,
+  reactComponentAnnotation: {
+    enabled: true
+  },
+  tunnelRoute: true // Generates a random route for each build (recommended)
+})

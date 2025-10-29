@@ -35,12 +35,13 @@ jobs:
         run: npm run build
         env:
           CI: true
+          TURBO_FORCE: false
 
       - name: Upload next-build artifact
         uses: actions/upload-artifact@v4
         with:
           name: next-build
-          path: .next/**
+          path: .next
 
   sentry:
     name: Create Sentry release

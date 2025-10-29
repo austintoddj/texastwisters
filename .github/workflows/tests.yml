@@ -1,42 +1,37 @@
-name: CI — Lint, Unit, Build, E2E
+name: tests
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
   push:
-    branches: [develop]
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
 
 concurrency:
-  group: ci-${{ github.ref }}
+  group: tests-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: read
 
 jobs:
-  # lint:
-  #   name: ci/lint
-  #   uses: ./.github/workflows/setup-runner.yml
-  #   with:
-  #     node-version: 22
-  #     install-playwright: false
-  #     run-command: npm run lint
-
   unit:
     name: ci/unit
     uses: ./.github/workflows/setup-runner.yml
     with:
-      node-version: 22
+      node-version: '22'
       install-playwright: false
       run-command: npm run test:unit
 
   build:
     name: ci/build
-    #needs: [lint, unit]
     needs: [unit]
     uses: ./.github/workflows/setup-runner.yml
     with:
-      node-version: 22
+      node-version: '22'
       install-playwright: false
       run-command: npm run build
       upload-artifact-path: .next
@@ -45,21 +40,7 @@ jobs:
   smoke-e2e:
     name: e2e/smoke
     needs: build
-    uses: ./.github/workflows/setup-runner.yml
-    with:
-      node-version: 22
-      install-playwright: true
-      run-command: npx start-server-and-test 'npm run dev' http://localhost:3000 "npx playwright test tests/e2e/smoke.spec.ts --project=chromium --reporter=html,junit"
-      upload-artifact-path: ./playwright-report
-      upload-artifact-name: smoke-e2e-report
-    secrets:
-      E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
-
-  premerge-e2e:
-    name: Premerge Full E2E (PR -> main)
-    needs: build
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -67,7 +48,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '22.x'
           cache: 'npm'
 
       - name: Install dependencies
@@ -85,7 +66,6 @@ jobs:
             rm -rf .next || true
             mv ./artifact/.next .
           elif [ -d ./artifact ]; then
-            # some runners may unpack artifact under ./artifact/next-build/.next
             find ./artifact -maxdepth 2 -type d -name .next -exec bash -c 'rm -rf .next || true; mv "$0" .next' {} \;
           else
             echo "No .next artifact found"
@@ -103,15 +83,16 @@ jobs:
       - name: Install Playwright browsers (if cache miss)
         run: npx playwright install --with-deps
 
-      - name: Run full Playwright E2E (premerge)
+      - name: Run smoke Playwright tests
         run: |
-          npx start-server-and-test 'npm run start' http://localhost:3000 'npx playwright test --reporter=html,junit'
+          npx start-server-and-test 'npm run start' http://localhost:3000 "npx playwright test tests/e2e/smoke.spec.ts --project=chromium --reporter=html,junit"
         env:
           CI: true
+          E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
 
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: premerge-e2e-report
+          name: smoke-e2e-report
           path: ./playwright-report

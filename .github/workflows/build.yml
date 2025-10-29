@@ -1,0 +1,65 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    uses: ./.github/workflows/setup-runner.yml
+    with:
+      node-version: '22'
+      install-playwright: false
+      run-command: npm run build
+      upload-artifact-path: .next
+      upload-artifact-name: next-build
+
+  sentry:
+    name: Create Sentry release
+    needs: build
+    if: ${{ secrets.SENTRY_AUTH_TOKEN != '' && secrets.SENTRY_ORG != '' && secrets.SENTRY_PROJECT != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for commits)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download build artifact (.next)
+        uses: actions/download-artifact@v4
+        with:
+          name: next-build
+          path: ./artifact
+
+      - name: Restore .next to workspace
+        run: |
+          if [ -d ./artifact/.next ]; then
+            rm -rf .next || true
+            mv ./artifact/.next .
+          elif [ -d ./artifact ]; then
+            find ./artifact -maxdepth 2 -type d -name .next -exec bash -c 'rm -rf .next || true; mv "$0" .next' {} \;
+          else
+            echo "No .next artifact found"
+          fi
+
+      - name: Create Sentry release and upload sourcemaps (simple action)
+        uses: getsentry/action-release@v3
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+        with:
+          environment: production
+          sourcemaps: ".next"
+          version: ${{ github.sha }}

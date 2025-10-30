@@ -175,9 +175,7 @@ export function Navbar({ programs }) {
                                 </p>
                               </Link>
                               {index != programs.length - 1 && (
-                                <>
-                                  <hr className="my-1 border-purple-200/30 sm:my-2" />
-                                </>
+                                <hr className="my-1 border-purple-200/30 sm:my-2" />
                               )}
                             </>
                           )}

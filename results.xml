@@ -1,116 +1,224 @@
-<testsuites id="" name="" tests="51" failures="0" skipped="0" errors="0" time="56.728697999999994">
-<testsuite name="contact.spec.ts" timestamp="2025-10-30T16:46:47.611Z" hostname="chromium" tests="3" failures="0" skipped="0" time="11.818" errors="0">
-<testcase name="Contact form › shows validation error when required fields missing" classname="contact.spec.ts" time="5.848">
+<testsuites id="" name="" tests="102" failures="0" skipped="0" errors="0" time="136.14983">
+<testsuite name="contact.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="chromium" tests="3" failures="0" skipped="0" time="6.302" errors="0">
+<testcase name="Contact form › shows validation error when required fields missing" classname="contact.spec.ts" time="2.898">
 </testcase>
-<testcase name="Contact form › submits successfully with valid data" classname="contact.spec.ts" time="3.838">
+<testcase name="Contact form › submits successfully with valid data" classname="contact.spec.ts" time="1.639">
 </testcase>
-<testcase name="Contact form › shows error on server failure" classname="contact.spec.ts" time="2.132">
-</testcase>
-</testsuite>
-<testsuite name="smoke.spec.ts" timestamp="2025-10-30T16:46:47.611Z" hostname="chromium" tests="14" failures="0" skipped="0" time="29.978" errors="0">
-<testcase name="Smoke: / › loads /" classname="smoke.spec.ts" time="4.148">
-</testcase>
-<testcase name="Smoke: /about › loads /about" classname="smoke.spec.ts" time="3.53">
-</testcase>
-<testcase name="Smoke: /parents › loads /parents" classname="smoke.spec.ts" time="3.557">
-</testcase>
-<testcase name="Smoke: /policies › loads /policies" classname="smoke.spec.ts" time="1.346">
-</testcase>
-<testcase name="Smoke: /contact › loads /contact" classname="smoke.spec.ts" time="1.087">
-</testcase>
-<testcase name="Programs smoke: /programs/adult › loads /programs/adult" classname="smoke.spec.ts" time="3.501">
-</testcase>
-<testcase name="Programs smoke: /programs/camp › loads /programs/camp" classname="smoke.spec.ts" time="1.409">
-</testcase>
-<testcase name="Programs smoke: /programs/homeschool › loads /programs/homeschool" classname="smoke.spec.ts" time="2.002">
-</testcase>
-<testcase name="Programs smoke: /programs/open-gym › loads /programs/open-gym" classname="smoke.spec.ts" time="1.632">
-</testcase>
-<testcase name="Programs smoke: /programs/parties-events › loads /programs/parties-events" classname="smoke.spec.ts" time="1.172">
-</testcase>
-<testcase name="Programs smoke: /programs/preschool › loads /programs/preschool" classname="smoke.spec.ts" time="1.585">
-</testcase>
-<testcase name="Programs smoke: /programs/recreational › loads /programs/recreational" classname="smoke.spec.ts" time="1.601">
-</testcase>
-<testcase name="Programs smoke: /programs/team › loads /programs/team" classname="smoke.spec.ts" time="1.41">
-</testcase>
-<testcase name="Programs smoke: /programs/tumbling › loads /programs/tumbling" classname="smoke.spec.ts" time="1.998">
+<testcase name="Contact form › shows error on server failure" classname="contact.spec.ts" time="1.765">
 </testcase>
 </testsuite>
-<testsuite name="contact.spec.ts" timestamp="2025-10-30T16:46:47.611Z" hostname="firefox" tests="3" failures="0" skipped="0" time="10.694" errors="0">
-<testcase name="Contact form › shows validation error when required fields missing" classname="contact.spec.ts" time="4.404">
+<testsuite name="navigation.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="chromium" tests="5" failures="0" skipped="0" time="32.774" errors="0">
+<testcase name="Navigation › Desktop Navigation › navigates to top-level pages" classname="navigation.spec.ts" time="12.441">
 </testcase>
-<testcase name="Contact form › submits successfully with valid data" classname="contact.spec.ts" time="2.895">
+<testcase name="Navigation › Desktop Navigation › programs dropdown navigation" classname="navigation.spec.ts" time="5.235">
 </testcase>
-<testcase name="Contact form › shows error on server failure" classname="contact.spec.ts" time="3.395">
+<testcase name="Navigation › Mobile Navigation › hamburger menu opens and closes" classname="navigation.spec.ts" time="4.524">
 </testcase>
-</testsuite>
-<testsuite name="smoke.spec.ts" timestamp="2025-10-30T16:46:47.611Z" hostname="firefox" tests="14" failures="0" skipped="0" time="36.932" errors="0">
-<testcase name="Smoke: / › loads /" classname="smoke.spec.ts" time="6.651">
+<testcase name="Navigation › Mobile Navigation › mobile navigation links work" classname="navigation.spec.ts" time="6.816">
 </testcase>
-<testcase name="Smoke: /about › loads /about" classname="smoke.spec.ts" time="3.222">
-</testcase>
-<testcase name="Smoke: /parents › loads /parents" classname="smoke.spec.ts" time="2.825">
-</testcase>
-<testcase name="Smoke: /policies › loads /policies" classname="smoke.spec.ts" time="2.939">
-</testcase>
-<testcase name="Smoke: /contact › loads /contact" classname="smoke.spec.ts" time="3.112">
-</testcase>
-<testcase name="Programs smoke: /programs/adult › loads /programs/adult" classname="smoke.spec.ts" time="2.321">
-</testcase>
-<testcase name="Programs smoke: /programs/camp › loads /programs/camp" classname="smoke.spec.ts" time="1.92">
-</testcase>
-<testcase name="Programs smoke: /programs/homeschool › loads /programs/homeschool" classname="smoke.spec.ts" time="1.873">
-</testcase>
-<testcase name="Programs smoke: /programs/open-gym › loads /programs/open-gym" classname="smoke.spec.ts" time="2.043">
-</testcase>
-<testcase name="Programs smoke: /programs/parties-events › loads /programs/parties-events" classname="smoke.spec.ts" time="1.751">
-</testcase>
-<testcase name="Programs smoke: /programs/preschool › loads /programs/preschool" classname="smoke.spec.ts" time="1.887">
-</testcase>
-<testcase name="Programs smoke: /programs/recreational › loads /programs/recreational" classname="smoke.spec.ts" time="1.873">
-</testcase>
-<testcase name="Programs smoke: /programs/team › loads /programs/team" classname="smoke.spec.ts" time="2.122">
-</testcase>
-<testcase name="Programs smoke: /programs/tumbling › loads /programs/tumbling" classname="smoke.spec.ts" time="2.393">
+<testcase name="Navigation › Mobile Navigation › mobile programs navigation" classname="navigation.spec.ts" time="3.758">
 </testcase>
 </testsuite>
-<testsuite name="contact.spec.ts" timestamp="2025-10-30T16:46:47.611Z" hostname="webkit" tests="3" failures="0" skipped="0" time="13.153" errors="0">
-<testcase name="Contact form › shows validation error when required fields missing" classname="contact.spec.ts" time="3.482">
+<testsuite name="smoke.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="chromium" tests="26" failures="0" skipped="0" time="52.074" errors="0">
+<testcase name="Smoke: / › loads /" classname="smoke.spec.ts" time="4.144">
 </testcase>
-<testcase name="Contact form › submits successfully with valid data" classname="contact.spec.ts" time="4.47">
+<testcase name="Smoke: /about › loads /about" classname="smoke.spec.ts" time="2.962">
 </testcase>
-<testcase name="Contact form › shows error on server failure" classname="contact.spec.ts" time="5.201">
+<testcase name="Smoke: /parents › loads /parents" classname="smoke.spec.ts" time="1.941">
+</testcase>
+<testcase name="Smoke: /policies › loads /policies" classname="smoke.spec.ts" time="1.767">
+</testcase>
+<testcase name="Smoke: /contact › loads /contact" classname="smoke.spec.ts" time="2.886">
+</testcase>
+<testcase name="Programs smoke: /programs/adult › loads /programs/adult" classname="smoke.spec.ts" time="3.773">
+</testcase>
+<testcase name="Programs smoke: /programs/adult › displays program content correctly" classname="smoke.spec.ts" time="2.322">
+</testcase>
+<testcase name="Programs smoke: /programs/camp › loads /programs/camp" classname="smoke.spec.ts" time="1.189">
+</testcase>
+<testcase name="Programs smoke: /programs/camp › displays program content correctly" classname="smoke.spec.ts" time="2.963">
+</testcase>
+<testcase name="Programs smoke: /programs/homeschool › loads /programs/homeschool" classname="smoke.spec.ts" time="1.066">
+</testcase>
+<testcase name="Programs smoke: /programs/homeschool › displays program content correctly" classname="smoke.spec.ts" time="2.757">
+</testcase>
+<testcase name="Programs smoke: /programs/open-gym › loads /programs/open-gym" classname="smoke.spec.ts" time="1.154">
+</testcase>
+<testcase name="Programs smoke: /programs/open-gym › displays program content correctly" classname="smoke.spec.ts" time="2.297">
+</testcase>
+<testcase name="Programs smoke: /programs/parties-events › loads /programs/parties-events" classname="smoke.spec.ts" time="1.074">
+</testcase>
+<testcase name="Programs smoke: /programs/parties-events › displays program content correctly" classname="smoke.spec.ts" time="1.444">
+</testcase>
+<testcase name="Programs smoke: /programs/preschool › loads /programs/preschool" classname="smoke.spec.ts" time="1.341">
+</testcase>
+<testcase name="Programs smoke: /programs/preschool › displays program content correctly" classname="smoke.spec.ts" time="1.242">
+</testcase>
+<testcase name="Programs smoke: /programs/recreational › loads /programs/recreational" classname="smoke.spec.ts" time="1.326">
+</testcase>
+<testcase name="Programs smoke: /programs/recreational › displays program content correctly" classname="smoke.spec.ts" time="2.398">
+</testcase>
+<testcase name="Programs smoke: /programs/team › loads /programs/team" classname="smoke.spec.ts" time="0.991">
+</testcase>
+<testcase name="Programs smoke: /programs/team › displays program content correctly" classname="smoke.spec.ts" time="1.227">
+</testcase>
+<testcase name="Programs smoke: /programs/tumbling › loads /programs/tumbling" classname="smoke.spec.ts" time="2.42">
+</testcase>
+<testcase name="Programs smoke: /programs/tumbling › displays program content correctly" classname="smoke.spec.ts" time="1.421">
+</testcase>
+<testcase name="Error Handling › displays 404 page for non-existent routes" classname="smoke.spec.ts" time="2.302">
+</testcase>
+<testcase name="Error Handling › handles invalid program slugs" classname="smoke.spec.ts" time="2.503">
+</testcase>
+<testcase name="Error Handling › handles malformed URLs gracefully" classname="smoke.spec.ts" time="1.164">
 </testcase>
 </testsuite>
-<testsuite name="smoke.spec.ts" timestamp="2025-10-30T16:46:47.611Z" hostname="webkit" tests="14" failures="0" skipped="0" time="25.308" errors="0">
-<testcase name="Smoke: / › loads /" classname="smoke.spec.ts" time="3.94">
+<testsuite name="contact.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="firefox" tests="3" failures="0" skipped="0" time="12.013" errors="0">
+<testcase name="Contact form › shows validation error when required fields missing" classname="contact.spec.ts" time="5.651">
 </testcase>
-<testcase name="Smoke: /about › loads /about" classname="smoke.spec.ts" time="2.043">
+<testcase name="Contact form › submits successfully with valid data" classname="contact.spec.ts" time="2.994">
 </testcase>
-<testcase name="Smoke: /parents › loads /parents" classname="smoke.spec.ts" time="1.779">
+<testcase name="Contact form › shows error on server failure" classname="contact.spec.ts" time="3.368">
 </testcase>
-<testcase name="Smoke: /policies › loads /policies" classname="smoke.spec.ts" time="1.686">
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="firefox" tests="5" failures="0" skipped="0" time="49.07" errors="0">
+<testcase name="Navigation › Desktop Navigation › navigates to top-level pages" classname="navigation.spec.ts" time="18.459">
 </testcase>
-<testcase name="Smoke: /contact › loads /contact" classname="smoke.spec.ts" time="1.553">
+<testcase name="Navigation › Desktop Navigation › programs dropdown navigation" classname="navigation.spec.ts" time="9.449">
 </testcase>
-<testcase name="Programs smoke: /programs/adult › loads /programs/adult" classname="smoke.spec.ts" time="2.185">
+<testcase name="Navigation › Mobile Navigation › hamburger menu opens and closes" classname="navigation.spec.ts" time="5.829">
 </testcase>
-<testcase name="Programs smoke: /programs/camp › loads /programs/camp" classname="smoke.spec.ts" time="1.772">
+<testcase name="Navigation › Mobile Navigation › mobile navigation links work" classname="navigation.spec.ts" time="7.495">
 </testcase>
-<testcase name="Programs smoke: /programs/homeschool › loads /programs/homeschool" classname="smoke.spec.ts" time="2.072">
+<testcase name="Navigation › Mobile Navigation › mobile programs navigation" classname="navigation.spec.ts" time="7.838">
 </testcase>
-<testcase name="Programs smoke: /programs/open-gym › loads /programs/open-gym" classname="smoke.spec.ts" time="1.741">
+</testsuite>
+<testsuite name="smoke.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="firefox" tests="26" failures="0" skipped="0" time="78.065" errors="0">
+<testcase name="Smoke: / › loads /" classname="smoke.spec.ts" time="6.27">
 </testcase>
-<testcase name="Programs smoke: /programs/parties-events › loads /programs/parties-events" classname="smoke.spec.ts" time="1.533">
+<testcase name="Smoke: /about › loads /about" classname="smoke.spec.ts" time="3.391">
 </testcase>
-<testcase name="Programs smoke: /programs/preschool › loads /programs/preschool" classname="smoke.spec.ts" time="1.233">
+<testcase name="Smoke: /parents › loads /parents" classname="smoke.spec.ts" time="2.843">
 </testcase>
-<testcase name="Programs smoke: /programs/recreational › loads /programs/recreational" classname="smoke.spec.ts" time="1.297">
+<testcase name="Smoke: /policies › loads /policies" classname="smoke.spec.ts" time="3.177">
 </testcase>
-<testcase name="Programs smoke: /programs/team › loads /programs/team" classname="smoke.spec.ts" time="1.364">
+<testcase name="Smoke: /contact › loads /contact" classname="smoke.spec.ts" time="1.962">
 </testcase>
-<testcase name="Programs smoke: /programs/tumbling › loads /programs/tumbling" classname="smoke.spec.ts" time="1.11">
+<testcase name="Programs smoke: /programs/adult › loads /programs/adult" classname="smoke.spec.ts" time="2.92">
+</testcase>
+<testcase name="Programs smoke: /programs/adult › displays program content correctly" classname="smoke.spec.ts" time="3.017">
+</testcase>
+<testcase name="Programs smoke: /programs/camp › loads /programs/camp" classname="smoke.spec.ts" time="2.347">
+</testcase>
+<testcase name="Programs smoke: /programs/camp › displays program content correctly" classname="smoke.spec.ts" time="3.306">
+</testcase>
+<testcase name="Programs smoke: /programs/homeschool › loads /programs/homeschool" classname="smoke.spec.ts" time="2.379">
+</testcase>
+<testcase name="Programs smoke: /programs/homeschool › displays program content correctly" classname="smoke.spec.ts" time="3.336">
+</testcase>
+<testcase name="Programs smoke: /programs/open-gym › loads /programs/open-gym" classname="smoke.spec.ts" time="3.491">
+</testcase>
+<testcase name="Programs smoke: /programs/open-gym › displays program content correctly" classname="smoke.spec.ts" time="3.741">
+</testcase>
+<testcase name="Programs smoke: /programs/parties-events › loads /programs/parties-events" classname="smoke.spec.ts" time="2.634">
+</testcase>
+<testcase name="Programs smoke: /programs/parties-events › displays program content correctly" classname="smoke.spec.ts" time="3.382">
+</testcase>
+<testcase name="Programs smoke: /programs/preschool › loads /programs/preschool" classname="smoke.spec.ts" time="2.63">
+</testcase>
+<testcase name="Programs smoke: /programs/preschool › displays program content correctly" classname="smoke.spec.ts" time="3.171">
+</testcase>
+<testcase name="Programs smoke: /programs/recreational › loads /programs/recreational" classname="smoke.spec.ts" time="2.421">
+</testcase>
+<testcase name="Programs smoke: /programs/recreational › displays program content correctly" classname="smoke.spec.ts" time="4.753">
+</testcase>
+<testcase name="Programs smoke: /programs/team › loads /programs/team" classname="smoke.spec.ts" time="2.667">
+</testcase>
+<testcase name="Programs smoke: /programs/team › displays program content correctly" classname="smoke.spec.ts" time="3.58">
+</testcase>
+<testcase name="Programs smoke: /programs/tumbling › loads /programs/tumbling" classname="smoke.spec.ts" time="2.976">
+</testcase>
+<testcase name="Programs smoke: /programs/tumbling › displays program content correctly" classname="smoke.spec.ts" time="2.096">
+</testcase>
+<testcase name="Error Handling › displays 404 page for non-existent routes" classname="smoke.spec.ts" time="1.823">
+</testcase>
+<testcase name="Error Handling › handles invalid program slugs" classname="smoke.spec.ts" time="1.763">
+</testcase>
+<testcase name="Error Handling › handles malformed URLs gracefully" classname="smoke.spec.ts" time="1.989">
+</testcase>
+</testsuite>
+<testsuite name="contact.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="webkit" tests="3" failures="0" skipped="0" time="11.958" errors="0">
+<testcase name="Contact form › shows validation error when required fields missing" classname="contact.spec.ts" time="4.295">
+</testcase>
+<testcase name="Contact form › submits successfully with valid data" classname="contact.spec.ts" time="3.706">
+</testcase>
+<testcase name="Contact form › shows error on server failure" classname="contact.spec.ts" time="3.957">
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="webkit" tests="5" failures="0" skipped="0" time="38.33" errors="0">
+<testcase name="Navigation › Desktop Navigation › navigates to top-level pages" classname="navigation.spec.ts" time="13.459">
+</testcase>
+<testcase name="Navigation › Desktop Navigation › programs dropdown navigation" classname="navigation.spec.ts" time="6.817">
+</testcase>
+<testcase name="Navigation › Mobile Navigation › hamburger menu opens and closes" classname="navigation.spec.ts" time="5.708">
+</testcase>
+<testcase name="Navigation › Mobile Navigation › mobile navigation links work" classname="navigation.spec.ts" time="6.41">
+</testcase>
+<testcase name="Navigation › Mobile Navigation › mobile programs navigation" classname="navigation.spec.ts" time="5.936">
+</testcase>
+</testsuite>
+<testsuite name="smoke.spec.ts" timestamp="2025-10-30T21:31:12.845Z" hostname="webkit" tests="26" failures="0" skipped="0" time="54.356" errors="0">
+<testcase name="Smoke: / › loads /" classname="smoke.spec.ts" time="5.922">
+</testcase>
+<testcase name="Smoke: /about › loads /about" classname="smoke.spec.ts" time="3.537">
+</testcase>
+<testcase name="Smoke: /parents › loads /parents" classname="smoke.spec.ts" time="2.143">
+</testcase>
+<testcase name="Smoke: /policies › loads /policies" classname="smoke.spec.ts" time="2.411">
+</testcase>
+<testcase name="Smoke: /contact › loads /contact" classname="smoke.spec.ts" time="3.141">
+</testcase>
+<testcase name="Programs smoke: /programs/adult › loads /programs/adult" classname="smoke.spec.ts" time="2.476">
+</testcase>
+<testcase name="Programs smoke: /programs/adult › displays program content correctly" classname="smoke.spec.ts" time="4.377">
+</testcase>
+<testcase name="Programs smoke: /programs/camp › loads /programs/camp" classname="smoke.spec.ts" time="2.292">
+</testcase>
+<testcase name="Programs smoke: /programs/camp › displays program content correctly" classname="smoke.spec.ts" time="3.516">
+</testcase>
+<testcase name="Programs smoke: /programs/homeschool › loads /programs/homeschool" classname="smoke.spec.ts" time="2.738">
+</testcase>
+<testcase name="Programs smoke: /programs/homeschool › displays program content correctly" classname="smoke.spec.ts" time="2.012">
+</testcase>
+<testcase name="Programs smoke: /programs/open-gym › loads /programs/open-gym" classname="smoke.spec.ts" time="1.998">
+</testcase>
+<testcase name="Programs smoke: /programs/open-gym › displays program content correctly" classname="smoke.spec.ts" time="2.089">
+</testcase>
+<testcase name="Programs smoke: /programs/parties-events › loads /programs/parties-events" classname="smoke.spec.ts" time="1.616">
+</testcase>
+<testcase name="Programs smoke: /programs/parties-events › displays program content correctly" classname="smoke.spec.ts" time="1.675">
+</testcase>
+<testcase name="Programs smoke: /programs/preschool › loads /programs/preschool" classname="smoke.spec.ts" time="1.235">
+</testcase>
+<testcase name="Programs smoke: /programs/preschool › displays program content correctly" classname="smoke.spec.ts" time="1.247">
+</testcase>
+<testcase name="Programs smoke: /programs/recreational › loads /programs/recreational" classname="smoke.spec.ts" time="1.156">
+</testcase>
+<testcase name="Programs smoke: /programs/recreational › displays program content correctly" classname="smoke.spec.ts" time="1.261">
+</testcase>
+<testcase name="Programs smoke: /programs/team › loads /programs/team" classname="smoke.spec.ts" time="1.24">
+</testcase>
+<testcase name="Programs smoke: /programs/team › displays program content correctly" classname="smoke.spec.ts" time="1.458">
+</testcase>
+<testcase name="Programs smoke: /programs/tumbling › loads /programs/tumbling" classname="smoke.spec.ts" time="1.108">
+</testcase>
+<testcase name="Programs smoke: /programs/tumbling › displays program content correctly" classname="smoke.spec.ts" time="1.246">
+</testcase>
+<testcase name="Error Handling › displays 404 page for non-existent routes" classname="smoke.spec.ts" time="0.799">
+</testcase>
+<testcase name="Error Handling › handles invalid program slugs" classname="smoke.spec.ts" time="0.941">
+</testcase>
+<testcase name="Error Handling › handles malformed URLs gracefully" classname="smoke.spec.ts" time="0.722">
 </testcase>
 </testsuite>
 </testsuites>

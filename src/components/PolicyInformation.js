@@ -24,7 +24,7 @@ export const PolicyInformation = () => {
                 dangerouslySetInnerHTML={{
                   __html: marked.parse(policy.data.description)
                 }}
-              ></div>
+              />
             </div>
           </div>
         ))}

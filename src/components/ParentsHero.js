@@ -91,8 +91,8 @@ export const ParentsHero = () => {
           </div>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-purple-800 sm:mt-4">
             Check out different resources to keep you up-to-date with everything
-            going on at Texas Twisters. We know you're busy, we'll help you keep
-            it simple!
+            going on at Texas Twisters. We know you&apos;re busy, we&apos;ll
+            help you keep it simple!
           </p>
           {/* Enroll CTA*/}
           <div className="mt-10 font-semibold lg:mt-12">

@@ -5,6 +5,7 @@ node_modules/
 .vercel/
 playwright-report/
 test-results/
+results.xml
 npm-debug.log*
 .env*.local
 .env.sentry-build-plugin

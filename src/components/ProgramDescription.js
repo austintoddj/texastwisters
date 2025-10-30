@@ -67,7 +67,7 @@ export const ProgramDescription = ({ data }) => {
               dangerouslySetInnerHTML={{
                 __html: marked.parse(data.text)
               }}
-            ></div>
+            />
           </div>
         </div>
       </div>

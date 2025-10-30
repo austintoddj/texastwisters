@@ -91,7 +91,7 @@ export const ContactHero = () => {
           <Eyebrow text="Contact us today" />
 
           <h1 className="max-w-md mt-4 text-purple-900 h1">
-            We'd love to hear from you
+            We&apos;d love to hear from you
           </h1>
           <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
             Need to get in touch with us? Fill out the form or find more ways to
@@ -124,7 +124,7 @@ export const ContactHero = () => {
                 Send us a message
               </h3>
               <p className="mt-0.5 text-purple-800/90">
-                We'll get back to you as soon as we can.
+                We&apos;ll get back to you as soon as we can.
               </p>
             </div>
             {/* Contact form */}

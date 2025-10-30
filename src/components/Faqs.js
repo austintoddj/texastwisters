@@ -24,7 +24,7 @@ export const Faqs = ({ faqs }) => {
             <Link href="/contact" className="underline">
               contact us
             </Link>{' '}
-            and we'll get back to you as soon as we can.
+            and we&apos;ll get back to you as soon as we can.
           </p>
         </div>
         {/* FAQ */}

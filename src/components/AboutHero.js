@@ -37,7 +37,7 @@ export function AboutHero() {
               {index % 5 == 1 && (
                 <Image
                   className="col-span-2 h-30vw w-full rounded-2xl object-cover object-top lg:h-80"
-                  priority={true}
+                  priority
                   alt={image.alt}
                   src={image.src}
                   sizes="(min-width: 1280px) 52.875rem, (min-width: 640px) 66vw, 100vw"
@@ -79,8 +79,8 @@ export function AboutHero() {
           </p>
           <p>
             We moved from Minneapolis to Georgetown in 2018, and are proud to
-            call it our home. We love Georgetown and can't wait to bring this
-            business to you!
+            call it our home. We love Georgetown and can&apos;t wait to bring
+            this business to you!
           </p>
           <p>~ Becky</p>
         </div>

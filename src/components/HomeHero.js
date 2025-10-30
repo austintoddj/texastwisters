@@ -5,16 +5,13 @@ import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
 import heroImage from '@/images/home/hero.png'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
-/* eslint-disable-next-line */
 import { Dialog, Transition } from '@headlessui/react'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
-/* eslint-disable-next-line */
 import { Fragment, useState } from 'react'
 
-/* eslint-disable-next-line */
 const ratings = [
   {
     label: 'Google',
@@ -34,15 +31,12 @@ const ratings = [
 ]
 
 export const HomeHero = () => {
-  /* eslint-disable-next-line */
   let [isOpen, setIsOpen] = useState(false)
 
-  /* eslint-disable-next-line */
   function closeModal() {
     setIsOpen(false)
   }
 
-  /* eslint-disable-next-line */
   function openModal() {
     setIsOpen(true)
   }
@@ -65,8 +59,8 @@ export const HomeHero = () => {
           <p className="max-w-2xl mt-3 text-xl leading-loose text-center text-purple-800 lg:text-left">
             Located in the heart of Georgetown, TX, our programs are designed to
             challenge and inspire athletes of all ages. From beginner to
-            advanced, we're excited to provide you a safe, fun, and supportive
-            environment throughout your gymnastics journey.
+            advanced, we&apos;re excited to provide you a safe, fun, and
+            supportive environment throughout your gymnastics journey.
           </p>
           {/* Hero buttons */}
           <div className="flex flex-col items-center mt-8 overflow-hidden sm:flex-row">

@@ -19,17 +19,42 @@ permissions:
 
 jobs:
   unit:
-    name: ci/unit
-    uses: ./.github/workflows/setup-runner.yml
-    with:
-      node-version: '22'
-      install-playwright: false
-      run-command: npm run test:unit
+    name: Unit Tests (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: ['20.x', '22.x']
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-  build:
-    name: ci/build
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests with coverage
+        run: npm run test:unit -- --coverage
+
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ matrix.node-version }}
+          path: coverage/
+
+  e2e:
+    name: E2E Tests (${{ matrix.browser }})
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
     needs: [unit]
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: ['chromium', 'firefox', 'webkit']
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -43,103 +68,26 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build (production)
+      - name: Build application
         run: npm run build
-        env:
-          CI: true
-          TURBO_FORCE: webpack
 
-      - name: Verify .next directory
-        run: |
-          if [ ! -d .next ]; then
-            echo "ERROR: .next directory not found after build."
-            exit 1
-          fi
-
-      - name: Upload next-build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: next-build
-          path: .next
-
-  smoke-e2e:
-    name: e2e/smoke
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22.x'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Download build artifact (.next)
-        uses: actions/download-artifact@v4
-        with:
-          name: next-build
-          path: ./artifact
-
-      - name: Restore .next to workspace
-        run: |
-          set -euo pipefail
-          ART_DIR=./artifact
-
-          # If the artifact unpacked a .next directory directly
-          if [ -d "$ART_DIR/.next" ]; then
-            echo "Found $ART_DIR/.next, restoring"
-            rm -rf .next || true
-            mv "$ART_DIR/.next" .
-            exit 0
-          fi
-
-          # Fallback: search for any .next under artifact and move it
-          FOUND=$(find "$ART_DIR" -maxdepth 3 -type d -name .next | head -n 1 || true)
-          if [ -n "$FOUND" ]; then
-            echo "Found .next at $FOUND, restoring"
-            rm -rf .next || true
-            mv "$FOUND" .
-            exit 0
-          fi
-
-          echo "No .next found in artifact directory: $ART_DIR"
-          ls -la "$ART_DIR" || true
-        shell: bash
-
-      - name: "Pre-start check: ensure .next exists"
-        run: |
-          echo "Checking for .next before starting server"
-          if [ -d .next ]; then
-            echo ".next is present"
-            ls -la .next | head -n 50 || true
-          else
-            echo "ERROR: .next not found in workspace after restore. Listing artifact dir:"
-            ls -la ./artifact || true
-            echo "Failing early to avoid confusing start-server-and-test errors"
-            exit 1
-          fi
-        shell: bash
-
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-playwright-
-
-      - name: Install Playwright browsers (if cache miss)
+      - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run smoke Playwright tests
+      - name: Run Playwright tests (${{ matrix.browser }})
         run: |
-          npx start-server-and-test 'npm run start' http://localhost:3000 "npx playwright test tests/e2e/smoke.spec.ts --project=chromium --reporter=html,junit"
-        env:
-          CI: true
-          E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
+          npx start-server-and-test 'npm run start' http://localhost:3000 "npx playwright test --project=${{ matrix.browser }}"
+
+      - name: Upload Playwright HTML report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report-${{ matrix.browser }}
+          path: playwright-report/
+
+      - name: Upload Playwright JUnit results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-results-${{ matrix.browser }}
+          path: results.xml

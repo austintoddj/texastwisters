@@ -14,97 +14,32 @@ concurrency:
   group: build-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   build:
-    name: Build
-    runs-on: ubuntu-latest
+    name: Build (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: ['22.x']
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
+          node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
+      - name: Run formatting
+        run: npm run format
+
       - name: Build (production)
         run: npm run build
-        env:
-          CI: true
-          TURBO_FORCE: webpack
-
-      - name: Verify .next directory
-        run: |
-          if [ ! -d .next ]; then
-            echo "ERROR: .next directory not found after build."
-            exit 1
-          fi
-
-      - name: Upload next-build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: next-build
-          path: .next
-
-  sentry:
-    name: Create Sentry release
-    needs: build
-    runs-on: ubuntu-latest
-    env:
-      SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-      SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-      SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
-    steps:
-      - name: Checkout (full history for commits)
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Download build artifact (.next)
-        uses: actions/download-artifact@v4
-        with:
-          name: next-build
-          path: ./artifact
-
-      - name: Restore .next to workspace
-        run: |
-          set -euo pipefail
-          ART_DIR=./artifact
-
-          # If the artifact unpacked a .next directory directly
-          if [ -d "$ART_DIR/.next" ]; then
-            echo "Found $ART_DIR/.next, restoring"
-            rm -rf .next || true
-            mv "$ART_DIR/.next" .
-            exit 0
-          fi
-
-          # Fallback: search for any .next under artifact and move it
-          FOUND=$(find "$ART_DIR" -maxdepth 3 -type d -name .next | head -n 1 || true)
-          if [ -n "$FOUND" ]; then
-            echo "Found .next at $FOUND, restoring"
-            rm -rf .next || true
-            mv "$FOUND" .
-            exit 0
-          fi
-
-          echo "No .next found in artifact directory: $ART_DIR"
-          ls -la "$ART_DIR" || true
-          exit 0
-        shell: bash
-
-      - name: Create Sentry release and upload sourcemaps (simple action)
-        if: ${{ env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != '' && env.SENTRY_PROJECT != '' }}
-        uses: getsentry/action-release@v3
-        env:
-          SENTRY_AUTH_TOKEN: ${{ env.SENTRY_AUTH_TOKEN }}
-          SENTRY_ORG: ${{ env.SENTRY_ORG }}
-          SENTRY_PROJECT: ${{ env.SENTRY_PROJECT }}
-        with:
-          environment: production
-          sourcemaps: '.next'
-          release: ${{ github.sha }}

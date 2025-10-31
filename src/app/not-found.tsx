@@ -26,7 +26,7 @@ export default function NotFound() {
               Page Not Found
             </h2>
             <p className="mt-2 text-sm text-gray-600">
-              The page you're looking for doesn't exist.
+              The page you&apos;re looking for doesn&apos;t exist.
             </p>
             <div className="mt-6">
               <Link

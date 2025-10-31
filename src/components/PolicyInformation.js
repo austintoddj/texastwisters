@@ -1,8 +1,8 @@
 import { getAllItems } from '@/lib/getItems'
 import { marked } from 'marked'
 
-export const PolicyInformation = () => {
-  const policies = getAllItems('policies')
+export const PolicyInformation = async () => {
+  const policies = await getAllItems('policies')
 
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-purple-25 via-purple-25 to-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">

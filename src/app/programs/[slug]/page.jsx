@@ -8,7 +8,7 @@ import { getAllItems, getItemData } from '@/lib/getItems'
 
 export async function generateMetadata({ params }) {
   const { slug } = await params
-  const program = getItemData(slug, 'programs')
+  const program = await getItemData(slug, 'programs')
   const description = program.hero?.description ?? program.comingSoonHero?.text
   const ogImage = program.hero ? program.hero.image?.src : undefined
 
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 
 export default async function ProgramPage({ params }) {
   const { slug } = await params
-  const program = getItemData(slug, 'programs')
+  const program = await getItemData(slug, 'programs')
   const isComingSoon = Boolean(program?.comingSoonHero)
 
   return (
@@ -54,7 +54,7 @@ export default async function ProgramPage({ params }) {
 }
 
 export async function generateStaticParams() {
-  const programs = getAllItems('programs')
+  const programs = await getAllItems('programs')
 
   return programs.map(program => ({
     slug: program.slug

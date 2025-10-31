@@ -44,9 +44,15 @@ const fields = [
 
 export const ContactHero = () => {
   const [isError, setIsError] = useState(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   async function handleSubmit(e) {
     e.preventDefault()
+
+    if (isSubmitting) return // Prevent multiple submissions
+
+    setIsSubmitting(true)
+    setIsError(null)
 
     track(EVENT_NAMES.FORM_SUBMIT, {
       id: EVENT_IDS.CONTACT_US,
@@ -66,6 +72,9 @@ export const ContactHero = () => {
       })
 
       if (!res || !res.ok) {
+        const errorData = await res
+          .json()
+          .catch(() => ({ message: 'Unknown error' }))
         setIsError(true)
       } else {
         setIsError(false)
@@ -73,6 +82,7 @@ export const ContactHero = () => {
     } catch (err) {
       setIsError(true)
     } finally {
+      setIsSubmitting(false)
       // Reset form after state updates
       try {
         e.target.reset()
@@ -180,7 +190,9 @@ export const ContactHero = () => {
               )}
 
               <div className="flex justify-start mt-6">
-                <Button type="submit">Send message</Button>
+                <Button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send message'}
+                </Button>
               </div>
             </form>
           </div>

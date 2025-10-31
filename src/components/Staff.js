@@ -3,9 +3,9 @@ import { getAllItems } from '@/lib/getItems'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const Staff = () => {
+export const Staff = async () => {
   // Sort staff by priority in ascending order (1, 2, 3, 4)
-  const staff = getAllItems('staff').sort(
+  const staff = (await getAllItems('staff')).sort(
     (a, b) => (a.data.priority || Infinity) - (b.data.priority || Infinity)
   )
 

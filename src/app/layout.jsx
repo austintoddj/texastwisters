@@ -1,3 +1,4 @@
+import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
@@ -41,15 +42,17 @@ export const metadata = {
   ]
 }
 
-export default function RootLayout({ children }) {
-  const programs = getAllItems('programs')
+export default async function RootLayout({ children }) {
+  const programs = await getAllItems('programs')
 
   return (
     <html lang="en">
       <body className={clsx('font-sans', roboto.variable)}>
-        <Header programs={programs} />
-        {children}
-        <Footer programs={programs} />
+        <ErrorBoundary>
+          <Header programs={programs} />
+          {children}
+          <Footer programs={programs} />
+        </ErrorBoundary>
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />

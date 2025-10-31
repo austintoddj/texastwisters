@@ -16,7 +16,7 @@ const programSlugs = [
   'tumbling'
 ]
 
-function basicSmokeAssertions(page) {
+function basicSmokeAssertions(page: any) {
   // Ensure the response was ok and basic layout elements exist
   return Promise.all([
     expect(page.locator('header, [role="banner"]')).toHaveCount(1),
@@ -103,10 +103,10 @@ test.describe('Error Handling', () => {
     const res = await page.goto('/non-existent-page')
     expect(res?.status()).toBe(404)
 
-    // Check for 404 content - Next.js default 404 page
-    await expect(page.locator('text=404')).toBeVisible()
+    // Check for custom 404 content
+    await expect(page.locator('text=Page Not Found')).toBeVisible()
     await expect(
-      page.locator('text=This page could not be found')
+      page.locator("text=The page you're looking for doesn't exist")
     ).toBeVisible()
   })
 
@@ -114,8 +114,8 @@ test.describe('Error Handling', () => {
     const res = await page.goto('/programs/invalid-slug')
     expect(res?.status()).toBe(404)
 
-    // Should show 404 page
-    await expect(page.locator('text=404')).toBeVisible()
+    // Should show custom 404 page
+    await expect(page.locator('text=Page Not Found')).toBeVisible()
   })
 
   test('handles malformed URLs gracefully', async ({ page }) => {

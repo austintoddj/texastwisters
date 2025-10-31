@@ -10,8 +10,8 @@ const bgColorsClassName = [
   'bg-blue-50'
 ]
 
-export const Testimonials = () => {
-  const testimonials = getAllItems('testimonials', true)
+export const Testimonials = async () => {
+  const testimonials = await getAllItems('testimonials', true)
 
   return (
     <section className="bg-purple-600 py-20 sm:py-28 md:-mt-48 lg:py-32">

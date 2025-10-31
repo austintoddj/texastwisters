@@ -1,12 +1,11 @@
 'use client'
 
-import dotsGrid from '/public/images/illustrations/dots-grid.svg'
-import dotsLargeGrid from '/public/images/illustrations/dots-large-grid.svg'
-import dotsStrip from '/public/images/illustrations/dots-strip.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
+import dotsGrid from '@/images/illustrations/dots-grid.svg'
+import dotsLargeGrid from '@/images/illustrations/dots-large-grid.svg'
+import dotsStrip from '@/images/illustrations/dots-strip.svg'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
-import * as Sentry from '@sentry/nextjs'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -67,38 +66,11 @@ export const ContactHero = () => {
       })
 
       if (!res || !res.ok) {
-        // Capture a non-2xx response in Sentry for debugging. Do NOT include PII.
-        const respError = new Error(
-          `Contact API returned status ${res ? res.status : 'no-response'}`
-        )
-        Sentry.captureException(respError, {
-          tags: { component: 'ContactHero' },
-          extra: {
-            path:
-              typeof window !== 'undefined'
-                ? window.location.pathname
-                : undefined
-          }
-        })
         setIsError(true)
       } else {
         setIsError(false)
       }
     } catch (err) {
-      // Network or unexpected error: capture for diagnostics (no PII)
-      try {
-        Sentry.captureException(err, {
-          tags: { component: 'ContactHero' },
-          extra: {
-            path:
-              typeof window !== 'undefined'
-                ? window.location.pathname
-                : undefined
-          }
-        })
-      } catch {
-        // best-effort; don't block user flow
-      }
       setIsError(true)
     } finally {
       // Reset form after state updates
@@ -119,7 +91,7 @@ export const ContactHero = () => {
           <Eyebrow text="Contact us today" />
 
           <h1 className="max-w-md mt-4 text-purple-900 h1">
-            We'd love to hear from you
+            We&apos;d love to hear from you
           </h1>
           <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
             Need to get in touch with us? Fill out the form or find more ways to
@@ -152,7 +124,7 @@ export const ContactHero = () => {
                 Send us a message
               </h3>
               <p className="mt-0.5 text-purple-800/90">
-                We'll get back to you as soon as we can.
+                We&apos;ll get back to you as soon as we can.
               </p>
             </div>
             {/* Contact form */}

@@ -1,5 +1,8 @@
 # texastwistersgym.com
 
+[![build](https://github.com/austintoddj/texastwisters/actions/workflows/build.yml/badge.svg)](https://github.com/austintoddj/texastwisters/actions/workflows/build.yml)
+[![tests](https://github.com/austintoddj/texastwisters/actions/workflows/tests.yml/badge.svg)](https://github.com/austintoddj/texastwisters/actions/workflows/tests.yml)
+
 ## Introduction
 
 The texastwistersgym.com site is a [Next.js](https://nextjs.org) scaffolded project hosted on [Vercel](https://vercel.com).

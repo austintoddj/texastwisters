@@ -5,14 +5,17 @@ export default defineConfig({
   timeout: 60_000,
   expect: { timeout: 5_000 },
   fullyParallel: false,
-  reporter: [['list'], ['html', { open: 'never' }]],
+  reporter: [
+    ['list'],
+    ['html', { open: 'never' }],
+    ['junit', { outputFile: 'results.xml' }]
+  ],
   use: {
     baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:3000',
     headless: true,
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure'
   },
-  // In CI, retry flaky tests and limit workers to 1 to reduce contention/flakiness
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   webServer: {
@@ -22,6 +25,8 @@ export default defineConfig({
     reuseExistingServer: true
   },
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } }
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
+    { name: 'webkit', use: { ...devices['Desktop Safari'] } }
   ]
 })

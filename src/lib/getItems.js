@@ -34,15 +34,6 @@ export function getAllItems(dir, shuffle = false) {
     return { slug: filename.replace('.md', ''), data: frontmatter }
   })
 
-  // // Check if the items have an 'order' property and sort them accordingly
-  // if (items.order && items.every(item => 'order' in item.data)) {
-  //   items.sort((a, b) => {
-  //     const orderA = a.data.order
-  //     const orderB = b.data.order
-  //     return orderA - orderB // Ascending order based on the order property
-  //   })
-  // }
-
   // Sort by order if all items have an order property
   if (items.length > 0 && items.every(item => 'order' in item.data)) {
     items.sort((a, b) => {

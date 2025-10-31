@@ -1,14 +1,23 @@
 import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
+  esbuild: {
+    jsxFactory: 'React.createElement',
+    jsxFragment: 'React.Fragment'
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src')
     }
   },
   test: {
-    environment: 'node',
-    include: ['tests/unit/**/*.spec.ts']
-  }
+    environment: 'jsdom',
+    include: ['tests/unit/**/*.spec.ts'],
+    setupFiles: ['./tests/unit/setup.ts']
+  },
+  build: {
+    sourcemap: true
+  },
+  plugins: []
 })

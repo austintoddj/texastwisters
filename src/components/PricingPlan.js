@@ -1,5 +1,5 @@
-import checkmark from '/public/images/illustrations/checkmark.svg'
 import { Button } from '@/components/Button'
+import checkmark from '@/images/illustrations/checkmark.svg'
 import clsx from 'clsx'
 import Image from 'next/image'
 

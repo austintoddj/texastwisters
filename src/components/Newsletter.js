@@ -1,6 +1,6 @@
-import arrow from '/public/images/illustrations/arrow-down.svg'
-import dotsChaos from '/public/images/illustrations/dots-chaos.svg'
 import { Icon } from '@/components/Icon'
+import arrow from '@/images/illustrations/arrow-down.svg'
+import dotsChaos from '@/images/illustrations/dots-chaos.svg'
 import { getAllItems } from '@/lib/getItems'
 import Image from 'next/image'
 
@@ -23,9 +23,9 @@ export const Newsletter = () => {
           </h2>
           <div className="relative">
             <p className="mt-3 max-w-lg text-center text-lg leading-relaxed text-purple-50 lg:mt-4 lg:text-left lg:text-xl">
-              Don't miss out on your child's education. We send information on
-              important events and dates to our parents once a month. Sign up
-              below!
+              Don&apos;t miss out on your child&apos;s education. We send
+              information on important events and dates to our parents once a
+              month. Sign up below!
             </p>
             {/* Arrow to newsletter */}
             <Image

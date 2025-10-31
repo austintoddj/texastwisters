@@ -1,9 +1,9 @@
 'use client'
 
-import gymnast from '/public/images/illustrations/gymnast.svg'
-import highlight from '/public/images/illustrations/underline-simple-light-purple.svg'
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import gymnast from '@/images/illustrations/gymnast.svg'
+import highlight from '@/images/illustrations/underline-simple-light-purple.svg'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Image from 'next/image'

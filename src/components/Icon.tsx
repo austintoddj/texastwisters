@@ -1,5 +1,6 @@
 import {
   IconAlertCircleFilled,
+  IconArrowNarrowLeft,
   IconArrowNarrowRight,
   IconArticle,
   IconBell,
@@ -59,6 +60,7 @@ const iconOptions = {
   ratio: IconChartPie,
   mail: IconMail,
   phone: IconPhone,
+  arrowNarrowLeft: IconArrowNarrowLeft,
   arrowNarrowRight: IconArrowNarrowRight,
   chevronsRight: IconChevronsRight,
   chevronRight: IconChevronRight,

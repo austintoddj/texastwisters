@@ -1,10 +1,10 @@
 'use client'
 
-import arrow from '/public/images/illustrations/arrow-right-over.svg'
-import dotsGrid from '/public/images/illustrations/dots-large-grid.svg'
 import { Button } from '@/components/Button'
 import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
+import arrow from '@/images/illustrations/arrow-right-over.svg'
+import dotsGrid from '@/images/illustrations/dots-large-grid.svg'
 import { EVENT_IDS, EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import clsx from 'clsx'
@@ -91,8 +91,8 @@ export const ParentsHero = () => {
           </div>
           <p className="max-w-2xl mt-3 text-xl leading-loose text-purple-800 sm:mt-4">
             Check out different resources to keep you up-to-date with everything
-            going on at Texas Twisters. We know you're busy, we'll help you keep
-            it simple!
+            going on at Texas Twisters. We know you&apos;re busy, we&apos;ll
+            help you keep it simple!
           </p>
           {/* Enroll CTA*/}
           <div className="mt-10 font-semibold lg:mt-12">

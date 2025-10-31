@@ -23,8 +23,8 @@ export const Testimonials = () => {
             See what parents are saying about us
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-xl leading-relaxed text-purple-50">
-            We care about your experience at Texas Twisters. Whether you're a
-            gymnast or a parent of one, you deserve the best we can offer.
+            We care about your experience at Texas Twisters. Whether you&apos;re
+            a gymnast or a parent of one, you deserve the best we can offer.
           </p>
         </div>
         <div className="w-full inline-flex flex-nowrap overflow-hidden mt-12 md:mt-14 lg:mt-16 xl:mt-20 2xl:mt-24">
@@ -60,7 +60,7 @@ export const Testimonials = () => {
                     ))}
                   </div>
                   <p className="mt-5 text-lg text-purple-800">
-                    "{item.data.testimonial}"
+                    &ldquo;{item.data.testimonial}&rdquo;
                   </p>
                 </blockquote>
               </li>
@@ -101,7 +101,7 @@ export const Testimonials = () => {
                     ))}
                   </div>
                   <p className="mt-5 text-lg text-purple-800">
-                    "{item.data.testimonial}"
+                    &ldquo;{item.data.testimonial}&rdquo;
                   </p>
                 </blockquote>
               </li>

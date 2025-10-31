@@ -1,5 +1,5 @@
-import image from '/public/images/about/values.jpg'
-import checkmark from '/public/images/illustrations/checkmark.svg'
+import image from '@/images/about/values.jpg'
+import checkmark from '@/images/illustrations/checkmark.svg'
 import Image from 'next/image'
 
 const values = [

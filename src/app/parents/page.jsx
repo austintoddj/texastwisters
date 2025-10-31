@@ -1,6 +1,5 @@
 import { CallToAction } from '@/components/CallToAction'
 import { Events } from '@/components/Events'
-/* eslint-disable-next-line */
 import { Newsletter } from '@/components/Newsletter'
 import { ParentsHero } from '@/components/ParentsHero'
 

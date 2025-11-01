@@ -12,10 +12,11 @@ export default function NotFound() {
         <div className="mx-auto max-w-xl lg:grid lg:max-w-(--breakpoint-xl) lg:grid-cols-2 lg:gap-10 xl:gap-32">
           {/* Hero header */}
           <div className="relative py-16 lg:py-32">
-            <Eyebrow text="404 Error" />
+            {/* Keep a clear, test-friendly label for 404 pages */}
+            <Eyebrow text="Page Not Found" />
 
             <h1 className="max-w-md mt-4 text-purple-900 h1">
-              We didn't stick the landing.
+              We didn&apos;t stick the landing.
             </h1>
             <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
               The page you&apos;re looking for doesn&apos;t exist. Head back to

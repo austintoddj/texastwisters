@@ -3,19 +3,6 @@ import { expect, test } from '@playwright/test'
 // Static top-level routes
 const routes = ['/', '/about', '/parents', '/policies', '/contact']
 
-// Program slugs (from src/data/programs/*.md)
-const programSlugs = [
-  'adult',
-  'camp',
-  'homeschool',
-  'open-gym',
-  'parties-events',
-  'preschool',
-  'recreational',
-  'team',
-  'tumbling'
-]
-
 test.describe('Navigation', () => {
   test.describe('Desktop Navigation', () => {
     test.beforeEach(async ({ page }) => {
@@ -50,10 +37,12 @@ test.describe('Navigation', () => {
       // Click first program link
       const firstProgramLink = dropdown.locator('a').first()
       const href = await firstProgramLink.getAttribute('href')
+      // Ensure href is defined before using it in toHaveURL
+      expect(href).toBeTruthy()
       await firstProgramLink.click()
 
       // Check navigation
-      await expect(page).toHaveURL(href)
+      await expect(page).toHaveURL(href as string)
 
       // Note: Programs button doesn't have special active state on program pages
     })
@@ -114,10 +103,12 @@ test.describe('Navigation', () => {
         .locator('.absolute.inset-x-0.top-0.z-40 a[href^="/programs/"]')
         .first()
       const href = await firstProgramLink.getAttribute('href')
+      // Ensure href is defined before using it in toHaveURL
+      expect(href).toBeTruthy()
       await firstProgramLink.click()
 
       // Check navigation
-      await expect(page).toHaveURL(href)
+      await expect(page).toHaveURL(href as string)
 
       // Menu should close
       await expect(popover).not.toBeVisible()

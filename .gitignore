@@ -12,3 +12,5 @@ npm-debug.log*
 sitemap*.xml
 robots.txt
 ci-artifacts/
+tsconfig.tsbuildinfo
+*.tsbuildinfo

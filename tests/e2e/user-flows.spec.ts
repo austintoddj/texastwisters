@@ -1,4 +1,7 @@
+import { getProgramSlugs } from './utils'
 import { expect, test } from '@playwright/test'
+
+const programSlugs = getProgramSlugs()
 
 test.describe('Critical User Flows', () => {
   test.describe('Contact Form Completion Flow', () => {
@@ -111,7 +114,8 @@ test.describe('Critical User Flows', () => {
 
     test('program page displays complete information', async ({ page }) => {
       // Test a specific program page
-      await page.goto('/programs/recreational')
+      const slug = programSlugs[0] || 'recreational' // fallback if empty
+      await page.goto(`/programs/${slug}`)
 
       // Verify hero section
       const heroHeadline = page.locator('h1, .h1').first()
@@ -144,9 +148,7 @@ test.describe('Critical User Flows', () => {
     })
 
     test('navigate between different program pages', async ({ page }) => {
-      const programs = ['recreational', 'preschool', 'team']
-
-      for (const program of programs) {
+      for (const program of programSlugs) {
         await page.goto(`/programs/${program}`)
 
         // Verify page loaded correctly
@@ -209,7 +211,8 @@ test.describe('Critical User Flows', () => {
 
     test('program pages are mobile-friendly', async ({ page }) => {
       await page.setViewportSize({ width: 375, height: 667 })
-      await page.goto('/programs/recreational')
+      const slug = programSlugs[0] || 'recreational' // fallback if empty
+      await page.goto(`/programs/${slug}`)
 
       // Verify hero section loads
       const heroHeadline = page.locator('h1, .h1').first()

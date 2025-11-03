@@ -1,5 +1,6 @@
 import {
   IconAlertCircleFilled,
+  IconArrowNarrowLeft,
   IconArrowNarrowRight,
   IconArticle,
   IconBell,
@@ -59,6 +60,7 @@ const iconOptions = {
   ratio: IconChartPie,
   mail: IconMail,
   phone: IconPhone,
+  arrowNarrowLeft: IconArrowNarrowLeft,
   arrowNarrowRight: IconArrowNarrowRight,
   chevronsRight: IconChevronsRight,
   chevronRight: IconChevronRight,
@@ -100,9 +102,18 @@ const iconOptions = {
   info: IconInfoCircleFilled
 }
 
-export const Icon = ({ icon, className = '', stroke = 1.5 }) => {
+type IconName = keyof typeof iconOptions
+
+interface IconProps {
+  icon?: IconName | string
+  className?: string
+  stroke?: number
+}
+
+export const Icon = ({ icon, className = '', stroke = 1.5 }: IconProps) => {
   const iconName = icon || Object.keys(iconOptions)[0]
-  const IconSVG = iconOptions[iconName]
+  const IconSVG =
+    iconOptions[iconName as IconName] || iconOptions.alertCircleFilled
 
   return <IconSVG className={`${className}`} stroke={stroke} />
 }

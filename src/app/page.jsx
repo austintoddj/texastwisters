@@ -16,8 +16,8 @@ export const metadata = {
   }
 }
 
-export default function HomePage() {
-  const faqs = getAllItems('faqs')
+export default async function HomePage() {
+  const faqs = await getAllItems('faqs')
 
   return (
     <>

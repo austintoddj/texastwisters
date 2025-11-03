@@ -80,17 +80,17 @@ export const HomeHero = () => {
                 stroke={2}
               />
             </Button>
-            {/*<Button*/}
-            {/*    variant="secondary"*/}
-            {/*    className="mt-6 sm:mt-0 sm:ml-6"*/}
-            {/*    onClick={() => openModal()}*/}
-            {/*>*/}
-            {/*    <Icon*/}
-            {/*        icon="playFilled"*/}
-            {/*        className="mr-3 text-purple-600 duration-300 ease-in-out w-7 h-7 group-hover:text-purple-50"*/}
-            {/*    />*/}
-            {/*    Watch video*/}
-            {/*</Button>*/}
+            <Button
+                variant="secondary"
+                className="mt-6 sm:mt-0 sm:ml-6"
+                onClick={() => openModal()}
+            >
+                <Icon
+                    icon="playFilled"
+                    className="mr-3 text-purple-600 duration-300 ease-in-out w-7 h-7 group-hover:text-purple-50"
+                />
+                Watch video
+            </Button>
           </div>
           {/* Social proof */}
           <p className="hidden text-sm font-medium tracking-wider text-purple-900 uppercase sm:block lg:hidden xl:block mt-14">

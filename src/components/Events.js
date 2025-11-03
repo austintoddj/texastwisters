@@ -10,8 +10,8 @@ const eventColors = [
   'bg-teal-50'
 ]
 
-export const Events = () => {
-  const events = getAllItems('events')
+export const Events = async () => {
+  const events = await getAllItems('events')
 
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

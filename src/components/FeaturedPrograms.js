@@ -72,8 +72,9 @@ const ProgramCard = ({ program, index }) => (
   </div>
 )
 
-export const FeaturedPrograms = () => {
-  const featuredPrograms = getAllItems('programs')
+export const FeaturedPrograms = async () => {
+  const allPrograms = await getAllItems('programs')
+  const featuredPrograms = allPrograms
     .filter(program => program.data.featured)
     .slice(0, 3)
 

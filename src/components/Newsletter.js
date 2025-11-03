@@ -4,8 +4,8 @@ import dotsChaos from '@/images/illustrations/dots-chaos.svg'
 import { getAllItems } from '@/lib/getItems'
 import Image from 'next/image'
 
-export const Newsletter = () => {
-  const newsletters = getAllItems('newsletters')
+export const Newsletter = async () => {
+  const newsletters = await getAllItems('newsletters')
 
   return (
     <section className="relative bg-purple-600 py-16 sm:py-20 lg:py-24">

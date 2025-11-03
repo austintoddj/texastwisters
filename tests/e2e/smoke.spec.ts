@@ -1,49 +1,55 @@
-import { expect, test } from '@playwright/test'
-
-// Static top-level routes
-const routes = ['/', '/about', '/parents', '/policies', '/contact']
+import { getProgramSlugs } from './utils'
+import { Page, expect, test } from '@playwright/test'
 
 // Program slugs (from src/data/programs/*.md)
-const programSlugs = [
-  'adult',
-  'camp',
-  'homeschool',
-  'open-gym',
-  'parties-events',
-  'preschool',
-  'recreational',
-  'team',
-  'tumbling'
-]
+const programSlugs = getProgramSlugs()
 
-function basicSmokeAssertions(page) {
+async function basicSmokeAssertions(page: Page) {
   // Ensure the response was ok and basic layout elements exist
-  return Promise.all([
-    expect(page.locator('header, [role="banner"]')).toHaveCount(1),
-    expect(page.locator('footer, [role="contentinfo"]')).toHaveCount(1),
-    (async () => {
-      const c = await page.locator('h1, h2, [role="main"]').count()
-      expect(c).toBeGreaterThan(0)
-    })()
-  ])
+  await expect(page.locator('header, [role="banner"]')).toHaveCount(1)
+  await expect(page.locator('footer, [role="contentinfo"]')).toHaveCount(1)
+  const c = await page.locator('h1, h2, [role="main"]').count()
+  expect(c).toBeGreaterThan(0)
 }
 
-for (const route of routes) {
-  test.describe(`Smoke: ${route}`, () => {
-    test(`loads ${route}`, async ({ page }) => {
-      const res = await page.goto(route)
-      expect(res && res.ok()).toBeTruthy()
-
-      await basicSmokeAssertions(page)
-    })
+// Static smoke tests for top-level routes
+test.describe('Smoke Tests', () => {
+  test('loads homepage', async ({ page }) => {
+    const res = await page.goto('/')
+    expect(res && res.ok()).toBeTruthy()
+    await basicSmokeAssertions(page)
   })
-}
 
-for (const slug of programSlugs) {
-  const route = `/programs/${slug}`
-  test.describe(`Programs smoke: ${route}`, () => {
-    test(`loads ${route}`, async ({ page }) => {
-      const res = await page.goto(route)
+  test('loads about page', async ({ page }) => {
+    const res = await page.goto('/about')
+    expect(res && res.ok()).toBeTruthy()
+    await basicSmokeAssertions(page)
+  })
+
+  test('loads parents page', async ({ page }) => {
+    const res = await page.goto('/parents')
+    expect(res && res.ok()).toBeTruthy()
+    await basicSmokeAssertions(page)
+  })
+
+  test('loads policies page', async ({ page }) => {
+    const res = await page.goto('/policies')
+    expect(res && res.ok()).toBeTruthy()
+    await basicSmokeAssertions(page)
+  })
+
+  test('loads contact page', async ({ page }) => {
+    const res = await page.goto('/contact')
+    expect(res && res.ok()).toBeTruthy()
+    await basicSmokeAssertions(page)
+  })
+})
+
+// Dynamic program smoke tests
+test.describe('Program Smoke Tests', () => {
+  for (const slug of programSlugs) {
+    test(`loads /programs/${slug}`, async ({ page }) => {
+      const res = await page.goto(`/programs/${slug}`)
       expect(res && res.ok()).toBeTruthy()
 
       // Program pages should show a title and core layout
@@ -52,8 +58,8 @@ for (const slug of programSlugs) {
       expect(titleCount).toBeGreaterThan(0)
     })
 
-    test(`displays program content correctly`, async ({ page }) => {
-      await page.goto(route)
+    test(`displays ${slug} program content correctly`, async ({ page }) => {
+      await page.goto(`/programs/${slug}`)
 
       // Check for program title (hero headline)
       const heroHeadline = page.locator('h2.h1, .h1').first()
@@ -95,18 +101,18 @@ for (const slug of programSlugs) {
         expect(naturalWidth).toBeGreaterThan(0)
       }
     })
-  })
-}
+  }
+})
 
 test.describe('Error Handling', () => {
   test('displays 404 page for non-existent routes', async ({ page }) => {
     const res = await page.goto('/non-existent-page')
     expect(res?.status()).toBe(404)
 
-    // Check for 404 content - Next.js default 404 page
-    await expect(page.locator('text=404')).toBeVisible()
+    // Check for custom 404 content
+    await expect(page.locator('text=Page Not Found')).toBeVisible()
     await expect(
-      page.locator('text=This page could not be found')
+      page.locator("text=The page you're looking for doesn't exist")
     ).toBeVisible()
   })
 
@@ -114,8 +120,8 @@ test.describe('Error Handling', () => {
     const res = await page.goto('/programs/invalid-slug')
     expect(res?.status()).toBe(404)
 
-    // Should show 404 page
-    await expect(page.locator('text=404')).toBeVisible()
+    // Should show custom 404 page
+    await expect(page.locator('text=Page Not Found')).toBeVisible()
   })
 
   test('handles malformed URLs gracefully', async ({ page }) => {

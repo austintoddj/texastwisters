@@ -3,33 +3,30 @@ import { CallToAction } from '@/components/CallToAction'
 import { Eyebrow } from '@/components/Eyebrow'
 import { Icon } from '@/components/Icon'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function NotFound() {
   return (
     <>
       <section className="px-4 pt-16 bg-linear-to-b from-purple-25 via-purple-25 to-white sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-xl lg:grid lg:max-w-(--breakpoint-xl) lg:grid-cols-2 lg:gap-10 xl:gap-32">
+        <div className="mx-auto max-w-(--breakpoint-xl) lg:grid lg:grid-cols-12 lg:gap-8">
           {/* Hero header */}
-          <div className="relative py-16 lg:py-32">
+          <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start py-16 lg:py-32">
             {/* Keep a clear, test-friendly label for 404 pages */}
-            <Eyebrow text="Page Not Found" />
+            <div className="block">
+              <Eyebrow text="Page Not Found" />
+            </div>
 
-            <h1 className="max-w-md mt-4 text-purple-900 h1">
+            <h1 className="max-w-md mt-4 text-center lg:text-left text-purple-900 h1">
               We didn&apos;t stick the landing.
             </h1>
-            <p className="max-w-lg mt-3 text-xl leading-relaxed text-purple-800">
+            <p className="max-w-lg mt-3 text-xl leading-relaxed text-center lg:text-left text-purple-800">
               The page you&apos;re looking for doesn&apos;t exist. Head back to
               the homepage to see our class schedule or contact us for help.
             </p>
 
-            <div className="flex flex-col items-center mt-8 overflow-hidden sm:flex-row">
-              <Button
-                href="/"
-                variant="primary"
-                size="lg"
-                className="px-10 py-4 text-xl"
-              >
+            {/* Hero buttons (mirror HomeHero) */}
+            <div className="flex flex-col items-center mt-8 overflow-hidden sm:flex-row sm:justify-center">
+              <Button href="/" size="lg" className="w-full sm:w-48">
                 <span className="inline-flex items-center">
                   <Icon
                     icon="arrowNarrowLeft"
@@ -39,11 +36,12 @@ export default function NotFound() {
                 </span>
                 Go back home
               </Button>
+
               <Button
-                href="/contact"
                 variant="secondary"
+                className="w-full sm:w-48 mt-6 sm:mt-0 sm:ml-6"
                 size="lg"
-                className="mt-6 px-10 py-4 text-xl sm:mt-0 sm:ml-6"
+                href="/contact"
               >
                 Contact us
               </Button>
@@ -51,7 +49,7 @@ export default function NotFound() {
           </div>
 
           {/* Illustration */}
-          <div className="relative hidden sm:flex items-center justify-center py-8 lg:py-0">
+          <div className="relative hidden sm:flex items-center justify-center py-8 lg:py-0 lg:col-span-6">
             {/* Background decorative elements */}
             <div className="absolute inset-0 flex items-center justify-center">
               {/* Large background blob */}

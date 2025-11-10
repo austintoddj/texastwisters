@@ -53,6 +53,6 @@
     "start-server-and-test": "^2.1.2",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.5"
+    "vitest": "^4.0.8"
   }
 }

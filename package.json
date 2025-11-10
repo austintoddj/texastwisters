@@ -25,7 +25,7 @@
     "next": "^16.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "sharp": "^0.34.1",
+    "sharp": "^0.34.5",
     "zod": "^4.1.12"
   },
   "devDependencies": {
@@ -40,8 +40,8 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.0",
     "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
-    "@vitest/coverage-v8": "^4.0.5",
-    "eslint": "^9.39.0",
+    "@vitest/coverage-v8": "^4.0.8",
+    "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.1",
     "eslint-formatter-unix": "^9.0.1",
     "jsdom": "^27.0.1",
@@ -51,7 +51,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "start-server-and-test": "^2.1.2",
-    "tailwindcss": "^4.1.5",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "vitest": "^4.0.8"
   }

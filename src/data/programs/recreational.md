@@ -44,6 +44,18 @@ pricingSection:
   headline: Sign up today!
   text: Enroll at any time during the year to reserve your spot in the class. Looking to practice than once a week? Ask us about our multi-class discounts!
   pricing:
+    - name: Intro to Beginner
+      price: $85
+      interval: per month
+      shortDescription: Classes offered Mon - Sat
+      features:
+        - feature: No experience required
+        - feature: 45 minute all-girls classes
+        - feature: 5-year-olds only
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?q=Intro%20to%20Beginner&levels=4&programs=16'
+        icon: true
     - name: Girls Gymnastics Class
       badge: 'Most popular'
       price: $100
@@ -52,7 +64,7 @@ pricingSection:
       features:
         - feature: Beginner to Advanced
         - feature: All-girls class
-        - feature: Ages 5 - 17 (9+ classes available)
+        - feature: Ages 6 - 17 (9+ classes available)
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?genders=0&programs=16'

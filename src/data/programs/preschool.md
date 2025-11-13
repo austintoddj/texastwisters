@@ -15,7 +15,7 @@ hero:
 infoSection:
   headline: A program designed to help your child learn
   text: This fun, fast-paced class teaches the fundamental skills of gymnastics. Children work on gross motor skills and body awareness as well as group participation activities.
-  ages: 2 years - 5 years
+  ages: 1 years - 5 years
   levels: Preschool
   duration: 45 minutes
   classSize: 6:1 student to coach ratio

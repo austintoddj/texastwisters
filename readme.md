@@ -1,6 +1,5 @@
 # texastwistersgym.com
 
-[![build](https://github.com/austintoddj/texastwisters/actions/workflows/build.yml/badge.svg)](https://github.com/austintoddj/texastwisters/actions/workflows/build.yml)
 [![tests](https://github.com/austintoddj/texastwisters/actions/workflows/tests.yml/badge.svg)](https://github.com/austintoddj/texastwisters/actions/workflows/tests.yml)
 
 ## Introduction

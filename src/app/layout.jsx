@@ -8,6 +8,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
+import { EVENT_IDS } from '@/utils/tracking'
 import { Roboto_Flex } from 'next/font/google'
 
 const roboto = Roboto_Flex({

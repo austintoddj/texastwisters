@@ -25,9 +25,9 @@ export function AboutHero() {
             About Texas Twisters Gymnastics
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-xl leading-relaxed text-purple-800 sm:mt-5">
-            We are dedicated to provide a safe, fun, and challenging environment
-            where athletes of any age can grow and develop in the world of
-            gymnastics.
+            We are committed to providing a safe, fun, and challenging
+            environment where athletes of any age can grow and develop in the
+            world of gymnastics.
           </p>
         </div>
         {/* Family images grid */}

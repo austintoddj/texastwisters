@@ -29,17 +29,6 @@ npm run test:unit
 npm run test:e2e
 ```
 
-### Environment Variables
-
-This project requires several environment variables to be configured. Copy `.env.example` to `.env.local` and fill in the required values:
-
-- `NEXT_PUBLIC_DOMAIN_URL`: Your domain name (e.g., texastwistersgym.com)
-- `SENDGRID_API_KEY`: Your SendGrid API key for email functionality
-- `SENDGRID_FROM_EMAIL`: Verified sender email in SendGrid
-- `SENDGRID_TO_EMAIL`: Email address to receive contact form submissions
-
-For production deployment on Vercel, set these variables in your Vercel project settings.
-
 ## License
 
 This project is not licensed under an open-source license and is the intellectual property of Texas Twisters Gymnastics, LLC. The source is available only as an educational resource and to accept fixes for minor mistakes.

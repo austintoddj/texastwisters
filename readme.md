@@ -20,6 +20,15 @@ cp .env.example .env.local
 npm run dev # dev server at http://localhost:3000
 ```
 
+## Testing
+
+Run the tests with:
+
+```bash
+npm run test:unit
+npm run test:e2e
+```
+
 ### Environment Variables
 
 This project requires several environment variables to be configured. Copy `.env.example` to `.env.local` and fill in the required values:

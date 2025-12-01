@@ -1,4 +1,3 @@
-import { Banner } from '@/components/Banner'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -8,7 +7,6 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
-import { EVENT_IDS } from '@/utils/tracking'
 import { Roboto_Flex } from 'next/font/google'
 
 const roboto = Roboto_Flex({
@@ -58,13 +56,6 @@ export default async function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
-          icon="calendar"
-          content="Happy Thanksgiving! We will be closed From November 27 - 29, classes will resume the following Monday."
-          href="https://portal.iclasspro.com/texastwisters/news/2"
-          color="purple"
-        />
       </body>
     </html>
   )

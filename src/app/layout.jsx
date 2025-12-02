@@ -8,6 +8,8 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
+import { Banner } from '@/components/Banner'
+import { EVENT_IDS } from '@/utils/tracking'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],
@@ -56,6 +58,13 @@ export default async function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
+        <Banner
+          event={EVENT_IDS.BANNER_CTA_LIFE_OF_A_GYMNAST}
+          icon="confetti"
+          content="Calling all Swifties! Reserve your spot for Taylor Swift Girls Night Out on December 13th – space is limited!"
+          href="https://www.facebook.com/events/1152156487130620"
+          color="purple"
+        />
       </body>
     </html>
   )

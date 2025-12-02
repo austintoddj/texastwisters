@@ -21,6 +21,8 @@ import {
   IconChevronsRight,
   IconChristmasTree,
   IconClock,
+  IconConfetti,
+  IconConfettiFilled,
   IconExternalLink,
   IconFileCertificate,
   IconFlag,
@@ -32,6 +34,8 @@ import {
   IconMail,
   IconMailFilled,
   IconMapPin,
+  IconMicrophone,
+  IconMicrophone2,
   IconMoodKid,
   IconOlympics,
   IconPhone,
@@ -101,7 +105,10 @@ const iconOptions = {
   sparkles: IconSparkles,
   youtube: IconBrandYoutube,
   gymnastics: IconGymnastics,
-  info: IconInfoCircleFilled
+  info: IconInfoCircleFilled,
+  confettiFilled: IconConfettiFilled,
+  confetti: IconConfetti,
+  microphone: IconMicrophone2
 }
 
 type IconName = keyof typeof iconOptions

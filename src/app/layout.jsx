@@ -62,7 +62,7 @@ export default async function RootLayout({ children }) {
           event={EVENT_IDS.BANNER_CTA_LIFE_OF_A_GYMNAST}
           icon="confetti"
           content="Calling all Swifties! Reserve your spot for Taylor Swift Girls Night Out on December 13th – space is limited!"
-          href="https://www.facebook.com/events/1152156487130620"
+          href="https://portal.iclasspro.com/texastwisters/camp-details/1856"
           color="purple"
         />
       </body>

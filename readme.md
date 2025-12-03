@@ -16,8 +16,7 @@ The texastwistersgym.com site is a [Next.js](https://nextjs.org) scaffolded proj
 ```bash
 npm install
 cp .env.example .env.local
-# Edit .env.local with your actual values
-npm run dev # dev server at http://localhost:3000
+npm run dev
 ```
 
 ## Testing

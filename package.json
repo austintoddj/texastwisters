@@ -44,7 +44,7 @@
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.1",
     "eslint-formatter-unix": "^9.0.1",
-    "jsdom": "^27.0.1",
+    "jsdom": "^27.4.0",
     "next-sitemap": "^4.2.3",
     "node-mocks-http": "^1.11.0",
     "postcss": "^8.4.47",

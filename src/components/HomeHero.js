@@ -51,7 +51,7 @@ export const HomeHero = () => {
         {/* Hero text content */}
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           <div className="block">
-            <Eyebrow text="Registration fees waived through 2025!" />
+            <Eyebrow text="New classes available - sign up today!" />
           </div>
           <h1 className="max-w-xl mt-4 text-center text-purple-900 h1 sm:mt-5 lg:max-w-none lg:text-left">
             Welcome to Texas Twisters Gymnastics!

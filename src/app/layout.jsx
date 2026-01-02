@@ -8,8 +8,6 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
 import { Roboto_Flex } from 'next/font/google'
-import { Banner } from '@/components/Banner'
-import { EVENT_IDS } from '@/utils/tracking'
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],
@@ -58,13 +56,6 @@ export default async function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
-        <Banner
-          event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
-          icon="calendar"
-          content="Happy Holidays! We will be closed From December 24 - January 1, classes will resume the following day."
-          href="https://portal.iclasspro.com/texastwisters/news/2"
-          color="purple"
-        />
       </body>
     </html>
   )

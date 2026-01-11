@@ -25,13 +25,15 @@ interface BaseButtonProps {
 }
 
 interface ButtonAsButtonProps
-  extends BaseButtonProps,
+  extends
+    BaseButtonProps,
     Omit<ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseButtonProps> {
   href?: never
 }
 
 interface ButtonAsLinkProps
-  extends BaseButtonProps,
+  extends
+    BaseButtonProps,
     Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof BaseButtonProps> {
   href: string
 }

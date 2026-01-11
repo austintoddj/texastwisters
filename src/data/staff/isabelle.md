@@ -1,6 +1,6 @@
 ---
 name: Coach Isabelle
-role: Gymnastics Coach
+role: Floor Manager
 image: '/images/staff/isabelle.jpg'
-priority: 4
+priority: 2
 ---

@@ -50,7 +50,7 @@ pricingSection:
       badge: 'Most popular'
       price: $100
       interval: per month
-      shortDescription: Monday & Tuesday at 8 PM
+      shortDescription: Tuesday at 8 PM
       features:
         - feature: No experience required!
         - feature: Co-ed classes
@@ -72,16 +72,28 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=57'
         icon: true
     - name: Adult Open Gym
-      price: $20
+      price: $15
       interval: per drop-in
       shortDescription: Monday at 8 PM
       features:
-        - feature: 2 hour open gym
+        - feature: 1 1/2 hour open gym
         - feature: Coach-supervised
         - feature: Ages 18 and up
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/camps/2'
+        icon: true
+    - name: Adult Open Gym Membership
+      price: $50
+      interval: per month
+      shortDescription: Monday at 8 PM
+      features:
+        - feature: Month to month enrollment
+        - feature: Cancel anytime
+        - feature: Ages 18 and up
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/class-details/326'
         icon: true
 # comingSoonHero:
 #   eyebrow: Coming Soon!

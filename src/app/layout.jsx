@@ -1,7 +1,7 @@
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { Banner } from '@/componentsBanner'
+import { Banner } from '@/components/Banner'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
 import { EVENT_IDS } from '@/utils/tracking'

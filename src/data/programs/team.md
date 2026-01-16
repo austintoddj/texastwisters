@@ -5,7 +5,7 @@ featured: true
 hero:
   headline: Texas Twisters Team
   description: Tryouts are open for our competitive gymnastics program. The goal of our team program is to provide high caliber gymnasts the opportunity to refine and display their skills at USAG regulated meets.
-  text: Our team includes Levels 1 - 5 of the Development program and is designed to provide high caliber gymnasts the opportunity to train and compete at USAG regulated meets statewide.
+  text: Our team includes Levels 1 - 6 of the Development program and is designed to provide high caliber gymnasts the opportunity to train and compete at USAG regulated meets statewide.
   action:
     label: Contact us
     href: '/contact'
@@ -47,38 +47,63 @@ pricingSection:
   headline: Call us today!
   text: All levels are by invitation only. Contact us to schedule a tryout, or to learn more about our team program.
   pricing:
-    - name: Level 2
+    - name: Level 1
       price: $150
       interval: per month
-      shortDescription: Tuesday & Saturday
+      shortDescription: Monday
       features:
         - feature: USAG Membership required
         - feature: Annual membership fee
-        - feature: 2 meets per season
+        - feature: 3 meets per season
       action:
         label: Contact us
         href: '/contact'
         icon: true
-    - name: Level 3
-      price: $240
+    - name: Level 2
+      price: $225
       interval: per month
       shortDescription: Tuesday & Thursday
       features:
         - feature: USAG Membership required
         - feature: Annual membership fee
         - feature: 4 meets per season
+      action:
+        label: Contact us
+        href: '/contact'
+        icon: true
+    - name: Level 3
+      price: $250
+      interval: per month
+      shortDescription: Monday & Wednesday
+      features:
+        - feature: USAG Membership required
+        - feature: Annual membership fee
+        - feature: 5 meets per season
         - feature: Custom Team apparel
       action:
         label: Contact us
         href: '/contact'
         icon: true
-    - name: Level 4 & 5
+    - name: Level 4
       price: $275
       interval: per month
       shortDescription: Tuesday & Thursday
       features:
         - feature: Includes all fees and memberships as previous levels
-        - feature: 6 meets per season
+        - feature: 5 meets per season
+        - feature: Custom Team apparel
+        - feature: Optional additional practice day
+      action:
+        label: Contact us
+        href: '/contact'
+        icon: true
+    - name: Level 5 & 6
+      price: $350
+      interval: per month
+      shortDescription: Tuesday, Thursday & Saturday
+      features:
+        - feature: Includes all fees and memberships as previous levels
+        - feature: 5 meets per season
         - feature: Custom Team apparel
         - feature: Optional additional practice day
       action:
@@ -90,7 +115,7 @@ pricingSection:
       interval: per month
       shortDescription: Monday
       features:
-        - feature: Prep for Level 2 Team
+        - feature: Competition prep team
         - feature: Practice 1 hr/wk
         - feature: Ages 4 - 7
         - feature: By invitation only

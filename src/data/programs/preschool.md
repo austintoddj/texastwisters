@@ -83,18 +83,6 @@ pricingSection:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?ages=4&programs=17'
         icon: true
-    - name: Mini-Men
-      price: $85
-      interval: per month
-      shortDescription: Classes offered Mon & Tue
-      features:
-        - feature: Ages 4 - 5
-        - feature: Boys only classes
-        - feature: Strength, conditioning and skills
-      action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=17'
-        icon: true
     - name: Preschool Open Gym
       price: $10
       interval: per drop-in

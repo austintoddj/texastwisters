@@ -88,15 +88,15 @@ pricingSection:
         href: 'https://portal.iclasspro.com/texastwisters/camps/6'
         icon: true
     - name: Adult Open Gym
-      price: $20
+      price: $15
       interval: per drop-in
       shortDescription: Monday at 8 PM
       features:
-        - feature: 8:00 PM - 10:00 PM
+        - feature: 1 1/2 hour open gym
+        - feature: Coach-supervised
         - feature: Ages 18 and up
-        - feature: Pre-registration required
       action:
-        label: Reserve today
+        label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/camps/2'
         icon: true
 ---

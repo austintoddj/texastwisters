@@ -56,41 +56,41 @@ pricingSection:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?q=Intro%20to%20Beginner&levels=4&programs=16'
         icon: true
-    - name: Girls Gymnastics Class
+    - name: Beginner Gymnastics
       badge: 'Most popular'
       price: $100
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
-        - feature: Beginner to Advanced
+        - feature: No experience required
         - feature: All-girls class
         - feature: Ages 6 - 17 (9+ classes available)
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=0&programs=16'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=4&programs=16'
         icon: true
-    - name: Mighty Men
+    - name: Intermediate Gymnastics
       price: $100
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
-        - feature: No experience required
-        - feature: All-boys class
-        - feature: Ages 6 - 17
-      action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&programs=16'
-        icon: true
-    - name: Boys Gymnastics Class
-      price: $100
-      interval: per month
-      shortDescription: Classes offered Mon - Sat
-      features:
-        - feature: Intermediate & Advanced
         - feature: Some experience required
-        - feature: Ages 5 - 17
+        - feature: All-girls class
+        - feature: Ages 6 - 17 (9+ classes available)
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?genders=1&levels=3,7&programs=16'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=16'
+        icon: true
+    - name: Advanced Gymnastics
+      price: $100
+      interval: per month
+      shortDescription: Classes offered Mon - Sat
+      features:
+        - feature: Experience required
+        - feature: All-girls class
+        - feature: Ages 6 - 17 (9+ classes available)
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=3&programs=16'
         icon: true
 ---

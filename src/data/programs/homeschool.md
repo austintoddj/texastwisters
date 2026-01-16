@@ -54,8 +54,8 @@ pricingSection:
       shortDescription: Monday & Thursday
       features:
         - feature: Beginner to Advanced
-        - feature: Co-ed class
-        - feature: Ages 5 - 17
+        - feature: All-girls class
+        - feature: Ages 6 - 17
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?programs=71'

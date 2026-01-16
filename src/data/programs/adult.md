@@ -46,7 +46,7 @@ pricingSection:
   headline: Sign up today!
   text: Join us any time throughout the year, but don't forget to reserve your spot in the class. We look forward to welcoming you into the adult gymnastics community!
   pricing:
-    - name: Adult Beginner
+    - name: Adult Gymnastics
       badge: 'Most popular'
       price: $100
       interval: per month
@@ -58,18 +58,6 @@ pricingSection:
       action:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?levels=4&programs=57'
-        icon: true
-    - name: Adult Intermediate
-      price: $100
-      interval: per month
-      shortDescription: Tuesday at 8 PM
-      features:
-        - feature: Some experience required
-        - feature: Co-ed classes
-        - feature: Ages 18 and up
-      action:
-        label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/classes?levels=7&programs=57'
         icon: true
     - name: Adult Open Gym
       price: $15

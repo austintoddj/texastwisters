@@ -4,24 +4,35 @@ import { Icon } from '@/components/Icon'
 import { EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Link from 'next/link'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-/**
- * @param {Object} props
- * @param {string} props.icon - Icon name from the Icon component
- * @param {string} props.content - Banner content
- * @param {string} [props.href] - Optional URL for the 'Read more' link
- * @param {string} [props.color] - Optional color for the banner (default: 'purple')
- * @param {string} [props.event] - Optional event name for tracking
- */
+interface BannerProps {
+  icon: string
+  content: string
+  href?: string | null
+  color?: string
+  event?: string | null
+  expiresAt?: string | null
+}
+
 export const Banner = ({
   icon,
   content,
   href = null,
   color = 'purple',
-  event = null
-}) => {
+  event = null,
+  expiresAt = null
+}: BannerProps) => {
   const [isOpen, setIsOpen] = useState(true)
+
+  // Check if banner has expired
+  if (expiresAt) {
+    const expiryDate = new Date(expiresAt)
+    const now = new Date()
+    if (now > expiryDate) {
+      return null
+    }
+  }
 
   if (!isOpen) {
     return null

@@ -44,6 +44,7 @@ import {
   IconPlus,
   IconRun,
   IconSignature,
+  IconSnowflake,
   IconSparkles,
   IconStarFilled,
   IconStarHalfFilled,
@@ -108,7 +109,8 @@ const iconOptions = {
   info: IconInfoCircleFilled,
   confettiFilled: IconConfettiFilled,
   confetti: IconConfetti,
-  microphone: IconMicrophone2
+  microphone: IconMicrophone2,
+  snowflake: IconSnowflake
 }
 
 type IconName = keyof typeof iconOptions

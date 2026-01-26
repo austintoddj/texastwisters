@@ -61,7 +61,7 @@ export default async function RootLayout({ children }) {
         <Banner
           icon="snowflake"
           event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
-          content="Due to inclement weather, our gym will be closed for morning classes on Monday, January 26th. Classes will resume on Monday afternoon."
+          content="Due to the icy road conditions, our gym will remain closed for all classes on Monday, January 26th. Classes will resume Tuesday, January 27th."
           expiresAt="2026-01-27"
         />
       </body>

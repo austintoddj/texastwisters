@@ -62,7 +62,7 @@ export default async function RootLayout({ children }) {
           icon="snowflake"
           event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
           content="Due to the icy road conditions, our gym will remain closed for all classes on Monday, January 26th. Classes will resume Tuesday, January 27th."
-          expiresAt="2026-01-27"
+          expiresAt="2026-01-26"
         />
       </body>
     </html>

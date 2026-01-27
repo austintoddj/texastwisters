@@ -12,7 +12,16 @@ interface BannerProps {
   href?: string | null
   color?: string
   event?: string | null
-  expiresAt?: string | null
+  expiresAfter?: string | Date | null
+  ariaLabel?: string
+}
+
+const getExpiryDate = (value: BannerProps['expiresAfter']) => {
+  if (!value) {
+    return null
+  }
+  const date = value instanceof Date ? value : new Date(value)
+  return Number.isNaN(date.getTime()) ? null : date
 }
 
 export const Banner = ({
@@ -21,13 +30,14 @@ export const Banner = ({
   href = null,
   color = 'purple',
   event = null,
-  expiresAt = null
+  expiresAfter = null,
+  ariaLabel = 'Site notice'
 }: BannerProps) => {
   const [isOpen, setIsOpen] = useState(true)
 
   // Check if banner has expired
-  if (expiresAt) {
-    const expiryDate = new Date(expiresAt)
+  const expiryDate = getExpiryDate(expiresAfter)
+  if (expiryDate) {
     const now = new Date()
     if (now > expiryDate) {
       return null
@@ -42,6 +52,8 @@ export const Banner = ({
     <div className="pointer-events-none fixed inset-x-0 bottom-0 sm:px-6 sm:pb-5 lg:px-8 z-40">
       <div
         className={`bg-${color}-200 pointer-events-auto flex items-center justify-between gap-x-6 px-6 py-2.5 sm:rounded-full sm:py-3 sm:pl-4 sm:pr-3.5`}
+        role="region"
+        aria-label={ariaLabel}
       >
         <p className={`text-${color}-700 text-sm md:text-base`}>
           <Icon

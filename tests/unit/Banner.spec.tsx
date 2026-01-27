@@ -36,7 +36,11 @@ describe('Banner', () => {
 
   it('hides banner after expiration date', () => {
     render(
-      <Banner icon="calendar" content="Expired banner" expiresAt="2020-01-01" />
+      <Banner
+        icon="calendar"
+        content="Expired banner"
+        expiresAfter="2020-01-01"
+      />
     )
 
     expect(screen.queryByText('Expired banner')).not.toBeInTheDocument()
@@ -44,7 +48,11 @@ describe('Banner', () => {
 
   it('shows banner before expiration date', () => {
     render(
-      <Banner icon="calendar" content="Active banner" expiresAt="2030-01-01" />
+      <Banner
+        icon="calendar"
+        content="Active banner"
+        expiresAfter="2030-01-01"
+      />
     )
 
     expect(screen.getByText('Active banner')).toBeInTheDocument()
@@ -64,5 +72,31 @@ describe('Banner', () => {
 
     fireEvent.click(closeButton)
     expect(screen.queryByText('Closeable banner')).not.toBeInTheDocument()
+  })
+
+  it('shows banner when expiresAfter is a Date', () => {
+    render(
+      <Banner
+        icon="calendar"
+        content="Date expiry banner"
+        expiresAfter={new Date('2030-01-01')}
+      />
+    )
+
+    expect(screen.getByText('Date expiry banner')).toBeInTheDocument()
+  })
+
+  it('renders a region with an accessible label', () => {
+    render(
+      <Banner
+        icon="calendar"
+        content="Accessible banner"
+        ariaLabel="Important notice"
+      />
+    )
+
+    expect(
+      screen.getByRole('region', { name: 'Important notice' })
+    ).toBeInTheDocument()
   })
 })

@@ -1,6 +1,6 @@
 ---
 name: Coach Isabelle
-role: Floor Manager
+role: Manager, Coach
 image: '/images/staff/isabelle.jpg'
 priority: 2
 ---

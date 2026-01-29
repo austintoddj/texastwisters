@@ -1,6 +1,6 @@
 ---
 name: Coach Hailey
-role: Gymnastics Coach
+role: Receptionist, Coach
 image: '/images/staff/hailey.jpg'
-priority: 4
+priority: 5
 ---

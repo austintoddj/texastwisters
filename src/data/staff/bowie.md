@@ -1,6 +1,6 @@
 ---
 name: Coach Bowie
-role: Gymnastics Coach
+role: Preschool Coach
 image: '/images/staff/bowie.jpg'
 priority: 4
 ---

@@ -1,8 +1,10 @@
+import { Banner } from '@/components/Banner'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
+import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -56,6 +58,13 @@ export default async function RootLayout({ children }) {
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
+        <Banner
+          event={EVENT_IDS.BANNER_CTA_CAMP}
+          icon="hearts"
+          content="Camps are back! Keep your kids active and having a blast over Valentines Day weekend! Limited spots available, sign up today!"
+          href="https://portal.iclasspro.com/texastwisters/camps/5"
+          color="rose"
+        />
       </body>
     </html>
   )

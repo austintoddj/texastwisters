@@ -27,6 +27,7 @@ import {
   IconFileCertificate,
   IconFlag,
   IconGymnastics,
+  IconHearts,
   IconHelpCircle,
   IconInfoCircleFilled,
   IconLifebuoy,
@@ -34,7 +35,6 @@ import {
   IconMail,
   IconMailFilled,
   IconMapPin,
-  IconMicrophone,
   IconMicrophone2,
   IconMoodKid,
   IconOlympics,
@@ -110,7 +110,8 @@ const iconOptions = {
   confettiFilled: IconConfettiFilled,
   confetti: IconConfetti,
   microphone: IconMicrophone2,
-  snowflake: IconSnowflake
+  snowflake: IconSnowflake,
+  hearts: IconHearts
 }
 
 type IconName = keyof typeof iconOptions

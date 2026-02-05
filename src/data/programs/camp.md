@@ -8,7 +8,7 @@ hero:
   text: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   action:
     label: See available camps
-    href: 'https://portal.iclasspro.com/texastwisters/camps/16'
+    href: 'https://portal.iclasspro.com/texastwisters/camps'
     icon: true
   image:
     src: '/images/programs/camp/hero.jpg'
@@ -47,17 +47,32 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing:
-    - name: Homeschool Camps
-      price: $30
+    - name: Feb 13 Day Camp
+      price: $45
       interval: per day
       shortDescription: Friday
       features:
-        - feature: 10:30 AM - 2:30 PM
+        - feature: 9:00 AM - 2:00 PM
+        - feature: Sibling discounts available
         - feature: Lunch and snack breaks
         - feature: Arts and crafts
         - feature: Games, obstacle courses and more!
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/camps/16'
+        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1916'
+        icon: true
+    - name: Feb 16 Day Camp
+      price: $45
+      interval: per day
+      shortDescription: Monday
+      features:
+        - feature: 9:00 AM - 2:00 PM
+        - feature: Sibling discounts available
+        - feature: Lunch and snack breaks
+        - feature: Arts and crafts
+        - feature: Games, obstacle courses and more!
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1917'
         icon: true
 ---

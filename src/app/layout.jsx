@@ -63,7 +63,7 @@ export default async function RootLayout({ children }) {
           icon="hearts"
           content="Camps are back! Keep your kids active and having a blast over Valentines Day weekend! Limited spots available, sign up today!"
           href="https://portal.iclasspro.com/texastwisters/camps/5"
-          color="rose"
+          color="blue"
         />
       </body>
     </html>

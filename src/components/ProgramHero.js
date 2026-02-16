@@ -7,7 +7,10 @@ import { track } from '@vercel/analytics'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const ProgramHero = ({ hero }) => {
+export const ProgramHero = ({ hero, hasPricing = true }) => {
+  const isDisabled = !hasPricing
+  const buttonLabel = isDisabled ? 'More camps coming soon!' : hero.action.label
+
   return (
     <section className="relative bg-linear-to-b from-purple-25 to-purple-50 px-4 pt-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-(--breakpoint-xl)">
@@ -21,27 +24,31 @@ export const ProgramHero = ({ hero }) => {
           </p>
           {/* CTA button */}
           <div className="mt-8 flex justify-center">
-            <Link
-              onClick={() => {
-                track(EVENT_NAMES.LINK_CLICK, {
-                  id: EVENT_IDS.PROGRAM_CTA,
-                  path: window.location.pathname
-                })
-              }}
-              href={hero.action.href}
-              target="_blank"
-            >
-              <Button>
-                {hero.action.label}
-                {hero.action.icon && (
-                  <Icon
-                    icon="arrowNarrowRight"
-                    className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
-                    stroke={2}
-                  />
-                )}
-              </Button>
-            </Link>
+            {isDisabled ? (
+              <Button disabled>{buttonLabel}</Button>
+            ) : (
+              <Link
+                onClick={() => {
+                  track(EVENT_NAMES.LINK_CLICK, {
+                    id: EVENT_IDS.PROGRAM_CTA,
+                    path: window.location.pathname
+                  })
+                }}
+                href={hero.action.href}
+                target="_blank"
+              >
+                <Button>
+                  {buttonLabel}
+                  {hero.action.icon && (
+                    <Icon
+                      icon="arrowNarrowRight"
+                      className="ml-3 h-6 w-6 group-hover:animate-horizontal-bounce"
+                      stroke={2}
+                    />
+                  )}
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
         {/* Hero image */}

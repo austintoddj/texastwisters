@@ -5,4 +5,5 @@ dates: March 8
 image: '/images/events/kip.jpg'
 href: 'https://portal.iclasspro.com/texastwisters/camp-details/1872'
 order: 2
+expiresAfter: '2026-03-8'
 ---

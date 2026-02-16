@@ -6,7 +6,8 @@ const variantStyles = {
   primary: 'text-purple-900 bg-yellow-500 hover:bg-yellow-600',
   secondary:
     'text-purple-900 bg-purple-200 hover:text-white hover:bg-purple-600',
-  accent: 'text-white bg-purple-600 hover:bg-purple-500'
+  accent: 'text-white bg-purple-600 hover:bg-purple-500',
+  disabled: 'text-purple-600 bg-purple-100 cursor-not-allowed'
 } as const
 
 const sizeStyles = {
@@ -48,13 +49,17 @@ export function Button({
   children,
   ...props
 }: ButtonProps) {
+  const isDisabled = (props as ButtonHTMLAttributes<HTMLButtonElement>).disabled
+  const effectiveVariant = isDisabled ? 'disabled' : variant
+
   const baseClasses =
-    'font-medium cursor-pointer relative leading-normal inline-flex items-center justify-center duration-300 ease-in-out rounded-full outline-hidden group'
+    'font-medium relative leading-normal inline-flex items-center justify-center duration-300 ease-in-out rounded-full outline-hidden group'
 
   const finalClassName = clsx(
     baseClasses,
-    variantStyles[variant],
+    variantStyles[effectiveVariant],
     sizeStyles[size],
+    isDisabled ? 'cursor-not-allowed' : 'cursor-pointer',
     className
   )
 

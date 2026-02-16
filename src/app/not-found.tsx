@@ -20,7 +20,7 @@ export default function NotFoundPage() {
         <div className="flex flex-col items-center justify-center lg:col-span-6 lg:items-start">
           {/* Keep a clear, test-friendly label for 404 pages */}
           <div className="block">
-            <Eyebrow text="404 - Page Not Found" />
+            <Eyebrow text="404 — Page Not Found" />
           </div>
 
           <h1 className="max-w-md mt-4 text-center lg:text-left text-purple-900 h1">

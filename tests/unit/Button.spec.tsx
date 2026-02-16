@@ -70,6 +70,18 @@ describe('Button', () => {
     )
   })
 
+  it('applies disabled variant classes when disabled', () => {
+    render(<Button disabled>Click me</Button>)
+
+    const button = screen.getByRole('button', { name: /click me/i })
+    expect(button).toHaveClass(
+      'text-purple-600',
+      'bg-purple-100',
+      'cursor-not-allowed'
+    )
+    expect(button).toBeDisabled()
+  })
+
   it('applies small size classes', () => {
     render(<Button size="sm">Click me</Button>)
 

@@ -1,3 +1,4 @@
+import { DataItem } from '@/lib/getItems'
 import { getAllItems } from '@/lib/getItems'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -10,8 +11,26 @@ const eventColors = [
   'bg-teal-50'
 ]
 
+const getExpiryDate = (value?: string | Date | null): Date | null => {
+  if (!value) {
+    return null
+  }
+  const date = value instanceof Date ? value : new Date(value)
+  return Number.isNaN(date.getTime()) ? null : date
+}
+
+const isEventExpired = (event: DataItem): boolean => {
+  const expiryDate = getExpiryDate(event.data.expiresAfter)
+  if (expiryDate) {
+    const now = new Date()
+    return now > expiryDate
+  }
+  return false
+}
+
 export const Events = async () => {
-  const events = await getAllItems('events')
+  const allEvents = await getAllItems('events')
+  const events = allEvents.filter(event => !isEventExpired(event))
 
   return (
     <section className="relative w-full px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

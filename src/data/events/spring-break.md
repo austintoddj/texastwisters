@@ -4,4 +4,5 @@ description: Enjoy your spring break! Texas Twisters will be closed from March 1
 dates: March 16 - 21
 image: '/images/events/beach.jpg'
 order: 3
+expiresAfter: '2026-03-21'
 ---

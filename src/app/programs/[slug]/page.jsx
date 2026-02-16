@@ -31,13 +31,16 @@ export default async function ProgramPage({ params }) {
   const { slug } = await params
   const program = await getItemData(slug, 'programs')
   const isComingSoon = Boolean(program?.comingSoonHero)
+  const hasPricing = Boolean(program?.pricingSection)
 
   return (
     <>
       {isComingSoon ? (
         <ComingSoonHero data={program.comingSoonHero} />
       ) : (
-        program?.hero && <ProgramHero hero={program.hero} />
+        program?.hero && (
+          <ProgramHero hero={program.hero} hasPricing={hasPricing} />
+        )
       )}
       {program?.infoSection && (
         <ProgramInformation data={program.infoSection} />

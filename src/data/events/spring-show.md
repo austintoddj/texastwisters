@@ -4,4 +4,5 @@ description: Come out and watch your gymnast show off the skills they've learned
 dates: April 11 - 12
 image: '/images/events/podium.jpg'
 order: 4
+expiresAfter: '2026-04-12'
 ---

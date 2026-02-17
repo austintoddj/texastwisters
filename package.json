@@ -1,8 +1,5 @@
 {
   "private": true,
-  "engines": {
-    "node": ">=22.14.0"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -44,7 +41,7 @@
     "@types/node": "^25.0.6",
     "@types/react": "^19.2.2",
     "@vitest/coverage-v8": "^4.0.8",
-    "eslint": "^10.0.0",
+    "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.1",
     "eslint-formatter-unix": "^9.0.1",
     "jsdom": "^28.0.0",

@@ -80,7 +80,7 @@ export const ParentsHero = () => {
           <Eyebrow text="Now enrolling for classes" />
           <div className="relative">
             <h1 className="max-w-xl mt-4 text-purple-900 h1 sm:mt-5 lg:max-w-none">
-              Stay in the loop
+              Everything you need to know
             </h1>
             {/* Arrow to links */}
             <Image

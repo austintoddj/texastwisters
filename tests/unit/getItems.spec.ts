@@ -30,6 +30,37 @@ describe('getItems utility', () => {
     expect(data.order).toBeDefined()
   })
 
+  it('getAllItems sorts events by expiresAfter date when all items have expiresAfter', async () => {
+    ;(fs.promises.readdir as any).mockResolvedValueOnce([
+      'event-b.md',
+      'event-a.md',
+      'event-c.md'
+    ])
+    ;(fs.promises.readFile as any).mockImplementation((p: string) => {
+      if (p.includes('event-a.md'))
+        return Promise.resolve(
+          '---\ntitle: Event A\nexpiresAfter: "2026-03-15"\n---\nA'
+        )
+      if (p.includes('event-b.md'))
+        return Promise.resolve(
+          '---\ntitle: Event B\nexpiresAfter: "2026-02-01"\n---\nB'
+        )
+      if (p.includes('event-c.md'))
+        return Promise.resolve(
+          '---\ntitle: Event C\nexpiresAfter: "2026-04-20"\n---\nC'
+        )
+      return Promise.resolve('')
+    })
+
+    const items = await getAllItems('events', false)
+
+    expect(items).toHaveLength(3)
+    // Should be sorted by expiresAfter date (earliest first)
+    expect(items[0].slug).toBe('event-b') // Feb 1
+    expect(items[1].slug).toBe('event-a') // Mar 15
+    expect(items[2].slug).toBe('event-c') // Apr 20
+  })
+
   it('getAllItems returns items sorted by numeric order when every item has order', async () => {
     ;(fs.promises.readdir as any).mockResolvedValueOnce(['b.md', 'a.md'])
     ;(fs.promises.readFile as any).mockImplementation((p: string) => {

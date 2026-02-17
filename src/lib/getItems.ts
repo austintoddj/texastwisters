@@ -2,7 +2,9 @@
  * Utility functions for loading and parsing Markdown data files from src/data.
  *
  * getItemData(slug, type): Loads frontmatter metadata for a single item.
- * getAllItems(dir, shuffle): Loads all items in a directory, optionally shuffling or sorting by 'order'.
+ * getAllItems(dir, shuffle): Loads all items in a directory, optionally shuffling or sorting.
+ *   - Events are sorted by 'expiresAfter' date
+ *   - Other items are sorted by 'order' field if present
  *
  * Usage: Used throughout the site to fetch structured content for events, faqs, programs, etc.
  */
@@ -76,8 +78,19 @@ export async function getAllItems(
         })
     )
 
-    // Sort by order if all items have an order property
-    if (items.length > 0 && items.every(item => 'order' in item.data)) {
+    // Sort events by expiresAfter date if all items have that property
+    if (
+      dir === 'events' &&
+      items.length > 0 &&
+      items.every(item => 'expiresAfter' in item.data)
+    ) {
+      items.sort((a, b) => {
+        const dateA = new Date(a.data.expiresAfter).getTime()
+        const dateB = new Date(b.data.expiresAfter).getTime()
+        return dateA - dateB // Ascending order (earliest first)
+      })
+    } else if (items.length > 0 && items.every(item => 'order' in item.data)) {
+      // Sort by order if all items have an order property
       items.sort((a, b) => {
         const orderA = Number(a.data.order) // Ensure numeric comparison
         const orderB = Number(b.data.order)

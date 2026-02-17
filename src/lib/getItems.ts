@@ -21,6 +21,16 @@ export interface DataItem {
   data: FrontmatterData
 }
 
+// Helper to safely parse dates and return timestamp or Infinity for invalid dates
+const getTimestamp = (dateValue: any): number => {
+  if (!dateValue) {
+    return Infinity // Invalid dates sort last
+  }
+  const date = dateValue instanceof Date ? dateValue : new Date(dateValue)
+  const timestamp = date.getTime()
+  return Number.isNaN(timestamp) ? Infinity : timestamp
+}
+
 // Cache for production builds to avoid repeated file reads
 const cache = new Map<string, any>()
 
@@ -85,9 +95,9 @@ export async function getAllItems(
       items.every(item => 'expiresAfter' in item.data)
     ) {
       items.sort((a, b) => {
-        const dateA = new Date(a.data.expiresAfter).getTime()
-        const dateB = new Date(b.data.expiresAfter).getTime()
-        return dateA - dateB // Ascending order (earliest first)
+        const dateA = getTimestamp(a.data.expiresAfter)
+        const dateB = getTimestamp(b.data.expiresAfter)
+        return dateA - dateB // Ascending order (earliest first, invalid dates last)
       })
     } else if (items.length > 0 && items.every(item => 'order' in item.data)) {
       // Sort by order if all items have an order property

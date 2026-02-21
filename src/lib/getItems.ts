@@ -2,7 +2,9 @@
  * Utility functions for loading and parsing Markdown data files from src/data.
  *
  * getItemData(slug, type): Loads frontmatter metadata for a single item.
- * getAllItems(dir, shuffle): Loads all items in a directory, optionally shuffling or sorting by 'order'.
+ * getAllItems(dir, shuffle): Loads all items in a directory, optionally shuffling or sorting.
+ *   - Events are sorted by 'expiresAfter' date
+ *   - Other items are sorted by 'order' field if present
  *
  * Usage: Used throughout the site to fetch structured content for events, faqs, programs, etc.
  */
@@ -17,6 +19,16 @@ export type FrontmatterData = Record<string, any>
 export interface DataItem {
   slug: string
   data: FrontmatterData
+}
+
+// Helper to safely parse dates and return timestamp or Infinity for invalid dates
+const getTimestamp = (dateValue: any): number => {
+  if (!dateValue) {
+    return Infinity // Invalid dates sort last
+  }
+  const date = dateValue instanceof Date ? dateValue : new Date(dateValue)
+  const timestamp = date.getTime()
+  return Number.isNaN(timestamp) ? Infinity : timestamp
 }
 
 // Cache for production builds to avoid repeated file reads
@@ -76,8 +88,19 @@ export async function getAllItems(
         })
     )
 
-    // Sort by order if all items have an order property
-    if (items.length > 0 && items.every(item => 'order' in item.data)) {
+    // Sort events by expiresAfter date if all items have that property
+    if (
+      dir === 'events' &&
+      items.length > 0 &&
+      items.every(item => 'expiresAfter' in item.data)
+    ) {
+      items.sort((a, b) => {
+        const dateA = getTimestamp(a.data.expiresAfter)
+        const dateB = getTimestamp(b.data.expiresAfter)
+        return dateA - dateB // Ascending order (earliest first, invalid dates last)
+      })
+    } else if (items.length > 0 && items.every(item => 'order' in item.data)) {
+      // Sort by order if all items have an order property
       items.sort((a, b) => {
         const orderA = Number(a.data.order) // Ensure numeric comparison
         const orderB = Number(b.data.order)

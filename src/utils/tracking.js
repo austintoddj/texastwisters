@@ -20,6 +20,7 @@ export const EVENT_IDS = {
   BANNER_CTA_RECREATIONAL_CLASSES: 'banner-cta-recreational-classes',
   BANNER_CTA_LIFE_OF_A_GYMNAST: 'banner-cta-life-of-a-gymnast',
   BANNER_CTA_CLINIC: 'banner-cta-clinic',
+  BANNER_CTA_TEAM_TRYOUTS: 'banner-cta-team-tryouts',
   PROGRAM_CTA: 'program-cta',
   HIRING_CTA: 'hiring-cta',
   CONTACT_US: 'contact-us',

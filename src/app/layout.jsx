@@ -59,12 +59,12 @@ export default async function RootLayout({ children }) {
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID} />
         <Banner
-          event={EVENT_IDS.BANNER_CTA_CLINIC}
+          event={EVENT_IDS.BANNER_CTA_TEAM_TRYOUTS}
           icon="calendar"
-          content="Master handstands & cartwheels at our clinic this Saturday, Feb 21st-ages 5+, $30, preregistration required!"
-          href="https://portal.iclasspro.com/texastwisters/camp-details/1964"
+          content="Looking to explore competitive gymnastics? Team tryouts for Levels 1-6 on March 8th!"
+          href="https://portal.iclasspro.com/texastwisters/camp-details/1872"
           color="blue"
-          expiresAfter="2026-02-21T15:00:00Z"
+          expiresAfter="2026-03-08T23:59:59Z"
         />
       </body>
     </html>

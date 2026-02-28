@@ -3,7 +3,7 @@ order: 1
 description: >
   ### 2026 Holiday Closures
 
-  * **Spring Break:** March 3 - 21, 2026
+  * **Spring Break:** March 16 - 21, 2026
 
   * **Memorial Day:** May 25, 2026
 

@@ -12,36 +12,34 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
 
-// Generic type for frontmatter data
-export type FrontmatterData = Record<string, any>
-
 // Type for items returned by getAllItems
-export interface DataItem {
+export interface DataItem<T> {
   slug: string
-  data: FrontmatterData
+  data: T
 }
 
 // Helper to safely parse dates and return timestamp or Infinity for invalid dates
-const getTimestamp = (dateValue: any): number => {
+const getTimestamp = (dateValue: unknown): number => {
   if (!dateValue) {
     return Infinity // Invalid dates sort last
   }
-  const date = dateValue instanceof Date ? dateValue : new Date(dateValue)
+  const date =
+    dateValue instanceof Date ? dateValue : new Date(dateValue as string)
   const timestamp = date.getTime()
   return Number.isNaN(timestamp) ? Infinity : timestamp
 }
 
 // Cache for production builds to avoid repeated file reads
-const cache = new Map<string, any>()
+const cache = new Map<string, unknown>()
 
-export async function getItemData(
+export async function getItemData<T = Record<string, unknown>>(
   slug: string,
   type: string
-): Promise<FrontmatterData> {
+): Promise<T> {
   try {
     const cacheKey = `item-${type}-${slug}`
     if (cache.has(cacheKey) && process.env.NODE_ENV === 'production') {
-      return cache.get(cacheKey)
+      return cache.get(cacheKey) as T
     }
 
     const filePath = path.join('src/data', type, slug + '.md')
@@ -53,21 +51,21 @@ export async function getItemData(
       cache.set(cacheKey, data)
     }
 
-    return data
+    return data as T
   } catch (error) {
     console.error(`Error reading item data for ${type}/${slug}:`, error)
     throw new Error(`Failed to load ${type} data for ${slug}`)
   }
 }
 
-export async function getAllItems(
+export async function getAllItems<T = Record<string, unknown>>(
   dir: string,
   shuffle = false
-): Promise<DataItem[]> {
+): Promise<DataItem<T>[]> {
   try {
     const cacheKey = `all-${dir}-${shuffle}`
     if (cache.has(cacheKey) && process.env.NODE_ENV === 'production') {
-      return cache.get(cacheKey)
+      return cache.get(cacheKey) as DataItem<T>[]
     }
 
     const dirPath = path.join('src/data', dir)
@@ -115,7 +113,7 @@ export async function getAllItems(
       cache.set(cacheKey, items)
     }
 
-    return items
+    return items as DataItem<T>[]
   } catch (error) {
     console.error(`Error reading items from ${dir}:`, error)
     throw new Error(`Failed to load ${dir} data`)

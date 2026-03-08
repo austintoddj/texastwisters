@@ -80,7 +80,7 @@ export const ContactInformation = () => {
       {/* Google map widget */}
       <div className="mx-auto mt-16 max-w-xl overflow-hidden rounded-3xl sm:mt-20 lg:max-w-(--breakpoint-xl)">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8144.301836979345!2d-97.69045262392747!3d30.635538190322627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d756d380f0e9%3A0x936601e2bde200dd!2sTexas%20Twisters%20Gymnastics!5e1!3m2!1sen!2sus!4v1773010871687!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6865.8878274425215!2d-97.690366793239!3d30.635538190322627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d756d380f0e9%3A0x936601e2bde200dd!2sTexas%20Twisters%20Gymnastics!5e0!3m2!1sen!2sus!4v1773011379066!5m2!1sen!2sus"
           width="100%"
           height="500"
           loading="lazy"

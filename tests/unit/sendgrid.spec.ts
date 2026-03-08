@@ -43,9 +43,9 @@ describe('sendgrid helper', () => {
     const msg = (sg.send as any).mock.calls[0][0]
     expect(msg.to).toBe('to@test.com')
     expect(msg.from).toBe('from@test.com')
-    expect(msg.template_id).toBe('template-1')
-    expect(msg.dynamic_template_data.NAME).toBe('Name')
-    expect(msg.dynamic_template_data.EMAIL).toBe('email@test.com')
+    expect(msg.templateId).toBe('template-1')
+    expect(msg.dynamicTemplateData.NAME).toBe('Name')
+    expect(msg.dynamicTemplateData.EMAIL).toBe('email@test.com')
   })
 
   it('rethrows when sendgrid.send throws', async () => {

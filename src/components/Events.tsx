@@ -1,5 +1,5 @@
-import { DataItem } from '@/lib/getItems'
-import { getAllItems } from '@/lib/getItems'
+import { DataItem, getAllItems } from '@/lib/getItems'
+import { EventData } from '@/types'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,7 +19,7 @@ const getExpiryDate = (value?: string | Date | null): Date | null => {
   return Number.isNaN(date.getTime()) ? null : date
 }
 
-const isEventExpired = (event: DataItem): boolean => {
+const isEventExpired = (event: DataItem<EventData>): boolean => {
   const expiryDate = getExpiryDate(event.data.expiresAfter)
   if (expiryDate) {
     const now = new Date()
@@ -29,7 +29,7 @@ const isEventExpired = (event: DataItem): boolean => {
 }
 
 export const Events = async () => {
-  const allEvents = await getAllItems('events')
+  const allEvents = await getAllItems<EventData>('events')
   const events = allEvents.filter(event => !isEventExpired(event))
 
   return (

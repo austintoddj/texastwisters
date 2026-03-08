@@ -57,7 +57,7 @@ pricingSection:
         - feature: 30 minute classes
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/class-details/302'
+        href: 'https://portal.iclasspro.com/texastwisters/classes?ages=1&programs=17'
         icon: true
     - name: Tumble Tots
       price: $85

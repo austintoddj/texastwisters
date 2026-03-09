@@ -1,11 +1,9 @@
-import { Banner } from '@/components/Banner'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { getAllItems } from '@/lib/getItems'
 import '@/styles/tailwind.css'
 import { ProgramData } from '@/types'
-import { EVENT_IDS } from '@/utils/tracking'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -63,14 +61,6 @@ export default async function RootLayout({
         <Analytics />
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GTM_ID as string} />
-        <Banner
-          event={EVENT_IDS.BANNER_CTA_TEAM_TRYOUTS}
-          icon="calendar"
-          content="Looking to explore competitive gymnastics? Team tryouts for Levels 1-6 on March 8th!"
-          href="https://portal.iclasspro.com/texastwisters/camp-details/1872"
-          color="blue"
-          expiresAfter="2026-03-08T23:59:59Z"
-        />
       </body>
     </html>
   )

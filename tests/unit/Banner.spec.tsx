@@ -1,20 +1,27 @@
 import { Banner } from '@/components/Banner'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { cleanup } from '@testing-library/react'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 
 describe('Banner', () => {
+  beforeEach(() => {
+    // Clear sessionStorage before each test
+    sessionStorage.clear()
+  })
+
   afterEach(() => {
     cleanup()
   })
 
-  it('renders the banner with content', () => {
+  it('renders the banner with content', async () => {
     render(<Banner icon="calendar" content="Test banner content" />)
 
-    expect(screen.getByText('Test banner content')).toBeInTheDocument()
+    await waitFor(() => {
+      expect(screen.getByText('Test banner content')).toBeInTheDocument()
+    })
   })
 
-  it('renders with a link when href is provided', () => {
+  it('renders with a link when href is provided', async () => {
     render(
       <Banner
         icon="calendar"
@@ -23,14 +30,19 @@ describe('Banner', () => {
       />
     )
 
-    const link = screen.getByText('Read more')
-    expect(link).toBeInTheDocument()
-    expect(link).toHaveAttribute('href', 'https://example.com')
+    await waitFor(() => {
+      const link = screen.getByText('Read more')
+      expect(link).toBeInTheDocument()
+      expect(link).toHaveAttribute('href', 'https://example.com')
+    })
   })
 
-  it('does not render a link when href is not provided', () => {
+  it('does not render a link when href is not provided', async () => {
     render(<Banner icon="calendar" content="Test content" />)
 
+    await waitFor(() => {
+      expect(screen.getByText('Test content')).toBeInTheDocument()
+    })
     expect(screen.queryByText('Read more')).not.toBeInTheDocument()
   })
 
@@ -46,7 +58,7 @@ describe('Banner', () => {
     expect(screen.queryByText('Expired banner')).not.toBeInTheDocument()
   })
 
-  it('shows banner before expiration date', () => {
+  it('shows banner before expiration date', async () => {
     render(
       <Banner
         icon="calendar"
@@ -55,26 +67,85 @@ describe('Banner', () => {
       />
     )
 
-    expect(screen.getByText('Active banner')).toBeInTheDocument()
+    await waitFor(() => {
+      expect(screen.getByText('Active banner')).toBeInTheDocument()
+    })
   })
 
-  it('shows banner when no expiration date is provided', () => {
+  it('shows banner when no expiration date is provided', async () => {
     render(<Banner icon="calendar" content="No expiry banner" />)
 
-    expect(screen.getByText('No expiry banner')).toBeInTheDocument()
+    await waitFor(() => {
+      expect(screen.getByText('No expiry banner')).toBeInTheDocument()
+    })
   })
 
-  it('hides banner when close button is clicked', () => {
-    render(<Banner icon="calendar" content="Closeable banner" />)
+  it('hides banner when close button is clicked', async () => {
+    render(
+      <Banner icon="calendar" content="Closeable banner" event="test-banner" />
+    )
+
+    await waitFor(() => {
+      expect(screen.getByText('Closeable banner')).toBeInTheDocument()
+    })
 
     const closeButton = screen.getByRole('button')
-    expect(screen.getByText('Closeable banner')).toBeInTheDocument()
-
     fireEvent.click(closeButton)
-    expect(screen.queryByText('Closeable banner')).not.toBeInTheDocument()
+
+    await waitFor(() => {
+      expect(screen.queryByText('Closeable banner')).not.toBeInTheDocument()
+    })
   })
 
-  it('shows banner when expiresAfter is a Date', () => {
+  it('persists dismissed state to sessionStorage', async () => {
+    render(
+      <Banner
+        icon="calendar"
+        content="Persistent banner"
+        event="persistent-test"
+      />
+    )
+
+    await waitFor(() => {
+      expect(screen.getByText('Persistent banner')).toBeInTheDocument()
+    })
+
+    const closeButton = screen.getByRole('button')
+    fireEvent.click(closeButton)
+
+    await waitFor(() => {
+      expect(screen.queryByText('Persistent banner')).not.toBeInTheDocument()
+    })
+
+    // Check sessionStorage
+    const dismissed = JSON.parse(
+      sessionStorage.getItem('dismissed-banners') || '[]'
+    )
+    expect(dismissed).toContain('persistent-test')
+  })
+
+  it('does not show banner if previously dismissed in session', async () => {
+    // Pre-populate sessionStorage
+    sessionStorage.setItem(
+      'dismissed-banners',
+      JSON.stringify(['already-dismissed'])
+    )
+
+    render(
+      <Banner
+        icon="calendar"
+        content="Already dismissed"
+        event="already-dismissed"
+      />
+    )
+
+    // Wait a bit to ensure useEffect runs
+    await new Promise(resolve => setTimeout(resolve, 100))
+
+    expect(screen.queryByText('Already dismissed')).not.toBeInTheDocument()
+  })
+
+  it('shows banner when expiresAfter is a Date', async () => {
     render(
       <Banner
         icon="calendar"
@@ -83,10 +154,12 @@ describe('Banner', () => {
       />
     )
 
-    expect(screen.getByText('Date expiry banner')).toBeInTheDocument()
+    await waitFor(() => {
+      expect(screen.getByText('Date expiry banner')).toBeInTheDocument()
+    })
   })
 
-  it('renders a region with an accessible label', () => {
+  it('renders a region with an accessible label', async () => {
     render(
       <Banner
         icon="calendar"
@@ -95,8 +168,10 @@ describe('Banner', () => {
       />
     )
 
-    expect(
-      screen.getByRole('region', { name: 'Important notice' })
-    ).toBeInTheDocument()
+    await waitFor(() => {
+      expect(
+        screen.getByRole('region', { name: 'Important notice' })
+      ).toBeInTheDocument()
+    })
   })
 })

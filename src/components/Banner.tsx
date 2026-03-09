@@ -4,7 +4,7 @@ import { Icon } from '@/components/Icon'
 import { EVENT_NAMES } from '@/utils/tracking'
 import { track } from '@vercel/analytics'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 interface BannerProps {
   icon: string
@@ -24,6 +24,41 @@ const getExpiryDate = (value: BannerProps['expiresAfter']) => {
   return Number.isNaN(date.getTime()) ? null : date
 }
 
+const BANNER_STORAGE_KEY = 'dismissed-banners'
+
+const getBannerKey = (event: string | null, content: string) => {
+  return event || content.slice(0, 50)
+}
+
+const isDismissed = (bannerKey: string): boolean => {
+  if (typeof window === 'undefined') return false
+  try {
+    const dismissed = sessionStorage.getItem(BANNER_STORAGE_KEY)
+    if (!dismissed) return false
+    const dismissedBanners = JSON.parse(dismissed)
+    return dismissedBanners.includes(bannerKey)
+  } catch {
+    return false
+  }
+}
+
+const setDismissed = (bannerKey: string) => {
+  if (typeof window === 'undefined') return
+  try {
+    const dismissed = sessionStorage.getItem(BANNER_STORAGE_KEY)
+    const dismissedBanners = dismissed ? JSON.parse(dismissed) : []
+    if (!dismissedBanners.includes(bannerKey)) {
+      dismissedBanners.push(bannerKey)
+      sessionStorage.setItem(
+        BANNER_STORAGE_KEY,
+        JSON.stringify(dismissedBanners)
+      )
+    }
+  } catch {
+    // Fail silently
+  }
+}
+
 export const Banner = ({
   icon,
   content,
@@ -33,7 +68,19 @@ export const Banner = ({
   expiresAfter = null,
   ariaLabel = 'Site notice'
 }: BannerProps) => {
-  const [isOpen, setIsOpen] = useState(true)
+  const bannerKey = getBannerKey(event, content)
+  const [state, setState] = useState<{ mounted: boolean; isOpen: boolean }>({
+    mounted: false,
+    isOpen: true
+  })
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setState({
+      mounted: true,
+      isOpen: !isDismissed(bannerKey)
+    })
+  }, [bannerKey])
 
   // Check if banner has expired
   const expiryDate = getExpiryDate(expiresAfter)
@@ -44,8 +91,14 @@ export const Banner = ({
     }
   }
 
-  if (!isOpen) {
+  // Don't render until client-side to prevent hydration mismatch
+  if (!state.mounted || !state.isOpen) {
     return null
+  }
+
+  const handleDismiss = () => {
+    setDismissed(bannerKey)
+    setState(prev => ({ ...prev, isOpen: false }))
   }
 
   return (
@@ -80,8 +133,8 @@ export const Banner = ({
         </p>
         <button
           type="button"
-          className="-m-3 cursor-pointer flex-none p-3 focus-visible:outline-offset-[-4px]"
-          onClick={() => setIsOpen(false)}
+          className="-m-3 cursor-pointer flex-none p-3 focus-visible:-outline-offset-4"
+          onClick={handleDismiss}
         >
           <span className="sr-only">Dismiss</span>
           <Icon

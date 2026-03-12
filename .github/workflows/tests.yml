@@ -24,13 +24,13 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        node-version: ['22.x']
+        node-version: ['22.x', '24.x']
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
@@ -42,7 +42,7 @@ jobs:
         run: npm run test:unit -- --coverage
 
       - name: Upload coverage reports
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: coverage-${{ matrix.node-version }}
           path: coverage/
@@ -57,7 +57,7 @@ jobs:
         browser: ['chromium', 'firefox', 'webkit']
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Use Node.js
         uses: actions/setup-node@v5

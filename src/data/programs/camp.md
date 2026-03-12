@@ -47,10 +47,10 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing:
-    - name: May 26 Day Camp
+    - name: Summer Day Camps
       price: $45
       interval: per day
-      shortDescription: Friday
+      shortDescription: May 26 - August 18
       features:
         - feature: 9:00 AM - 2:00 PM
         - feature: Sibling discounts available
@@ -59,20 +59,6 @@ pricingSection:
         - feature: Games, obstacle courses and more!
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1992'
+        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1917'
         icon: true
-#    - name: Feb 16 Day Camp
-#      price: $45
-#      interval: per day
-#      shortDescription: Monday
-#      features:
-#        - feature: 9:00 AM - 2:00 PM
-#        - feature: Sibling discounts available
-#        - feature: Lunch and snack breaks
-#        - feature: Arts and crafts
-#        - feature: Games, obstacle courses and more!
-#      action:
-#        label: Enroll today
-#        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1917'
-#        icon: true
 ---

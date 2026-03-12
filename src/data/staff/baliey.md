@@ -1,6 +1,6 @@
 ---
 name: Coach Bailey
-role: Team Coach
+role: Gymnastics Coach
 image: '/images/staff/bailey.jpg'
-priority: 3
+priority: 4
 ---

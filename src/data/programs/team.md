@@ -50,7 +50,7 @@ pricingSection:
     - name: Level 1
       price: $150
       interval: per month
-      shortDescription: Monday
+      shortDescription: Wednesday
       features:
         - feature: USAG Membership required
         - feature: Annual membership fee
@@ -72,9 +72,9 @@ pricingSection:
         href: '/contact'
         icon: true
     - name: Level 3
-      price: $250
+      price: $275
       interval: per month
-      shortDescription: Monday & Wednesday
+      shortDescription: Tuesday & Thursday
       features:
         - feature: USAG Membership required
         - feature: Annual membership fee
@@ -98,7 +98,7 @@ pricingSection:
         href: '/contact'
         icon: true
     - name: Level 5 & 6
-      price: $350
+      price: $375
       interval: per month
       shortDescription: Tuesday, Thursday & Saturday
       features:

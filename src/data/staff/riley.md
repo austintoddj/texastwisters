@@ -1,6 +1,6 @@
 ---
 name: Coach Riley
-role: Gymnastics Coach
+role: Team Coach
 image: '/images/staff/riley.jpg'
-priority: 4
+priority: 3
 ---

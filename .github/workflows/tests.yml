@@ -42,7 +42,7 @@ jobs:
         run: npm run test:unit -- --coverage
 
       - name: Upload coverage reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: coverage-${{ matrix.node-version }}
           path: coverage/

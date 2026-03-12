@@ -2,10 +2,6 @@ import path from 'path'
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
-  esbuild: {
-    jsxFactory: 'React.createElement',
-    jsxFragment: 'React.Fragment'
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src')

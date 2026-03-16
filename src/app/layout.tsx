@@ -1,17 +1,49 @@
-import { Banner } from '@/components/Banner'
-import { ErrorBoundary } from '@/components/ErrorBoundary'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { getAllItems } from '@/lib/getItems'
-import '@/styles/tailwind.css'
-import { ProgramData } from '@/types'
-import { EVENT_IDS } from '@/utils/tracking'
-import { GoogleTagManager } from '@next/third-parties/google'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import clsx from 'clsx'
-import type { Metadata } from 'next'
-import { Roboto_Flex } from 'next/font/google'
+import { Banner } from '@/components/Banner';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { getAllItems } from '@/lib/getItems';
+import '@/styles/tailwind.css';
+import { ProgramData } from '@/types';
+import { EVENT_IDS } from '@/utils/tracking';
+import { GoogleTagManager } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import clsx from 'clsx';
+import type { Metadata } from 'next';
+import { Roboto_Flex } from 'next/font/google';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const roboto = Roboto_Flex({
   subsets: ['latin'],
@@ -56,13 +88,21 @@ export default async function RootLayout({
     <html lang="en">
       <body className={clsx('font-sans', roboto.variable)}>
         <ErrorBoundary>
+          {/*<Banner*/}
+          {/*  icon="bellRinging"*/}
+          {/*  content="New class openings available — no registration fee. Grab your spot today!"*/}
+          {/*  href="https://portal.iclasspro.com/texastwisters/classes?openings=1"*/}
+          {/*  color="blue"*/}
+          {/*  event={EVENT_IDS.BANNER_CTA_NEW_OPENINGS}*/}
+          {/*  ariaLabel="New class openings promotion"*/}
+          {/*/> */}
           <Banner
-            icon="bellRinging"
-            content="New class openings available — no registration fee. Grab your spot today!"
-            href="https://portal.iclasspro.com/texastwisters/classes?openings=1"
+            icon="calendar"
+            content="Heads up! We will be closed for Spring Break from March 16 - March 21, classes will resume the following Monday."
+            href="https://portal.iclasspro.com/texastwisters/news/2"
             color="blue"
-            event={EVENT_IDS.BANNER_CTA_NEW_OPENINGS}
-            ariaLabel="New class openings promotion"
+            event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
+            ariaLabel="Spring Break gym closure notice"
           />
           <Header programs={programs} />
           {children}

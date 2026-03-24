@@ -56,13 +56,21 @@ export default async function RootLayout({
     <html lang="en">
       <body className={clsx('font-sans', roboto.variable)}>
         <ErrorBoundary>
+          {/*<Banner*/}
+          {/*  icon="bellRinging"*/}
+          {/*  content="New class openings available — no registration fee. Grab your spot today!"*/}
+          {/*  href="https://portal.iclasspro.com/texastwisters/classes?openings=1"*/}
+          {/*  color="blue"*/}
+          {/*  event={EVENT_IDS.BANNER_CTA_NEW_OPENINGS}*/}
+          {/*  ariaLabel="New class openings promotion"*/}
+          {/*/>*/}
           <Banner
-            icon="bellRinging"
-            content="New class openings available — no registration fee. Grab your spot today!"
-            href="https://portal.iclasspro.com/texastwisters/classes?openings=1"
+            icon="sunHigh"
+            content="Summer camp registration is now open! Come join the fun — sign up today!"
+            href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
             color="blue"
-            event={EVENT_IDS.BANNER_CTA_NEW_OPENINGS}
-            ariaLabel="New class openings promotion"
+            event={EVENT_IDS.BANNER_CTA_CAMP}
+            ariaLabel="Summer day camp promotion"
           />
           <Header programs={programs} />
           {children}

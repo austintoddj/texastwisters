@@ -8,7 +8,7 @@ hero:
   text: Our gymnastics camps are the perfect way for your children to stay active and have fun during school breaks. They'll learn new skills, make new friends, and enjoy new games!
   action:
     label: See available camps
-    href: 'https://portal.iclasspro.com/texastwisters/camps/5'
+    href: 'https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name'
     icon: true
   image:
     src: '/images/programs/camp/hero.jpg'
@@ -59,6 +59,6 @@ pricingSection:
         - feature: Games, obstacle courses and more!
       action:
         label: Enroll today
-        href: 'https://portal.iclasspro.com/texastwisters/camp-details/1917'
+        href: 'https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name'
         icon: true
 ---

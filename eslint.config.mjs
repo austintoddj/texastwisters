@@ -4,6 +4,11 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 const eslintConfig = defineConfig([
   ...nextVitals,
   {
+    languageOptions: {
+      parserOptions: {
+        warnOnUnsupportedTypeScriptVersion: false
+      }
+    },
     rules: {
       // Re-enable with warning first, will upgrade to error later
       'react/no-unescaped-entities': 'error',

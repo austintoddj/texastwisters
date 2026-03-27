@@ -1,3 +1,4 @@
+# NOTE: Whenever modifying this workflow, ensure it matches the Vercel deployment checks.
 name: tests
 
 on:

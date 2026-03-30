@@ -50,7 +50,7 @@
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "start-server-and-test": "^2.1.2",
+    "start-server-and-test": "^3.0.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^6.0.0",
     "vitest": "^4.0.8"

@@ -13,7 +13,25 @@ interface BannerProps {
   color?: string
   event?: string | null
   expiresAfter?: string | Date | null
+  countdownTo?: string | Date | null
   ariaLabel?: string
+}
+
+const formatCountdown = (ms: number): string => {
+  if (ms <= 0) return ''
+  const totalSeconds = Math.floor(ms / 1000)
+  const days = Math.floor(totalSeconds / 86400)
+  const hours = Math.floor((totalSeconds % 86400) / 3600)
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
+  const seconds = totalSeconds % 60
+  if (days > 0) {
+    return `${days}d ${hours}h ${minutes}m`
+  }
+  const parts: string[] = []
+  if (hours > 0) parts.push(`${hours}h`)
+  parts.push(`${minutes}m`)
+  parts.push(`${seconds}s`)
+  return parts.join(' ')
 }
 
 const getExpiryDate = (value: BannerProps['expiresAfter']) => {
@@ -66,6 +84,7 @@ export const Banner = ({
   color = 'purple',
   event = null,
   expiresAfter = null,
+  countdownTo = null,
   ariaLabel = 'Site notice'
 }: BannerProps) => {
   const bannerKey = getBannerKey(event, content)
@@ -73,6 +92,7 @@ export const Banner = ({
     mounted: false,
     isOpen: true
   })
+  const [countdown, setCountdown] = useState<string>('')
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -81,6 +101,27 @@ export const Banner = ({
       isOpen: !isDismissed(bannerKey)
     })
   }, [bannerKey])
+
+  useEffect(() => {
+    if (!countdownTo) return
+    const target =
+      countdownTo instanceof Date
+        ? countdownTo
+        : new Date(countdownTo as string)
+    if (isNaN(target.getTime())) return
+    const update = () => {
+      const ms = target.getTime() - Date.now()
+      if (ms <= 0) {
+        setCountdown('')
+        setState(prev => ({ ...prev, isOpen: false }))
+      } else {
+        setCountdown(formatCountdown(ms))
+      }
+    }
+    update()
+    const interval = setInterval(update, 1000)
+    return () => clearInterval(interval)
+  }, [countdownTo])
 
   // Check if banner has expired
   const expiryDate = getExpiryDate(expiresAfter)
@@ -113,7 +154,17 @@ export const Banner = ({
             icon={icon}
             className={`text-${color}-700 h-6 w-6 mr-4 inline`}
           />
-          {content}
+          {countdownTo && content.includes('{countdown}') ? (
+            <>
+              {content.split('{countdown}')[0]}
+              <span className="font-bold font-mono tabular-nums">
+                {countdown}
+              </span>
+              {content.split('{countdown}')[1]}
+            </>
+          ) : (
+            content
+          )}
           {href && (
             <Link
               onClick={() => {

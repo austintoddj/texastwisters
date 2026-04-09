@@ -64,13 +64,23 @@ export default async function RootLayout({
           {/*  event={EVENT_IDS.BANNER_CTA_NEW_OPENINGS}*/}
           {/*  ariaLabel="New class openings promotion"*/}
           {/*/>*/}
+          {/*<Banner*/}
+          {/*  icon="sunHigh"*/}
+          {/*  content="Summer camp registration is now open! Come join the fun — sign up today!"*/}
+          {/*  href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"*/}
+          {/*  color="blue"*/}
+          {/*  event={EVENT_IDS.BANNER_CTA_CAMP}*/}
+          {/*  ariaLabel="Summer day camp promotion"*/}
+          {/*/>*/}
           <Banner
-            icon="sunHigh"
-            content="Summer camp registration is now open! Come join the fun — sign up today!"
-            href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
-            color="blue"
-            event={EVENT_IDS.BANNER_CTA_CAMP}
-            ariaLabel="Summer day camp promotion"
+            icon="laurel"
+            content="The countdown is on — {countdown} until our 3rd annual Spring Show. Sign up today!"
+            href="https://portal.iclasspro.com/texastwisters/camps/11?sortBy=name"
+            color="rose"
+            event={EVENT_IDS.BANNER_CTA_SPRING_SHOW}
+            ariaLabel="Spring Show 2026 promotion"
+            countdownTo="2026-04-11T12:00:00-05:00"
+            expiresAfter="2026-04-12T23:59:59-05:00"
           />
           <Header programs={programs} />
           {children}

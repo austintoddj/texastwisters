@@ -1,7 +1,7 @@
 import { Banner } from '@/components/Banner'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { cleanup } from '@testing-library/react'
-import { afterEach, beforeEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 describe('Banner', () => {
   beforeEach(() => {
@@ -172,6 +172,152 @@ describe('Banner', () => {
       expect(
         screen.getByRole('region', { name: 'Important notice' })
       ).toBeInTheDocument()
+    })
+  })
+
+  describe('countdown', () => {
+    const TARGET = '2026-04-11T12:00:00-05:00'
+    const targetMs = new Date(TARGET).getTime()
+
+    afterEach(() => {
+      vi.restoreAllMocks()
+      vi.useRealTimers()
+    })
+
+    it('renders countdown in Xd Xh Xm format when more than one day remains', async () => {
+      vi.spyOn(Date, 'now').mockReturnValue(targetMs - 2 * 86400 * 1000) // exactly 2 days before
+
+      render(
+        <Banner
+          icon="calendar"
+          content="Starts in {countdown}!"
+          countdownTo={TARGET}
+        />
+      )
+
+      await waitFor(() => {
+        const region = screen.getByRole('region')
+        expect(region.textContent).toContain('2d 0h 0m')
+        expect(region.textContent).not.toMatch(/\ds/) // no seconds
+      })
+    })
+
+    it('renders countdown in Xh Xm Xs format when less than one day remains', async () => {
+      vi.spyOn(Date, 'now').mockReturnValue(targetMs - 2 * 3600 * 1000) // 2 hours before
+
+      render(
+        <Banner
+          icon="calendar"
+          content="Starts in {countdown}!"
+          countdownTo={TARGET}
+        />
+      )
+
+      await waitFor(() => {
+        const region = screen.getByRole('region')
+        expect(region.textContent).toContain('2h 0m 0s')
+        expect(region.textContent).not.toMatch(/\dd/) // no days
+      })
+    })
+
+    it('omits hours from the countdown when less than one hour remains', async () => {
+      vi.spyOn(Date, 'now').mockReturnValue(targetMs - 30 * 60 * 1000) // 30 minutes before
+
+      render(
+        <Banner
+          icon="calendar"
+          content="Starts in {countdown}!"
+          countdownTo={TARGET}
+        />
+      )
+
+      await waitFor(() => {
+        const region = screen.getByRole('region')
+        expect(region.textContent).toContain('30m 0s')
+        expect(region.textContent).not.toMatch(/\dh/) // no hours
+      })
+    })
+
+    it('renders text before and after the {countdown} placeholder', async () => {
+      vi.spyOn(Date, 'now').mockReturnValue(targetMs - 2 * 86400 * 1000)
+
+      render(
+        <Banner
+          icon="calendar"
+          content="The countdown is on — {countdown} until the show!"
+          countdownTo={TARGET}
+        />
+      )
+
+      await waitFor(() => {
+        const region = screen.getByRole('region')
+        expect(region.textContent).toContain('The countdown is on —')
+        expect(region.textContent).toContain('2d 0h 0m')
+        expect(region.textContent).toContain('until the show!')
+      })
+    })
+
+    it('renders the countdown value in a bold monospace span', async () => {
+      vi.spyOn(Date, 'now').mockReturnValue(targetMs - 2 * 86400 * 1000)
+
+      render(
+        <Banner
+          icon="calendar"
+          content="Starts in {countdown}!"
+          countdownTo={TARGET}
+        />
+      )
+
+      await waitFor(() => {
+        const span = screen.getByText('2d 0h 0m')
+        expect(span.tagName).toBe('SPAN')
+        expect(span).toHaveClass('font-bold', 'font-mono', 'tabular-nums')
+      })
+    })
+
+    it('renders {countdown} as literal text when countdownTo is not provided', async () => {
+      render(<Banner icon="calendar" content="Starts in {countdown} time!" />)
+
+      await waitFor(() => {
+        expect(
+          screen.getByText('Starts in {countdown} time!')
+        ).toBeInTheDocument()
+      })
+    })
+
+    it('auto-dismisses when the countdown target has already passed', async () => {
+      vi.spyOn(Date, 'now').mockReturnValue(targetMs + 1000) // 1 second past target
+
+      render(
+        <Banner
+          icon="calendar"
+          content="Show starts in {countdown}!"
+          countdownTo={TARGET}
+        />
+      )
+
+      await waitFor(() => {
+        expect(screen.queryByRole('region')).not.toBeInTheDocument()
+      })
+    })
+
+    it('updates the countdown value each second via setInterval', () => {
+      vi.useFakeTimers()
+      vi.setSystemTime(targetMs - 65000) // 1m 5s before target
+
+      render(
+        <Banner icon="calendar" content="{countdown}" countdownTo={TARGET} />
+      )
+
+      // Initial render after effects flush — should show 1m 5s
+      expect(screen.getByRole('region').textContent).toContain('1m 5s')
+
+      // Advance 1 fake second — interval fires, re-renders
+      act(() => {
+        vi.advanceTimersByTime(1000)
+      })
+
+      expect(screen.getByRole('region').textContent).toContain('1m 4s')
     })
   })
 })

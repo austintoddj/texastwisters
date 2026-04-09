@@ -31,6 +31,7 @@ import {
   IconHearts,
   IconHelpCircle,
   IconInfoCircleFilled,
+  IconLaurelWreath1Filled,
   IconLifebuoy,
   IconLinkOff,
   IconMail,
@@ -113,7 +114,8 @@ const iconOptions = {
   confetti: IconConfetti,
   microphone: IconMicrophone2,
   snowflake: IconSnowflake,
-  hearts: IconHearts
+  hearts: IconHearts,
+  laurel: IconLaurelWreath1Filled
 }
 
 type IconName = keyof typeof iconOptions

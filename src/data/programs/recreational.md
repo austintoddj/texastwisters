@@ -56,6 +56,18 @@ pricingSection:
         label: Enroll today
         href: 'https://portal.iclasspro.com/texastwisters/classes?q=Intro%20to%20Beginner&levels=4&programs=16'
         icon: true
+    - name: Mighty Men
+      price: $100
+      interval: per month
+      shortDescription: Saturday classes only
+      features:
+        - feature: No experience required
+        - feature: All-boys class
+        - feature: Ages 6 - 12
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/class-details/390'
+        icon: true
     - name: Beginner Gymnastics
       badge: 'Most popular'
       price: $100

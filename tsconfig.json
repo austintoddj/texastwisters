@@ -17,6 +17,7 @@
         "name": "next"
       }
     ],
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
@@ -26,8 +27,7 @@
       "@/styles/*": ["./src/styles/*"],
       "@/images/*": ["./public/images/*"]
     },
-    "allowJs": true,
-    "ignoreDeprecations": "6.0"
+    "allowJs": true
   },
   "include": [
     "next-env.d.ts",

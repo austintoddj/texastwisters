@@ -9,6 +9,8 @@ import sendgrid from '@sendgrid/mail'
  * Usage: Used for contact forms and notifications.
  */
 
+sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY!)
+
 export const sendEmail = async (
   to: string,
   from: string,
@@ -18,8 +20,6 @@ export const sendEmail = async (
   phone: string,
   email: string
 ): Promise<void> => {
-  sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY!)
-
   /**
    * "From" email address must coincide with Verified Single Sender.
    * https://docs.sendgrid.com/ui/sending-email/sender-verification/

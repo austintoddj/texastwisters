@@ -13,5 +13,5 @@ description: >
     
   * **Thanksgiving:** November 26 - 28, 2026
     
-  * **Christmas & New Years:** December 24 - January 1, 2027
+  * **Christmas & New Years:** December 24 - January 2, 2027
 ---

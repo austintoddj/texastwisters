@@ -47,6 +47,20 @@ pricingSection:
   headline: Upcoming camps
   text: Drop in to any camp throughout the year, but don't forget to reserve your child's spot. We look forward to spending the day with your camper!
   pricing:
+    - name: GISD School Break
+      price: $45
+      interval: per day
+      shortDescription: April 27
+      features:
+        - feature: 9:00 AM - 2:00 PM
+        - feature: Sibling discounts available
+        - feature: Lunch and snack breaks
+        - feature: Arts and crafts
+        - feature: Games, obstacle courses and more!
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/camp-details/2140'
+        icon: true
     - name: Summer Day Camps
       price: $45
       interval: per day

@@ -47,7 +47,7 @@ pricingSection:
   text: Enroll at any time during the year to reserve your spot in the class. We look forward to having you join us!
   pricing:
     - name: Tiny Tots
-      badge: 'New class available'
+      badge: 'New classes available'
       price: $65
       interval: per month
       shortDescription: Thursday at 10:05 AM
@@ -64,7 +64,7 @@ pricingSection:
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
-        - feature: Ages 2 years - 3.5 years
+        - feature: Ages 2 - 3.5 years
         - feature: Parent participation required
         - feature: 45 minute classes
       action:
@@ -76,8 +76,20 @@ pricingSection:
       interval: per month
       shortDescription: Classes offered Mon - Sat
       features:
-        - feature: Ages 3.5 years - 5 years
+        - feature: Ages 3.5 - 5 years
         - feature: Co-ed classes
+        - feature: Learn the fundamentals
+      action:
+        label: Enroll today
+        href: 'https://portal.iclasspro.com/texastwisters/classes?ages=4&programs=17'
+        icon: true
+    - name: Mini Men
+      price: $85
+      interval: per month
+      shortDescription: Monday & Thursday
+      features:
+        - feature: Ages 4 - 5 years
+        - feature: All-boys class
         - feature: Learn the fundamentals
       action:
         label: Enroll today
@@ -89,7 +101,7 @@ pricingSection:
       shortDescription: Monday, Wednesday & Friday
       features:
         - feature: 9:00 AM - 10:30 AM
-        - feature: Ages 1 - 5
+        - feature: Ages 1 - 5 years
         - feature: Pre-registration required
       action:
         label: Reserve today

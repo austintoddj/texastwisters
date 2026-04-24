@@ -3,6 +3,7 @@ import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
   IconArticle,
+  IconBackpack,
   IconBell,
   IconBellRinging,
   IconBrandFacebook,
@@ -115,7 +116,8 @@ const iconOptions = {
   microphone: IconMicrophone2,
   snowflake: IconSnowflake,
   hearts: IconHearts,
-  laurel: IconLaurelWreath1Filled
+  laurel: IconLaurelWreath1Filled,
+  backpack: IconBackpack
 }
 
 type IconName = keyof typeof iconOptions

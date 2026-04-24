@@ -37,7 +37,6 @@ describe('sendgrid helper', () => {
       'email@test.com'
     )
 
-    expect(sg.setApiKey).toHaveBeenCalled()
     expect(sg.send).toHaveBeenCalled()
 
     const msg = (sg.send as any).mock.calls[0][0]

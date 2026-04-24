@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
 
 const getBaseUrl = () => {
-  if (process.env.VERCEL_ENV === 'production') {
-    return 'https://texastwistersgym.com'
+  const domain = process.env.NEXT_PUBLIC_DOMAIN_URL
+  if (process.env.VERCEL_ENV === 'production' && domain) {
+    return `https://${domain}`
   }
   if (process.env.VERCEL_URL) {
     return `https://${process.env.VERCEL_URL}`
@@ -18,7 +19,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/'
     },
-    host: baseUrl,
     sitemap: `${baseUrl}/sitemap.xml`
   }
 }

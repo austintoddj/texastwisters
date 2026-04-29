@@ -15,6 +15,7 @@ Next.js 16 (App Router) site for texastwistersgym.com, deployed on Vercel. Node 
 ## Content Data Pattern
 
 All site content lives in `src/data/**/*.md` as YAML frontmatter (no Markdown body used). To add or modify content, edit the `.md` files — no code changes needed. To add a new content type:
+
 1. Create a sub-directory under `src/data/`.
 2. Add a TypeScript interface in `src/types/index.ts`.
 3. Fetch with `getAllItems<MyType>('my-dir')` in a server component.
@@ -48,11 +49,10 @@ Unit tests live in `tests/unit/` (`.spec.tsx` / `.spec.ts`). E2E tests live in `
 
 ## External Integrations
 
-| Service | Purpose | Key file |
-|---|---|---|
-| iClassPro | Class enrollment / camp registration | Linked from `.md` frontmatter `action.href` |
-| SendGrid | Contact form email | `src/lib/sendgrid.ts`, template ID in `api/contact/route.ts` |
-| Google Tag Manager | Analytics | `GTM_ID` env var, injected in `layout.tsx` |
-| Vercel Analytics + Speed Insights | Performance | auto-injected in `layout.tsx` |
-| next-sitemap | `public/sitemap.xml` generation | `next-sitemap.config.js` (runs postbuild) |
-
+| Service                           | Purpose                              | Key file                                                     |
+| --------------------------------- | ------------------------------------ | ------------------------------------------------------------ |
+| iClassPro                         | Class enrollment / camp registration | Linked from `.md` frontmatter `action.href`                  |
+| SendGrid                          | Contact form email                   | `src/lib/sendgrid.ts`, template ID in `api/contact/route.ts` |
+| Google Tag Manager                | Analytics                            | `GTM_ID` env var, injected in `layout.tsx`                   |
+| Vercel Analytics + Speed Insights | Performance                          | auto-injected in `layout.tsx`                                |
+| next-sitemap                      | `public/sitemap.xml` generation      | `next-sitemap.config.js` (runs postbuild)                    |

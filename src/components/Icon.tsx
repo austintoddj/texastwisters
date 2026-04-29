@@ -56,6 +56,7 @@ import {
   IconTent,
   IconUser,
   IconUsers,
+  IconWifiOff,
   IconX
 } from '@tabler/icons-react'
 
@@ -105,6 +106,7 @@ const iconOptions = {
   run: IconRun,
   olympics: IconOlympics,
   tent: IconTent,
+  wifiOff: IconWifiOff,
   sunHigh: IconSunHigh,
   flag: IconFlag,
   sparkles: IconSparkles,

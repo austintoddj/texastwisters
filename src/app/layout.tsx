@@ -57,8 +57,8 @@ export default async function RootLayout({
       <body className={clsx('font-sans', roboto.variable)}>
         <ErrorBoundary>
           <Banner
-            icon="wifiOff"
-            content="Ditch the TV and tablets, let's have some real fun! Register for summer camps today — spots are filling up fast!"
+            icon="bellRinging"
+            content="School is almost out, let the fun and games begin! Register for summer camps today — spots are filling up fast!"
             href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
             color="blue"
             event={EVENT_IDS.BANNER_CTA_CAMP}

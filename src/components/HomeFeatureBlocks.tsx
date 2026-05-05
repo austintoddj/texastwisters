@@ -41,8 +41,7 @@ const features: string[] = [
 const blocks: Block[] = [
   {
     tagline: 'A sense of belonging',
-    headline:
-      'A place where athletes feel connected, supported, and inspired',
+    headline: 'A place where athletes feel connected, supported, and inspired',
     text: 'We believe that teamwork and friendship are essential for success, and we are committed to helping children develop these skills.',
     action: { label: 'About us', href: '/about', icon: true },
     event: EVENT_IDS.ABOUT_US,

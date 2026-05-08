@@ -32,4 +32,8 @@ description: >
   * **Strike Three:** For a third strike or a serious safety violation, the coach will return the student to the lobby where they will be reunited with their parent/guardian.
 
     _If a student receives a third strike in multiple classes, the enrollment will be dropped and the student will not be allowed to return to class._
+
+## Health
+
+Any person with a contagious illness, persistent cough or persistent runny nose is asked to stay home.
 ---

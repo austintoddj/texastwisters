@@ -32,4 +32,26 @@ description: >
   * **Strike Three:** For a third strike or a serious safety violation, the coach will return the student to the lobby where they will be reunited with their parent/guardian.
 
     _If a student receives a third strike in multiple classes, the enrollment will be dropped and the student will not be allowed to return to class._
+
+  ## Health
+
+  The health and safety of our athletes, coaches, and families is our top priority. Because gymnastics involves close contact, shared equipment, and physical spotting, we ask that all families follow this illness policy to help keep our gym healthy and safe.
+
+  ### When Athletes Must Stay Home
+
+  Athletes should NOT attend practice if they are experiencing any of the following:
+
+  * Fever of 100.4°F or higher (must be fever-free for 24 hours without fever-reducing medication)
+
+  * Vomiting or diarrhea (must be symptom-free for 24 hours)
+
+  * Contagious illnesses such as flu, strep throat, RSV, COVID-19, or pink eye (until medically cleared or on antibiotics for at least 24 hours when applicable)
+
+  * Persistent cough or congestion that interferes with safe participation
+
+  * Unexplained rash or suspected contagious skin condition
+
+  * Significant fatigue or symptoms that prevent normal training participation
+
+
 ---

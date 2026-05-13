@@ -77,6 +77,52 @@ const setDismissed = (bannerKey: string) => {
   }
 }
 
+/**
+ * Displays a dismissible site-wide banner fixed to the bottom of the viewport.
+ * Drop one of these inside `<ErrorBoundary>` in `layout.tsx` and swap props as
+ * needed for each promotion.
+ *
+ * @example New class openings
+ * <Banner
+ *   icon="bellRinging"
+ *   content="Brand new classes now available — no registration fee. Grab your spot today!"
+ *   href="https://portal.iclasspro.com/texastwisters/classes"
+ *   color="blue"
+ *   event="banner-cta-new-openings"
+ *   ariaLabel="New class openings promotion"
+ * />
+ *
+ * @example No-school camp day
+ * <Banner
+ *   icon="backpack"
+ *   content="No school next Monday? Sounds like a great day for camp! Sign up today!"
+ *   href="https://portal.iclasspro.com/texastwisters/camps"
+ *   color="blue"
+ *   event="banner-cta-camp"
+ *   ariaLabel="No-school camp day promotion"
+ * />
+ *
+ * @example Summer camp
+ * <Banner
+ *   icon="sunHigh"
+ *   content="Summer camp registration is now open! Come join the fun — sign up today!"
+ *   href="https://portal.iclasspro.com/texastwisters/camps"
+ *   color="blue"
+ *   event="banner-cta-camp"
+ *   ariaLabel="Summer camp promotion"
+ * />
+ *
+ * @example Countdown timer — use `{countdown}` in content and supply `countdownTo`
+ * <Banner
+ *   icon="clock"
+ *   content="Early-bird pricing ends in {countdown} — register now!"
+ *   href="https://portal.iclasspro.com/texastwisters/classes"
+ *   color="purple"
+ *   countdownTo="2026-06-01T00:00:00"
+ *   event="banner-cta-countdown"
+ *   ariaLabel="Early-bird countdown promotion"
+ * />
+ */
 export const Banner = ({
   icon,
   content,

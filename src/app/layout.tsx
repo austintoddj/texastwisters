@@ -56,30 +56,14 @@ export default async function RootLayout({
     <html lang="en">
       <body className={clsx('font-sans', roboto.variable)}>
         <ErrorBoundary>
-          {/*<Banner*/}
-          {/*  icon="bellRinging"*/}
-          {/*  content="Brand new classes now available — no registration fee. Grab your spot today!"*/}
-          {/*  href="https://portal.iclasspro.com/texastwisters/classes?openings=1"*/}
-          {/*  color="blue"*/}
-          {/*  event={EVENT_IDS.BANNER_CTA_NEW_OPENINGS}*/}
-          {/*  ariaLabel="New class openings promotion"*/}
-          {/*/>*/}
           <Banner
-            icon="backpack"
-            content="No school next Monday? Sounds like a great day for camp! Sign up today!"
-            href="https://portal.iclasspro.com/texastwisters/camp-details/2140"
+            icon="bellRinging"
+            content="School is almost out, let the fun and games begin! Register for summer camps today — spots are filling up fast!"
+            href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
             color="blue"
             event={EVENT_IDS.BANNER_CTA_CAMP}
-            ariaLabel="New camp day promotion"
+            ariaLabel="Summer day camp promotion"
           />
-          {/*<Banner*/}
-          {/*  icon="sunHigh"*/}
-          {/*  content="Summer camp registration is now open! Come join the fun — sign up today!"*/}
-          {/*  href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"*/}
-          {/*  color="blue"*/}
-          {/*  event={EVENT_IDS.BANNER_CTA_CAMP}*/}
-          {/*  ariaLabel="Summer day camp promotion"*/}
-          {/*/>*/}
           <Header programs={programs} />
           {children}
           <Footer programs={programs} />

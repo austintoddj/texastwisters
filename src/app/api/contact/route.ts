@@ -2,10 +2,17 @@ import { sendEmail } from '@/lib/sendgrid'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
+const phonePattern = /^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/
+
 const contactSchema = z.object({
   name: z.string().min(1, 'Name is required').max(100, 'Name is too long'),
   email: z.string().email('Invalid email address'),
-  phone: z.string().optional(),
+  phone: z
+    .union([
+      z.literal(''),
+      z.string().regex(phonePattern, 'Phone must use format (123) 456-7890')
+    ])
+    .optional(),
   message: z
     .string()
     .min(10, 'Message must be at least 10 characters')

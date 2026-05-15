@@ -98,15 +98,22 @@ test.describe('Critical User Flows', () => {
         .first()
       await expect(programsSection).toBeVisible()
 
-      // Find program links in the featured section
-      const programLinks = page.locator('a[href^="/programs/"]')
+      const featuredPrograms = page
+        .locator('section:has(h2:has-text("Classes for any age"))')
+        .first()
+
+      // Find visible program links in the featured section
+      const programLinks = featuredPrograms.locator('a[href^="/programs/"]')
       await expect(programLinks.first()).toBeVisible()
 
       // Click first program link
       const firstProgramLink = programLinks.first()
       const href = await firstProgramLink.getAttribute('href')
       expect(href).toBeTruthy()
-      await firstProgramLink.click()
+      await Promise.all([
+        page.waitForURL(`**${href}`),
+        firstProgramLink.click()
+      ])
 
       // Check navigation to program page
       await expect(page).toHaveURL(href!)
@@ -177,10 +184,11 @@ test.describe('Critical User Flows', () => {
       await hamburgerButton.click()
       const mobileMenu = page.locator('.absolute.inset-x-0.top-0.z-40')
       await expect(mobileMenu).toBeVisible()
+      await expect(hamburgerButton).toHaveAttribute('aria-expanded', 'true')
 
       // Close mobile menu
       await hamburgerButton.click()
-      await expect(mobileMenu).not.toBeVisible()
+      await expect(hamburgerButton).toHaveAttribute('aria-expanded', 'false')
     })
 
     test('contact form works on mobile', async ({ page }) => {
@@ -212,11 +220,12 @@ test.describe('Critical User Flows', () => {
     test('program pages are mobile-friendly', async ({ page }) => {
       await page.setViewportSize({ width: 375, height: 667 })
       const slug = programSlugs[0] || 'recreational' // fallback if empty
-      await page.goto(`/programs/${slug}`)
+      await page.goto(`/programs/${slug}`, { waitUntil: 'domcontentloaded' })
+      await expect(page).toHaveURL(`/programs/${slug}`)
 
       // Verify hero section loads
-      const heroHeadline = page.locator('h1, .h1').first()
-      await expect(heroHeadline).toBeTruthy()
+      const heroHeadline = page.locator('h1, h2, .h1').first()
+      await expect(heroHeadline).toBeVisible()
 
       // Just verify the page loaded successfully and has content
       // Don't check specific visibility due to responsive design

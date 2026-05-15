@@ -21,13 +21,19 @@ const contactSchema = z.object({
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
+    const templateId = process.env.SENDGRID_CONTACT_TEMPLATE_ID
+
+    if (!templateId) {
+      throw new Error('Missing SENDGRID_CONTACT_TEMPLATE_ID')
+    }
+
     const body = await request.json()
     const validatedData = contactSchema.parse(body)
 
     await sendEmail(
       'info@texastwistersgym.com',
       'noreply@texastwistersgym.com',
-      'd-93318328a69d4504998360ec450629e1',
+      templateId,
       validatedData.name,
       validatedData.message,
       validatedData.phone || '',

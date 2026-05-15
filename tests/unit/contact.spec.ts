@@ -5,6 +5,8 @@ vi.mock('@/lib/sendgrid', () => ({
   sendEmail: vi.fn()
 }))
 
+const templateId = 'd-test-template-id'
+
 const makeRequest = (
   body: Record<string, unknown>,
   headers: Record<string, string> = {}
@@ -18,6 +20,7 @@ const makeRequest = (
 describe('API /api/contact', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    process.env.SENDGRID_CONTACT_TEMPLATE_ID = templateId
   })
 
   it('returns 200 when sendEmail resolves with valid data', async () => {
@@ -40,7 +43,7 @@ describe('API /api/contact', () => {
     expect(sendEmail).toHaveBeenCalledWith(
       'info@texastwistersgym.com',
       'noreply@texastwistersgym.com',
-      'd-93318328a69d4504998360ec450629e1',
+      templateId,
       'Test User',
       'This is a valid message with enough content to pass validation.',
       '(123) 456-7890',
@@ -129,7 +132,7 @@ describe('API /api/contact', () => {
     expect(sendEmail).toHaveBeenCalledWith(
       'info@texastwistersgym.com',
       'noreply@texastwistersgym.com',
-      'd-93318328a69d4504998360ec450629e1',
+      templateId,
       'Test User',
       'This is a valid message with enough content to pass validation.',
       '',
@@ -155,7 +158,7 @@ describe('API /api/contact', () => {
     expect(sendEmail).toHaveBeenCalledWith(
       'info@texastwistersgym.com',
       'noreply@texastwistersgym.com',
-      'd-93318328a69d4504998360ec450629e1',
+      templateId,
       'Test User',
       'This is a valid message with enough content to pass validation.',
       '',

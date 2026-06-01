@@ -7,7 +7,7 @@ Next.js 16 (App Router) site for texastwistersgym.com, deployed on Vercel. Node 
 - **`src/app/`** — Next.js App Router pages and API routes. `layout.tsx` is the single root layout; it fetches all programs server-side and passes them to `<Header>` and `<Footer>`.
 - **`src/components/`** — Flat directory of reusable React components (no sub-folders). Components are named exports (e.g., `export { Banner }`).
 - **`src/data/`** — All content is stored as Markdown files with YAML frontmatter. Sub-directories: `events/`, `faqs/`, `newsletters/`, `policies/`, `programs/`, `staff/`, `testimonials/`.
-- **`src/lib/getItems.ts`** — Single data-access layer. Use `getAllItems<T>(dir)` to load all `.md` files in a `src/data/` sub-directory, or `getItemData<T>(slug, type)` for a single file. Events sort by `expiresAfter`; other collections sort by `order`. Results are in-memory cached in production.
+- **`src/lib/getItems.ts`** — Single data-access layer. Use `getAllItems<T>(dir, shuffle?)` to load all `.md` files in a `src/data/` sub-directory, or `getItemData<T>(slug, type)` for a single file. Events sort by `expiresAfter`; other collections sort by `order`. Results are in-memory cached in production.
 - **`src/types/index.ts`** — All shared TypeScript interfaces for frontmatter shapes (e.g., `ProgramData`, `EventData`, `StaffData`).
 - **`src/utils/tracking.ts`** — `EVENT_IDS` and `EVENT_NAMES` constants; always use these for analytics event strings instead of inline literals.
 - **`src/app/api/contact/route.ts`** — Only API route. Validates with Zod, sends via SendGrid (`src/lib/sendgrid.ts`).
@@ -33,6 +33,7 @@ npm run typecheck          # tsc --noEmit
 npm run lint               # ESLint
 npm run format             # Prettier (also sorts imports via @trivago plugin)
 npm run build              # next build + next-sitemap (postbuild)
+npm run start              # serve production build locally
 ```
 
 Unit tests live in `tests/unit/` (`.spec.tsx` / `.spec.ts`). E2E tests live in `tests/e2e/`. Test setup file: `tests/unit/setup.ts`.
@@ -41,10 +42,10 @@ Unit tests live in `tests/unit/` (`.spec.tsx` / `.spec.ts`). E2E tests live in `
 
 - **Path alias**: `@/` maps to `src/`. Always use `@/` imports, never relative.
 - **Styling**: Tailwind CSS v4 via PostCSS. Class ordering enforced by `prettier-plugin-tailwindcss`. Use `clsx` for conditional classes.
-- **Icons**: Use `@tabler/icons-react` via the `<Icon name="..." />` wrapper component (`src/components/Icon.tsx`), not raw Tabler imports.
+- **Icons**: Use `@tabler/icons-react` via the `<Icon icon="..." />` wrapper component (`src/components/Icon.tsx`), not raw Tabler imports.
 - **Analytics**: Wrap interactive elements with `event` prop referencing `EVENT_IDS` from `@/utils/tracking`. GTM + Vercel Analytics are both active.
 - **Fonts**: Roboto Flex loaded via `next/font/google`, applied as CSS variable `--font-roboto` and Tailwind class `font-sans`.
-- **Environment variables**: `NEXT_PUBLIC_DOMAIN_URL` (required for metadata), `GTM_ID`, and SendGrid keys. See `.env.example`.
+- **Environment variables**: `NEXT_PUBLIC_DOMAIN_URL` (required for metadata), `GTM_ID` (used in `layout.tsx`), `NEXT_SENDGRID_API_KEY` (used in `src/lib/sendgrid.ts`), and `SENDGRID_CONTACT_TEMPLATE_ID` (used in `src/app/api/contact/route.ts`).
 - **Enrollment links**: External links go to `portal.iclasspro.com/texastwisters/…` — do not hard-code elsewhere.
 
 ## External Integrations

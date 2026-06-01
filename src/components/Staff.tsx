@@ -1,6 +1,7 @@
 import { Icon } from '@/components/Icon'
 import { getAllItems } from '@/lib/getItems'
 import { StaffData } from '@/types'
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -47,6 +48,7 @@ export const Staff = async () => {
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     alt={member.data.name}
+                    loading="eager"
                   />
                 </div>
                 {/* About member info */}

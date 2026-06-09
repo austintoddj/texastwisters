@@ -54,6 +54,7 @@ import {
   IconStars,
   IconSunHigh,
   IconTent,
+  IconTicket,
   IconUser,
   IconUsers,
   IconWifiOff,
@@ -119,7 +120,8 @@ const iconOptions = {
   snowflake: IconSnowflake,
   hearts: IconHearts,
   laurel: IconLaurelWreath1Filled,
-  backpack: IconBackpack
+  backpack: IconBackpack,
+  ticket: IconTicket
 }
 
 type IconName = keyof typeof iconOptions

@@ -56,21 +56,13 @@ export default async function RootLayout({
     <html lang="en">
       <body className={clsx('font-sans', roboto.variable)}>
         <ErrorBoundary>
-          {/*<Banner*/}
-          {/*  icon="sunHigh"*/}
-          {/*  content="Don’t miss out! Summer Day Camps are in full swing and filling fast. They'll enjoy games, crafts, open gym and more!"*/}
-          {/*  href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"*/}
-          {/*  color="blue"*/}
-          {/*  event={EVENT_IDS.BANNER_CTA_CAMP}*/}
-          {/*  ariaLabel="Summer day camp promotion"*/}
-          {/*/>*/}
           <Banner
-            icon="ticket"
-            content="Join us this Saturday for our Pull-Up and Pullover clinic! This clinic will focus on building the strength and technique for your child to master their pull over."
-            href="https://portal.iclasspro.com/texastwisters/camp-details/2331"
-            color="purple"
-            event={EVENT_IDS.BANNER_CTA_CLINIC}
-            ariaLabel="Pull up and pull over clinic promotion"
+            icon="sunHigh"
+            content="Don’t miss out! Summer Day Camps are in full swing and filling fast. They'll enjoy games, crafts, open gym and more!"
+            href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
+            color="blue"
+            event={EVENT_IDS.BANNER_CTA_CAMP}
+            ariaLabel="Summer day camp promotion"
           />
           <Header programs={programs} />
           {children}

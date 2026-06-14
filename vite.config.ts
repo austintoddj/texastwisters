@@ -4,6 +4,7 @@ import { defineConfig } from 'vitest/config'
 export default defineConfig({
   resolve: {
     alias: {
+      '@/images': path.resolve(__dirname, 'public/images'),
       '@': path.resolve(__dirname, 'src')
     }
   },

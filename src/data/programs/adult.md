@@ -62,7 +62,7 @@ pricingSection:
     - name: Adult Open Gym
       price: $15
       interval: per drop-in
-      shortDescription: Monday at 8 PM
+      shortDescription: Tuesday at 8 PM
       features:
         - feature: 1 1/2 hour open gym
         - feature: Coach-supervised
@@ -74,7 +74,7 @@ pricingSection:
     - name: Adult Open Gym Membership
       price: $50
       interval: per month
-      shortDescription: Monday at 8 PM
+      shortDescription: Tuesday at 8 PM
       features:
         - feature: Month to month enrollment
         - feature: Cancel anytime

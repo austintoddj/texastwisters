@@ -50,9 +50,31 @@ const fields: Field[] = [
   }
 ]
 
+export function formatPhoneNumber(value: string): string {
+  const digitsOnly = value.replace(/\D/g, '').slice(0, 10)
+
+  if (digitsOnly.length === 0) {
+    return ''
+  }
+
+  if (digitsOnly.length < 4) {
+    return `(${digitsOnly}`
+  }
+
+  if (digitsOnly.length < 7) {
+    return `(${digitsOnly.slice(0, 3)}) ${digitsOnly.slice(3)}`
+  }
+
+  return `(${digitsOnly.slice(0, 3)}) ${digitsOnly.slice(3, 6)}-${digitsOnly.slice(6)}`
+}
+
 export const ContactHero = () => {
   const [isError, setIsError] = useState<boolean | null>(null)
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
+
+  function handlePhoneChange(e: React.ChangeEvent<HTMLInputElement>): void {
+    e.currentTarget.value = formatPhoneNumber(e.currentTarget.value)
+  }
 
   async function handleSubmit(
     e: React.FormEvent<HTMLFormElement>
@@ -173,6 +195,24 @@ export const ContactHero = () => {
                       type={field.type}
                       name={field.name}
                       placeholder={field.placeholder}
+                      inputMode={field.name === 'phone' ? 'numeric' : undefined}
+                      autoComplete={
+                        field.name === 'phone' ? 'tel-national' : undefined
+                      }
+                      pattern={
+                        field.name === 'phone'
+                          ? '\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}'
+                          : undefined
+                      }
+                      title={
+                        field.name === 'phone'
+                          ? 'Use format (123) 456-7890'
+                          : undefined
+                      }
+                      maxLength={field.name === 'phone' ? 14 : undefined}
+                      onChange={
+                        field.name === 'phone' ? handlePhoneChange : undefined
+                      }
                       className="mt-2 h-14 w-full rounded-2xl border-2 border-purple-50 p-4 text-[14px] text-sm font-medium text-purple-700 placeholder-purple-700/70 outline-hidden duration-300 ease-in-out focus:border-purple-200 focus:outline-hidden focus:ring-purple-200"
                       required={field.required}
                     />

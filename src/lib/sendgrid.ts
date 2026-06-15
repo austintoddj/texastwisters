@@ -3,7 +3,7 @@ import sendgrid from '@sendgrid/mail'
 /**
  * Utility for sending transactional emails using SendGrid.
  *
- * sendEmail(to, from, templateID, name, subject, phone, email):
+ * sendEmail(to, fromEmail, templateID, name, subject, phone, email, fromName?):
  *   Sends an email using a dynamic template and provided data.
  *
  * Usage: Used for contact forms and notifications.
@@ -13,12 +13,13 @@ sendgrid.setApiKey(process.env.NEXT_SENDGRID_API_KEY!)
 
 export const sendEmail = async (
   to: string,
-  from: string,
+  fromEmail: string,
   templateID: string,
   name: string,
   subject: string,
   phone: string,
-  email: string
+  email: string,
+  fromName = 'Texas Twisters Gymnastics'
 ): Promise<void> => {
   /**
    * "From" email address must coincide with Verified Single Sender.
@@ -26,7 +27,10 @@ export const sendEmail = async (
    */
   const message = {
     to,
-    from,
+    from: {
+      email: fromEmail,
+      name: fromName
+    },
     templateId: templateID,
     dynamicTemplateData: {
       SUBJECT: subject,

@@ -37,7 +37,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       validatedData.name,
       validatedData.message,
       validatedData.phone || '',
-      validatedData.email
+      validatedData.email,
+      'Texas Twisters Gymnastics'
     )
 
     return NextResponse.json({ message: 'Success' })

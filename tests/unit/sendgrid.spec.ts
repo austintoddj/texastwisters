@@ -41,7 +41,10 @@ describe('sendgrid helper', () => {
 
     const msg = (sg.send as any).mock.calls[0][0]
     expect(msg.to).toBe('to@test.com')
-    expect(msg.from).toBe('from@test.com')
+    expect(msg.from).toEqual({
+      email: 'from@test.com',
+      name: 'Texas Twisters Gymnastics'
+    })
     expect(msg.templateId).toBe('template-1')
     expect(msg.dynamicTemplateData.NAME).toBe('Name')
     expect(msg.dynamicTemplateData.EMAIL).toBe('email@test.com')

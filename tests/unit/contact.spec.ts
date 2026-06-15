@@ -47,7 +47,8 @@ describe('API /api/contact', () => {
       'Test User',
       'This is a valid message with enough content to pass validation.',
       '(123) 456-7890',
-      'test@example.com'
+      'test@example.com',
+      'Texas Twisters Gymnastics'
     )
   })
 
@@ -136,7 +137,8 @@ describe('API /api/contact', () => {
       'Test User',
       'This is a valid message with enough content to pass validation.',
       '',
-      'test@example.com'
+      'test@example.com',
+      'Texas Twisters Gymnastics'
     )
   })
 
@@ -162,7 +164,8 @@ describe('API /api/contact', () => {
       'Test User',
       'This is a valid message with enough content to pass validation.',
       '',
-      'test@example.com'
+      'test@example.com',
+      'Texas Twisters Gymnastics'
     )
   })
 

@@ -25,7 +25,7 @@
     "next": "^16.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.1",
     "zod": "^4.3.5"
   },
   "devDependencies": {
@@ -47,12 +47,17 @@
     "jsdom": "^29.0.0",
     "next-sitemap": "^4.2.3",
     "node-mocks-http": "^1.11.0",
-    "postcss": "^8.4.47",
+    "postcss": "^8.5.15",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "start-server-and-test": "^2.1.2",
     "tailwindcss": "^4.1.17",
     "typescript": "^6.0.0",
     "vitest": "^4.0.8"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.10"
+    }
   }
 }

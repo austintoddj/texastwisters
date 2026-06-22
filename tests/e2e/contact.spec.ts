@@ -17,10 +17,12 @@ test.describe('Contact form', () => {
 
   test('submits successfully with valid data', async ({ page }) => {
     let submittedPhone = ''
+    let submittedWebsite = ''
 
     await page.route('**/api/contact', async route => {
       const payload = route.request().postDataJSON()
       submittedPhone = payload.phone
+      submittedWebsite = payload.website
 
       await route.fulfill({
         status: 200,
@@ -40,6 +42,7 @@ test.describe('Contact form', () => {
 
     await expect(page.locator('text=We got your message')).toBeVisible()
     expect(submittedPhone).toBe('(555) 555-5555')
+    expect(submittedWebsite).toBe('')
   })
 
   test('shows error on server failure', async ({ page }) => {
@@ -61,5 +64,36 @@ test.describe('Contact form', () => {
     await expect(page.locator('text=Something went wrong')).toBeVisible({
       timeout: 10000
     })
+  })
+
+  test('submits honeypot value when hidden field is populated', async ({
+    page
+  }) => {
+    let submittedWebsite = ''
+
+    await page.route('**/api/contact', async route => {
+      const payload = route.request().postDataJSON()
+      submittedWebsite = payload.website
+
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: '{"message":"Success"}'
+      })
+    })
+
+    await page.fill('#name', 'Playwright Tester')
+    await page.fill('#email', 'playwright@example.com')
+    await page.fill('#message', 'This is an automated test message.')
+
+    await page.evaluate(() => {
+      const honeypot = document.querySelector('#website') as HTMLInputElement
+      honeypot.value = 'https://spam.example'
+    })
+
+    await page.getByRole('button', { name: 'Send message' }).click()
+
+    await expect(page.locator('text=We got your message')).toBeVisible()
+    expect(submittedWebsite).toBe('https://spam.example')
   })
 })

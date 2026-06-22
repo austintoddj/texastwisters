@@ -169,6 +169,24 @@ describe('API /api/contact', () => {
     )
   })
 
+  it('returns 200 and skips sendEmail when honeypot is filled', async () => {
+    const { POST } = await import('@/app/api/contact/route')
+    const res = await POST(
+      makeRequest({
+        name: 'Bot User',
+        email: 'bot@example.com',
+        website: 'https://spam.example',
+        message:
+          'This is a valid message with enough content to pass validation.'
+      }) as any
+    )
+
+    expect(res.status).toBe(200)
+    const data = await res.json()
+    expect(data.message).toBe('Success')
+    expect(sendEmail).not.toHaveBeenCalled()
+  })
+
   it('returns 500 when sendEmail throws with sanitized error', async () => {
     ;(sendEmail as any).mockRejectedValueOnce(new Error('SendGrid API error'))
 

@@ -7,6 +7,7 @@ const phonePattern = /^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/
 const contactSchema = z.object({
   name: z.string().min(1, 'Name is required').max(100, 'Name is too long'),
   email: z.string().email('Invalid email address'),
+  website: z.string().max(200, 'Website is too long').optional(),
   phone: z
     .union([
       z.literal(''),
@@ -29,6 +30,16 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     const body = await request.json()
     const validatedData = contactSchema.parse(body)
+    const honeypotValue = validatedData.website?.trim()
+
+    if (honeypotValue) {
+      console.info('Contact form honeypot triggered', {
+        userAgent: request.headers.get('user-agent'),
+        timestamp: new Date().toISOString()
+      })
+
+      return NextResponse.json({ message: 'Success' })
+    }
 
     await sendEmail(
       'info@texastwistersgym.com',

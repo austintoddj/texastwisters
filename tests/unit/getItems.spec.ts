@@ -26,8 +26,29 @@ describe('getItems utility', () => {
 
     expect(data).toBeTruthy()
     expect(data.title).toBe('Hello')
-    // gray-matter will typically parse numbers as strings unless explicit, but ensure the key exists
+    // Ensure numeric frontmatter is still present after parsing.
     expect(data.order).toBeDefined()
+  })
+
+  it('getItemData supports BOM and CRLF frontmatter', async () => {
+    ;(fs.promises.readFile as any).mockResolvedValueOnce(
+      '\ufeff---\r\ntitle: Hello\r\norder: 1\r\n---\r\ncontent'
+    )
+
+    const data = await getItemData('slug', 'type')
+
+    expect(data.title).toBe('Hello')
+    expect(data.order).toBe(1)
+  })
+
+  it('getItemData rejects files without frontmatter', async () => {
+    ;(fs.promises.readFile as any).mockResolvedValueOnce(
+      'title: Hello\ncontent'
+    )
+
+    await expect(getItemData('slug', 'type')).rejects.toThrow(
+      'Failed to load type data for slug'
+    )
   })
 
   it('getAllItems sorts events by expiresAfter date when all items have expiresAfter', async () => {

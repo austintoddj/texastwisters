@@ -9,8 +9,8 @@
  * Usage: Used throughout the site to fetch structured content for events, faqs, programs, etc.
  */
 import fs from 'fs'
-import matter from 'gray-matter'
 import path from 'path'
+import { parse as parseYaml } from 'yaml'
 
 // Type for items returned by getAllItems
 export interface DataItem<T> {
@@ -32,6 +32,38 @@ const getTimestamp = (dateValue: unknown): number => {
 // Cache for production builds to avoid repeated file reads
 const cache = new Map<string, unknown>()
 
+const parseFrontmatter = (fileContents: string): Record<string, unknown> => {
+  const normalized = fileContents.startsWith('\ufeff')
+    ? fileContents.slice(1)
+    : fileContents
+
+  const lines = normalized.split(/\r?\n/)
+
+  if (lines[0] !== '---') {
+    throw new Error('Missing frontmatter block')
+  }
+
+  const closingIndex = lines.findIndex(
+    (line, index) => index > 0 && line === '---'
+  )
+
+  if (closingIndex === -1) {
+    throw new Error('Unterminated frontmatter block')
+  }
+
+  const frontmatterText = lines.slice(1, closingIndex).join('\n')
+  const frontmatter = parseYaml(frontmatterText)
+
+  if (
+    frontmatter !== null &&
+    (typeof frontmatter !== 'object' || Array.isArray(frontmatter))
+  ) {
+    throw new Error('Frontmatter must be a YAML object')
+  }
+
+  return (frontmatter ?? {}) as Record<string, unknown>
+}
+
 export async function getItemData<T = Record<string, unknown>>(
   slug: string,
   type: string
@@ -45,7 +77,7 @@ export async function getItemData<T = Record<string, unknown>>(
     const filePath = path.join('src/data', type, slug + '.md')
     const markdownWithMeta = await fs.promises.readFile(filePath, 'utf-8')
 
-    const { data } = matter(markdownWithMeta)
+    const data = parseFrontmatter(markdownWithMeta)
 
     if (process.env.NODE_ENV === 'production') {
       cache.set(cacheKey, data)
@@ -78,7 +110,7 @@ export async function getAllItems<T = Record<string, unknown>>(
           const filePath = path.join(dirPath, filename)
           const fileContents = await fs.promises.readFile(filePath, 'utf8')
 
-          const { data: frontmatter } = matter(fileContents)
+          const frontmatter = parseFrontmatter(fileContents)
           return {
             slug: filename.replace('.md', ''),
             data: frontmatter

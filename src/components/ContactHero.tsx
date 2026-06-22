@@ -68,6 +68,8 @@ export function formatPhoneNumber(value: string): string {
   return `(${digitsOnly.slice(0, 3)}) ${digitsOnly.slice(3, 6)}-${digitsOnly.slice(6)}`
 }
 
+const HONEYPOT_FIELD = 'website'
+
 export const ContactHero = () => {
   const [isError, setIsError] = useState<boolean | null>(null)
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
@@ -167,6 +169,20 @@ export const ContactHero = () => {
             </div>
             {/* Contact form */}
             <form className="mt-8" onSubmit={handleSubmit}>
+              <div
+                aria-hidden="true"
+                className="absolute top-0 left-[-9999px] h-px w-px overflow-hidden"
+              >
+                <label htmlFor={HONEYPOT_FIELD}>Website</label>
+                <input
+                  id={HONEYPOT_FIELD}
+                  name={HONEYPOT_FIELD}
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               {fields.map((field, index) => (
                 <div
                   key={`contact-form-field-${index}}`}

@@ -55,6 +55,15 @@ describe('ContactHero', () => {
     expect(phoneInput).toHaveAttribute('autocomplete', 'tel-national')
     expect(phoneInput).toHaveAttribute('maxlength', '14')
   })
+
+  it('renders a hidden honeypot field', () => {
+    render(<ContactHero />)
+
+    const honeypot = screen.getByLabelText('Website')
+    expect(honeypot).toHaveAttribute('name', 'website')
+    expect(honeypot).toHaveAttribute('tabindex', '-1')
+    expect(honeypot).toHaveAttribute('autocomplete', 'off')
+  })
 })
 
 describe('formatPhoneNumber', () => {

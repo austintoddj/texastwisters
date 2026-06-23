@@ -37,10 +37,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: node --run install
+        run: npm ci
 
       - name: Run unit tests with coverage
-        run: node --run test:unit -- --coverage
+        run: npm run test:unit -- --coverage
 
       - name: Upload coverage reports
         uses: actions/upload-artifact@v7
@@ -67,7 +67,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: node --run install
+        run: npm ci
 
       - name: Cache Next.js build
         uses: actions/cache@v5
@@ -78,20 +78,20 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
       - name: Check types
-        run: node --run typecheck
+        run: npm run typecheck
 
       - name: Run linting
-        run: node --run lint
+        run: npm run lint
 
       - name: Build application
-        run: node --run build
+        run: npm run build
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests (${{ matrix.browser }})
         run: |
-          npx start-server-and-test 'node --run start' http://localhost:3000 "npx playwright test --project=${{ matrix.browser }}"
+          npx start-server-and-test 'npm run start' http://localhost:3000 "npx playwright test --project=${{ matrix.browser }}"
 
       - name: Upload Playwright HTML report
         uses: actions/upload-artifact@v7

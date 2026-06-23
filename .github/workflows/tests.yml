@@ -37,7 +37,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: node --run install
 
       - name: Run unit tests with coverage
         run: node --run test:unit -- --coverage
@@ -67,7 +67,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: node --run install
 
       - name: Cache Next.js build
         uses: actions/cache@v5

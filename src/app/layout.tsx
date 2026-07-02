@@ -57,12 +57,13 @@ export default async function RootLayout({
       <body className={clsx('font-sans', roboto.variable)}>
         <ErrorBoundary>
           <Banner
-            icon="sunHigh"
-            content="Don’t miss out! Summer Day Camps are in full swing and filling fast. They'll enjoy games, crafts, open gym and more!"
-            href="https://portal.iclasspro.com/texastwisters/camps/5?sortBy=name"
+            icon="flag"
+            content="Heads up! We will be closed on Saturday, July 4th for the holiday. Normal classes resume next week."
+            href="https://portal.iclasspro.com/texastwisters/news/8"
             color="blue"
-            event={EVENT_IDS.BANNER_CTA_CAMP}
-            ariaLabel="Summer day camp promotion"
+            event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
+            expiresAfter="2026-07-05T23:59:59"
+            ariaLabel="4th of July holiday closure notice"
           />
           <Header programs={programs} />
           {children}

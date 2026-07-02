@@ -58,10 +58,10 @@ export default async function RootLayout({
         <ErrorBoundary>
           <Banner
             icon="flag"
-            content="Texas Twisters will be closed for the 4th of July holiday. Normal classes resume next week."
+            content="Heads up! We will be closed on Saturday, July 4th for the holiday. Normal classes resume next week."
             color="blue"
             event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
-            expiresAfter="2026-07-12T23:59:59"
+            expiresAfter="2026-07-05T23:59:59"
             ariaLabel="4th of July holiday closure notice"
           />
           <Header programs={programs} />

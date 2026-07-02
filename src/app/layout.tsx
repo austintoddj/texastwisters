@@ -59,7 +59,7 @@ export default async function RootLayout({
           <Banner
             icon="flag"
             content="Heads up! We will be closed on Saturday, July 4th for the holiday. Normal classes resume next week."
-            href="https://portal.iclasspro.com/texastwisters/news/8"
+            href="https://portal.iclasspro.com/texastwisters/news/2"
             color="blue"
             event={EVENT_IDS.BANNER_CTA_GYM_CLOSURE}
             expiresAfter="2026-07-05T23:59:59"
